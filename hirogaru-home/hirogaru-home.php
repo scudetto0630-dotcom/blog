@@ -2,7 +2,7 @@
 /**
  * Plugin Name: ひろがる趣味暮らし トップページ
  * Description: 猫・ウイスキー・ITとフリーランスのトップページ。管理画面から適用・復元できます。
- * Version: 1.0.1
+ * Version: 1.1.0
  * Requires at least: 6.0
  * Requires PHP: 7.4
  */
@@ -20,10 +20,18 @@ add_action('admin_menu', function () {
 function hsh_admin() {
     if (!current_user_can('manage_options')) { return; }
     $message = '';
+    $hsh_new_token = '';
     if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['hsh_action'])) {
         check_admin_referer('hsh_settings');
         $action = sanitize_key(wp_unslash($_POST['hsh_action']));
-        if ($action === 'restore') {
+        if ($action === 'connect') {
+            $hsh_new_token = wp_generate_password(64, false, false);
+            update_option('hsh_edit_token_hash', hash('sha256', $hsh_new_token), false);
+            $message = '接続キーを発行しました。以前のキーは無効です。キーはこの画面に一度だけ表示されます。';
+        } elseif ($action === 'disconnect') {
+            delete_option('hsh_edit_token_hash');
+            $message = '編集接続を無効にしました。';
+        } elseif ($action === 'restore') {
             $old = get_option('hsh_original_front');
             $id = (int) get_option('hsh_page_id');
             if (is_array($old) && (int) get_option('page_on_front') === $id) {
@@ -43,6 +51,7 @@ function hsh_admin() {
     wp_nonce_field('hsh_settings');
     echo '<button class="button button-primary" name="hsh_action" value="apply">トップページを適用</button> <button class="button" name="hsh_action" value="restore">元のトップページ設定に戻す</button></form>';
     if (get_option('hsh_page_id')) { echo '<p><a href="' . esc_url(get_permalink((int) get_option('hsh_page_id'))) . '" target="_blank" rel="noopener">作成したページを見る</a></p>'; }
+    hsh_connection_admin($hsh_new_token);
     echo '<p>停止する場合は、先に「元のトップページ設定に戻す」を実行してからプラグインを無効化してください。</p></div>';
 }
 function hsh_apply() {
@@ -77,7 +86,7 @@ add_filter('template_include', function ($template) {
 }, 99);
 add_action('wp_enqueue_scripts', function () {
     if ((int) get_option('hsh_page_id') && is_page((int) get_option('hsh_page_id'))) {
-        wp_enqueue_style('hsh-home', plugin_dir_url(__FILE__) . 'assets/home.css', array(), '1.0.1');
+        wp_enqueue_style('hsh-home', plugin_dir_url(__FILE__) . 'assets/home.css', array(), '1.1.0');
     }
 });
 function hsh_category_url($slug) {
@@ -97,3 +106,5 @@ register_deactivation_hook(__FILE__, function () {
         delete_option('hsh_original_front');
     }
 });
+
+require_once plugin_dir_path(__FILE__) . 'editing-bridge.php';
