@@ -1,0 +1,233 @@
+{
+  "backend": {
+    "executed": 28,
+    "passed": 28,
+    "failed": 0
+  },
+  "browser": {
+    "passed": 44,
+    "failed": 0,
+    "tests": [
+      {
+        "name": "初期入力欄1つ・未入力実行防止",
+        "status": "passed",
+        "ms": 1266
+      },
+      {
+        "name": "任意の空欄は省略・空白入力は拒否",
+        "status": "passed",
+        "ms": 395
+      },
+      {
+        "name": "空白のみの入力防止",
+        "status": "passed",
+        "ms": 44
+      },
+      {
+        "name": "製品名の入力・編集・削除",
+        "status": "passed",
+        "ms": 187
+      },
+      {
+        "name": "日本語・英語の成分入力",
+        "status": "passed",
+        "ms": 152
+      },
+      {
+        "name": "成分5個の追加と6個目防止",
+        "status": "passed",
+        "ms": 389
+      },
+      {
+        "name": "成分の削除・番号更新",
+        "status": "passed",
+        "ms": 60
+      },
+      {
+        "name": "最後の成分欄も削除可能・最低1欄を維持",
+        "status": "passed",
+        "ms": 344
+      },
+      {
+        "name": "重複成分の警告と実行防止",
+        "status": "passed",
+        "ms": 165
+      },
+      {
+        "name": "全角英字の重複検出",
+        "status": "passed",
+        "ms": 57
+      },
+      {
+        "name": "長文入力の上限",
+        "status": "passed",
+        "ms": 73
+      },
+      {
+        "name": "特殊文字の安全な表示・保存",
+        "status": "passed",
+        "ms": 777
+      },
+      {
+        "name": "保存した製品の一覧・再読み込み保持",
+        "status": "passed",
+        "ms": 288
+      },
+      {
+        "name": "製品名の検索・該当なし",
+        "status": "passed",
+        "ms": 85
+      },
+      {
+        "name": "保存済み製品の再編集・更新",
+        "status": "passed",
+        "ms": 294
+      },
+      {
+        "name": "編集中の入力を更新後も復元",
+        "status": "passed",
+        "ms": 486
+      },
+      {
+        "name": "削除キャンセル",
+        "status": "passed",
+        "ms": 242
+      },
+      {
+        "name": "保存済み製品の削除",
+        "status": "passed",
+        "ms": 176
+      },
+      {
+        "name": "空の処理履歴",
+        "status": "passed",
+        "ms": 81
+      },
+      {
+        "name": "デモ開始・処理画面・7工程",
+        "status": "passed",
+        "ms": 759
+      },
+      {
+        "name": "進捗バー・現在工程・処理済み件数",
+        "status": "passed",
+        "ms": 1308
+      },
+      {
+        "name": "処理中のページ更新",
+        "status": "passed",
+        "ms": 313
+      },
+      {
+        "name": "戻る・進む操作",
+        "status": "passed",
+        "ms": 375
+      },
+      {
+        "name": "途中離脱してもサーバー処理継続",
+        "status": "passed",
+        "ms": 5910
+      },
+      {
+        "name": "デモ結果サマリー・成分一覧",
+        "status": "passed",
+        "ms": 22
+      },
+      {
+        "name": "初回判定と2回の再チェック表示",
+        "status": "passed",
+        "ms": 102
+      },
+      {
+        "name": "51分類と正式名称の表示",
+        "status": "passed",
+        "ms": 164
+      },
+      {
+        "name": "分類フィルターと複数分類",
+        "status": "passed",
+        "ms": 27
+      },
+      {
+        "name": "採用・除外の絞り込み",
+        "status": "passed",
+        "ms": 148
+      },
+      {
+        "name": "ZIP準備中・無効化・PubMedリンクの区別",
+        "status": "passed",
+        "ms": 44
+      },
+      {
+        "name": "結果から履歴・入力再利用",
+        "status": "passed",
+        "ms": 490
+      },
+      {
+        "name": "保存失敗・入力保持・再試行",
+        "status": "passed",
+        "ms": 262
+      },
+      {
+        "name": "通信エラー時の画面・復旧",
+        "status": "passed",
+        "ms": 190
+      },
+      {
+        "name": "処理開始失敗・入力保持",
+        "status": "passed",
+        "ms": 505
+      },
+      {
+        "name": "不正なブラウザ保存データから復旧",
+        "status": "passed",
+        "ms": 617
+      },
+      {
+        "name": "不正な履歴URL・戻れるエラー表示",
+        "status": "passed",
+        "ms": 173
+      },
+      {
+        "name": "処理進捗の通信エラー・再接続",
+        "status": "passed",
+        "ms": 982
+      },
+      {
+        "name": "タブを閉じても処理が完了・再表示",
+        "status": "passed",
+        "ms": 15728
+      },
+      {
+        "name": "複数製品を独立して保存・検索",
+        "status": "passed",
+        "ms": 168
+      },
+      {
+        "name": "PC：全画面の横はみ出し・入力・ボタン",
+        "status": "passed",
+        "ms": 2828
+      },
+      {
+        "name": "タブレット：全画面の横はみ出し・入力・ボタン",
+        "status": "passed",
+        "ms": 1425
+      },
+      {
+        "name": "スマートフォン：全画面の横はみ出し・入力・ボタン",
+        "status": "passed",
+        "ms": 1269
+      },
+      {
+        "name": "小型スマートフォン：全画面の横はみ出し・入力・ボタン",
+        "status": "passed",
+        "ms": 1227
+      },
+      {
+        "name": "ブラウザ実行時の未処理例外なし",
+        "status": "passed",
+        "ms": 2
+      }
+    ]
+  }
+}

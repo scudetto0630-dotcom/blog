@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: paperdesk-demo
+    runtime: python
+    rootDir: paper-tool
+    plan: starter
+    buildCommand: python -m compileall -q app server.py
+    startCommand: python server.py --host 0.0.0.0
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.14
+      - key: DATABASE_PATH
+        value: /var/data/paperdesk.sqlite3
+      - key: APP_ACCESS_PASSWORD
+        generateValue: true
+    disk:
+      name: paperdesk-data
+      mountPath: /var/data
+      sizeGB: 1
