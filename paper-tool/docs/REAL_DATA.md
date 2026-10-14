@@ -28,7 +28,7 @@ EGCG（エピガロカテキンガレート、エピガロカテキン没食子�
 
 - `app/pubmed.py`: 2000年以降の検索、日付分割で10,000検索上限を回避、再試行、100件ごとの本文取得。
 - `tools/fetch_pubmed.py`: SQLiteに取得キューと論文を保存。中断後に未取得だけ再開。
-- `app/engine/decisions.py`: 人間教師例を添えた初回、初回を見ない第1検証、整合性の第2検証。原文にない根拠引用を拒否。判定不一致は要確認。
+- `app/engine/decisions.py`: 人間教師例を添えた初回、初回を見ない第1検証、整合性の第2検証。人間とAIの分類差分を教師例に含め、51分類外の人間ラベルを勝手に置換しない。原文にない根拠引用を拒否。判定不一致は要確認。
 - `app/engine/pipeline.py`: 判定ラウンドごとに永続化し、再開時に済んだラウンドを再実行しない。評価用PMIDを教師例から除外。
 - `app/engine/ledger.py`: 承認・キー・モデル料金がないと停止。費用予約を原子的に上限チェック。応答不明時は自動で再課金しない。
 - `app/engine/export.py`: 実判定結果の51分類、ヒト試験、要確認、除外、全レビュー記録のZIP。
@@ -42,7 +42,7 @@ AI処理前に100論文の推定金額を表示。ジョブ上限を設定して
 
 ## 操作テスト
 
-`node tests/live-browser.cjs`: 実HTTPサーバーと模擬PubMed/AIで、承認待ち・再起動保持・履歴・ZIPを検証。外部API・仕分け精度の検証ではありません。
+`node tests/live-browser.cjs`: 実HTTPサーバーと模擬PubMed/AIで、承認待ち・再起動保持・履歴・ZIP・判定一覧と51部位フィルタを検証。外部API・仕分け精度の検証ではありません。
 `node tests/input-research-browser.cjs`: アップロードなしの入力→実結果→ZIP、更新、履歴、入力再利用、別名重複、4幅を検証。
 `node tests/research-browser.cjs`: 旧資料インポート機能の互換性確認。
 `node tests/static-browser.cjs`: `--demo`ビルドで旧無料デモを回帰確認。
