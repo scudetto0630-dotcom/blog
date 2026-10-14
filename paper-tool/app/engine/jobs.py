@@ -40,6 +40,29 @@ class ResearchJobs:
     def list(self):
         with sqlite3.connect(self.path) as db:ids=[r[0] for r in db.execute('SELECT id FROM research_jobs ORDER BY created DESC LIMIT 200')]
         return [self.get(id) for id in ids]
+    def results(self,id,page=0,category=None,status=None):
+        if page<0 or page>2000:raise ValueError('ページが不正です。')
+        job=self.get(id)
+        if not job or job['status']!='completed':raise ValueError('結果はまだ確定していません。')
+        from ..taxonomy import NAMES
+        where=['job=?'];parameters=[id]
+        if category:
+            if category not in NAMES:raise ValueError('指定51分類以外です。')
+            where.append("EXISTS(SELECT 1 FROM json_each(payload,'$.final_decision.categories') WHERE value=?)");parameters.append(category)
+        if status:
+            if status not in ('adopted','excluded','review'):raise ValueError('判定が不正です。')
+            where.append("json_extract(payload,'$.final_decision.status')=?");parameters.append(status)
+        condition=' AND '.join(where)
+        with sqlite3.connect(self.path) as db:
+            exists=db.execute("SELECT 1 FROM sqlite_master WHERE name='research_final'").fetchone()
+            if not exists:return {'papers':[],'summary':{'contexts':0,'adopted':0,'excluded':0,'review':0,'human_effective':0},'page':page,'filtered_count':0}
+            summary={'contexts':db.execute('SELECT count(*) FROM research_final WHERE job=?',(id,)).fetchone()[0]}
+            for status in ('adopted','excluded','review'):
+                summary[status]=db.execute("SELECT count(*) FROM research_final WHERE job=? AND json_extract(payload,'$.final_decision.status')=?",(id,status)).fetchone()[0]
+            summary['human_effective']=db.execute("SELECT count(*) FROM research_final WHERE job=? AND json_extract(payload,'$.final_decision.status')='adopted' AND json_extract(payload,'$.final_decision.human_trial')='effective'",(id,)).fetchone()[0]
+            filtered=db.execute('SELECT count(*) FROM research_final WHERE '+condition,parameters).fetchone()[0]
+            papers=[json.loads(r[0]) for r in db.execute("SELECT payload FROM research_final WHERE "+condition+" ORDER BY CAST(json_extract(payload,'$.paper.publication_date.Year') AS INTEGER) DESC,CAST(pmid AS INTEGER) DESC LIMIT 50 OFFSET ?",(*parameters,page*50))]
+        return {'papers':papers,'summary':summary,'page':page,'filtered_count':filtered}
     def archive(self,id):
         with sqlite3.connect(self.path) as db:row=db.execute("SELECT archive FROM research_jobs WHERE id=? AND status='completed'",(id,)).fetchone()
         return row[0] if row else None
@@ -47,9 +70,9 @@ class ResearchJobs:
         with sqlite3.connect(self.path) as db:db.execute('UPDATE research_jobs SET status=?,phase=?,processed=?,total=?,error=?,archive=coalesce(?,archive) WHERE id=?',(status,phase,processed,total,error,archive,id))
     def classifier(self,id):
         if self.factory:return self.factory(id)
-        if os.environ.get('PAPERDESK_ALLOW_PAID')!='explicitly-approved':raise ApprovalRequired('有料AI処理は未承認です。取得済み論文は保存されています。')
+        if os.environ.get('PAPERDESK_ALLOW_PAID')!='explicitly-approved':return Classifier(None,os.environ.get('PAPERDESK_AI_MODEL','not-configured'))
         job=self.get(id)
-        if not job['approved']:raise ApprovalRequired('100論文の見積りを確認して、AI処理を明示的に承認してください。')
+        if not job['approved']:return Classifier(None,os.environ.get('PAPERDESK_AI_MODEL','not-configured'))
         key=os.environ.get('PAPERDESK_AI_KEY');model=os.environ.get('PAPERDESK_AI_MODEL')
         if not key or not model:raise ApprovalRequired('運営者側のAI設定が未完了です。利用者によるAPI設定は不要です。')
         try:cap=job['cap'];ir=float(os.environ['PAPERDESK_INPUT_USD_PER_MILLION']);ou=float(os.environ['PAPERDESK_OUTPUT_USD_PER_MILLION'])

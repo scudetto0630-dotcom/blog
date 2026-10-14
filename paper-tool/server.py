@@ -10,7 +10,7 @@ import sqlite3
 import sys
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
-from urllib.parse import urlsplit
+from urllib.parse import urlsplit,parse_qs
 from app.models import STAGES, ValidationError, validate_input
 from app.store import Store
 from app.taxonomy import TAXONOMY, VERSION
@@ -81,6 +81,11 @@ class Handler(BaseHTTPRequestHandler):
             if self.command=='POST' and len(parts)==3:return self.respond(202,research.create(validate_input(self.input())))
             if self.command=='GET' and len(parts)==4:
                 job=research.get(parts[3]);return self.respond(200 if job else 404,job or {'error':'処理が見つかりません。'})
+            if self.command=='GET' and len(parts)==5 and parts[4]=='results':
+                try:
+                    query=parse_qs(urlsplit(self.path).query)
+                    return self.respond(200,research.results(parts[3],int(query.get('page',['0'])[0]),query.get('category',[None])[0],query.get('status',[None])[0]))
+                except ValueError as e:raise ValidationError(str(e))
             if self.command=='GET' and len(parts)==5 and parts[4]=='estimate':
                 try:return self.respond(200,research.estimate(parts[3]))
                 except ApprovalRequired as e:return self.respond(409,{'error':str(e)})

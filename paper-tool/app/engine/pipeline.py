@@ -26,6 +26,9 @@ def teacher_examples(bundle, paper, limit=8, version=None):
         if not labels:continue
         score=len(words.intersection(re.findall(r'[a-z]+',(row.get('title_en') or '').lower())))
         examples.append((score,{'pmid':row['pmid'],'title_en':row['title_en'],'human_raw_categories':labels,
+            'ai_original_categories':row['annotations']['EGCG'].get('ai_human',[]),
+            'human_added_categories':sorted(set(labels)-set(row['annotations']['EGCG'].get('ai_human',[]))),
+            'human_removed_categories':sorted(set(row['annotations']['EGCG'].get('ai_human',[]))-set(labels)),
             'human_folder':'ヒト試験効果あり','reason':None,'absence_does_not_mean_exclusion':True}))
     return [x[1] for x in sorted(examples,key=lambda x:(-x[0],x[1]['pmid']))[:limit]]
 
@@ -37,7 +40,7 @@ class Pipeline:
         with sqlite3.connect(path) as db:
             db.executescript('CREATE TABLE IF NOT EXISTS research_decisions(job TEXT,ingredient TEXT,pmid TEXT,round INTEGER,payload TEXT,PRIMARY KEY(job,ingredient,pmid,round)); CREATE TABLE IF NOT EXISTS research_final(job TEXT,ingredient TEXT,pmid TEXT,payload TEXT,PRIMARY KEY(job,ingredient,pmid)); CREATE TABLE IF NOT EXISTS research_cache(key TEXT PRIMARY KEY,payload TEXT);')
     def process(self,job,ingredient,paper,on_round=None):
-        signature=json.dumps(['threepass-v1',ingredient,paper,self.classifier.model,self.teacher_version],sort_keys=True,ensure_ascii=False)
+        signature=json.dumps(['threepass-v2',ingredient,paper,self.classifier.model,self.teacher_version],sort_keys=True,ensure_ascii=False)
         cache_key=hashlib.sha256(signature.encode()).hexdigest();checkpoint_job=job+':'+cache_key
         with sqlite3.connect(self.path) as db:cached=db.execute('SELECT payload FROM research_cache WHERE key=?',(cache_key,)).fetchone()
         if cached:
@@ -59,6 +62,8 @@ class Pipeline:
                     db.execute('INSERT OR IGNORE INTO research_decisions VALUES(?,?,?,?,?)',(checkpoint_job,ingredient,paper['pmid'],round_number,json.dumps(decision,ensure_ascii=False)))
             decisions.append(decision)
         final=final_decision(decisions[0],decisions[1:])
+        paper=dict(paper)
+        if isinstance(decisions[0].get('title_ja'),str) and decisions[0]['title_ja'].strip():paper['title_ja']=decisions[0]['title_ja'][:1200]
         result={'cache_reused':False,'teacher_version':self.teacher_version,'paper':paper,'ingredient':ingredient,'initial_decision':decisions[0],
             'checks':[{'round':i,'decision':d} for i,d in enumerate(decisions[1:],1)],'final_decision':final}
         with sqlite3.connect(self.path) as db:

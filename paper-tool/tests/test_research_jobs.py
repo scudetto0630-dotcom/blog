@@ -49,3 +49,12 @@ class JobsTests(unittest.TestCase):
    self.assertEqual(jobs.get(job['id'])['status'],'completed')
    with zipfile.ZipFile(io.BytesIO(jobs.archive(job['id']))) as z:
     self.assertEqual(len([n for n in z.namelist() if '/ヒト試験効果あり/' not in n and '/論文一覧_' in n]),51)
+
+ def test_cached_verified_result_reusable_with_billing_disabled(self):
+  import os
+  from unittest.mock import patch
+  with tempfile.TemporaryDirectory() as d:
+   jobs=self.setup_jobs(d,True);first=jobs.create({'name':'first','ingredients':['EGCG']});jobs.process(first['id'])
+   reopened=ResearchJobs(jobs.path,jobs.bundle,Client());second=reopened.create({'name':'second','ingredients':['EGCG']})
+   with patch.dict(os.environ,{'PAPERDESK_AI_MODEL':'mock'},clear=True):reopened.process(second['id'])
+   self.assertEqual(reopened.get(second['id'])['status'],'completed');self.assertIsNotNone(reopened.archive(second['id']))
