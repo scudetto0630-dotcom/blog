@@ -15,6 +15,8 @@ from app.models import STAGES, ValidationError, validate_input
 from app.store import Store
 from app.taxonomy import TAXONOMY, VERSION
 from app.worker import DemoWorker
+from app.engine.jobs import ResearchJobs
+from app.engine.decisions import ApprovalRequired
 
 ROOT = Path(__file__).resolve().parent
 STATIC = ROOT / 'app' / 'static'
@@ -72,8 +74,29 @@ class Handler(BaseHTTPRequestHandler):
             if origin and urlsplit(origin).netloc != self.headers.get('Host'):
                 return self.respond(403, {'error': '別のサイトからの操作は許可されていません。'})
         store = self.server.store
+        research=self.server.research
+        if research and path.startswith('/api/research/jobs'):
+            parts=path.strip('/').split('/')
+            if self.command=='GET' and len(parts)==3:return self.respond(200,{'jobs':research.list()})
+            if self.command=='POST' and len(parts)==3:return self.respond(202,research.create(validate_input(self.input())))
+            if self.command=='GET' and len(parts)==4:
+                job=research.get(parts[3]);return self.respond(200 if job else 404,job or {'error':'処理が見つかりません。'})
+            if self.command=='GET' and len(parts)==5 and parts[4]=='estimate':
+                try:return self.respond(200,research.estimate(parts[3]))
+                except ApprovalRequired as e:return self.respond(409,{'error':str(e)})
+            if self.command=='POST' and len(parts)==5 and parts[4]=='approve':
+                payload=self.input()
+                if not isinstance(payload,dict):raise ValidationError('入力形式が不正です。')
+                try:return self.respond(202,research.approve(parts[3],payload.get('cap_usd'),payload.get('estimate_fingerprint')))
+                except ApprovalRequired as e:return self.respond(403,{'error':str(e)})
+                except ValueError as e:raise ValidationError(str(e))
+            if self.command=='GET' and len(parts)==5 and parts[4]=='archive':
+                archive=research.archive(parts[3]);return self.respond(200 if archive else 409,archive or {'error':'結果ファイルはまだ生成されていません。'},'application/zip' if archive else 'application/json')
+            if self.command=='POST' and len(parts)==5 and parts[4]=='retry':
+                job=research.retry(parts[3]);return self.respond(202 if job else 404,job or {'error':'処理が見つかりません。'})
+            return self.respond(404,{'error':'この操作は利用できません。'})
         if self.command == 'GET':
-            if path == '/api/config': return self.respond(200, {'mode': 'demo', 'stages': STAGES, 'taxonomy': TAXONOMY, 'taxonomy_version': VERSION, 'taxonomy_provisional': False})
+            if path == '/api/config': return self.respond(200, {'mode': 'demo', 'stages': STAGES, 'taxonomy': TAXONOMY, 'taxonomy_version': VERSION, 'taxonomy_provisional': False,'research_engine_available':research is not None})
             if path == '/api/products': return self.respond(200, {'products': store.products()})
             if path == '/api/jobs': return self.respond(200, {'jobs': store.jobs()})
             if path.startswith('/api/products/'):
@@ -134,6 +157,8 @@ def main():
     store = Store(args.db)
     server = ThreadingHTTPServer((args.host, args.port), Handler)
     server.store, server.password = store, password
+    server.research=ResearchJobs(args.db,STATIC/'resources/provided.json.gz') if os.environ.get('PAPERDESK_RESEARCH_ENGINE')=='1' else None
+    if server.research:server.research.start()
     worker = DemoWorker(store, args.demo_delay)
     worker.start()
     print(f'PaperDesk demo: http://{args.host}:{args.port}', flush=True)
@@ -142,6 +167,7 @@ def main():
     finally:
         server.server_close()
         worker.stop()
+        if server.research:server.research.stop()
         lock.close()
 
 if __name__ == '__main__': main()

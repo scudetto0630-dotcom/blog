@@ -19,7 +19,7 @@
                 const response = await fetch('/config.json');
                 if (!response.ok) throw new Error();
                 const data = await response.json();
-                if (data.mode !== 'demo' || data.taxonomy.length !== 51 || data.taxonomy_version !== 'user-51-v1') throw new Error();
+                if (!['demo','provided'].includes(data.mode) || data.taxonomy.length !== 51 || data.taxonomy_version !== 'user-51-v1') throw new Error();
                 configuration = data;
             } catch { throw new Error('デモ設定を読み込めません。接続を確認して再試行してください。'); }
         }

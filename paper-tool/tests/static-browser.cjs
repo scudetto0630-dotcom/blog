@@ -5,10 +5,10 @@ async function test(name,fn){try{await fn();results.push({name,status:'passed'})
 async function go(hash){await page.goto(base+'/'+hash);await page.locator('main[aria-busy=false]').waitFor();}
 function listen(p){p.on('pageerror',e=>errors.push(e.message));p.on('request',r=>requests.push(r.url()));}
 (async()=>{try{
-await new Promise((resolve,reject)=>{const p=spawn('python',['tools/build_static.py'],{cwd:root,stdio:'ignore'});p.on('exit',c=>c===0?resolve():reject(new Error('build failed')))});
+await new Promise((resolve,reject)=>{const p=spawn('python',['tools/build_static.py','--demo'],{cwd:root,stdio:'ignore'});p.on('exit',c=>c===0?resolve():reject(new Error('build failed')))});
 server=spawn('python',['-m','http.server','8013','--bind','127.0.0.1','--directory','build'],{cwd:root,stdio:'ignore'});await waitFor(async()=> (await fetch(base)).ok);
 browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||'/usr/bin/chromium',headless:true,args:['--no-sandbox']});context=await browser.newContext({viewport:{width:1440,height:1000}});page=await context.newPage();listen(page);
-await test('無料版表示・ローカル保存説明',async()=>{await go('#/new');await page.getByText('無料デモ版 · このブラウザに保存',{exact:true}).waitFor();assert.ok(await page.locator('#run-demo').isDisabled());});
+await test('無料版表示・ローカル保存説明',async()=>{await go('#/new');await page.getByText('無料版 · このブラウザに保存',{exact:true}).waitFor();assert.ok(await page.locator('#run-demo').isDisabled());});
 await test('最大5成分・追加削除・重複警告',async()=>{await page.locator('#ingredient-0').fill('EGCG');for(let i=1;i<5;i++){await page.locator('#add-ingredient').click();await page.locator('#ingredient-'+i).fill(['','ビタミンC','亜鉛','Vitamin E','コラーゲン'][i]);}assert.ok(await page.locator('#add-ingredient').isDisabled());await page.locator('#ingredient-1').fill('egcg');assert.ok(await page.locator('#run-demo').isDisabled());while(await page.locator('.ingredient-field').count()>1)await page.getByRole('button',{name:'成分2を削除',exact:true}).click();});
 await test('ブラウザへの製品保存',async()=>{await page.locator('#product-name').fill('無料保存テスト');await page.locator('#save-product').click();await page.getByRole('status').filter({hasText:'製品を保存しました'}).waitFor();assert.equal((await page.evaluate(()=>BrowserStore.request('/products'))).products.length,1);});
 await test('更新後の保存保持',async()=>{await go('#/products');await page.reload();await page.locator('.product-card').waitFor();assert.match(await page.locator('.product-card').innerText(),/無料保存テスト/);});

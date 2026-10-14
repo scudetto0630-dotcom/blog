@@ -37,7 +37,7 @@ function showError(message, target = '#form-error') {
 function navigate(hash) { if (location.hash === hash) route(); else location.hash = hash; }
 function updateCount() { document.querySelector('#product-count').textContent = state.products.length; }
 async function refreshProducts() { const data = await api('/products'); state.products = data.products; updateCount(); }
-function bindNavigation(section) { document.querySelector('.topbar .demo-pill').textContent = section==='research' ? '提供データ' : 'デモモード'; document.querySelectorAll('[data-nav]').forEach(a => a.classList.toggle('active', a.dataset.nav === section)); }
+function bindNavigation(section) { document.querySelector('.topbar .demo-pill').textContent = section==='research' ? '提供データ' : state.config?.provided_data_enabled ? '提供資料を利用' : 'デモモード'; document.querySelectorAll('[data-nav]').forEach(a => a.classList.toggle('active', a.dataset.nav === section)); }
 function normalize(value) { return value.normalize('NFKC').trim().replace(/\s+/gu, ' ').toLocaleLowerCase(); }
 function inputError() {
     if (state.draft.name.length > 120) return '製品名は120文字以内で入力してください。';
@@ -94,6 +94,8 @@ function renderIngredients(focusIndex) {
 function newForm(title = '成分から、研究を整理する。') {
     bindNavigation('new');
     main.innerHTML = heading('NEW RESEARCH', title, '製品名と成分を入力して、論文仕分けの流れを体験しましょう。') + notice() + `<div class="input-layout"><section class="card"><div class="card-header"><h2><span class="step-number">01</span> 製品・成分を入力</h2><span class="pill demo-pill">最大5成分</span></div><form id="product-form" novalidate><div id="form-error"></div><div class="field"><label for="product-name">製品名<span class="optional">任意</span></label><input id="product-name" type="text" value="${escapeHTML(state.draft.name)}" maxlength="120" placeholder="例：製品A" autocomplete="off"><p class="field-help">未入力でも実行できます。後から名前を付けられます。</p></div><div class="card-header"><h3>対象の成分</h3><small id="ingredient-count">1 / 5</small></div><p class="field-help">日本語・英語どちらでも入力できます（各120文字以内）。</p><div id="ingredient-fields"></div><div id="duplicate-warning"></div><button type="button" id="add-ingredient" class="button secondary add-button">＋ 成分を追加</button><div class="form-actions"><button type="button" id="save-product" class="button secondary">${state.editId ? '変更を保存' : '入力内容を保存'}</button><button type="submit" id="run-demo" class="button primary">論文検索・仕分け開始 <span aria-hidden="true">→</span></button></div><p class="small-note">開始すると、7工程のデモ処理に進みます。</p></form></section><aside class="card guide"><h2>かんたん、3ステップ</h2><ol><li><strong>成分を入力</strong>調べたい成分を最大5種類登録します。</li><li><strong>デモ処理を開始</strong>7つの工程と進捗を確認します。</li><li><strong>結果を確認</strong>成分別・51分類別に表示できます。</li></ol><div class="guide-separator"></div><p>今回は画面と操作のデモ版です。PubMed検索、AI判定、ZIP出力は次の開発段階で追加します。</p><div class="guide-mark">✓ 保存した製品は後から編集できます</div></aside></div>`;
+    if(browserMode && state.config.provided_data_enabled){document.querySelector('#run-demo').textContent='論文を確認・ZIP出力 →';document.querySelector('.subtitle').textContent='製品名と成分を入力して、登録済みの実際の論文を確認できます。';document.querySelector('.demo-notice p').innerHTML='<strong>提供資料を利用</strong> — EGCG・カテキンの論文を登録済みです。ファイルの選択は不要です。新規検索・AI判定・独立再チェックは未稼働です。';document.querySelector('.topbar .demo-pill').textContent='提供資料を利用';document.querySelector('.small-note').textContent='入力した成分の論文一覧と結果ZIPへ進みます。';document.querySelector('.guide').innerHTML='<h2>かんたん、3ステップ</h2><ol><li><strong>成分を入力</strong>EGCG・カテキンの実データに対応しています。</li><li><strong>開始</strong>登録済み資料から成分に対応する論文を表示します。</li><li><strong>結果を確認</strong>人間版の分類・要確認論文を確認し、ZIPを保存できます。</li></ol>'; }
+    if(!browserMode && state.config.research_engine_available){document.querySelector('.subtitle').textContent='成分からPubMed論文を取得し、仕分けジョブを開始します。';document.querySelector('.demo-notice p').innerHTML='<strong>サーバー処理</strong> — AIの費用・承認設定がない場合は、無料の論文取得後に停止します。';document.querySelector('.topbar .demo-pill').textContent='サーバー処理';document.querySelector('.small-note').textContent='ブラウザを閉じても、稼働中のサーバーで処理を継続します。';document.querySelector('.guide').innerHTML='<h2>かんたん、3ステップ</h2><ol><li>製品・成分を入力</li><li>サーバー側で論文を取得・仕分け</li><li>完了後に結果ZIPを保存</li></ol>'; }
     renderIngredients();
     document.querySelector('#product-name').addEventListener('input', event => { state.draft.name = event.target.value; state.dirty = true; persistDraft(); validationFeedback(); });
     document.querySelector('#add-ingredient').addEventListener('click', () => { if (state.draft.ingredients.length < 5) { state.draft.ingredients.push(''); state.dirty = true; persistDraft(); renderIngredients(state.draft.ingredients.length - 1); } });
@@ -115,12 +117,14 @@ async function saveProduct() {
 async function runDemo(event) {
     event.preventDefault(); if (state.saving) return;
     const error = inputError(); if (error) return showError(error);
-    state.saving = true; validationFeedback(); document.querySelector('#run-demo').textContent = 'デモを開始しています…';
+    state.saving = true; validationFeedback(); document.querySelector('#run-demo').textContent = '準備しています…';
     try {
+        if (!browserMode && state.config.research_engine_available) { const job=await api('/research/jobs','POST',inputSnapshot());navigate('#/live/'+job.id);return; }
+        if (browserMode && state.config.provided_data_enabled) { await window.ResearchUI.run(inputSnapshot(),state.config); return; }
         const job = await api('/jobs', 'POST', inputSnapshot());
         state.dirty = false; navigate(`#/processing/${job.id}`);
     } catch (error) { showError(error.message); }
-    finally { state.saving = false; if (document.querySelector('#run-demo')) { document.querySelector('#run-demo').textContent = '論文検索・仕分け開始 →'; validationFeedback(); } }
+    finally { state.saving = false; if (document.querySelector('#run-demo')) { document.querySelector('#run-demo').textContent = state.config.provided_data_enabled ? '論文を確認・ZIP出力 →' : '論文検索・仕分け開始 →'; validationFeedback(); } }
 }
 function confirmDelete() {
     return new Promise(resolve => {
@@ -130,7 +134,7 @@ function confirmDelete() {
 }
 function productsView(query = '') {
     bindNavigation('products');
-    main.innerHTML = heading('PRODUCT LIBRARY', '保存した製品', '登録した成分を編集したり、同じ条件でデモを実行できます。', '<a href="#/new" id="fresh-product" class="button">＋ 新しく入力</a>') + `<div id="list-error"></div>${browserMode ? '<div class="backup-actions"><button id="backup-export" class="button secondary small">バックアップを保存</button><button id="backup-import" class="button secondary small">バックアップから復元</button><input id="backup-file" type="file" accept=".json,application/json" hidden></div>' : ''}<div class="search-bar"><input type="search" id="product-search" placeholder="製品名で検索" aria-label="製品名で検索" value="${escapeHTML(query)}"><small id="search-count"></small></div><div id="products-container"></div>`;
+    main.innerHTML = heading('PRODUCT LIBRARY', '保存した製品', state.config.provided_data_enabled ? '登録した成分を編集したり、同じ条件で論文を確認できます。' : '登録した成分を編集したり、同じ条件でデモを実行できます。', '<a href="#/new" id="fresh-product" class="button">＋ 新しく入力</a>') + `<div id="list-error"></div>${browserMode ? '<div class="backup-actions"><button id="backup-export" class="button secondary small">バックアップを保存</button><button id="backup-import" class="button secondary small">バックアップから復元</button><input id="backup-file" type="file" accept=".json,application/json" hidden></div>' : ''}<div class="search-bar"><input type="search" id="product-search" placeholder="製品名で検索" aria-label="製品名で検索" value="${escapeHTML(query)}"><small id="search-count"></small></div><div id="products-container"></div>`;
     document.querySelector('#fresh-product').addEventListener('click', () => { state.draft = {name:'', ingredients:['']}; state.editId = null; state.dirty = false; persistDraft(); });
     document.querySelector('#product-search').addEventListener('input', event => productCards(event.target.value));
     productCards(query);
@@ -139,7 +143,7 @@ function productsView(query = '') {
 function productCards(query) {
     const list = state.products.filter(p => productName(p.name).toLocaleLowerCase().includes(query.toLocaleLowerCase()));
     document.querySelector('#search-count').textContent = `${list.length}件`;
-    document.querySelector('#products-container').innerHTML = list.length ? `<div class="product-list">${list.map(p => `<article class="card product-card"><h2>${escapeHTML(productName(p.name))}</h2>${chips(p.ingredients)}<p class="product-meta">更新：${date(p.updated_at)}</p><div class="product-actions"><a class="button secondary small" href="#/edit/${p.id}">編集する</a><button class="button small product-run" data-id="${p.id}">デモを実行</button><button class="button text-button small product-delete" data-id="${p.id}" aria-label="${escapeHTML(productName(p.name))}を削除">削除</button></div></article>`).join('')}</div>` : `<section class="card empty-state"><div class="empty-icon" aria-hidden="true">▤</div><h2>${query ? '一致する製品がありません' : 'まだ製品が保存されていません'}</h2><p>${query ? '別の製品名で検索してください。' : '製品と成分を入力して保存すると、ここに表示されます。'}</p>${query ? '' : '<a href="#/new" class="button">最初の製品を入力</a>'}</section>`;
+    document.querySelector('#products-container').innerHTML = list.length ? `<div class="product-list">${list.map(p => `<article class="card product-card"><h2>${escapeHTML(productName(p.name))}</h2>${chips(p.ingredients)}<p class="product-meta">更新：${date(p.updated_at)}</p><div class="product-actions"><a class="button secondary small" href="#/edit/${p.id}">編集する</a><button class="button small product-run" data-id="${p.id}">${state.config.provided_data_enabled || state.config.research_engine_available ? '仕分け開始' : 'デモを実行'}</button><button class="button text-button small product-delete" data-id="${p.id}" aria-label="${escapeHTML(productName(p.name))}を削除">削除</button></div></article>`).join('')}</div>` : `<section class="card empty-state"><div class="empty-icon" aria-hidden="true">▤</div><h2>${query ? '一致する製品がありません' : 'まだ製品が保存されていません'}</h2><p>${query ? '別の製品名で検索してください。' : '製品と成分を入力して保存すると、ここに表示されます。'}</p>${query ? '' : '<a href="#/new" class="button">最初の製品を入力</a>'}</section>`;
     document.querySelectorAll('.product-delete').forEach(button => button.addEventListener('click', async () => {
         if (!await confirmDelete()) return;
         button.disabled = true;
@@ -152,7 +156,7 @@ function productCards(query) {
     document.querySelectorAll('.product-run').forEach(button => button.addEventListener('click', async () => {
         button.disabled = true;
         const product = state.products.find(p => p.id === button.dataset.id);
-        try { const job = await api('/jobs', 'POST', {name:product.name, ingredients:product.ingredients}); navigate(`#/processing/${job.id}`); }
+        try { if (!browserMode && state.config.research_engine_available) {const job=await api('/research/jobs','POST',{name:product.name,ingredients:product.ingredients});navigate('#/live/'+job.id);return;} if (browserMode && state.config.provided_data_enabled) {await window.ResearchUI.run({name:product.name,ingredients:product.ingredients},state.config);return;} const job = await api('/jobs', 'POST', {name:product.name, ingredients:product.ingredients}); navigate(`#/processing/${job.id}`); }
         catch (error) { button.disabled = false; showError(error.message, '#list-error'); }
     }));
 }
@@ -222,7 +226,9 @@ async function route() {
     try {
         if (!state.config) state.config = await api('/config');
         if (generation !== state.version) return;
-        if (section === 'research') { await window.ResearchUI.render(main,state.config); }
+        if (section === 'live') { await window.ResearchUI.renderLive(main,state.config,id); }
+        else if (section === 'research-result') { await window.ResearchUI.renderRun(main,state.config,id); }
+        else if (section === 'research') { await window.ResearchUI.render(main,state.config); }
         else if (section === 'new') { newForm(); }
         else if (section === 'products') { await refreshProducts(); if(generation===state.version) productsView(); }
         else if (section === 'edit') {
@@ -232,7 +238,9 @@ async function route() {
             const job = await api(`/jobs/${id}`); if(generation!==state.version) return;
             if (!(state.dirty && state.draftRoute === location.hash)) { state.editId=null; state.draft={name:job.snapshot.name,ingredients:[...job.snapshot.ingredients]}; state.dirty=false; persistDraft(); } newForm('履歴の入力を再利用');
         } else if (section === 'history') {
-            const data=await api('/jobs'); if(generation!==state.version)return; state.jobs=data.jobs; historyView();
+            const data=await api('/jobs'); if(generation!==state.version)return; state.jobs=data.jobs; historyView();if((state.config.provided_data_enabled || state.config.research_engine_available) && !state.jobs.length)main.innerHTML=heading('RESEARCH HISTORY','処理履歴','提供資料を利用した結果を再度確認できます。');
+            if(!browserMode && state.config.research_engine_available){const live=await api('/research/jobs');if(generation!==state.version)return;const list=document.createElement('section');list.className='card';list.innerHTML='<h2>サーバー処理の履歴</h2>'+live.jobs.map(j=>`<p><a href="#/live/${j.id}">${escapeHTML(productName(j.snapshot.name))}</a> · ${escapeHTML(j.snapshot.ingredients.join('・'))} · ${escapeHTML(j.status)}</p>`).join('');main.append(list);}
+            if(browserMode && state.config.provided_data_enabled){const runs=await window.ResearchUI.history();if(generation!==state.version)return;const section=document.createElement('section');section.className='card';section.innerHTML='<h2>提供資料の処理履歴</h2>'+runs.map(j=>`<p><a href="#/research-result/${j.id}">${escapeHTML(productName(j.snapshot.name))}</a> · ${escapeHTML(j.snapshot.ingredients.join('・'))}</p>`).join('');main.append(section);if(!runs.length && !state.jobs.length)section.innerHTML='<p>まだ処理履歴がありません。</p><a href="#/new" class="button">成分を入力する</a>';}
         } else if (section === 'processing' || section === 'results') {
             const job=await api(`/jobs/${id}`); if(generation!==state.version)return;
             if(job.status==='completed') { if(section==='processing') {navigate(`#/results/${id}`); return;} resultsView(job); }
@@ -250,7 +258,7 @@ async function route() {
 window.addEventListener('hashchange', route);
 if (browserMode) {
     const footer=document.querySelector('.site-footer');
-    footer.insertAdjacentHTML('beforebegin','<div class="storage-notice"><strong>無料デモ版 · このブラウザに保存</strong><p>端末間の共有はできません。ブラウザのデータ削除・別のURLへの移動では引き継がれないため、「保存した製品」からバックアップを保存してください。</p></div>');
+    footer.insertAdjacentHTML('beforebegin','<div class="storage-notice"><strong>無料版 · このブラウザに保存</strong><p>端末間の共有はできません。ブラウザのデータ削除・別のURLへの移動では引き継がれないため、「保存した製品」からバックアップを保存してください。</p></div>');
 }
 loadDraft(); route(); refreshProducts().catch(() => {});
 
