@@ -13,6 +13,7 @@ output=root/'build'
 output.mkdir(exist_ok=True)
 for source in (root/'app/static').iterdir():
     if source.is_file():shutil.copy2(source,output/source.name)
+    elif source.is_dir():shutil.copytree(source,output/source.name,dirs_exist_ok=True)
 p=output/'index.html'
 s=p.read_text().replace('<html lang="ja">','<html lang="ja" data-storage="browser">').replace('<script src="/app.js" defer>', '<script src="/browser-store.js" defer></script><script src="/app.js" defer>')
 p.write_text(s)

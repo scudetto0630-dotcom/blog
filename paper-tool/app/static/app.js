@@ -37,7 +37,7 @@ function showError(message, target = '#form-error') {
 function navigate(hash) { if (location.hash === hash) route(); else location.hash = hash; }
 function updateCount() { document.querySelector('#product-count').textContent = state.products.length; }
 async function refreshProducts() { const data = await api('/products'); state.products = data.products; updateCount(); }
-function bindNavigation(section) { document.querySelectorAll('[data-nav]').forEach(a => a.classList.toggle('active', a.dataset.nav === section)); }
+function bindNavigation(section) { document.querySelector('.topbar .demo-pill').textContent = section==='research' ? '提供データ' : 'デモモード'; document.querySelectorAll('[data-nav]').forEach(a => a.classList.toggle('active', a.dataset.nav === section)); }
 function normalize(value) { return value.normalize('NFKC').trim().replace(/\s+/gu, ' ').toLocaleLowerCase(); }
 function inputError() {
     if (state.draft.name.length > 120) return '製品名は120文字以内で入力してください。';
@@ -222,7 +222,8 @@ async function route() {
     try {
         if (!state.config) state.config = await api('/config');
         if (generation !== state.version) return;
-        if (section === 'new') { newForm(); }
+        if (section === 'research') { await window.ResearchUI.render(main,state.config); }
+        else if (section === 'new') { newForm(); }
         else if (section === 'products') { await refreshProducts(); if(generation===state.version) productsView(); }
         else if (section === 'edit') {
             const product = await api(`/products/${id}`); if(generation!==state.version) return;

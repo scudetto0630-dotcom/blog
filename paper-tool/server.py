@@ -82,7 +82,7 @@ class Handler(BaseHTTPRequestHandler):
             if path.startswith('/api/jobs/'):
                 item = store.get_job(path.split('/')[-1])
                 return self.respond(200 if item else 404, item or {'error': '処理履歴が見つかりません。'})
-            files = {'/': ('index.html', 'text/html; charset=utf-8'), '/app.js': ('app.js', 'text/javascript; charset=utf-8'), '/style.css': ('style.css', 'text/css; charset=utf-8'), '/mark.svg': ('mark.svg', 'image/svg+xml')}
+            files = {'/': ('index.html', 'text/html; charset=utf-8'), '/app.js': ('app.js', 'text/javascript; charset=utf-8'), '/style.css': ('style.css', 'text/css; charset=utf-8'), '/mark.svg': ('mark.svg', 'image/svg+xml'), '/research.js': ('research.js', 'text/javascript; charset=utf-8'), '/research-worker.js': ('research-worker.js', 'text/javascript; charset=utf-8'), '/vendor/fflate.js': ('vendor/fflate.js', 'text/javascript; charset=utf-8')}
             if path in files:
                 name, mime = files[path]
                 return self.respond(200, (STATIC / name).read_bytes(), mime)
