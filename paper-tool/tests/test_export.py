@@ -16,3 +16,7 @@ class ExportTests(unittest.TestCase):
    self.assertEqual(skin,liver);self.assertLess(skin.index('124/'),skin.index('123/'));self.assertNotIn('125/',skin)
    self.assertIn('125/',z.read(next(n for n in z.namelist() if n.endswith('/要確認論文.txt'))).decode())
    self.assertIn('126/',z.read(next(n for n in z.namelist() if n.endswith('/除外論文.txt'))).decode())
+
+ def test_dot_only_names_cannot_create_parent_paths(self):
+  with zipfile.ZipFile(io.BytesIO(export_results('..',[],['..']))) as z:
+   self.assertTrue(all('..' not in n.split('/') and '.' not in n.split('/') for n in z.namelist()))

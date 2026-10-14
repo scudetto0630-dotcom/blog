@@ -7,7 +7,7 @@ from ..taxonomy import NAMES
 
 def export_results(product, results, ingredients=None):
     """Actual pipeline outputs, never substitute demo judgments."""
-    safe=lambda value:re.sub(r'[\\/:*?"<>|\x00-\x1f]', '_', value)[:120] or '製品名未設定'
+    safe=lambda value:re.sub(r'[\\/:*?"<>|\x00-\x1f]', '_', value)[:120].strip(' .') or '製品名未設定'
     def block(result):
         paper=result['paper'];published=paper.get('publication_date',{})
         date='/'.join(published.get(k,'') for k in ('Year','Month')).strip('/') or published.get('MedlineDate','年月未確認')
