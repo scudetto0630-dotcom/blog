@@ -1,4 +1,5 @@
 'use strict';
+const browserMode = document.documentElement.dataset.storage === 'browser';
 const main = document.querySelector('#main');
 const state = {config: null, products: [], jobs: [], timer: null, version: 0, saving: false, dirty: false, draftRoute: '', draft: {name: '', ingredients: ['']}, editId: null};
 const labels = {adopted: '採用', excluded: '除外', review: '要確認', completed: '完了', running: '処理中', queued: '待機中', failed: 'エラー'};
@@ -16,6 +17,7 @@ function toast(message) {
     clearTimeout(toastTimeout); toastTimeout = setTimeout(() => node.hidden = true, 3500);
 }
 async function api(path, method = 'GET', body) {
+    if (browserMode) return window.BrowserStore.request(path, method, body);
     const controller = new AbortController(); const timeout = setTimeout(() => controller.abort(), 10000);
     try {
         const response = await fetch(`/api${path}`, {method, headers: body ? {'Content-Type':'application/json'} : {}, body: body ? JSON.stringify(body) : undefined, signal: controller.signal});
@@ -128,10 +130,11 @@ function confirmDelete() {
 }
 function productsView(query = '') {
     bindNavigation('products');
-    main.innerHTML = heading('PRODUCT LIBRARY', '保存した製品', '登録した成分を編集したり、同じ条件でデモを実行できます。', '<a href="#/new" id="fresh-product" class="button">＋ 新しく入力</a>') + `<div id="list-error"></div><div class="search-bar"><input type="search" id="product-search" placeholder="製品名で検索" aria-label="製品名で検索" value="${escapeHTML(query)}"><small id="search-count"></small></div><div id="products-container"></div>`;
+    main.innerHTML = heading('PRODUCT LIBRARY', '保存した製品', '登録した成分を編集したり、同じ条件でデモを実行できます。', '<a href="#/new" id="fresh-product" class="button">＋ 新しく入力</a>') + `<div id="list-error"></div>${browserMode ? '<div class="backup-actions"><button id="backup-export" class="button secondary small">バックアップを保存</button><button id="backup-import" class="button secondary small">バックアップから復元</button><input id="backup-file" type="file" accept=".json,application/json" hidden></div>' : ''}<div class="search-bar"><input type="search" id="product-search" placeholder="製品名で検索" aria-label="製品名で検索" value="${escapeHTML(query)}"><small id="search-count"></small></div><div id="products-container"></div>`;
     document.querySelector('#fresh-product').addEventListener('click', () => { state.draft = {name:'', ingredients:['']}; state.editId = null; state.dirty = false; persistDraft(); });
     document.querySelector('#product-search').addEventListener('input', event => productCards(event.target.value));
     productCards(query);
+    if (browserMode) bindBackup();
 }
 function productCards(query) {
     const list = state.products.filter(p => productName(p.name).toLocaleLowerCase().includes(query.toLocaleLowerCase()));
@@ -161,7 +164,7 @@ function progressView(job, connectionError = '') {
     bindNavigation('history');
     const completed = job.completed_steps; const percent = Math.round(completed / 7 * 100);
     const current = job.status === 'completed' ? 'デモ処理が完了しました' : job.status === 'failed' ? '処理を中断しました' : job.status === 'queued' ? 'デモ処理の開始を待っています' : state.config.stages[Math.min(completed,6)];
-    main.innerHTML = `<a href="#/history" class="back-link">← 処理履歴に戻る</a>` + heading('DEMO PROCESSING', '研究整理の流れを確認', 'ブラウザを閉じてもデモ処理はサーバー側で続きます。') + notice(' 2回の再チェックも固定のデモ演出です。') + (connectionError ? errorBanner(connectionError) + '<button id="retry-progress" class="button secondary small">接続を再確認</button>' : '') + (job.error ? errorBanner(job.error) : '') + `<div class="progress-layout"><section class="card"><div class="progress-header"><h2 id="current-stage">${escapeHTML(current)}</h2><span class="percentage">${percent}<small>%</small></span></div><div class="progress-track" role="progressbar" aria-label="全体の進捗" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${percent}"><div class="progress-fill" style="width:${percent}%"></div></div><p class="progress-caption" aria-live="polite">${completed} / 7工程完了 · ${labels[job.status]}</p><ol class="stage-list">${state.config.stages.map((stage,index) => `<li class="stage ${index < completed ? 'done' : index === completed && job.status === 'running' ? 'active' : ''}"><span class="stage-icon" aria-hidden="true">${index < completed ? '✓' : index === completed && job.status === 'running' ? '' : index+1}</span><span>${stage}</span><span class="stage-tag">${index < completed ? '完了' : index === completed && job.status === 'running' ? 'デモ処理中' : '未処理'}</span></li>`).join('')}</ol></section><aside class="progress-aside"><section class="card count-card"><dl><div><dt>対象成分数</dt><dd>${job.snapshot.ingredients.length}<small>種類</small></dd></div><div><dt>処理済みサンプル数</dt><dd>${job.processed_count}<small>件</small></dd></div></dl></section><section class="card"><h3>${escapeHTML(productName(job.snapshot.name))}</h3>${chips(job.snapshot.ingredients)}<p class="offline-note">実際の論文は取得していません。</p>${badge(job.status)}</section></aside></div>` + (job.status === 'failed' ? `<div class="form-actions"><a class="button" href="#/reuse/${job.id}">入力を再利用してやり直す</a></div>` : '');
+    main.innerHTML = `<a href="#/history" class="back-link">← 処理履歴に戻る</a>` + heading('DEMO PROCESSING', '研究整理の流れを確認', browserMode ? 'デモはこの画面で進みます。閉じた場合は、履歴から続きを再開できます。' : 'ブラウザを閉じてもデモ処理はサーバー側で続きます。') + notice(' 2回の再チェックも固定のデモ演出です。') + (connectionError ? errorBanner(connectionError) + '<button id="retry-progress" class="button secondary small">接続を再確認</button>' : '') + (job.error ? errorBanner(job.error) : '') + `<div class="progress-layout"><section class="card"><div class="progress-header"><h2 id="current-stage">${escapeHTML(current)}</h2><span class="percentage">${percent}<small>%</small></span></div><div class="progress-track" role="progressbar" aria-label="全体の進捗" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${percent}"><div class="progress-fill" style="width:${percent}%"></div></div><p class="progress-caption" aria-live="polite">${completed} / 7工程完了 · ${labels[job.status]}</p><ol class="stage-list">${state.config.stages.map((stage,index) => `<li class="stage ${index < completed ? 'done' : index === completed && job.status === 'running' ? 'active' : ''}"><span class="stage-icon" aria-hidden="true">${index < completed ? '✓' : index === completed && job.status === 'running' ? '' : index+1}</span><span>${stage}</span><span class="stage-tag">${index < completed ? '完了' : index === completed && job.status === 'running' ? 'デモ処理中' : '未処理'}</span></li>`).join('')}</ol></section><aside class="progress-aside"><section class="card count-card"><dl><div><dt>対象成分数</dt><dd>${job.snapshot.ingredients.length}<small>種類</small></dd></div><div><dt>処理済みサンプル数</dt><dd>${job.processed_count}<small>件</small></dd></div></dl></section><section class="card"><h3>${escapeHTML(productName(job.snapshot.name))}</h3>${chips(job.snapshot.ingredients)}<p class="offline-note">実際の論文は取得していません。</p>${badge(job.status)}</section></aside></div>` + (job.status === 'failed' ? `<div class="form-actions"><a class="button" href="#/reuse/${job.id}">入力を再利用してやり直す</a></div>` : '');
     document.querySelector('#retry-progress')?.addEventListener('click', () => route());
 }
 function beginPolling(jobId, generation, initial) {
@@ -239,9 +242,39 @@ async function route() {
         window.scrollTo({top:0,behavior:'instant'});
     } catch(error) {
         if(generation!==state.version)return;
-        main.innerHTML=heading('CONNECTION','画面を読み込めませんでした','保存済みの製品や履歴はサーバーに保持されています。')+errorBanner(error.message)+'<button id="retry-page" class="button">再試行</button>';
+        main.innerHTML=heading('CONNECTION','画面を読み込めませんでした',browserMode ? '保存済みの製品や履歴は、このブラウザに保存されています。' : '保存済みの製品や履歴はサーバーに保持されています。')+errorBanner(error.message)+'<button id="retry-page" class="button">再試行</button>';
         document.querySelector('#retry-page').addEventListener('click',route);
     } finally { if(generation===state.version)main.setAttribute('aria-busy','false'); }
 }
 window.addEventListener('hashchange', route);
+if (browserMode) {
+    const footer=document.querySelector('.site-footer');
+    footer.insertAdjacentHTML('beforebegin','<div class="storage-notice"><strong>無料デモ版 · このブラウザに保存</strong><p>端末間の共有はできません。ブラウザのデータ削除・別のURLへの移動では引き継がれないため、「保存した製品」からバックアップを保存してください。</p></div>');
+}
 loadDraft(); route(); refreshProducts().catch(() => {});
+
+function bindBackup() {
+    document.querySelector('#backup-export').addEventListener('click',async()=>{
+        try {
+            const data=await window.BrowserStore.exportData();
+            const url=URL.createObjectURL(new Blob([JSON.stringify(data,null,2)],{type:'application/json'}));
+            const a=document.createElement('a');a.href=url;a.download='PaperDesk-backup-'+new Date().toISOString().slice(0,10)+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);toast('バックアップファイルを保存しました。');
+        } catch(error){showError(error.message,'#list-error');}
+    });
+    document.querySelector('#backup-import').addEventListener('click',()=>document.querySelector('#backup-file').click());
+    document.querySelector('#backup-file').addEventListener('change',async event=>{
+        const file=event.target.files[0];if(!file)return;
+        try {
+            if(file.size>10*1024*1024)throw new Error('バックアップは10MB以内のファイルを指定してください。');
+            let data;try{data=JSON.parse(await file.text());}catch{throw new Error('バックアップファイルを読み取れません。現在のデータは変更していません。');}
+            const dialog=document.querySelector('#confirm-dialog');
+            const previousTitle=document.querySelector('#dialog-title').textContent;const previousDescription=document.querySelector('#dialog-description').textContent;
+            document.querySelector('#dialog-title').textContent='バックアップから復元しますか？';document.querySelector('#dialog-description').textContent='現在の製品と履歴を、バックアップの内容に置き換えます。必要なら先にバックアップを保存してください。';
+            const confirmButton=dialog.querySelector('[value="delete"]');confirmButton.textContent='復元する';
+            const confirmed=await confirmDelete();document.querySelector('#dialog-title').textContent=previousTitle;document.querySelector('#dialog-description').textContent=previousDescription;confirmButton.textContent='削除する';
+            if(!confirmed)return;
+            await window.BrowserStore.importData(data);state.editId=null;state.draft={name:'',ingredients:['']};state.dirty=false;persistDraft();await refreshProducts();productsView();toast('バックアップから復元しました。');
+        }catch(error){showError(error.message,'#list-error');}
+        finally{if(document.querySelector('#backup-file'))document.querySelector('#backup-file').value='';}
+    });
+}

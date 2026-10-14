@@ -1,0 +1,98 @@
+{
+  "passed": 23,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "無料版表示・ローカル保存説明",
+      "status": "passed"
+    },
+    {
+      "name": "最大5成分・追加削除・重複警告",
+      "status": "passed"
+    },
+    {
+      "name": "ブラウザへの製品保存",
+      "status": "passed"
+    },
+    {
+      "name": "更新後の保存保持",
+      "status": "passed"
+    },
+    {
+      "name": "検索・編集・更新",
+      "status": "passed"
+    },
+    {
+      "name": "7工程のローカルデモ開始",
+      "status": "passed"
+    },
+    {
+      "name": "進捗・ページ更新・途中から再開",
+      "status": "passed"
+    },
+    {
+      "name": "タブを閉じたときは休止・履歴から再開",
+      "status": "passed"
+    },
+    {
+      "name": "結果・51分類・フィルター・ZIP無効化",
+      "status": "passed"
+    },
+    {
+      "name": "2回のチェック履歴・再利用",
+      "status": "passed"
+    },
+    {
+      "name": "保存容量エラー時に入力保持",
+      "status": "passed"
+    },
+    {
+      "name": "JSONバックアップのダウンロード",
+      "status": "passed"
+    },
+    {
+      "name": "製品削除・履歴保持",
+      "status": "passed"
+    },
+    {
+      "name": "JSONバックアップ復元・製品と履歴",
+      "status": "passed"
+    },
+    {
+      "name": "不正バックアップを拒否し既存データを保持",
+      "status": "passed"
+    },
+    {
+      "name": "復元中の書き込み失敗を原子的に取り消す",
+      "status": "passed"
+    },
+    {
+      "name": "悪意ある結果URLは復元で採用しない",
+      "status": "passed"
+    },
+    {
+      "name": "別ブラウザにはデータを共有しない",
+      "status": "passed"
+    },
+    {
+      "name": "PC無料版の全画面表示",
+      "status": "passed"
+    },
+    {
+      "name": "タブレット無料版の全画面表示",
+      "status": "passed"
+    },
+    {
+      "name": "スマートフォン無料版の全画面表示",
+      "status": "passed"
+    },
+    {
+      "name": "ブラウザ終了後も同じプロフィールで保存を復元",
+      "status": "passed"
+    },
+    {
+      "name": "バックエンドAPI通信なし・JavaScript例外なし",
+      "status": "passed"
+    }
+  ]
+}

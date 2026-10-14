@@ -1,20 +1,17 @@
 services:
   - type: web
     name: paperdesk-demo
-    runtime: python
+    runtime: static
     rootDir: paper-tool
-    plan: starter
-    buildCommand: python -m compileall -q app server.py
-    startCommand: python server.py --host 0.0.0.0
-    healthCheckPath: /health
-    envVars:
-      - key: PYTHON_VERSION
-        value: 3.12.14
-      - key: DATABASE_PATH
-        value: /var/data/paperdesk.sqlite3
-      - key: APP_ACCESS_PASSWORD
-        generateValue: true
-    disk:
-      name: paperdesk-data
-      mountPath: /var/data
-      sizeGB: 1
+    buildCommand: python3 tools/build_static.py
+    staticPublishPath: build
+    headers:
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /*
+        name: Referrer-Policy
+        value: no-referrer
+      - path: /*
+        name: Content-Security-Policy
+        value: "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'self'"
