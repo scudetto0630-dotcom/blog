@@ -13,7 +13,7 @@ class NoRedirect(urllib.request.HTTPRedirectHandler):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('operation', choices=['status', 'home', 'page', 'starter-posts', 'starter-status', 'starter-review', 'starter-refresh', 'managed-article', 'starter-image'])
+    parser.add_argument('operation', choices=['status', 'home', 'page', 'starter-posts', 'starter-status', 'starter-review', 'starter-refresh', 'managed-article', 'starter-image', 'plugin-update'])
     parser.add_argument('--payload', help='JSON file required for home/page writes')
     parser.add_argument('--query-route', action='store_true', help='Use WordPress rest_route query syntax')
     args = parser.parse_args()
