@@ -1,0 +1,12 @@
+{
+  "scope": "Homepage, profile, editorial policy, category descriptions, shared profile, introduction post and three articles",
+  "plugin_version_verified_by_site_audit": "1.7.2",
+  "status_endpoint_limitation": "Existing status endpoint still reports hardcoded 1.7.1; installed header was independently checked by site-audit.",
+  "public_pages_collected": 16,
+  "textlint_findings": 0,
+  "php_tests": 123,
+  "php_failed": 0,
+  "browser_checks": 41,
+  "browser_failed": 0,
+  "naturalness": "Manually reviewed using user feedback; automated checks do not prove naturalness."
+}
