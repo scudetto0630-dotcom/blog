@@ -22,3 +22,31 @@ jobs:
           name: blog-audit
           path: blog-audit.json
           retention-days: 30
+
+  japanese-copy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: tools/proofreading/package-lock.json
+      - name: Install Japanese proofreading tools
+        run: npm ci --prefix tools/proofreading --no-audit --no-fund
+      - name: Collect public Japanese copy
+        run: python tools/proofread-site.py --output /tmp/blog-copy
+      - name: Proofread public Japanese copy
+        run: tools/proofreading/node_modules/.bin/textlint --config tools/proofreading/.textlintrc.json --format json '/tmp/blog-copy/*.md' > proofreading.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: japanese-proofreading
+          path: |
+            proofreading.json
+            /tmp/blog-copy/*.md
+          retention-days: 30

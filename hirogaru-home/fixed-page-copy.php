@@ -15,7 +15,17 @@ add_filter('the_content',function($content){
     if (is_singular('page') && in_the_loop() && is_main_query()) { return hsh_fixed_page_copy($content,get_the_ID()); }
     return $content;
 },21);
-add_filter('comment_form_defaults',function($defaults){
-    $defaults['comment_notes_before']='<p class="comment-notes">メールアドレスは公開されません。*印のある欄は必須項目です。</p>';
-    return $defaults;
+function hsh_comment_note_copy($html) {
+    return str_replace(' が付いている欄は必須項目です</p>','印のある欄は必須項目です。</p>',$html);
+}
+// Cocoon supplies explicit form arguments, which override comment_form_defaults.
+// Restrict buffering to the core's paired comment-form hooks; preserve every field.
+add_action('comment_form_before',function(){
+    $GLOBALS['hsh_comment_buffer_levels'][]=ob_get_level();
+    ob_start('hsh_comment_note_copy');
+});
+add_action('comment_form_after',function(){
+    if(empty($GLOBALS['hsh_comment_buffer_levels'])){return;}
+    $level=array_pop($GLOBALS['hsh_comment_buffer_levels']);
+    if(ob_get_level()===$level+1){ob_end_flush();}
 });

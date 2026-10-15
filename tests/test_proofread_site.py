@@ -14,6 +14,8 @@ class ExtractionTests(unittest.TestCase):
     def test_scripts_and_hidden_share_buttons_are_excluded(self):
         rows=self.extract('<script>wrong prose</script><div class="sns-share">隠されたボタン</div><p>公開された本文です。</p>')
         self.assertEqual(rows,['公開された本文です。'])
+    def test_linked_image_alternative_text_is_retained(self):
+        self.assertEqual(self.extract('<a href="/full.webp"><img alt="確認手順のイラスト" src="/small.webp"></a>'),['### 確認手順のイラスト'])
     def test_nested_card_preserves_separate_heading_and_description(self):
         rows=self.extract('<a href="/cat/"><h2>猫との暮らし</h2><p>猫用品の選び方を紹介します。</p></a>')
         self.assertEqual(rows,['## 猫との暮らし','猫用品の選び方を紹介します。'])

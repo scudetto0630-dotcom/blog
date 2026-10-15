@@ -31,7 +31,7 @@ def walk(n):
  if hidden(n):return []
  if n.tag in blocks and not nestedblock(n):
   t=' '.join(text(n).split())
-  if not t:return []
+  if not t:return [row for child in n.children for row in walk(child)]
   is_heading=n.tag.startswith('h') and n.tag[1:].isdigit()
   is_label=(n.tag=='p' and (t.endswith(('…','...')) or any(x in n.attrs.get('class','').split() for x in ['hsh-kicker','hsh-eyebrow']) or t.startswith('制定日：'))) or n.tag not in ('p','figcaption') or any(x in n.attrs.get('class','').split() for x in ['entry-card-snippet']) or (n.tag=='p' and '。' not in t and any(isinstance(x,Node) and x.tag=='a' for x in n.children))
   return [('## ' if is_heading else '### ' if is_label else '')+t]

@@ -11,4 +11,6 @@ check(strpos($changed,'<h1')===false && strpos($changed,'広告を配信する�
 check(strpos($changed,'<p>責任の範囲は変えません。</p>')!==false,'other privacy clauses preserved');
 check(hsh_edit_home(new Request(array('heading_2'=>'','heading_3'=>'')))->data['updated']===true,'optional heading lines may be omitted');
 check(hsh_edit_home(new Request(array('heading_1'=>'')))->code==='hsh_heading','main heading remains required');
+$form='<form action="/wp-comments-post.php"><p class="comment-notes"><span>*</span> が付いている欄は必須項目です</p><input name="email" value=""><textarea name="comment"></textarea></form>';
+$fixed=hsh_comment_note_copy($form);check(strpos($fixed,'印のある欄は必須項目です。')!==false && strpos($fixed,'<input name="email" value=""><textarea name="comment"></textarea>')!==false,'theme comment note corrected while form fields remain intact');
 echo "All proofreading copy tests passed. Total tests: $tests\n";
