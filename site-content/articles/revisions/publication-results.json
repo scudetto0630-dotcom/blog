@@ -1,0 +1,388 @@
+{
+  "plugin_version": "1.4.0",
+  "revision": "visual-20261015-v1",
+  "articles": [
+    {
+      "slug": "cat-carrier-checklist",
+      "id": 33,
+      "status": "publish",
+      "fingerprint": "fb3a29a942fab4049e5d541464562755bc2b87e1a8b065c5f2b1e6ae0ffdde62",
+      "title": "猫用キャリーの選び方｜通院前に確認したい5つのポイント",
+      "revision": "visual-20261015-v1",
+      "featured_image_id": 37,
+      "url": "https://hirogarushumi.com/cat-carrier-checklist/"
+    },
+    {
+      "slug": "highball-measure-and-adjust",
+      "id": 34,
+      "status": "publish",
+      "fingerprint": "263962ac654f6536fdcea5f5a9b548a7d06b051ffa00e86c83969914bd9228a2",
+      "title": "家のハイボールが薄い？分量を量って好みを見つける作り方",
+      "revision": "visual-20261015-v1",
+      "featured_image_id": 39,
+      "url": "https://hirogarushumi.com/highball-measure-and-adjust/"
+    },
+    {
+      "slug": "csv-import-seven-checks",
+      "id": 35,
+      "status": "publish",
+      "fingerprint": "64b2c513a4e431220cd8aac812845d156d21333c98da974632fba0e97dff1565",
+      "title": "CSVをシステムに取り込む前の7つの確認｜文字化け・先頭ゼロ・重複を防ぐ",
+      "revision": "visual-20261015-v1",
+      "featured_image_id": 41,
+      "url": "https://hirogarushumi.com/csv-import-seven-checks/"
+    }
+  ],
+  "public_verification": [
+    {
+      "url": "https://hirogarushumi.com/cat-carrier-checklist/",
+      "http": 200,
+      "images": [
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-csv-cover-d0aca20904-1024x576.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-cat-diagram-858d7777d4.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-cat-diagram-858d7777d4-1024x683.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-cat-cover-327b450159-120x68.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-whisky-cover-40db6d3fad-120x68.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-csv-cover-d0aca20904-320x180.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-whisky-cover-40db6d3fad-1024x576.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-csv-cover-d0aca20904-120x68.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-csv-cover-d0aca20904-160x90.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-cat-cover-327b450159.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-whisky-cover-40db6d3fad-160x90.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-whisky-cover-40db6d3fad-768x432.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-cat-cover-327b450159-160x90.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-whisky-cover-40db6d3fad-300x169.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-whisky-cover-40db6d3fad-320x180.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-csv-cover-d0aca20904.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-csv-cover-d0aca20904-300x169.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-csv-cover-d0aca20904-1536x864.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-cat-cover-327b450159-300x169.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-csv-cover-d0aca20904-768x432.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-whisky-cover-40db6d3fad-1536x864.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-cat-cover-327b450159-768x432.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-whisky-cover-40db6d3fad.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-cat-cover-327b450159-1536x864.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-cat-cover-327b450159-320x180.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-cat-cover-327b450159-1024x576.png",
+          200
+        ]
+      ],
+      "introduction_verified": true,
+      "featured_image_id": 37
+    },
+    {
+      "url": "https://hirogarushumi.com/highball-measure-and-adjust/",
+      "http": 200,
+      "images": [
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-csv-cover-d0aca20904-1024x576.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-whisky-diagram-538b425672.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-cat-cover-327b450159-120x68.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-whisky-cover-40db6d3fad-120x68.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-csv-cover-d0aca20904-320x180.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-whisky-cover-40db6d3fad-1024x576.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-csv-cover-d0aca20904-120x68.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-csv-cover-d0aca20904-160x90.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-cat-cover-327b450159.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-whisky-cover-40db6d3fad-160x90.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-whisky-cover-40db6d3fad-768x432.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-cat-cover-327b450159-160x90.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-whisky-cover-40db6d3fad-300x169.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-whisky-cover-40db6d3fad-320x180.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-csv-cover-d0aca20904.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-csv-cover-d0aca20904-300x169.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-csv-cover-d0aca20904-1536x864.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-whisky-diagram-538b425672-1024x683.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-cat-cover-327b450159-300x169.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-csv-cover-d0aca20904-768x432.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-whisky-cover-40db6d3fad-1536x864.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-cat-cover-327b450159-768x432.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-whisky-cover-40db6d3fad.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-cat-cover-327b450159-1536x864.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-cat-cover-327b450159-320x180.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-cat-cover-327b450159-1024x576.png",
+          200
+        ]
+      ],
+      "introduction_verified": true,
+      "featured_image_id": 39
+    },
+    {
+      "url": "https://hirogarushumi.com/csv-import-seven-checks/",
+      "http": 200,
+      "images": [
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-csv-cover-d0aca20904-1024x576.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-cat-cover-327b450159-120x68.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-whisky-cover-40db6d3fad-120x68.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-csv-cover-d0aca20904-320x180.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-whisky-cover-40db6d3fad-1024x576.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-csv-cover-d0aca20904-120x68.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-csv-diagram-bcd246a9c2.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-csv-cover-d0aca20904-160x90.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-csv-diagram-bcd246a9c2-1024x683.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-cat-cover-327b450159.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-whisky-cover-40db6d3fad-160x90.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-whisky-cover-40db6d3fad-768x432.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-cat-cover-327b450159-160x90.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-csv-cover-d0aca20904.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-whisky-cover-40db6d3fad-300x169.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-whisky-cover-40db6d3fad-320x180.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-csv-cover-d0aca20904-300x169.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-csv-cover-d0aca20904-1536x864.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-cat-cover-327b450159-300x169.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-csv-cover-d0aca20904-768x432.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-whisky-cover-40db6d3fad-1536x864.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-whisky-cover-40db6d3fad.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-cat-cover-327b450159-768x432.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-cat-cover-327b450159-1536x864.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-cat-cover-327b450159-320x180.png",
+          200
+        ],
+        [
+          "https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-cat-cover-327b450159-1024x576.png",
+          200
+        ]
+      ],
+      "introduction_verified": true,
+      "featured_image_id": 41
+    },
+    {
+      "homepage_http": 200,
+      "three_covers": true
+    }
+  ],
+  "browser_checks": {
+    "passed": 6,
+    "failed": 0,
+    "viewports": [
+      1440,
+      390
+    ],
+    "method": "Chromium with request interception through Python HTTPS certificate-verified fetch; direct Chromium rejected environment CA",
+    "scope": "public WordPress HTML and same-origin resources; third-party widgets excluded"
+  }
+}
