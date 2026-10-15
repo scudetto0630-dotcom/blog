@@ -13,16 +13,16 @@ class NoRedirect(urllib.request.HTTPRedirectHandler):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('operation', choices=['status', 'home', 'page', 'starter-posts', 'starter-status', 'starter-review', 'starter-refresh', 'managed-article', 'starter-image', 'plugin-update'])
+    parser.add_argument('operation', choices=['status', 'home', 'page', 'starter-posts', 'starter-status', 'starter-review', 'starter-refresh', 'managed-article', 'starter-image', 'plugin-update', 'site-audit', 'site-verification'])
     parser.add_argument('--payload', help='JSON file required for home/page writes')
     parser.add_argument('--query-route', action='store_true', help='Use WordPress rest_route query syntax')
     args = parser.parse_args()
     token = os.environ.get('HSH_EDIT_TOKEN')
     if not token:
         parser.error('HSH_EDIT_TOKEN is missing. Register it securely in environment settings; never paste it into chat.')
-    if args.operation not in ('status', 'starter-status', 'starter-review') and not args.payload:
+    if args.operation not in ('status', 'starter-status', 'starter-review', 'site-audit') and not args.payload:
         parser.error('--payload is required for writes')
-    if args.operation in ('status', 'starter-status', 'starter-review') and args.payload:
+    if args.operation in ('status', 'starter-status', 'starter-review', 'site-audit') and args.payload:
         parser.error('status does not accept a payload')
     data = None
     if args.payload:

@@ -1,0 +1,24 @@
+name: Blog public health check
+on:
+  schedule:
+    - cron: '0 21 * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  public-checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check public pages and internal links
+        run: python tools/blog-audit.py --output blog-audit.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: blog-audit
+          path: blog-audit.json
+          retention-days: 30

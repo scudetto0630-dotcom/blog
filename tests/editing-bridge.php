@@ -16,6 +16,7 @@ function add_action(...$args){}
 function add_filter(...$args){}
 function register_deactivation_hook(...$args){}
 function plugin_dir_path($path){return dirname($path).'/';}
+function plugin_dir_url($path){return 'https://example.test/plugins/hirogaru-home/';}
 function sanitize_textarea_field($value){return strip_tags($value);}
 function sanitize_text_field($value){return trim(strip_tags($value));}
 function wp_kses_post($value){return $value;} // WP implementation is outside this test.

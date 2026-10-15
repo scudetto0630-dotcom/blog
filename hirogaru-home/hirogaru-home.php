@@ -2,7 +2,7 @@
 /**
  * Plugin Name: ひろがる趣味暮らし トップページ
  * Description: 猫・ウイスキー・ITとフリーランスのトップページ。管理画面から適用・復元できます。
- * Version: 1.4.0
+ * Version: 1.5.0
  * Requires at least: 6.0
  * Requires PHP: 7.4
  */
@@ -85,8 +85,8 @@ add_filter('template_include', function ($template) {
     return $id && is_page($id) ? plugin_dir_path(__FILE__) . 'home-template.php' : $template;
 }, 99);
 add_action('wp_enqueue_scripts', function () {
-    if ((int) get_option('hsh_page_id') && is_page((int) get_option('hsh_page_id'))) {
-        wp_enqueue_style('hsh-home', plugin_dir_url(__FILE__) . 'assets/home.css', array(), '1.4.0');
+    if (((int) get_option('hsh_page_id') && is_page((int) get_option('hsh_page_id'))) || (function_exists('hsh_current_topic') && hsh_current_topic())) {
+        wp_enqueue_style('hsh-home', plugin_dir_url(__FILE__) . 'assets/home.css', array(), '1.5.0');
     }
 });
 function hsh_category_url($slug) {
@@ -114,3 +114,5 @@ require_once plugin_dir_path(__FILE__) . 'starter-posts.php';
 require_once plugin_dir_path(__FILE__) . 'article-refresh.php';
 
 require_once plugin_dir_path(__FILE__) . 'plugin-update.php';
+
+require_once plugin_dir_path(__FILE__) . 'site-polish.php';

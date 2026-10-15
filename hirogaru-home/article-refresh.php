@@ -12,7 +12,9 @@ function hsh_article_media($key, $post_id, $author) {
     $assets = hsh_article_assets();
     if (!isset($assets[$key]) || !preg_match('/^(cat|whisky|csv)-(cover|diagram)$/D', $key)) { return new WP_Error('hsh_asset','未対応の画像です。',array('status'=>400)); }
     $asset = $assets[$key];
-    $path = plugin_dir_path(__FILE__).'assets/articles/'.$key.'.png';
+    if (!isset($asset['file']) || !in_array($asset['file'], array($key.'.png', $key.'.webp'), true)) { return new WP_Error('hsh_asset','画像形式が不正です。',array('status'=>400)); }
+    $extension = pathinfo($asset['file'], PATHINFO_EXTENSION);
+    $path = plugin_dir_path(__FILE__).'assets/articles/'.$asset['file'];
     if (!is_file($path) || !hash_equals($asset['sha256'], hash_file('sha256',$path))) { return new WP_Error('hsh_asset','画像ファイルの整合性を確認できません。',array('status'=>500)); }
     $map = get_option('hsh_article_media',array());
     $cache_key = $key.':'.$asset['sha256'];
@@ -20,9 +22,9 @@ function hsh_article_media($key, $post_id, $author) {
     if ($id && (get_post_type($id)!=='attachment' || get_post_meta($id,'_hsh_article_asset',true)!==$cache_key)) { return new WP_Error('hsh_media_conflict','登録済み画像が変更されています。',array('status'=>409)); }
     if (!function_exists('wp_generate_attachment_metadata')) { require_once ABSPATH.'wp-admin/includes/image.php'; }
     if (!$id) {
-        $upload = wp_upload_bits('hsh-'.$key.'-'.substr($asset['sha256'],0,10).'.png',null,file_get_contents($path));
+        $upload = wp_upload_bits('hsh-'.$key.'-'.substr($asset['sha256'],0,10).'.'.$extension,null,file_get_contents($path));
         if (!empty($upload['error'])) { return new WP_Error('hsh_upload','画像を保存できませんでした。',array('status'=>500)); }
-        $id = wp_insert_attachment(wp_slash(array('post_mime_type'=>'image/png','post_title'=>$asset['alt'],'post_status'=>'inherit','post_author'=>$author,'post_parent'=>$post_id,'meta_input'=>array('_hsh_article_asset'=>$cache_key))),$upload['file'],$post_id,true);
+        $id = wp_insert_attachment(wp_slash(array('post_mime_type'=>($extension==='webp'?'image/webp':'image/png'),'post_title'=>$asset['alt'],'post_status'=>'inherit','post_author'=>$author,'post_parent'=>$post_id,'meta_input'=>array('_hsh_article_asset'=>$cache_key))),$upload['file'],$post_id,true);
         if (is_wp_error($id)) { return $id; }
         $map[$cache_key]=(int)$id; update_option('hsh_article_media',$map,false);
         update_post_meta($id,'_wp_attachment_image_alt',$asset['alt']);
@@ -41,7 +43,7 @@ function hsh_refresh_plan() {
         $owned = $post && get_post_meta($post->ID,'_hsh_starter_owned',true)===$article['slug'];
         $items[] = array('slug'=>$article['slug'],'id'=>$owned?$post->ID:null,'status'=>$owned?$post->post_status:'unavailable','fingerprint'=>$owned?hsh_article_fingerprint($post):null,'content'=>$owned?$post->post_content:null,'title'=>$owned?$post->post_title:null,'revision'=>$owned?get_post_meta($post->ID,'_hsh_article_revision',true):null,'featured_image_id'=>$owned?(int)get_post_thumbnail_id($post->ID):null,'url'=>$owned?get_permalink($post):null);
     }
-    return hsh_edit_response(array('articles'=>$items,'target_revision'=>'visual-20261015-v1'));
+    return hsh_edit_response(array('articles'=>$items,'target_revision'=>'polish-20261015-v2'));
 }
 function hsh_refresh_articles($request) {
     $data=$request->get_json_params();
