@@ -43,7 +43,7 @@ function hsh_refresh_plan() {
         $owned = $post && get_post_meta($post->ID,'_hsh_starter_owned',true)===$article['slug'];
         $items[] = array('slug'=>$article['slug'],'id'=>$owned?$post->ID:null,'status'=>$owned?$post->post_status:'unavailable','fingerprint'=>$owned?hsh_article_fingerprint($post):null,'content'=>$owned?$post->post_content:null,'title'=>$owned?$post->post_title:null,'revision'=>$owned?get_post_meta($post->ID,'_hsh_article_revision',true):null,'featured_image_id'=>$owned?(int)get_post_thumbnail_id($post->ID):null,'url'=>$owned?get_permalink($post):null);
     }
-    return hsh_edit_response(array('articles'=>$items,'target_revision'=>'polish-20261015-v2'));
+    return hsh_edit_response(array('articles'=>$items,'target_revision'=>'language-20261015-v3'));
 }
 function hsh_refresh_articles($request) {
     $data=$request->get_json_params();
@@ -76,7 +76,7 @@ function hsh_refresh_articles($request) {
             $history=get_post_meta($post->ID,'_hsh_edit_history',true);if(!is_array($history)){$history=array();}
             $history[]=array('time'=>time(),'title'=>$post->post_title,'content'=>$post->post_content,'excerpt'=>$post->post_excerpt,'thumbnail'=>(int)get_post_thumbnail_id($post->ID));
             update_post_meta($post->ID,'_hsh_edit_history',array_slice($history,-10));
-            $updated=wp_update_post(wp_slash(array('ID'=>$post->ID,'post_content'=>wp_kses_post($content),'post_excerpt'=>sanitize_text_field($article['excerpt']))),true);
+            $updated=wp_update_post(wp_slash(array('ID'=>$post->ID,'post_title'=>sanitize_text_field($article['title']),'post_content'=>wp_kses_post($content),'post_excerpt'=>sanitize_text_field($article['excerpt']))),true);
             if(is_wp_error($updated)){return $updated;}
             set_post_thumbnail($post->ID,$hero);
             if ((int)get_post_thumbnail_id($post->ID)!==$hero) { return new WP_Error('hsh_thumbnail','アイキャッチを設定できませんでした。',array('status'=>500)); }

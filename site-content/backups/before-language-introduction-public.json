@@ -1,0 +1,125 @@
+{
+  "id": 8,
+  "date": "2026-06-20T17:05:43",
+  "date_gmt": "2026-06-20T08:05:43",
+  "guid": {
+    "rendered": "https://hirogarushumi.com/?p=8"
+  },
+  "modified": "2026-06-20T17:31:42",
+  "modified_gmt": "2026-06-20T08:31:42",
+  "slug": "%e3%81%b2%e3%82%8d%e3%81%8c%e3%82%8b%e8%b6%a3%e5%91%b3%e6%9a%ae%e3%82%89%e3%81%97%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6",
+  "status": "publish",
+  "type": "post",
+  "link": "https://hirogarushumi.com/%e3%81%b2%e3%82%8d%e3%81%8c%e3%82%8b%e8%b6%a3%e5%91%b3%e6%9a%ae%e3%82%89%e3%81%97%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6/",
+  "title": {
+    "rendered": "ひろがる趣味暮らしについて"
+  },
+  "content": {
+    "rendered": "\n<p class=\"wp-block-paragraph\">はじめまして。「ひろがる趣味暮らし」です。</p>\n\n\n\n<p class=\"wp-block-paragraph\">このブログでは、猫やウイスキーといった日常の楽しみから、キャンプやゴルフなどこれから挑戦していく趣味まで、気になったことを記録していきます。</p>\n\n\n\n<p class=\"wp-block-paragraph\">私は特定の分野の専門家ではありません。</p>\n\n\n\n<p class=\"wp-block-paragraph\">だからこそ、これから趣味を始めたい人や、同じように少しずつ新しいことに挑戦したい人の参考になる情報を発信していければと思っています。</p>\n\n\n\n<p class=\"wp-block-paragraph\">主な内容は以下の通りです。</p>\n\n\n\n<p class=\"wp-block-paragraph\">・猫との暮らし<br>・ウイスキー<br>・キャンプ初心者の挑戦記録<br>・ゴルフ練習記録<br>・その他気になった趣味や体験</p>\n\n\n\n<p class=\"wp-block-paragraph\">このブログが、誰かの新しい趣味のきっかけになれば嬉しいです。</p>\n\n\n\n<p class=\"wp-block-paragraph\">よろしくお願いいたします。</p>\n",
+    "protected": false
+  },
+  "excerpt": {
+    "rendered": "<p>はじめまして。「ひろがる趣味暮らし」です。 このブログでは、猫やウイスキーといった日常の楽しみから、キャンプやゴルフなどこれから挑戦していく趣味まで、気になったことを記録していきます。 私は特定の分野の専門家ではありませ [&hellip;]</p>\n",
+    "protected": false
+  },
+  "author": 1,
+  "featured_media": 13,
+  "comment_status": "open",
+  "ping_status": "open",
+  "sticky": false,
+  "template": "",
+  "format": "standard",
+  "meta": {
+    "footnotes": ""
+  },
+  "categories": [
+    4
+  ],
+  "tags": [],
+  "class_list": [
+    "post-8",
+    "post",
+    "type-post",
+    "status-publish",
+    "format-standard",
+    "has-post-thumbnail",
+    "hentry",
+    "category-hobby-post"
+  ],
+  "_links": {
+    "self": [
+      {
+        "href": "https://hirogarushumi.com/wp-json/wp/v2/posts/8",
+        "targetHints": {
+          "allow": [
+            "GET"
+          ]
+        }
+      }
+    ],
+    "collection": [
+      {
+        "href": "https://hirogarushumi.com/wp-json/wp/v2/posts"
+      }
+    ],
+    "about": [
+      {
+        "href": "https://hirogarushumi.com/wp-json/wp/v2/types/post"
+      }
+    ],
+    "author": [
+      {
+        "embeddable": true,
+        "href": "https://hirogarushumi.com/wp-json/wp/v2/users/1"
+      }
+    ],
+    "replies": [
+      {
+        "embeddable": true,
+        "href": "https://hirogarushumi.com/wp-json/wp/v2/comments?post=8"
+      }
+    ],
+    "version-history": [
+      {
+        "count": 1,
+        "href": "https://hirogarushumi.com/wp-json/wp/v2/posts/8/revisions"
+      }
+    ],
+    "predecessor-version": [
+      {
+        "id": 10,
+        "href": "https://hirogarushumi.com/wp-json/wp/v2/posts/8/revisions/10"
+      }
+    ],
+    "wp:featuredmedia": [
+      {
+        "embeddable": true,
+        "href": "https://hirogarushumi.com/wp-json/wp/v2/media/13"
+      }
+    ],
+    "wp:attachment": [
+      {
+        "href": "https://hirogarushumi.com/wp-json/wp/v2/media?parent=8"
+      }
+    ],
+    "wp:term": [
+      {
+        "taxonomy": "category",
+        "embeddable": true,
+        "href": "https://hirogarushumi.com/wp-json/wp/v2/categories?post=8"
+      },
+      {
+        "taxonomy": "post_tag",
+        "embeddable": true,
+        "href": "https://hirogarushumi.com/wp-json/wp/v2/tags?post=8"
+      }
+    ],
+    "curies": [
+      {
+        "name": "wp",
+        "href": "https://api.w.org/{rel}",
+        "templated": true
+      }
+    ]
+  }
+}

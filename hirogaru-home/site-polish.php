@@ -2,9 +2,9 @@
 if (!defined('ABSPATH')) { exit; }
 function hsh_topic_details() {
     return array(
-        'cats' => array('一緒に暮らす猫に、合うものを。', '保護猫のまんもすは、5.5kgのスコティッシュフォールド。お気に入りのおもちゃには100均のねこじゃらしもあります。現在の1匹との暮らしと、これまで8匹を見送った経験を土台に、日々の工夫や用品選びを考えます。', 'cat-carrier-checklist', 'まずは、通院の準備から', 'キャリー選び、日々の遊び、暮らしの道具。体験と公式情報を分けて紹介します。'),
-        'whisky' => array('好みの一杯を、自分のペースで。', 'シングルモルト、とくにシェリーカスクが好きです。銘柄の知識を競うよりも、自分に合う味や飲み方を見つける楽しさを大切にしています。試飲した感想と、調べて分かった情報は区別してお届けします。', 'highball-measure-and-adjust', 'まずは、家の一杯を整える', '家での飲み方、味の違い、道具選び。お酒は20歳になってから、無理のない量で。'),
-        'it-freelance' => array('未経験から、仕事の手応えを少しずつ。', '正社員から個人事業主へ。今はIT・BPaaSの仕事で、お客様のやりたいことを聞き、受け取ったデータを自社システムに取り込んでいます。AIやエンジニアの知識に触れ始めた頃は、何から手をつければよいのか分かりませんでした。同じような立場から使える工夫を整理します。', 'csv-import-seven-checks', 'まずは、データを渡す前の確認から', 'データ整理、AIの使い方、個人で働く実務。顧客情報は使わず、例示用データで説明します。'),
+        'cats' => array('保護猫まんもすと暮らしています', 'まんもすは体重5.5kgのスコティッシュフォールド。今はこの1匹と暮らしています。これまでには8匹の猫と暮らし、それぞれの最期まで見届けました。ここでは猫の世話や、キャリーなどの用品選びについて書いています。', 'cat-carrier-checklist', '最初の記事：通院用キャリーの選び方', '猫の世話や用品選びの記事を、このカテゴリーにまとめています。'),
+        'whisky' => array('ウイスキーの飲み方や、道具の話', 'シングルモルトが好きで、特にシェリーカスクが好みです。ここでは飲み方や銘柄、グラスなどを取り上げます。まずは家で作るハイボールの話から。', 'highball-measure-and-adjust', '最初の記事：家で作るハイボール', 'ウイスキーの飲み方や道具についての記事はこちら。'),
+        'it-freelance' => array('未経験で始めたITの仕事と、個人で働くこと', '以前はMRとして働き、今は個人事業主としてIT・BPaaSの仕事をしています。お客様の要望を聞き、受け取ったデータを自社のシステムに取り込むのが主な仕事です。AIやプログラミングに興味はあっても、最初は何から始めればいいのか分かりませんでした。このカテゴリーでは、仕事で使うデータの扱い方や、個人で働くことについて書いていきます。', 'csv-import-seven-checks', '最初の記事：CSVを取り込む前の確認', 'データ整理やAIの使い方、個人で働くことについての記事をまとめています。'),
     );
 }
 function hsh_current_topic() {
@@ -15,13 +15,13 @@ add_filter('template_include', function ($template) {
     return hsh_current_topic() ? plugin_dir_path(__FILE__) . 'category-template.php' : $template;
 }, 100);
 function hsh_profile_markup() {
-    return '<aside class="hsh-profile" aria-label="書き手について"><img src="' . esc_url(plugin_dir_url(__FILE__) . 'assets/brand-avatar.webp') . '" alt="猫とグラス、ノートを描いたブログのイメージイラスト" width="160" height="160" loading="lazy"><div><p class="hsh-kicker">このブログを書いている人</p><strong>ひろがる趣味暮らし 管理人</strong><p>保護猫まんもすとの暮らし。シングルモルトとシェリーカスクが好き。MRを経て、今は個人事業主としてIT・BPaaSに携わっています。</p><a href="' . esc_url(home_url('/hsh-about/')) . '">プロフィールを読む →</a><small>イラストはブログのシンボルで、実際の猫の写真ではありません。</small></div></aside>';
+    return '<aside class="hsh-profile" aria-label="書き手について"><img src="' . esc_url(plugin_dir_url(__FILE__) . 'assets/brand-avatar.webp') . '" alt="猫とグラス、ノートを描いたブログのイメージイラスト" width="160" height="160" loading="lazy"><div><p class="hsh-kicker">このブログを書いている人</p><strong>ひろがる趣味暮らし 管理人</strong><p>保護猫のまんもすと暮らしています。好きなお酒はシングルモルトで、特にシェリーカスクが好みです。以前はMRとして働き、今は個人事業主としてIT・BPaaSの仕事をしています。</p><a href="' . esc_url(home_url('/hsh-about/')) . '">プロフィールを読む →</a><small>プロフィール画像はイラストです。</small></div></aside>';
 }
 function hsh_search_markup($id) {
     return '<form class="hsh-search" role="search" method="get" action="' . esc_url(home_url('/')) . '"><label for="' . esc_attr($id) . '">ブログ内を検索</label><div><input id="' . esc_attr($id) . '" name="s" type="search" maxlength="100" placeholder="キャリー、ハイボール、CSV…"><button type="submit">検索</button></div></form>';
 }
 add_action('wp_enqueue_scripts', function () {
-    wp_enqueue_style('hsh-reading', plugin_dir_url(__FILE__) . 'assets/reading.css', array(), '1.5.1');
+    wp_enqueue_style('hsh-reading', plugin_dir_url(__FILE__) . 'assets/reading.css', array(), '1.6.0');
     if ((int)get_option('hsh_page_id') && is_page((int)get_option('hsh_page_id'))) {
         foreach (array('cocoon-style','cocoon-keyframes','font-awesome-style','icomoon-style','baguettebox-style','cocoon-child-style','cocoon-child-keyframes','contact-form-7') as $handle) { wp_dequeue_style($handle); }
     }
@@ -34,7 +34,7 @@ add_filter('the_content', function ($content) {
     foreach ($details as $topic => $d) {
         if ($d[2] !== $slug) { continue; }
         $url = hsh_category_url($topic);
-        $content .= '<section class="hsh-next"><h2>このテーマを、もう少し。</h2><p>' . esc_html($d[4]) . '</p><a href="' . esc_url($url) . '">' . esc_html(hsh_topics()[$topic][0]) . 'の記事一覧 →</a></section>';
+        $content .= '<section class="hsh-next"><h2>同じカテゴリーの記事</h2><p>' . esc_html($d[4]) . '</p><a href="' . esc_url($url) . '">' . esc_html(hsh_topics()[$topic][0]) . 'の記事一覧 →</a></section>';
     }
     return $content . hsh_profile_markup();
 }, 20);
@@ -42,7 +42,7 @@ add_action('wp_footer', function () {
     if (is_page((int)get_option('hsh_page_id')) || hsh_current_topic()) { return; }
     echo '<nav class="hsh-bottom-nav" aria-label="ブログの案内"><a href="' . esc_url(home_url('/')) . '">トップ</a>';
     foreach (hsh_topics() as $slug => $t) { echo '<a href="' . esc_url(hsh_category_url($slug)) . '">' . esc_html($t[0]) . '</a>'; }
-    echo '<a href="' . esc_url(home_url('/hsh-about/')) . '">運営者情報</a><a href="' . esc_url(home_url('/hsh-editorial/')) . '">編集方針</a></nav>';
+    echo '<a href="' . esc_url(home_url('/hsh-about/')) . '">プロフィール</a><a href="' . esc_url(home_url('/hsh-editorial/')) . '">記事・広告について</a></nav>';
 });
 // Aggregate page requests only: no IP address, cookie, user ID or user agent is saved.
 add_action('template_redirect', function () {
@@ -78,7 +78,7 @@ add_action('rest_api_init',function(){register_rest_route('hirogaru/v1','/site-v
 add_action('wp_head',function(){if(is_front_page()){ $token=get_option('hsh_gsc_verification','');if(is_string($token)&&preg_match('/^[A-Za-z0-9_-]{20,200}$/D',$token)){echo '<meta name="google-site-verification" content="'.esc_attr($token).'">' . "\n";} }});
 add_action('admin_menu',function(){add_theme_page('ブログ運用状況','ブログ運用状況','manage_options','hsh-health',function(){
     if(!current_user_can('manage_options')){return;} $audit=hsh_site_audit()->get_data();
-    echo '<div class="wrap"><h1>ブログ運用状況</h1><p>検索登録や成約数を、未接続のまま取得済みとは表示しません。</p><h2>検索への公開</h2><p>'.($audit['public_indexing']?'公開設定は有効です。Googleへの登録・掲載は別途確認が必要です。':'検索エンジンへの公開が無効です。設定を確認してください。').'</p><p><a href="'.esc_url($audit['sitemap']).'">サイトマップを見る</a></p><h2>Search Console</h2><p>Googleアカウントとの連携は未接続です。URLプレフィックスで https://hirogarushumi.com/ を登録し、HTMLタグによる確認用トークンを取得してください。設置は編集接続から対応できます。</p><h2>バックアップ</h2><p>専用記事には変更前の履歴を最大10件保持します。これはサイト全体のバックアップではありません。ConoHa側のデータベース・メディアを含む復元可否は未確認です。</p><h2>記事への到達件数（概数）</h2><p>ログイン中・既知のボットを除外。キャッシュ配信や同時アクセスの影響があり、正確なPV・訪問者数ではありません。個人識別用CookieやIPはこの集計に保存しません。</p><table class="widefat striped"><thead><tr><th>日付</th><th>猫</th><th>ウイスキー</th><th>IT・フリーランス</th></tr></thead><tbody>';
+    echo '<div class="wrap"><h1>ブログ運用状況</h1><p>検索登録や成約数を、未接続のまま取得済みとは表示しません。</p><h2>検索への公開</h2><p>'.($audit['public_indexing']?'公開設定は有効です。Googleへの登録・掲載は別途確認が必要です。':'検索エンジンへの公開が無効です。設定を確認してください。').'</p><p><a href="'.esc_url($audit['sitemap']).'">サイトマップを見る</a></p><h2>Search Console</h2><p>所有権確認とサイトマップ送信は完了しています（管理者からの報告）。検索データの自動取得はまだ接続していません。</p><h2>バックアップ</h2><p>専用記事には変更前の履歴を最大10件保持します。これはサイト全体のバックアップではありません。ConoHa側のデータベース・メディアを含む復元可否は未確認です。</p><h2>記事への到達件数（概数）</h2><p>ログイン中・既知のボットを除外。キャッシュ配信や同時アクセスの影響があり、正確なPV・訪問者数ではありません。個人識別用CookieやIPはこの集計に保存しません。</p><table class="widefat striped"><thead><tr><th>日付</th><th>猫</th><th>ウイスキー</th><th>IT・フリーランス</th></tr></thead><tbody>';
     foreach($audit['measurement']['daily'] as $day=>$counts){echo '<tr><td>'.esc_html(str_replace('_','-',$day)).'</td>';foreach(array('cat-carrier-checklist','highball-measure-and-adjust','csv-import-seven-checks') as $slug){echo '<td>'.(int)($counts[$slug]??0).'</td>';}echo '</tr>';}
     echo '</tbody></table><h2>収益</h2><p>広告リンクは未登録です。クリック数・成約数はまだ計測していません。提携条件を確認してから掲載します。</p></div>';
 });});
@@ -87,7 +87,7 @@ add_action('admin_menu',function(){add_theme_page('ブログ運用状況','ブ�
 function hsh_document_head() {
     ob_start(); wp_head(); $head = ob_get_clean(); echo $head;
     $slug = hsh_current_topic(); $details = hsh_topic_details();
-    $description = $slug ? $details[$slug][4] : '保護猫まんもすとの暮らし、シングルモルトとシェリーカスク、未経験からのIT・BPaaSと個人事業主の実務。体験と調べた情報を分けて、日々のヒントをお届けします。';
+    $description = $slug ? $details[$slug][4] : '保護猫まんもすと暮らす、ウイスキー好きの個人事業主のブログです。猫の世話や用品選び、ウイスキー、未経験で始めたITの仕事について書いています。';
     if (!preg_match('/<meta\b[^>]*name=[\'"]description[\'"]/i', $head)) { echo '<meta name="description" content="'.esc_attr($description).'">' . "\n"; }
     if (!preg_match('/<link\b[^>]*rel=[\'"]canonical[\'"]/i', $head)) {
         $url = $slug ? get_pagenum_link(max(1,(int)get_query_var('paged'))) : home_url('/');

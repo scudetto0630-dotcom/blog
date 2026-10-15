@@ -1,6 +1,6 @@
 <?php
 require __DIR__.'/editing-bridge.php';
-function user_can($id,$cap){return $id===3 && $cap==='publish_posts';}
+function user_can($id,$cap){return in_array($id,$GLOBALS['test_publishers']??array(3),true) && $cap==='publish_posts';}
 function get_term_by($field,$slug,$taxonomy){global $missing_category;return isset($missing_category) && $missing_category===$slug ? false : (object)array('term_id'=>array('cats'=>8,'whisky'=>3,'it-freelance'=>9)[$slug]);}
 require_once dirname(__DIR__).'/hirogaru-home/starter-posts.php';
 $options['hsh_page_id']=900;$records[900]=array('ID'=>900,'post_type'=>'page','post_status'=>'publish','post_author'=>3);
