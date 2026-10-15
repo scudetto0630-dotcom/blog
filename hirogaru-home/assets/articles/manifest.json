@@ -1,0 +1,44 @@
+{
+  "cat-cover": {
+    "file": "cat-cover.png",
+    "alt": "猫用キャリーの選び方。猫とキャリーを描いたタイトル入りイラスト。",
+    "width": 1672,
+    "height": 941,
+    "sha256": "327b45015995550d0ca3f05625ea2b0c59cfe4d68adf9440fdcba2588ac92889"
+  },
+  "whisky-cover": {
+    "file": "whisky-cover.png",
+    "alt": "家ハイボールの作り方。氷入りグラスと計量用具のイラスト。",
+    "width": 1672,
+    "height": 941,
+    "sha256": "40db6d3fad3f592394e205fd423b7d5065cd486fffe526af7431308881b546ec"
+  },
+  "csv-cover": {
+    "file": "csv-cover.png",
+    "alt": "CSV取り込み前の7チェック。パソコンと表データのイラスト。",
+    "width": 1672,
+    "height": 941,
+    "sha256": "d0aca209049d082ba15967ca5197d240ccf06f190bed4178ecff85be51e46674"
+  },
+  "cat-diagram": {
+    "file": "cat-diagram.png",
+    "alt": "キャリーの確認ポイント5つ。出し入れ、扉・留め具、持ち運び、掃除、置き場所。",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "858d7777d448a3df9d9919b9ed050a4b0554568907e3e377c3c295e79a2ef773"
+  },
+  "whisky-diagram": {
+    "file": "whisky-diagram.png",
+    "alt": "ハイボールは量る、静かに注ぐ、メモする。分量20mLと80mLは比較のための一例。",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "538b42567299c1100aa94c9173773500bb60c270b3d11e174c51dba7b0289167"
+  },
+  "csv-diagram": {
+    "file": "csv-diagram.png",
+    "alt": "元ファイル保存、コピーで確認、少量テスト、結果・件数を記録する流れと7つの確認項目。",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "bcd246a9c2b7bc61008e4ee2f3443943b88f41ec8abe6ba7b0eb2d746012a1ed"
+  }
+}
