@@ -6,7 +6,7 @@ const {promisify}=require('util');const {execFile}=require('child_process');cons
 (async()=>{const b=await chromium.launch({executablePath:'/usr/bin/chromium',headless:true,args:['--no-sandbox']});try{
  const p=await b.newPage();const cache=new Map();const results=[];
  await p.route('**/*',async route=>{const u=route.request().url();if(!cache.has(u)){cache.set(u,promisify(execFile)('python',[path.join(__dirname,'../tools/public-page-fetch.py'),u],{maxBuffer:20000000}).then(x=>JSON.parse(x.stdout)));}const r=await cache.get(u);await route.fulfill({status:r.status,contentType:r.type,body:Buffer.from(r.body,'base64')});});
- const slugs=['','category/cats','category/whisky','category/it-freelance','cat-carrier-checklist','highball-measure-and-adjust','csv-import-seven-checks','hsh-about'];
+ const slugs=['','category/cats','category/whisky','category/it-freelance','cat-carrier-checklist','highball-measure-and-adjust','csv-import-seven-checks','hsh-about','hsh-editorial','ひろがる趣味暮らしについて'];
  for(const width of [1440,768,390,320]){await p.setViewportSize({width,height:900});for(const slug of slugs){
   const r=await p.goto('https://hirogarushumi.com/'+(slug?slug+'/':'')+'?hsh_polish_check=1',{waitUntil:'load',timeout:60000});
   await p.locator('img[src*="hsh-"],img[src*="brand-avatar"]').evaluateAll(async imgs=>{for(const img of imgs){img.loading='eager';await img.decode();}});

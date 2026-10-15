@@ -1,0 +1,62 @@
+{
+  "plugin_version": "1.6.0",
+  "revision": "language-20261015-v3",
+  "changed": [
+    "homepage headings and introduction; duplicate author block removed",
+    "three category descriptions",
+    "author profile and article/advertising policy",
+    "three article titles and full text",
+    "existing introduction post ID 8; outdated camping/golf topics removed"
+  ],
+  "urls_preserved": true,
+  "articles": [
+    {
+      "slug": "cat-carrier-checklist",
+      "id": 33,
+      "status": "publish",
+      "fingerprint": "fdda66e2f957731600999d9a1a1d2e2b587754659fc3396fc8f5fe1d947e35a0",
+      "title": "猫用キャリーの選び方｜通院前に確認したい5つのこと",
+      "revision": "language-20261015-v3",
+      "featured_image_id": 46,
+      "url": "https://hirogarushumi.com/cat-carrier-checklist/"
+    },
+    {
+      "slug": "highball-measure-and-adjust",
+      "id": 34,
+      "status": "publish",
+      "fingerprint": "c44c56e00bd77d86f523d7cc6cd391c0b5ef6748ca2390cb0533e7bf1edd6ed4",
+      "title": "家で作るハイボールが薄い？分量・氷・炭酸水の見直し方",
+      "revision": "language-20261015-v3",
+      "featured_image_id": 48,
+      "url": "https://hirogarushumi.com/highball-measure-and-adjust/"
+    },
+    {
+      "slug": "csv-import-seven-checks",
+      "id": 35,
+      "status": "publish",
+      "fingerprint": "b43c7f03bc95e74dfe0b2ad748456dad76fdce58246558ab157d527fc43644f0",
+      "title": "CSV取り込み前のチェックリスト｜文字化け・先頭ゼロなど7項目",
+      "revision": "language-20261015-v3",
+      "featured_image_id": 50,
+      "url": "https://hirogarushumi.com/csv-import-seven-checks/"
+    }
+  ],
+  "existing_introduction": {
+    "id": 8,
+    "title": "ひろがる趣味暮らしについて",
+    "excerpt": "保護猫まんもすとの暮らし、好きなウイスキー、未経験から始めたITの仕事。このブログで書いている3つのテーマを紹介します。",
+    "fingerprint": "a0a82fa4c122ee3cf2312b2b5b79ea456af4a69cd9d7f716de7c6b2f244d51c4",
+    "url": "https://hirogarushumi.com/%e3%81%b2%e3%82%8d%e3%81%8c%e3%82%8b%e8%b6%a3%e5%91%b3%e6%9a%ae%e3%82%89%e3%81%97%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6/"
+  },
+  "checks": {
+    "php_stub_tests_passed": 115,
+    "live_browser_checks_passed": 41,
+    "live_browser_failed": 0,
+    "public_urls_checked": 17,
+    "public_errors": 0,
+    "public_warnings": 0,
+    "google_verification_tag_preserved": true
+  },
+  "browser_scope": "Live same-origin HTML/resources fetched with verified TLS and rendered in Chromium; third-party widgets excluded.",
+  "editorial_review": "Manually reviewed Japanese copy and facts. These tests do not measure human authorship or guarantee subjective tone."
+}
