@@ -9,8 +9,8 @@ const {promisify}=require('util');const {execFile}=require('child_process');cons
  const slugs=['','category/cats','category/whisky','category/it-freelance','cat-carrier-checklist','highball-measure-and-adjust','csv-import-seven-checks','hsh-about'];
  for(const width of [1440,768,390,320]){await p.setViewportSize({width,height:900});for(const slug of slugs){
   const r=await p.goto('https://hirogarushumi.com/'+(slug?slug+'/':'')+'?hsh_polish_check=1',{waitUntil:'load',timeout:60000});
-  await p.locator('img[src*="hsh-"],.hsh-profile img').evaluateAll(async imgs=>{for(const img of imgs){img.loading='eager';await img.decode();}});
-  const data=await p.evaluate(()=>({overflow:document.documentElement.scrollWidth>innerWidth+1,h1:document.querySelectorAll('h1').length,broken:[...document.querySelectorAll('img[src*="hsh-"],.hsh-profile img')].filter(x=>!x.naturalWidth).length,visibleShares:[...document.querySelectorAll('.sns-share,.sns-follow,.mobile-footer-menu-buttons')].filter(x=>getComputedStyle(x).display!=='none').length,profile:!!document.querySelector('.hsh-profile')}));
+  await p.locator('img[src*="hsh-"],img[src*="brand-avatar"]').evaluateAll(async imgs=>{for(const img of imgs){img.loading='eager';await img.decode();}});
+  const data=await p.evaluate(()=>({overflow:document.documentElement.scrollWidth>innerWidth+1,h1:document.querySelectorAll('h1').length,broken:[...document.querySelectorAll('img[src*="hsh-"],img[src*="brand-avatar"]')].filter(x=>!x.naturalWidth).length,visibleShares:[...document.querySelectorAll('.sns-share,.sns-follow,.mobile-footer-menu-buttons')].filter(x=>getComputedStyle(x).display!=='none').length,profile:!!document.querySelector('.hsh-profile')}));
   if(r.status()!==200||data.overflow||data.h1!==1||data.broken||data.visibleShares)throw Error(JSON.stringify({slug,width,status:r.status(),...data}));
   results.push({slug,width,...data});if(width===390)await p.screenshot({path:'/tmp/hsh-polish-'+(slug.replaceAll('/','-')||'home')+'.png',fullPage:true});
  }}

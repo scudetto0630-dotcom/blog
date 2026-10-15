@@ -16,4 +16,5 @@ foreach($assets as $key=>$asset){$p=dirname(__DIR__).'/hirogaru-home/assets/arti
 check($total<1000000,'six full-size editorial images below one megabyte total');
 foreach(hsh_starter_articles() as $a){check(strpos($a['content'],'こんな方へ')!==false && strpos($a['content'],'よく')!==false && strpos($a['content'],'https://')!==false,'article has audience, FAQ and source navigation');}
 ob_start();hsh_document_head();$head=ob_get_clean();check(substr_count($head,'name="description"')===1 && substr_count($head,'rel="canonical"')===1,'custom homepage emits description and canonical once');
+$GLOBALS['test_wp_head']='<meta content="Existing description" name="description"><link href="https://example.test/" rel="canonical">';ob_start();hsh_document_head();$head=ob_get_clean();check(substr_count($head,'name="description"')===1 && substr_count($head,'rel="canonical"')===1,'existing SEO provider tags are preserved without duplicates');unset($GLOBALS['test_wp_head']);
 echo "All site polish tests passed. Total tests: $tests\n";

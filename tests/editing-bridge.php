@@ -65,7 +65,7 @@ check(hsh_edit_status()->headers['Cache-Control']==='no-store, private','authent
 // Render the template and guard the previous global-posts regression.
 function language_attributes(){echo 'lang="ja"';}
 function bloginfo($field){echo 'UTF-8';}
-function wp_head(){}
+function wp_head(){echo $GLOBALS['test_wp_head']??'';}
 function is_category($slug){return false;}
 function body_class($class){echo 'class="'.$class.'"';}
 function wp_body_open(){}

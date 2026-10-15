@@ -1,0 +1,474 @@
+{
+  "live_plugin_version": "1.5.1",
+  "plugin_update_from_cloud_verified": true,
+  "article_revision": "polish-20261015-v2",
+  "articles": [
+    {
+      "slug": "cat-carrier-checklist",
+      "id": 33,
+      "status": "publish",
+      "fingerprint": "7ee9f5c2d4ed5c8a29dc9969f4663670fef1a480afad795f9e1d479822b43ea1",
+      "title": "猫用キャリーの選び方｜通院前に確認したい5つのポイント",
+      "revision": "polish-20261015-v2",
+      "featured_image_id": 46,
+      "url": "https://hirogarushumi.com/cat-carrier-checklist/"
+    },
+    {
+      "slug": "highball-measure-and-adjust",
+      "id": 34,
+      "status": "publish",
+      "fingerprint": "210f67ea2111346f1585d1486fee7eefbc1d77ae75303780241941108c234c8b",
+      "title": "家のハイボールが薄い？分量を量って好みを見つける作り方",
+      "revision": "polish-20261015-v2",
+      "featured_image_id": 48,
+      "url": "https://hirogarushumi.com/highball-measure-and-adjust/"
+    },
+    {
+      "slug": "csv-import-seven-checks",
+      "id": 35,
+      "status": "publish",
+      "fingerprint": "7e58cb29d9624a2fe82dabd89a57f75832fbfbe0a8052e740d06c0c3489e68ff",
+      "title": "CSVをシステムに取り込む前の7つの確認｜文字化け・先頭ゼロ・重複を防ぐ",
+      "revision": "polish-20261015-v2",
+      "featured_image_id": 50,
+      "url": "https://hirogarushumi.com/csv-import-seven-checks/"
+    }
+  ],
+  "tests": {
+    "php_unit_checks": 105,
+    "python_regressions": 3,
+    "browser_rendering_and_search": 33,
+    "browser_failed": 0,
+    "public_urls": 18,
+    "public_failed": 0
+  },
+  "browser": {
+    "passed": 33,
+    "failed": 0,
+    "method": "Live HTML and same-origin resources with certificate-verified fetch; third-party widgets excluded",
+    "results": [
+      {
+        "slug": "",
+        "width": 1440,
+        "overflow": false,
+        "h1": 1,
+        "broken": 0,
+        "visibleShares": 0,
+        "profile": true
+      },
+      {
+        "slug": "category/cats",
+        "width": 1440,
+        "overflow": false,
+        "h1": 1,
+        "broken": 0,
+        "visibleShares": 0,
+        "profile": true
+      },
+      {
+        "slug": "category/whisky",
+        "width": 1440,
+        "overflow": false,
+        "h1": 1,
+        "broken": 0,
+        "visibleShares": 0,
+        "profile": true
+      },
+      {
+        "slug": "category/it-freelance",
+        "width": 1440,
+        "overflow": false,
+        "h1": 1,
+        "broken": 0,
+        "visibleShares": 0,
+        "profile": true
+      },
+      {
+        "slug": "cat-carrier-checklist",
+        "width": 1440,
+        "overflow": false,
+        "h1": 1,
+        "broken": 0,
+        "visibleShares": 0,
+        "profile": true
+      },
+      {
+        "slug": "highball-measure-and-adjust",
+        "width": 1440,
+        "overflow": false,
+        "h1": 1,
+        "broken": 0,
+        "visibleShares": 0,
+        "profile": true
+      },
+      {
+        "slug": "csv-import-seven-checks",
+        "width": 1440,
+        "overflow": false,
+        "h1": 1,
+        "broken": 0,
+        "visibleShares": 0,
+        "profile": true
+      },
+      {
+        "slug": "hsh-about",
+        "width": 1440,
+        "overflow": false,
+        "h1": 1,
+        "broken": 0,
+        "visibleShares": 0,
+        "profile": false
+      },
+      {
+        "slug": "",
+        "width": 768,
+        "overflow": false,
+        "h1": 1,
+        "broken": 0,
+        "visibleShares": 0,
+        "profile": true
+      },
+      {
+        "slug": "category/cats",
+        "width": 768,
+        "overflow": false,
+        "h1": 1,
+        "broken": 0,
+        "visibleShares": 0,
+        "profile": true
+      },
+      {
+        "slug": "category/whisky",
+        "width": 768,
+        "overflow": false,
+        "h1": 1,
+        "broken": 0,
+        "visibleShares": 0,
+        "profile": true
+      },
+      {
+        "slug": "category/it-freelance",
+        "width": 768,
+        "overflow": false,
+        "h1": 1,
+        "broken": 0,
+        "visibleShares": 0,
+        "profile": true
+      },
+      {
+        "slug": "cat-carrier-checklist",
+        "width": 768,
+        "overflow": false,
+        "h1": 1,
+        "broken": 0,
+        "visibleShares": 0,
+        "profile": true
+      },
+      {
+        "slug": "highball-measure-and-adjust",
+        "width": 768,
+        "overflow": false,
+        "h1": 1,
+        "broken": 0,
+        "visibleShares": 0,
+        "profile": true
+      },
+      {
+        "slug": "csv-import-seven-checks",
+        "width": 768,
+        "overflow": false,
+        "h1": 1,
+        "broken": 0,
+        "visibleShares": 0,
+        "profile": true
+      },
+      {
+        "slug": "hsh-about",
+        "width": 768,
+        "overflow": false,
+        "h1": 1,
+        "broken": 0,
+        "visibleShares": 0,
+        "profile": false
+      },
+      {
+        "slug": "",
+        "width": 390,
+        "overflow": false,
+        "h1": 1,
+        "broken": 0,
+        "visibleShares": 0,
+        "profile": true
+      },
+      {
+        "slug": "category/cats",
+        "width": 390,
+        "overflow": false,
+        "h1": 1,
+        "broken": 0,
+        "visibleShares": 0,
+        "profile": true
+      },
+      {
+        "slug": "category/whisky",
+        "width": 390,
+        "overflow": false,
+        "h1": 1,
+        "broken": 0,
+        "visibleShares": 0,
+        "profile": true
+      },
+      {
+        "slug": "category/it-freelance",
+        "width": 390,
+        "overflow": false,
+        "h1": 1,
+        "broken": 0,
+        "visibleShares": 0,
+        "profile": true
+      },
+      {
+        "slug": "cat-carrier-checklist",
+        "width": 390,
+        "overflow": false,
+        "h1": 1,
+        "broken": 0,
+        "visibleShares": 0,
+        "profile": true
+      },
+      {
+        "slug": "highball-measure-and-adjust",
+        "width": 390,
+        "overflow": false,
+        "h1": 1,
+        "broken": 0,
+        "visibleShares": 0,
+        "profile": true
+      },
+      {
+        "slug": "csv-import-seven-checks",
+        "width": 390,
+        "overflow": false,
+        "h1": 1,
+        "broken": 0,
+        "visibleShares": 0,
+        "profile": true
+      },
+      {
+        "slug": "hsh-about",
+        "width": 390,
+        "overflow": false,
+        "h1": 1,
+        "broken": 0,
+        "visibleShares": 0,
+        "profile": false
+      },
+      {
+        "slug": "",
+        "width": 320,
+        "overflow": false,
+        "h1": 1,
+        "broken": 0,
+        "visibleShares": 0,
+        "profile": true
+      },
+      {
+        "slug": "category/cats",
+        "width": 320,
+        "overflow": false,
+        "h1": 1,
+        "broken": 0,
+        "visibleShares": 0,
+        "profile": true
+      },
+      {
+        "slug": "category/whisky",
+        "width": 320,
+        "overflow": false,
+        "h1": 1,
+        "broken": 0,
+        "visibleShares": 0,
+        "profile": true
+      },
+      {
+        "slug": "category/it-freelance",
+        "width": 320,
+        "overflow": false,
+        "h1": 1,
+        "broken": 0,
+        "visibleShares": 0,
+        "profile": true
+      },
+      {
+        "slug": "cat-carrier-checklist",
+        "width": 320,
+        "overflow": false,
+        "h1": 1,
+        "broken": 0,
+        "visibleShares": 0,
+        "profile": true
+      },
+      {
+        "slug": "highball-measure-and-adjust",
+        "width": 320,
+        "overflow": false,
+        "h1": 1,
+        "broken": 0,
+        "visibleShares": 0,
+        "profile": true
+      },
+      {
+        "slug": "csv-import-seven-checks",
+        "width": 320,
+        "overflow": false,
+        "h1": 1,
+        "broken": 0,
+        "visibleShares": 0,
+        "profile": true
+      },
+      {
+        "slug": "hsh-about",
+        "width": 320,
+        "overflow": false,
+        "h1": 1,
+        "broken": 0,
+        "visibleShares": 0,
+        "profile": false
+      },
+      {
+        "search": "CSV",
+        "found": true
+      }
+    ]
+  },
+  "public_audit": {
+    "checked_at": "2026-10-15T14:11:09.519400+00:00",
+    "checks": [
+      {
+        "url": "https://hirogarushumi.com/",
+        "status": 200,
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "url": "https://hirogarushumi.com/category/cats/",
+        "status": 200,
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "url": "https://hirogarushumi.com/category/whisky/",
+        "status": 200,
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "url": "https://hirogarushumi.com/category/it-freelance/",
+        "status": 200,
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "url": "https://hirogarushumi.com/cat-carrier-checklist/",
+        "status": 200,
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "url": "https://hirogarushumi.com/highball-measure-and-adjust/",
+        "status": 200,
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "url": "https://hirogarushumi.com/csv-import-seven-checks/",
+        "status": 200,
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "url": "https://hirogarushumi.com/hsh-about/",
+        "status": 200,
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "url": "https://hirogarushumi.com/hsh-editorial/",
+        "status": 200,
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "url": "https://hirogarushumi.com/wp-sitemap.xml",
+        "status": 200,
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "url": "https://hirogarushumi.com/robots.txt",
+        "status": 200,
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "url": "https://hirogarushumi.com/%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B/",
+        "status": 200,
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "url": "https://hirogarushumi.com/%E3%83%97%E3%83%A9%E3%82%A4%E3%83%90%E3%82%B7%E3%83%BC%E3%83%9D%E3%83%AA%E3%82%B7%E3%83%BC/",
+        "status": 200,
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "url": "https://hirogarushumi.com/%e3%81%8a%e5%95%8f%e3%81%84%e5%90%88%e3%82%8f%e3%81%9b/",
+        "status": 200,
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "url": "https://hirogarushumi.com/%e3%81%b2%e3%82%8d%e3%81%8c%e3%82%8b%e8%b6%a3%e5%91%b3%e6%9a%ae%e3%82%89%e3%81%97%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6/",
+        "status": 200,
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "url": "https://hirogarushumi.com/%e3%83%97%e3%83%a9%e3%82%a4%e3%83%90%e3%82%b7%e3%83%bc%e3%83%9d%e3%83%aa%e3%82%b7%e3%83%bc/",
+        "status": 200,
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "url": "https://hirogarushumi.com/author/hirogarulife/",
+        "status": 200,
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "url": "https://hirogarushumi.com/お問い合わせ/",
+        "status": 200,
+        "errors": [],
+        "warnings": []
+      }
+    ],
+    "failures": 0,
+    "limitations": [
+      "Public HTTP checks only; no Search Console data, conversions, server backups or external-link verification.",
+      "Warnings require review and are not automatically proof of a defect."
+    ]
+  },
+  "image_bytes": {
+    "before": 10393906,
+    "after": 826942,
+    "reduction_percent": 92.0
+  },
+  "external_dependencies_pending": [
+    "Google account ownership verification and Search Console data access",
+    "Real pet/product photos and actual software screenshots",
+    "Current ASP conditions, offers, search demand and competitor verification",
+    "ConoHa full-site backup/restore verification",
+    "First scheduled GitHub Actions execution"
+  ]
+}
