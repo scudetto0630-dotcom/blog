@@ -1,0 +1,45 @@
+{
+  "preview_url": "https://hirogarushumi.com/neko-guide/",
+  "state": "provisional_noindex_preview",
+  "name": "ねこのはじめ",
+  "name_uniqueness": "not_verified_proxy_403",
+  "reference_verification": "pending_official_sources_blocked",
+  "pages": 12,
+  "not_found_page": 1,
+  "articles": 6,
+  "tests": {
+    "python": {
+      "passed": 4,
+      "failed": 0
+    },
+    "php_including_existing_blog_tests": {
+      "passed": 151,
+      "failed": 0
+    },
+    "local_browser": {
+      "passed": 60,
+      "failed": 0
+    },
+    "live_browser_tls_verified_fetch": {
+      "passed": 60,
+      "failed": 0
+    },
+    "existing_blog_live_regression": {
+      "passed": 41,
+      "failed": 0
+    }
+  },
+  "security_checks": {
+    "missing_page": 404,
+    "manifest_not_public": 404,
+    "encoded_parent_path": 404,
+    "suspicious_query_rejected_upstream": 403,
+    "noindex_header": true
+  },
+  "open_items": [
+    "Name and related organization search not possible through current proxy",
+    "Official-source checking and health article reference review before indexing",
+    "No autonomous background publishing scheduler installed"
+  ],
+  "new_paid_subscriptions": []
+}
