@@ -2,9 +2,9 @@
 if (!defined('ABSPATH')) { exit; }
 function hsh_topic_details() {
     return array(
-        'cats' => array('保護猫まんもすとの暮らし', '現在は、保護猫のまんもすと暮らしています。スコティッシュフォールドで、体重は5.5kgです。これまでには8匹の猫と暮らし、それぞれの最期を見届けました。このカテゴリーでは、猫の世話や用品の選び方を紹介しています。', 'cat-carrier-checklist', '通院用キャリーの選び方', '猫の世話や用品の選び方についての記事をまとめています。'),
+        'cats' => array('保護猫まんもすとの暮らし', '今は、保護猫のまんもすと暮らしています。これまで8匹の猫と暮らし、みんな亡くなるまで一緒に過ごしました。このカテゴリーでは、猫の世話や用品の選び方を紹介しています。', 'cat-carrier-checklist', '通院用キャリーの選び方', '猫の世話や用品の選び方についての記事をまとめています。'),
         'whisky' => array('ウイスキーの飲み方や道具について', 'ウイスキーはシングルモルトが好きです。なかでも、シェリー樽で熟成させたものが好みです。このカテゴリーでは、飲み方や銘柄、グラスなどを取り上げています。', 'highball-measure-and-adjust', '自宅で作るハイボールの分量と作り方', 'ウイスキーの飲み方や道具についての記事をまとめています。'),
-        'it-freelance' => array('未経験で始めたITの仕事', '以前はMRとして働いていました。現在は個人事業主として、お客様から受け取ったデータをシステムに取り込む仕事をしています。最初は、AIやプログラミングの何を学べば仕事に役立つのか分かりませんでした。このカテゴリーでは、データの扱い方や、個人事業主として働くことについて書いています。', 'csv-import-seven-checks', 'CSVを取り込む前の確認事項', 'データの扱い方やAIの使い方、個人事業主として働くことについての記事をまとめています。'),
+        'it-freelance' => array('未経験で始めたITの仕事', '以前はMRとして働いていました。現在は個人事業主として、お客様から受け取ったデータをシステムに取り込む仕事をしています。最初はAIやプログラミングを何から学べばよいのか分かりませんでした。このカテゴリーでは、データの扱い方や、個人事業主として働くことについて書いています。', 'csv-import-seven-checks', 'CSVを取り込む前の確認事項', 'データの扱い方やAIの使い方、個人事業主として働くことについての記事をまとめています。'),
     );
 }
 function hsh_current_topic() {
@@ -15,7 +15,7 @@ add_filter('template_include', function ($template) {
     return hsh_current_topic() ? plugin_dir_path(__FILE__) . 'category-template.php' : $template;
 }, 100);
 function hsh_profile_markup() {
-    return '<aside class="hsh-profile" aria-label="書き手について"><img src="' . esc_url(plugin_dir_url(__FILE__) . 'assets/brand-avatar.webp') . '" alt="猫とグラス、ノートを描いたブログのイメージイラスト" width="160" height="160" loading="lazy"><div><p class="hsh-kicker">管理人のプロフィール</p><strong>ひろがる趣味暮らし 管理人</strong><p>保護猫のまんもすと暮らしています。好きなお酒は、シェリー樽で熟成させたシングルモルトウイスキーです。以前はMRとして働き、現在は個人事業主としてデータをシステムに取り込む仕事をしています。</p><a href="' . esc_url(home_url('/hsh-about/')) . '">プロフィールを読む →</a><small>プロフィール画像はイラストです。</small></div></aside>';
+    return '<aside class="hsh-profile" aria-label="書き手について"><img src="' . esc_url(plugin_dir_url(__FILE__) . 'assets/brand-avatar.webp') . '" alt="猫とグラス、ノートを描いたブログのイメージイラスト" width="160" height="160" loading="lazy"><div><p class="hsh-kicker">管理人のプロフィール</p><strong>ひろがる趣味暮らし 管理人</strong><p>保護猫のまんもすと暮らしています。ウイスキーはシングルモルト、特にシェリーカスクが好みです。以前はMRとして働き、現在は個人事業主としてデータをシステムに取り込む仕事をしています。</p><a href="' . esc_url(home_url('/hsh-about/')) . '">プロフィールを読む →</a><small>プロフィール画像はイラストです。</small></div></aside>';
 }
 function hsh_search_markup($id) {
     return '<form class="hsh-search" role="search" method="get" action="' . esc_url(home_url('/')) . '"><label for="' . esc_attr($id) . '">ブログ内を検索</label><div><input id="' . esc_attr($id) . '" name="s" type="search" maxlength="100" placeholder="キャリー、ハイボール、CSV…"><button type="submit">検索</button></div></form>';
