@@ -43,7 +43,7 @@ function hsh_refresh_plan() {
         $owned = $post && get_post_meta($post->ID,'_hsh_starter_owned',true)===$article['slug'];
         $items[] = array('slug'=>$article['slug'],'id'=>$owned?$post->ID:null,'status'=>$owned?$post->post_status:'unavailable','fingerprint'=>$owned?hsh_article_fingerprint($post):null,'content'=>$owned?$post->post_content:null,'title'=>$owned?$post->post_title:null,'revision'=>$owned?get_post_meta($post->ID,'_hsh_article_revision',true):null,'featured_image_id'=>$owned?(int)get_post_thumbnail_id($post->ID):null,'url'=>$owned?get_permalink($post):null);
     }
-    return hsh_edit_response(array('articles'=>$items,'target_revision'=>'language-20261015-v3'));
+    return hsh_edit_response(array('articles'=>$items,'target_revision'=>'proofread-20261015-v4'));
 }
 function hsh_refresh_articles($request) {
     $data=$request->get_json_params();
@@ -64,7 +64,7 @@ function hsh_refresh_articles($request) {
             $hero=hsh_article_media($article['hero'],$post->ID,(int)$post->post_author); if(is_wp_error($hero)){return $hero;}
             $diagram=hsh_article_media($topic.'-diagram',$post->ID,(int)$post->post_author); if(is_wp_error($diagram)){return $diagram;}
             $assets=hsh_article_assets();
-            $caption=array('cat'=>'購入前に見ておきたい5つの場所。図は説明用のイラストです。','whisky'=>'量る・静かに注ぐ・メモする。分量は比較のための一例です。','csv'=>'元ファイルを残し、コピーで確認する流れ。図は説明用です。');
+            $caption=array('cat'=>'キャリーを選ぶときの5つの確認点をまとめた図です。','whisky'=>'分量を量り、炭酸水を静かに注ぎ、配合をメモします。図の分量は比較のための例です。','csv'=>'元のファイルを残し、コピーを使って内容を確認する手順を示した図です。');
             $image=wp_get_attachment_image($diagram,'large',false,array('alt'=>$assets[$topic.'-diagram']['alt'],'loading'=>'lazy','decoding'=>'async'));
             if (!$image) { return new WP_Error('hsh_media','本文画像を確認できません。',array('status'=>500)); }
             $figure='<figure class="wp-block-image size-large"><a href="'.esc_url(wp_get_attachment_url($diagram)).'">'.$image.'</a><figcaption>'.esc_html($caption[$topic]).'</figcaption></figure>';

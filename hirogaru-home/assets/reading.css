@@ -3,3 +3,4 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}*{animation:none!important}}
 .hsh-reader{padding:18px 20px;background:#edf2eb;border-radius:10px;border-left:3px solid #41664a}.entry-content a:focus-visible,.hsh-bottom-nav a:focus-visible{outline:3px solid #93612b;outline-offset:4px}
 .hsh-learn{border:1px solid var(--hsh-line);border-radius:10px;padding:20px;margin:24px 0;background:#f8faf6}.hsh-learn ul{margin:10px 0 0;padding-left:1.5em}.hsh-learn li{margin:.4em 0}
+.hsh-hero h1{font-size:clamp(30px,4.5vw,54px);line-height:1.55}

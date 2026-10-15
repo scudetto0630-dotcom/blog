@@ -1,0 +1,8 @@
+{
+  "rules": {
+    "preset-ja-technical-writing": true,
+    "preset-japanese": true,
+    "ja-no-abusage": true,
+    "ja-no-orthographic-variants": true
+  }
+}

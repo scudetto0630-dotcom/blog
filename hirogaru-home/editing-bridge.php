@@ -50,7 +50,7 @@ function hsh_edit_status() {
             if ($page) { $pages[$key] = array('id' => $page->ID, 'status' => $page->post_status, 'title' => $page->post_title, 'content' => $page->post_content, 'url' => get_permalink($page)); }
         }
     }
-    return hsh_edit_response(array('version' => '1.6.0', 'scope' => array('homepage_text_colors', 'bridge_owned_pages', 'publish_three_packaged_posts', 'refresh_three_owned_posts_with_packaged_images', 'update_only_hirogaru_home_from_pinned_repository', 'read_site_audit', 'set_public_google_verification_token', 'refresh_packaged_site_introduction'), 'home_page_id' => (int) get_option('hsh_page_id'), 'home_settings' => get_option('hsh_home_settings', array()), 'pages' => $pages));
+    return hsh_edit_response(array('version' => '1.7.0', 'scope' => array('homepage_text_colors', 'bridge_owned_pages', 'publish_three_packaged_posts', 'refresh_three_owned_posts_with_packaged_images', 'update_only_hirogaru_home_from_pinned_repository', 'read_site_audit', 'set_public_google_verification_token', 'refresh_packaged_site_introduction'), 'home_page_id' => (int) get_option('hsh_page_id'), 'home_settings' => get_option('hsh_home_settings', array()), 'pages' => $pages));
 }
 function hsh_edit_home($request) {
     $data = $request->get_json_params();
@@ -70,7 +70,7 @@ function hsh_edit_home($request) {
         } elseif ($key === 'about') { $next[$key] = wp_kses_post($value); }
         else {
             $next[$key] = sanitize_textarea_field($value);
-            if (strpos($key, 'heading_') === 0 && trim($next[$key]) === '') { return new WP_Error('hsh_heading', '見出しは空にできません。', array('status' => 400)); }
+            if ($key === 'heading_1' && trim($next[$key]) === '') { return new WP_Error('hsh_heading', '見出しは空にできません。', array('status' => 400)); }
         }
     }
     $history = get_option('hsh_home_history', array());

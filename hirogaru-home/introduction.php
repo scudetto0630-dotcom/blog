@@ -25,7 +25,7 @@ function hsh_intro_refresh($request) {
         $result=wp_update_post(wp_slash(array('ID'=>$post->ID,'post_title'=>sanitize_text_field($article['title']),'post_content'=>wp_kses_post($article['content']),'post_excerpt'=>sanitize_text_field($article['excerpt']))),true);
         if(is_wp_error($result)){return $result;}
         update_post_meta($post->ID,'the_page_meta_description',sanitize_text_field($article['excerpt']));
-        update_post_meta($post->ID,'_hsh_intro_revision','language-20261015-v3');
+        update_post_meta($post->ID,'_hsh_intro_revision','proofread-20261015-v4');
         return hsh_intro_review();
     } finally { delete_option('hsh_starter_lock'); }
 }

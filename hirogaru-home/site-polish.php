@@ -2,9 +2,9 @@
 if (!defined('ABSPATH')) { exit; }
 function hsh_topic_details() {
     return array(
-        'cats' => array('保護猫まんもすと暮らしています', 'まんもすは体重5.5kgのスコティッシュフォールド。今はこの1匹と暮らしています。これまでには8匹の猫と暮らし、それぞれの最期まで見届けました。ここでは猫の世話や、キャリーなどの用品選びについて書いています。', 'cat-carrier-checklist', '最初の記事：通院用キャリーの選び方', '猫の世話や用品選びの記事を、このカテゴリーにまとめています。'),
-        'whisky' => array('ウイスキーの飲み方や、道具の話', 'シングルモルトが好きで、特にシェリーカスクが好みです。ここでは飲み方や銘柄、グラスなどを取り上げます。まずは家で作るハイボールの話から。', 'highball-measure-and-adjust', '最初の記事：家で作るハイボール', 'ウイスキーの飲み方や道具についての記事はこちら。'),
-        'it-freelance' => array('未経験で始めたITの仕事と、個人で働くこと', '以前はMRとして働き、今は個人事業主としてIT・BPaaSの仕事をしています。お客様の要望を聞き、受け取ったデータを自社のシステムに取り込むのが主な仕事です。AIやプログラミングに興味はあっても、最初は何から始めればいいのか分かりませんでした。このカテゴリーでは、仕事で使うデータの扱い方や、個人で働くことについて書いていきます。', 'csv-import-seven-checks', '最初の記事：CSVを取り込む前の確認', 'データ整理やAIの使い方、個人で働くことについての記事をまとめています。'),
+        'cats' => array('保護猫まんもすとの暮らし', '現在は、保護猫のまんもすと暮らしています。スコティッシュフォールドで、体重は5.5kgです。これまでには8匹の猫と暮らし、それぞれの最期を見届けました。このカテゴリーでは、猫の世話や用品の選び方を紹介しています。', 'cat-carrier-checklist', '通院用キャリーの選び方', '猫の世話や用品の選び方についての記事をまとめています。'),
+        'whisky' => array('ウイスキーの飲み方や道具について', 'ウイスキーはシングルモルトが好きです。なかでも、シェリー樽で熟成させたものが好みです。このカテゴリーでは、飲み方や銘柄、グラスなどを取り上げています。', 'highball-measure-and-adjust', '自宅で作るハイボールの分量と作り方', 'ウイスキーの飲み方や道具についての記事をまとめています。'),
+        'it-freelance' => array('未経験で始めたITの仕事', '以前はMRとして働いていました。現在は個人事業主として、お客様から受け取ったデータをシステムに取り込む仕事をしています。最初は、AIやプログラミングの何を学べば仕事に役立つのか分かりませんでした。このカテゴリーでは、データの扱い方や、個人事業主として働くことについて書いています。', 'csv-import-seven-checks', 'CSVを取り込む前の確認事項', 'データの扱い方やAIの使い方、個人事業主として働くことについての記事をまとめています。'),
     );
 }
 function hsh_current_topic() {
@@ -15,13 +15,13 @@ add_filter('template_include', function ($template) {
     return hsh_current_topic() ? plugin_dir_path(__FILE__) . 'category-template.php' : $template;
 }, 100);
 function hsh_profile_markup() {
-    return '<aside class="hsh-profile" aria-label="書き手について"><img src="' . esc_url(plugin_dir_url(__FILE__) . 'assets/brand-avatar.webp') . '" alt="猫とグラス、ノートを描いたブログのイメージイラスト" width="160" height="160" loading="lazy"><div><p class="hsh-kicker">このブログを書いている人</p><strong>ひろがる趣味暮らし 管理人</strong><p>保護猫のまんもすと暮らしています。好きなお酒はシングルモルトで、特にシェリーカスクが好みです。以前はMRとして働き、今は個人事業主としてIT・BPaaSの仕事をしています。</p><a href="' . esc_url(home_url('/hsh-about/')) . '">プロフィールを読む →</a><small>プロフィール画像はイラストです。</small></div></aside>';
+    return '<aside class="hsh-profile" aria-label="書き手について"><img src="' . esc_url(plugin_dir_url(__FILE__) . 'assets/brand-avatar.webp') . '" alt="猫とグラス、ノートを描いたブログのイメージイラスト" width="160" height="160" loading="lazy"><div><p class="hsh-kicker">管理人のプロフィール</p><strong>ひろがる趣味暮らし 管理人</strong><p>保護猫のまんもすと暮らしています。好きなお酒は、シェリー樽で熟成させたシングルモルトウイスキーです。以前はMRとして働き、現在は個人事業主としてデータをシステムに取り込む仕事をしています。</p><a href="' . esc_url(home_url('/hsh-about/')) . '">プロフィールを読む →</a><small>プロフィール画像はイラストです。</small></div></aside>';
 }
 function hsh_search_markup($id) {
     return '<form class="hsh-search" role="search" method="get" action="' . esc_url(home_url('/')) . '"><label for="' . esc_attr($id) . '">ブログ内を検索</label><div><input id="' . esc_attr($id) . '" name="s" type="search" maxlength="100" placeholder="キャリー、ハイボール、CSV…"><button type="submit">検索</button></div></form>';
 }
 add_action('wp_enqueue_scripts', function () {
-    wp_enqueue_style('hsh-reading', plugin_dir_url(__FILE__) . 'assets/reading.css', array(), '1.6.0');
+    wp_enqueue_style('hsh-reading', plugin_dir_url(__FILE__) . 'assets/reading.css', array(), '1.7.0');
     if ((int)get_option('hsh_page_id') && is_page((int)get_option('hsh_page_id'))) {
         foreach (array('cocoon-style','cocoon-keyframes','font-awesome-style','icomoon-style','baguettebox-style','cocoon-child-style','cocoon-child-keyframes','contact-form-7') as $handle) { wp_dequeue_style($handle); }
     }
@@ -87,7 +87,7 @@ add_action('admin_menu',function(){add_theme_page('ブログ運用状況','ブ�
 function hsh_document_head() {
     ob_start(); wp_head(); $head = ob_get_clean(); echo $head;
     $slug = hsh_current_topic(); $details = hsh_topic_details();
-    $description = $slug ? $details[$slug][4] : '保護猫まんもすと暮らす、ウイスキー好きの個人事業主のブログです。猫の世話や用品選び、ウイスキー、未経験で始めたITの仕事について書いています。';
+    $description = $slug ? $details[$slug][4] : '保護猫まんもすとの生活やウイスキーの楽しみ方、未経験で始めたITの仕事について書いている個人ブログです。';
     if (!preg_match('/<meta\b[^>]*name=[\'"]description[\'"]/i', $head)) { echo '<meta name="description" content="'.esc_attr($description).'">' . "\n"; }
     if (!preg_match('/<link\b[^>]*rel=[\'"]canonical[\'"]/i', $head)) {
         $url = $slug ? get_pagenum_link(max(1,(int)get_query_var('paged'))) : home_url('/');

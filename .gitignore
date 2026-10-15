@@ -2,3 +2,5 @@ __pycache__/
 *.pyc
 .env
 .env.*
+/tools/proofreading/node_modules/
+/site-content/proofreading/*/*.html
