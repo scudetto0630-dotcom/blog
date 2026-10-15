@@ -1,0 +1,31 @@
+{
+  "plugin_version": "1.7.1",
+  "public_pages_checked": 16,
+  "tool": "textlint",
+  "rules_config": "tools/proofreading/.textlintrc.json",
+  "same_rules_before_and_after": true,
+  "before_findings": 35,
+  "before_by_rule": {
+    "ja-technical-writing/no-exclamation-question-mark": 22,
+    "ja-technical-writing/ja-no-mixed-period": 1,
+    "ja-technical-writing/ja-no-weak-phrase": 4,
+    "ja-technical-writing/arabic-kanji-numbers": 4,
+    "ja-technical-writing/no-doubled-joshi": 2,
+    "ja-technical-writing/max-kanji-continuous-len": 2
+  },
+  "after_findings": 0,
+  "counts_note": "Includes repeated headings and stylistic recommendations; not a count of grammatical errors.",
+  "image_text": "Six images inspected visually; two covers corrected through image generation; transcribed text checked with same textlint rules.",
+  "image_transcription_findings": 0,
+  "manual_semantic_review": "Reviewed sentence completion, subject/predicate agreement, reference clarity, whisky classification, biography facts, repetitive or unsupported wording.",
+  "regression_checks": {
+    "php_stub_checks_passed": 123,
+    "extraction_tests_passed": 5,
+    "browser_checks_passed": 41,
+    "public_url_checks": 17,
+    "public_url_failures": 0,
+    "google_verification_preserved": true
+  },
+  "scheduled_proofreading": "Added to daily GitHub Actions; remote scheduled run has not been observed.",
+  "limitations": "Automated proofreading does not establish flawless prose, scientific correctness or human authorship."
+}
