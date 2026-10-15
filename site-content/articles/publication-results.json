@@ -1,0 +1,21 @@
+[
+  {
+    "slug": "cat-carrier-checklist",
+    "url": "https://hirogarushumi.com/cat-carrier-checklist/",
+    "http": 200
+  },
+  {
+    "slug": "highball-measure-and-adjust",
+    "url": "https://hirogarushumi.com/highball-measure-and-adjust/",
+    "http": 200
+  },
+  {
+    "slug": "csv-import-seven-checks",
+    "url": "https://hirogarushumi.com/csv-import-seven-checks/",
+    "http": 200
+  },
+  {
+    "homepage_http": 200,
+    "all_three_articles_linked": true
+  }
+]
