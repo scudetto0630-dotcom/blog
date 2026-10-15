@@ -2,9 +2,9 @@
 require __DIR__.'/plugin-update.php';
 $d=hsh_topic_details();
 check(array_keys($d)===array('cats','whisky','it-freelance'),'three existing category slugs preserved');
-check(strpos($d['cats'][1],'まんもす')!==false && strpos($d['cats'][1],'8匹')!==false,'confirmed pet facts included');
-check(strpos($d['whisky'][1],'シェリー樽')!==false,'confirmed whisky preference included');
-check(strpos($d['it-freelance'][1],'何から学べば')!==false,'beginner experience included without invented achievements');
+check(strpos($d['cats'][1],'キャリー')!==false && strpos($d['cats'][1],'亡くなる')===false,'category describes the articles without unnecessary bereavement details');
+check(strpos($d['whisky'][1],'ハイボール')!==false,'whisky category describes its published article');
+check(strpos($d['it-freelance'][1],'MRからIT')!==false,'beginner experience included without invented achievements');
 check(strpos(hsh_profile_markup(),'プロフィール画像はイラストです。')!==false,'brand illustration distinguished from real pet');
 check(strpos(hsh_profile_markup(),'ひろがる趣味暮らし 管理人')!==false,'pseudonymous author displayed');
 $search=hsh_search_markup('test-search');

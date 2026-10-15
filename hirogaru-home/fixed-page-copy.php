@@ -7,7 +7,7 @@ function hsh_fixed_page_copy($content,$id) {
     }
     if ((int)$id===18) {
         $content=preg_replace('~<h1 class="wp-block-heading">プライバシーポリシー</h1>~u','',$content,1);
-        return str_replace('広告配信事業者は、','広告を配信する事業者は、',$content);
+        return str_replace(array('広告配信事業者は、','第三者配信の広告サービス','トラフィックデータ収集のために','当サイトに掲載している情報については、可能な限り正確な情報を掲載するよう努めておりますが、その正確性や安全性を保証するものではありません。'),array('広告を配信する事業者は、','外部の事業者が配信する広告サービス','アクセス状況を調べるために','当サイトでは、できる限り正確な情報を掲載するよう努めています。ただし、掲載内容の正確性や安全性を保証するものではありません。'),$content);
     }
     return $content;
 }
