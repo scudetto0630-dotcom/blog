@@ -21,7 +21,7 @@ function hsh_search_markup($id) {
     return '<form class="hsh-search" role="search" method="get" action="' . esc_url(home_url('/')) . '"><label for="' . esc_attr($id) . '">ブログ内を検索</label><div><input id="' . esc_attr($id) . '" name="s" type="search" maxlength="100" placeholder="キャリー、ハイボール、CSV…"><button type="submit">検索</button></div></form>';
 }
 add_action('wp_enqueue_scripts', function () {
-    wp_enqueue_style('hsh-reading', plugin_dir_url(__FILE__) . 'assets/reading.css', array(), '1.5.0');
+    wp_enqueue_style('hsh-reading', plugin_dir_url(__FILE__) . 'assets/reading.css', array(), '1.5.1');
     if ((int)get_option('hsh_page_id') && is_page((int)get_option('hsh_page_id'))) {
         foreach (array('cocoon-style','cocoon-keyframes','font-awesome-style','icomoon-style','baguettebox-style','cocoon-child-style','cocoon-child-keyframes','contact-form-7') as $handle) { wp_dequeue_style($handle); }
     }
@@ -51,10 +51,12 @@ add_action('template_redirect', function () {
     if (preg_match('/bot|crawl|spider|preview|headless|uptime|monitor/i', $ua)) { return; }
     if (!is_singular('post') || !get_post_meta(get_queried_object_id(), '_hsh_starter_owned', true)) { return; }
     $slug = get_post_field('post_name', get_queried_object_id());
-    $key = 'hsh_requests_' . wp_date('Y_m_d'); $counts = get_option($key, array());
-    $counts[$slug] = 1 + (int)($counts[$slug] ?? 0); update_option($key, $counts, false);
-    // Bounded retention. Cache-served requests cannot be counted here.
-    for ($i = 91; $i < 99; $i++) { delete_option('hsh_requests_' . wp_date('Y_m_d', time() - $i * DAY_IN_SECONDS)); }
+    $day = wp_date('Y_m_d'); $counts = get_option('hsh_request_counts', array());
+    $threshold = wp_date('Y_m_d',time()-89*DAY_IN_SECONDS);
+    foreach ($counts as $date => $rows) { if ($date < $threshold || $date > $day) { unset($counts[$date]); } }
+    if (!isset($counts[$day])) { $counts[$day] = get_option('hsh_requests_'.$day,array()); delete_option('hsh_requests_'.$day); }
+    $counts[$day][$slug] = 1 + (int)($counts[$day][$slug] ?? 0);
+    update_option('hsh_request_counts', $counts, false);
 });
 add_action('rest_api_init', function () {
     register_rest_route('hirogaru/v1','/site-audit',array('methods'=>'GET','permission_callback'=>'hsh_edit_permission','callback'=>'hsh_site_audit'));
@@ -64,7 +66,8 @@ function hsh_site_audit() {
     require_once ABSPATH . 'wp-admin/includes/file.php';
     global $wp_version; $plugins = array();
     foreach (get_plugins() as $file => $p) { $plugins[] = array('name'=>$p['Name'],'version'=>$p['Version'],'active'=>is_plugin_active($file)); }
-    $counts = array(); for ($i=0;$i<90;$i++) { $date=wp_date('Y_m_d',time()-$i*DAY_IN_SECONDS);$v=get_option('hsh_requests_'.$date,array());if($v){$counts[$date]=$v;} }
+    $counts = get_option('hsh_request_counts', array()); $threshold=wp_date('Y_m_d',time()-89*DAY_IN_SECONDS);
+    foreach($counts as $date=>$rows){if($date<$threshold){unset($counts[$date]);}} krsort($counts);
     return hsh_edit_response(array('wordpress'=>$wp_version,'php'=>PHP_VERSION,'public_indexing'=>(bool)get_option('blog_public'),'sitemap'=>home_url('/wp-sitemap.xml'),'updater'=>array('direct_filesystem'=>get_filesystem_method()==='direct','zip_archive'=>class_exists('ZipArchive'),'file_mods_allowed'=>!(defined('DISALLOW_FILE_MODS')&&DISALLOW_FILE_MODS),'last_update'=>get_option('hsh_last_plugin_update',null)),'plugins'=>$plugins,'backup'=>array('scope'=>'owned content can be exported using status and starter-review; hosting/database/media restore not verified','hosting_backup_verified'=>false),'search_console_connected'=>false,'measurement'=>array('kind'=>'approximate_uncached_page_requests','limitations'=>'キャッシュ配信・未知のボット・同時更新の影響あり。訪問者数や正確なPVではありません。','daily'=>$counts,'affiliate_links_configured'=>false)));
 }
 function hsh_verification_value($data) {
@@ -79,3 +82,15 @@ add_action('admin_menu',function(){add_theme_page('ブログ運用状況','ブ�
     foreach($audit['measurement']['daily'] as $day=>$counts){echo '<tr><td>'.esc_html(str_replace('_','-',$day)).'</td>';foreach(array('cat-carrier-checklist','highball-measure-and-adjust','csv-import-seven-checks') as $slug){echo '<td>'.(int)($counts[$slug]??0).'</td>';}echo '</tr>';}
     echo '</tbody></table><h2>収益</h2><p>広告リンクは未登録です。クリック数・成約数はまだ計測していません。提携条件を確認してから掲載します。</p></div>';
 });});
+
+/** Custom templates bypass Cocoon header.php, so supply missing SEO basics once. */
+function hsh_document_head() {
+    ob_start(); wp_head(); $head = ob_get_clean(); echo $head;
+    $slug = hsh_current_topic(); $details = hsh_topic_details();
+    $description = $slug ? $details[$slug][4] : '保護猫まんもすとの暮らし、シングルモルトとシェリーカスク、未経験からのIT・BPaaSと個人事業主の実務。体験と調べた情報を分けて、日々のヒントをお届けします。';
+    if (!preg_match('/<meta\b[^>]*name=[\'"]description[\'"]/i', $head)) { echo '<meta name="description" content="'.esc_attr($description).'">' . "\n"; }
+    if (!preg_match('/<link\b[^>]*rel=[\'"]canonical[\'"]/i', $head)) {
+        $url = $slug ? get_pagenum_link(max(1,(int)get_query_var('paged'))) : home_url('/');
+        echo '<link rel="canonical" href="'.esc_url($url).'">' . "\n";
+    }
+}

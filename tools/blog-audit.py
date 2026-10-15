@@ -28,6 +28,8 @@ class Document(HTMLParser):
         if self.in_title: self.title+=data
 
 def fetch(url):
+    parts=urllib.parse.urlsplit(url)
+    url=urllib.parse.urlunsplit((parts.scheme,parts.netloc,urllib.parse.quote(parts.path,safe='/%:@'),urllib.parse.quote(parts.query,safe='=&%:+,;/?'),''))
     request=urllib.request.Request(url,headers={'User-Agent':'HirogaruSiteAudit/1.0 (public site maintenance; bot)','Cache-Control':'no-cache'})
     try:
         with urllib.request.urlopen(request,timeout=30) as r: return r.status,r.read().decode('utf-8','replace')

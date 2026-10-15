@@ -1,5 +1,5 @@
 <?php if (!defined('ABSPATH')) { exit; } ?>
-<!doctype html><html <?php language_attributes(); ?>><head><meta charset="<?php bloginfo('charset'); ?>"><meta name="viewport" content="width=device-width, initial-scale=1"><?php wp_head(); ?></head>
+<!doctype html><html <?php language_attributes(); ?>><head><meta charset="<?php bloginfo('charset'); ?>"><meta name="viewport" content="width=device-width, initial-scale=1"><?php hsh_document_head(); ?></head>
 <body <?php body_class('hsh-home'); ?>><?php wp_body_open(); ?>
 <a class="hsh-skip" href="#hsh-main">本文へ移動</a>
 <header class="hsh-header"><a class="hsh-brand" href="<?php echo esc_url(home_url('/')); ?>">ひろがる<span>趣味暮らし</span><small>HIROGARU SHUMI KURASHI</small></a><nav aria-label="主要カテゴリー"><?php foreach (hsh_topics() as $slug => $t) : ?><a href="<?php echo esc_url(hsh_category_url($slug)); ?>"><?php echo esc_html($t[0]); ?></a><?php endforeach; ?></nav></header>
