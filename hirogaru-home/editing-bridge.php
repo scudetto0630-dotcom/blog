@@ -2,7 +2,7 @@
 if (!defined('ABSPATH')) { exit; }
 /** Scoped editing API: no PHP, files, users, plugins, or arbitrary existing posts. */
 function hsh_connection_admin($new_token) {
-    echo '<hr><h2>専用編集接続</h2><p>トップページの文章・配色と、この接続が新規作成した固定ページだけを編集できます。既存記事、テーマ、プラグイン、ユーザーの管理権限は付与しません。</p>';
+    echo '<hr><h2>専用編集接続</h2><p>トップページの文章・配色と、この接続が新規作成した固定ページを編集できます。同梱された初回3記事を新規投稿・公開できます。既存記事、テーマ、プラグイン、ユーザーの管理権限は付与しません。</p>';
     echo '<p>キーはパスワードと同様に扱い、チャットやスクリーンショットには含めないでください。Codex環境設定の秘密情報 <code>HSH_EDIT_TOKEN</code> に登録します。</p>';
     echo '<p>接続状態：' . (get_option('hsh_edit_token_hash') ? 'キー発行済み（外部からの接続確認は別途必要）' : '無効') . '</p>';
     if ($new_token) {
@@ -50,7 +50,7 @@ function hsh_edit_status() {
             if ($page) { $pages[$key] = array('id' => $page->ID, 'status' => $page->post_status, 'title' => $page->post_title, 'content' => $page->post_content, 'url' => get_permalink($page)); }
         }
     }
-    return hsh_edit_response(array('version' => '1.1.0', 'scope' => array('homepage_text_colors', 'bridge_owned_pages'), 'home_page_id' => (int) get_option('hsh_page_id'), 'home_settings' => get_option('hsh_home_settings', array()), 'pages' => $pages));
+    return hsh_edit_response(array('version' => '1.2.0', 'scope' => array('homepage_text_colors', 'bridge_owned_pages', 'publish_three_packaged_posts'), 'home_page_id' => (int) get_option('hsh_page_id'), 'home_settings' => get_option('hsh_home_settings', array()), 'pages' => $pages));
 }
 function hsh_edit_home($request) {
     $data = $request->get_json_params();
