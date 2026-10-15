@@ -1,0 +1,113 @@
+[
+  {
+    "messages": [],
+    "filePath": "/tmp/all-uncached/search.md"
+  },
+  {
+    "messages": [],
+    "filePath": "/tmp/all-uncached/post-8.md"
+  },
+  {
+    "messages": [
+      {
+        "type": "lint",
+        "ruleId": "ja-no-orthographic-variants",
+        "message": "「用」、「よう」の表記ゆれがあります。",
+        "index": 807,
+        "line": 53,
+        "column": 24,
+        "range": [
+          807,
+          808
+        ],
+        "loc": {
+          "start": {
+            "line": 53,
+            "column": 24
+          },
+          "end": {
+            "line": 53,
+            "column": 25
+          }
+        },
+        "severity": 2
+      },
+      {
+        "type": "lint",
+        "ruleId": "ja-technical-writing/ja-no-weak-phrase",
+        "message": "弱い表現: \"かも\" が使われています。",
+        "index": 2170,
+        "line": 115,
+        "column": 9,
+        "range": [
+          2170,
+          2171
+        ],
+        "loc": {
+          "start": {
+            "line": 115,
+            "column": 9
+          },
+          "end": {
+            "line": 115,
+            "column": 10
+          }
+        },
+        "severity": 2
+      }
+    ],
+    "filePath": "/tmp/all-uncached/post-35.md"
+  },
+  {
+    "messages": [],
+    "filePath": "/tmp/all-uncached/post-34.md"
+  },
+  {
+    "messages": [],
+    "filePath": "/tmp/all-uncached/post-33.md"
+  },
+  {
+    "messages": [],
+    "filePath": "/tmp/all-uncached/page-30.md"
+  },
+  {
+    "messages": [],
+    "filePath": "/tmp/all-uncached/page-29.md"
+  },
+  {
+    "messages": [],
+    "filePath": "/tmp/all-uncached/page-26.md"
+  },
+  {
+    "messages": [],
+    "filePath": "/tmp/all-uncached/page-18.md"
+  },
+  {
+    "messages": [],
+    "filePath": "/tmp/all-uncached/page-14.md"
+  },
+  {
+    "messages": [],
+    "filePath": "/tmp/all-uncached/category-whisky.md"
+  },
+  {
+    "messages": [],
+    "filePath": "/tmp/all-uncached/category-neko.md"
+  },
+  {
+    "messages": [],
+    "filePath": "/tmp/all-uncached/category-it-freelance.md"
+  },
+  {
+    "messages": [],
+    "filePath": "/tmp/all-uncached/category-hobby.md"
+  },
+  {
+    "messages": [],
+    "filePath": "/tmp/all-uncached/category-cats.md"
+  },
+  {
+    "messages": [],
+    "filePath": "/tmp/all-uncached/author.md"
+  }
+]
