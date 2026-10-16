@@ -56,6 +56,18 @@ add_filter('wp_get_attachment_image_attributes',function($attrs,$attachment){
 // Use the native WordPress search query with a readable result/empty-state template.
 add_filter('template_include',function($template){return is_search()?__DIR__.'/search-template.php':$template;},101);
 add_filter('wp_robots',function($robots){if(is_search()){$robots['noindex']=true;unset($robots['index']);}return $robots;});
+function hsh_search_robots($head) {
+    $tokens=array('noindex'=>true);
+    $clean=preg_replace_callback('/<meta\b[^>]*>/i',function($match)use(&$tokens){
+        if(!preg_match('/\bname\s*=\s*[\'"]robots[\'"]/i',$match[0]))return $match[0];
+        if(preg_match('/\bcontent\s*=\s*([\'"])(.*?)\1/is',$match[0],$value)){
+            foreach(explode(',',strtolower(html_entity_decode($value[2],ENT_QUOTES,'UTF-8'))) as $token){$token=trim($token);if($token!=='')$tokens[$token]=true;}
+        }
+        return '';
+    },$head);
+    unset($tokens['index']);if(isset($tokens['nofollow']))unset($tokens['follow']);
+    return $clean.'<meta name="robots" content="'.esc_attr(implode(', ',array_keys($tokens))).'">' . "\n";
+}
 
 /** Read-only page metrics from an owner-supplied Search Console Pages CSV. */
 function hsh_gsc_number($value) {

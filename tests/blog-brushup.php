@@ -20,6 +20,10 @@ check(strpos(json_encode($parsed),'secret')===false,'query parameters are not st
 $head=hsh_blog_extra_head('<meta content="keep" property="og:title">','https://example.test/','a </script> b','Title');
 check(strpos($head,'property="og:title"')===false,'existing Open Graph title is not duplicated');
 check(strpos($head,'\u003C/script\u003E')!==false,'structured metadata cannot break out of script element');
+$robots=hsh_search_robots('<meta name="robots" content="noindex,follow,max-image-preview:large"><meta content="noindex,follow" name="robots"><meta name="description" content="keep">');
+check(substr_count($robots,'name="robots"')===1&&strpos($robots,'max-image-preview:large')!==false&&strpos($robots,'content="keep"')!==false,'search robots tags merged without dropping other metadata');
+$robots=hsh_search_robots('<meta name="robots" content="index,follow"><meta name="robots" content="noindex,nofollow">');
+check(strpos($robots,'content="noindex, nofollow"')!==false,'search remains noindex and preserves restrictive directives');
 $map=hsh_article_map();check(count($map)===3&&count(array_unique(array_column($map,'intent')))===3,'each published article has a distinct recorded search intent');
 check(strpos(hsh_article_review_note('cat-carrier-checklist'),'2026-10-16')!==false&&hsh_article_review_note('unrelated')==='','review note is limited to reviewed managed articles');
 $path=dirname(__DIR__).'/hirogaru-home/assets/resources/';check(is_file($path.'cat-carrier-checklist.txt')&&is_file($path.'highball-note.txt')&&is_file($path.'csv-practice.csv'),'useful downloadable resources are packaged');
