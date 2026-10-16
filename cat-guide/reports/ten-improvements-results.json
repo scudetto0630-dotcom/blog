@@ -1,0 +1,25 @@
+{
+  "public_version": "1.10.0",
+  "articles": 9,
+  "public_pages": 17,
+  "sitemap_urls": 16,
+  "python_passed": 9,
+  "php_passed_including_existing": 199,
+  "local_browser_passed": 91,
+  "live_browser_passed": 91,
+  "existing_blog_browser_passed": 41,
+  "http_public_failures": 0,
+  "production_report_store_and_cleanup_verified": true,
+  "scheduled_job_registered": true,
+  "bounded_reference_head_check_codes": {
+    "environment-care": 200,
+    "nishitokyo-city": 200,
+    "tokyo-animal-care": 200
+  },
+  "pending": [
+    "Official source content review",
+    "Individual local organization/event research",
+    "Real cat photo not supplied",
+    "Future scheduled execution not yet observed"
+  ]
+}
