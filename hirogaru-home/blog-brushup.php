@@ -14,16 +14,12 @@ function hsh_local_footer_assets($html) {
         return $m[1].esc_url(plugin_dir_url(__FILE__).'assets/vendor/clipboard-1.5.13.min.js').$m[2];
     },$html);
 }
-add_action('wp_footer',function(){
-    if(is_admin())return;
-    $GLOBALS['hsh_footer_buffer_levels'][]=ob_get_level();
+// Cocoon prints this legacy tag after wp_footer, so filter the rendered HTML.
+// WordPress flushes the buffer on shutdown; feeds, REST and admin do not use templates.
+add_filter('template_include',function($template){
     ob_start('hsh_local_footer_assets');
-},-10000);
-add_action('wp_footer',function(){
-    if(empty($GLOBALS['hsh_footer_buffer_levels']))return;
-    $level=array_pop($GLOBALS['hsh_footer_buffer_levels']);
-    if(ob_get_level()===$level+1)ob_end_flush();
-},PHP_INT_MAX);
+    return $template;
+},999);
 
 function hsh_article_map() {
     $items=json_decode(file_get_contents(__DIR__.'/article-map.json'),true);
