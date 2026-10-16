@@ -31,6 +31,14 @@ $related=hsh_select_related(array((object)array('ID'=>1,'post_status'=>'publish'
 check(array_map(function($p){return $p->ID;},$related)===array(3,4),'related articles exclude current post drafts and duplicates');
 $target=hsh_refresh_plan()->data['articles'][0];$result=hsh_managed_article(new Request(array('slug'=>$target['slug'],'expected'=>$target['fingerprint'],'content'=>$target['content'],'excerpt'=>'変更後の検索説明文')));
 check($result instanceof WP_REST_Response&&get_post_meta($target['id'],'the_page_meta_description',true)==='変更後の検索説明文','later managed article edits keep SEO description in sync');
+function get_search_query($escape=true){return '<script>alert(1)</script>" onfocus="bad';}
+$search=hsh_search_markup('safe-search');check(strpos($search,'<script>')===false&&strpos($search,'&lt;script&gt;')!==false&&strpos($search,'&quot; onfocus=')!==false,'search query is escaped as a value rather than HTML attributes or script');
 function current_user_can($cap){return false;}
 ob_start();hsh_gsc_admin();$output=ob_get_clean();check($output==='','unauthorized user cannot view the search metrics dashboard');
+check(hsh_local_core_script('https://external.test/x','jquery-core','https://example.test/wp-includes/')==='https://example.test/wp-includes/js/jquery/jquery.min.js','jQuery uses WordPress local copy');
+check(hsh_local_core_script('original','unrelated','local/')==='original','unrelated scripts are untouched');
+$footer='<script src="//cdn.jsdelivr.net/clipboard.js/1.5.13/clipboard.min.js"></script><script src="https://other.test/x.js"></script>';
+$local=hsh_local_footer_assets($footer);
+check(strpos($local,'assets/vendor/clipboard-1.5.13.min.js')!==false&&strpos($local,'https://other.test/x.js')!==false,'only exact legacy clipboard dependency is localized');
+check(hsh_local_footer_assets('<p>//cdn.jsdelivr.net/clipboard.js/1.5.13/clipboard.min.js</p>')==='<p>//cdn.jsdelivr.net/clipboard.js/1.5.13/clipboard.min.js</p>','plain text is not rewritten as a script');
 echo "All blog brushup tests passed. Total tests: $tests\n";

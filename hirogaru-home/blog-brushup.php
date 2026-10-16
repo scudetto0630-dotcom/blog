@@ -1,6 +1,30 @@
 <?php
 if (!defined('ABSPATH')) { exit; }
 
+// Keep the theme's dependencies available without third-party CDN requests.
+function hsh_local_core_script($src,$handle,$base) {
+    $files=array('jquery-core'=>'jquery.min.js','jquery-migrate'=>'jquery-migrate.min.js');
+    return isset($files[$handle]) ? $base.'js/jquery/'.$files[$handle] : $src;
+}
+add_filter('script_loader_src',function($src,$handle){
+    return is_admin() ? $src : hsh_local_core_script($src,$handle,includes_url());
+},20,2);
+function hsh_local_footer_assets($html) {
+    return preg_replace_callback('~(<script\b[^>]*\bsrc=[\x22\x27])(?:https?:)?//cdn\.jsdelivr\.net/clipboard\.js/1\.5\.13/clipboard\.min\.js([\x22\x27])~i',function($m){
+        return $m[1].esc_url(plugin_dir_url(__FILE__).'assets/vendor/clipboard-1.5.13.min.js').$m[2];
+    },$html);
+}
+add_action('wp_footer',function(){
+    if(is_admin())return;
+    $GLOBALS['hsh_footer_buffer_levels'][]=ob_get_level();
+    ob_start('hsh_local_footer_assets');
+},-10000);
+add_action('wp_footer',function(){
+    if(empty($GLOBALS['hsh_footer_buffer_levels']))return;
+    $level=array_pop($GLOBALS['hsh_footer_buffer_levels']);
+    if(ob_get_level()===$level+1)ob_end_flush();
+},PHP_INT_MAX);
+
 function hsh_article_map() {
     $items=json_decode(file_get_contents(__DIR__.'/article-map.json'),true);
     return is_array($items)?$items:array();
