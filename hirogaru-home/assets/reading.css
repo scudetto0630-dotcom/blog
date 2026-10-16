@@ -9,3 +9,6 @@
 @media(max-width:760px){.hsh-home .hsh-hero h1{font-size:31px}.hsh-first-link{display:flex;width:fit-content;margin-left:0}.hsh-post-grid>article:only-child>a{display:block;padding:18px}.hsh-post-grid>article:only-child>a>time{margin-top:15px}.hsh-reading-route{padding:20px}.hsh-reading-route ul{grid-template-columns:1fr}.hsh-practical{padding:20px}.hsh-card-summary{font-size:14px}.entry-content pre{overflow:auto;max-width:100%}}
 @media(max-width:360px){.hsh-home .hsh-hero h1{font-size:27px}}
 .hsh-search-heading{padding-top:30px}.hsh-search-heading h1{font-size:clamp(27px,4vw,36px)}.hsh-search-page .hsh-main{padding-bottom:65px}.hsh-search-page .hsh-post-grid h2{font-size:20px;margin:10px 0}.hsh-search-page .hsh-post-grid article>a{display:block}.hsh-search-page .hsh-post-grid>article:only-child>a{display:block;max-width:700px}.hsh-search-page .hsh-post-grid img{max-height:280px;object-fit:contain}.hsh-related{padding:24px;border:1px solid var(--hsh-line);border-radius:12px;margin:35px 0}.entry-content .hsh-related h2{padding:0;margin-top:0;border:0;background:none;font-size:22px}.hsh-related li{margin:12px 0}
+
+/* These three articles use the curated same-topic route above the author box. */
+body.postid-33 .related-entries,body.postid-34 .related-entries,body.postid-35 .related-entries{display:none}
