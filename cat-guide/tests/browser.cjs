@@ -3,7 +3,7 @@ const assert=require('node:assert/strict');
 const {promisify}=require('node:util');
 const {execFile}=require('node:child_process');
 const path=require('node:path');
-const base=process.env.CAT_GUIDE_URL||'http://127.0.0.1:8023/';
+const base=process.env.CAT_GUIDE_URL||'http://127.0.0.1:8025/';
 const routes=['','guides/','welcome/','local/','about/','privacy/','articles/first-days/','articles/food-and-water/','articles/litter-box/','articles/vet-visit/','articles/safe-home/','articles/adoption-steps/'];
 (async()=>{const browser=await chromium.launch({executablePath:'/usr/bin/chromium',headless:true,args:['--no-sandbox']});let passed=0;const cache=new Map();
  async function newContext(options){const context=await browser.newContext(options);if(base.startsWith('https://hirogarushumi.com/')){await context.route('**/*',async route=>{const u=route.request().url();if(!cache.has(u))cache.set(u,promisify(execFile)('python',[path.join(__dirname,'../../tools/public-page-fetch.py'),u],{maxBuffer:20000000}).then(r=>JSON.parse(r.stdout)));const r=await cache.get(u);await route.fulfill({status:r.status,contentType:r.type,body:Buffer.from(r.body,'base64')})})}return context}

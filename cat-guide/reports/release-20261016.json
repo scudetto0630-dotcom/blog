@@ -1,0 +1,26 @@
+{
+  "name": "ねこより西東京",
+  "url": "https://hirogarushumi.com/neko-guide/",
+  "deployment": "released_on_owner_instruction",
+  "plugin_version": "1.9.0",
+  "preview_banner": false,
+  "indexable_pages": 12,
+  "canonical_and_sitemap_verified": true,
+  "robots_sitemap_verified": true,
+  "not_found_noindex_verified": true,
+  "tests": {
+    "python_passed": 5,
+    "php_including_existing_blog_passed": 155,
+    "local_browser_passed": 60,
+    "live_browser_passed": 60,
+    "existing_blog_browser_passed": 41,
+    "failed_after_correction": 0
+  },
+  "remaining_limitations": [
+    "Name duplication search still blocked by proxy403; no uniqueness guarantee",
+    "Official-source verification still pending; no veterinary supervision claimed",
+    "Search engine indexing and ranking are not guaranteed",
+    "No autonomous article publishing scheduler installed"
+  ],
+  "development_test_note": "The retained Python 8023 server disconnected and single-thread 8024 stalled on browser sockets. Local browser validation completed on event-loop server 8025; committed read-only server helper separately verified on 8026. This was a development server issue, not a live app failure."
+}

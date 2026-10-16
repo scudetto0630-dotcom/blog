@@ -7,8 +7,8 @@
 - 原稿：`content/articles.json`（6記事）。構成・固定ページ：`tools/build.py`。
 - デザイン：`assets/style.css`。操作：`assets/site.js`。外部ライブラリ・有料API不要。
 - `python cat-guide/tools/build.py` で13HTML（12ページ＋404）と素材を生成。
-- 起動：`python -m http.server 8023 --bind 127.0.0.1 --directory cat-guide/build`。
-- テスト：`python -m unittest discover -s cat-guide/tests -p 'test_*.py' -v`、`node cat-guide/tests/browser.cjs`。
+- 起動：`node cat-guide/tools/serve.cjs（127.0.0.1:8025）`。
+- テスト：`python -m unittest discover -s cat-guide/tests -p 'test_*.py' -v`、`CAT_GUIDE_URL=http://127.0.0.1:8025/ node cat-guide/tests/browser.cjs`。
 - チェックリストはlocalStorage保存。問い合わせ送信、寄付受付、アクセス解析、広告は未設置。
 - 検索はサイト内だけの検索。自治体・保護団体の最新情報を外部検索する機能ではない。
 
