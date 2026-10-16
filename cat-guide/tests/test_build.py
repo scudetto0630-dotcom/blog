@@ -25,9 +25,14 @@ class Site(unittest.TestCase):
    self.assertGreaterEqual(len(x['sections']),4)
    self.assertNotIn('用品',json.dumps(x,ensure_ascii=False))
    self.assertNotIn('亡くなるまで',json.dumps(x,ensure_ascii=False))
+ def test_sitemap_and_canonicals(self):
+  import xml.etree.ElementTree as ET
+  root=ET.parse(ROOT/'build/sitemap.xml').getroot();urls=[x.text for x in root.iter('{http://www.sitemaps.org/schemas/sitemap/0.9}loc')];self.assertEqual(len(urls),12);self.assertEqual(len(set(urls)),12)
+  for url in urls:
+   relative=url.removeprefix(build.SITE_URL);p=ROOT/'build'/relative/'index.html';self.assertTrue(p.is_file());self.assertIn('rel="canonical" href="'+url+'"',p.read_text())
  def test_escape_untrusted_content(self):
   self.assertEqual(build.e('<script>"'), '&lt;script&gt;&quot;')
  def test_no_tracking_or_external_dependencies(self):
   for p in (ROOT/'build').rglob('*.html'):
-   s=p.read_text();self.assertIn('noindex,nofollow',s);self.assertNotRegex(s,r'<script[^>]+src="https?');self.assertNotIn('googletagmanager',s)
+   s=p.read_text();self.assertIn('noindex,nofollow' if p.name=='404.html' else 'index,follow,max-image-preview:large',s);self.assertNotIn('制作中',s);self.assertNotIn('ねこのはじめ',s);self.assertNotRegex(s,r'<script[^>]+src="https?');self.assertNotIn('googletagmanager',s)
 if __name__=='__main__':unittest.main()

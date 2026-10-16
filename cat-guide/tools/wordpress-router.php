@@ -1,5 +1,5 @@
 <?php
-/** Serve the independent static preview without changing WordPress pages or blog templates. */
+/** Serve the independent static site without changing WordPress pages or blog templates. */
 if (!defined('ABSPATH')) { exit; }
 function hsh_catguide_route($uri) {
     $path = parse_url($uri, PHP_URL_PATH);
@@ -23,16 +23,23 @@ add_action('parse_request',function() {
     $root=realpath(__DIR__.'/cat-guide-preview');
     $file=$root ? realpath($root.'/'.$route['file']) : false;
     if (!$file || strpos($file,$root.DIRECTORY_SEPARATOR)!==0 || !is_file($file)) { status_header(503); exit; }
-    $types=array('html'=>'text/html; charset=UTF-8','css'=>'text/css; charset=UTF-8','js'=>'text/javascript; charset=UTF-8','svg'=>'image/svg+xml','webp'=>'image/webp');
+    $types=array('html'=>'text/html; charset=UTF-8','css'=>'text/css; charset=UTF-8','js'=>'text/javascript; charset=UTF-8','svg'=>'image/svg+xml','webp'=>'image/webp','xml'=>'application/xml; charset=UTF-8');
     $extension=pathinfo($file,PATHINFO_EXTENSION);
     if (!isset($types[$extension])) { status_header(404); exit; }
     status_header($route['status']);
     header('Content-Type: '.$types[$extension]);
     header('Cache-Control: no-store, max-age=0');
-    header('X-Robots-Tag: noindex, nofollow');
+    if ($route['status'] !== 200) { header('X-Robots-Tag: noindex, nofollow'); }
     header('X-Content-Type-Options: nosniff');
     header('Referrer-Policy: strict-origin-when-cross-origin');
     header("Content-Security-Policy: default-src 'self'; img-src 'self'; script-src 'self'; style-src 'self'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'; object-src 'none'");
     if ($method !== 'HEAD') { readfile($file); }
     exit;
 },0);
+
+// Keep existing WordPress directives and advertise this independent site's sitemap.
+function hsh_catguide_robots($output,$public) {
+    if ($public && strpos($output,'/neko-guide/sitemap.xml')===false) { $output=rtrim($output)."\nSitemap: ".home_url('/neko-guide/sitemap.xml')."\n"; }
+    return $output;
+}
+add_filter('robots_txt','hsh_catguide_robots',10,2);
