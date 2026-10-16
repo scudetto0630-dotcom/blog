@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-16",
+  "site": "https://hirogarushumi.com/",
+  "version": "1.11.4",
+  "browser_cases": {
+    "main": 41,
+    "additional": 35,
+    "failed_final": 0
+  },
+  "php_checks": {
+    "blog_suite_including_shared": 133,
+    "cat_regression_including_shared": 199,
+    "additive": false
+  },
+  "python_tests": 8,
+  "public_urls": {
+    "checked": 18,
+    "failed": 0
+  },
+  "textlint": {
+    "pages": 16,
+    "remaining_contextual_findings": 3
+  },
+  "pending": [
+    "Official source bodies blocked by HTTP 403",
+    "Real Search Console metrics not supplied"
+  ],
+  "excluded": [
+    "Authenticated production CSV upload",
+    "Field Core Web Vitals",
+    "Whole hosting restore"
+  ]
+}
