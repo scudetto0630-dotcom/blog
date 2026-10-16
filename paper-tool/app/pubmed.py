@@ -6,6 +6,7 @@ from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 from xml.etree import ElementTree as ET
+from .ingredients import search_term
 
 BASE = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/'
 
@@ -34,8 +35,7 @@ class PubMed:
         # Quote user input as a phrase, preventing appended query operators.
         ingredient=ingredient.replace('"',' ').strip()
         if not ingredient or len(ingredient)>120: raise ValueError('成分名が正しくありません。')
-        aliases={'egcg':'("EGCG"[Title/Abstract] OR "epigallocatechin gallate"[Title/Abstract])','エピガロカテキンガレート':'("EGCG"[Title/Abstract] OR "epigallocatechin gallate"[Title/Abstract])','エピガロカテキン没食子酸':'("EGCG"[Title/Abstract] OR "epigallocatechin gallate"[Title/Abstract])','カテキン':'"catechin"[Title/Abstract]'}
-        term=aliases.get(ingredient.lower(),f'"{ingredient}"[Title/Abstract]')
+        term=search_term(ingredient)
         payload=self.transport('esearch.fcgi', {'db':'pubmed','term':term,
             'mindate':start.isoformat(),'maxdate':end.isoformat(),'datetype':'pdat',
             'retmode':'json','retmax':0 if count_only else 9999,'sort':'pub date','tool':'PaperDesk'})

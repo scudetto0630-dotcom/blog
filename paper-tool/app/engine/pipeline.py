@@ -7,6 +7,7 @@ import re
 import sqlite3
 from pathlib import Path
 from .decisions import final_decision
+from ..ingredients import search_name, normal
 
 
 @lru_cache(maxsize=2)
@@ -40,11 +41,11 @@ class Pipeline:
         with sqlite3.connect(path) as db:
             db.executescript('CREATE TABLE IF NOT EXISTS research_decisions(job TEXT,ingredient TEXT,pmid TEXT,round INTEGER,payload TEXT,PRIMARY KEY(job,ingredient,pmid,round)); CREATE TABLE IF NOT EXISTS research_final(job TEXT,ingredient TEXT,pmid TEXT,payload TEXT,PRIMARY KEY(job,ingredient,pmid)); CREATE TABLE IF NOT EXISTS research_cache(key TEXT PRIMARY KEY,payload TEXT);')
     def process(self,job,ingredient,paper,on_round=None):
-        signature=json.dumps(['threepass-v2',ingredient,paper,self.classifier.model,self.teacher_version],sort_keys=True,ensure_ascii=False)
+        signature=json.dumps(['threepass-v3',normal(search_name(ingredient)),paper,self.classifier.model,self.teacher_version],sort_keys=True,ensure_ascii=False)
         cache_key=hashlib.sha256(signature.encode()).hexdigest();checkpoint_job=job+':'+cache_key
         with sqlite3.connect(self.path) as db:cached=db.execute('SELECT payload FROM research_cache WHERE key=?',(cache_key,)).fetchone()
         if cached:
-            result=json.loads(cached[0]);result['cache_reused']=True
+            result=json.loads(cached[0]);result['cache_reused']=True;result['ingredient']=ingredient
             with sqlite3.connect(self.path) as db:db.execute('INSERT OR REPLACE INTO research_final VALUES(?,?,?,?)',(job,ingredient,paper['pmid'],json.dumps(result,ensure_ascii=False)))
             return result
         decisions=[]

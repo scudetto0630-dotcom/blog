@@ -33,3 +33,7 @@ PlaywrightとChromiumが必要です。現在の開発環境では `/usr/bin/chr
 資料インポートの互換性テストは添付資料が存在する場合のみ実行できます。
 
 `python server.py` は既定では旧デモ用Python/SQLiteサーバーです。`PAPERDESK_RESEARCH_ENGINE=1` で本番ジョブ用APIと画面を有効にできます。公開静的サイトには適用されません。承認・キー・単価と上限がないとAI処理は停止します。既存WordPressファイルやその認証キーは変更していません。
+
+## 他成分をサイトで処理する本番接続
+
+既存の成分入力・製品管理を維持した本番Pythonサーバーを使用します。公開用設定は [LIVE_DEPLOYMENT.md](docs/LIVE_DEPLOYMENT.md)、実施済み・未実施の区別は [作業記録](docs/LIVE_ACTIVATION_REPORT.md)。現行の無料静的サイトだけでは新規の検索・AI仕分けは実行できません。APIキーと永続実行サーバーの接続後に切り替えます。

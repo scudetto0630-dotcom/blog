@@ -17,6 +17,7 @@ from app.taxonomy import TAXONOMY, VERSION
 from app.worker import DemoWorker
 from app.engine.jobs import ResearchJobs
 from app.engine.decisions import ApprovalRequired
+from app.runtime import readiness
 
 ROOT = Path(__file__).resolve().parent
 STATIC = ROOT / 'app' / 'static'
@@ -78,7 +79,9 @@ class Handler(BaseHTTPRequestHandler):
         if research and path.startswith('/api/research/jobs'):
             parts=path.strip('/').split('/')
             if self.command=='GET' and len(parts)==3:return self.respond(200,{'jobs':research.list()})
-            if self.command=='POST' and len(parts)==3:return self.respond(202,research.create(validate_input(self.input())))
+            if self.command=='POST' and len(parts)==3:
+                try:return self.respond(202,research.create(validate_input(self.input())))
+                except ValueError as e:raise ValidationError(str(e))
             if self.command=='GET' and len(parts)==4:
                 job=research.get(parts[3]);return self.respond(200 if job else 404,job or {'error':'処理が見つかりません。'})
             if self.command=='GET' and len(parts)==5 and parts[4]=='results':
@@ -101,7 +104,7 @@ class Handler(BaseHTTPRequestHandler):
                 job=research.retry(parts[3]);return self.respond(202 if job else 404,job or {'error':'処理が見つかりません。'})
             return self.respond(404,{'error':'この操作は利用できません。'})
         if self.command == 'GET':
-            if path == '/api/config': return self.respond(200, {'mode': 'demo', 'stages': STAGES, 'taxonomy': TAXONOMY, 'taxonomy_version': VERSION, 'taxonomy_provisional': False,'research_engine_available':research is not None})
+            if path == '/api/config': return self.respond(200, {'mode': 'research' if research else 'demo', 'stages': STAGES, 'taxonomy': TAXONOMY, 'taxonomy_version': VERSION, 'taxonomy_provisional': False,'research_engine_available':research is not None, 'runtime':readiness() if research else None})
             if path == '/api/products': return self.respond(200, {'products': store.products()})
             if path == '/api/jobs': return self.respond(200, {'jobs': store.jobs()})
             if path.startswith('/api/products/'):
@@ -144,7 +147,7 @@ class Handler(BaseHTTPRequestHandler):
 
 
 def main():
-    parser = argparse.ArgumentParser(description='NU SKIN 学術論文整理ツール（第1段階・デモ）')
+    parser = argparse.ArgumentParser(description='PaperDesk 成分・論文整理ツール')
     parser.add_argument('--host', default=os.environ.get('HOST', '127.0.0.1'))
     parser.add_argument('--port', type=int, default=int(os.environ.get('PORT', '8000')))
     parser.add_argument('--db', default=os.environ.get('DATABASE_PATH', str(ROOT / 'data' / 'paperdesk.sqlite3')))
@@ -166,7 +169,7 @@ def main():
     if server.research:server.research.start()
     worker = DemoWorker(store, args.demo_delay)
     worker.start()
-    print(f'PaperDesk demo: http://{args.host}:{args.port}', flush=True)
+    print(f'PaperDesk {"research" if server.research else "demo"}: http://{args.host}:{args.port}', flush=True)
     try: server.serve_forever()
     except KeyboardInterrupt: pass
     finally:

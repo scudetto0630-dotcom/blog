@@ -14,6 +14,8 @@ from .decisions import ApprovalRequired,BudgetExceeded,Classifier
 from .ledger import Ledger
 from .pipeline import Pipeline,teacher_examples
 from .export import export_results
+from ..runtime import ai_key
+from ..ingredients import search_name, normal
 
 def now():return datetime.now(timezone.utc).isoformat()
 
@@ -28,6 +30,8 @@ class ResearchJobs:
                 if name not in columns:db.execute('ALTER TABLE research_jobs ADD COLUMN '+name+' '+definition)
         self.stop_event=threading.Event();self.thread=threading.Thread(target=self.run,daemon=True,name='research-worker')
     def create(self,snapshot):
+        names=[normal(search_name(i)) for i in snapshot['ingredients']]
+        if len(set(names))!=len(names):raise ValueError('同じ成分の日本語名と英語名が重複しています。')
         id=str(uuid.uuid4())
         with sqlite3.connect(self.path) as db:db.execute('INSERT INTO research_jobs(id,snapshot,status,phase,processed,total,error,archive,created) VALUES(?,?,?,0,0,0,NULL,NULL,?)',(id,json.dumps(snapshot,ensure_ascii=False),'queued',now()))
         return self.get(id)
@@ -73,7 +77,7 @@ class ResearchJobs:
         if os.environ.get('PAPERDESK_ALLOW_PAID')!='explicitly-approved':return Classifier(None,os.environ.get('PAPERDESK_AI_MODEL','not-configured'))
         job=self.get(id)
         if not job['approved']:return Classifier(None,os.environ.get('PAPERDESK_AI_MODEL','not-configured'))
-        key=os.environ.get('PAPERDESK_AI_KEY');model=os.environ.get('PAPERDESK_AI_MODEL')
+        key=ai_key();model=os.environ.get('PAPERDESK_AI_MODEL')
         if not key or not model:raise ApprovalRequired('運営者側のAI設定が未完了です。利用者によるAPI設定は不要です。')
         try:cap=job['cap'];ir=float(os.environ['PAPERDESK_INPUT_USD_PER_MILLION']);ou=float(os.environ['PAPERDESK_OUTPUT_USD_PER_MILLION'])
         except (KeyError,ValueError):raise ApprovalRequired('運営者によるモデル料金・ジョブ上限の設定が必要です。')
@@ -104,7 +108,7 @@ class ResearchJobs:
         return {**details,'estimate_fingerprint':fingerprint}
     def approve(self,id,cap,fingerprint):
         if os.environ.get('PAPERDESK_ALLOW_PAID')!='explicitly-approved':raise ApprovalRequired('運営者が有料処理を許可していません。')
-        if not os.environ.get('PAPERDESK_AI_KEY'):raise ApprovalRequired('運営者側のAI接続設定が未完了です。')
+        if not ai_key():raise ApprovalRequired('運営者側のAI接続設定が未完了です。')
         details=self.estimate(id)
         if fingerprint!=details['estimate_fingerprint']:raise ApprovalRequired('最新の見積りを確認してください。')
         if not isinstance(cap,(int,float)) or isinstance(cap,bool) or not math.isfinite(cap) or cap<=0 or cap>details['maximum_job_cap_usd']:raise ValueError('費用上限が不正です。')

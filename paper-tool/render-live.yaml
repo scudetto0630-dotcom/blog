@@ -1,0 +1,38 @@
+# Separate from render.yaml: the existing free site is not replaced automatically.
+# This web service and its persistent disk are paid Render resources.
+services:
+  - type: web
+    name: paperdesk-live
+    runtime: python
+    plan: starter
+    rootDir: paper-tool
+    buildCommand: python3 -m compileall -q app server.py
+    startCommand: python3 server.py --host 0.0.0.0
+    healthCheckPath: /health
+    disk:
+      name: paperdesk-data
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.12
+      - key: PYTHONUNBUFFERED
+        value: "1"
+      - key: PAPERDESK_RESEARCH_ENGINE
+        value: "1"
+      - key: DATABASE_PATH
+        value: /var/data/paperdesk.sqlite3
+      - key: APP_ACCESS_PASSWORD
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: PAPERDESK_AI_MODEL
+        value: gpt-4.1-mini-2025-04-14
+      - key: PAPERDESK_INPUT_USD_PER_MILLION
+        value: "0.40"
+      - key: PAPERDESK_OUTPUT_USD_PER_MILLION
+        value: "1.60"
+      - key: PAPERDESK_JOB_CAP_USD
+        value: "1.00"
+      - key: PAPERDESK_ALLOW_PAID
+        value: explicitly-approved
