@@ -1,0 +1,38 @@
+{
+  "version": "1.10.2",
+  "scope": [
+    "homepage_text_colors",
+    "bridge_owned_pages",
+    "publish_three_packaged_posts",
+    "refresh_three_owned_posts_with_packaged_images",
+    "update_only_hirogaru_home_from_pinned_repository",
+    "read_site_audit",
+    "set_public_google_verification_token",
+    "refresh_packaged_site_introduction"
+  ],
+  "home_page_id": 26,
+  "home_settings": {
+    "hide_empty": true,
+    "about": "<figure class=\"wp-block-image\"><img src=\"https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/brand-avatar.webp\" width=\"112\" height=\"112\" alt=\"猫とグラスを描いたブログのイラスト\" loading=\"lazy\"></figure><p>はじめまして。「ひろがる趣味暮らし」の管理人です。今は保護猫のまんもすと暮らしています。</p><p>ウイスキーはシングルモルト、特にシェリーカスクが好みです。</p><p>以前はMRとして働いていました。現在はフリーランスで、お客様から預かったデータをシステムに取り込む仕事をしています。</p><p><a href=\"https://hirogarushumi.com/hsh-about/\">管理人のプロフィール</a> ／ <a href=\"https://hirogarushumi.com/hsh-editorial/\">記事・広告について</a></p>",
+    "heading_1": "猫とウイスキーと、",
+    "heading_2": "フリーランスの仕事",
+    "heading_3": "",
+    "intro": "猫との暮らしや、ウイスキーの飲み方・選び方について書いています。\n会社員からフリーランスになった経緯や、未経験で始めたITの仕事についても書いています。"
+  },
+  "pages": {
+    "about": {
+      "id": 29,
+      "status": "publish",
+      "title": "管理人のプロフィール",
+      "content": "<figure class=\"wp-block-image\"><img src=\"https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/brand-avatar.webp\" width=\"160\" height=\"160\" alt=\"猫とグラスを描いたブログのイラスト\" loading=\"lazy\"></figure>\n<p>はじめまして。「ひろがる趣味暮らし」の管理人です。</p>\n<p>猫との暮らしやウイスキー、未経験で始めたITの仕事について書いています。</p>\n<h2>保護猫のまんもすと暮らしています</h2>\n<p>まんもすはスコティッシュフォールドで、体重は5.5kgです。おもちゃには100均のねこじゃらしも使っています。</p>\n<p>これまで8匹の猫と暮らしてきました。</p>\n<p>猫の記事では、キャリーやおもちゃの選び方、日々の世話について取り上げます。</p>\n<h2>ウイスキーはシェリーカスクが好みです</h2>\n<p>シングルモルトのなかでも、シェリー樽で熟成したウイスキーが好きです。ブログでは、ウイスキーの飲み方や選び方、グラスなどの道具についても書いていきます。</p>\n<h2>会社員からフリーランスへ</h2>\n<p>以前はMRとして働いていました。登録販売者の資格も持っています。</p>\n<p>今は個人事業主としてITの仕事をしています。お客様の要望を聞いて、預かったデータをシステムに取り込むのが主な仕事です。</p>\n<p>ITの仕事は未経験からのスタートでした。データの整理や抽出にかかる時間を減らしたくて、AIやプログラミングに興味を持ちました。ただ、最初は何から手をつければいいのか分かりませんでした。</p>\n<p>仕事の記事では、データの整理やAIの使い方を取り上げます。会社員からフリーランスになった経験も書いていきます。</p>\n<p>記事や広告の掲載方針は、<a href=\"https://hirogarushumi.com/hsh-editorial/\">記事・広告について</a>にまとめています。お問い合わせは<a href=\"https://hirogarushumi.com/お問い合わせ/\">こちらのフォーム</a>からお願いします。</p>",
+      "url": "https://hirogarushumi.com/hsh-about/"
+    },
+    "editorial": {
+      "id": 30,
+      "status": "publish",
+      "title": "記事・広告について",
+      "content": "<p>記事の作成方法や、広告を掲載するときの方針を説明します。</p>\n<h2>体験談と調べた情報は分けて書きます</h2>\n<p>実際に使ったものや経験したことと、公式サイトなどで調べた内容は、区別して書きます。使っていない商品を使用レビューとして紹介したり、飲んでいないウイスキーの感想を作ったりはしません。</p>\n<p>価格や仕様は変わることがあります。購入や申込みの際は、リンク先の公式情報もご確認ください。比較記事では、何を比べたのかが分かるようにします。</p>\n<h2>広告・アフィリエイトについて</h2>\n<p>広告やアフィリエイトリンクを載せる記事には、広告・PRであることを明記します。記事内のリンクから購入や申込みをすると、管理人が紹介料を受け取ることがあります。</p>\n<p>商品提供や有償の依頼を受けた場合も、その記事に記載します。</p>\n<h2>AIの使い方について</h2>\n<p>資料の整理、文章の下書き、サイトの制作などにAIを使っています。ただし、AIが作った体験談を自分の経験として載せることはしません。AIの回答をそのまま事実として掲載せず、根拠を確認してから記事に使います。</p>\n<h2>仕事の記事に出てくるデータについて</h2>\n<p>顧客の実データや業務上の秘密は載せません。説明に使うデータは架空のサンプルであることを明記します。</p>\n<h2>アクセスの集計について</h2>\n<p>サイト改善のため、記事ごと・日ごとに、サーバーまで届いたアクセスの件数を集計しています。この集計には、IPアドレス、個人を識別するCookie、ユーザーIDを保存しません。</p>\n<p>キャッシュから表示されたアクセスなどは含まれないため、正確な閲覧数や訪問者数ではありません。サーバー自体のアクセスログとは別の集計です。</p>\n<h2>間違いに気づいたら</h2>\n<p>記事の間違いやリンク切れを見つけた場合は、<a href=\"https://hirogarushumi.com/お問い合わせ/\">お問い合わせフォーム</a>から、該当ページと内容を教えてください。</p>\n<p><a href=\"https://hirogarushumi.com/hsh-about/\">管理人のプロフィール</a> ／ <a href=\"https://hirogarushumi.com/プライバシーポリシー/\">プライバシーポリシー</a></p>",
+      "url": "https://hirogarushumi.com/hsh-editorial/"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "cat-carrier-checklist",
+    "topic": "cats",
+    "title": "猫用キャリーの選び方｜通院前に確認したい5項目",
+    "summary": "通院用の猫用キャリーを選ぶときに、出し入れ・留め具・総重量・手入れ・置き場所を確認します。体重だけで決めないサイズの考え方と、保存用チェックリストも紹介します。",
+    "updated_at": "2026-10-16",
+    "review_due_at": "2027-01-14",
+    "sources_status": "pending_external_verification",
+    "intent": "通院用の猫用キャリーを選ぶ"
+  },
+  {
+    "slug": "highball-measure-and-adjust",
+    "topic": "whisky",
+    "title": "ハイボールが薄いときの調整方法｜分量・氷・炭酸水",
+    "summary": "ハイボールが薄いと感じたときに、分量・氷・炭酸水の状態を確認する方法を紹介します。味の薄さと炭酸の弱さを分けて考え、次に作るときに使える配合メモも用意しました。",
+    "updated_at": "2026-10-16",
+    "review_due_at": "2027-01-14",
+    "sources_status": "pending_external_verification",
+    "intent": "ハイボールが薄く感じる原因と調整方法を調べる"
+  },
+  {
+    "slug": "csv-import-seven-checks",
+    "topic": "it-freelance",
+    "title": "CSV取り込み前の確認7項目｜文字化け・先頭の0・日付",
+    "summary": "CSVを取り込む前に確認したい文字コード、列の対応、先頭の0、日付、空欄、重複、件数を解説します。元ファイルを残して作業する手順と、架空の練習用CSV・確認メモを用意しました。",
+    "updated_at": "2026-10-16",
+    "review_due_at": "2027-01-14",
+    "sources_status": "pending_external_verification",
+    "intent": "CSV取り込み前の確認項目を調べる"
+  }
+]

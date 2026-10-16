@@ -1,0 +1,80 @@
+{
+  "wordpress": "7.1.3",
+  "php": "8.5.6",
+  "public_indexing": true,
+  "sitemap": "https://hirogarushumi.com/wp-sitemap.xml",
+  "updater": {
+    "direct_filesystem": true,
+    "zip_archive": true,
+    "file_mods_allowed": true,
+    "last_update": {
+      "commit": "48311833a13fb50d1d90b4ebf2ba606c33cacfe1",
+      "sha256": "f61bd564005a532cfacc7f7a2bf197ead6dab1d16cf32d681871f2f3370c3a3b",
+      "time": 1792134226
+    }
+  },
+  "plugins": [
+    {
+      "name": "Akismet Anti-spam: Spam Protection",
+      "version": "5.7",
+      "active": false
+    },
+    {
+      "name": "ConoHa WING コントロールパネルプラグイン",
+      "version": "1.2",
+      "active": true
+    },
+    {
+      "name": "ConoHa WING 自動キャッシュクリア",
+      "version": "1.0.1",
+      "active": true
+    },
+    {
+      "name": "Contact Form 7",
+      "version": "6.1.6",
+      "active": true
+    },
+    {
+      "name": "Hello Dolly",
+      "version": "1.7.2",
+      "active": false
+    },
+    {
+      "name": "SiteGuard WP Plugin",
+      "version": "1.7.12",
+      "active": false
+    },
+    {
+      "name": "TypeSquare Webfonts for ConoHa",
+      "version": "2.0.4",
+      "active": false
+    },
+    {
+      "name": "ひろがる趣味暮らし トップページ",
+      "version": "1.10.2",
+      "active": true
+    }
+  ],
+  "backup": {
+    "scope": "owned content can be exported using status and starter-review; hosting/database/media restore not verified",
+    "hosting_backup_verified": false
+  },
+  "search_console_connected": false,
+  "measurement": {
+    "kind": "approximate_uncached_page_requests",
+    "limitations": "キャッシュ配信・未知のボット・同時更新の影響あり。訪問者数や正確なPVではありません。",
+    "daily": {
+      "2026_10_16": {
+        "cat-carrier-checklist": 5,
+        "highball-measure-and-adjust": 6,
+        "csv-import-seven-checks": 3
+      },
+      "2026_10_15": {
+        "cat-carrier-checklist": 2,
+        "highball-measure-and-adjust": 2,
+        "csv-import-seven-checks": 2
+      }
+    },
+    "affiliate_links_configured": false
+  }
+}

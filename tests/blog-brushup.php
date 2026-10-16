@@ -1,0 +1,32 @@
+<?php
+require __DIR__.'/site-polish.php';
+$csv="\xEF\xBB\xBF上位のページ,クリック数,表示回数,CTR,掲載順位\nhttps://example.test/cat-carrier-checklist/,3,200,1.5%,8.2\nhttps://example.test/highball-measure-and-adjust/,0,20,0%,18\nhttps://external.test/,1,100,1%,10\n";
+$data=hsh_gsc_parse($csv,'2026-09-19','2026-10-16','2026-10-16');
+check(!is_wp_error($data)&&count($data['rows'])===2&&$data['skipped']===1,'Search Console pages CSV imports only own pages');
+check($data['rows'][0]['priority']===3&&abs($data['rows'][0]['ctr']-.015)<0.000001,'priority and CTR calculated from source counts');
+check($data['rows'][1]['priority']===0,'small sample is not treated as a proven SEO defect');
+check(strpos(json_encode($data),'external.test')===false,'unrelated site is not retained');
+check(hsh_gsc_parse($csv,'2026-02-30','2026-10-16','2026-10-16')->code==='hsh_gsc_date','invalid calendar dates rejected');
+check(hsh_gsc_parse($csv,'2026-10-16','2026-09-01','2026-10-16')->code==='hsh_gsc_date','reversed dates rejected');
+check(hsh_gsc_parse($csv,'2026-10-01','2026-10-17','2026-10-16')->code==='hsh_gsc_date','future reporting period rejected');
+check(hsh_gsc_parse(str_repeat('a',2000001),'2026-10-01','2026-10-16','2026-10-16')->code==='hsh_gsc_size','large input rejected before parsing');
+check(hsh_gsc_parse("Page,Clicks,Impressions,Position\nhttps://example.test/,1,2,3\0",'2026-10-01','2026-10-16','2026-10-16')->code==='hsh_gsc_size','binary input rejected');
+check(hsh_gsc_parse("Query,Clicks,Impressions,Position\ncat,1,2,3",'2026-10-01','2026-10-16','2026-10-16')->code==='hsh_gsc_header','query-only export is not misrepresented as page data');
+$english="Top pages,Clicks,Impressions,CTR,Position\nhttps://example.test/,\"1,234\",\"10,000\",12.34%,3.2\n";
+$parsed=hsh_gsc_parse($english,'2026-10-01','2026-10-16','2026-10-16');check($parsed['rows'][0]['clicks']===1234&&$parsed['rows'][0]['impressions']===10000,'English export and quoted thousands separators supported');
+$bad="Page,Clicks,Impressions,Position\nhttps://example.test/?secret=abc,1,100,10\nhttps://user@example.test/,1,100,10\nhttps://example.test/wp-admin/,1,100,10\nhttps://example.test/ok/,1,100,10\nhttps://example.test/ok/,1,100,10\nhttps://example.test/negative/,-1,100,10\nhttps://example.test/neko-guide/,1,100,10\n";
+$parsed=hsh_gsc_parse($bad,'2026-10-01','2026-10-16','2026-10-16');check(count($parsed['rows'])===1&&$parsed['skipped']===6,'queries credentials private routes duplicates and negative metrics rejected');
+check(strpos(json_encode($parsed),'secret')===false,'query parameters are not stored');
+$head=hsh_blog_extra_head('<meta content="keep" property="og:title">','https://example.test/','a </script> b','Title');
+check(strpos($head,'property="og:title"')===false,'existing Open Graph title is not duplicated');
+check(strpos($head,'\u003C/script\u003E')!==false,'structured metadata cannot break out of script element');
+$map=hsh_article_map();check(count($map)===3&&count(array_unique(array_column($map,'intent')))===3,'each published article has a distinct recorded search intent');
+check(strpos(hsh_article_review_note('cat-carrier-checklist'),'2026-10-16')!==false&&hsh_article_review_note('unrelated')==='','review note is limited to reviewed managed articles');
+$path=dirname(__DIR__).'/hirogaru-home/assets/resources/';check(is_file($path.'cat-carrier-checklist.txt')&&is_file($path.'highball-note.txt')&&is_file($path.'csv-practice.csv'),'useful downloadable resources are packaged');
+$related=hsh_select_related(array((object)array('ID'=>1,'post_status'=>'publish'),(object)array('ID'=>2,'post_status'=>'draft'),(object)array('ID'=>3,'post_status'=>'publish'),(object)array('ID'=>3,'post_status'=>'publish'),(object)array('ID'=>4,'post_status'=>'publish')),1);
+check(array_map(function($p){return $p->ID;},$related)===array(3,4),'related articles exclude current post drafts and duplicates');
+$target=hsh_refresh_plan()->data['articles'][0];$result=hsh_managed_article(new Request(array('slug'=>$target['slug'],'expected'=>$target['fingerprint'],'content'=>$target['content'],'excerpt'=>'変更後の検索説明文')));
+check($result instanceof WP_REST_Response&&get_post_meta($target['id'],'the_page_meta_description',true)==='変更後の検索説明文','later managed article edits keep SEO description in sync');
+function current_user_can($cap){return false;}
+ob_start();hsh_gsc_admin();$output=ob_get_clean();check($output==='','unauthorized user cannot view the search metrics dashboard');
+echo "All blog brushup tests passed. Total tests: $tests\n";

@@ -2,16 +2,16 @@
 /**
  * Plugin Name: ひろがる趣味暮らし トップページ
  * Description: 猫・ウイスキー・ITとフリーランスのトップページ。管理画面から適用・復元できます。
- * Version: 1.10.2
+ * Version: 1.11.0
  * Requires at least: 6.0
  * Requires PHP: 7.4
  */
 if (!defined('ABSPATH')) { exit; }
 function hsh_topics() {
     return array(
-        'cats' => array('猫との暮らし', '猫の世話や、キャリー・おもちゃの選び方を紹介しています。', 'CAT LIFE', '01'),
+        'cats' => array('猫との暮らし', '猫の世話やキャリー・おもちゃの選び方について書いています。', 'CAT LIFE', '01'),
         'whisky' => array('ウイスキー', 'ウイスキーの飲み方や銘柄、グラスなどを紹介しています。', 'WHISKY', '02'),
-        'it-freelance' => array('ITの仕事とフリーランス', 'データの扱い方やAIの使い方、個人事業主として働くことについて書いています。', 'WORK', '03'),
+        'it-freelance' => array('ITの仕事とフリーランス', '未経験で始めたITの仕事やChatGPT・Codexの使い方、フリーランスとして働くことについて書いています。', 'WORK', '03'),
     );
 }
 add_action('admin_menu', function () {
@@ -86,7 +86,7 @@ add_filter('template_include', function ($template) {
 }, 99);
 add_action('wp_enqueue_scripts', function () {
     if (((int) get_option('hsh_page_id') && is_page((int) get_option('hsh_page_id'))) || (function_exists('hsh_current_topic') && hsh_current_topic())) {
-        wp_enqueue_style('hsh-home', plugin_dir_url(__FILE__) . 'assets/home.css', array(), '1.10.2');
+        wp_enqueue_style('hsh-home', plugin_dir_url(__FILE__) . 'assets/home.css', array(), '1.11.0');
     }
 });
 function hsh_category_url($slug) {
@@ -116,6 +116,7 @@ require_once plugin_dir_path(__FILE__) . 'article-refresh.php';
 require_once plugin_dir_path(__FILE__) . 'plugin-update.php';
 
 require_once plugin_dir_path(__FILE__) . 'site-polish.php';
+require_once plugin_dir_path(__FILE__) . 'blog-brushup.php';
 
 require_once plugin_dir_path(__FILE__) . 'introduction.php';
 

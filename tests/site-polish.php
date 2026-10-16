@@ -14,7 +14,7 @@ foreach(array(array('token'=>'<script>alert(1)</script>'),array('token'=>array()
 $assets=hsh_article_assets();$total=0;
 foreach($assets as $key=>$asset){$p=dirname(__DIR__).'/hirogaru-home/assets/articles/'.$asset['file'];check(substr($asset['file'],-5)==='.webp' && hash_file('sha256',$p)===$asset['sha256'],'optimized asset integrity');$total+=filesize($p);}
 check($total<1000000,'six full-size editorial images below one megabyte total');
-foreach(hsh_starter_articles() as $a){check(substr_count($a['content'],'<h2>')>=5 && substr_count($a['content'],'<h3>')>=2 && strpos($a['content'],'https://')!==false,'article keeps practical sections, explanatory subsections and source navigation');}
+foreach(hsh_starter_articles() as $a){check(preg_match_all('/<h2(?:\s[^>]*)?>/',$a['content'])>=5 && substr_count($a['content'],'<h3>')>=2 && strpos($a['content'],'https://')!==false,'article keeps practical sections, explanatory subsections and source navigation');}
 ob_start();hsh_document_head();$head=ob_get_clean();check(substr_count($head,'name="description"')===1 && substr_count($head,'rel="canonical"')===1,'custom homepage emits description and canonical once');
 $GLOBALS['test_wp_head']='<meta content="Existing description" name="description"><link href="https://example.test/" rel="canonical">';ob_start();hsh_document_head();$head=ob_get_clean();check(substr_count($head,'name="description"')===1 && substr_count($head,'rel="canonical"')===1,'existing SEO provider tags are preserved without duplicates');unset($GLOBALS['test_wp_head']);
 echo "All site polish tests passed. Total tests: $tests\n";
