@@ -1,0 +1,110 @@
+{
+  "articles": [
+    {
+      "slug": "first-days",
+      "title": "猫を迎えたら、最初の数日はどう過ごす？",
+      "updated_at": "2026-10-16",
+      "review_due_at": "2027-01-14",
+      "references": [
+        "environment-care"
+      ]
+    },
+    {
+      "slug": "food-and-water",
+      "title": "ごはんと水は何を用意する？ フード選びの基本",
+      "updated_at": "2026-10-16",
+      "review_due_at": "2027-01-14",
+      "references": [
+        "environment-care"
+      ]
+    },
+    {
+      "slug": "litter-box",
+      "title": "猫のトイレは、どこに置けばいい？",
+      "updated_at": "2026-10-16",
+      "review_due_at": "2027-01-14",
+      "references": [
+        "environment-care"
+      ]
+    },
+    {
+      "slug": "vet-visit",
+      "title": "動物病院に相談するとき、何を伝えればいい？",
+      "updated_at": "2026-10-16",
+      "review_due_at": "2026-11-15",
+      "references": [
+        "environment-care",
+        "tokyo-animal-care"
+      ]
+    },
+    {
+      "slug": "safe-home",
+      "title": "迎える前に見直したい、家の中の危ない場所",
+      "updated_at": "2026-10-16",
+      "review_due_at": "2027-01-14",
+      "references": [
+        "environment-care"
+      ]
+    },
+    {
+      "slug": "adoption-steps",
+      "title": "保護猫を迎えたい。譲渡会へ行く前に知っておくこと",
+      "updated_at": "2026-10-16",
+      "review_due_at": "2026-11-15",
+      "references": [
+        "nishitokyo-city",
+        "tokyo-animal-care"
+      ]
+    },
+    {
+      "slug": "nail-care",
+      "title": "猫の爪切り、嫌がるときはどうする？",
+      "updated_at": "2026-10-16",
+      "review_due_at": "2027-01-14",
+      "references": [
+        "environment-care"
+      ]
+    },
+    {
+      "slug": "home-alone",
+      "title": "猫を留守番させる前に、何を準備する？",
+      "updated_at": "2026-10-16",
+      "review_due_at": "2027-01-14",
+      "references": [
+        "environment-care"
+      ]
+    },
+    {
+      "slug": "night-meowing",
+      "title": "夜に猫が鳴く。まず何を確かめればいい？",
+      "updated_at": "2026-10-16",
+      "review_due_at": "2027-01-14",
+      "references": [
+        "environment-care"
+      ]
+    }
+  ],
+  "references": {
+    "environment-care": {
+      "title": "環境省：動物の愛護と適切な管理に関する資料",
+      "url": "https://www.env.go.jp/nature/dobutsu/aigo/2_data/pamph.html",
+      "verified_at": null,
+      "last_attempted_at": "2026-10-16",
+      "status": "connection_blocked"
+    },
+    "nishitokyo-city": {
+      "title": "西東京市公式サイト：動物に関する案内を探す",
+      "url": "https://www.city.nishitokyo.lg.jp/",
+      "verified_at": null,
+      "last_attempted_at": "2026-10-16",
+      "status": "connection_blocked"
+    },
+    "tokyo-animal-care": {
+      "title": "東京都保健医療局：動物愛護・譲渡の案内を探す",
+      "url": "https://www.hokeniryo.metro.tokyo.lg.jp/",
+      "verified_at": null,
+      "last_attempted_at": "2026-10-16",
+      "status": "connection_blocked"
+    }
+  }
+}

@@ -1,10 +1,13 @@
 <?php
 /** Serve the independent static site without changing WordPress pages or blog templates. */
 if (!defined('ABSPATH')) { exit; }
+require_once __DIR__.'/cat-guide-tools.php';
 function hsh_catguide_route($uri) {
     $path = parse_url($uri, PHP_URL_PATH);
     if (!is_string($path)) { return null; }
     $prefix = '/neko-guide';
+    if($path==='/neko-guide/api/report-token/'){return array('api'=>'token');}
+    if($path==='/neko-guide/api/report/'){return array('api'=>'report');}
     if ($path === $prefix) { return array('redirect' => $prefix.'/'); }
     if (strpos($path, $prefix.'/') !== 0) { return null; }
     $relative = rawurldecode(substr($path, strlen($prefix)+1));
@@ -17,6 +20,7 @@ function hsh_catguide_route($uri) {
 add_action('parse_request',function() {
     $route=hsh_catguide_route($_SERVER['REQUEST_URI'] ?? '/');
     if ($route === null) { return; }
+    if (isset($route['api'])) { nkt_public_report_api($route['api']); exit; }
     if (isset($route['redirect'])) { wp_safe_redirect(home_url($route['redirect']),301); exit; }
     $method=$_SERVER['REQUEST_METHOD'] ?? 'GET';
     if (!in_array($method,array('GET','HEAD'),true)) { status_header(405); header('Allow: GET, HEAD'); exit; }
@@ -29,11 +33,11 @@ add_action('parse_request',function() {
     status_header($route['status']);
     header('Content-Type: '.$types[$extension]);
     header('Cache-Control: no-store, max-age=0');
-    if ($route['status'] !== 200) { header('X-Robots-Tag: noindex, nofollow'); }
+    if ($route['status'] !== 200 || $route['file']==='corrections/index.html') { header('X-Robots-Tag: noindex, nofollow'); }
     header('X-Content-Type-Options: nosniff');
     header('Referrer-Policy: strict-origin-when-cross-origin');
     header("Content-Security-Policy: default-src 'self'; img-src 'self'; script-src 'self'; style-src 'self'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'; object-src 'none'");
-    if ($method !== 'HEAD') { readfile($file); }
+    if ($method !== 'HEAD') { if($extension==='html'){echo hsh_catguide_filter_expired(file_get_contents($file));}else{readfile($file);} }
     exit;
 },0);
 
@@ -43,3 +47,9 @@ function hsh_catguide_robots($output,$public) {
     return $output;
 }
 add_filter('robots_txt','hsh_catguide_robots',10,2);
+
+/** Remove expired listings on every real request, even without a rebuild. */
+function hsh_catguide_filter_expired($html,$day=null) {
+    $day=$day ?? wp_date('Y-m-d');
+    return preg_replace_callback('~<!--NKT_FRESH_UNTIL:(\d{4}-\d{2}-\d{2})-->(.*?)<!--/NKT_FRESH_UNTIL-->~s',function($m)use($day){return $m[1]<$day?'':$m[2];},$html);
+}

@@ -1,0 +1,30 @@
+name: Neko no Tonari maintenance
+on:
+  schedule:
+    - cron: '30 21 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'cat-guide/content/**'
+      - 'cat-guide/tools/audit.py'
+      - '.github/workflows/cat-guide-audit.yml'
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check public URLs, references and review deadlines
+        run: python cat-guide/tools/audit.py --check-public --check-external --output cat-guide-audit.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cat-guide-maintenance
+          path: cat-guide-audit.json
+          retention-days: 30
