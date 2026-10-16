@@ -2,7 +2,7 @@
   "articles": [
     {
       "slug": "first-days",
-      "title": "猫を迎えたら、最初の数日はどう過ごす？",
+      "title": "猫を迎えた最初の数日の過ごし方",
       "updated_at": "2026-10-16",
       "review_due_at": "2027-01-14",
       "references": [
@@ -11,7 +11,7 @@
     },
     {
       "slug": "food-and-water",
-      "title": "ごはんと水は何を用意する？ フード選びの基本",
+      "title": "キャットフードの選び方と水の用意",
       "updated_at": "2026-10-16",
       "review_due_at": "2027-01-14",
       "references": [
@@ -20,7 +20,7 @@
     },
     {
       "slug": "litter-box",
-      "title": "猫のトイレは、どこに置けばいい？",
+      "title": "猫のトイレの置き場所と猫砂の選び方",
       "updated_at": "2026-10-16",
       "review_due_at": "2027-01-14",
       "references": [
@@ -29,7 +29,7 @@
     },
     {
       "slug": "vet-visit",
-      "title": "動物病院に相談するとき、何を伝えればいい？",
+      "title": "動物病院に相談するときに伝えること",
       "updated_at": "2026-10-16",
       "review_due_at": "2026-11-15",
       "references": [
@@ -39,7 +39,7 @@
     },
     {
       "slug": "safe-home",
-      "title": "迎える前に見直したい、家の中の危ない場所",
+      "title": "猫を迎える前に確認したい家の中の危険",
       "updated_at": "2026-10-16",
       "review_due_at": "2027-01-14",
       "references": [
@@ -48,7 +48,7 @@
     },
     {
       "slug": "adoption-steps",
-      "title": "保護猫を迎えたい。譲渡会へ行く前に知っておくこと",
+      "title": "保護猫を迎えるまでの流れと譲渡会の準備",
       "updated_at": "2026-10-16",
       "review_due_at": "2026-11-15",
       "references": [
@@ -58,7 +58,7 @@
     },
     {
       "slug": "nail-care",
-      "title": "猫の爪切り、嫌がるときはどうする？",
+      "title": "猫が爪切りを嫌がるときの進め方",
       "updated_at": "2026-10-16",
       "review_due_at": "2027-01-14",
       "references": [
@@ -67,7 +67,7 @@
     },
     {
       "slug": "home-alone",
-      "title": "猫を留守番させる前に、何を準備する？",
+      "title": "猫に留守番をさせる前の準備",
       "updated_at": "2026-10-16",
       "review_due_at": "2027-01-14",
       "references": [
@@ -76,7 +76,7 @@
     },
     {
       "slug": "night-meowing",
-      "title": "夜に猫が鳴く。まず何を確かめればいい？",
+      "title": "猫が夜に鳴くときに確認したいこと",
       "updated_at": "2026-10-16",
       "review_due_at": "2027-01-14",
       "references": [
