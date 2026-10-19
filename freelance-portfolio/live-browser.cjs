@@ -1,0 +1,8 @@
+const {chromium}=require('/opt/codex/runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+const assert=require('node:assert/strict'),fs=require('node:fs');
+(async()=>{const data=JSON.parse(fs.readFileSync('/tmp/freelance-live-response.json','utf8'));const b=await chromium.launch({executablePath:'/usr/bin/chromium',headless:true,args:['--no-sandbox']});const p=await b.newPage({viewport:{width:1440,height:1000}});const errors=[];p.on('pageerror',e=>errors.push(e.message));const url='https://hirogarushumi.com/freelance/';try{
+await p.route('**/*',async r=>{if(r.request().url().split('#')[0]===url)await r.fulfill({status:200,headers:data.headers,body:data.body});else await r.abort()});
+await p.goto(url);assert.match(await p.title(),/WORK & CODE/);assert.equal(await p.locator('h1').count(),1);assert.equal(await p.locator('.card').count(),3);assert.equal(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);
+await p.locator('.nav a[href="#about"]').click();assert.equal(new URL(p.url()).hash,'#about');await p.locator('#open-contact').click();assert.equal(await p.locator('dialog').evaluate(e=>e.open),true);await p.locator('#contact-note').fill('公開画面の確認');await p.locator('#copy-note').click();await p.waitForFunction(()=>document.querySelector('#copy-status').textContent.length>0);await p.keyboard.press('Escape');assert.equal(await p.locator('dialog').evaluate(e=>e.open),false);assert.deepEqual(errors,[]);
+await p.goto(url);await p.screenshot({path:'/workspace/artifacts/freelance-portfolio/live.png',fullPage:true});console.log(JSON.stringify({passed:9,failed:0,source:'Public HTTPS response with production CSP headers',url}));
+}finally{await b.close()}})().catch(e=>{console.error(e);process.exitCode=1});
