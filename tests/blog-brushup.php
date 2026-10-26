@@ -25,7 +25,7 @@ check(substr_count($robots,'name="robots"')===1&&strpos($robots,'max-image-previ
 $robots=hsh_search_robots('<meta name="robots" content="index,follow"><meta name="robots" content="noindex,nofollow">');
 check(strpos($robots,'content="noindex, nofollow"')!==false,'search remains noindex and preserves restrictive directives');
 $map=hsh_article_map();check(count($map)===3&&count(array_unique(array_column($map,'intent')))===3,'each published article has a distinct recorded search intent');
-check(strpos(hsh_article_review_note('cat-carrier-checklist'),'2026-10-16')!==false&&hsh_article_review_note('unrelated')==='','review note is limited to reviewed managed articles');
+check(strpos(hsh_article_review_note('cat-carrier-checklist'),'2026-10-26')!==false&&hsh_article_review_note('unrelated')==='','review note is limited to reviewed managed articles');
 $path=dirname(__DIR__).'/hirogaru-home/assets/resources/';check(is_file($path.'cat-carrier-checklist.txt')&&is_file($path.'highball-note.txt')&&is_file($path.'csv-practice.csv'),'useful downloadable resources are packaged');
 $related=hsh_select_related(array((object)array('ID'=>1,'post_status'=>'publish'),(object)array('ID'=>2,'post_status'=>'draft'),(object)array('ID'=>3,'post_status'=>'publish'),(object)array('ID'=>3,'post_status'=>'publish'),(object)array('ID'=>4,'post_status'=>'publish')),1);
 check(array_map(function($p){return $p->ID;},$related)===array(3,4),'related articles exclude current post drafts and duplicates');
@@ -33,7 +33,7 @@ $target=hsh_refresh_plan()->data['articles'][0];$result=hsh_managed_article(new 
 check($result instanceof WP_REST_Response&&get_post_meta($target['id'],'the_page_meta_description',true)==='変更後の検索説明文','later managed article edits keep SEO description in sync');
 function get_search_query($escape=true){return '<script>alert(1)</script>" onfocus="bad';}
 $search=hsh_search_markup('safe-search');check(strpos($search,'<script>')===false&&strpos($search,'&lt;script&gt;')!==false&&strpos($search,'&quot; onfocus=')!==false,'search query is escaped as a value rather than HTML attributes or script');
-function current_user_can($cap){return false;}
+function current_user_can($cap){return !empty($GLOBALS['test_admin_cap']);}
 ob_start();hsh_gsc_admin();$output=ob_get_clean();check($output==='','unauthorized user cannot view the search metrics dashboard');
 check(hsh_local_core_script('https://external.test/x','jquery-core','https://example.test/wp-includes/')==='https://example.test/wp-includes/js/jquery/jquery.min.js','jQuery uses WordPress local copy');
 check(hsh_local_core_script('original','unrelated','local/')==='original','unrelated scripts are untouched');

@@ -13,16 +13,16 @@ class NoRedirect(urllib.request.HTTPRedirectHandler):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('operation', choices=['status', 'home', 'page', 'starter-posts', 'starter-status', 'starter-review', 'starter-refresh', 'managed-article', 'starter-image', 'plugin-update', 'site-audit', 'site-verification', 'introduction-review', 'introduction-refresh', 'cat-guide-reports', 'cat-guide-report-delete', 'cat-guide-maintenance', 'cat-guide-maintenance-run'])
+    parser.add_argument('operation', choices=['status', 'home', 'page', 'starter-posts', 'starter-status', 'starter-review', 'starter-refresh', 'managed-article', 'starter-image', 'plugin-update', 'site-audit', 'site-verification', 'introduction-review', 'introduction-refresh', 'cat-guide-reports', 'cat-guide-report-delete', 'cat-guide-maintenance', 'cat-guide-maintenance-run', 'content-release', 'content-status', 'restore-probe'])
     parser.add_argument('--payload', help='JSON file required for home/page writes')
     parser.add_argument('--query-route', action='store_true', help='Use WordPress rest_route query syntax')
     args = parser.parse_args()
     token = os.environ.get('HSH_EDIT_TOKEN')
     if not token:
         parser.error('HSH_EDIT_TOKEN is missing. Register it securely in environment settings; never paste it into chat.')
-    if args.operation not in ('status', 'starter-status', 'starter-review', 'site-audit', 'introduction-review', 'cat-guide-reports', 'cat-guide-maintenance') and not args.payload:
+    if args.operation not in ('status', 'starter-status', 'starter-review', 'site-audit', 'introduction-review', 'cat-guide-reports', 'cat-guide-maintenance', 'content-status') and not args.payload:
         parser.error('--payload is required for writes')
-    if args.operation in ('status', 'starter-status', 'starter-review', 'site-audit', 'introduction-review', 'cat-guide-reports', 'cat-guide-maintenance') and args.payload:
+    if args.operation in ('status', 'starter-status', 'starter-review', 'site-audit', 'introduction-review', 'cat-guide-reports', 'cat-guide-maintenance', 'content-status') and args.payload:
         parser.error('status does not accept a payload')
     data = None
     if args.payload:
@@ -31,7 +31,7 @@ def main():
         if not isinstance(payload, dict):
             parser.error('Payload must be a JSON object')
         data = json.dumps(payload, ensure_ascii=False).encode()
-    path = '/hirogaru/v1/' + ('starter-posts' if args.operation == 'starter-status' else 'starter-refresh' if args.operation == 'starter-review' else 'introduction' if args.operation in ('introduction-review', 'introduction-refresh') else 'cat-guide-maintenance' if args.operation == 'cat-guide-maintenance-run' else args.operation)
+    path = '/hirogaru/v1/' + ('content-release' if args.operation == 'content-status' else 'starter-posts' if args.operation == 'starter-status' else 'starter-refresh' if args.operation == 'starter-review' else 'introduction' if args.operation in ('introduction-review', 'introduction-refresh') else 'cat-guide-maintenance' if args.operation == 'cat-guide-maintenance-run' else args.operation)
     url = 'https://hirogarushumi.com' + ('/?rest_route=' + path if args.query_route else '/wp-json' + path)
     request = urllib.request.Request(url, data=data, method='GET' if data is None else 'POST', headers={
         'Authorization': 'Bearer ' + token,

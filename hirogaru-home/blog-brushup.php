@@ -61,7 +61,7 @@ function hsh_select_related($articles,$current_id,$limit=2) {
     return $out;
 }
 function hsh_related_markup($topic,$current_id) {
-    $related=hsh_select_related(hsh_posts($topic,5),$current_id);
+    $related=function_exists('hsh_related_curated')?hsh_related_curated($topic,$current_id):hsh_select_related(hsh_posts($topic,5),$current_id);
     if(!$related)return '';
     $out='<section class="hsh-related"><h2>あわせて読みたい記事</h2><ul>';
     foreach($related as $article){$out.='<li><a href="'.esc_url(get_permalink($article)).'">'.esc_html(get_the_title($article)).' →</a></li>';}
