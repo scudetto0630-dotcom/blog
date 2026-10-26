@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-26",
+  "site": "https://hirogarushumi.com/",
+  "plugin_version": "1.13.2",
+  "published_new_articles": 10,
+  "browser": {
+    "passed": 72,
+    "failed": 0,
+    "widths": [
+      1440,
+      768,
+      390,
+      320
+    ],
+    "report_submission": "UI success/failure responses mocked; real reports are not sent",
+    "backend": "covered separately by PHP fixtures and private WordPress restore probe"
+  },
+  "php_checks": {
+    "blog_including_shared": 180,
+    "cat_including_shared": 199,
+    "not_additive": true
+  },
+  "python_tests": 8,
+  "production_draft_restore": {
+    "passed": true,
+    "scope": "temporary unpublished draft"
+  },
+  "auth_checks": {
+    "content-release": 401,
+    "blog-health": 401,
+    "missing_nonce": 403
+  },
+  "health_targets": 25,
+  "health_non_200": [
+    {
+      "url": "https://www.jreast.co.jp/kippu/20.html",
+      "status": 403
+    },
+    {
+      "url": "https://www.suntory.co.jp/whisky/",
+      "status": 403
+    }
+  ],
+  "scheduled_maintenance_registered": true,
+  "pending": [
+    "Real photographs not supplied",
+    "Full hosting/database/media restore unverified",
+    "External source body verification incomplete; HEAD is not content review",
+    "Dedicated screen reader device matrix untested"
+  ],
+  "caveats": [
+    "Report success/failure UI uses mock responses; no real reader report was submitted",
+    "WordPress daily cron depends on traffic; future executions not yet observed"
+  ]
+}
