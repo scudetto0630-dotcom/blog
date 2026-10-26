@@ -10,6 +10,7 @@ function set_transient($key,$value,$ttl){$GLOBALS['test_transients'][$key]=$valu
 function wp_generate_uuid4(){static $i=0;return 'fixture-'.++$i;}
 function wp_verify_nonce($value,$action){return $value==='valid-fixture'&&$action==='hsh_blog_report';}
 check(hsh_search_alias('ねこ ネコ チャッピー ＣＳＶ')==='猫 猫 ChatGPT CSV','known search aliases normalize without external services');
+check(hsh_search_alias('ねこじゃらし 猫じゃらし ネコじゃらし')==='ねこじゃらし ねこじゃらし ねこじゃらし','search preserves complete toy names while normalizing spelling');
 check(hsh_search_topic('cats')==='cats'&&hsh_search_topic('wp-admin')===''&&hsh_search_topic(array('cats'))==='','search category accepts only scalar approved slugs');
 check(hsh_release_article(new Request(array('slug'=>'bad','expected'=>null)))->code==='hsh_scope','publisher rejects unknown article');
 check(hsh_release_article(new Request(array('slug'=>'before-welcoming-cat','expected'=>null,'content'=>'injected')))->code==='hsh_input','publisher rejects arbitrary body data');
