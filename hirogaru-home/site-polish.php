@@ -15,7 +15,7 @@ add_filter('template_include', function ($template) {
     return hsh_current_topic() ? plugin_dir_path(__FILE__) . 'category-template.php' : $template;
 }, 100);
 function hsh_profile_markup() {
-    return '<aside class="hsh-profile" aria-label="書き手について"><img src="' . esc_url(plugin_dir_url(__FILE__) . 'assets/brand-avatar.webp') . '" alt="猫とグラス、ノートを描いたブログのイメージイラスト" width="160" height="160" loading="lazy"><div><p class="hsh-kicker">管理人のプロフィール</p><strong>ひろがる趣味暮らし 管理人</strong><p>保護猫のまんもすと暮らしています。以前はMRとして働き、今はフリーランスでデータをシステムに取り込む仕事をしています。ウイスキーはシングルモルトが好みです。</p><a href="' . esc_url(home_url('/hsh-about/')) . '">プロフィールを読む →</a><small>プロフィール画像はイラストです。</small></div></aside>';
+    return '<aside class="hsh-profile" aria-label="書き手について"><img src="' . esc_url(plugin_dir_url(__FILE__) . 'assets/photos/manmos-portrait.webp') . '" alt="保護猫のまんもす。管理人提供の写真です。" width="160" height="160" loading="lazy"><div><p class="hsh-kicker">管理人のプロフィール</p><strong>ひろがる趣味暮らし 管理人</strong><p>保護猫のまんもすと暮らしています。以前はMRとして働き、今はフリーランスでデータをシステムに取り込む仕事をしています。ウイスキーはシングルモルトが好みです。</p><a href="' . esc_url(home_url('/hsh-about/')) . '">プロフィールを読む →</a><small>写真は、管理人と暮らすまんもすです。</small></div></aside>';
 }
 function hsh_search_markup($id) {
     $value=function_exists('get_search_query')?get_search_query(false):'';
@@ -26,7 +26,7 @@ function hsh_search_markup($id) {
     return '<form class="hsh-search" role="search" method="get" action="'.esc_url(home_url('/')).'"><label for="'.esc_attr($id).'">ブログ内を検索</label><div><input id="'.esc_attr($id).'" name="s" type="search" value="'.esc_attr($value).'" maxlength="100" placeholder="キャリー、ハイボール、CSVなど"><select name="hsh_topic" aria-label="検索するカテゴリー">'.$options.'</select><button type="submit">検索</button></div></form>';
 }
 add_action('wp_enqueue_scripts', function () {
-    wp_enqueue_style('hsh-reading', plugin_dir_url(__FILE__) . 'assets/reading.css', array(), '1.13.2');
+    wp_enqueue_style('hsh-reading', plugin_dir_url(__FILE__) . 'assets/reading.css', array(), '1.14.0');
     if ((int)get_option('hsh_page_id') && is_page((int)get_option('hsh_page_id'))) {
         foreach (array('cocoon-style','cocoon-keyframes','font-awesome-style','icomoon-style','baguettebox-style','cocoon-child-style','cocoon-child-keyframes','contact-form-7') as $handle) { wp_dequeue_style($handle); }
     }

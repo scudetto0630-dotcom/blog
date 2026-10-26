@@ -5,7 +5,7 @@ check(array_keys($d)===array('cats','whisky','it-freelance'),'three existing cat
 check(strpos($d['cats'][1],'キャリー')!==false && strpos($d['cats'][1],'亡くなる')===false,'category describes the articles without unnecessary bereavement details');
 check(strpos($d['whisky'][1],'ハイボール')!==false,'whisky category describes its published article');
 check(strpos($d['it-freelance'][1],'MRからIT')!==false,'beginner experience included without invented achievements');
-check(strpos(hsh_profile_markup(),'プロフィール画像はイラストです。')!==false,'brand illustration distinguished from real pet');
+check(strpos(hsh_profile_markup(),'写真は、管理人と暮らすまんもすです。')!==false,'provided pet photograph is labeled accurately');
 check(strpos(hsh_profile_markup(),'ひろがる趣味暮らし 管理人')!==false,'pseudonymous author displayed');
 $search=hsh_search_markup('test-search');
 check(strpos($search,'for="test-search"')!==false && strpos($search,'id="test-search"')!==false && strpos($search,'name="s"')!==false,'search has associated label and native WordPress query');

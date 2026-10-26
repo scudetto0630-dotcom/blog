@@ -49,4 +49,17 @@ ob_start();hsh_blog_dashboard();$dashboard=ob_get_clean();
 check(strpos($dashboard,'関連記事を保存')!==false&&strpos($dashboard,'fixture correction')!==false,'authorized dashboard renders curation and private reports');
 check(strpos($dashboard,'1つ前の保存内容へ戻す')!==false||strpos($dashboard,'保存履歴')!==false,'dashboard exposes snapshot history and restore controls');
 $GLOBALS['test_admin_cap']=false;
+$photos=hsh_photo_manifest();
+check(count($photos['assets'])===9&&count($photos['articles'])===13,'nine photo assets cover thirteen owned articles');
+foreach($photos['assets'] as $asset){
+    $file=__DIR__.'/../hirogaru-home/assets/photos/'.$asset['file'];
+    check(is_file($file)&&hash_file('sha256',$file)===$asset['sha256'],'photo integrity '.$asset['file']);
+    check($asset['kind']==='provided'?strpos($asset['caption'],'提供写真')!==false:strpos($asset['caption'],'AI生成')!==false,'honest photo caption '.$asset['file']);
+}
+check(hsh_photo_for_slug('unrelated')===null,'photo mapping does not affect unrelated articles');
+check(strpos(hsh_photo_image(array('file'=>'../escape.webp')), '<img')===false,'photo helper rejects non-packaged paths');
+$cover=hsh_photo_cover((object)array('post_name'=>'manmos-cat-life'),true);
+check(strpos($cover,'fetchpriority="high"')!==false&&strpos($cover,'提供写真')!==false,'real owner photo gets eager cover and accurate caption');
+$cover=hsh_photo_cover((object)array('post_name'=>'cat-teaser-small-parts'));
+check(strpos($cover,'AI生成')!==false&&strpos($cover,'loading="lazy"')!==false,'generated photo stays explicitly identified');
 echo "All blog next tests passed. Total checks including shared suites: $tests\n";

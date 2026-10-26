@@ -1,0 +1,118 @@
+{
+  "assets": {
+    "manmos-portrait": {
+      "file": "manmos-portrait.webp",
+      "width": 1200,
+      "height": 900,
+      "kind": "provided",
+      "sha256": "29d95927c7d7e67d8fc091bf3ad73a46f056e7d61cb246b831c2d493eb016471",
+      "bytes": 132160,
+      "subject": "manmos",
+      "alt": "まんもすの顔のアップ。管理人提供の写真です。",
+      "caption": "まんもす（提供写真）"
+    },
+    "manmos-back": {
+      "file": "manmos-back.webp",
+      "width": 750,
+      "height": 1000,
+      "kind": "provided",
+      "sha256": "e029bee79d5eb9f0de9c884d463b1894b9051bc73107925ba0c0f1babf02ed20",
+      "bytes": 113918,
+      "subject": "manmos",
+      "alt": "茶色の長い毛をしたまんもすの後ろ姿。管理人提供の写真です。",
+      "caption": "まんもすの後ろ姿（提供写真）"
+    },
+    "manmos-stretch": {
+      "file": "manmos-stretch.webp",
+      "width": 750,
+      "height": 1000,
+      "kind": "provided",
+      "sha256": "9add35497d7c9fee07bd3f6f6060821d734f8dc6c8bf7cabef65b4c18a3819c1",
+      "bytes": 42162,
+      "subject": "manmos",
+      "alt": "布団の上で体を伸ばしているまんもす。管理人提供の写真です。",
+      "caption": "体を伸ばしたまんもす（提供写真）"
+    },
+    "manmos-tower": {
+      "file": "manmos-tower.webp",
+      "width": 1200,
+      "height": 900,
+      "kind": "provided",
+      "sha256": "7169e245b731d0c48e0980ac404aebb83bb21c27aeeb56472a6aafa65d8912e9",
+      "bytes": 59702,
+      "subject": "manmos",
+      "alt": "キャットタワーの上にいるまんもす。管理人提供の写真です。",
+      "caption": "まんもす（提供写真）"
+    },
+    "manmos-rest": {
+      "file": "manmos-rest.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "sha256": "22327bf8a1939f2f3a915069eaa8b47465791484099fff7644fc99ea3c2f6cad",
+      "bytes": 115430,
+      "subject": "manmos",
+      "alt": "まんもすの提供写真を参考に、ソファでくつろぐ姿を作成したAI生成画像です。",
+      "caption": "提供写真を参考にしたAI生成画像です。"
+    },
+    "manmos-toy": {
+      "file": "manmos-toy.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "sha256": "5d18ef9b4d1e759c6d59edb8eabfdf33bcafdef14257d21241eb5444d36148e8",
+      "bytes": 118604,
+      "subject": "manmos",
+      "alt": "まんもすの提供写真を参考に、布のねこじゃらしを見る姿を作成したAI生成画像です。",
+      "caption": "提供写真を参考にしたAI生成画像です。"
+    },
+    "highball": {
+      "file": "highball.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "sha256": "332ec89178e5817e1cf75c40c3bde19b041ce23abddd70f8e6ca80dd2eca1cef",
+      "bytes": 102564,
+      "subject": "whisky",
+      "alt": "木のテーブルに置いた薄い琥珀色のハイボールを描いたAI生成画像です。",
+      "caption": "AI生成のイメージです。"
+    },
+    "glenlivet": {
+      "file": "glenlivet.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "sha256": "2cf0631bb5778f6a7b579227353ba90b97d9902ced05daa8d8d595d835039a7d",
+      "bytes": 75200,
+      "subject": "whisky",
+      "alt": "グレンリベット12年のボトルとハイボールを描いたAI生成画像です。",
+      "caption": "AI生成のイメージです。実際に購入したボトルの撮影写真ではありません。"
+    },
+    "desk": {
+      "file": "desk.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "sha256": "9fc2ab9cbf2bb66d30d5458a121b7486a67f28de6edabde600bce885d2aa865f",
+      "bytes": 63998,
+      "subject": "work",
+      "alt": "架空の数値表を表示したパソコンとノートがある机のAI生成画像です。",
+      "caption": "AI生成のイメージです。"
+    }
+  },
+  "articles": {
+    "cat-carrier-checklist": "manmos-portrait",
+    "before-welcoming-cat": "manmos-rest",
+    "manmos-cat-life": "manmos-tower",
+    "cat-teaser-small-parts": "manmos-toy",
+    "cat-vet-routine": "manmos-portrait",
+    "highball-measure-and-adjust": "highball",
+    "glenlivet-12-first-bottles": "glenlivet",
+    "single-malt-label-guide": "glenlivet",
+    "sherry-cask-notes": "highball",
+    "csv-import-seven-checks": "desk",
+    "it-data-work-flow": "desk",
+    "starting-it-without-specialty": "desk",
+    "ai-data-extraction-checks": "desk"
+  }
+}

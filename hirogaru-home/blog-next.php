@@ -53,6 +53,7 @@ function hsh_start_routes($topic=null){
     return $out.'</nav>';
 }
 function hsh_card_cover($post){
+    if(function_exists('hsh_photo_cover')){$photo=hsh_photo_cover($post,is_singular('post')&&(int)get_queried_object_id()===(int)$post->ID);if($photo)return $photo;}
     if(has_post_thumbnail($post))return get_the_post_thumbnail($post,'medium_large',array('loading'=>'lazy','decoding'=>'async'));
     $topic='';foreach(hsh_expanded_articles() as $a)if($a['slug']===$post->post_name)$topic=$a['topic'];
     if(!$topic)return '<div class="hsh-post-placeholder">ブログの記事</div>';
@@ -131,15 +132,15 @@ add_filter('the_content',function($content){
     $p=get_post();if(!hsh_owned_blog_post($p))return $content;
     if(get_post_meta($p->ID,'_hsh_bundle_owned',true)){
         $topic='';foreach(hsh_expanded_articles() as $a)if($a['slug']===$p->post_name)$topic=$a['topic'];
-        $content='<div class="hsh-article-visual">'.hsh_card_cover($p).'<small>本文の内容を示すイラストです。実物の写真ではありません。</small></div>'.$content;
+        $content='<div class="hsh-article-visual">'.hsh_card_cover($p).'</div>'.$content;
         $content.='<p class="hsh-review-note">本文の見直し：<time datetime="2026-10-26">2026/10/26</time></p><p><a href="'.esc_url(hsh_category_url($topic)).'">'.esc_html(hsh_topics()[$topic][0]).'の記事一覧へ →</a></p>'.hsh_related_markup($topic,$p->ID).hsh_profile_markup();
     }
     return $content.'<div class="hsh-article-tools"><button type="button" class="hsh-print">この記事を印刷する</button><a href="#">ページの先頭へ ↑</a></div>'.hsh_report_markup($p);
 },25);
 add_action('wp_enqueue_scripts',function(){
     if(is_admin())return;
-    wp_enqueue_style('hsh-next',plugin_dir_url(__FILE__).'assets/blog-next.css',array(),'1.13.2');
-    wp_enqueue_script('hsh-next',plugin_dir_url(__FILE__).'assets/blog-next.js',array(),'1.13.2',true);
+    wp_enqueue_style('hsh-next',plugin_dir_url(__FILE__).'assets/blog-next.css',array(),'1.14.0');
+    wp_enqueue_script('hsh-next',plugin_dir_url(__FILE__).'assets/blog-next.js',array(),'1.14.0',true);
     wp_localize_script('hsh-next','hshBlogTools',array('reportUrl'=>rest_url('hirogaru/v1/blog-report'),'tokenUrl'=>rest_url('hirogaru/v1/blog-report-token')));
 },110);
 add_filter('template_include',function($template){return is_404()?__DIR__.'/not-found-template.php':$template;},102);
@@ -195,7 +196,8 @@ function hsh_blog_dashboard(){
         echo '</p></form><ul>';foreach(array_reverse($history) as $row)echo '<li>保存 '.esc_html(wp_date('Y/m/d H:i',(int)$row['time'])).'：'.esc_html($row['title']).'</li>';foreach(array_reverse($restores) as $row)echo '<li>復元直前の内容を退避 '.esc_html(wp_date('Y/m/d H:i',(int)$row['time'])).'</li>';echo '</ul></details>';
     }
     echo '<h2>画像の確認</h2><p>画像の有無・代替説明・ファイル容量を確認します。写真が必要な記事は、実際の写真が届くまでイラストであることを表示します。</p><ul>';
-    foreach($posts as $p){preg_match_all('~<img\b[^>]*>~i',$p->post_content,$imgs);$missing=0;foreach($imgs[0] as $img)if(!preg_match('~\balt=[\x22\x27][^\x22\x27]+~',$img))$missing++;echo '<li>'.esc_html($p->post_title).'：本文画像 '.count($imgs[0]).'点、代替説明の要確認 '.(int)$missing.'点、表紙 '.(has_post_thumbnail($p)?'設定済み':'カテゴリー共通イラスト').'</li>';}
+    foreach($posts as $p){preg_match_all('~<img\b[^>]*>~i',$p->post_content,$imgs);$missing=0;foreach($imgs[0] as $img)if(!preg_match('~\balt=[\x22\x27][^\x22\x27]+~',$img))$missing++;echo '<li>'.esc_html($p->post_title).'：本文画像 '.count($imgs[0]).'点、代替説明の要確認 '.(int)$missing.'点、表紙 '.(function_exists('hsh_photo_for_slug')&&hsh_photo_for_slug($p->post_name)?(hsh_photo_for_slug($p->post_name)['kind']==='provided'?'提供写真':'AI生成画像'):(has_post_thumbnail($p)?'設定済み':'カテゴリー共通イラスト')).'</li>';}
+    if(function_exists('hsh_photo_manifest'))foreach(hsh_photo_manifest()['assets'] as $photo){$file=__DIR__.'/assets/photos/'.$photo['file'];echo '<li>'.esc_html($photo['file']).'：'.(is_file($file)?esc_html(number_format(filesize($file)/1024,1)).' KB':'ファイルを確認してください').' ／ '.esc_html($photo['kind']==='provided'?'提供写真':'AI生成').'</li>';}
     foreach(array('blog-scene.webp','brand-avatar.webp','cover-cat.svg','cover-glass.svg','cover-data.svg') as $asset)if(is_file(__DIR__.'/assets/'.$asset))echo '<li>'.esc_html($asset).'：'.esc_html(number_format(filesize(__DIR__.'/assets/'.$asset)/1024,1)).' KB'.(filesize(__DIR__.'/assets/'.$asset)>400000?'（容量を見直す）':'').'</li>';echo '</ul>';
     echo '<h2>リンク・保存資料の応答</h2><p>毎日6件ずつ巡回します。WordPressの定期実行はアクセス状況に依存します。転送や接続失敗はリンク切れと断定せず、確認対象として残します。応答があっても、資料の内容を確認したことにはなりません。</p><form method="post">';wp_nonce_field('hsh_blog_maintenance');echo '<button class="button" name="hsh_blog_action" value="scan">次の6件を確認</button></form><ul>';
     $health=get_option('hsh_health_rows',array());foreach((array)$health as $url=>$row)echo '<li><a href="'.esc_url($url).'">'.esc_html($url).'</a>：'.esc_html($row['result']).' / HTTP '.(int)$row['code'].' / '.esc_html(wp_date('Y/m/d H:i',$row['time'])).(!empty($row['bytes'])?' / '.esc_html(number_format($row['bytes']/1024,1)).' KB':'').'</li>';echo '</ul>';
@@ -208,6 +210,7 @@ add_action('admin_menu',function(){add_theme_page('ブログの記事点検','�
 /** Presentation changes leave stored attachments and prior originals intact. */
 add_filter('post_thumbnail_html',function($html,$post_id){
     $p=get_post($post_id);if(!hsh_owned_blog_post($p))return $html;
+    if(function_exists('hsh_photo_cover')){$photo=hsh_photo_cover($p,is_singular('post')&&(int)get_queried_object_id()===(int)$post_id);if($photo)return $photo;}
     $topic='';foreach(hsh_catalog() as $a){if($a['slug']===$p->post_name){$topic=$a['topic'];break;}}
     if(!$topic)return $html;$icons=array('cats'=>'cat','whisky'=>'glass','it-freelance'=>'data');
     $eager=is_singular('post')&&(int)get_queried_object_id()===(int)$post_id;
@@ -228,6 +231,7 @@ add_action('pre_post_update',function($id){$p=get_post($id);if(hsh_owned_blog_po
 // Owner-only diagnostics and a fixed-target scan; never an arbitrary URL proxy.
 function hsh_blog_health_status(){
     $assets=array();foreach(array('blog-scene.webp','brand-avatar.webp','cover-cat.svg','cover-glass.svg','cover-data.svg') as $name){$p=__DIR__.'/assets/'.$name;$assets[$name]=array('exists'=>is_file($p),'bytes'=>is_file($p)?filesize($p):0);}
+    if(function_exists('hsh_photo_manifest'))foreach(hsh_photo_manifest()['assets'] as $a){$p=__DIR__.'/assets/photos/'.$a['file'];$assets['photos/'.$a['file']]=array('exists'=>is_file($p),'bytes'=>is_file($p)?filesize($p):0,'kind'=>$a['kind']);}
     return hsh_edit_response(array('links'=>get_option('hsh_health_rows',array()),'next_scheduled'=>wp_next_scheduled('hsh_blog_maintenance_daily'),'restore_probe'=>get_option('hsh_restore_probe_result',array()),'assets'=>$assets));
 }
 add_action('rest_api_init',function(){register_rest_route('hirogaru/v1','/blog-health',array(array('methods'=>'GET','permission_callback'=>'hsh_edit_permission','callback'=>'hsh_blog_health_status'),array('methods'=>'POST','permission_callback'=>'hsh_edit_permission','callback'=>function($request){if($request->get_json_params()!==array())return new WP_Error('hsh_input','空の入力だけ受け付けます。',array('status'=>400));hsh_health_scan();return hsh_blog_health_status();})));});

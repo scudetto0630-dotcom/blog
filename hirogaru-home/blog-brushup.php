@@ -39,7 +39,7 @@ function hsh_topic_reading_route($topic) {
     return $out.'</ul></nav>';
 }
 function hsh_blog_extra_head($head,$url,$description,$title) {
-    $tags=array('og:type'=>'website','og:locale'=>'ja_JP','og:site_name'=>'ひろがる趣味暮らし','og:title'=>$title,'og:description'=>$description,'og:url'=>$url,'og:image'=>plugin_dir_url(__FILE__).'assets/brand-avatar.webp','twitter:card'=>'summary');
+    $tags=array('og:type'=>'website','og:locale'=>'ja_JP','og:site_name'=>'ひろがる趣味暮らし','og:title'=>$title,'og:description'=>$description,'og:url'=>$url,'og:image'=>plugin_dir_url(__FILE__).'assets/photos/manmos-tower.webp','twitter:card'=>'summary');
     $out='';
     foreach($tags as $key=>$value){if(!preg_match('/<meta\b[^>]*(?:property|name)=[\'"]'.preg_quote($key,'/').'[\'"]/i',$head)){$out.='<meta property="'.esc_attr($key).'" content="'.esc_attr($value).'">' . "\n";}}
     if(strpos($head,'"@type":"WebSite"')===false && strpos($head,'"@type": "WebSite"')===false){
