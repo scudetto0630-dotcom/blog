@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-26",
+  "version": "1.14.2",
+  "new_provided_photos": [
+    "manmos-front.webp",
+    "manmos-lying.webp",
+    "manmos-sitting.webp"
+  ],
+  "changes": [
+    "Profile and about photo use supplied frontal portrait",
+    "Two candid supplied photos added to existing gallery",
+    "Vet preparation cover uses neutral supplied frontal portrait"
+  ],
+  "generation_calls": 0,
+  "php_checks_including_shared": 209,
+  "browser": {
+    "passed": 18,
+    "failed": 0,
+    "viewports": [
+      1440,
+      768,
+      390,
+      320
+    ],
+    "public_url": "https://hirogarushumi.com/",
+    "provided_assets": 7,
+    "generated_assets": 5
+  },
+  "privacy": "WebP exports have no retained EXIF; originals unchanged"
+}
