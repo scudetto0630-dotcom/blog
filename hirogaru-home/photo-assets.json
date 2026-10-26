@@ -98,6 +98,39 @@
       "subject": "work",
       "alt": "架空の数値表を表示したパソコンとノートがある机のAI生成画像です。",
       "caption": "AI生成のイメージです。"
+    },
+    "manmos-front": {
+      "file": "manmos-front.webp",
+      "width": 1200,
+      "height": 900,
+      "kind": "provided",
+      "subject": "manmos",
+      "caption": "まんもす（提供写真）",
+      "alt": "正面から撮影したまんもすの顔。管理人提供の写真です。",
+      "sha256": "d30cbb751777351301e25a5d19687664570007195dc0550caf7512754e019572",
+      "bytes": 180630
+    },
+    "manmos-lying": {
+      "file": "manmos-lying.webp",
+      "width": 1200,
+      "height": 900,
+      "kind": "provided",
+      "subject": "manmos",
+      "caption": "横になったまんもす（提供写真）",
+      "alt": "横になって顔をこちらへ向けるまんもす。管理人提供の写真です。",
+      "sha256": "59b995b9da073996a3963d6fa6f95cefeb62b39d92b3f42bd75722b2de8912e5",
+      "bytes": 145584
+    },
+    "manmos-sitting": {
+      "file": "manmos-sitting.webp",
+      "width": 1200,
+      "height": 900,
+      "kind": "provided",
+      "subject": "manmos",
+      "caption": "座っているまんもす（提供写真）",
+      "alt": "後ろ脚を前へ伸ばして座っているまんもす。管理人提供の写真です。",
+      "sha256": "c7fa64ad3039d9197f6a23ebad8ef8191487bab52e79be11985a1433c8b3231c",
+      "bytes": 88502
     }
   },
   "articles": {
@@ -105,7 +138,7 @@
     "before-welcoming-cat": "manmos-rest",
     "manmos-cat-life": "manmos-tower",
     "cat-teaser-small-parts": "manmos-toy",
-    "cat-vet-routine": "manmos-portrait",
+    "cat-vet-routine": "manmos-front",
     "highball-measure-and-adjust": "highball",
     "glenlivet-12-first-bottles": "glenlivet",
     "single-malt-label-guide": "glenlivet",

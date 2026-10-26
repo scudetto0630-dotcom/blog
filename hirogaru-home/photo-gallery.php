@@ -15,7 +15,7 @@ function hsh_photo_cover($post,$eager=false){
 add_filter('the_content',function($content){
     if(!is_singular('post')||!in_the_loop()||!is_main_query())return $content;
     if(get_post_field('post_name',get_the_ID())!=='manmos-cat-life')return $content;
-    $assets=hsh_photo_manifest()['assets'];$gallery='<section class="hsh-manmos-gallery"><h2>まんもすの後ろ姿と、くつろぐ姿</h2><div>';
-    foreach(array('manmos-back','manmos-stretch') as $key){$gallery.='<figure class="hsh-photo">'.hsh_photo_image($assets[$key]).'<figcaption>'.esc_html($assets[$key]['caption']).'</figcaption></figure>';}
+    $assets=hsh_photo_manifest()['assets'];$gallery='<section class="hsh-manmos-gallery"><h2>まんもすのいろいろな姿</h2><div>';
+    foreach(array('manmos-lying','manmos-sitting','manmos-back','manmos-stretch') as $key){$gallery.='<figure class="hsh-photo">'.hsh_photo_image($assets[$key]).'<figcaption>'.esc_html($assets[$key]['caption']).'</figcaption></figure>';}
     return $content.$gallery.'</div></section>';
 },23);
