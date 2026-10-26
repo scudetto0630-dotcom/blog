@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-26",
+  "version": "1.14.1",
+  "site": "https://hirogarushumi.com/",
+  "assets": {
+    "provided": 4,
+    "generated": 5,
+    "total_bytes": 823738
+  },
+  "article_covers": 13,
+  "browser": {
+    "passed": 62,
+    "failed": 0,
+    "viewports": [
+      1440,
+      768,
+      390,
+      320
+    ],
+    "public_url": "https://hirogarushumi.com/",
+    "provided_assets": 4,
+    "generated_assets": 5
+  },
+  "php_checks_including_shared": 203,
+  "export_checks": "dimensions, SHA256 and absent EXIF verified for all 9 WebP assets",
+  "last_change": "Concise generated caption verified on public Glenlivet article after final update",
+  "limitations": [
+    "Generated product labels are illustrative; not verified against current official packaging",
+    "Generated scenes do not document actual product use, veterinary visits or the actual workspace"
+  ]
+}
