@@ -131,21 +131,145 @@
       "alt": "後ろ脚を前へ伸ばして座っているまんもす。管理人提供の写真です。",
       "sha256": "c7fa64ad3039d9197f6a23ebad8ef8191487bab52e79be11985a1433c8b3231c",
       "bytes": 88502
+    },
+    "article-carrier": {
+      "file": "article-carrier.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "manmos",
+      "alt": "扉を開けたキャリーのそばにいるまんもすを描いたAI生成画像です。",
+      "caption": "提供写真を参考にしたAI生成画像です。",
+      "sha256": "8c6f10a979b8ac10e484384e0ecff4840ccfd6895e00e56228dac0f55e9baee9",
+      "bytes": 149754
+    },
+    "article-vet": {
+      "file": "article-vet.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "manmos",
+      "alt": "通院の準備をイメージした、キャリーとまんもすのAI生成画像です。",
+      "caption": "提供写真を参考にしたAI生成画像です。",
+      "sha256": "3be998584f4e897c1b53ab0e1ad2449acf8594071ffcad9b72c5d9a96846b597",
+      "bytes": 133206
+    },
+    "article-labels": {
+      "file": "article-labels.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "whisky",
+      "alt": "ボトルのラベルを見る場面をイメージしたAI生成画像です。",
+      "caption": "AI生成のイメージです。",
+      "sha256": "2d04fbcd8a8d2f77bac46ac0576b1f5051725278017f299b2e9106432d8071d1",
+      "bytes": 86454
+    },
+    "article-sherry": {
+      "file": "article-sherry.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "whisky",
+      "alt": "琥珀色のウイスキーとレーズンを置いたAI生成画像です。",
+      "caption": "AI生成のイメージです。",
+      "sha256": "e8edb9b5cf8eb76db4770c890835861e38f9631f50ddaa16f600d76ec245b1bc",
+      "bytes": 91634
+    },
+    "article-workflow": {
+      "file": "article-workflow.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "work",
+      "alt": "データを受け取り取り込む作業をイメージしたAI生成画像です。",
+      "caption": "AI生成のイメージです。",
+      "sha256": "60d9153402964c120c540377ff39589067587a36c4167d85e244807732331433",
+      "bytes": 83986
+    },
+    "article-beginner": {
+      "file": "article-beginner.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "work",
+      "alt": "やりたい仕事を書き出す机をイメージしたAI生成画像です。",
+      "caption": "AI生成のイメージです。",
+      "sha256": "aa378786089c0da544c0d242c80bca3607c6007a9ac4ebe8b3bc259732d0f075",
+      "bytes": 79436
+    },
+    "article-checking": {
+      "file": "article-checking.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "work",
+      "alt": "元データと抽出結果を照らし合わせるAI生成画像です。",
+      "caption": "AI生成のイメージです。",
+      "sha256": "1a678571c50ebf10359ebe67b09ba095651b9bc83e50e2d8968f715c0840b2a2",
+      "bytes": 85822
+    },
+    "article-csv": {
+      "file": "article-csv.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "work",
+      "alt": "表の数値を確認する作業をイメージしたAI生成画像です。",
+      "caption": "AI生成のイメージです。",
+      "sha256": "f91c4eacafe260f22163e1ad8a61c557253e02bb47718a7bc7ed0855f44f015a",
+      "bytes": 97832
+    },
+    "article-measure": {
+      "file": "article-measure.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "whisky",
+      "alt": "ハイボールの量を計る道具を描いたAI生成画像です。",
+      "caption": "AI生成のイメージです。",
+      "sha256": "5e4a9d05792cee2b49a690319cc7bda6bab179ea478bb408f8ef4bbedef4b45b",
+      "bytes": 125340
+    },
+    "article-safe-toy": {
+      "file": "article-safe-toy.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "manmos",
+      "alt": "小さな飾りのない布のねこじゃらしを描いたAI生成画像です。",
+      "caption": "提供写真を参考にしたAI生成画像です。",
+      "sha256": "6975aa10e6cf043f996cccb661707b677b76d8d12bde690870b06950c3286991",
+      "bytes": 143230
     }
   },
   "articles": {
-    "cat-carrier-checklist": "manmos-portrait",
+    "cat-carrier-checklist": "article-carrier",
     "before-welcoming-cat": "manmos-rest",
     "manmos-cat-life": "manmos-tower",
     "cat-teaser-small-parts": "manmos-toy",
-    "cat-vet-routine": "manmos-front",
+    "cat-vet-routine": "article-vet",
     "highball-measure-and-adjust": "highball",
     "glenlivet-12-first-bottles": "glenlivet",
-    "single-malt-label-guide": "glenlivet",
-    "sherry-cask-notes": "highball",
-    "csv-import-seven-checks": "desk",
-    "it-data-work-flow": "desk",
-    "starting-it-without-specialty": "desk",
-    "ai-data-extraction-checks": "desk"
+    "single-malt-label-guide": "article-labels",
+    "sherry-cask-notes": "article-sherry",
+    "csv-import-seven-checks": "article-csv",
+    "it-data-work-flow": "article-workflow",
+    "starting-it-without-specialty": "article-beginner",
+    "ai-data-extraction-checks": "article-checking"
+  },
+  "inline": {
+    "cat-carrier-checklist": [
+      "manmos-portrait"
+    ],
+    "cat-teaser-small-parts": [
+      "article-safe-toy"
+    ],
+    "highball-measure-and-adjust": [
+      "article-measure"
+    ],
+    "it-data-work-flow": [
+      "desk"
+    ]
   }
 }

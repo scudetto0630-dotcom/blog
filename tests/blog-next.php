@@ -50,7 +50,10 @@ check(strpos($dashboard,'関連記事を保存')!==false&&strpos($dashboard,'fix
 check(strpos($dashboard,'1つ前の保存内容へ戻す')!==false||strpos($dashboard,'保存履歴')!==false,'dashboard exposes snapshot history and restore controls');
 $GLOBALS['test_admin_cap']=false;
 $photos=hsh_photo_manifest();
-check(count($photos['assets'])===12&&count($photos['articles'])===13,'twelve photo assets cover thirteen owned articles');
+check(count($photos['assets'])===22&&count($photos['articles'])===13,'twenty-two photo assets cover thirteen owned articles');
+check(count(array_unique($photos['articles']))===13,'every article has its own cover');
+$used=array_values($photos['articles']);foreach($photos['inline'] as $keys)foreach($keys as $key){check(isset($photos['assets'][$key]),'inline asset exists '.$key);$used[]=$key;}
+check(count(array_unique($used))===count($used),'no image is shared between article covers and inline scenes');
 foreach($photos['assets'] as $asset){
     $file=__DIR__.'/../hirogaru-home/assets/photos/'.$asset['file'];
     check(is_file($file)&&hash_file('sha256',$file)===$asset['sha256'],'photo integrity '.$asset['file']);

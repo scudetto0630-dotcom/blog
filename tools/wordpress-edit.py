@@ -4,6 +4,7 @@ import argparse
 import json
 import os
 import sys
+import time
 import urllib.error
 import urllib.request
 
@@ -33,6 +34,9 @@ def main():
         data = json.dumps(payload, ensure_ascii=False).encode()
     path = '/hirogaru/v1/' + ('blog-health' if args.operation == 'blog-health-run' else 'content-release' if args.operation == 'content-status' else 'starter-posts' if args.operation == 'starter-status' else 'starter-refresh' if args.operation == 'starter-review' else 'introduction' if args.operation in ('introduction-review', 'introduction-refresh') else 'cat-guide-maintenance' if args.operation == 'cat-guide-maintenance-run' else args.operation)
     url = 'https://hirogarushumi.com' + ('/?rest_route=' + path if args.query_route else '/wp-json' + path)
+    # Shared caches can retain an earlier unauthenticated 401 response.
+    # A unique query value avoids that response without weakening authentication.
+    url += ('&' if '?' in url else '?') + '_hsh_request=' + str(time.time_ns())
     request = urllib.request.Request(url, data=data, method='GET' if data is None else 'POST', headers={
         'Authorization': 'Bearer ' + token,
         'Content-Type': 'application/json',

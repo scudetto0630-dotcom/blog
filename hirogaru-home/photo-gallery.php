@@ -14,7 +14,20 @@ function hsh_photo_cover($post,$eager=false){
 }
 add_filter('the_content',function($content){
     if(!is_singular('post')||!in_the_loop()||!is_main_query())return $content;
-    if(get_post_field('post_name',get_the_ID())!=='manmos-cat-life')return $content;
+    $slug=get_post_field('post_name',get_the_ID());
+    $manifest=hsh_photo_manifest();
+    $inline='';
+    foreach(($manifest['inline'][$slug]??array()) as $key){
+        if(!isset($manifest['assets'][$key]))continue;
+        $asset=$manifest['assets'][$key];
+        $inline.='<figure class="hsh-photo hsh-inline-photo">'.hsh_photo_image($asset).'<figcaption>'.esc_html($asset['caption']).'</figcaption></figure>';
+    }
+    if($inline){
+        // Place the scene within the article, after the first substantial section.
+        $offset=strpos($content,'<h2',strpos($content,'<h2')!==false?strpos($content,'<h2')+3:0);
+        $content=$offset!==false?substr_replace($content,$inline,$offset,0):$content.$inline;
+    }
+    if($slug!=='manmos-cat-life')return $content;
     $assets=hsh_photo_manifest()['assets'];$gallery='<section class="hsh-manmos-gallery"><h2>まんもすのいろいろな姿</h2><div>';
     foreach(array('manmos-lying','manmos-sitting','manmos-back','manmos-stretch') as $key){$gallery.='<figure class="hsh-photo">'.hsh_photo_image($assets[$key]).'<figcaption>'.esc_html($assets[$key]['caption']).'</figcaption></figure>';}
     return $content.$gallery.'</div></section>';
