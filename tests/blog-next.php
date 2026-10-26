@@ -50,10 +50,19 @@ check(strpos($dashboard,'関連記事を保存')!==false&&strpos($dashboard,'fix
 check(strpos($dashboard,'1つ前の保存内容へ戻す')!==false||strpos($dashboard,'保存履歴')!==false,'dashboard exposes snapshot history and restore controls');
 $GLOBALS['test_admin_cap']=false;
 $photos=hsh_photo_manifest();
-check(count($photos['assets'])===22&&count($photos['articles'])===13,'twenty-two photo assets cover thirteen owned articles');
+check(count($photos['assets'])===45&&count($photos['articles'])===13,'forty-five photo assets cover thirteen owned articles');
 check(count(array_unique($photos['articles']))===13,'every article has its own cover');
 $used=array_values($photos['articles']);foreach($photos['inline'] as $keys)foreach($keys as $key){check(isset($photos['assets'][$key]),'inline asset exists '.$key);$used[]=$key;}
 check(count(array_unique($used))===count($used),'no image is shared between article covers and inline scenes');
+foreach($photos['articles'] as $slug=>$cover){check($slug==='manmos-cat-life'||count($photos['inline'][$slug]??array())>=2,'two body photos independent of cover '.$slug);}
+$sample='<h2>One</h2><p>A</p><h2>Two</h2><p>B</p><h2>Three</h2><p>C</p><h2>Four</h2><p>D</p><h2>Five</h2><p>E</p><h2>Six</h2><p>F</p><nav class="hsh-next-read"><h2>Related</h2></nav>';
+$inserted=hsh_insert_inline_photos($sample,'csv-import-seven-checks');
+check(substr_count($inserted,'hsh-inline-photo')===2,'two images inserted into body');
+check(strpos($inserted,'<h2>Three')>strpos($inserted,'detail-csv-original.webp')&&strpos($inserted,'<h2>Five')>strpos($inserted,'detail-csv-preview.webp'),'body photos distributed at separate section boundaries');
+check(hsh_insert_inline_photos($inserted,'csv-import-seven-checks')===$inserted,'body image insertion is idempotent');
+check(hsh_insert_inline_photos($sample,'unrelated')===$sample,'unrelated posts left alone');
+foreach(array('cats','whisky','it-freelance') as $slug)check(strpos(hsh_topic_photo($slug),'<img')!==false,'category has its own photograph '.$slug);
+
 foreach($photos['assets'] as $asset){
     $file=__DIR__.'/../hirogaru-home/assets/photos/'.$asset['file'];
     check(is_file($file)&&hash_file('sha256',$file)===$asset['sha256'],'photo integrity '.$asset['file']);

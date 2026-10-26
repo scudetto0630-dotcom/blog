@@ -1,0 +1,67 @@
+{
+  "before-welcoming-cat": {
+    "before": 688,
+    "after": 2130,
+    "ratio": 3.096
+  },
+  "manmos-cat-life": {
+    "before": 584,
+    "after": 1931,
+    "ratio": 3.307
+  },
+  "cat-teaser-small-parts": {
+    "before": 579,
+    "after": 1958,
+    "ratio": 3.382
+  },
+  "cat-vet-routine": {
+    "before": 562,
+    "after": 1953,
+    "ratio": 3.475
+  },
+  "glenlivet-12-first-bottles": {
+    "before": 724,
+    "after": 2216,
+    "ratio": 3.061
+  },
+  "single-malt-label-guide": {
+    "before": 713,
+    "after": 2183,
+    "ratio": 3.062
+  },
+  "sherry-cask-notes": {
+    "before": 716,
+    "after": 2238,
+    "ratio": 3.126
+  },
+  "it-data-work-flow": {
+    "before": 681,
+    "after": 2126,
+    "ratio": 3.122
+  },
+  "starting-it-without-specialty": {
+    "before": 688,
+    "after": 2124,
+    "ratio": 3.087
+  },
+  "ai-data-extraction-checks": {
+    "before": 856,
+    "after": 2595,
+    "ratio": 3.032
+  },
+  "cat-carrier-checklist": {
+    "before": 1798,
+    "after": 5453,
+    "ratio": 3.033
+  },
+  "highball-measure-and-adjust": {
+    "before": 1641,
+    "after": 4946,
+    "ratio": 3.014
+  },
+  "csv-import-seven-checks": {
+    "before": 2717,
+    "after": 8184,
+    "ratio": 3.012
+  }
+}
