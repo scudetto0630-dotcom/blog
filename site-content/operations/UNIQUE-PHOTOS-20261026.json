@@ -1,0 +1,20 @@
+{
+  "passed": 62,
+  "failed": 0,
+  "viewports": [
+    1440,
+    768,
+    390,
+    320
+  ],
+  "public_url": "https://hirogarushumi.com/",
+  "provided_assets": 7,
+  "generated_assets": 15,
+  "production_version": "1.15.0",
+  "new_generated_images": 10,
+  "unique_article_covers": 13,
+  "new_inline_placements": 4,
+  "php_checks_including_shared": 235,
+  "python_tests": 8,
+  "asset_checks": 22
+}
