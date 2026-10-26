@@ -138,8 +138,8 @@ add_filter('the_content',function($content){
 },25);
 add_action('wp_enqueue_scripts',function(){
     if(is_admin())return;
-    wp_enqueue_style('hsh-next',plugin_dir_url(__FILE__).'assets/blog-next.css',array(),'1.13.0');
-    wp_enqueue_script('hsh-next',plugin_dir_url(__FILE__).'assets/blog-next.js',array(),'1.13.0',true);
+    wp_enqueue_style('hsh-next',plugin_dir_url(__FILE__).'assets/blog-next.css',array(),'1.13.1');
+    wp_enqueue_script('hsh-next',plugin_dir_url(__FILE__).'assets/blog-next.js',array(),'1.13.1',true);
     wp_localize_script('hsh-next','hshBlogTools',array('reportUrl'=>rest_url('hirogaru/v1/blog-report'),'tokenUrl'=>rest_url('hirogaru/v1/blog-report-token')));
 },110);
 add_filter('template_include',function($template){return is_404()?__DIR__.'/not-found-template.php':$template;},102);
@@ -223,3 +223,10 @@ function hsh_prune_blog_reports($rows,$now){
 
 // Capture normal editor changes as well as scoped API changes.
 add_action('pre_post_update',function($id){$p=get_post($id);if(hsh_owned_blog_post($p))hsh_remember_blog_post($p);});
+
+// Owner-only diagnostics and a fixed-target scan; never an arbitrary URL proxy.
+function hsh_blog_health_status(){
+    $assets=array();foreach(array('blog-scene.webp','brand-avatar.webp','cover-cat.svg','cover-glass.svg','cover-data.svg') as $name){$p=__DIR__.'/assets/'.$name;$assets[$name]=array('exists'=>is_file($p),'bytes'=>is_file($p)?filesize($p):0);}
+    return hsh_edit_response(array('links'=>get_option('hsh_health_rows',array()),'next_scheduled'=>wp_next_scheduled('hsh_blog_maintenance_daily'),'restore_probe'=>get_option('hsh_restore_probe_result',array()),'assets'=>$assets));
+}
+add_action('rest_api_init',function(){register_rest_route('hirogaru/v1','/blog-health',array(array('methods'=>'GET','permission_callback'=>'hsh_edit_permission','callback'=>'hsh_blog_health_status'),array('methods'=>'POST','permission_callback'=>'hsh_edit_permission','callback'=>function($request){if($request->get_json_params()!==array())return new WP_Error('hsh_input','空の入力だけ受け付けます。',array('status'=>400));hsh_health_scan();return hsh_blog_health_status();})));});
