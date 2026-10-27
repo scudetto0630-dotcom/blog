@@ -1,0 +1,29 @@
+{
+  "passed": 82,
+  "failed": 0,
+  "viewports": [
+    1440,
+    768,
+    390,
+    320
+  ],
+  "public_url": "https://hirogarushumi.com/",
+  "provided_assets": 8,
+  "generated_assets": 37,
+  "production_version": "1.17.0",
+  "published_at_jst": "2026-10-27",
+  "articles_reviewed": 13,
+  "paragraphs_reviewed": 369,
+  "paragraphs_rewritten": 229,
+  "title_and_intro_pages_checked": 20,
+  "php_checks_including_shared": 323,
+  "python_tests": 13,
+  "source_textlint_pages": 17,
+  "source_textlint_findings_reviewed": 127,
+  "public_textlint_pages": 20,
+  "public_textlint_findings_reviewed": 240,
+  "additional_public_contexts_reviewed": 20,
+  "naturalness_automatically_guaranteed": false,
+  "photos_preserved": 45,
+  "minimum_article_length_ratio_to_previous_release": 1.047
+}
