@@ -2,31 +2,34 @@
   {
     "slug": "cat-carrier-checklist",
     "topic": "cats",
-    "title": "猫用キャリーの選び方｜通院前に確認したい5項目",
+    "title": "猫用キャリー、何を見て選ぶ？買う前に気になる5つのこと",
     "summary": "通院用の猫用キャリーを選ぶときに、出し入れ・留め具・総重量・手入れ・置き場所を確認します。体重だけで決めないサイズの考え方と、保存用チェックリストも紹介します。",
-    "updated_at": "2026-10-26",
+    "updated_at": "2026-10-27",
     "review_due_at": "2027-01-24",
     "sources_status": "pending_external_verification",
-    "intent": "通院用の猫用キャリーを選ぶ"
+    "intent": "通院用の猫用キャリーを選ぶ",
+    "excerpt": "猫が入る大きさだけでなく、出し入れや持ち運びも気になるところ。今のキャリーを見直すときにも使える、5つの確認点をまとめます。"
   },
   {
     "slug": "highball-measure-and-adjust",
     "topic": "whisky",
-    "title": "ハイボールが薄いときの調整方法｜分量・氷・炭酸水",
+    "title": "ハイボールが薄い気がする。ウイスキーを足す前に見直したいこと",
     "summary": "ハイボールが薄いと感じたときに、分量・氷・炭酸水の状態を確認する方法を紹介します。味の薄さと炭酸の弱さを分けて考え、次に作るときに使える配合メモも用意しました。",
-    "updated_at": "2026-10-26",
+    "updated_at": "2026-10-27",
     "review_due_at": "2027-01-24",
     "sources_status": "pending_external_verification",
-    "intent": "ハイボールが薄く感じる原因と調整方法を調べる"
+    "intent": "ハイボールが薄く感じる原因と調整方法を調べる",
+    "excerpt": "味なのか、炭酸なのか、氷が溶けたのか。すぐにウイスキーを足す前に、配合や作り方を分けて考えてみます。"
   },
   {
     "slug": "csv-import-seven-checks",
     "topic": "it-freelance",
-    "title": "CSV取り込み前の確認7項目｜文字化け・先頭の0・日付",
+    "title": "CSVを取り込む前に見ておきたい7つのこと",
     "summary": "CSVを取り込む前に確認したい文字コード、列の対応、先頭の0、日付、空欄、重複、件数を解説します。元ファイルを残して作業する手順と、架空の練習用CSV・確認メモを用意しました。",
-    "updated_at": "2026-10-26",
+    "updated_at": "2026-10-27",
     "review_due_at": "2027-01-24",
     "sources_status": "pending_external_verification",
-    "intent": "CSV取り込み前の確認項目を調べる"
+    "intent": "CSV取り込み前の確認項目を調べる",
+    "excerpt": "先頭の0、空欄、日付、重複など、CSVを取り込む前に気になるところを具体例で紹介します。元ファイルの保管や再実行の注意点もまとめました。"
   }
 ]

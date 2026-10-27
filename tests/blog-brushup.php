@@ -25,7 +25,7 @@ check(substr_count($robots,'name="robots"')===1&&strpos($robots,'max-image-previ
 $robots=hsh_search_robots('<meta name="robots" content="index,follow"><meta name="robots" content="noindex,nofollow">');
 check(strpos($robots,'content="noindex, nofollow"')!==false,'search remains noindex and preserves restrictive directives');
 $map=hsh_article_map();check(count($map)===3&&count(array_unique(array_column($map,'intent')))===3,'each published article has a distinct recorded search intent');
-check(strpos(hsh_article_review_note('cat-carrier-checklist'),'2026-10-26')!==false&&hsh_article_review_note('unrelated')==='','review note is limited to reviewed managed articles');
+check(strpos(hsh_article_review_note('cat-carrier-checklist'),$map[0]['updated_at'])!==false&&hsh_article_review_note('unrelated')==='','review note is limited to reviewed managed articles');
 $path=dirname(__DIR__).'/hirogaru-home/assets/resources/';check(is_file($path.'cat-carrier-checklist.txt')&&is_file($path.'highball-note.txt')&&is_file($path.'csv-practice.csv'),'useful downloadable resources are packaged');
 $related=hsh_select_related(array((object)array('ID'=>1,'post_status'=>'publish'),(object)array('ID'=>2,'post_status'=>'draft'),(object)array('ID'=>3,'post_status'=>'publish'),(object)array('ID'=>3,'post_status'=>'publish'),(object)array('ID'=>4,'post_status'=>'publish')),1);
 check(array_map(function($p){return $p->ID;},$related)===array(3,4),'related articles exclude current post drafts and duplicates');

@@ -2,9 +2,9 @@
 if (!defined('ABSPATH')) { exit; }
 function hsh_topic_details() {
     return array(
-        'cats' => array('猫の世話とキャリー・おもちゃの選び方', '猫との暮らしで気になることや、キャリー・おもちゃの選び方について書いています。通院用キャリーの記事では、体格や持ち運び方に合わせた確認点をまとめています。', 'cat-carrier-checklist', '通院用キャリーの選び方', '猫の世話や、キャリー・おもちゃの選び方についての記事をまとめています。'),
-        'whisky' => array('自宅で飲むウイスキーの選び方と楽しみ方', 'ウイスキーの飲み方や銘柄の選び方、グラスなどの道具について書いています。自宅でハイボールを作るときの分量や手順から紹介します。', 'highball-measure-and-adjust', 'ハイボールが薄く感じるときの見直し方', 'ウイスキーの飲み方や選び方、グラスなどの道具についての記事をまとめています。'),
-        'it-freelance' => array('会社員からフリーランスへ移り、ITの仕事を始めました', 'MRからITの仕事へ移り、今はフリーランスとして働いています。仕事でデータを扱うときの注意点やAIの使い方、会社員から働き方を変えた経験について書いていきます。', 'csv-import-seven-checks', 'CSVを取り込む前に確認したいこと', 'データの整理やAIの使い方、フリーランスとして働くことについての記事をまとめています。'),
+        'cats'=>array('うちの猫は、まんもすです','まんもすとの暮らしや、キャリー・おもちゃを選ぶときに気になることを書いています。猫によって好みも違うので、まずは身近な話から。これから迎える方への準備の話もあります。','cat-carrier-checklist','キャリーは、どこを見て選ぶ？','まんもすとの暮らしや、猫を迎える準備の話もどうぞ。'),
+        'whisky'=>array('普段は薄めのハイボールにしています','私は普段、薄めのハイボールにしています。飲んで感じたことや、ラベルの見方、家で作るときに気になることを書いています。難しい香りの名前より、自分の言葉で。','highball-measure-and-adjust','ハイボールが薄いと感じたら','飲んだ感想や、ラベルで気になる言葉の話も書いています。'),
+        'it-freelance'=>array('ITの仕事って、何をするのか分からなかった','以前はMR、今はフリーランスでデータをシステムへ取り込む仕事をしています。何をしたいか迷ったこと、AIへ伝える難しさ、データを確かめるときの話を残しています。','csv-import-seven-checks','CSVを取り込む前に見ておきたいこと','未経験で迷ったことや、AIに作業を頼むときの話もどうぞ。'),
     );
 }
 function hsh_current_topic() {
@@ -15,7 +15,7 @@ add_filter('template_include', function ($template) {
     return hsh_current_topic() ? plugin_dir_path(__FILE__) . 'category-template.php' : $template;
 }, 100);
 function hsh_profile_markup() {
-    return '<aside class="hsh-profile" aria-label="書き手について"><img src="' . esc_url(plugin_dir_url(__FILE__) . 'assets/photos/manmos-front.webp') . '" alt="保護猫のまんもす。管理人提供の写真です。" width="160" height="160" loading="lazy"><div><p class="hsh-kicker">管理人のプロフィール</p><strong>ひろがる趣味暮らし 管理人</strong><p>保護猫のまんもすと暮らしています。以前はMRとして働き、今はフリーランスでデータをシステムに取り込む仕事をしています。ウイスキーはシングルモルトが好みです。</p><a href="' . esc_url(home_url('/hsh-about/')) . '">プロフィールを読む →</a><small>写真は、管理人と暮らすまんもすです。</small></div></aside>';
+    return '<aside class="hsh-profile" aria-label="書き手について"><img src="' . esc_url(plugin_dir_url(__FILE__) . 'assets/photos/manmos-front.webp') . '" alt="保護猫のまんもす。管理人提供の写真です。" width="160" height="160" loading="lazy"><div><p class="hsh-kicker">書いている人</p><strong>ひろがる趣味暮らし 管理人</strong><p>まんもすと暮らす、ウイスキー好きです。以前はMR、今はフリーランスでデータをシステムへ取り込む仕事をしています。ChatGPTやCodexも使っています。</p><a href="' . esc_url(home_url('/hsh-about/')) . '">もう少し詳しい自己紹介 →</a><small>写真は、管理人と暮らすまんもすです。</small></div></aside>';
 }
 function hsh_search_markup($id) {
     $value=function_exists('get_search_query')?get_search_query(false):'';
@@ -26,7 +26,7 @@ function hsh_search_markup($id) {
     return '<form class="hsh-search" role="search" method="get" action="'.esc_url(home_url('/')).'"><label for="'.esc_attr($id).'">ブログ内を検索</label><div><input id="'.esc_attr($id).'" name="s" type="search" value="'.esc_attr($value).'" maxlength="100" placeholder="キャリー、ハイボール、CSVなど"><select name="hsh_topic" aria-label="検索するカテゴリー">'.$options.'</select><button type="submit">検索</button></div></form>';
 }
 add_action('wp_enqueue_scripts', function () {
-    wp_enqueue_style('hsh-reading', plugin_dir_url(__FILE__) . 'assets/reading.css', array(), '1.16.0');
+    wp_enqueue_style('hsh-reading', plugin_dir_url(__FILE__) . 'assets/reading.css', array(), '1.17.0');
     if ((int)get_option('hsh_page_id') && is_page((int)get_option('hsh_page_id'))) {
         foreach (array('cocoon-style','cocoon-keyframes','font-awesome-style','icomoon-style','baguettebox-style','cocoon-child-style','cocoon-child-keyframes','contact-form-7') as $handle) { wp_dequeue_style($handle); }
     }

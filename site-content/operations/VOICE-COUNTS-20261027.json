@@ -1,0 +1,106 @@
+{
+  "before-welcoming-cat": {
+    "reviewed_paragraphs": 19,
+    "rewritten_paragraphs": 13,
+    "before_characters": 2130,
+    "after_characters": 2356,
+    "ratio": 1.106,
+    "title": "猫を迎える前に、何をそろえておけばいい？"
+  },
+  "manmos-cat-life": {
+    "reviewed_paragraphs": 18,
+    "rewritten_paragraphs": 14,
+    "before_characters": 1931,
+    "after_characters": 2148,
+    "ratio": 1.112,
+    "title": "1匹でも寂しくなさそう。甘えん坊のまんもすと暮らしています"
+  },
+  "cat-teaser-small-parts": {
+    "reviewed_paragraphs": 18,
+    "rewritten_paragraphs": 12,
+    "before_characters": 1958,
+    "after_characters": 2063,
+    "ratio": 1.054,
+    "title": "100均のねこじゃらしも使うけど、小さな部品には気を付けています"
+  },
+  "cat-vet-routine": {
+    "reviewed_paragraphs": 18,
+    "rewritten_paragraphs": 11,
+    "before_characters": 1953,
+    "after_characters": 2078,
+    "ratio": 1.064,
+    "title": "猫の通院、何を準備する？持ち物とメモの残し方"
+  },
+  "glenlivet-12-first-bottles": {
+    "reviewed_paragraphs": 21,
+    "rewritten_paragraphs": 20,
+    "before_characters": 2216,
+    "after_characters": 2539,
+    "ratio": 1.146,
+    "title": "グレンリベット12年を買った理由は、グラス付きでお得だったから"
+  },
+  "single-malt-label-guide": {
+    "reviewed_paragraphs": 20,
+    "rewritten_paragraphs": 14,
+    "before_characters": 2183,
+    "after_characters": 2353,
+    "ratio": 1.078,
+    "title": "シングルモルトのラベル、まずはどこを見ればいい？"
+  },
+  "sherry-cask-notes": {
+    "reviewed_paragraphs": 20,
+    "rewritten_paragraphs": 14,
+    "before_characters": 2238,
+    "after_characters": 2355,
+    "ratio": 1.052,
+    "title": "シェリーカスクが好き。でも、樽の名前だけでは選べない"
+  },
+  "it-data-work-flow": {
+    "reviewed_paragraphs": 20,
+    "rewritten_paragraphs": 18,
+    "before_characters": 2126,
+    "after_characters": 2354,
+    "ratio": 1.107,
+    "title": "ITの仕事って何してるの？私の場合はデータの取り込みです"
+  },
+  "starting-it-without-specialty": {
+    "reviewed_paragraphs": 19,
+    "rewritten_paragraphs": 18,
+    "before_characters": 2124,
+    "after_characters": 2348,
+    "ratio": 1.105,
+    "title": "ITの仕事をしたい。でも、何が自分に合うのか分からなかった"
+  },
+  "ai-data-extraction-checks": {
+    "reviewed_paragraphs": 23,
+    "rewritten_paragraphs": 16,
+    "before_characters": 2595,
+    "after_characters": 2766,
+    "ratio": 1.066,
+    "title": "AIにデータ抽出を頼むとき、どう伝えてどう確かめる？"
+  },
+  "cat-carrier-checklist": {
+    "reviewed_paragraphs": 53,
+    "rewritten_paragraphs": 24,
+    "before_characters": 5453,
+    "after_characters": 5768,
+    "ratio": 1.058,
+    "title": "猫用キャリー、何を見て選ぶ？買う前に気になる5つのこと"
+  },
+  "highball-measure-and-adjust": {
+    "reviewed_paragraphs": 47,
+    "rewritten_paragraphs": 23,
+    "before_characters": 4946,
+    "after_characters": 5278,
+    "ratio": 1.067,
+    "title": "ハイボールが薄い気がする。ウイスキーを足す前に見直したいこと"
+  },
+  "csv-import-seven-checks": {
+    "reviewed_paragraphs": 73,
+    "rewritten_paragraphs": 32,
+    "before_characters": 8184,
+    "after_characters": 8566,
+    "ratio": 1.047,
+    "title": "CSVを取り込む前に見ておきたい7つのこと"
+  }
+}

@@ -43,7 +43,7 @@ function hsh_refresh_plan() {
         $owned = $post && get_post_meta($post->ID,'_hsh_starter_owned',true)===$article['slug'];
         $items[] = array('slug'=>$article['slug'],'id'=>$owned?$post->ID:null,'status'=>$owned?$post->post_status:'unavailable','fingerprint'=>$owned?hsh_article_fingerprint($post):null,'content'=>$owned?$post->post_content:null,'title'=>$owned?$post->post_title:null,'revision'=>$owned?get_post_meta($post->ID,'_hsh_article_revision',true):null,'featured_image_id'=>$owned?(int)get_post_thumbnail_id($post->ID):null,'url'=>$owned?get_permalink($post):null);
     }
-    return hsh_edit_response(array('articles'=>$items,'target_revision'=>'longform-20261026-v9'));
+    return hsh_edit_response(array('articles'=>$items,'target_revision'=>'voice-20261027-v10'));
 }
 function hsh_refresh_articles($request) {
     $data=$request->get_json_params();
