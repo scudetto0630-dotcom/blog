@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-29",
+  "plugin_version": "1.18.1",
+  "articles": 13,
+  "python_passed": 13,
+  "php_checks_passed": 323,
+  "browser_full": {
+    "version": "1.18.0",
+    "passed": 82,
+    "failed": 0
+  },
+  "browser_final_targeted": {
+    "version": "1.18.1",
+    "passed": 6,
+    "failed": 0
+  },
+  "approved_opening_exact_match": true,
+  "photos_preserved": 45,
+  "note": "Initial stale title response resolved and full browser run repeated successfully; naturalness reviewed contextually, not guaranteed by lint."
+}
