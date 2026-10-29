@@ -88,5 +88,5 @@ check(substr_count($html,'class="hsh-empty"')===3,'initial empty-state sections 
 update_option('hsh_home_settings',array('hide_empty'=>true));
 ob_start();require dirname(__DIR__).'/hirogaru-home/home-template.php';$html=ob_get_clean();
 check(strpos($html,'class="hsh-empty"')===false,'empty-state sections can be hidden');
-check(strpos($html,'保護猫のまんもすと暮らす、ウイスキー好きの管理人です。<br />')!==false,'default intro keeps line breaks');
+check(strpos($html,'保護猫のまんもすと暮らしています。ウイスキーは薄めのハイボール。<br />')!==false,'default intro keeps line breaks');
 echo "$tests tests passed.\n";

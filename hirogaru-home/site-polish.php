@@ -3,7 +3,7 @@ if (!defined('ABSPATH')) { exit; }
 function hsh_topic_details() {
     return array(
         'cats'=>array('うちの猫は、まんもすです','まんもすとの暮らしや、キャリー・おもちゃを選ぶときに気になることを書いています。猫によって好みも違うので、まずは身近な話から。これから迎える方への準備の話もあります。','cat-carrier-checklist','キャリーは、どこを見て選ぶ？','まんもすとの暮らしや、猫を迎える準備の話もどうぞ。'),
-        'whisky'=>array('普段は薄めのハイボールにしています','私は普段、薄めのハイボールにしています。飲んで感じたことや、ラベルの見方、家で作るときに気になることを書いています。難しい香りの名前より、自分の言葉で。','highball-measure-and-adjust','ハイボールが薄いと感じたら','飲んだ感想や、ラベルで気になる言葉の話も書いています。'),
+        'whisky'=>array('普段は薄めのハイボールにしています','自分は普段、薄めのハイボールにしています。飲んで感じたことや、ラベルの見方、家で作るときに気になることを書いています。難しい香りの名前より、自分の言葉で。','highball-measure-and-adjust','ハイボールが薄いと感じたら','飲んだ感想や、ラベルで気になる言葉の話も書いています。'),
         'it-freelance'=>array('ITの仕事って、何をするのか分からなかった','以前はMR、今はフリーランスでデータをシステムへ取り込む仕事をしています。何をしたいか迷ったこと、AIへ伝える難しさ、データを確かめるときの話を残しています。','csv-import-seven-checks','CSVを取り込む前に見ておきたいこと','未経験で迷ったことや、AIに作業を頼むときの話もどうぞ。'),
     );
 }
@@ -26,7 +26,7 @@ function hsh_search_markup($id) {
     return '<form class="hsh-search" role="search" method="get" action="'.esc_url(home_url('/')).'"><label for="'.esc_attr($id).'">ブログ内を検索</label><div><input id="'.esc_attr($id).'" name="s" type="search" value="'.esc_attr($value).'" maxlength="100" placeholder="キャリー、ハイボール、CSVなど"><select name="hsh_topic" aria-label="検索するカテゴリー">'.$options.'</select><button type="submit">検索</button></div></form>';
 }
 add_action('wp_enqueue_scripts', function () {
-    wp_enqueue_style('hsh-reading', plugin_dir_url(__FILE__) . 'assets/reading.css', array(), '1.17.0');
+    wp_enqueue_style('hsh-reading', plugin_dir_url(__FILE__) . 'assets/reading.css', array(), '1.18.0');
     if ((int)get_option('hsh_page_id') && is_page((int)get_option('hsh_page_id'))) {
         foreach (array('cocoon-style','cocoon-keyframes','font-awesome-style','icomoon-style','baguettebox-style','cocoon-child-style','cocoon-child-keyframes','contact-form-7') as $handle) { wp_dequeue_style($handle); }
     }

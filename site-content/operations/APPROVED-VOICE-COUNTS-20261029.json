@@ -1,0 +1,93 @@
+{
+  "before-welcoming-cat": {
+    "reviewed_paragraphs": 19,
+    "rewritten_paragraphs": 7,
+    "before": 2356,
+    "after": 2350,
+    "title": "猫を迎える前にそろえたい物と、部屋で見ておきたいこと"
+  },
+  "manmos-cat-life": {
+    "reviewed_paragraphs": 18,
+    "rewritten_paragraphs": 11,
+    "before": 2148,
+    "after": 2152,
+    "title": "1匹でも寂しくなさそう。甘えん坊のまんもすとの暮らし"
+  },
+  "cat-teaser-small-parts": {
+    "reviewed_paragraphs": 18,
+    "rewritten_paragraphs": 8,
+    "before": 2063,
+    "after": 2048,
+    "title": "100均のねこじゃらしも使うけど、小さな部品には気を付けたい"
+  },
+  "cat-vet-routine": {
+    "reviewed_paragraphs": 18,
+    "rewritten_paragraphs": 6,
+    "before": 2078,
+    "after": 2128,
+    "title": "猫の通院前に準備しておきたい物と、伝えたいこと"
+  },
+  "glenlivet-12-first-bottles": {
+    "reviewed_paragraphs": 21,
+    "rewritten_paragraphs": 21,
+    "before": 2539,
+    "after": 2518,
+    "title": "グレンリベット12年、グラス付きでお得だったから買ってみた"
+  },
+  "single-malt-label-guide": {
+    "reviewed_paragraphs": 20,
+    "rewritten_paragraphs": 10,
+    "before": 2353,
+    "after": 2433,
+    "title": "シングルモルトのラベルは、まず商品名・年数・度数から"
+  },
+  "sherry-cask-notes": {
+    "reviewed_paragraphs": 20,
+    "rewritten_paragraphs": 10,
+    "before": 2355,
+    "after": 2421,
+    "title": "シェリーカスクが好き。でも、樽の名前だけでは選べない"
+  },
+  "it-data-work-flow": {
+    "reviewed_paragraphs": 20,
+    "rewritten_paragraphs": 13,
+    "before": 2354,
+    "after": 2349,
+    "title": "自分のITの仕事は、データをシステムへ取り込むこと"
+  },
+  "starting-it-without-specialty": {
+    "reviewed_paragraphs": 19,
+    "rewritten_paragraphs": 10,
+    "before": 2348,
+    "after": 2391,
+    "title": "ITの仕事をしたい。でも、何が自分に合うのか分からなかった"
+  },
+  "ai-data-extraction-checks": {
+    "reviewed_paragraphs": 23,
+    "rewritten_paragraphs": 10,
+    "before": 2766,
+    "after": 2830,
+    "title": "AIにデータ抽出を頼む。指示を伝えるところから、結果を確かめるまで"
+  },
+  "cat-carrier-checklist": {
+    "reviewed_paragraphs": 53,
+    "rewritten_paragraphs": 12,
+    "before": 5768,
+    "after": 5870,
+    "title": "猫用キャリーを選ぶとき、サイズのほかにも見ておきたい5つのこと"
+  },
+  "highball-measure-and-adjust": {
+    "reviewed_paragraphs": 47,
+    "rewritten_paragraphs": 12,
+    "before": 5278,
+    "after": 5292,
+    "title": "ハイボールが薄い気がする。ウイスキーを足す前に見直したいこと"
+  },
+  "csv-import-seven-checks": {
+    "reviewed_paragraphs": 73,
+    "rewritten_paragraphs": 19,
+    "before": 8566,
+    "after": 8654,
+    "title": "CSVを取り込む前に見ておきたい7つのこと"
+  }
+}
