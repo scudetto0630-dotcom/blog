@@ -43,7 +43,7 @@ check($again->data['id']===$image->data['id'] && count($records)===$before+1,'re
 $expected=array();foreach(hsh_refresh_plan()->data['articles'] as $article){$expected[$article['slug']]=$article['fingerprint'];}
 $refreshed=hsh_refresh_articles(new Request(array('expected'=>$expected)));
 check($refreshed instanceof WP_REST_Response,'all three editorial revisions apply');
-foreach($refreshed->data['articles'] as $article){$p=get_post($article['id']);check(strpos($p->post_content,'<figure')!==false && strpos($p->post_content,'<!--HSH_IMAGE:')===false,'inline illustration rendered');check($article['featured_image_id']>0 && $article['revision']==='natural-rewrite-20261030-v12','cover and revision saved');}
+foreach($refreshed->data['articles'] as $article){$p=get_post($article['id']);check(strpos($p->post_content,'<figure')!==false && strpos($p->post_content,'<!--HSH_IMAGE:')===false,'inline illustration rendered');check($article['featured_image_id']>0 && $article['revision']==='experience-20261030-v13','cover and revision saved');}
 $before=count($records);$expected=array();foreach(hsh_refresh_plan()->data['articles'] as $article){$expected[$article['slug']]=$article['fingerprint'];}hsh_refresh_articles(new Request(array('expected'=>$expected)));
 check(count($records)===$before,'revision retry creates no duplicate media or posts');
 echo "All article revision tests passed. Total tests: $tests\n";
