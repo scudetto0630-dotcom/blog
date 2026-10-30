@@ -1,0 +1,69 @@
+{
+  "date_utc": "2026-10-30",
+  "live_plugin": "1.22.1",
+  "source_commit": "ca65435",
+  "public_browser_full": {
+    "version": "1.22.0",
+    "pages": 23,
+    "widths": [
+      1440,
+      768,
+      390,
+      320
+    ],
+    "passed": 94,
+    "failed": 0
+  },
+  "public_browser_final_smoke": {
+    "version": "1.22.1",
+    "passed": 18,
+    "failed": 0,
+    "widths": [
+      1440,
+      768,
+      390,
+      320
+    ]
+  },
+  "php_checks": 382,
+  "python_tests": 17,
+  "admin_browser_checks": 17,
+  "live_planner_probe": {
+    "passed": 6,
+    "checks": [
+      "create_private_idea",
+      "save_history",
+      "restore_private_note",
+      "import_scoped_backup",
+      "all_original_records_unchanged_and_probe_removed",
+      "published_articles_unchanged"
+    ],
+    "scope": "temporary private planner idea; no hosting or media recovery tested"
+  },
+  "public_audit": {
+    "pages": 19,
+    "managed_links": 601,
+    "problems": []
+  },
+  "private_planner": {
+    "existing_article_records_enriched": 13,
+    "new_private_plans": 4,
+    "arboralis_draft_published": false
+  },
+  "photos": {
+    "packaged_real": 8,
+    "packaged_generated": 37,
+    "new_inline_images_original_files_imported": 0
+  },
+  "search_console_data_imported": false,
+  "social_posts_sent": false,
+  "hosting_restore_verified": false,
+  "external_photo_license_verified": false,
+  "limitations": [
+    "新21画像の原本ZIP未受領",
+    "検索実績CSV未受領",
+    "白州の訪問経験と時期の回答待ち",
+    "外部資料・写真の取得と許諾照合は接続制限で未完了",
+    "サイト全体のConoHa復元未確認"
+  ]
+}

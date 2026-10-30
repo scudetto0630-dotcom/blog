@@ -1,0 +1,273 @@
+{
+  "pages": [
+    {
+      "path": "/cat-carrier-checklist/",
+      "http": 200,
+      "canonical": [
+        "https://hirogarushumi.com/cat-carrier-checklist/"
+      ],
+      "description": [
+        "猫用キャリーを探すと、形も値段もいろいろある。見た目で選びたくなるけど、いざ使う日に猫を入れにくかったり、自分で運ぶのが大変だったりすると困る。買う前に、使う場面を一つずつ思い浮かべてみよう。"
+      ],
+      "og_image": [
+        "https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/photos/article-carrier.webp"
+      ]
+    },
+    {
+      "path": "/highball-measure-and-adjust/",
+      "http": 200,
+      "canonical": [
+        "https://hirogarushumi.com/highball-measure-and-adjust/"
+      ],
+      "description": [
+        "家でハイボールを作って、何だか薄いなと思う。そこでウイスキーを足す前に、最初にどれくらい入れたかを見てみよう。味が薄いのか、炭酸が弱いのかでも、見直すところは変わる。"
+      ],
+      "og_image": [
+        "https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/photos/highball.webp"
+      ]
+    },
+    {
+      "path": "/csv-import-seven-checks/",
+      "http": 200,
+      "canonical": [
+        "https://hirogarushumi.com/csv-import-seven-checks/"
+      ],
+      "description": [
+        "CSVを開いたら、表になっていた。見た目もそろっている。それで大丈夫だと思いたくなるけど、開き方や保存の仕方によっては、必要な値が変わっていることがある。取り込む前に、元のファイルを残すところから始めよう。"
+      ],
+      "og_image": [
+        "https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/photos/article-csv.webp"
+      ]
+    },
+    {
+      "path": "/before-welcoming-cat/",
+      "http": 200,
+      "canonical": [
+        "https://hirogarushumi.com/before-welcoming-cat/"
+      ],
+      "description": [
+        "猫を迎えることになったら、まず買い物に行きたくなる。ごはんの器にトイレ、爪とぎ。おもちゃやベッドも見始めると、気になる物はいくらでも出てくる。"
+      ],
+      "og_image": [
+        "https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/photos/manmos-rest.webp"
+      ]
+    },
+    {
+      "path": "/manmos-cat-life/",
+      "http": 200,
+      "canonical": [
+        "https://hirogarushumi.com/manmos-cat-life/"
+      ],
+      "description": [
+        "うちの猫、まんもすは5歳のスコティッシュフォールド。体重は5.5kgで、長い毛がふわっと広がっている。2025年4月に保護猫シェルターから迎えた。見た瞬間に運命を感じたくらい、かわいかった。年齢と体重は2026年10月時点の話です。"
+      ],
+      "og_image": [
+        "https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/photos/manmos-tower.webp"
+      ]
+    },
+    {
+      "path": "/cat-teaser-small-parts/",
+      "http": 200,
+      "canonical": [
+        "https://hirogarushumi.com/cat-teaser-small-parts/"
+      ],
+      "description": [
+        "うちのまんもすは、100均のおもちゃでも遊ぶ。だからといって、安い物なら何でもいいわけでも、高ければ必ず喜ぶわけでもない。好みはホント猫による（笑）。値札より、まんもすが実際にどう反応するかの方が気になる。"
+      ],
+      "og_image": [
+        "https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/photos/manmos-toy.webp"
+      ]
+    },
+    {
+      "path": "/cat-vet-routine/",
+      "http": 200,
+      "canonical": [
+        "https://hirogarushumi.com/cat-vet-routine/"
+      ],
+      "description": [
+        "まんもすは5歳で、定期的に動物病院へ通っている。通院の準備で特別に困った体験はないけど、キャリーは一度買い替えた。以前のリュック型は重さで形が崩れたので、今は本体のしっかりした大きめの物を使っている。"
+      ],
+      "og_image": [
+        "https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/photos/article-vet.webp"
+      ]
+    },
+    {
+      "path": "/glenlivet-12-first-bottles/",
+      "http": 200,
+      "canonical": [
+        "https://hirogarushumi.com/glenlivet-12-first-bottles/"
+      ],
+      "description": [
+        "自分が3本目に買ったウイスキーは、グレンリベット12年。選んだ理由は、グラスが付いていてお得だったから。"
+      ],
+      "og_image": [
+        "https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/photos/glenlivet.webp"
+      ]
+    },
+    {
+      "path": "/single-malt-label-guide/",
+      "http": 200,
+      "canonical": [
+        "https://hirogarushumi.com/single-malt-label-guide/"
+      ],
+      "description": [
+        "シングルモルトを選ぼうとして、知らない名前の多さに迷う。商品説明を読んでも、樽や香りの話が次々に出てくる。最初から全部分かればいいけど、自分はそんな感じではなかった。"
+      ],
+      "og_image": [
+        "https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/photos/article-labels.webp"
+      ]
+    },
+    {
+      "path": "/sherry-cask-notes/",
+      "http": 200,
+      "canonical": [
+        "https://hirogarushumi.com/sherry-cask-notes/"
+      ],
+      "description": [
+        "シェリーカスクが好きで、特に気に入っているのがグレンファークラス12年。香りを説明するなら、ぶどうパンに顔をうずめたみたいな感じだ。少し変な例えかもしれないけど、自分にはそれが一番しっくりくる。"
+      ],
+      "og_image": [
+        "https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/photos/article-sherry.webp"
+      ]
+    },
+    {
+      "path": "/it-data-work-flow/",
+      "http": 200,
+      "canonical": [
+        "https://hirogarushumi.com/it-data-work-flow/"
+      ],
+      "description": [
+        "今しているのは、データを加工する仕事。抽出したり、並べ替えたり、整理したりする。使うのはChatGPT、Codex、Excel、スプレッドシート。データ抽出をAIに頼むと一瞬でやってくれるので、本当に楽だと感じている。"
+      ],
+      "og_image": [
+        "https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/photos/article-workflow.webp"
+      ]
+    },
+    {
+      "path": "/starting-it-without-specialty/",
+      "http": 200,
+      "canonical": [
+        "https://hirogarushumi.com/starting-it-without-specialty/"
+      ],
+      "description": [
+        "ITに興味を持った理由は、稼げそうだったから。それと、これからも需要がありそうだと思ったからだ。ただ、今の仕事にたどり着くまでには、なんだかんだ1年近くかかった。"
+      ],
+      "og_image": [
+        "https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/photos/article-beginner.webp"
+      ]
+    },
+    {
+      "path": "/ai-data-extraction-checks/",
+      "http": 200,
+      "canonical": [
+        "https://hirogarushumi.com/ai-data-extraction-checks/"
+      ],
+      "description": [
+        "自分の仕事では、データの抽出や並べ替えにChatGPTやCodexを使っている。抽出を頼むと一瞬でやってくれるので、本当に楽だ。今の作業で、AIに特に困っていることもない。"
+      ],
+      "og_image": [
+        "https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/photos/article-checking.webp"
+      ]
+    },
+    {
+      "path": "/",
+      "http": 200,
+      "canonical": [
+        "https://hirogarushumi.com/"
+      ],
+      "description": [
+        "保護猫まんもすとの暮らし、飲んだウイスキーの感想、フリーランスのデータ加工の仕事を書いています。"
+      ],
+      "og_image": [
+        "https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/photos/manmos-tower.webp"
+      ]
+    },
+    {
+      "path": "/hsh-about/",
+      "http": 200,
+      "canonical": [
+        "https://hirogarushumi.com/hsh-about/"
+      ],
+      "description": [
+        "まんもす（提供写真） こんにちは。「ひろがる趣味暮らし」の管理人です。猫とウイスキー、それから仕事の話を書いています。 このブログに書いてい…"
+      ],
+      "og_image": [
+        "https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/photos/manmos-portrait.webp"
+      ]
+    },
+    {
+      "path": "/hsh-editorial/",
+      "http": 200,
+      "canonical": [
+        "https://hirogarushumi.com/hsh-editorial/"
+      ],
+      "description": [
+        "このブログの記事をどう作っているか、広告を載せるときにどうお知らせするかをまとめています。 体験談と調べた情報は分けて書きます 実際に使った…"
+      ],
+      "og_image": [
+        "https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/photos/manmos-portrait.webp"
+      ]
+    },
+    {
+      "path": "/hsh-gallery/",
+      "http": 200,
+      "canonical": [
+        "https://hirogarushumi.com/hsh-gallery/"
+      ],
+      "description": [
+        "うちの保護猫まんもすの写真。枕の上で休んだり、爪とぎに座ったり、いろいろな姿を集めました。"
+      ],
+      "og_image": [
+        "https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/photos/manmos-portrait.webp"
+      ]
+    },
+    {
+      "path": "/hsh-whisky-notes/",
+      "http": 200,
+      "canonical": [
+        "https://hirogarushumi.com/hsh-whisky-notes/"
+      ],
+      "description": [
+        "グレンリベット12年、アルボラリス、グレンファークラス12年、ジムビーム。実際に飲んだときの感想をまとめました。"
+      ],
+      "og_image": [
+        "https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/photos/detail-topic-whisky.webp"
+      ]
+    },
+    {
+      "path": "/hsh-updates/",
+      "http": 200,
+      "canonical": [
+        "https://hirogarushumi.com/hsh-updates/"
+      ],
+      "description": [
+        "ひろがる趣味暮らしの最近の更新。猫・ウイスキー・ITの公開記事を更新日順に紹介します。"
+      ],
+      "og_image": [
+        "https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/photos/manmos-portrait.webp"
+      ]
+    }
+  ],
+  "managed_internal_links_checked": 601,
+  "problems": [],
+  "technical_endpoints": {
+    "/robots.txt": {
+      "http": 200,
+      "bytes": 176
+    },
+    "/wp-sitemap.xml": {
+      "http": 200,
+      "bytes": 469
+    },
+    "/wp-sitemap-posts-post-1.xml": {
+      "http": 200,
+      "bytes": 1892
+    },
+    "/wp-sitemap-posts-page-1.xml": {
+      "http": 200,
+      "bytes": 1140
+    }
+  },
+  "google_index_status": "not_available",
+  "ranking_data": "not_available_without_search_console_export"
+}
