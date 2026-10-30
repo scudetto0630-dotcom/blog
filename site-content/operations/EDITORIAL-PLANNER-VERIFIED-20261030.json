@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-30",
+  "version": "1.20.0",
+  "release_commit": "a280dc6",
+  "php_checks_including_shared": 357,
+  "python_tests": 13,
+  "admin_browser_fixture": {
+    "passed": 11,
+    "failed": 0,
+    "context": "PHP-rendered admin fixture; standard WordPress media selection mocked; no live upload performed"
+  },
+  "live_persistence": {
+    "passed": 7,
+    "failed": 0,
+    "articles": 13,
+    "photos": 45,
+    "test_record_removed": true,
+    "initial_state_restored": true,
+    "anonymous_read_denied": true
+  },
+  "public_browser": {
+    "passed": 18,
+    "failed": 0,
+    "viewports": [
+      1440,
+      768,
+      390,
+      320
+    ],
+    "public_url": "https://hirogarushumi.com/",
+    "provided_assets": 8,
+    "generated_assets": 37
+  },
+  "existing_13_articles_unchanged": true,
+  "home_and_pages_unchanged": true,
+  "limitations": [
+    "Native WordPress media selection mocked in fixture; no real new photo upload performed.",
+    "Actual authenticated administrator page not opened with a WordPress login; PHP-rendered fixture and live scoped data API verified.",
+    "Reference-only is a usage note, not private storage for WordPress media files.",
+    "Export is saved planning JSON, not a full WordPress backup or an import/restore tool."
+  ]
+}
