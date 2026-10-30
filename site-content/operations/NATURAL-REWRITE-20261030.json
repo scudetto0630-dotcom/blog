@@ -96,5 +96,33 @@
   "reference": "User-pasted restaurant article; no claim of direct URL access. General narrative traits only; no copied article prose.",
   "scope": "13 article bodies/titles/excerpts; homepage/profile unchanged.",
   "photos": "Existing 45 assets and at least two body photos per article retained.",
-  "textlint": "Contextual review; questions, subjective phrasing, Japanese counters and grammatical particle repetition remain intentional where appropriate. Not a naturalness guarantee."
+  "textlint": "Contextual review; questions, subjective phrasing, Japanese counters and grammatical particle repetition remain intentional where appropriate. Not a naturalness guarantee.",
+  "plugin_version": "1.19.0",
+  "release_commit": "99211dc",
+  "publication_fingerprints_verified": 13,
+  "starter_stored_body_exact_matches": 3,
+  "home_and_fixed_pages_unchanged": true,
+  "python_tests": {
+    "passed": 13,
+    "failed": 0
+  },
+  "php_checks": {
+    "passed": 323,
+    "failed": 0
+  },
+  "browser": {
+    "passed": 82,
+    "failed": 0,
+    "viewports": [
+      1440,
+      768,
+      390,
+      320
+    ],
+    "public_url": "https://hirogarushumi.com/",
+    "provided_assets": 8,
+    "generated_assets": 37,
+    "all_article_paragraphs_checked": true
+  },
+  "visual_review": "390px Glenlivet screenshot inspected; no text or image overflow."
 }
