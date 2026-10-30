@@ -50,7 +50,7 @@ function hsh_edit_status() {
             if ($page) { $pages[$key] = array('id' => $page->ID, 'status' => $page->post_status, 'title' => $page->post_title, 'content' => $page->post_content, 'url' => get_permalink($page)); }
         }
     }
-    return hsh_edit_response(array('version' => '1.21.0', 'scope' => array('homepage_text_colors', 'bridge_owned_pages', 'publish_three_packaged_posts', 'refresh_three_owned_posts_with_packaged_images', 'update_only_hirogaru_home_from_pinned_repository', 'read_site_audit', 'set_public_google_verification_token', 'refresh_packaged_site_introduction'), 'home_page_id' => (int) get_option('hsh_page_id'), 'home_settings' => get_option('hsh_home_settings', array()), 'pages' => $pages));
+    return hsh_edit_response(array('version' => '1.22.0', 'scope' => array('homepage_text_colors', 'bridge_owned_pages', 'publish_three_packaged_posts', 'refresh_three_owned_posts_with_packaged_images', 'update_only_hirogaru_home_from_pinned_repository', 'read_site_audit', 'set_public_google_verification_token', 'refresh_packaged_site_introduction'), 'home_page_id' => (int) get_option('hsh_page_id'), 'home_settings' => get_option('hsh_home_settings', array()), 'pages' => $pages));
 }
 function hsh_edit_home($request) {
     $data = $request->get_json_params();
@@ -82,7 +82,7 @@ function hsh_edit_home($request) {
 function hsh_edit_page($request) {
     $data = $request->get_json_params();
     if (!is_array($data) || array_diff(array_keys($data), array('key', 'title', 'content', 'status'))) { return new WP_Error('hsh_input', 'JSON項目が不正です。', array('status' => 400)); }
-    if (!isset($data['key'], $data['title'], $data['content']) || !is_string($data['key']) || !in_array($data['key'], array('about', 'editorial', 'contact'), true) || !is_string($data['title']) || !is_string($data['content']) || strlen($data['title']) > 600 || strlen($data['content']) > 100000 || trim(sanitize_text_field($data['title'])) === '') {
+    if (!isset($data['key'], $data['title'], $data['content']) || !is_string($data['key']) || !in_array($data['key'], array('about', 'editorial', 'contact', 'gallery', 'whisky-notes', 'updates'), true) || !is_string($data['title']) || !is_string($data['content']) || strlen($data['title']) > 600 || strlen($data['content']) > 100000 || trim(sanitize_text_field($data['title'])) === '') {
         return new WP_Error('hsh_input', 'key / title / content が不正です。', array('status' => 400));
     }
     $status = isset($data['status']) ? $data['status'] : 'draft';

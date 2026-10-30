@@ -10,7 +10,7 @@ function hsh_photo_image($asset,$eager=false){
 }
 function hsh_photo_cover($post,$eager=false){
     if(!$post)return '';$asset=hsh_photo_for_slug($post->post_name);if(!$asset)return '';
-    return '<figure class="hsh-photo"><div class="hsh-cover hsh-photo-cover">'.hsh_photo_image($asset,$eager).'</div><figcaption>'.esc_html($asset['caption']).'</figcaption></figure>';
+    return '<figure class="hsh-photo'.($asset['height']>$asset['width']?' hsh-photo-portrait':'').'"><div class="hsh-cover hsh-photo-cover">'.hsh_photo_image($asset,$eager).'</div><figcaption>'.esc_html($asset['caption']).'</figcaption></figure>';
 }
 /** Place body photos at separate, balanced section boundaries, never within paragraphs or tables. */
 function hsh_insert_inline_photos($content,$slug){

@@ -36,7 +36,7 @@ function hsh_release_article($request){
 add_action('rest_api_init',function(){register_rest_route('hirogaru/v1','/content-release',array(array('methods'=>'GET','callback'=>'hsh_release_status','permission_callback'=>'hsh_edit_permission'),array('methods'=>'POST','callback'=>'hsh_release_article','permission_callback'=>'hsh_edit_permission')));});
 
 function hsh_search_topic($value){return is_string($value)&&in_array($value,array('cats','whisky','it-freelance'),true)?$value:'';}
-function hsh_search_alias($text){return strtr($text,array('ねこじゃらし'=>'ねこじゃらし','猫じゃらし'=>'ねこじゃらし','ネコじゃらし'=>'ねこじゃらし','コーデックス'=>'Codex','ねこ'=>'猫','ネコ'=>'猫','チャッピー'=>'ChatGPT','チャットGPT'=>'ChatGPT','チャットＧＰＴ'=>'ChatGPT','ＣＳＶ'=>'CSV'));}
+function hsh_search_alias($text){return strtr($text,array('アルボラリス'=>'グレングラント','アーボラリス'=>'グレングラント','グレンファークラス'=>'グレンファークラス','シェリーカスク'=>'シェリー','ハーフロック'=>'ハーフロック','chatgpt'=>'ChatGPT','codex'=>'Codex','エクセル'=>'Excel','スプレッドシート'=>'スプレッドシート','ねこじゃらし'=>'ねこじゃらし','猫じゃらし'=>'ねこじゃらし','ネコじゃらし'=>'ねこじゃらし','コーデックス'=>'Codex','ねこ'=>'猫','ネコ'=>'猫','チャッピー'=>'ChatGPT','チャットGPT'=>'ChatGPT','チャットＧＰＴ'=>'ChatGPT','ＣＳＶ'=>'CSV'));}
 add_action('pre_get_posts',function($q){
     if(is_admin()||!$q->is_main_query()||!$q->is_search())return;
     $term=$q->get('s');if(is_string($term))$q->set('s',hsh_search_alias($term));
@@ -133,14 +133,14 @@ add_filter('the_content',function($content){
     if(get_post_meta($p->ID,'_hsh_bundle_owned',true)){
         $topic='';foreach(hsh_expanded_articles() as $a)if($a['slug']===$p->post_name)$topic=$a['topic'];
         $content='<div class="hsh-article-visual">'.hsh_card_cover($p).'</div>'.$content;
-        $content.='<p class="hsh-review-note">本文の見直し：<time datetime="2026-10-29">2026/10/29</time></p><p><a href="'.esc_url(hsh_category_url($topic)).'">'.esc_html(hsh_topics()[$topic][0]).'の記事一覧へ →</a></p>'.hsh_related_markup($topic,$p->ID).hsh_profile_markup();
+        $content.='<p class="hsh-review-note">本文の見直し：<time datetime="'.esc_attr(get_post_meta($p->ID,'_hsh_content_reviewed',true)?:get_post_modified_time('Y-m-d',false,$p)).'">'.esc_html(str_replace('-','/',get_post_meta($p->ID,'_hsh_content_reviewed',true)?:get_post_modified_time('Y-m-d',false,$p))).'</time></p><p><a href="'.esc_url(hsh_category_url($topic)).'">'.esc_html(hsh_topics()[$topic][0]).'の記事一覧へ →</a></p>'.hsh_related_markup($topic,$p->ID).hsh_profile_markup();
     }
     return $content.'<div class="hsh-article-tools"><button type="button" class="hsh-print">この記事を印刷する</button><a href="#">ページの先頭へ ↑</a></div>'.hsh_report_markup($p);
 },25);
 add_action('wp_enqueue_scripts',function(){
     if(is_admin())return;
-    wp_enqueue_style('hsh-next',plugin_dir_url(__FILE__).'assets/blog-next.css',array(),'1.21.0');
-    wp_enqueue_script('hsh-next',plugin_dir_url(__FILE__).'assets/blog-next.js',array(),'1.21.0',true);
+    wp_enqueue_style('hsh-next',plugin_dir_url(__FILE__).'assets/blog-next.css',array(),'1.22.0');
+    wp_enqueue_script('hsh-next',plugin_dir_url(__FILE__).'assets/blog-next.js',array(),'1.22.0',true);
     wp_localize_script('hsh-next','hshBlogTools',array('reportUrl'=>rest_url('hirogaru/v1/blog-report'),'tokenUrl'=>rest_url('hirogaru/v1/blog-report-token')));
 },110);
 add_filter('template_include',function($template){return is_404()?__DIR__.'/not-found-template.php':$template;},102);

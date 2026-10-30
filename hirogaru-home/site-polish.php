@@ -4,7 +4,7 @@ function hsh_topic_details() {
     return array(
         'cats'=>array('うちの猫は、まんもすです','まんもすとの暮らしや、キャリー・おもちゃを選ぶときに気になることを書いています。猫によって好みも違うので、まずは身近な話から。これから迎える方への準備の話もあります。','cat-carrier-checklist','キャリーは、どこを見て選ぶ？','まんもすとの暮らしや、猫を迎える準備の話もどうぞ。'),
         'whisky'=>array('普段は薄めのハイボールにしています','自分は普段、薄めのハイボールにしています。飲んで感じたことや、ラベルの見方、家で作るときに気になることを書いています。難しい香りの名前より、自分の言葉で。','highball-measure-and-adjust','ハイボールが薄いと感じたら','飲んだ感想や、ラベルで気になる言葉の話も書いています。'),
-        'it-freelance'=>array('ITの仕事って、何をするのか分からなかった','以前はMR、今はフリーランスでデータをシステムへ取り込む仕事をしています。何をしたいか迷ったこと、AIへ伝える難しさ、データを確かめるときの話を残しています。','csv-import-seven-checks','CSVを取り込む前に見ておきたいこと','未経験で迷ったことや、AIに作業を頼むときの話もどうぞ。'),
+        'it-freelance'=>array('ITの仕事って、何をするのか分からなかった','以前はMR、今はフリーランスでデータの抽出や並び替えなどの加工をしています。今の仕事にたどり着くまでの話と、ChatGPTやCodexを使った作業の話です。','csv-import-seven-checks','CSVを取り込む前に見ておきたいこと','未経験で迷ったことや、AIに作業を頼むときの話もどうぞ。'),
     );
 }
 function hsh_current_topic() {
@@ -15,7 +15,7 @@ add_filter('template_include', function ($template) {
     return hsh_current_topic() ? plugin_dir_path(__FILE__) . 'category-template.php' : $template;
 }, 100);
 function hsh_profile_markup() {
-    return '<aside class="hsh-profile" aria-label="書き手について"><img src="' . esc_url(plugin_dir_url(__FILE__) . 'assets/photos/manmos-front.webp') . '" alt="保護猫のまんもす。管理人提供の写真です。" width="160" height="160" loading="lazy"><div><p class="hsh-kicker">書いている人</p><strong>ひろがる趣味暮らし 管理人</strong><p>まんもすと暮らす、ウイスキー好きです。以前はMR、今はフリーランスでデータをシステムへ取り込む仕事をしています。ChatGPTやCodexも使っています。</p><a href="' . esc_url(home_url('/hsh-about/')) . '">もう少し詳しい自己紹介 →</a><small>写真は、管理人と暮らすまんもすです。</small></div></aside>';
+    return '<aside class="hsh-profile" aria-label="書き手について"><img src="' . esc_url(plugin_dir_url(__FILE__) . 'assets/photos/manmos-front.webp') . '" alt="保護猫のまんもす。管理人提供の写真です。" width="160" height="160" loading="lazy"><div><p class="hsh-kicker">書いている人</p><strong>ひろがる趣味暮らし 管理人</strong><p>まんもすと暮らす、ウイスキー好きです。以前はMR、今はフリーランスでデータ加工の仕事をしています。ChatGPTやCodexも使っています。</p><a href="' . esc_url(home_url('/hsh-about/')) . '">もう少し詳しい自己紹介 →</a><br><a href="' . esc_url(home_url('/manmos-cat-life/')) . '">まんもすとの暮らし</a> ／ <a href="' . esc_url(home_url('/it-data-work-flow/')) . '">今している仕事</a><small>写真は、管理人と暮らすまんもすです。</small></div></aside>';
 }
 function hsh_search_markup($id) {
     $value=function_exists('get_search_query')?get_search_query(false):'';
@@ -26,7 +26,7 @@ function hsh_search_markup($id) {
     return '<form class="hsh-search" role="search" method="get" action="'.esc_url(home_url('/')).'"><label for="'.esc_attr($id).'">ブログ内を検索</label><div><input id="'.esc_attr($id).'" name="s" type="search" value="'.esc_attr($value).'" maxlength="100" placeholder="キャリー、ハイボール、CSVなど"><select name="hsh_topic" aria-label="検索するカテゴリー">'.$options.'</select><button type="submit">検索</button></div></form>';
 }
 add_action('wp_enqueue_scripts', function () {
-    wp_enqueue_style('hsh-reading', plugin_dir_url(__FILE__) . 'assets/reading.css', array(), '1.21.0');
+    wp_enqueue_style('hsh-reading', plugin_dir_url(__FILE__) . 'assets/reading.css', array(), '1.22.0');
     if ((int)get_option('hsh_page_id') && is_page((int)get_option('hsh_page_id'))) {
         foreach (array('cocoon-style','cocoon-keyframes','font-awesome-style','icomoon-style','baguettebox-style','cocoon-child-style','cocoon-child-keyframes','contact-form-7') as $handle) { wp_dequeue_style($handle); }
     }
@@ -56,7 +56,7 @@ add_action('template_redirect', function () {
     if (is_admin() || is_user_logged_in() || is_feed() || is_preview() || ($_SERVER['REQUEST_METHOD'] ?? '') !== 'GET') { return; }
     $ua = $_SERVER['HTTP_USER_AGENT'] ?? '';
     if (preg_match('/bot|crawl|spider|preview|headless|uptime|monitor/i', $ua)) { return; }
-    if (!is_singular('post') || !get_post_meta(get_queried_object_id(), '_hsh_starter_owned', true)) { return; }
+    if (!is_singular('post') || !hsh_owned_blog_post(get_post(get_queried_object_id()))) { return; }
     $slug = get_post_field('post_name', get_queried_object_id());
     $day = wp_date('Y_m_d'); $counts = get_option('hsh_request_counts', array());
     $threshold = wp_date('Y_m_d',time()-89*DAY_IN_SECONDS);

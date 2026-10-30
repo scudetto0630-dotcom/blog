@@ -10,9 +10,10 @@ add_filter('script_loader_src',function($src,$handle){
     return is_admin() ? $src : hsh_local_core_script($src,$handle,includes_url());
 },20,2);
 function hsh_local_footer_assets($html) {
-    return preg_replace_callback('~(<script\b[^>]*\bsrc=[\x22\x27])(?:https?:)?//cdn\.jsdelivr\.net/clipboard\.js/1\.5\.13/clipboard\.min\.js([\x22\x27])~i',function($m){
+    $html=preg_replace_callback('~(<script\b[^>]*\bsrc=[\x22\x27])(?:https?:)?//cdn\.jsdelivr\.net/clipboard\.js/1\.5\.13/clipboard\.min\.js([\x22\x27])~i',function($m){
         return $m[1].esc_url(plugin_dir_url(__FILE__).'assets/vendor/clipboard-1.5.13.min.js').$m[2];
     },$html);
+    return function_exists('hsh_growth_rendered')?hsh_growth_rendered($html):$html;
 }
 // Cocoon prints this legacy tag after wp_footer, so filter the rendered HTML.
 // WordPress flushes the buffer on shutdown; feeds, REST and admin do not use templates.
@@ -64,7 +65,7 @@ function hsh_related_markup($topic,$current_id) {
     $related=function_exists('hsh_related_curated')?hsh_related_curated($topic,$current_id):hsh_select_related(hsh_posts($topic,5),$current_id);
     if(!$related)return '';
     $out='<section class="hsh-related"><h2>あわせて読みたい記事</h2><ul>';
-    foreach($related as $article){$out.='<li><a href="'.esc_url(get_permalink($article)).'">'.esc_html(get_the_title($article)).' →</a></li>';}
+    foreach($related as $article){$out.='<li><a href="'.esc_url(get_permalink($article)).'">'.esc_html(get_the_title($article)).' →</a>'.(function_exists('hsh_growth_summaries')?'<small>'.esc_html(hsh_growth_summaries()[$article->post_name]??'').'</small>':'').'</li>';}
     return $out.'</ul></section>';
 }
 add_filter('wp_get_attachment_image_attributes',function($attrs,$attachment){

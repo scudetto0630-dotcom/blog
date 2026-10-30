@@ -1,6 +1,6 @@
 <?php
 /* Isolated unit tests; WordPress stubs, not an integration test. */
-define('ABSPATH', '/'); define('OBJECT', 'OBJECT');
+define('ABSPATH', '/'); define('OBJECT', 'OBJECT'); if(!defined('DAY_IN_SECONDS'))define('DAY_IN_SECONDS',86400);
 $options = array(); $records = array(); $metadata = array(); $next_id = 100; $tests = 0;
 class WP_Error { public $code; public function __construct($code, $message = '', $data = array()) { $this->code=$code; } }
 class WP_REST_Response { public $data; public $headers=array(); public function __construct($data) {$this->data=$data;} public function header($k,$v){$this->headers[$k]=$v;} }
@@ -14,6 +14,7 @@ function home_url($p='/'){return 'https://example.test'.$p;}
 function wp_parse_url($url,$component=-1){return parse_url($url,$component);}
 function add_action(...$args){}
 function add_filter(...$args){}
+function add_shortcode(...$args){}
 function register_deactivation_hook(...$args){}
 function plugin_dir_path($path){return dirname($path).'/';}
 function plugin_dir_url($path){return 'https://example.test/plugins/hirogaru-home/';}
@@ -75,7 +76,7 @@ function esc_attr($value){return htmlspecialchars($value, ENT_QUOTES);}
 function get_category_link($id){return 'https://example.test/category/'.$id;}
 function get_posts($args){return $GLOBALS['test_extra_posts']??array();}
 function get_privacy_policy_url(){return '';}
-function wp_date($format){return date($format);}
+function wp_date($format,$timestamp=null){return date($format,$timestamp??time());}
 function wp_footer(){}
 function get_the_title($page){return $page->post_title;}
 require dirname(__DIR__).'/hirogaru-home/hirogaru-home.php';

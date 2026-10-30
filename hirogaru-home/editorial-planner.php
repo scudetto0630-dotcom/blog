@@ -19,8 +19,8 @@ function hsh_planner_image($key){
     if(preg_match('/^media:([1-9][0-9]*)$/D',$key,$m)&&wp_attachment_is_image((int)$m[1]))return wp_get_attachment_image_url((int)$m[1],'medium')?:'';
     return '';
 }
-function hsh_planner_snapshot(){
-    $store=hsh_planner_store();$articles=array();$photos=array();$manifest=hsh_photo_manifest();
+function hsh_planner_snapshot($override=null){
+    $store=is_array($override)?$override:hsh_planner_store();$articles=array();$photos=array();$manifest=hsh_photo_manifest();
     foreach(hsh_catalog() as $a){
         $p=get_page_by_path($a['slug'],OBJECT,'post');if(!$p||!hsh_owned_blog_post($p))continue;
         $id='article:'.$a['slug'];$saved=$store[$id]??null;
@@ -54,7 +54,7 @@ function hsh_planner_snapshot(){
         $photos[$id]=array_merge(array('used_in'=>$used,'stored'=>true,'fingerprint'=>hsh_planner_fingerprint($row),'image'=>$image,'file'=>'WordPressメディア #'.substr($id,6)),$row);
         $photos[$id]['image']=$image;
     }
-    return array('articles'=>$articles,'photos'=>$photos);
+    $result=array('articles'=>$articles,'photos'=>$photos);return function_exists('hsh_planner_enrich')?hsh_planner_enrich($result,$store):$result;
 }
 function hsh_planner_validate($d,$snapshot){
     $labels=hsh_planner_labels();
@@ -67,13 +67,13 @@ function hsh_planner_validate($d,$snapshot){
         return array('id'=>$id,'delete'=>true);
     }
     if($d['action']!=='save'||!isset($d['fields'])||!is_array($d['fields']))return new WP_Error('hsh_planner_input','保存する内容を確認してください。',array('status'=>400));
-    $allowed=$article?array('title','topic','stage','affiliate','experience','product','link','notes','photo_notes','due'):array('title','kind','subject','purpose','rights','notes','articles','sources');
+    $allowed=$article?array('title','topic','stage','affiliate','experience','product','link','notes','photo_notes','due','reason','usage','pros','cons','unknowns','source_notes','draft_text'):array('title','kind','subject','purpose','rights','notes','articles','sources');
     if(array_diff(array_keys($d['fields']),$allowed))return new WP_Error('hsh_planner_field','保存できない項目があります。',array('status'=>400));
     $row=array('id'=>$id);$f=$d['fields'];
     foreach($allowed as $k){
         if(in_array($k,array('articles','sources'),true))continue;
-        $v=$f[$k]??'';
-        if(!is_string($v)||strlen($v)>($k==='notes'||$k==='photo_notes'?12000:2400))return new WP_Error('hsh_planner_length','入力が長すぎるか、形式が違います。',array('status'=>400));
+        $v=$f[$k]??($snapshot[$article?'articles':'photos'][$id][$k]??'');
+        if(!is_string($v)||strlen($v)>($k==='draft_text'?60000:(in_array($k,array('notes','photo_notes','reason','usage','pros','cons','unknowns','source_notes'),true)?12000:2400)))return new WP_Error('hsh_planner_length','入力が長すぎるか、形式が違います。',array('status'=>400));
         if(isset($labels[$k])){
             if(!array_key_exists($v,$labels[$k]))return new WP_Error('hsh_planner_choice','選択項目を確認してください。',array('status'=>400));
             $row[$k]=$v;
@@ -83,7 +83,7 @@ function hsh_planner_validate($d,$snapshot){
         }elseif($k==='due'){
             if($v!==''&&(!preg_match('/^(\d{4})-(\d{2})-(\d{2})$/D',$v,$m)||!checkdate((int)$m[2],(int)$m[3],(int)$m[1])))return new WP_Error('hsh_planner_date','見直し日を確認してください。',array('status'=>400));
             $row[$k]=$v;
-        }else $row[$k]=in_array($k,array('notes','photo_notes'),true)?sanitize_textarea_field($v):sanitize_text_field($v);
+        }else $row[$k]=in_array($k,array('notes','photo_notes','reason','usage','pros','cons','unknowns','source_notes','draft_text'),true)?sanitize_textarea_field($v):sanitize_text_field($v);
     }
     if(trim($row['title'])==='')return new WP_Error('hsh_planner_title','タイトルか写真の説明を入力してください。',array('status'=>400));
     if($photo){
@@ -101,6 +101,7 @@ function hsh_planner_validate($d,$snapshot){
     return $row;
 }
 function hsh_planner_save($d){
+    if(is_array($d)&&in_array($d['action']??'',array('restore','link','import'),true)&&function_exists('hsh_planner_advanced_save'))return hsh_planner_advanced_save($d);
     $old_lock=get_option('hsh_planner_lock',0);if(is_numeric($old_lock)&&(int)$old_lock>0&&time()-(int)$old_lock>120&&get_option('hsh_planner_lock',0)===$old_lock)delete_option('hsh_planner_lock');
     if(!add_option('hsh_planner_lock',time(),'',false))return new WP_Error('hsh_planner_busy','ほかの保存を処理中です。少し待ってからお試しください。',array('status'=>409));
     try{
@@ -110,7 +111,7 @@ function hsh_planner_save($d){
         if(!empty($valid['delete'])){
             foreach($store as $other=>$row)if($other!==$id&&(in_array($id,$row['sources']??array(),true)||in_array($id,$row['articles']??array(),true)))return new WP_Error('hsh_planner_used','ほかの記録で関連付けられています。先にその関連付けを外してください。',array('status'=>409));
             unset($store[$id]);
-        }else{$valid['updated_at']=gmdate('c');$store[$id]=$valid;}
+        }else{$valid=function_exists('hsh_planner_with_history')?hsh_planner_with_history($valid,$current):$valid;$valid['updated_at']=gmdate('c');$store[$id]=$valid;}
         if(count($store)>1500)return new WP_Error('hsh_planner_limit','管理件数が上限に達しました。不要な予定を整理してください。',array('status'=>400));
         $before=hsh_planner_store();
         if($before!==$store&&!update_option('hsh_editorial_planner',$store,false))return new WP_Error('hsh_planner_save','保存できませんでした。入力を残したまま、もう一度お試しください。',array('status'=>503));
@@ -121,30 +122,29 @@ function hsh_planner_api($request){$r=hsh_planner_save($request->get_json_params
 add_action('rest_api_init',function(){register_rest_route('hirogaru/v1','/editorial-planner',array(array('methods'=>'GET','callback'=>function(){return hsh_edit_response(hsh_planner_snapshot());},'permission_callback'=>'hsh_edit_permission'),array('methods'=>'POST','callback'=>'hsh_planner_api','permission_callback'=>'hsh_edit_permission')));});
 
 function hsh_planner_select($name,$labels,$value,$multiple=false){
-    echo '<select name="'.esc_attr($name).($multiple?'[]':'').'"'.($multiple?' multiple size="4"':'').'>';
-    foreach($labels as $key=>$label)echo '<option value="'.esc_attr($key).'"'.(in_array($key,$multiple?(array)$value:array($value),true)?' selected':'').'>'.esc_html($label).'</option>';
-    echo '</select>';
+    if($multiple){echo '<span class="hsh-plan-options">';foreach($labels as $key=>$label){echo '<label><input type="checkbox" name="'.esc_attr($name).'[]" value="'.esc_attr($key).'"'.(in_array($key,(array)$value,true)?' checked':'').'>';if(strpos($name,'sources')!==false){$image=hsh_planner_image($key);if($image)echo '<img data-hsh-thumb="'.esc_url($image).'" alt="" width="64" height="48">';}echo '<span>'.esc_html($label).'</span></label>';}echo '</span>';return;}
+    echo '<select name="'.esc_attr($name).'">';foreach($labels as $key=>$label)echo '<option value="'.esc_attr($key).'"'.($key===$value?' selected':'').'>'.esc_html($label).'</option>';echo '</select>';
 }
 function hsh_planner_form($row,$type,$snapshot){
     $labels=hsh_planner_labels();$isphoto=$type==='photo';
     echo '<form method="post" class="hsh-plan-form">';wp_nonce_field('hsh_editorial_planner');
     echo '<input type="hidden" name="id" value="'.esc_attr($row['id']).'"><input type="hidden" name="expected" value="'.esc_attr($row['fingerprint']??'').'"><div class="hsh-plan-fields">';
-    $names=$isphoto?array('title'=>'写真の説明','kind'=>'写真の種類','subject'=>'写っている対象','purpose'=>'使い道','rights'=>'権利・許可','notes'=>'撮影・生成の状況や注意点'):array('title'=>'記事名・仮タイトル','topic'=>'カテゴリー','stage'=>'記事の準備','affiliate'=>'案件の準備','experience'=>'使用経験','product'=>'紹介する商品・サービス','link'=>'案件リンク（保存するだけで記事には掲載されません）','due'=>'見直し日','notes'=>'体験・調べたこと・次にやること','photo_notes'=>'欲しい写真・撮影しておきたい場面');
+    $names=$isphoto?array('title'=>'写真の説明','kind'=>'写真の種類','subject'=>'写っている対象','purpose'=>'使い道','rights'=>'権利・許可','notes'=>'撮影・生成の状況や注意点'):array('title'=>'記事名・仮タイトル','topic'=>'カテゴリー','stage'=>'記事の準備','affiliate'=>'案件の準備','experience'=>'使用経験','product'=>'紹介する商品・サービス','link'=>'案件リンク（保存するだけで記事には掲載されません）','due'=>'見直し日','notes'=>'体験・調べたこと・次にやること','photo_notes'=>'欲しい写真・撮影しておきたい場面','reason'=>'選んだ理由・使う前の期待','usage'=>'実際の使い方・使った期間','pros'=>'よかった点・具体的な反応','cons'=>'困った点・合わなかった点','unknowns'=>'まだ分からないこと','source_notes'=>'出典・確認日・変わりやすい情報','draft_text'=>'記事の下書き（公開されません）');
     foreach($names as $key=>$label){
         echo '<label>'.esc_html($label);
         if(isset($labels[$key]))hsh_planner_select('fields['.$key.']',$labels[$key],$row[$key]??'');
-        elseif(in_array($key,array('notes','photo_notes'),true))echo '<textarea name="fields['.$key.']" rows="3" maxlength="4000">'.esc_html($row[$key]??'').'</textarea>';
+        elseif(in_array($key,array('notes','photo_notes','reason','usage','pros','cons','unknowns','source_notes','draft_text'),true))echo '<textarea name="fields['.$key.']" rows="'.($key==='draft_text'?'8':'3').'" maxlength="'.($key==='draft_text'?'20000':'4000').'">'.esc_html($row[$key]??'').'</textarea>';
         else echo '<input type="'.($key==='due'?'date':($key==='link'?'url':'text')).'" name="fields['.$key.']" value="'.esc_attr($row[$key]??'').'" maxlength="800"'.($key==='title'?' required':'').((strpos($row['id'],'article:')===0||strpos($row['id'],'post:')===0)&&$key==='title'?' readonly':'').'>';
         echo '</label>';
     }
     if($isphoto){
-        echo '<label>使う予定の記事（複数選択可）';hsh_planner_select('fields[articles]',array_map(function($a){return $a['title'];},$snapshot['articles']),$row['articles']??array(),true);echo '</label>';
+        echo '<fieldset><legend>使う予定の記事（チェックして選択）</legend>';hsh_planner_select('fields[articles]',array_map(function($a){return $a['title'];},$snapshot['articles']),$row['articles']??array(),true);echo '</fieldset>';
         $sources=array();foreach($snapshot['photos'] as $id=>$p)if($id!==$row['id'])$sources[$id]=$p['title'];
-        echo '<label>参考にした元写真（複数選択可）';hsh_planner_select('fields[sources]',$sources,$row['sources']??array(),true);echo '</label>';
+        echo '<fieldset><legend>参考にした元写真（写真を見ながら選択）</legend>';hsh_planner_select('fields[sources]',$sources,$row['sources']??array(),true);echo '</fieldset>';
     }
     echo '</div><p><button class="button button-primary" name="hsh_plan_action" value="save">保存する</button> ';
     if(!empty($row['stored'])&&(strpos($row['id'],'plan:')===0||strpos($row['id'],'media:')===0))echo '<button class="button hsh-plan-delete" name="hsh_plan_action" value="delete">管理表から外す</button>';
-    echo '</p></form>';
+    echo '</p></form>';if(function_exists('hsh_planner_record_tools'))hsh_planner_record_tools($row,$snapshot);
 }
 function hsh_planner_admin(){
     if(!current_user_can('manage_options'))return;
@@ -152,18 +152,18 @@ function hsh_planner_admin(){
     if(($_SERVER['REQUEST_METHOD']??'GET')==='POST'){
         check_admin_referer('hsh_editorial_planner');
         $id=wp_unslash($_POST['id']??'');$fields=wp_unslash($_POST['fields']??array());$expected=wp_unslash($_POST['expected']??'');
-        $d=array('id'=>$id,'action'=>wp_unslash($_POST['hsh_plan_action']??''),'expected'=>$expected===''?null:$expected,'fields'=>$fields);$result=hsh_planner_save($d);
-        if(is_wp_error($result)){$message=$result->get_error_message();$failed=$d;}else $message='管理表を保存しました。記事の本文・写真・案件リンクは公開していません。';
+        $d=array('id'=>$id,'action'=>wp_unslash($_POST['hsh_plan_action']??''),'expected'=>$expected===''?null:$expected,'fields'=>$fields);if(function_exists('hsh_planner_admin_payload'))$d=hsh_planner_admin_payload($d,$_POST);$result=hsh_planner_save($d);
+        if(is_wp_error($result)){$message=$result->get_error_message();$failed=isset($d['id'],$d['fields'])?$d:null;}else $message='管理表を保存しました。記事の本文・写真・案件リンクは公開していません。';
     }
     $snapshot=hsh_planner_snapshot();$saved_snapshot=$snapshot;$labels=hsh_planner_labels();
     if($failed&&is_string($failed['id'])&&is_array($failed['fields'])){
         $type=strpos($failed['id'],'article:')===0||strpos($failed['id'],'post:')===0||strpos($failed['id'],'plan:')===0?'articles':'photos';
         // Keep the original expectation on failure; refresh is required after a conflict.
         $safe=array();foreach($failed['fields'] as $key=>$value){if(in_array($key,array('articles','sources'),true)&&is_array($value))$safe[$key]=array_values(array_filter($value,'is_string'));elseif(is_string($value))$safe[$key]=$value;}
-        $snapshot[$type][$failed['id']]=array_merge($snapshot[$type][$failed['id']]??array('id'=>$failed['id']),array_intersect_key($safe,array_flip(array('title','topic','stage','affiliate','experience','product','link','notes','photo_notes','due','kind','subject','purpose','rights','articles','sources'))),array('fingerprint'=>is_string($failed['expected'])?$failed['expected']:null));
+        $snapshot[$type][$failed['id']]=array_merge($snapshot[$type][$failed['id']]??array('id'=>$failed['id']),array_intersect_key($safe,array_flip(array('title','topic','stage','affiliate','experience','product','link','notes','photo_notes','due','reason','usage','pros','cons','unknowns','source_notes','draft_text','kind','subject','purpose','rights','articles','sources'))),array('fingerprint'=>is_string($failed['expected'])?$failed['expected']:null));
     }
     echo '<div class="wrap hsh-planner"><h1>記事・写真管理</h1><p>記事の予定、案件の準備、参考写真をまとめます。ここで保存しても、記事の公開や画像の差し替えは行いません。</p>';
-    if($message)echo '<div class="notice '.($failed?'notice-error':'notice-success').'"><p>'.esc_html($message).'</p></div>';
+    if($message)echo '<div class="notice '.(is_wp_error($result??null)?'notice-error':'notice-success').'"><p>'.esc_html($message).'</p></div>';if(function_exists('hsh_planner_overview'))hsh_planner_overview($snapshot);
     echo '<div class="hsh-plan-toolbar"><label>表示するもの <select id="hsh-plan-type"><option value="all">すべて</option><option value="article">記事</option><option value="photo">写真</option></select></label><label>検索 <input id="hsh-plan-search" type="search" placeholder="記事名・写真の説明・商品名"></label><button type="button" class="button" id="hsh-plan-export">保存済みの管理表を控えとして保存</button></div><p id="hsh-plan-count" aria-live="polite"></p>';
     echo '<section data-hsh-group="article"><h2>記事 '.count($snapshot['articles']).'件</h2><p>記事名は本文の編集画面で変更します。今後WordPressで作る投稿も一覧に表示します（追加の投稿は更新順に最大500件）。まだ投稿を作らない段階なら、下の「記事の予定を追加」からメモできます。</p>';
     foreach($snapshot['articles'] as $a){
@@ -191,4 +191,6 @@ function hsh_planner_admin(){
     echo '<script type="application/json" id="hsh-planner-data">'.wp_json_encode($saved_snapshot,JSON_HEX_TAG|JSON_HEX_AMP|JSON_HEX_APOS|JSON_HEX_QUOT).'</script>';
 }
 add_action('admin_menu',function(){add_menu_page('記事・写真管理','記事・写真管理','manage_options','hsh-editorial-planner','hsh_planner_admin','dashicons-portfolio',26);});
-add_action('admin_enqueue_scripts',function($hook){if($hook!=='toplevel_page_hsh-editorial-planner'||!current_user_can('manage_options'))return;wp_enqueue_media();wp_enqueue_style('hsh-planner',plugin_dir_url(__FILE__).'assets/editorial-planner.css',array(),'1.21.0');wp_enqueue_script('hsh-planner',plugin_dir_url(__FILE__).'assets/editorial-planner.js',array(),'1.21.0',true);});
+add_action('admin_enqueue_scripts',function($hook){if($hook!=='toplevel_page_hsh-editorial-planner'||!current_user_can('manage_options'))return;wp_enqueue_media();wp_enqueue_style('hsh-planner',plugin_dir_url(__FILE__).'assets/editorial-planner.css',array(),'1.22.0');wp_enqueue_script('hsh-planner',plugin_dir_url(__FILE__).'assets/editorial-planner.js',array(),'1.22.0',true);});
+
+require_once __DIR__.'/planner-advanced.php';

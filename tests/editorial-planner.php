@@ -53,6 +53,32 @@ check(hsh_planner_save($retry)->code==='hsh_planner_save','storage failure is re
 check(hsh_planner_store()===$unchanged&&!get_option('hsh_planner_lock'),'failed save preserves prior records and releases lock');
 unset($GLOBALS['test_planner_save_failure']);
 
+
+// Histories, linking and imports must be atomic and stay within private metadata.
+$s=hsh_planner_snapshot();$first=$s['articles'][$aid]['notes'];$fields=array_intersect_key($s['articles'][$aid],array_flip(hsh_planner_article_fields()));$fields['notes']='new revision';
+$r=hsh_planner_save(array('action'=>'save','id'=>$aid,'expected'=>$s['articles'][$aid]['fingerprint'],'fields'=>$fields));
+check(count($r['articles'][$aid]['history'])===1,'editing a saved record retains its prior revision');
+$r=hsh_planner_save(array('action'=>'restore','id'=>$aid,'expected'=>$r['articles'][$aid]['fingerprint'],'revision'=>0));
+check(!is_wp_error($r)&&$r['articles'][$aid]['notes']===$first&&count($r['articles'][$aid]['history'])===2,'restoring private notes is itself recorded in history');
+check(get_page_by_path('glenlivet-12-first-bottles')->post_content===$before,'history restoration cannot change published prose');
+$s=hsh_planner_snapshot();$backup=$s['backup'];$backup['records'][$aid]['notes']='imported note';
+$bad=$backup;$bad['site']='https://foreign.test/';$original=hsh_planner_store();
+check(hsh_planner_save(array('action'=>'import','backup'=>$bad,'expected_store'=>$s['store_fingerprint']))->code==='hsh_planner_import','foreign-site backup rejected');
+$bad=$backup;$bad['records'][$aid]['title']=array('bad');
+check(is_wp_error(hsh_planner_save(array('action'=>'import','backup'=>$bad,'expected_store'=>$s['store_fingerprint'])))&&hsh_planner_store()===$original,'bad scalar types fail without partial writes');
+$bad=$backup;$bad['records']['media:700']['sources']=array('media:700');
+check(is_wp_error(hsh_planner_save(array('action'=>'import','backup'=>$bad,'expected_store'=>$s['store_fingerprint'])))&&hsh_planner_store()===$original,'invalid imported lineage leaves every record untouched');
+$GLOBALS['test_planner_save_failure']=true;
+check(hsh_planner_save(array('action'=>'import','backup'=>$backup,'expected_store'=>$s['store_fingerprint']))->code==='hsh_planner_save'&&hsh_planner_store()===$original,'backup storage failure preserves prior store');unset($GLOBALS['test_planner_save_failure']);
+$r=hsh_planner_save(array('action'=>'import','backup'=>$backup,'expected_store'=>$s['store_fingerprint']));
+check(!is_wp_error($r)&&$r['articles'][$aid]['notes']==='imported note','validated same-site backup restores private notes');
+check(hsh_planner_save(array('action'=>'import','backup'=>$backup,'expected_store'=>$s['store_fingerprint']))->code==='hsh_planner_conflict','backup import rejects concurrent changes');
+$r=hsh_planner_save(array('action'=>'link','id'=>$pid,'expected'=>$r['articles'][$pid]['fingerprint'],'target'=>$aid,'expected_target'=>$r['articles'][$aid]['fingerprint']));
+check(!is_wp_error($r)&&!isset($r['articles'][$pid])&&$r['photos']['media:700']['articles']===array($aid),'linking migrates photo associations and removes only the private idea');
+check(strpos($r['articles'][$aid]['notes'],'future idea note')!==false&&get_page_by_path('glenlivet-12-first-bottles')->post_content===$before,'linking combines notes but leaves public content untouched');
+// Rebuild the original UI fixture so existing browser checks remain stable.
+update_option('hsh_editorial_planner',$original,false);
+check(!empty(hsh_planner_snapshot()['photos']['asset:manmos-back']['placements']),'packaged photos disclose actual usage positions');
 $GLOBALS['test_admin_cap']=false;ob_start();hsh_planner_admin();check(ob_get_clean()==='','non-admin cannot render private planning data');
 $GLOBALS['test_admin_cap']=true;$_SERVER['REQUEST_METHOD']='GET';ob_start();hsh_planner_admin();$markup=ob_get_clean();
 check(strpos($markup,'private planning note')!==false&&strpos($markup,'hsh-plan-media')!==false,'admin UI includes saved notes and photo selection');

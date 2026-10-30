@@ -1,0 +1,135 @@
+{
+  "note": "検索語は記事の目的を整理した編集用メモ。実際の検索需要・順位ではありません。",
+  "articles": [
+    {
+      "slug": "cat-carrier-checklist",
+      "title": "猫用キャリー、どれを選ぶ？ 買う前に見ておきたい5つのこと",
+      "description": "猫用キャリーを探すと、形も値段もいろいろある。見た目で選びたくなるけど、いざ使う日に猫を入れにくかったり、自分で運ぶのが大変だったりすると困る。買う前に、使う場面を一つずつ思い浮かべてみよう。",
+      "editorial_search_intent": "猫 キャリー サイズ 5kg",
+      "purpose": "キャリーの構造・大きさと実際の買い替え",
+      "search_volume": "not_measured",
+      "source_review": "external_sources_pending",
+      "next_review": "2027-01-24"
+    },
+    {
+      "slug": "highball-measure-and-adjust",
+      "title": "ハイボールが薄い？ ウイスキーを足す前に見てみよう",
+      "description": "家でハイボールを作って、何だか薄いなと思う。そこでウイスキーを足す前に、最初にどれくらい入れたかを見てみよう。味が薄いのか、炭酸が弱いのかでも、見直すところは変わる。",
+      "editorial_search_intent": "ハイボール 薄い 分量",
+      "purpose": "配合と炭酸を分けて調整",
+      "search_volume": "not_measured",
+      "source_review": "external_sources_pending",
+      "next_review": "2027-01-24"
+    },
+    {
+      "slug": "csv-import-seven-checks",
+      "title": "CSVを取り込む前に。0や空欄を変えないための7つの確認",
+      "description": "CSVを開いたら、表になっていた。見た目もそろっている。それで大丈夫だと思いたくなるけど、開き方や保存の仕方によっては、必要な値が変わっていることがある。取り込む前に、元のファイルを残すところから始めよう。",
+      "editorial_search_intent": "CSV 取り込み 先頭の0 文字コード",
+      "purpose": "取り込み前の形式確認",
+      "search_volume": "not_measured",
+      "source_review": "external_sources_pending",
+      "next_review": "2027-01-24"
+    },
+    {
+      "slug": "before-welcoming-cat",
+      "title": "猫を迎える準備、まず何を買う？ 部屋の片付けも忘れずに",
+      "description": "猫を迎えることになったら、まず買い物に行きたくなる。ごはんの器にトイレ、爪とぎ。おもちゃやベッドも見始めると、気になる物はいくらでも出てくる。",
+      "editorial_search_intent": "保護猫 迎える準備",
+      "purpose": "迎える前の買い物と部屋づくり",
+      "search_volume": "not_measured",
+      "source_review": "external_sources_pending",
+      "next_review": "2027-01-24"
+    },
+    {
+      "slug": "manmos-cat-life",
+      "title": "抱っこは苦手。でも甘えん坊。5歳のまんもすと暮らしています",
+      "description": "うちの猫、まんもすは5歳のスコティッシュフォールド。体重は5.5kgで、長い毛がふわっと広がっている。2025年4月に保護猫シェルターから迎えた。見た瞬間に運命を感じたくらい、かわいかった。年齢と体重は2026年10月時点の話です。",
+      "editorial_search_intent": "保護猫 長毛 暮らし",
+      "purpose": "まんもすの個性と日常。一般的な飼育手順とは分ける",
+      "search_volume": "not_measured",
+      "source_review": "external_sources_pending",
+      "next_review": "2027-01-24"
+    },
+    {
+      "slug": "cat-teaser-small-parts",
+      "title": "100均のねこじゃらしも使う。でも、小さな飾りは気になる",
+      "description": "うちのまんもすは、100均のおもちゃでも遊ぶ。だからといって、安い物なら何でもいいわけでも、高ければ必ず喜ぶわけでもない。好みはホント猫による（笑）。値札より、まんもすが実際にどう反応するかの方が気になる。",
+      "editorial_search_intent": "猫 おもちゃ 誤飲 片付け",
+      "purpose": "ねこじゃらしの部品点検と収納",
+      "search_volume": "not_measured",
+      "source_review": "external_sources_pending",
+      "next_review": "2027-01-24"
+    },
+    {
+      "slug": "cat-vet-routine",
+      "title": "猫の通院前に何を用意する？ 持ち物と、伝えたいことの整理",
+      "description": "まんもすは5歳で、定期的に動物病院へ通っている。通院の準備で特別に困った体験はないけど、キャリーは一度買い替えた。以前のリュック型は重さで形が崩れたので、今は本体のしっかりした大きめの物を使っている。",
+      "editorial_search_intent": "猫 通院 持ち物",
+      "purpose": "診察で伝える情報と通院準備",
+      "search_volume": "not_measured",
+      "source_review": "external_sources_pending",
+      "next_review": "2027-01-24"
+    },
+    {
+      "slug": "glenlivet-12-first-bottles",
+      "title": "グレンリベット12年を買った理由？ グラスが付いていたからです",
+      "description": "自分が3本目に買ったウイスキーは、グレンリベット12年。選んだ理由は、グラスが付いていてお得だったから。",
+      "editorial_search_intent": "グレンリベット12年 感想",
+      "purpose": "買ったきっかけと香りの実感",
+      "search_volume": "not_measured",
+      "source_review": "external_sources_pending",
+      "next_review": "2027-01-24"
+    },
+    {
+      "slug": "single-malt-label-guide",
+      "title": "シングルモルトのラベル、最初はどこを見ればいい？",
+      "description": "シングルモルトを選ぼうとして、知らない名前の多さに迷う。商品説明を読んでも、樽や香りの話が次々に出てくる。最初から全部分かればいいけど、自分はそんな感じではなかった。",
+      "editorial_search_intent": "シングルモルト ラベル 見方",
+      "purpose": "年数・樽など表示の読み方",
+      "search_volume": "not_measured",
+      "source_review": "external_sources_pending",
+      "next_review": "2027-01-24"
+    },
+    {
+      "slug": "sherry-cask-notes",
+      "title": "グレンファークラス12年の、ぶどうパンみたいな香りが好き",
+      "description": "シェリーカスクが好きで、特に気に入っているのがグレンファークラス12年。香りを説明するなら、ぶどうパンに顔をうずめたみたいな感じだ。少し変な例えかもしれないけど、自分にはそれが一番しっくりくる。",
+      "editorial_search_intent": "グレンファークラス12年 香り シェリー樽",
+      "purpose": "本人の香りの感想とシェリー樽用語",
+      "search_volume": "not_measured",
+      "source_review": "external_sources_pending",
+      "next_review": "2027-01-24"
+    },
+    {
+      "slug": "it-data-work-flow",
+      "title": "データ抽出をAIに頼むと、本当に楽。今しているデータ加工の仕事",
+      "description": "今しているのは、データを加工する仕事。抽出したり、並べ替えたり、整理したりする。使うのはChatGPT、Codex、Excel、スプレッドシート。データ抽出をAIに頼むと一瞬でやってくれるので、本当に楽だと感じている。",
+      "editorial_search_intent": "データ加工 AI 仕事",
+      "purpose": "実際の作業内容・道具の紹介",
+      "search_volume": "not_measured",
+      "source_review": "external_sources_pending",
+      "next_review": "2027-01-24"
+    },
+    {
+      "slug": "starting-it-without-specialty",
+      "title": "稼げそうでITに興味を持った。でも仕事にたどり着くまで約1年かかった",
+      "description": "ITに興味を持った理由は、稼げそうだったから。それと、これからも需要がありそうだと思ったからだ。ただ、今の仕事にたどり着くまでには、なんだかんだ1年近くかかった。",
+      "editorial_search_intent": "未経験 IT フリーランス 体験",
+      "purpose": "仕事にたどり着くまでの本人の経緯",
+      "search_volume": "not_measured",
+      "source_review": "external_sources_pending",
+      "next_review": "2027-01-24"
+    },
+    {
+      "slug": "ai-data-extraction-checks",
+      "title": "AIにデータ抽出を頼んだら、できた表のどこを見る？",
+      "description": "自分の仕事では、データの抽出や並べ替えにChatGPTやCodexを使っている。抽出を頼むと一瞬でやってくれるので、本当に楽だ。今の作業で、AIに特に困っていることもない。",
+      "editorial_search_intent": "AI データ抽出 確認",
+      "purpose": "抽出後の結果確認。架空データの演習",
+      "search_volume": "not_measured",
+      "source_review": "external_sources_pending",
+      "next_review": "2027-01-24"
+    }
+  ]
+}

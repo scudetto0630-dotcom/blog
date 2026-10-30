@@ -1,0 +1,573 @@
+{
+  "assets": {
+    "manmos-portrait": {
+      "file": "manmos-portrait.webp",
+      "width": 1200,
+      "height": 900,
+      "kind": "provided",
+      "sha256": "29d95927c7d7e67d8fc091bf3ad73a46f056e7d61cb246b831c2d493eb016471",
+      "bytes": 132160,
+      "subject": "manmos",
+      "alt": "まんもすの顔のアップ。管理人提供の写真です。",
+      "caption": "まんもす（提供写真）"
+    },
+    "manmos-back": {
+      "file": "manmos-back.webp",
+      "width": 750,
+      "height": 1000,
+      "kind": "provided",
+      "sha256": "e029bee79d5eb9f0de9c884d463b1894b9051bc73107925ba0c0f1babf02ed20",
+      "bytes": 113918,
+      "subject": "manmos",
+      "alt": "茶色の長い毛をしたまんもすの後ろ姿。管理人提供の写真です。",
+      "caption": "まんもすの後ろ姿（提供写真）"
+    },
+    "manmos-stretch": {
+      "file": "manmos-stretch.webp",
+      "width": 750,
+      "height": 1000,
+      "kind": "provided",
+      "sha256": "9add35497d7c9fee07bd3f6f6060821d734f8dc6c8bf7cabef65b4c18a3819c1",
+      "bytes": 42162,
+      "subject": "manmos",
+      "alt": "布団の上で体を伸ばしているまんもす。管理人提供の写真です。",
+      "caption": "体を伸ばしたまんもす（提供写真）"
+    },
+    "manmos-tower": {
+      "file": "manmos-tower.webp",
+      "width": 1200,
+      "height": 900,
+      "kind": "provided",
+      "sha256": "7169e245b731d0c48e0980ac404aebb83bb21c27aeeb56472a6aafa65d8912e9",
+      "bytes": 59702,
+      "subject": "manmos",
+      "alt": "キャットタワーの上にいるまんもす。管理人提供の写真です。",
+      "caption": "まんもす（提供写真）"
+    },
+    "manmos-rest": {
+      "file": "manmos-rest.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "sha256": "22327bf8a1939f2f3a915069eaa8b47465791484099fff7644fc99ea3c2f6cad",
+      "bytes": 115430,
+      "subject": "manmos",
+      "alt": "まんもすの提供写真を参考に、ソファでくつろぐ姿を作成したAI生成画像です。",
+      "caption": "提供写真を参考にしたAI生成画像です。"
+    },
+    "manmos-toy": {
+      "file": "manmos-toy.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "sha256": "5d18ef9b4d1e759c6d59edb8eabfdf33bcafdef14257d21241eb5444d36148e8",
+      "bytes": 118604,
+      "subject": "manmos",
+      "alt": "まんもすの提供写真を参考に、布のねこじゃらしを見る姿を作成したAI生成画像です。",
+      "caption": "提供写真を参考にしたAI生成画像です。"
+    },
+    "highball": {
+      "file": "highball.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "sha256": "332ec89178e5817e1cf75c40c3bde19b041ce23abddd70f8e6ca80dd2eca1cef",
+      "bytes": 102564,
+      "subject": "whisky",
+      "alt": "木のテーブルに置いた薄い琥珀色のハイボールを描いたAI生成画像です。",
+      "caption": "AI生成のイメージです。"
+    },
+    "glenlivet": {
+      "file": "glenlivet.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "sha256": "2cf0631bb5778f6a7b579227353ba90b97d9902ced05daa8d8d595d835039a7d",
+      "bytes": 75200,
+      "subject": "whisky",
+      "alt": "グレンリベット12年のボトルとハイボールを描いたAI生成画像です。",
+      "caption": "AI生成のイメージです。"
+    },
+    "desk": {
+      "file": "desk.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "sha256": "9fc2ab9cbf2bb66d30d5458a121b7486a67f28de6edabde600bce885d2aa865f",
+      "bytes": 63998,
+      "subject": "work",
+      "alt": "架空の数値表を表示したパソコンとノートがある机のAI生成画像です。",
+      "caption": "AI生成のイメージです。"
+    },
+    "manmos-front": {
+      "file": "manmos-front.webp",
+      "width": 1200,
+      "height": 900,
+      "kind": "provided",
+      "subject": "manmos",
+      "caption": "まんもす（提供写真）",
+      "alt": "正面から撮影したまんもすの顔。管理人提供の写真です。",
+      "sha256": "d30cbb751777351301e25a5d19687664570007195dc0550caf7512754e019572",
+      "bytes": 180630
+    },
+    "manmos-lying": {
+      "file": "manmos-lying.webp",
+      "width": 1200,
+      "height": 900,
+      "kind": "provided",
+      "subject": "manmos",
+      "caption": "横になったまんもす（提供写真）",
+      "alt": "横になって顔をこちらへ向けるまんもす。管理人提供の写真です。",
+      "sha256": "59b995b9da073996a3963d6fa6f95cefeb62b39d92b3f42bd75722b2de8912e5",
+      "bytes": 145584
+    },
+    "manmos-sitting": {
+      "file": "manmos-sitting.webp",
+      "width": 1200,
+      "height": 900,
+      "kind": "provided",
+      "subject": "manmos",
+      "caption": "座っているまんもす（提供写真）",
+      "alt": "後ろ脚を前へ伸ばして座っているまんもす。管理人提供の写真です。",
+      "sha256": "c7fa64ad3039d9197f6a23ebad8ef8191487bab52e79be11985a1433c8b3231c",
+      "bytes": 88502
+    },
+    "article-carrier": {
+      "file": "article-carrier.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "manmos",
+      "alt": "扉を開けたキャリーのそばにいるまんもすを描いたAI生成画像です。",
+      "caption": "提供写真を参考にしたAI生成画像です。",
+      "sha256": "8c6f10a979b8ac10e484384e0ecff4840ccfd6895e00e56228dac0f55e9baee9",
+      "bytes": 149754
+    },
+    "article-vet": {
+      "file": "article-vet.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "manmos",
+      "alt": "通院の準備をイメージした、キャリーとまんもすのAI生成画像です。",
+      "caption": "提供写真を参考にしたAI生成画像です。",
+      "sha256": "3be998584f4e897c1b53ab0e1ad2449acf8594071ffcad9b72c5d9a96846b597",
+      "bytes": 133206
+    },
+    "article-labels": {
+      "file": "article-labels.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "whisky",
+      "alt": "ボトルのラベルを見る場面をイメージしたAI生成画像です。",
+      "caption": "AI生成のイメージです。",
+      "sha256": "2d04fbcd8a8d2f77bac46ac0576b1f5051725278017f299b2e9106432d8071d1",
+      "bytes": 86454
+    },
+    "article-sherry": {
+      "file": "article-sherry.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "whisky",
+      "alt": "琥珀色のウイスキーとレーズンを置いたAI生成画像です。",
+      "caption": "AI生成のイメージです。",
+      "sha256": "e8edb9b5cf8eb76db4770c890835861e38f9631f50ddaa16f600d76ec245b1bc",
+      "bytes": 91634
+    },
+    "article-workflow": {
+      "file": "article-workflow.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "work",
+      "alt": "データを受け取り取り込む作業をイメージしたAI生成画像です。",
+      "caption": "AI生成のイメージです。",
+      "sha256": "60d9153402964c120c540377ff39589067587a36c4167d85e244807732331433",
+      "bytes": 83986
+    },
+    "article-beginner": {
+      "file": "article-beginner.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "work",
+      "alt": "やりたい仕事を書き出す机をイメージしたAI生成画像です。",
+      "caption": "AI生成のイメージです。",
+      "sha256": "aa378786089c0da544c0d242c80bca3607c6007a9ac4ebe8b3bc259732d0f075",
+      "bytes": 79436
+    },
+    "article-checking": {
+      "file": "article-checking.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "work",
+      "alt": "元データと抽出結果を照らし合わせるAI生成画像です。",
+      "caption": "AI生成のイメージです。",
+      "sha256": "1a678571c50ebf10359ebe67b09ba095651b9bc83e50e2d8968f715c0840b2a2",
+      "bytes": 85822
+    },
+    "article-csv": {
+      "file": "article-csv.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "work",
+      "alt": "表の数値を確認する作業をイメージしたAI生成画像です。",
+      "caption": "AI生成のイメージです。",
+      "sha256": "f91c4eacafe260f22163e1ad8a61c557253e02bb47718a7bc7ed0855f44f015a",
+      "bytes": 97832
+    },
+    "article-measure": {
+      "file": "article-measure.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "whisky",
+      "alt": "ハイボールの量を計る道具を描いたAI生成画像です。",
+      "caption": "AI生成のイメージです。",
+      "sha256": "5e4a9d05792cee2b49a690319cc7bda6bab179ea478bb408f8ef4bbedef4b45b",
+      "bytes": 125340
+    },
+    "article-safe-toy": {
+      "file": "article-safe-toy.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "manmos",
+      "alt": "小さな飾りのない布のねこじゃらしを描いたAI生成画像です。",
+      "caption": "提供写真を参考にしたAI生成画像です。",
+      "sha256": "6975aa10e6cf043f996cccb661707b677b76d8d12bde690870b06950c3286991",
+      "bytes": 143230
+    },
+    "detail-welcome-room": {
+      "file": "detail-welcome-room.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "cat-care",
+      "alt": "猫を迎える部屋の準備を描いたAI生成画像です。",
+      "caption": "AI生成のイメージです。",
+      "sha256": "de8b7708e065ea4306a60e5e9181fae67a410c7083763c60e164d92ee812b7f3",
+      "bytes": 74450
+    },
+    "detail-welcome-proof": {
+      "file": "detail-welcome-proof.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "cat-care",
+      "alt": "窓と小物の収納の確認を描いたAI生成画像です。",
+      "caption": "AI生成のイメージです。",
+      "sha256": "0ecf5f055978029bd485dd5c51f1313b0cdddb3b24d3b6b9cf304995fcdfbcb4",
+      "bytes": 91686
+    },
+    "detail-toy-storage": {
+      "file": "detail-toy-storage.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "cat-care",
+      "alt": "遊び終わった猫じゃらしの収納を描いたAI生成画像です。",
+      "caption": "AI生成のイメージです。",
+      "sha256": "2fca36f730a7810cbb11579040cba52e429ef3bd89c8550196849496a79d700f",
+      "bytes": 87654
+    },
+    "detail-vet-memo": {
+      "file": "detail-vet-memo.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "cat-care",
+      "alt": "受診前に様子を記録するノートを描いたAI生成画像です。",
+      "caption": "AI生成のイメージです。",
+      "sha256": "b2a90cfe685c1e3b8b000ff3fd836bc3941b23160ee03e64f654c9377d1cf092",
+      "bytes": 55226
+    },
+    "detail-vet-towel": {
+      "file": "detail-vet-towel.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "cat-care",
+      "alt": "通院用のキャリーと敷物を描いたAI生成画像です。",
+      "caption": "AI生成のイメージです。",
+      "sha256": "687b31fc5746106fb5e2e25350f1566d72bdc155a933c0461e9065d7b962c062",
+      "bytes": 111912
+    },
+    "detail-glen-glass": {
+      "file": "detail-glen-glass.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "whisky",
+      "alt": "薄めのハイボールとグラスを描いたAI生成画像です。",
+      "caption": "AI生成のイメージです。",
+      "sha256": "c122d483aa16de5993174441246aed4854c07ba8a34d75588bcabb185db8127e",
+      "bytes": 84976
+    },
+    "detail-glen-aroma": {
+      "file": "detail-glen-aroma.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "whisky",
+      "alt": "花のような香りのイメージを描いたAI生成画像です。",
+      "caption": "AI生成のイメージです。",
+      "sha256": "149a622524d10cd0802e4dd80ab23ecd3e9aa9043ba101d3e0d22f4c2b118b7b",
+      "bytes": 68642
+    },
+    "detail-label-detail": {
+      "file": "detail-label-detail.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "whisky",
+      "alt": "年数・度数・容量を示す架空のラベルを描いたAI生成画像です。",
+      "caption": "AI生成のイメージです。",
+      "sha256": "ac3772bb44dd39c6ef8febf80260a227a59913831a8a2bd064b507a7f42f7640",
+      "bytes": 62574
+    },
+    "detail-label-compare": {
+      "file": "detail-label-compare.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "whisky",
+      "alt": "ボトルを比較するイメージを描いたAI生成画像です。",
+      "caption": "AI生成のイメージです。",
+      "sha256": "18bfee8488f03aa30ce4a36eddcfaf162849b544d106090dd2bfa22770377e42",
+      "bytes": 84430
+    },
+    "detail-sherry-note": {
+      "file": "detail-sherry-note.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "whisky",
+      "alt": "香りの印象を残すノートを描いたAI生成画像です。",
+      "caption": "AI生成のイメージです。",
+      "sha256": "ce51a68980f66df6a39541aab9d486a5142e096a79474f5b2fd8cad0e987c132",
+      "bytes": 60612
+    },
+    "detail-sherry-water": {
+      "file": "detail-sherry-water.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "whisky",
+      "alt": "加水前後の比較のイメージを描いたAI生成画像です。",
+      "caption": "AI生成のイメージです。",
+      "sha256": "5a4226b9140d3e4cff4a04bc4a9bc7fab8bb3efb1a3690b17e2038c0630ba10e",
+      "bytes": 86430
+    },
+    "detail-flow-delivery": {
+      "file": "detail-flow-delivery.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "work",
+      "alt": "取り込み結果を確認し引き渡す作業を描いたAI生成画像です。",
+      "caption": "AI生成のイメージです。",
+      "sha256": "d57e19f50b7aad832e4efe1d24af7016e2228c5540abceec82b363e038eaf3dc",
+      "bytes": 67512
+    },
+    "detail-begin-small": {
+      "file": "detail-begin-small.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "work",
+      "alt": "少量の架空データで試す作業を描いたAI生成画像です。",
+      "caption": "AI生成のイメージです。",
+      "sha256": "8daa81a14007423d5c3bcf31c20aed16eb84d18278be615f7179ded1f83cfc62",
+      "bytes": 62500
+    },
+    "detail-begin-choice": {
+      "file": "detail-begin-choice.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "work",
+      "alt": "ITの仕事内容を比べるイメージを描いたAI生成画像です。",
+      "caption": "AI生成のイメージです。",
+      "sha256": "d07499bbd790b6abefd6f6b616f5e06162c32b7676de15fdf866ef0eef87ed01",
+      "bytes": 80412
+    },
+    "detail-ai-sample": {
+      "file": "detail-ai-sample.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "work",
+      "alt": "架空の正解例を照らし合わせる作業を描いたAI生成画像です。",
+      "caption": "AI生成のイメージです。",
+      "sha256": "999329d896261d670d288a3abe2747bc55ada961ffb14248dba9b7b4ee773034",
+      "bytes": 70290
+    },
+    "detail-ai-empty": {
+      "file": "detail-ai-empty.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "work",
+      "alt": "推測で空欄を埋めずに確認する作業を描いたAI生成画像です。",
+      "caption": "AI生成のイメージです。",
+      "sha256": "5316e3b35f0d414a74c7b3967241fdd21b5836a7d85e1798f8516937536ca5cf",
+      "bytes": 66026
+    },
+    "detail-carrier-lock": {
+      "file": "detail-carrier-lock.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "cat-care",
+      "alt": "キャリーの留め具の点検を描いたAI生成画像です。",
+      "caption": "AI生成のイメージです。",
+      "sha256": "b76d23ccaa3c1810744be26143f5a9f78635c94dd13ffab86a98c3a57b0ecd27",
+      "bytes": 50446
+    },
+    "detail-highball-notes": {
+      "file": "detail-highball-notes.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "whisky",
+      "alt": "ハイボールの配合を残すノートを描いたAI生成画像です。",
+      "caption": "AI生成のイメージです。",
+      "sha256": "b7669f478d091f62363714c3a4861350095ec78ee925f137a0e0d6f24ace3af7",
+      "bytes": 81352
+    },
+    "detail-csv-original": {
+      "file": "detail-csv-original.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "work",
+      "alt": "元のファイルとコピーの保管を描いたAI生成画像です。",
+      "caption": "AI生成のイメージです。",
+      "sha256": "7f7e8d1c668c8d8d89e67082fd5600feacfde9598f039d0c79ed7132fce137c7",
+      "bytes": 65274
+    },
+    "detail-csv-preview": {
+      "file": "detail-csv-preview.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "work",
+      "alt": "架空データの取り込み前プレビューを描いたAI生成画像です。",
+      "caption": "AI生成のイメージです。",
+      "sha256": "e7fec374ba31e0979aa3cfab5419530c86f4727c4a08392f5a6c112488cbd8d0",
+      "bytes": 61774
+    },
+    "detail-topic-whisky": {
+      "file": "detail-topic-whisky.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "whisky",
+      "alt": "自宅で楽しむウイスキーを描いたAI生成画像です。",
+      "caption": "AI生成のイメージです。",
+      "sha256": "162065ed4d8575970c2f9bc545f5d7a40aef15c65141a7d7330a63e2c9278bb1",
+      "bytes": 81450
+    },
+    "detail-topic-work": {
+      "file": "detail-topic-work.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "work",
+      "alt": "フリーランスの仕事机を描いたAI生成画像です。",
+      "caption": "AI生成のイメージです。",
+      "sha256": "7f03fdcfe0e49ae65a3e1d87edd8fd64b94b1d4b66b32264ee90d37c165291ba",
+      "bytes": 100488
+    },
+    "manmos-window": {
+      "file": "manmos-window.webp",
+      "width": 1200,
+      "height": 900,
+      "kind": "provided",
+      "subject": "manmos",
+      "alt": "窓のそばで顔をこちらへ向けるまんもす。管理人提供の写真です。",
+      "caption": "まんもす（提供写真）",
+      "sha256": "dfcdfe975cb76adac87430d07a024bbf3ab25c173cd9311a784f6e74ced463c0",
+      "bytes": 128288
+    }
+  },
+  "articles": {
+    "cat-carrier-checklist": "article-carrier",
+    "before-welcoming-cat": "manmos-rest",
+    "manmos-cat-life": "manmos-tower",
+    "cat-teaser-small-parts": "manmos-toy",
+    "cat-vet-routine": "article-vet",
+    "highball-measure-and-adjust": "highball",
+    "glenlivet-12-first-bottles": "glenlivet",
+    "single-malt-label-guide": "article-labels",
+    "sherry-cask-notes": "article-sherry",
+    "csv-import-seven-checks": "article-csv",
+    "it-data-work-flow": "article-workflow",
+    "starting-it-without-specialty": "article-beginner",
+    "ai-data-extraction-checks": "article-checking"
+  },
+  "inline": {
+    "before-welcoming-cat": [
+      "detail-welcome-room",
+      "detail-welcome-proof"
+    ],
+    "cat-carrier-checklist": [
+      "manmos-portrait",
+      "detail-carrier-lock"
+    ],
+    "cat-teaser-small-parts": [
+      "article-safe-toy",
+      "detail-toy-storage"
+    ],
+    "cat-vet-routine": [
+      "detail-vet-memo",
+      "detail-vet-towel"
+    ],
+    "highball-measure-and-adjust": [
+      "article-measure",
+      "detail-highball-notes"
+    ],
+    "glenlivet-12-first-bottles": [
+      "detail-glen-aroma",
+      "detail-glen-glass"
+    ],
+    "single-malt-label-guide": [
+      "detail-label-detail",
+      "detail-label-compare"
+    ],
+    "sherry-cask-notes": [
+      "detail-sherry-note",
+      "detail-sherry-water"
+    ],
+    "it-data-work-flow": [
+      "desk",
+      "detail-flow-delivery"
+    ],
+    "starting-it-without-specialty": [
+      "detail-begin-choice",
+      "detail-begin-small"
+    ],
+    "ai-data-extraction-checks": [
+      "detail-ai-sample",
+      "detail-ai-empty"
+    ],
+    "csv-import-seven-checks": [
+      "detail-csv-original",
+      "detail-csv-preview"
+    ],
+    "manmos-cat-life": [
+      "manmos-lying",
+      "manmos-sitting"
+    ]
+  },
+  "topics": {
+    "cats": "manmos-window",
+    "whisky": "detail-topic-whisky",
+    "it-freelance": "detail-topic-work"
+  }
+}
