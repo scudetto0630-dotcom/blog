@@ -1,0 +1,74 @@
+{
+  "articles": [
+    {
+      "slug": "before-welcoming-cat",
+      "id": 95,
+      "status": "publish",
+      "fingerprint": "8c0e7c2780ebaa50296017a2f3e7df541e2621537587a28ea5dcaf45e46dc2f9",
+      "url": "https://hirogarushumi.com/before-welcoming-cat/"
+    },
+    {
+      "slug": "manmos-cat-life",
+      "id": 96,
+      "status": "publish",
+      "fingerprint": "2ecf8bef35c645e496aab3b33506e496f81678ddc2b7120ea6eea02d44b62d63",
+      "url": "https://hirogarushumi.com/manmos-cat-life/"
+    },
+    {
+      "slug": "cat-teaser-small-parts",
+      "id": 97,
+      "status": "publish",
+      "fingerprint": "e4c9b43718cb6c10e7ccf68cc0bab123239d47f7c0c3a76a56fdd8f13a3d9f37",
+      "url": "https://hirogarushumi.com/cat-teaser-small-parts/"
+    },
+    {
+      "slug": "cat-vet-routine",
+      "id": 98,
+      "status": "publish",
+      "fingerprint": "bba8435eb364c06f9f5e1640667cae0e113e4e89cbcc8310fde94d3ba3b603b6",
+      "url": "https://hirogarushumi.com/cat-vet-routine/"
+    },
+    {
+      "slug": "glenlivet-12-first-bottles",
+      "id": 99,
+      "status": "publish",
+      "fingerprint": "b5d60e261fdb28d724582023da9b51c37c711817e23c2d8fdcf5f0e5a3eabe5d",
+      "url": "https://hirogarushumi.com/glenlivet-12-first-bottles/"
+    },
+    {
+      "slug": "single-malt-label-guide",
+      "id": 100,
+      "status": "publish",
+      "fingerprint": "be09bcf86c4e9cc45a3f148797f19f29e1dd1fe1aa490ada823b4bf7830cc1f9",
+      "url": "https://hirogarushumi.com/single-malt-label-guide/"
+    },
+    {
+      "slug": "sherry-cask-notes",
+      "id": 101,
+      "status": "publish",
+      "fingerprint": "213b59ca6f33b3b7e532c9d71ff670c09727755ab83ee65c0a43706b636191aa",
+      "url": "https://hirogarushumi.com/sherry-cask-notes/"
+    },
+    {
+      "slug": "it-data-work-flow",
+      "id": 102,
+      "status": "publish",
+      "fingerprint": "d54aef391d72af28c5b1d813c6ddbd872ee0f5f5d1c915b54b7c2ba493c1be55",
+      "url": "https://hirogarushumi.com/it-data-work-flow/"
+    },
+    {
+      "slug": "starting-it-without-specialty",
+      "id": 103,
+      "status": "publish",
+      "fingerprint": "0b2a4982bec7a7603dc54adb8f25f13308a5cf7c07a5ec0a6f620cd935f40312",
+      "url": "https://hirogarushumi.com/starting-it-without-specialty/"
+    },
+    {
+      "slug": "ai-data-extraction-checks",
+      "id": 104,
+      "status": "publish",
+      "fingerprint": "9b1ca27d055d73b9e8a83c2d62e66f5e9e7f04894e2cbab6368b325102199135",
+      "url": "https://hirogarushumi.com/ai-data-extraction-checks/"
+    }
+  ]
+}

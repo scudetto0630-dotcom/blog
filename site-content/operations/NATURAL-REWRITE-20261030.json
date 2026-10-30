@@ -1,0 +1,100 @@
+{
+  "date": "2026-10-30",
+  "articles": [
+    {
+      "slug": "before-welcoming-cat",
+      "title": "猫を迎える準備、まず何を買う？ 部屋の片付けも忘れずに",
+      "before_characters": 2366,
+      "after_characters": 2101,
+      "unchanged_body": false
+    },
+    {
+      "slug": "manmos-cat-life",
+      "title": "1匹で暮らすまんもす。寂しそうというより、甘えん坊です",
+      "before_characters": 2167,
+      "after_characters": 1911,
+      "unchanged_body": false
+    },
+    {
+      "slug": "cat-teaser-small-parts",
+      "title": "100均のねこじゃらしも使う。でも、小さな飾りは気になる",
+      "before_characters": 2063,
+      "after_characters": 1796,
+      "unchanged_body": false
+    },
+    {
+      "slug": "cat-vet-routine",
+      "title": "猫の通院前に何を用意する？ 持ち物と、伝えたいことの整理",
+      "before_characters": 2143,
+      "after_characters": 1745,
+      "unchanged_body": false
+    },
+    {
+      "slug": "glenlivet-12-first-bottles",
+      "title": "グレンリベット12年を買った理由？ グラスが付いていたからです",
+      "before_characters": 2507,
+      "after_characters": 2259,
+      "unchanged_body": false
+    },
+    {
+      "slug": "single-malt-label-guide",
+      "title": "シングルモルトのラベル、最初はどこを見ればいい？",
+      "before_characters": 2449,
+      "after_characters": 2203,
+      "unchanged_body": false
+    },
+    {
+      "slug": "sherry-cask-notes",
+      "title": "シェリーカスクが好き。でも、樽の名前だけでは選びきれない",
+      "before_characters": 2437,
+      "after_characters": 2208,
+      "unchanged_body": false
+    },
+    {
+      "slug": "it-data-work-flow",
+      "title": "データをシステムに入れる仕事って、何をするの？",
+      "before_characters": 2365,
+      "after_characters": 2091,
+      "unchanged_body": false
+    },
+    {
+      "slug": "starting-it-without-specialty",
+      "title": "ITの仕事をしたい。でも、何をする仕事があるのか分からなかった",
+      "before_characters": 2406,
+      "after_characters": 2119,
+      "unchanged_body": false
+    },
+    {
+      "slug": "ai-data-extraction-checks",
+      "title": "AIにデータ抽出を頼んだら、できた表のどこを見る？",
+      "before_characters": 2850,
+      "after_characters": 2652,
+      "unchanged_body": false
+    },
+    {
+      "slug": "cat-carrier-checklist",
+      "title": "猫用キャリー、どれを選ぶ？ 買う前に見ておきたい5つのこと",
+      "before_characters": 5916,
+      "after_characters": 5570,
+      "unchanged_body": false
+    },
+    {
+      "slug": "highball-measure-and-adjust",
+      "title": "ハイボールが薄い？ ウイスキーを足す前に見てみよう",
+      "before_characters": 5317,
+      "after_characters": 5073,
+      "unchanged_body": false
+    },
+    {
+      "slug": "csv-import-seven-checks",
+      "title": "CSVを取り込む前に。0や空欄を変えないための7つの確認",
+      "before_characters": 8720,
+      "after_characters": 8603,
+      "unchanged_body": false
+    }
+  ],
+  "reference": "User-pasted restaurant article; no claim of direct URL access. General narrative traits only; no copied article prose.",
+  "scope": "13 article bodies/titles/excerpts; homepage/profile unchanged.",
+  "photos": "Existing 45 assets and at least two body photos per article retained.",
+  "textlint": "Contextual review; questions, subjective phrasing, Japanese counters and grammatical particle repetition remain intentional where appropriate. Not a naturalness guarantee."
+}
