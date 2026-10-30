@@ -20,8 +20,9 @@ function hsh_growth_next($slug){$pairs=array(
 'glenlivet-12-first-bottles'=>'sherry-cask-notes','sherry-cask-notes'=>'single-malt-label-guide','single-malt-label-guide'=>'glenlivet-12-first-bottles','highball-measure-and-adjust'=>'glenlivet-12-first-bottles',
 'starting-it-without-specialty'=>'it-data-work-flow','it-data-work-flow'=>'ai-data-extraction-checks','ai-data-extraction-checks'=>'csv-import-seven-checks','csv-import-seven-checks'=>'ai-data-extraction-checks');return $pairs[$slug]??'';}
 function hsh_growth_nav(){return '<nav class="hsh-explore-nav" aria-label="写真と記事を探す"><a href="'.esc_url(home_url('/hsh-gallery/')).'">まんもすの写真</a><a href="'.esc_url(home_url('/hsh-whisky-notes/')).'">飲んだウイスキーのメモ</a><a href="'.esc_url(home_url('/hsh-updates/')).'">最近の更新</a></nav>';}
+add_action('init',function(){add_option('hsh_all_articles_counted_since',wp_date('Y_m_d'),'',false);});
 function hsh_growth_popular(){
-    $totals=array();$start=wp_date('Y_m_d',time()-29*DAY_IN_SECONDS);$end=wp_date('Y_m_d');
+    $totals=array();$start=max(wp_date('Y_m_d',time()-29*DAY_IN_SECONDS),(string)get_option('hsh_all_articles_counted_since',wp_date('Y_m_d')));$end=wp_date('Y_m_d');
     foreach((array)get_option('hsh_request_counts',array()) as $day=>$rows)if($day>=$start&&$day<=$end)foreach($rows as $slug=>$count)if(isset(hsh_growth_summaries()[$slug]))$totals[$slug]=($totals[$slug]??0)+max(0,(int)$count);
     $totals=array_filter($totals,function($n){return $n>=10;});if(count($totals)<3||array_sum($totals)<50)return '';arsort($totals);$out='<section class="hsh-popular"><h2>最近、読まれている記事</h2><p>直近30日のサーバー到達件数をもとにしています。キャッシュ配信などは含まず、正確な閲覧数ではありません。</p><ul>';
     foreach(array_slice($totals,0,3,true) as $slug=>$n){$p=get_page_by_path($slug,OBJECT,'post');if($p&&$p->post_status==='publish')$out.='<li><a href="'.esc_url(get_permalink($p)).'">'.esc_html($p->post_title).'</a></li>';}
@@ -49,7 +50,7 @@ function hsh_growth_updates(){
     return $out.'</ul><p>内容の訂正に関する方針は、<a href="'.esc_url(home_url('/hsh-editorial/')).'">記事・広告について</a>にまとめています。</p></section>';
 }
 add_shortcode('hsh_manmos_gallery','hsh_growth_gallery');add_shortcode('hsh_whisky_notes','hsh_growth_whisky');add_shortcode('hsh_updates','hsh_growth_updates');
-add_action('wp_enqueue_scripts',function(){wp_enqueue_style('hsh-growth',plugin_dir_url(__FILE__).'assets/growth.css',array('hsh-reading'),'1.22.0');wp_enqueue_script('hsh-growth',plugin_dir_url(__FILE__).'assets/growth.js',array(),'1.22.0',true);},110);
+add_action('wp_enqueue_scripts',function(){wp_enqueue_style('hsh-growth',plugin_dir_url(__FILE__).'assets/growth.css',array('hsh-reading'),'1.22.1');wp_enqueue_script('hsh-growth',plugin_dir_url(__FILE__).'assets/growth.js',array(),'1.22.1',true);},110);
 add_filter('the_content',function($content){
     if(!is_singular('post')||!in_the_loop()||!is_main_query())return $content;$p=get_post();if(!hsh_owned_blog_post($p))return $content;
     $slug=hsh_growth_next($p->post_name);$next=$slug?get_page_by_path($slug,OBJECT,'post'):null;$summaries=hsh_growth_summaries();

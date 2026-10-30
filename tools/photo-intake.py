@@ -45,10 +45,14 @@ def prepare(archive, output):
             with Image.open(io.BytesIO(raw)) as source:
                 if source.format not in ('JPEG', 'PNG', 'WEBP') or getattr(source, 'n_frames', 1) != 1:
                     raise ValueError('Only still JPEG, PNG and WebP images are supported.')
+                if source.width * source.height > 40_000_000:
+                    raise ValueError('Image exceeds 40 million pixels.')
                 source.load()
                 exif = source.getexif()
                 gps = 34853 in exif
-                image = ImageOps.exif_transpose(source).convert('RGB')
+                oriented = ImageOps.exif_transpose(source)
+                image = oriented.convert('RGBA' if 'A' in oriented.getbands() or
+                                         'transparency' in oriented.info else 'RGB')
                 fingerprint = dhash(image)
                 similar = [r['file'] for r in records if 'dhash' in r and
                            (int(r['dhash'], 16) ^ fingerprint).bit_count() <= 5]

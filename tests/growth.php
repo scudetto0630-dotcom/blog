@@ -16,4 +16,7 @@ check(is_wp_error(hsh_query_csv("Query,Clicks,Impressions,Position\na,1,2,8\na,1
 check(is_wp_error(hsh_growth_month('2026-13')),'invalid reporting month is rejected');
 update_option('hsh_request_counts',array('2026_10_30'=>array('manmos-cat-life'=>7),'2026_09_30'=>array('manmos-cat-life'=>100)),false);
 $report=hsh_growth_month('2026-10');check($report['recorded_days']===1&&$report['requests']['manmos-cat-life']===7&&$report['search_pages']===null,'monthly report uses recorded month data and leaves missing search data absent');
+$day=wp_date('Y_m_d');$older=wp_date('Y_m_d',time()-DAY_IN_SECONDS);update_option('hsh_all_articles_counted_since',$day,false);
+update_option('hsh_request_counts',array($older=>array('cat-carrier-checklist'=>900),$day=>array('before-welcoming-cat'=>20,'manmos-cat-life'=>20,'sherry-cask-notes'=>20)),false);
+$popular=hsh_growth_popular();check(strpos($popular,'cat-carrier-checklist')===false&&substr_count($popular,'<li>')===3,'popular articles compare only the period with all articles counted');
 echo "All growth checks passed. Total checks including shared suites: $tests\n";
