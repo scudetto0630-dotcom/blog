@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-30",
+  "version": "1.21.0",
+  "release_commit": "e1d2c7f",
+  "articles_updated": 13,
+  "paragraphs_replaced": 47,
+  "paragraphs_added": 18,
+  "profile_home_intro_updated": true,
+  "planner_records_updated": 13,
+  "photo_assets_preserved": 45,
+  "affiliate_links_and_status_unchanged": true,
+  "python": {
+    "passed": 13,
+    "failed": 0
+  },
+  "php_shared_checks": {
+    "passed": 357,
+    "failed": 0
+  },
+  "public_browser": {
+    "passed": 82,
+    "failed": 0,
+    "viewports": [
+      1440,
+      768,
+      390,
+      320
+    ],
+    "public_url": "https://hirogarushumi.com/",
+    "provided_assets": 8,
+    "generated_assets": 37
+  },
+  "all_article_paragraphs_matched_publicly": true,
+  "three_starter_stored_bodies_exact": true,
+  "profile_and_intro_stored_copy_exact": true,
+  "limits": [
+    "Official source text verification remains incomplete: proxy tunnel HTTP 403 for Suntory, Environment Ministry and searches. General terminology supplements are not presented as externally verified quotations or product-specific specifications.",
+    "Unclear audio details about toy parts and unspecified bottle-shaped gift are not guessed.",
+    "New reference photos were requested in private planning notes; no new photographs uploaded or generated."
+  ]
+}
