@@ -6,7 +6,7 @@ class WP_Error { public $code; public function __construct($code, $message = '',
 class WP_REST_Response { public $data; public $headers=array(); public function __construct($data) {$this->data=$data;} public function header($k,$v){$this->headers[$k]=$v;} }
 class Request { private $data; private $auth; public function __construct($data=array(),$auth=''){$this->data=$data;$this->auth=$auth;} public function get_json_params(){return $this->data;} public function get_header($key){return $this->auth;} }
 function get_option($k,$default=false){global $options;return $options[$k] ?? $default;}
-function update_option($k,$v,$autoload=null){global $options;if($k==='nkt_correction_reports'&&!empty($GLOBALS['test_nkt_save_failure']))return false;$options[$k]=$v;return true;}
+function update_option($k,$v,$autoload=null){global $options;if($k==='nkt_correction_reports'&&!empty($GLOBALS['test_nkt_save_failure']))return false;if($k==='hsh_editorial_planner'&&!empty($GLOBALS['test_planner_save_failure']))return false;$options[$k]=$v;return true;}
 function add_option($k,$v,$unused='',$autoload=null){global $options;if(array_key_exists($k,$options))return false;$options[$k]=$v;return true;}
 function delete_option($k){global $options;unset($options[$k]);}
 function is_ssl(){return !get_option('test_http', false);}
@@ -73,7 +73,7 @@ function esc_url($value){return htmlspecialchars($value, ENT_QUOTES);}
 function esc_html($value){return htmlspecialchars($value, ENT_QUOTES);}
 function esc_attr($value){return htmlspecialchars($value, ENT_QUOTES);}
 function get_category_link($id){return 'https://example.test/category/'.$id;}
-function get_posts($args){return array();}
+function get_posts($args){return $GLOBALS['test_extra_posts']??array();}
 function get_privacy_policy_url(){return '';}
 function wp_date($format){return date($format);}
 function wp_footer(){}
