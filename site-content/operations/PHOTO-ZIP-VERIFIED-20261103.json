@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-03",
+  "timezone": "Asia/Tokyo",
+  "plugin_version": "1.23.1",
+  "source_commit": "98b828d",
+  "received": {
+    "total": 20,
+    "manmos": 9,
+    "whisky_and_hakushu": 11,
+    "arboralis": 0
+  },
+  "confirmed_experience": {
+    "visited": "2025-07",
+    "photographed_by_owner": true,
+    "first_distillery_visit": true,
+    "tasting_was_enjoyable": true
+  },
+  "photo_manager_total": 65,
+  "photo_gallery_count": 17,
+  "hakushu_visit_photos": 6,
+  "whisky_display_photos": 5,
+  "metadata_removed_from_new_images": true,
+  "public_caption_labels_removed": true,
+  "image_provenance_retained_in_management": true,
+  "private_records_updated": 4,
+  "verification": {
+    "php_checks": 422,
+    "python_tests": 17,
+    "admin_browser_checks": 17,
+    "public_browser_checks": 98,
+    "viewports": [
+      1440,
+      768,
+      390,
+      320
+    ],
+    "audited_pages": 20,
+    "internal_links_checked": 617,
+    "audit_problems": []
+  },
+  "public_visit_url": "https://hirogarushumi.com/hsh-hakushu-visit/"
+}

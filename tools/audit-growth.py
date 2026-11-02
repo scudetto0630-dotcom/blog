@@ -44,7 +44,7 @@ def fetch(path):
 
 def main():
     catalog = json.loads((ROOT / 'hirogaru-home/article-map.json').read_text()) + json.loads((ROOT / 'hirogaru-home/expanded-articles.json').read_text())
-    paths = ['/' + r['slug'] + '/' for r in catalog] + ['/', '/hsh-about/', '/hsh-editorial/', '/hsh-gallery/', '/hsh-whisky-notes/', '/hsh-updates/']
+    paths = ['/' + r['slug'] + '/' for r in catalog] + ['/', '/hsh-about/', '/hsh-editorial/', '/hsh-gallery/', '/hsh-whisky-notes/', '/hsh-updates/', '/hsh-hakushu-visit/']
     pages, rows, problems = {}, [], []
     with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:
         for path, page, status in pool.map(fetch, paths):
