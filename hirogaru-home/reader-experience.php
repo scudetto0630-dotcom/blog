@@ -67,14 +67,14 @@ function hsh_reader_scope() {
 add_filter('body_class', function($classes) { if (hsh_reader_scope()) $classes[]='hsh-reader-site'; return $classes; });
 add_action('wp_body_open', function() {
     if (hsh_reader_scope() && !is_front_page() && !hsh_current_topic() && !is_search() && !is_404()) {
-        echo '<a class="hsh-skip" href="#hsh-reading-content">本文へ移動</a>'.hsh_reader_header();
+        echo '<a class="hsh-skip" href="#main">本文へ移動</a>'.hsh_reader_header();
     }
 });
 add_action('wp_enqueue_scripts', function() {
     if (!hsh_reader_scope()) return;
-    wp_enqueue_style('hsh-home', plugin_dir_url(__FILE__).'assets/home.css', array(), '1.24.0');
-    wp_enqueue_style('hsh-reader', plugin_dir_url(__FILE__).'assets/reader.css', array('hsh-growth'), '1.24.0');
-    wp_enqueue_script('hsh-reader', plugin_dir_url(__FILE__).'assets/reader.js', array(), '1.24.0', true);
+    wp_enqueue_style('hsh-home', plugin_dir_url(__FILE__).'assets/home.css', array(), '1.24.1');
+    wp_enqueue_style('hsh-reader', plugin_dir_url(__FILE__).'assets/reader.css', array('hsh-growth'), '1.24.1');
+    wp_enqueue_script('hsh-reader', plugin_dir_url(__FILE__).'assets/reader.js', array(), '1.24.1', true);
 }, 120);
 function hsh_reader_bootstrap(){return '<script>document.documentElement.classList.add("hsh-reader-js");</script>';}
 add_action('wp_head',function(){if(hsh_reader_scope())echo hsh_reader_bootstrap();},0);

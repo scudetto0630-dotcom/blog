@@ -17,9 +17,17 @@ class Page(HTMLParser):
         self.meta, self.canonical, self.ids, self.links, self.photos = {}, [], set(), [], []
         self.json_text, self.json_nodes, self.json_errors = None, [], []
         self.in_h1, self.h1, self.caption, self.captions = False, '', None, []
+        self.breadcrumb_depth, self.breadcrumb_positions, self.breadcrumb_links = 0, [], []
 
     def handle_starttag(self, tag, attrs):
         a = dict(attrs)
+        if tag == 'div' and (self.breadcrumb_depth or a.get('itemtype', '').endswith('/BreadcrumbList')):
+            self.breadcrumb_depth += 1
+        if self.breadcrumb_depth:
+            if tag == 'meta' and a.get('itemprop') == 'position':
+                self.breadcrumb_positions.append(a.get('content'))
+            if tag == 'a' and a.get('itemprop') == 'item':
+                self.breadcrumb_links.append(a.get('href', ''))
         if a.get('id'):
             self.ids.add(a['id'])
         if tag == 'meta':
@@ -46,6 +54,8 @@ class Page(HTMLParser):
             self.caption += data
 
     def handle_endtag(self, tag):
+        if tag == 'div' and self.breadcrumb_depth:
+            self.breadcrumb_depth -= 1
         if tag == 'h1':
             self.in_h1 = False
         if tag == 'figcaption' and self.caption is not None:
@@ -95,10 +105,12 @@ def audit():
                 problems.append({'path': path, 'problem': 'redundant photo label'})
             article_nodes = [n for root in p.json_nodes for n in nodes(root) if any(t in ('Article', 'BlogPosting', 'NewsArticle') for t in (n.get('@type') if isinstance(n.get('@type'), list) else [n.get('@type')]))]
             if path.strip('/') in {a['slug'] for a in catalog}:
+                if not p.breadcrumb_positions or p.breadcrumb_positions != [str(i + 1) for i in range(len(p.breadcrumb_positions))] or len(p.breadcrumb_links) != len(p.breadcrumb_positions) or any(urlsplit(u).netloc != urlsplit(BASE).netloc for u in p.breadcrumb_links):
+                    problems.append({'path': path, 'problem': 'breadcrumb positions or links mismatch'})
                 if not article_nodes:
                     problems.append({'path': path, 'problem': 'Article structured data missing'})
                 for n in article_nodes:
-                    if n.get('headline') != p.h1:
+                    if n.get('headline') != p.h1.strip():
                         problems.append({'path': path, 'problem': 'Article headline mismatch'})
                     image = n.get('image', {})
                     url = image.get('url') if isinstance(image, dict) else image
