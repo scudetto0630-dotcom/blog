@@ -30,7 +30,7 @@ function hsh_growth_popular(){
 }
 function hsh_growth_gallery(){
     $out='<section class="hsh-gallery-page"><p>爪とぎの上でくつろいだり、枕を使ったり。うちのまんもすです。</p><div class="hsh-photo-grid">';
-    foreach(hsh_photo_manifest()['assets'] as $a)if($a['kind']==='provided'&&$a['subject']==='manmos')$out.='<figure class="hsh-photo">'.hsh_photo_image($a).'<figcaption>'.esc_html($a['alt']).'</figcaption></figure>';
+    foreach(hsh_photo_manifest()['assets'] as $a)if($a['kind']==='provided'&&$a['subject']==='manmos')$out.='<figure class="hsh-photo">'.hsh_photo_image($a).hsh_photo_figcaption(array_merge($a,array('caption'=>$a['alt']))).'</figure>';
     return $out.'</div><p>写真は管理人から提供したものです。</p><p><a href="'.esc_url(home_url('/manmos-cat-life/')).'">まんもすとの暮らしを読む →</a></p></section>';
 }
 function hsh_growth_tastes(){return array(
@@ -45,7 +45,7 @@ function hsh_growth_whisky(){
 }
 function hsh_whisky_display_gallery(){
     $manifest=hsh_photo_manifest();$out='<section class="hsh-whisky-photos"><h2>白州で撮った、ウイスキーの展示</h2><p>2025年7月に白州蒸溜所を見学したときの写真です。ここからは、展示されていたボトルを紹介します。</p><p><a href="'.esc_url(home_url('/hsh-hakushu-visit/')).'">初めての白州蒸溜所見学。写真と一緒に振り返る →</a></p><div class="hsh-photo-grid">';
-    foreach($manifest['collections']['whisky-displays']??array() as $key){$a=$manifest['assets'][$key];$out.='<figure class="hsh-photo">'.hsh_photo_image($a).'<figcaption>'.esc_html($a['caption']).'</figcaption></figure>';}
+    foreach($manifest['collections']['whisky-displays']??array() as $key){$a=$manifest['assets'][$key];$out.='<figure class="hsh-photo">'.hsh_photo_image($a).hsh_photo_figcaption($a).'</figure>';}
     return $out.'</div></section>';
 }
 function hsh_growth_updates(){
@@ -56,7 +56,7 @@ function hsh_growth_updates(){
     return $out.'</ul><p>内容の訂正に関する方針は、<a href="'.esc_url(home_url('/hsh-editorial/')).'">記事・広告について</a>にまとめています。</p></section>';
 }
 add_shortcode('hsh_manmos_gallery','hsh_growth_gallery');add_shortcode('hsh_whisky_notes','hsh_growth_whisky');add_shortcode('hsh_updates','hsh_growth_updates');
-add_action('wp_enqueue_scripts',function(){wp_enqueue_style('hsh-growth',plugin_dir_url(__FILE__).'assets/growth.css',array('hsh-reading'),'1.23.0');wp_enqueue_script('hsh-growth',plugin_dir_url(__FILE__).'assets/growth.js',array(),'1.23.0',true);},110);
+add_action('wp_enqueue_scripts',function(){wp_enqueue_style('hsh-growth',plugin_dir_url(__FILE__).'assets/growth.css',array('hsh-reading'),'1.23.1');wp_enqueue_script('hsh-growth',plugin_dir_url(__FILE__).'assets/growth.js',array(),'1.23.1',true);},110);
 add_filter('the_content',function($content){
     if(!is_singular('post')||!in_the_loop()||!is_main_query())return $content;$p=get_post();if(!hsh_owned_blog_post($p))return $content;
     $slug=hsh_growth_next($p->post_name);$next=$slug?get_page_by_path($slug,OBJECT,'post'):null;$summaries=hsh_growth_summaries();

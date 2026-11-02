@@ -3,14 +3,19 @@ if(!defined('ABSPATH'))exit;
 /** Owner supplied photographs and explicitly identified generated scenes. */
 function hsh_photo_manifest(){static $data=null;if($data===null){$data=json_decode(file_get_contents(__DIR__.'/photo-assets.json'),true);if(!is_array($data))$data=array('assets'=>array(),'articles'=>array());}return $data;}
 function hsh_photo_for_slug($slug){$m=hsh_photo_manifest();$key=$m['articles'][$slug]??null;return $key&&isset($m['assets'][$key])?$m['assets'][$key]:null;}
-function hsh_photo_caption($asset){return $asset['kind']==='provided'?'まんもす（提供写真）':($asset['subject']==='manmos'?'提供写真を参考にしたAI生成画像です。':'AI生成のイメージです。');}
+function hsh_photo_caption($asset){
+    if(($asset['kind']??'')==='generated')return '';
+    return trim(str_replace(array('（提供写真）','(提供写真)','・提供写真','提供写真・','管理人提供の写真です。','管理人提供の写真。'),'', $asset['caption']??''));
+}
+function hsh_photo_figcaption($asset){$caption=hsh_photo_caption($asset);return $caption!==''?'<figcaption>'.esc_html($caption).'</figcaption>':'';}
+
 function hsh_photo_image($asset,$eager=false){
     if(!isset($asset['file'])||!preg_match('/^[a-z0-9-]+\.webp$/D',$asset['file']))return '';
     return '<img src="'.esc_url(plugin_dir_url(__FILE__).'assets/photos/'.$asset['file']).'" alt="'.esc_attr($asset['alt']).'" width="'.(int)$asset['width'].'" height="'.(int)$asset['height'].'" loading="'.($eager?'eager':'lazy').'" decoding="async"'.($eager?' fetchpriority="high"':'').'>';
 }
 function hsh_photo_cover($post,$eager=false){
     if(!$post)return '';$asset=hsh_photo_for_slug($post->post_name);if(!$asset)return '';
-    return '<figure class="hsh-photo'.($asset['height']>$asset['width']?' hsh-photo-portrait':'').'"><div class="hsh-cover hsh-photo-cover">'.hsh_photo_image($asset,$eager).'</div><figcaption>'.esc_html($asset['caption']).'</figcaption></figure>';
+    return '<figure class="hsh-photo'.($asset['height']>$asset['width']?' hsh-photo-portrait':'').'"><div class="hsh-cover hsh-photo-cover">'.hsh_photo_image($asset,$eager).'</div>'.hsh_photo_figcaption($asset).'</figure>';
 }
 /** Place body photos at separate, balanced section boundaries, never within paragraphs or tables. */
 function hsh_insert_inline_photos($content,$slug){
@@ -22,7 +27,7 @@ function hsh_insert_inline_photos($content,$slug){
     $positions=array();$n=count($matches[0]);
     foreach($keys as $i=>$key){
         if(!isset($m['assets'][$key]))continue;$a=$m['assets'][$key];
-        $html='<figure class="hsh-photo hsh-inline-photo">'.hsh_photo_image($a).'<figcaption>'.esc_html($a['caption']).'</figcaption></figure>';
+        $html='<figure class="hsh-photo hsh-inline-photo">'.hsh_photo_image($a).hsh_photo_figcaption($a).'</figure>';
         $index=$n?min($n-1,(int)floor(($i+1)*$n/(count($keys)+1))):0;
         $offset=$n?$matches[0][$index][1]:strlen($body);
         $positions[]=array($offset,$html);
@@ -34,7 +39,7 @@ function hsh_insert_inline_photos($content,$slug){
 function hsh_topic_photo($slug){
     $m=hsh_photo_manifest();$key=$m['topics'][$slug]??'';
     if(!$key||!isset($m['assets'][$key]))return '';$a=$m['assets'][$key];
-    return '<span class="hsh-topic-photo">'.hsh_photo_image($a).'<span class="hsh-topic-caption">'.esc_html($a['caption']).'</span></span>';
+    return '<span class="hsh-topic-photo">'.hsh_photo_image($a).(hsh_photo_caption($a)!==''?'<span class="hsh-topic-caption">'.esc_html(hsh_photo_caption($a)).'</span>':'').'</span>';
 }
 add_filter('the_content',function($content){
     if(!is_singular('post')||!in_the_loop()||!is_main_query())return $content;
@@ -43,6 +48,6 @@ add_filter('the_content',function($content){
     $content=hsh_insert_inline_photos($content,$slug);
     if($slug!=='manmos-cat-life')return $content;
     $assets=hsh_photo_manifest()['assets'];$gallery='<section class="hsh-manmos-gallery"><h2>まんもすのいろいろな姿</h2><div>';
-    foreach(array('manmos-back','manmos-stretch') as $key){$gallery.='<figure class="hsh-photo">'.hsh_photo_image($assets[$key]).'<figcaption>'.esc_html($assets[$key]['caption']).'</figcaption></figure>';}
+    foreach(array('manmos-back','manmos-stretch') as $key){$gallery.='<figure class="hsh-photo">'.hsh_photo_image($assets[$key]).hsh_photo_figcaption($assets[$key]).'</figure>';}
     return $content.$gallery.'</div></section>';
 },23);

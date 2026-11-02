@@ -71,7 +71,7 @@ foreach($photos['assets'] as $asset){
 check(hsh_photo_for_slug('unrelated')===null,'photo mapping does not affect unrelated articles');
 check(strpos(hsh_photo_image(array('file'=>'../escape.webp')), '<img')===false,'photo helper rejects non-packaged paths');
 $cover=hsh_photo_cover((object)array('post_name'=>'manmos-cat-life'),true);
-check(strpos($cover,'fetchpriority="high"')!==false&&strpos($cover,'提供写真')!==false,'real owner photo gets eager cover and accurate caption');
+check(strpos($cover,'fetchpriority="high"')!==false&&strpos($cover,'枕を使ってのんびり')!==false,'real owner photo gets eager cover and a short descriptive caption');
 $cover=hsh_photo_cover((object)array('post_name'=>'cat-teaser-small-parts'));
-check(strpos($cover,'AI生成')!==false&&strpos($cover,'loading="lazy"')!==false,'generated photo stays explicitly identified');
+check(strpos($cover,'<figcaption>')===false&&strpos($cover,'loading="lazy"')!==false,'generated photo does not get a redundant visible label');
 echo "All blog next tests passed. Total checks including shared suites: $tests\n";
