@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-03",
+  "deployed_version": "1.24.3",
+  "deployed_commit": "8fb6845",
+  "items": 50,
+  "implemented_items": 43,
+  "prepared_pending_real_search_or_affiliate_experience": 7,
+  "content": {
+    "articles_revised": 13,
+    "body_photos_minimum": 2,
+    "article_affiliate_preparation_records": 13,
+    "private_manmos_series_notes_added": 3,
+    "old_anchor_ids_preserved": true
+  },
+  "checks": {
+    "php_including_shared_suites": 449,
+    "python": 17,
+    "read_only_preview_interactions": 37,
+    "private_admin_fixture_interactions": 17,
+    "public_photo_checks_across_4_widths": 98,
+    "public_reader_interactions": 20,
+    "public_page_audit": 27,
+    "public_audit_problems": 0,
+    "sitemap": {
+      "saved_list_excluded_from_page_sitemap": true,
+      "public_visit_page_remains_in_sitemap": true
+    }
+  },
+  "scope_notes": [
+    "Photo and 20 reader interaction checks ran on 1.24.0–1.24.2. The final 1.24.3 only adds sitemap exclusion; its PHP checks, live sitemap, 27-page audit and authenticated status were rechecked.",
+    "Actual Search Console page/query data remains unimported; no ranking or conversion gain is asserted.",
+    "No affiliate agreement or paid product trial was invented.",
+    "Reading-list and reading-position state stays on the reader device."
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "scope": "390px/DPR1 validation browser; requests relayed through the same HTTP fetcher; not field Core Web Vitals or a ranking measure",
+  "limits": "One before/after validation run through a request relay. Timing includes network and relay variance; no field speed or ranking gain is asserted. After measurements were taken with 1.24.1; 1.24.2 only changes category introduction text.",
+  "rows": [
+    {
+      "page": "home",
+      "bytes_before": 981745,
+      "bytes_after": 482363,
+      "bytes_reduction_percent": 50.9,
+      "lcp_before_ms": 3928,
+      "lcp_after_ms": 2780,
+      "cls_before": 0,
+      "cls_after": 0
+    },
+    {
+      "page": "glenlivet-12-first-bottles",
+      "bytes_before": 906436,
+      "bytes_after": 887254,
+      "bytes_reduction_percent": 2.1,
+      "lcp_before_ms": 2784,
+      "lcp_after_ms": 4040,
+      "cls_before": 1.8789750040171188e-06,
+      "cls_after": 0
+    },
+    {
+      "page": "hsh-gallery",
+      "bytes_before": 1340813,
+      "bytes_after": 968680,
+      "bytes_reduction_percent": 27.8,
+      "lcp_before_ms": 3592,
+      "lcp_after_ms": 4868,
+      "cls_before": 0,
+      "cls_after": 0
+    }
+  ]
+}
