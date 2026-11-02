@@ -72,9 +72,9 @@ add_action('wp_body_open', function() {
 });
 add_action('wp_enqueue_scripts', function() {
     if (!hsh_reader_scope()) return;
-    wp_enqueue_style('hsh-home', plugin_dir_url(__FILE__).'assets/home.css', array(), '1.24.2');
-    wp_enqueue_style('hsh-reader', plugin_dir_url(__FILE__).'assets/reader.css', array('hsh-growth'), '1.24.2');
-    wp_enqueue_script('hsh-reader', plugin_dir_url(__FILE__).'assets/reader.js', array(), '1.24.2', true);
+    wp_enqueue_style('hsh-home', plugin_dir_url(__FILE__).'assets/home.css', array(), '1.24.3');
+    wp_enqueue_style('hsh-reader', plugin_dir_url(__FILE__).'assets/reader.css', array('hsh-growth'), '1.24.3');
+    wp_enqueue_script('hsh-reader', plugin_dir_url(__FILE__).'assets/reader.js', array(), '1.24.3', true);
 }, 120);
 function hsh_reader_bootstrap(){return '<script>document.documentElement.classList.add("hsh-reader-js");</script>';}
 add_action('wp_head',function(){if(hsh_reader_scope())echo hsh_reader_bootstrap();},0);
@@ -137,7 +137,19 @@ function hsh_reader_should_noindex() {
     if(is_page()&&get_post_field('post_name',get_queried_object_id())==='hsh-reading-list')return true;
     return isset($_GET['hsh_photo']) && is_page() && get_post_field('post_name',get_queried_object_id())==='hsh-gallery';
 }
-add_filter('wp_sitemaps_posts_query_args',function($args,$type){if($type==='page'){$p=get_page_by_path('hsh-reading-list',OBJECT,'page');if($p)$args['post__not_in']=array_values(array_unique(array_merge($args['post__not_in']??array(),array((int)$p->ID))));}return $args;},10,2);
+function hsh_reader_sitemap_entries($entries) {
+    $saved=rtrim(home_url('/hsh-reading-list/'),'/');
+    return array_values(array_filter($entries,function($entry)use($saved){return !isset($entry['loc'])||rtrim($entry['loc'],'/')!==$saved;}));
+}
+add_filter('wp_sitemaps_posts_query_args',function($args,$type){if($type==='page'){$owned=get_option('hsh_edit_pages',array());$id=(int)($owned['reading-list']??0);if(!$id){$p=get_page_by_path('hsh-reading-list',OBJECT,'page');$id=$p?(int)$p->ID:0;}if($id)$args['post__not_in']=array_values(array_unique(array_merge($args['post__not_in']??array(),array($id))));}return $args;},999,2);
+// Preserve the provider's entries and extension fields while filtering utility URLs.
+// The guard lets the inner provider call finish its normal query without recursion.
+add_filter('wp_sitemaps_posts_pre_url_list',function($list,$type,$page){
+    if($type!=='page')return $list;
+    static $building=false;if($building)return $list;
+    if($list===null){$building=true;try{$provider=wp_sitemaps_get_server()->registry->get_provider('posts');$list=$provider?$provider->get_url_list($page,$type):null;}finally{$building=false;}}
+    return is_array($list)?hsh_reader_sitemap_entries($list):$list;
+},PHP_INT_MAX,3);
 add_filter('wp_robots',function($robots) { if(hsh_reader_should_noindex()) { $robots['noindex']=true;unset($robots['index']); } return $robots; },30);
 function hsh_reader_rendered($html) {
     if(strpos($html,'</head>')===false)return $html;

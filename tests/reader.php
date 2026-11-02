@@ -36,6 +36,7 @@ check(hsh_reader_snapshot('before test')&&count(get_option('hsh_reader_checkpoin
 add_option('hsh_reader_checkpoint_lock',time());check(hsh_reader_snapshot('concurrent')===false,'concurrent checkpoint cannot overwrite another append');delete_option('hsh_reader_checkpoint_lock');
 $GLOBALS['test_extra_posts']=array((object)array('ID'=>1900,'post_type'=>'post','post_status'=>'private','post_name'=>'private-future','post_title'=>'Private','post_excerpt'=>'private','post_category'=>array(8)),(object)array('ID'=>1901,'post_type'=>'post','post_status'=>'publish','post_name'=>'new-story','post_title'=>'New story','post_excerpt'=>'Public','post_category'=>array(8)));
 $ids=array_column(hsh_reader_catalog(),'id');check(in_array('new-story',$ids,true)&&!in_array('private-future',$ids,true),'reader catalog includes new published stories and excludes private posts');unset($GLOBALS['test_extra_posts']);
+$entries=array(array('loc'=>home_url('/hsh-reading-list/'),'lastmod'=>'2026-11-03'),array('loc'=>home_url('/hsh-hakushu-visit/'),'lastmod'=>'2026-10-30'));check(hsh_reader_sitemap_entries($entries)===array($entries[1]),'sitemap excludes local-only saved list and preserves public entry metadata');
 echo "All reader checks passed. Total including shared suites: $tests\n";
 
 // Read-only preview pages use the same PHP helpers, CSS and JS as production.
