@@ -1,6 +1,6 @@
 <?php
 if(!defined('ABSPATH'))exit;
-function hsh_planner_article_fields(){return array('title','topic','stage','affiliate','experience','product','link','notes','photo_notes','due','reason','usage','pros','cons','unknowns','source_notes','draft_text');}
+function hsh_planner_article_fields(){return array('title','topic','stage','affiliate','experience','product','link','notes','photo_notes','due','reason','usage','pros','cons','unknowns','source_notes','offer_fit','pre_use','followups','draft_text');}
 function hsh_planner_photo_fields(){return array('title','kind','subject','purpose','rights','notes','articles','sources');}
 function hsh_planner_with_history($next,$current){
     $history=is_array($current)?($current['history']??array()):array();
@@ -9,7 +9,7 @@ function hsh_planner_with_history($next,$current){
 }
 function hsh_planner_enrich($data,$store){
     $hashes=array();$manifest=hsh_photo_manifest();
-    foreach($data['articles'] as $id=>&$a){foreach(array('reason','usage','pros','cons','unknowns','source_notes','draft_text') as $k)if(!isset($a[$k]))$a[$k]='';$a['history']=$a['history']??array();$a['due_soon']=!empty($a['due'])&&$a['due']<=wp_date('Y-m-d',time()+14*DAY_IN_SECONDS);$a['needs_experience']=$a['experience']==='unknown';$a['photo_waiting']=trim($a['photo_notes'])!=='';$a['has_reference']=trim($a['source_notes'])!=='';}unset($a);
+    foreach($data['articles'] as $id=>&$a){foreach(array('reason','usage','pros','cons','unknowns','source_notes','offer_fit','pre_use','followups','draft_text') as $k)if(!isset($a[$k]))$a[$k]='';$a['history']=$a['history']??array();$a['due_soon']=!empty($a['due'])&&$a['due']<=wp_date('Y-m-d',time()+14*DAY_IN_SECONDS);$a['needs_experience']=$a['experience']==='unknown';$a['photo_waiting']=trim($a['photo_notes'])!=='';$a['has_reference']=trim($a['source_notes'])!=='';}unset($a);
     foreach($data['photos'] as $id=>&$p){
         $p['placements']=array();$p['history']=$p['history']??array();$p['sha256']='';$p['exif_status']='未点検';
         if(strpos($id,'asset:')===0){$key=substr($id,6);$asset=$manifest['assets'][$key];$p['sha256']=$asset['sha256']??'';$p['exif_status']='WebP化済み。原本の位置情報とは別に管理';
@@ -51,7 +51,7 @@ function hsh_planner_advanced_save($d){
             $source=$store[$d['id']];$target=$store[$d['target']]??null;
             if($d['expected']!==hsh_planner_fingerprint($source)||$d['expected_target']!==(is_array($target)?hsh_planner_fingerprint($target):null))return new WP_Error('hsh_planner_conflict','管理表が変わりました。更新してから引き継いでください。',array('status'=>409));
             $next=$snapshot['articles'][$d['target']];$fields=array_intersect_key($next,array_flip(hsh_planner_article_fields()));
-            foreach(array('product','link','due','reason','usage','pros','cons','unknowns','source_notes','draft_text') as $k)if(($fields[$k]??'')===''&&isset($source[$k]))$fields[$k]=$source[$k];
+            foreach(array('product','link','due','reason','usage','pros','cons','unknowns','source_notes','offer_fit','pre_use','followups','draft_text') as $k)if(($fields[$k]??'')===''&&isset($source[$k]))$fields[$k]=$source[$k];
             foreach(array('notes','photo_notes') as $k)if(!empty($source[$k]))$fields[$k]=($fields[$k]??'').(($fields[$k]??'')!==''?"\n\n":'').$source[$k];
             foreach(array('affiliate'=>'none','experience'=>'unknown') as $k=>$empty)if(($fields[$k]??$empty)===$empty&&isset($source[$k]))$fields[$k]=$source[$k];
             $valid=hsh_planner_validate(array('action'=>'save','id'=>$d['target'],'expected'=>$d['expected_target'],'fields'=>$fields),$snapshot);if(is_wp_error($valid))return $valid;

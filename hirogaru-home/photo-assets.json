@@ -10,7 +10,19 @@
       "subject": "manmos",
       "alt": "まんもすの顔のアップ。管理人提供の写真です。",
       "caption": "まんもす（提供写真）",
-      "dhash": "0909888c8c8c8c99"
+      "dhash": "0909888c8c8c8c99",
+      "variants": {
+        "480": {
+          "file": "manmos-portrait-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 29166,
+          "sha256": "f7e17ec0fc1703fd3c6a504e18bc880b01ba502467daa8637359c4b21e80bcd0"
+        }
+      },
+      "tags": [
+        "face"
+      ]
     },
     "manmos-back": {
       "file": "manmos-back.webp",
@@ -22,7 +34,19 @@
       "subject": "manmos",
       "alt": "茶色の長い毛をしたまんもすの後ろ姿。管理人提供の写真です。",
       "caption": "まんもすの後ろ姿（提供写真）",
-      "dhash": "1e1f0e0d2d3f9bd7"
+      "dhash": "1e1f0e0d2d3f9bd7",
+      "variants": {
+        "480": {
+          "file": "manmos-back-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 41818,
+          "sha256": "4b75f25e5174547066afa6609c5120d29f3feba649379b8e6c4ffd75051c2b6a"
+        }
+      },
+      "tags": [
+        "scratcher"
+      ]
     },
     "manmos-stretch": {
       "file": "manmos-stretch.webp",
@@ -34,7 +58,20 @@
       "subject": "manmos",
       "alt": "布団の上で体を伸ばしているまんもす。管理人提供の写真です。",
       "caption": "体を伸ばしたまんもす（提供写真）",
-      "dhash": "9d2433233220298c"
+      "dhash": "9d2433233220298c",
+      "variants": {
+        "480": {
+          "file": "manmos-stretch-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 20772,
+          "sha256": "b4ed561daeefe802a6dcce2c0a46766dae97adfb39bd7fc9cc9b8715495936b3"
+        }
+      },
+      "tags": [
+        "relax",
+        "sleep"
+      ]
     },
     "manmos-tower": {
       "file": "manmos-tower.webp",
@@ -46,7 +83,20 @@
       "subject": "manmos",
       "alt": "キャットタワーの上にいるまんもす。管理人提供の写真です。",
       "caption": "まんもす（提供写真）",
-      "dhash": "13038488185a120e"
+      "dhash": "13038488185a120e",
+      "variants": {
+        "480": {
+          "file": "manmos-tower-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 14804,
+          "sha256": "ad230aa68194f132c502bb8b9ff0a6bd76692afa9cfc96241691ad156685b5d3"
+        }
+      },
+      "tags": [
+        "scratcher",
+        "relax"
+      ]
     },
     "manmos-rest": {
       "file": "manmos-rest.webp",
@@ -94,7 +144,23 @@
       "subject": "whisky",
       "alt": "グレンリベット12年のボトルとハイボールを描いたAI生成画像です。",
       "caption": "AI生成のイメージです。",
-      "dhash": "e7e76561450545a5"
+      "dhash": "e7e76561450545a5",
+      "variants": {
+        "480": {
+          "file": "glenlivet-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 14006,
+          "sha256": "08ef7f1c7405376de802177fc00b8795003f594796136431d97804836fab8a90"
+        },
+        "900": {
+          "file": "glenlivet-900.webp",
+          "width": 900,
+          "height": 600,
+          "bytes": 38198,
+          "sha256": "d46ff90770f06088d9e7ff0e26da3ac1a1801f5c310494408a3f7f713d73db51"
+        }
+      }
     },
     "desk": {
       "file": "desk.webp",
@@ -118,7 +184,19 @@
       "alt": "正面から撮影したまんもすの顔。管理人提供の写真です。",
       "sha256": "d30cbb751777351301e25a5d19687664570007195dc0550caf7512754e019572",
       "bytes": 180630,
-      "dhash": "1f57664e0c2c98ac"
+      "dhash": "1f57664e0c2c98ac",
+      "variants": {
+        "480": {
+          "file": "manmos-front-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 34444,
+          "sha256": "f25430a75e4c3addf87139488cbbaa719da3f2425286fedb79dcaf86333b501e"
+        }
+      },
+      "tags": [
+        "face"
+      ]
     },
     "manmos-lying": {
       "file": "manmos-lying.webp",
@@ -130,7 +208,19 @@
       "alt": "横になって顔をこちらへ向けるまんもす。管理人提供の写真です。",
       "sha256": "59b995b9da073996a3963d6fa6f95cefeb62b39d92b3f42bd75722b2de8912e5",
       "bytes": 145584,
-      "dhash": "8393bb2b2b33171c"
+      "dhash": "8393bb2b2b33171c",
+      "variants": {
+        "480": {
+          "file": "manmos-lying-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 27954,
+          "sha256": "15666138149b50c1f4c0bdf3344f0b7e2770a1a00a2d098cdc61da133282f4c5"
+        }
+      },
+      "tags": [
+        "relax"
+      ]
     },
     "manmos-sitting": {
       "file": "manmos-sitting.webp",
@@ -142,7 +232,19 @@
       "alt": "後ろ脚を前へ伸ばして座っているまんもす。管理人提供の写真です。",
       "sha256": "c7fa64ad3039d9197f6a23ebad8ef8191487bab52e79be11985a1433c8b3231c",
       "bytes": 88502,
-      "dhash": "e626b33333277362"
+      "dhash": "e626b33333277362",
+      "variants": {
+        "480": {
+          "file": "manmos-sitting-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 18982,
+          "sha256": "946d1781d09914efaa9f54dd32b79d5fd4c40d06e09f0929be6d836fc6d1dd1a"
+        }
+      },
+      "tags": [
+        "relax"
+      ]
     },
     "article-carrier": {
       "file": "article-carrier.webp",
@@ -154,7 +256,16 @@
       "caption": "提供写真を参考にしたAI生成画像です。",
       "sha256": "8c6f10a979b8ac10e484384e0ecff4840ccfd6895e00e56228dac0f55e9baee9",
       "bytes": 149754,
-      "dhash": "130d0c270283c124"
+      "dhash": "130d0c270283c124",
+      "variants": {
+        "480": {
+          "file": "article-carrier-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 25866,
+          "sha256": "d0f7abd7aca8e779e9a2bbec1b4b6791b753f9cda6236e37851bb383733f5b30"
+        }
+      }
     },
     "article-vet": {
       "file": "article-vet.webp",
@@ -166,7 +277,16 @@
       "caption": "提供写真を参考にしたAI生成画像です。",
       "sha256": "3be998584f4e897c1b53ab0e1ad2449acf8594071ffcad9b72c5d9a96846b597",
       "bytes": 133206,
-      "dhash": "3318939390d55d39"
+      "dhash": "3318939390d55d39",
+      "variants": {
+        "480": {
+          "file": "article-vet-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 26184,
+          "sha256": "aaf92e72bc2bf0cef890a4c7d8ead26a6566052a29d8516456466db20439e571"
+        }
+      }
     },
     "article-labels": {
       "file": "article-labels.webp",
@@ -190,7 +310,16 @@
       "caption": "AI生成のイメージです。",
       "sha256": "e8edb9b5cf8eb76db4770c890835861e38f9631f50ddaa16f600d76ec245b1bc",
       "bytes": 91634,
-      "dhash": "7d2eb7c65c19d8d2"
+      "dhash": "7d2eb7c65c19d8d2",
+      "variants": {
+        "480": {
+          "file": "article-sherry-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 22488,
+          "sha256": "cf2c8fed0f206764958cc39d5e61821a036c84c0a656871bfb88e6935a89183f"
+        }
+      }
     },
     "article-workflow": {
       "file": "article-workflow.webp",
@@ -538,7 +667,20 @@
       "caption": "まんもす（提供写真）",
       "sha256": "dfcdfe975cb76adac87430d07a024bbf3ab25c173cd9311a784f6e74ced463c0",
       "bytes": 128288,
-      "dhash": "cf474b4dc70b4343"
+      "dhash": "cf474b4dc70b4343",
+      "variants": {
+        "480": {
+          "file": "manmos-window-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 29378,
+          "sha256": "4004677e64ef7c80d5fa81d5099b84cdc9881a07c14584d1da97fee60ee19286"
+        }
+      },
+      "tags": [
+        "face",
+        "relax"
+      ]
     },
     "hakushu-highball": {
       "file": "hakushu-highball.webp",
@@ -554,7 +696,23 @@
       "source_file": "138455_0.jpg",
       "source_batch": "20261103",
       "rights": "owner",
-      "metadata_removed": true
+      "metadata_removed": true,
+      "variants": {
+        "480": {
+          "file": "hakushu-highball-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 27508,
+          "sha256": "fed20a7e77da06160ada3af4b503596cdf16bbb00225912966f013942689af5b"
+        },
+        "900": {
+          "file": "hakushu-highball-900.webp",
+          "width": 900,
+          "height": 1200,
+          "bytes": 61958,
+          "sha256": "96e8c8ce39041f0b0f519d460b79fb9edd020e7fd51721083ab91e410fd9cde8"
+        }
+      }
     },
     "hakushu-entrance": {
       "file": "hakushu-entrance.webp",
@@ -570,7 +728,16 @@
       "source_file": "138456_0.jpg",
       "source_batch": "20261103",
       "rights": "owner",
-      "metadata_removed": true
+      "metadata_removed": true,
+      "variants": {
+        "480": {
+          "file": "hakushu-entrance-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 43736,
+          "sha256": "702b327f2c73a4e5976ae694066815031d26da000bee0036afb31bb4ab46e2cf"
+        }
+      }
     },
     "hakushu-history": {
       "file": "hakushu-history.webp",
@@ -586,7 +753,16 @@
       "source_file": "138457_0.jpg",
       "source_batch": "20261103",
       "rights": "owner",
-      "metadata_removed": true
+      "metadata_removed": true,
+      "variants": {
+        "480": {
+          "file": "hakushu-history-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 38470,
+          "sha256": "b7a0f6de3111f303e0fa7f9a5f9b3c84ae43fe4fe8377c4d65bab86da34171da"
+        }
+      }
     },
     "hakushu-still": {
       "file": "hakushu-still.webp",
@@ -602,7 +778,16 @@
       "source_file": "138458_0.jpg",
       "source_batch": "20261103",
       "rights": "owner",
-      "metadata_removed": true
+      "metadata_removed": true,
+      "variants": {
+        "480": {
+          "file": "hakushu-still-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 18966,
+          "sha256": "daa1e7fb37d318bfd22d338f78a1bd65647cf1623363bd3979f033ec8fb5eefe"
+        }
+      }
     },
     "whisky-scotch-display": {
       "file": "whisky-scotch-display.webp",
@@ -618,7 +803,16 @@
       "source_file": "138459_0.jpg",
       "source_batch": "20261103",
       "rights": "owner",
-      "metadata_removed": true
+      "metadata_removed": true,
+      "variants": {
+        "480": {
+          "file": "whisky-scotch-display-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 46182,
+          "sha256": "9f2b033c18ea92c34cb34046c44d000116495e25e0976c5cf90de27acdc694ed"
+        }
+      }
     },
     "whisky-irish-display": {
       "file": "whisky-irish-display.webp",
@@ -634,7 +828,16 @@
       "source_file": "138460_0.jpg",
       "source_batch": "20261103",
       "rights": "owner",
-      "metadata_removed": true
+      "metadata_removed": true,
+      "variants": {
+        "480": {
+          "file": "whisky-irish-display-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 40998,
+          "sha256": "d89a858e273e1967c0a3326c66790db535edc3be08bdb5b0d122dbb52f1f52f0"
+        }
+      }
     },
     "whisky-japanese-display": {
       "file": "whisky-japanese-display.webp",
@@ -650,7 +853,16 @@
       "source_file": "138461_0.jpg",
       "source_batch": "20261103",
       "rights": "owner",
-      "metadata_removed": true
+      "metadata_removed": true,
+      "variants": {
+        "480": {
+          "file": "whisky-japanese-display-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 39334,
+          "sha256": "3f22aea2bb0ef63d69a584e6461d02f3b3a5a339af9992014456dc5778816462"
+        }
+      }
     },
     "whisky-american-display": {
       "file": "whisky-american-display.webp",
@@ -666,7 +878,16 @@
       "source_file": "138462_0.jpg",
       "source_batch": "20261103",
       "rights": "owner",
-      "metadata_removed": true
+      "metadata_removed": true,
+      "variants": {
+        "480": {
+          "file": "whisky-american-display-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 46968,
+          "sha256": "5af3bf3ea36ba6625cc1c16a4da935798d0fc9f51280fd41615f02f832bb8e60"
+        }
+      }
     },
     "whisky-world-display": {
       "file": "whisky-world-display.webp",
@@ -682,7 +903,16 @@
       "source_file": "138463_0.jpg",
       "source_batch": "20261103",
       "rights": "owner",
-      "metadata_removed": true
+      "metadata_removed": true,
+      "variants": {
+        "480": {
+          "file": "whisky-world-display-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 35810,
+          "sha256": "e176e69cf2402f163ce3b0a802559bbeb322b5c6fee10b8ce6021cef09b8b29c"
+        }
+      }
     },
     "hakushu-tasting-table": {
       "file": "hakushu-tasting-table.webp",
@@ -698,7 +928,16 @@
       "source_file": "138464_0.jpg",
       "source_batch": "20261103",
       "rights": "owner",
-      "metadata_removed": true
+      "metadata_removed": true,
+      "variants": {
+        "480": {
+          "file": "hakushu-tasting-table-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 32218,
+          "sha256": "2cb21e217b4ddc94852207f8412015404b8b1df2b6f3fe53092c61954356445d"
+        }
+      }
     },
     "hakushu-tasting-glass": {
       "file": "hakushu-tasting-glass.webp",
@@ -714,7 +953,23 @@
       "source_file": "138465_0.jpg",
       "source_batch": "20261103",
       "rights": "owner",
-      "metadata_removed": true
+      "metadata_removed": true,
+      "variants": {
+        "480": {
+          "file": "hakushu-tasting-glass-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 14806,
+          "sha256": "e4bddffc057baf83fa719308a4f538f4ba7652b17aec445e820eb8fe7a4ea9c4"
+        },
+        "900": {
+          "file": "hakushu-tasting-glass-900.webp",
+          "width": 900,
+          "height": 675,
+          "bytes": 32486,
+          "sha256": "8dfab71cf1a399328d84e25e57b9e30ada343c8e53c241861c596e904d8245f7"
+        }
+      }
     },
     "manmos-zip-back": {
       "file": "manmos-zip-back.webp",
@@ -730,7 +985,19 @@
       "source_file": "138466_0.jpg",
       "source_batch": "20261103",
       "rights": "permission",
-      "metadata_removed": true
+      "metadata_removed": true,
+      "variants": {
+        "480": {
+          "file": "manmos-zip-back-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 43444,
+          "sha256": "ed5b7006b5f12099d4331816d1240aa43dfbad6c6da7c151c6dfafa901a7779b"
+        }
+      },
+      "tags": [
+        "scratcher"
+      ]
     },
     "manmos-zip-bed": {
       "file": "manmos-zip-bed.webp",
@@ -746,7 +1013,20 @@
       "source_file": "138467_0.jpg",
       "source_batch": "20261103",
       "rights": "permission",
-      "metadata_removed": true
+      "metadata_removed": true,
+      "variants": {
+        "480": {
+          "file": "manmos-zip-bed-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 26000,
+          "sha256": "c4a00809d2adbe8184410b940c8c1424bfe6d3ea113da1508ddb705f9865322f"
+        }
+      },
+      "tags": [
+        "relax",
+        "sleep"
+      ]
     },
     "manmos-zip-window": {
       "file": "manmos-zip-window.webp",
@@ -762,7 +1042,27 @@
       "source_file": "138468_0.jpg",
       "source_batch": "20261103",
       "rights": "permission",
-      "metadata_removed": true
+      "metadata_removed": true,
+      "variants": {
+        "480": {
+          "file": "manmos-zip-window-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 40842,
+          "sha256": "4498163dfe3ba94db17a46f4ef4b47608288c3376d7fe8367db5e98db8312928"
+        },
+        "900": {
+          "file": "manmos-zip-window-900.webp",
+          "width": 900,
+          "height": 1200,
+          "bytes": 131300,
+          "sha256": "867af6539b3d0ffc0ebed4999211097ed8523d0f107b63407daaf2805639b081"
+        }
+      },
+      "tags": [
+        "face",
+        "relax"
+      ]
     },
     "manmos-zip-sitting": {
       "file": "manmos-zip-sitting.webp",
@@ -778,7 +1078,26 @@
       "source_file": "138469_0.jpg",
       "source_batch": "20261103",
       "rights": "permission",
-      "metadata_removed": true
+      "metadata_removed": true,
+      "variants": {
+        "480": {
+          "file": "manmos-zip-sitting-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 33718,
+          "sha256": "1949ea04e5401ae702cf0ad7571508a111c0ee81ef8a15f5ea140ac028fa8d41"
+        },
+        "900": {
+          "file": "manmos-zip-sitting-900.webp",
+          "width": 900,
+          "height": 1200,
+          "bytes": 98702,
+          "sha256": "eb1c4d5cc0fbf9d858fc7c0748668e7a0eed98593ca099625d160ec15d4cf385"
+        }
+      },
+      "tags": [
+        "relax"
+      ]
     },
     "manmos-zip-paw": {
       "file": "manmos-zip-paw.webp",
@@ -794,7 +1113,19 @@
       "source_file": "138470_0.jpg",
       "source_batch": "20261103",
       "rights": "permission",
-      "metadata_removed": true
+      "metadata_removed": true,
+      "variants": {
+        "480": {
+          "file": "manmos-zip-paw-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 28724,
+          "sha256": "70214da5c7a18915cb5d51b8591940c16156f6c7428fa63ea935a2fd83b5e4fd"
+        }
+      },
+      "tags": [
+        "relax"
+      ]
     },
     "manmos-zip-groom": {
       "file": "manmos-zip-groom.webp",
@@ -810,7 +1141,20 @@
       "source_file": "138471_0.jpg",
       "source_batch": "20261103",
       "rights": "permission",
-      "metadata_removed": true
+      "metadata_removed": true,
+      "variants": {
+        "480": {
+          "file": "manmos-zip-groom-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 25874,
+          "sha256": "9b4edf958c056c8e98180bc7cf6dab0ca983e29f64cdab27c29dcfe3640ef1c8"
+        }
+      },
+      "tags": [
+        "face",
+        "relax"
+      ]
     },
     "manmos-zip-scratcher": {
       "file": "manmos-zip-scratcher.webp",
@@ -826,7 +1170,19 @@
       "source_file": "138472_0.jpg",
       "source_batch": "20261103",
       "rights": "permission",
-      "metadata_removed": true
+      "metadata_removed": true,
+      "variants": {
+        "480": {
+          "file": "manmos-zip-scratcher-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 24300,
+          "sha256": "8432b948d6e5417afe3c12d69b6189792648bd2967a7eefa91b36cf1dc1ad878"
+        }
+      },
+      "tags": [
+        "scratcher"
+      ]
     },
     "manmos-zip-pillow": {
       "file": "manmos-zip-pillow.webp",
@@ -842,7 +1198,27 @@
       "source_file": "138473_0.jpg",
       "source_batch": "20261103",
       "rights": "permission",
-      "metadata_removed": true
+      "metadata_removed": true,
+      "variants": {
+        "480": {
+          "file": "manmos-zip-pillow-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 18750,
+          "sha256": "539c6e2934dc49a4371c1f0110c6cbc1b768e683f5fb9ba72f95303c5f77c882"
+        },
+        "900": {
+          "file": "manmos-zip-pillow-900.webp",
+          "width": 900,
+          "height": 675,
+          "bytes": 41668,
+          "sha256": "d9dd8b38c12dc27194526d2013e25162c786d881514ec4ae8e7a98193a7ecc1a"
+        }
+      },
+      "tags": [
+        "sleep",
+        "relax"
+      ]
     },
     "manmos-zip-stretch": {
       "file": "manmos-zip-stretch.webp",
@@ -858,7 +1234,20 @@
       "source_file": "138474_0.jpg",
       "source_batch": "20261103",
       "rights": "permission",
-      "metadata_removed": true
+      "metadata_removed": true,
+      "variants": {
+        "480": {
+          "file": "manmos-zip-stretch-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 29162,
+          "sha256": "449a32f7d8228fcdc7651c54a7282fdd92d8719519f71157f7bdb3733186ac00"
+        }
+      },
+      "tags": [
+        "sleep",
+        "relax"
+      ]
     }
   },
   "articles": {
@@ -952,5 +1341,12 @@
       "whisky-american-display",
       "whisky-world-display"
     ]
+  },
+  "pages": {
+    "hsh-gallery": "manmos-zip-window",
+    "hsh-whisky-notes": "whisky-japanese-display",
+    "hsh-hakushu-visit": "hakushu-entrance",
+    "hsh-about": "manmos-front",
+    "hsh-editorial": "manmos-portrait"
   }
 }

@@ -29,23 +29,23 @@ function hsh_growth_popular(){
     return $out.'</ul></section>';
 }
 function hsh_growth_gallery(){
-    $out='<section class="hsh-gallery-page"><p>爪とぎの上でくつろいだり、枕を使ったり。うちのまんもすです。</p><div class="hsh-photo-grid">';
-    foreach(hsh_photo_manifest()['assets'] as $a)if($a['kind']==='provided'&&$a['subject']==='manmos')$out.='<figure class="hsh-photo">'.hsh_photo_image($a).hsh_photo_figcaption(array_merge($a,array('caption'=>$a['alt']))).'</figure>';
+    $out='<section class="hsh-gallery-page"><p>爪とぎの上でくつろいだり、枕を使ったり。うちのまんもすです。</p>'.hsh_reader_gallery_filters().'<div class="hsh-photo-grid">';
+    foreach(hsh_photo_manifest()['assets'] as $a)if($a['kind']==='provided'&&$a['subject']==='manmos')$out.='<figure class="hsh-photo"'.(hsh_reader_gallery_matches($a)?'':' hidden').' data-photo-tags="'.esc_attr(implode(' ',$a['tags']??array('relax'))).'">'.hsh_photo_image($a,false,'(max-width:600px) calc(100vw - 44px), 360px').hsh_photo_figcaption(array_merge($a,array('caption'=>$a['alt']))).'</figure>';
     return $out.'</div><p>写真は管理人から提供したものです。</p><p><a href="'.esc_url(home_url('/manmos-cat-life/')).'">まんもすとの暮らしを読む →</a></p></section>';
 }
 function hsh_growth_tastes(){return array(
 array('name'=>'グレンリベット12年','note'=>'花のような、上品な香り。最初は詳しいことが分からなくても飲みやすかった。','reason'=>'グラスのおまけが付いていた。','slug'=>'glenlivet-12-first-bottles'),
 array('name'=>'グレングラント アルボラリス','note'=>'オレンジジュースのような味を想像していた。実際には甘くなかったけど、飲みやすかった。','reason'=>'YouTubeで飲んでいるのを見て気になった。','slug'=>''),
 array('name'=>'グレンファークラス12年','note'=>'ぶどうパンに顔をうずめたみたいな匂い。レーズンのような香りが好きなんだと思う。','reason'=>'シェリーカスクが好き。','slug'=>'sherry-cask-notes'),
-array('name'=>'ジムビーム','note'=>'自分の口には合わなかった。この1本の感想なので、ほかのバーボンまで同じとは考えていない。','reason'=>'購入した理由は、まだメモに残していない。','slug'=>''));}
+array('name'=>'ジムビーム','note'=>'自分の口には合わなかった。ジムビームを飲んだときの感想です。','reason'=>'購入した理由は、まだメモに残していない。','slug'=>''));}
 function hsh_growth_whisky(){
-    $out='<section class="hsh-taste-index"><p>飲んだときの印象を、自分の言葉で残しています。詳しい香りの名前は分からなくても、「これは好き」はあるので。</p><p>普段はハイボールかハーフロック。ここに書いた感想は、同じ条件で飲み比べた結果ではありません。</p>';
-    foreach(hsh_growth_tastes() as $r){$out.='<article><h2>'.esc_html($r['name']).'</h2><p>'.esc_html($r['note']).'</p><dl><dt>選んだきっかけ・好み</dt><dd>'.esc_html($r['reason']).'</dd></dl>';if($r['slug'])$out.='<a href="'.esc_url(home_url('/'.$r['slug'].'/')).'">詳しい感想を読む →</a>';$out.='</article>';}
+    $out='<section class="hsh-taste-index"><p>飲んだときの印象を、自分の言葉で残しています。詳しい香りの名前は分からなくても、「これは好き」はあるので。</p><p>普段はハイボールかハーフロック。自分が飲んだときの印象を、短くまとめています。</p>';
+    foreach(hsh_growth_tastes() as $r){$out.='<article class="hsh-taste-card"><h2>'.esc_html($r['name']).'</h2><p>'.esc_html($r['note']).'</p><dl><dt>選んだきっかけ・好み</dt><dd>'.esc_html($r['reason']).'</dd></dl>';if($r['slug'])$out.='<a href="'.esc_url(home_url('/'.$r['slug'].'/')).'">詳しい感想を読む →</a>';$out.='</article>';}
     return $out.hsh_whisky_display_gallery().'<p><a href="'.esc_url(home_url('/highball-measure-and-adjust/')).'">ハイボールの分量を調整したいときはこちら</a></p></section>';
 }
 function hsh_whisky_display_gallery(){
     $manifest=hsh_photo_manifest();$out='<section class="hsh-whisky-photos"><h2>白州で撮った、ウイスキーの展示</h2><p>2025年7月に白州蒸溜所を見学したときの写真です。ここからは、展示されていたボトルを紹介します。</p><p><a href="'.esc_url(home_url('/hsh-hakushu-visit/')).'">初めての白州蒸溜所見学。写真と一緒に振り返る →</a></p><div class="hsh-photo-grid">';
-    foreach($manifest['collections']['whisky-displays']??array() as $key){$a=$manifest['assets'][$key];$out.='<figure class="hsh-photo">'.hsh_photo_image($a).hsh_photo_figcaption($a).'</figure>';}
+    foreach($manifest['collections']['whisky-displays']??array() as $key){$a=$manifest['assets'][$key];$out.='<figure class="hsh-photo">'.hsh_photo_image($a,false,'(max-width:600px) calc(100vw - 44px), 360px').hsh_photo_figcaption($a).'</figure>';}
     return $out.'</div></section>';
 }
 function hsh_growth_updates(){
@@ -56,11 +56,11 @@ function hsh_growth_updates(){
     return $out.'</ul><p>内容の訂正に関する方針は、<a href="'.esc_url(home_url('/hsh-editorial/')).'">記事・広告について</a>にまとめています。</p></section>';
 }
 add_shortcode('hsh_manmos_gallery','hsh_growth_gallery');add_shortcode('hsh_whisky_notes','hsh_growth_whisky');add_shortcode('hsh_updates','hsh_growth_updates');
-add_action('wp_enqueue_scripts',function(){wp_enqueue_style('hsh-growth',plugin_dir_url(__FILE__).'assets/growth.css',array('hsh-reading'),'1.23.1');wp_enqueue_script('hsh-growth',plugin_dir_url(__FILE__).'assets/growth.js',array(),'1.23.1',true);},110);
+add_action('wp_enqueue_scripts',function(){wp_enqueue_style('hsh-growth',plugin_dir_url(__FILE__).'assets/growth.css',array('hsh-reading'),'1.24.0');wp_enqueue_script('hsh-growth',plugin_dir_url(__FILE__).'assets/growth.js',array(),'1.24.0',true);},110);
 add_filter('the_content',function($content){
     if(!is_singular('post')||!in_the_loop()||!is_main_query())return $content;$p=get_post();if(!hsh_owned_blog_post($p))return $content;
     $slug=hsh_growth_next($p->post_name);$next=$slug?get_page_by_path($slug,OBJECT,'post'):null;$summaries=hsh_growth_summaries();
-    if($next&&$next->post_status==='publish'&&preg_match_all('~<h2\b[^>]*>~i',$content,$m,PREG_OFFSET_CAPTURE)&&count($m[0])>=4){$pos=$m[0][(int)floor(count($m[0])/2)][1];$nav='<aside class="hsh-context-link"><p>こちらもどうぞ</p><a href="'.esc_url(get_permalink($next)).'">'.esc_html($next->post_title).'</a><p>'.esc_html($summaries[$slug]??'').'</p></aside>';$content=substr_replace($content,$nav,$pos,0);}
+    if($next&&$next->post_status==='publish'&&preg_match_all('~<h2\b[^>]*>~i',$content,$m,PREG_OFFSET_CAPTURE)&&count($m[0])>=4){$pos=$m[0][(int)floor(count($m[0])/2)][1];$nav='<aside class="hsh-context-link"><p>'.esc_html(hsh_reader_roles()[$slug]['related_label']??'こちらもどうぞ').'</p><a href="'.esc_url(get_permalink($next)).'">'.esc_html($next->post_title).'</a><p>'.esc_html($summaries[$slug]??'').'</p></aside>';$content=substr_replace($content,$nav,$pos,0);}
     return $content;
 },19);
 add_filter('the_content',function($content){
@@ -79,8 +79,8 @@ function hsh_growth_metadata($html,$data){
 }
 function hsh_growth_rendered($html){
     if(strpos($html,'</head>')===false)return $html;
-    if(is_singular('post')){$p=get_post();if(!hsh_owned_blog_post($p))return $html;$a=hsh_photo_for_slug($p->post_name);$description=$p->post_excerpt;$type='article';$url=get_permalink($p);$title=$p->post_title.' | ひろがる趣味暮らし';}
-    elseif(is_page()&&in_array((int)get_queried_object_id(),array_map('intval',(array)get_option('hsh_edit_pages',array())),true)){$p=get_post();$m=hsh_photo_manifest();$key=$p->post_name==='hsh-hakushu-visit'?'hakushu-entrance':($p->post_name==='hsh-whisky-notes'?($m['topics']['whisky']??'manmos-tower'):'manmos-portrait');$a=$m['assets'][$key]??null;$descriptions=array('hsh-hakushu-visit'=>'2025年7月、初めての蒸溜所見学で白州へ。楽しかった飲み比べと、館内で撮影した展示やグラスの写真をまとめました。','hsh-gallery'=>'うちの保護猫まんもすの写真。枕の上で休んだり、爪とぎに座ったり、いろいろな姿を集めました。','hsh-whisky-notes'=>'グレンリベット12年、アルボラリス、グレンファークラス12年、ジムビーム。実際に飲んだときの感想をまとめました。','hsh-updates'=>'ひろがる趣味暮らしの最近の更新。猫・ウイスキー・ITの公開記事を更新日順に紹介します。');$description=$descriptions[$p->post_name]??wp_trim_words(wp_strip_all_tags($p->post_content),70);$title=$p->post_title.' | ひろがる趣味暮らし';$type='website';$url=get_permalink($p);}
+    if(is_singular('post')){$p=get_post();if(!hsh_owned_blog_post($p)){if((int)$p->ID!==8||is_wp_error(hsh_intro_post()))return $html;$a=hsh_photo_manifest()['assets']['manmos-front'];}else $a=hsh_photo_for_slug($p->post_name);$description=$p->post_excerpt;$type='article';$url=get_permalink($p);$title=$p->post_title.' | ひろがる趣味暮らし';}
+    elseif(is_page()&&(in_array((int)get_queried_object_id(),array_map('intval',(array)get_option('hsh_edit_pages',array())),true)||hsh_reader_scope())){$p=get_post();$m=hsh_photo_manifest();$key=$p->post_name==='hsh-hakushu-visit'?'hakushu-entrance':($p->post_name==='hsh-whisky-notes'?($m['topics']['whisky']??'manmos-tower'):'manmos-portrait');$key=$m['pages'][$p->post_name]??$key;$a=$m['assets'][$key]??null;$descriptions=array('お問い合わせ'=>'ひろがる趣味暮らしへのお問い合わせ。記事に関するご連絡はこちらからお送りください。','プライバシーポリシー'=>'ひろがる趣味暮らしの個人情報の取り扱いとプライバシーポリシーについて。','hsh-reading-list'=>'この端末で保存した、ひろがる趣味暮らしの記事をまとめて読み返せます。','hsh-hakushu-visit'=>'2025年7月、初めての蒸溜所見学で白州へ。楽しかった飲み比べと、館内で撮影した展示やグラスの写真をまとめました。','hsh-gallery'=>'うちの保護猫まんもすの写真。枕の上で休んだり、爪とぎに座ったり、いろいろな姿を集めました。','hsh-whisky-notes'=>'グレンリベット12年、アルボラリス、グレンファークラス12年、ジムビーム。実際に飲んだときの感想をまとめました。','hsh-updates'=>'ひろがる趣味暮らしの最近の更新。猫・ウイスキー・ITの公開記事を更新日順に紹介します。');$description=$descriptions[rawurldecode($p->post_name)]??wp_trim_words(wp_strip_all_tags($p->post_content),70);$title=$p->post_title.' | ひろがる趣味暮らし';$type='website';$url=get_permalink($p);}
     elseif(is_front_page()||hsh_current_topic()){$m=hsh_photo_manifest();$key=hsh_current_topic()?($m['topics'][hsh_current_topic()]??'manmos-tower'):($m['home']??'manmos-tower');$a=$m['assets'][$key]??null;$description=hsh_current_topic()?hsh_topic_details()[hsh_current_topic()][4]:'保護猫まんもすとの暮らし、飲んだウイスキーの感想、フリーランスのデータ加工の仕事を書いています。';$type='website';$url=hsh_current_topic()?get_pagenum_link(max(1,(int)get_query_var('paged'))):home_url('/');$title=hsh_current_topic()?hsh_topics()[hsh_current_topic()][0].' | ひろがる趣味暮らし':'ひろがる趣味暮らし｜猫・ウイスキー・ITの仕事';}
     else return $html;
     if(!$a)return $html;$image=plugin_dir_url(__FILE__).'assets/photos/'.$a['file'];

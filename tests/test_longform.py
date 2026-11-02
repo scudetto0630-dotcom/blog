@@ -11,15 +11,18 @@ class LongformTests(unittest.TestCase):
         cls.previous=json.loads((ROOT/'site-content/backups/before-longform-20261026/expanded-articles.json').read_text())+cls.old
         cls.current=cls.bundle+[json.loads((ROOT/'site-content/articles/longform'/f"{a['slug']}.json").read_text()) for a in cls.old]
         cls.photos=json.loads((ROOT/'hirogaru-home/photo-assets.json').read_text())
-    def test_every_article_is_at_least_three_times_its_previous_length(self):
+    def test_every_article_retains_substantial_useful_explanations(self):
         self.assertEqual(len(self.current),13)
         for a in self.current:
             with self.subTest(slug=a['slug']):
                 old=next(x for x in self.previous if x['slug']==a['slug'])
-                self.assertGreaterEqual(text_count(a['content']),3*text_count(old['content']))
+                # The approved 50-item brief prioritizes substance over the old 3x target.
+                self.assertGreaterEqual(text_count(a['content']),1500)
     def test_original_links_and_anchor_ids_are_retained(self):
         for a in self.current:
-            old=next(x for x in self.previous if x['slug']==a['slug'])
+            snapshot=ROOT/'site-content/backups/before-improvements-50'
+            previous=json.loads((snapshot/'expanded-articles.json').read_text())+[json.loads(p.read_text()) for p in snapshot.glob('*-*.json') if p.name in ['cat-carrier-checklist.json','highball-measure-and-adjust.json','csv-import-seven-checks.json']]
+            old=next(x for x in previous if x['slug']==a['slug'])
             for attr in ['href','id']:
                 before=set(re.findall(r'\b'+attr+r'="([^"]+)"',old['content']))
                 after=set(re.findall(r'\b'+attr+r'="([^"]+)"',a['content']))

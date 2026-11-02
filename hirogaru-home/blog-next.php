@@ -44,7 +44,7 @@ add_action('pre_get_posts',function($q){
     $q->set('post_type','post');if($topic)$q->set('category_name',$topic);
 });
 function hsh_start_routes($topic=null){
-    $routes=array('cats'=>array('before-welcoming-cat','manmos-cat-life','cat-teaser-small-parts','cat-carrier-checklist','cat-vet-routine'),'whisky'=>array('single-malt-label-guide','glenlivet-12-first-bottles','sherry-cask-notes','highball-measure-and-adjust'),'it-freelance'=>array('starting-it-without-specialty','it-data-work-flow','ai-data-extraction-checks','csv-import-seven-checks'));
+    $routes=array('cats'=>array('manmos-cat-life','before-welcoming-cat','cat-teaser-small-parts','cat-carrier-checklist','cat-vet-routine'),'whisky'=>array('glenlivet-12-first-bottles','sherry-cask-notes','single-malt-label-guide','highball-measure-and-adjust'),'it-freelance'=>array('it-data-work-flow','starting-it-without-specialty','ai-data-extraction-checks','csv-import-seven-checks'));
     $out='<nav class="hsh-start-routes" aria-label="初めての方向けの読む順番"><h2>どこから読めばいい？</h2>';
     foreach($routes as $key=>$slugs){if($topic&&$topic!==$key)continue;$out.='<section><h3>'.esc_html(hsh_topics()[$key][0]).'</h3><ol>';
         foreach($slugs as $slug){$p=get_page_by_path($slug,OBJECT,'post');if($p&&$p->post_status==='publish')$out.='<li><a href="'.esc_url(get_permalink($p)).'">'.esc_html(get_the_title($p)).'</a></li>';}
@@ -139,8 +139,8 @@ add_filter('the_content',function($content){
 },25);
 add_action('wp_enqueue_scripts',function(){
     if(is_admin())return;
-    wp_enqueue_style('hsh-next',plugin_dir_url(__FILE__).'assets/blog-next.css',array(),'1.23.1');
-    wp_enqueue_script('hsh-next',plugin_dir_url(__FILE__).'assets/blog-next.js',array(),'1.23.1',true);
+    wp_enqueue_style('hsh-next',plugin_dir_url(__FILE__).'assets/blog-next.css',array(),'1.24.0');
+    wp_enqueue_script('hsh-next',plugin_dir_url(__FILE__).'assets/blog-next.js',array(),'1.24.0',true);
     wp_localize_script('hsh-next','hshBlogTools',array('reportUrl'=>rest_url('hirogaru/v1/blog-report'),'tokenUrl'=>rest_url('hirogaru/v1/blog-report-token')));
 },110);
 add_filter('template_include',function($template){return is_404()?__DIR__.'/not-found-template.php':$template;},102);

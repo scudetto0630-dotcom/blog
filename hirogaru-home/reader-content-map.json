@@ -1,0 +1,54 @@
+{
+  "cat-carrier-checklist": {
+    "role": "道具の選び方",
+    "related_label": "選ぶ前に読む"
+  },
+  "highball-measure-and-adjust": {
+    "role": "飲み方・表示の解説",
+    "related_label": "飲み方を調べる"
+  },
+  "csv-import-seven-checks": {
+    "role": "データの確認方法",
+    "related_label": "手順を試す"
+  },
+  "before-welcoming-cat": {
+    "role": "道具の選び方",
+    "related_label": "選ぶ前に読む"
+  },
+  "manmos-cat-life": {
+    "role": "まんもすとの暮らし",
+    "related_label": "まんもすを知る"
+  },
+  "cat-teaser-small-parts": {
+    "role": "道具の選び方",
+    "related_label": "選ぶ前に読む"
+  },
+  "cat-vet-routine": {
+    "role": "道具の選び方",
+    "related_label": "選ぶ前に読む"
+  },
+  "glenlivet-12-first-bottles": {
+    "role": "飲んだ感想",
+    "related_label": "飲んだ感想を読む"
+  },
+  "single-malt-label-guide": {
+    "role": "飲み方・表示の解説",
+    "related_label": "飲み方を調べる"
+  },
+  "sherry-cask-notes": {
+    "role": "飲んだ感想",
+    "related_label": "飲んだ感想を読む"
+  },
+  "it-data-work-flow": {
+    "role": "仕事の体験談",
+    "related_label": "実際の仕事を知る"
+  },
+  "starting-it-without-specialty": {
+    "role": "仕事の体験談",
+    "related_label": "実際の仕事を知る"
+  },
+  "ai-data-extraction-checks": {
+    "role": "データの確認方法",
+    "related_label": "手順を試す"
+  }
+}
