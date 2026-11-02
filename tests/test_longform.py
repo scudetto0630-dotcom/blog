@@ -28,7 +28,7 @@ class LongformTests(unittest.TestCase):
         used=list(self.photos['articles'].values())
         for slug in self.photos['articles']:
             keys=self.photos['inline'].get(slug,[])
-            if slug=='manmos-cat-life':keys=['manmos-lying','manmos-sitting','manmos-back','manmos-stretch']
+            if slug=='manmos-cat-life':keys=keys+['manmos-back','manmos-stretch']
             self.assertGreaterEqual(len(keys),2,slug)
             used.extend(keys)
         self.assertEqual(len(used),len(set(used)))

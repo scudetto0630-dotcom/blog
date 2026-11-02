@@ -16,7 +16,8 @@ function hsh_planner_enrich($data,$store){
             foreach($manifest['articles'] as $slug=>$cover)if($cover===$key)$p['placements'][]=array('label'=>'表紙','article'=>'article:'.$slug);
             foreach($manifest['inline']??array() as $slug=>$keys)foreach($keys as $i=>$k)if($k===$key)$p['placements'][]=array('label'=>'本文写真'.($i+1),'article'=>'article:'.$slug);
             if(in_array($key,array('manmos-back','manmos-stretch'),true))$p['placements'][]=array('label'=>'記事末尾のギャラリー','article'=>'article:manmos-cat-life');
-            if($key==='manmos-tower')$p['placements'][]=array('label'=>'ホームの大きな写真','article'=>'');
+            if($key===($manifest['home']??'manmos-tower'))$p['placements'][]=array('label'=>'ホームの大きな写真','article'=>'');
+            foreach($manifest['collections']??array() as $collection=>$keys)if(in_array($key,$keys,true))$p['placements'][]=array('label'=>$collection==='hakushu-visit'?'白州の見学写真':'ウイスキーの展示写真一覧','article'=>'');
             if($key==='manmos-front')$p['placements'][]=array('label'=>'プロフィール','article'=>'');
             foreach($manifest['topics']??array() as $topic=>$k)if($k===$key)$p['placements'][]=array('label'=>'ホーム・'.(hsh_planner_labels()['topic'][$topic]??$topic),'article'=>'');
         }elseif(strpos($id,'media:')===0){

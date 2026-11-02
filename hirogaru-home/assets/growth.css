@@ -2,3 +2,4 @@
 
 .hsh-photo.hsh-photo-portrait .hsh-photo-cover img{object-fit:contain!important;object-position:center}.hsh-article-visual .hsh-photo.hsh-photo-portrait .hsh-photo-cover{aspect-ratio:auto}.hsh-article-visual .hsh-photo.hsh-photo-portrait .hsh-photo-cover img{aspect-ratio:auto;height:auto;max-height:720px}
 .hsh-popular{padding:24px;background:#fff5e6;border:1px solid #e1d3c4;border-radius:12px;margin:30px 0}.hsh-popular h2{font-size:22px}.hsh-popular p{font-size:13px;color:#716252}.hsh-popular li{margin:14px 0}
+.hsh-visit-photo img{display:block;width:100%;height:auto;max-height:760px;object-fit:contain;background:#f7efe5}.hsh-whisky-photos{margin-top:42px}.hsh-whisky-photos .hsh-photo-grid{margin:24px 0}.hsh-whisky-photos h2{margin-top:0}

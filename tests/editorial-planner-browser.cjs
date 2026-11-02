@@ -15,10 +15,10 @@ await page.evaluate(()=>{
 });
 await page.addScriptTag({path:path.join(__dirname,'../hirogaru-home/assets/editorial-planner.js')});
 assert.equal(await page.locator('[data-hsh-type=article]').count(),14);checks++;
-assert.equal(await page.locator('[data-hsh-type=photo]').count(),46);checks++;
+assert.equal(await page.locator('[data-hsh-type=photo]').count(),66);checks++;
 await page.locator('#hsh-plan-type').selectOption('article');assert.equal(await page.locator('[data-hsh-type=photo]:visible').count(),0);checks++;
 await page.locator('#hsh-plan-search').fill('private planning note');assert.equal(await page.locator('[data-hsh-type=article]:visible').count(),1);checks++;
-await page.locator('#hsh-plan-type').selectOption('photo');await page.locator('#hsh-plan-search').fill('実写写真');const real=await page.locator('[data-hsh-type=photo]:visible').count();assert.equal(real,9);checks++;
+await page.locator('#hsh-plan-type').selectOption('photo');await page.locator('#hsh-plan-search').fill('実写写真');const real=await page.locator('[data-hsh-type=photo]:visible').count();assert.equal(real,29);checks++;
 await page.locator('#hsh-plan-search').fill('生成画像');assert.equal(await page.locator('[data-hsh-type=photo]:visible').count(),37);checks++;
 await page.locator('#hsh-plan-search').fill('存在しない検索文字列');assert.equal(await page.locator('[data-hsh-type=photo]:visible').count(),0);checks++;
 await page.locator('#hsh-plan-search').fill('');await page.locator('#hsh-plan-media').click();const picked=page.locator('#hsh-plan-new-photo');assert.ok(await picked.isVisible());assert.equal(await picked.locator('[name=id]').inputValue(),'media:702');assert.equal(await picked.locator('[name="fields[purpose]"]').inputValue(),'hold');assert.equal(await picked.locator('[name="fields[rights]"]').inputValue(),'unknown');checks++;
