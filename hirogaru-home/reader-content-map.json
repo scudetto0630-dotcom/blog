@@ -50,5 +50,57 @@
   "ai-data-extraction-checks": {
     "role": "データの確認方法",
     "related_label": "手順を試す"
+  },
+  "paws-green-deli-cat-food": {
+    "role": "商品・サービスの案内（未使用）",
+    "related_label": "仕様と選び方を読む"
+  },
+  "hario-cat-bowl-guide": {
+    "role": "商品・サービスの案内（未使用）",
+    "related_label": "仕様と選び方を読む"
+  },
+  "mirai-cat-food-types": {
+    "role": "商品・サービスの案内（未使用）",
+    "related_label": "仕様と選び方を読む"
+  },
+  "m-and-cat-knit-bag": {
+    "role": "商品・サービスの案内（未使用）",
+    "related_label": "仕様と選び方を読む"
+  },
+  "pet-sougi-110-cat-guide": {
+    "role": "商品・サービスの案内（未使用）",
+    "related_label": "仕様と選び方を読む"
+  },
+  "digxipop-cat-figure": {
+    "role": "商品・サービスの案内（未使用）",
+    "related_label": "仕様と選び方を読む"
+  },
+  "withpety-nekokenshin": {
+    "role": "商品・サービスの案内（未使用）",
+    "related_label": "仕様と選び方を読む"
+  },
+  "pontely-cat-dna-test": {
+    "role": "商品・サービスの案内（未使用）",
+    "related_label": "仕様と選び方を読む"
+  },
+  "withpety-nekobihada": {
+    "role": "商品・サービスの案内（未使用）",
+    "related_label": "仕様と選び方を読む"
+  },
+  "onekosama-cat-tower": {
+    "role": "商品・サービスの案内（未使用）",
+    "related_label": "仕様と選び方を読む"
+  },
+  "withpety-nekoryoukan": {
+    "role": "商品・サービスの案内（未使用）",
+    "related_label": "仕様と選び方を読む"
+  },
+  "catlog-cat-monitor": {
+    "role": "商品・サービスの案内（未使用）",
+    "related_label": "仕様と選び方を読む"
+  },
+  "withpety-nekoissho": {
+    "role": "商品・サービスの案内（未使用）",
+    "related_label": "仕様と選び方を読む"
   }
 }

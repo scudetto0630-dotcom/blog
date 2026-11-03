@@ -5,18 +5,22 @@ function hsh_expanded_articles(){
     $items=json_decode(file_get_contents(__DIR__.'/expanded-articles.json'),true);
     return is_array($items)?$items:array();
 }
-function hsh_catalog(){return array_merge(hsh_article_map(),hsh_expanded_articles());}
+function hsh_affiliate_articles(){
+    $items=json_decode(file_get_contents(__DIR__.'/affiliate-articles.json'),true);return is_array($items)?$items:array();
+}
+function hsh_release_items(){return array_merge(hsh_expanded_articles(),hsh_affiliate_articles());}
+function hsh_catalog(){return array_merge(hsh_article_map(),hsh_release_items());}
 function hsh_owned_blog_post($post){
     return $post&&$post->post_type==='post'&&(get_post_meta($post->ID,'_hsh_starter_owned',true)===$post->post_name||get_post_meta($post->ID,'_hsh_bundle_owned',true)===$post->post_name);
 }
 function hsh_release_status(){
-    $rows=array();foreach(hsh_expanded_articles() as $a){$p=get_page_by_path($a['slug'],OBJECT,'post');$owned=$p&&get_post_meta($p->ID,'_hsh_bundle_owned',true)===$a['slug'];$rows[]=array('slug'=>$a['slug'],'id'=>$owned?$p->ID:null,'status'=>$owned?$p->post_status:($p?'conflict':'missing'),'fingerprint'=>$owned?hsh_article_fingerprint($p):null,'url'=>$owned?get_permalink($p):null);}
+    $rows=array();foreach(hsh_release_items() as $a){$p=get_page_by_path($a['slug'],OBJECT,'post');$owned=$p&&get_post_meta($p->ID,'_hsh_bundle_owned',true)===$a['slug'];$rows[]=array('slug'=>$a['slug'],'id'=>$owned?$p->ID:null,'status'=>$owned?$p->post_status:($p?'conflict':'missing'),'fingerprint'=>$owned?hsh_article_fingerprint($p):null,'url'=>$owned?get_permalink($p):null);}
     return hsh_edit_response(array('articles'=>$rows));
 }
 function hsh_release_article($request){
     $d=$request->get_json_params();
     if(!is_array($d)||array_diff(array_keys($d),array('slug','expected'))||!isset($d['slug'])||!is_string($d['slug'])||!array_key_exists('expected',$d)||($d['expected']!==null&&(!is_string($d['expected'])||!preg_match('/^[a-f0-9]{64}$/D',$d['expected']))))return new WP_Error('hsh_input','記事と確認用の指紋を指定してください。',array('status'=>400));
-    $a=null;foreach(hsh_expanded_articles() as $row)if($row['slug']===$d['slug'])$a=$row;
+    $a=null;foreach(hsh_release_items() as $row)if($row['slug']===$d['slug'])$a=$row;
     if(!$a)return new WP_Error('hsh_scope','同梱記事以外は公開できません。',array('status'=>403));
     if(!add_option('hsh_bundle_lock',time(),'',false))return new WP_Error('hsh_busy','他の記事を処理中です。',array('status'=>409));
     try{
@@ -139,8 +143,8 @@ add_filter('the_content',function($content){
 },25);
 add_action('wp_enqueue_scripts',function(){
     if(is_admin())return;
-    wp_enqueue_style('hsh-next',plugin_dir_url(__FILE__).'assets/blog-next.css',array(),'1.24.3');
-    wp_enqueue_script('hsh-next',plugin_dir_url(__FILE__).'assets/blog-next.js',array(),'1.24.3',true);
+    wp_enqueue_style('hsh-next',plugin_dir_url(__FILE__).'assets/blog-next.css',array(),'1.25.0');
+    wp_enqueue_script('hsh-next',plugin_dir_url(__FILE__).'assets/blog-next.js',array(),'1.25.0',true);
     wp_localize_script('hsh-next','hshBlogTools',array('reportUrl'=>rest_url('hirogaru/v1/blog-report'),'tokenUrl'=>rest_url('hirogaru/v1/blog-report-token')));
 },110);
 add_filter('template_include',function($template){return is_404()?__DIR__.'/not-found-template.php':$template;},102);

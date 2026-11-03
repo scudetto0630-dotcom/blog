@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-04",
+  "runtime": "PowerShell 7.4.6 Linux, official SHA256 verified",
+  "http": "mocked for all tests; no real product page fetched",
+  "windows_runtime_verified": false,
+  "cases": [
+    {
+      "case": "success",
+      "requests": 22,
+      "downloaded_fixture_pages": 22,
+      "zip_verified": true
+    },
+    {
+      "case": "mixed",
+      "requests": 22,
+      "downloaded_fixture_pages": 21,
+      "zip_verified": true
+    },
+    {
+      "case": "allfail",
+      "requests": 22,
+      "downloaded_fixture_pages": 0,
+      "zip_verified": true
+    },
+    {
+      "case": "badparent",
+      "requests": 0,
+      "zip_created": false,
+      "stopped_before_download": true
+    },
+    {
+      "case": "incomplete",
+      "requests": 0,
+      "zip_created": false,
+      "stopped_before_download": true
+    }
+  ]
+}

@@ -1348,5 +1348,74 @@
     "hsh-hakushu-visit": "hakushu-entrance",
     "hsh-about": "manmos-front",
     "hsh-editorial": "manmos-portrait"
+  },
+  "affiliate_articles": {
+    "paws-green-deli-cat-food": "manmos-portrait",
+    "hario-cat-bowl-guide": "manmos-back",
+    "mirai-cat-food-types": "manmos-stretch",
+    "m-and-cat-knit-bag": "manmos-tower",
+    "pet-sougi-110-cat-guide": "manmos-front",
+    "digxipop-cat-figure": "manmos-lying",
+    "withpety-nekokenshin": "manmos-sitting",
+    "pontely-cat-dna-test": "manmos-window",
+    "withpety-nekobihada": "manmos-zip-back",
+    "onekosama-cat-tower": "manmos-zip-bed",
+    "withpety-nekoryoukan": "manmos-zip-window",
+    "catlog-cat-monitor": "manmos-zip-sitting",
+    "withpety-nekoissho": "manmos-zip-paw"
+  },
+  "affiliate_inline": {
+    "paws-green-deli-cat-food": [
+      "manmos-lying",
+      "manmos-zip-window"
+    ],
+    "hario-cat-bowl-guide": [
+      "manmos-sitting",
+      "manmos-zip-sitting"
+    ],
+    "mirai-cat-food-types": [
+      "manmos-window",
+      "manmos-zip-paw"
+    ],
+    "m-and-cat-knit-bag": [
+      "manmos-zip-back",
+      "manmos-zip-groom"
+    ],
+    "pet-sougi-110-cat-guide": [
+      "manmos-zip-bed",
+      "manmos-zip-scratcher"
+    ],
+    "digxipop-cat-figure": [
+      "manmos-zip-window",
+      "manmos-zip-pillow"
+    ],
+    "withpety-nekokenshin": [
+      "manmos-zip-sitting",
+      "manmos-zip-stretch"
+    ],
+    "pontely-cat-dna-test": [
+      "manmos-zip-paw",
+      "manmos-portrait"
+    ],
+    "withpety-nekobihada": [
+      "manmos-zip-groom",
+      "manmos-back"
+    ],
+    "onekosama-cat-tower": [
+      "manmos-zip-scratcher",
+      "manmos-stretch"
+    ],
+    "withpety-nekoryoukan": [
+      "manmos-zip-pillow",
+      "manmos-tower"
+    ],
+    "catlog-cat-monitor": [
+      "manmos-zip-stretch",
+      "manmos-front"
+    ],
+    "withpety-nekoissho": [
+      "manmos-portrait",
+      "manmos-lying"
+    ]
   }
 }

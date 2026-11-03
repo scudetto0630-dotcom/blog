@@ -42,6 +42,7 @@ function hsh_planner_snapshot($override=null){
     foreach($manifest['assets'] as $key=>$a){
         $id='asset:'.$key;$saved=$store[$id]??null;$used=array();
         foreach($manifest['articles'] as $slug=>$cover){$list=array_merge(array($cover),$manifest['inline'][$slug]??array());if($slug==='manmos-cat-life')$list=array_merge($list,array('manmos-back','manmos-stretch'));if(in_array($key,$list,true))$used[]='article:'.$slug;}
+        foreach($manifest['affiliate_articles']??array() as $slug=>$cover){$ap=get_page_by_path($slug,OBJECT,'post');if(!$ap||$ap->post_status!=='publish')continue;$list=array_merge(array($cover),$manifest['affiliate_inline'][$slug]??array());if(in_array($key,$list,true))$used[]='article:'.$slug;}
         $subject=in_array($a['subject'],array('manmos','cat-care','whisky','work'),true)?$a['subject']:'other';
         $photos[$id]=array('id'=>$id,'title'=>$a['alt'],'kind'=>$a['kind'],'subject'=>$subject,'purpose'=>'publish','rights'=>$a['rights']??($a['kind']==='provided'?'permission':'generated'),'notes'=>'','articles'=>array(),'sources'=>array(),'used_in'=>$used,'image'=>hsh_planner_image($id),'file'=>$a['file'],'stored'=>is_array($saved),'fingerprint'=>is_array($saved)?hsh_planner_fingerprint($saved):null);
         if(is_array($saved))$photos[$id]=array_merge($photos[$id],$saved);
@@ -191,6 +192,6 @@ function hsh_planner_admin(){
     echo '<script type="application/json" id="hsh-planner-data">'.wp_json_encode($saved_snapshot,JSON_HEX_TAG|JSON_HEX_AMP|JSON_HEX_APOS|JSON_HEX_QUOT).'</script>';
 }
 add_action('admin_menu',function(){add_menu_page('記事・写真管理','記事・写真管理','manage_options','hsh-editorial-planner','hsh_planner_admin','dashicons-portfolio',26);});
-add_action('admin_enqueue_scripts',function($hook){if($hook!=='toplevel_page_hsh-editorial-planner'||!current_user_can('manage_options'))return;wp_enqueue_media();wp_enqueue_style('hsh-planner',plugin_dir_url(__FILE__).'assets/editorial-planner.css',array(),'1.24.3');wp_enqueue_script('hsh-planner',plugin_dir_url(__FILE__).'assets/editorial-planner.js',array(),'1.24.3',true);});
+add_action('admin_enqueue_scripts',function($hook){if($hook!=='toplevel_page_hsh-editorial-planner'||!current_user_can('manage_options'))return;wp_enqueue_media();wp_enqueue_style('hsh-planner',plugin_dir_url(__FILE__).'assets/editorial-planner.css',array(),'1.25.0');wp_enqueue_script('hsh-planner',plugin_dir_url(__FILE__).'assets/editorial-planner.js',array(),'1.25.0',true);});
 
 require_once __DIR__.'/planner-advanced.php';

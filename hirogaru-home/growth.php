@@ -56,7 +56,7 @@ function hsh_growth_updates(){
     return $out.'</ul><p>内容の訂正に関する方針は、<a href="'.esc_url(home_url('/hsh-editorial/')).'">記事・広告について</a>にまとめています。</p></section>';
 }
 add_shortcode('hsh_manmos_gallery','hsh_growth_gallery');add_shortcode('hsh_whisky_notes','hsh_growth_whisky');add_shortcode('hsh_updates','hsh_growth_updates');
-add_action('wp_enqueue_scripts',function(){wp_enqueue_style('hsh-growth',plugin_dir_url(__FILE__).'assets/growth.css',array('hsh-reading'),'1.24.3');wp_enqueue_script('hsh-growth',plugin_dir_url(__FILE__).'assets/growth.js',array(),'1.24.3',true);},110);
+add_action('wp_enqueue_scripts',function(){wp_enqueue_style('hsh-growth',plugin_dir_url(__FILE__).'assets/growth.css',array('hsh-reading'),'1.25.0');wp_enqueue_script('hsh-growth',plugin_dir_url(__FILE__).'assets/growth.js',array(),'1.25.0',true);},110);
 add_filter('the_content',function($content){
     if(!is_singular('post')||!in_the_loop()||!is_main_query())return $content;$p=get_post();if(!hsh_owned_blog_post($p))return $content;
     $slug=hsh_growth_next($p->post_name);$next=$slug?get_page_by_path($slug,OBJECT,'post'):null;$summaries=hsh_growth_summaries();

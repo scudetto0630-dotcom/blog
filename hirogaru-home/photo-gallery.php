@@ -2,7 +2,7 @@
 if(!defined('ABSPATH'))exit;
 /** Owner supplied photographs and explicitly identified generated scenes. */
 function hsh_photo_manifest(){static $data=null;if($data===null){$data=json_decode(file_get_contents(__DIR__.'/photo-assets.json'),true);if(!is_array($data))$data=array('assets'=>array(),'articles'=>array());}return $data;}
-function hsh_photo_for_slug($slug){$m=hsh_photo_manifest();$key=$m['articles'][$slug]??$m['pages'][$slug]??null;return $key&&isset($m['assets'][$key])?$m['assets'][$key]:null;}
+function hsh_photo_for_slug($slug){$m=hsh_photo_manifest();$key=$m['articles'][$slug]??$m['affiliate_articles'][$slug]??$m['pages'][$slug]??null;return $key&&isset($m['assets'][$key])?$m['assets'][$key]:null;}
 function hsh_photo_caption($asset){
     if(($asset['kind']??'')==='generated')return '';
     return trim(str_replace(array('（提供写真）','(提供写真)','・提供写真','提供写真・','管理人提供の写真です。','管理人提供の写真。'),'', $asset['caption']??''));
@@ -22,7 +22,7 @@ function hsh_photo_cover($post,$eager=false){
 }
 /** Place body photos at separate, balanced section boundaries, never within paragraphs or tables. */
 function hsh_insert_inline_photos($content,$slug){
-    $m=hsh_photo_manifest();$keys=$m['inline'][$slug]??array();
+    $m=hsh_photo_manifest();$keys=$m['inline'][$slug]??$m['affiliate_inline'][$slug]??array();
     if(!$keys||strpos($content,'hsh-inline-photo')!==false)return $content;
     $end=strpos($content,'<nav class="hsh-next-read"');
     $body=$end!==false?substr($content,0,$end):$content;

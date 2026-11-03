@@ -1,0 +1,243 @@
+{
+  "source_zip_sha256": "832c571db360f4826a4eefdbadb2503b9d834b3dcca538a241be8b4737383589",
+  "scope": "User-provided official-page snapshots, not independently fetched by the assistant; 17 successful downloads and 5 HTTP failures.",
+  "reviews": [
+    {
+      "id": "A8-20261103-01",
+      "requested_url": "https://paws-green-deli.com/",
+      "retrieved_at": "2026-11-03T15:08:22.6397935Z",
+      "download_status": "downloaded_not_reviewed",
+      "error": "",
+      "reviewed_at": "2026-11-04",
+      "disposition": "原稿完成・公開準備",
+      "source_sha256": "8f19ecbaa7ef97b19cbc767c3f9c3f14de0b77fdb33e8599dfedadab4549b85d",
+      "review_note": "提供された公式ページ保存データを確認。未使用の紹介記事。猫の写真は商品使用の証拠として扱わない。"
+    },
+    {
+      "id": "A8-20261103-02",
+      "requested_url": "https://shop.hariocorp.co.jp",
+      "retrieved_at": "2026-11-03T15:08:24.2109426Z",
+      "download_status": "downloaded_not_reviewed",
+      "error": "",
+      "reviewed_at": "2026-11-04",
+      "disposition": "原稿完成・公開準備",
+      "source_sha256": "40450e98e39ad44b0ef789f98180bc504591e86fdeeb670f099aec6e44f4d124",
+      "review_note": "提供された公式ページ保存データを確認。未使用の紹介記事。猫の写真は商品使用の証拠として扱わない。"
+    },
+    {
+      "id": "A8-20261103-04",
+      "requested_url": "https://bmotherleaf.shop-pro.jp/?pid=188788430",
+      "retrieved_at": "2026-11-03T15:08:26.6063338Z",
+      "download_status": "downloaded_not_reviewed",
+      "error": "",
+      "reviewed_at": "2026-11-04",
+      "disposition": "除外",
+      "source_sha256": "b500f28ff9fb15f438beac5b7119173c2147191b1e9d8ff7cb42f537ad68982a",
+      "review_note": "人向けの健康食品。猫・ウイスキーの対象外として除外。"
+    },
+    {
+      "id": "A8-20261103-05",
+      "requested_url": "https://mirai-cat.com/AF/",
+      "retrieved_at": "2026-11-03T15:08:27.6156480Z",
+      "download_status": "downloaded_not_reviewed",
+      "error": "",
+      "reviewed_at": "2026-11-04",
+      "disposition": "原稿完成・公開準備",
+      "source_sha256": "c4a7460907b94dea0497a663335fd993b95c0494f3e7e72ac41aa9364c504109",
+      "review_note": "提供された公式ページ保存データを確認。未使用の紹介記事。猫の写真は商品使用の証拠として扱わない。"
+    },
+    {
+      "id": "A8-20261103-06",
+      "requested_url": "https://www.m-and.co.jp/",
+      "retrieved_at": "2026-11-03T15:08:28.3620893Z",
+      "download_status": "downloaded_not_reviewed",
+      "error": "",
+      "reviewed_at": "2026-11-04",
+      "disposition": "原稿完成・公開準備",
+      "source_sha256": "c55c1fc74504db90858ebba549acdc6837c400eb7a34cdaa3f165c76cc8a53a1",
+      "review_note": "提供された公式ページ保存データを確認。未使用の紹介記事。猫の写真は商品使用の証拠として扱わない。"
+    },
+    {
+      "id": "A8-20261103-07",
+      "requested_url": "https://aff.life-110.com/?st_site=pet_sougi&st_aff=a8",
+      "retrieved_at": "2026-11-03T15:08:30.3190631Z",
+      "download_status": "downloaded_not_reviewed",
+      "error": "",
+      "reviewed_at": "2026-11-04",
+      "disposition": "原稿完成・公開準備",
+      "source_sha256": "978d8ab6d6aca7d126b86d82c3d0216ba84e3dc206f7e5e021253a79687fb4e1",
+      "review_note": "提供された公式ページ保存データを確認。未使用の紹介記事。猫の写真は商品使用の証拠として扱わない。"
+    },
+    {
+      "id": "A8-20261103-09",
+      "requested_url": "https://www.combi.co.jp/store/default.aspx?utm_source=a8&utm_medium=affiliate&utm_campaign=af",
+      "retrieved_at": "2026-11-03T15:08:31.1508660Z",
+      "download_status": "downloaded_not_reviewed",
+      "error": "",
+      "reviewed_at": "2026-11-04",
+      "disposition": "除外",
+      "source_sha256": "57e0066817d319ef2fb5743a34b8f91340d175f7c7a0c06dbc560ec066154a44",
+      "review_note": "取得した案内はベビー用品。今回の猫・ウイスキーの対象外として除外。"
+    },
+    {
+      "id": "A8-20261103-10",
+      "requested_url": "https://www.digxipop.com/ja-jp",
+      "retrieved_at": "2026-11-03T15:08:31.9220018Z",
+      "download_status": "downloaded_not_reviewed",
+      "error": "",
+      "reviewed_at": "2026-11-04",
+      "disposition": "原稿完成・公開準備",
+      "source_sha256": "06485473353ca07c2ae8a4e18de3521820615d3aa27b73783927a641a5ebd75d",
+      "review_note": "提供された公式ページ保存データを確認。未使用の紹介記事。猫の写真は商品使用の証拠として扱わない。"
+    },
+    {
+      "id": "A8-20261103-11",
+      "requested_url": "https://alices-dogcat.com/products/message-wappen",
+      "retrieved_at": "2026-11-03T15:08:33.0627367Z",
+      "download_status": "downloaded_not_reviewed",
+      "error": "",
+      "reviewed_at": "2026-11-04",
+      "disposition": "除外",
+      "source_sha256": "a27fe519cbb7e23cd2bd406c1ebd1186d4d3027511fdd9f11854882e2b938df7",
+      "review_note": "犬専用品と公式タイトル・説明で確認できたため除外。"
+    },
+    {
+      "id": "A8-20261103-12",
+      "requested_url": "https://shop.creativeyoko.co.jp/",
+      "retrieved_at": "2026-11-03T15:08:35.2675202Z",
+      "download_status": "downloaded_not_reviewed",
+      "error": "",
+      "reviewed_at": "2026-11-04",
+      "disposition": "保留・商品情報不足",
+      "source_sha256": "1fd66c55e5f6eef2525d2db4a64336d7d1fea02e37066febc409925c2a220e63",
+      "review_note": "ショップの入口と雑貨・ペット用品の案内のみ取得。猫向け商品を具体的に確認できないため保留。"
+    },
+    {
+      "id": "A8-20261103-13",
+      "requested_url": "https://www.canagancatfood.co.jp/dental/CDC20003",
+      "retrieved_at": "2026-11-03T15:08:36.1959242Z",
+      "download_status": "failed",
+      "error": "リモート サーバーがエラーを返しました: (403) 使用不可能",
+      "reviewed_at": "2026-11-04",
+      "disposition": "保留・公式情報取得403",
+      "review_note": "利用者側の一括取得でも公式ページが403。商品仕様を未確認のまま公開しない。"
+    },
+    {
+      "id": "A8-20261103-14",
+      "requested_url": "http://www.canagancatfood.co.jp/3201/",
+      "retrieved_at": "2026-11-03T15:08:36.7039242Z",
+      "download_status": "failed",
+      "error": "リモート サーバーがエラーを返しました: (403) 使用不可能",
+      "reviewed_at": "2026-11-04",
+      "disposition": "保留・公式情報取得403",
+      "review_note": "利用者側の一括取得でも公式ページが403。商品仕様を未確認のまま公開しない。"
+    },
+    {
+      "id": "A8-20261103-15",
+      "requested_url": "https://www.mcadamspetfoods.co.jp/catfood/MAC20000",
+      "retrieved_at": "2026-11-03T15:08:36.8387542Z",
+      "download_status": "failed",
+      "error": "リモート サーバーがエラーを返しました: (403) 使用不可能",
+      "reviewed_at": "2026-11-04",
+      "disposition": "保留・公式情報取得403",
+      "review_note": "利用者側の一括取得でも公式ページが403。商品仕様を未確認のまま公開しない。"
+    },
+    {
+      "id": "A8-20261103-16",
+      "requested_url": "https://www.essentialfoods.jp/ESN20000",
+      "retrieved_at": "2026-11-03T15:08:37.1078665Z",
+      "download_status": "failed",
+      "error": "リモート サーバーがエラーを返しました: (403) 使用不可能",
+      "reviewed_at": "2026-11-04",
+      "disposition": "保留・公式情報取得403",
+      "review_note": "利用者側の一括取得でも公式ページが403。商品仕様を未確認のまま公開しない。"
+    },
+    {
+      "id": "A8-20261103-17",
+      "requested_url": "https://www.mognyancatfood.co.jp/MGN20009/",
+      "retrieved_at": "2026-11-03T15:08:37.3902101Z",
+      "download_status": "failed",
+      "error": "リモート サーバーがエラーを返しました: (403) 使用不可能",
+      "reviewed_at": "2026-11-04",
+      "disposition": "保留・公式情報取得403",
+      "review_note": "利用者側の一括取得でも公式ページが403。商品仕様を未確認のまま公開しない。"
+    },
+    {
+      "id": "A8-20261103-18",
+      "requested_url": "https://withpety.com/products/nekokenshin/a8.html?ad_code=20800",
+      "retrieved_at": "2026-11-03T15:08:37.9170630Z",
+      "download_status": "downloaded_not_reviewed",
+      "error": "",
+      "reviewed_at": "2026-11-04",
+      "disposition": "原稿完成・公開準備",
+      "source_sha256": "0b6a0af405d43cbe478ea199ba270598f2fdf58a8e6322c51af9e3916fa80b3d",
+      "review_note": "提供された公式ページ保存データを確認。未使用の紹介記事。猫の写真は商品使用の証拠として扱わない。"
+    },
+    {
+      "id": "A8-20261103-19",
+      "requested_url": "https://www.pontely.com/forowner/cat?ref=a8",
+      "retrieved_at": "2026-11-03T15:08:38.5820796Z",
+      "download_status": "downloaded_not_reviewed",
+      "error": "",
+      "reviewed_at": "2026-11-04",
+      "disposition": "原稿完成・公開準備",
+      "source_sha256": "6d4083c6fc85735dfdeae1437d464bbb4519fb47a43b6f9b41d142ba798d6d71",
+      "review_note": "提供された公式ページ保存データを確認。未使用の紹介記事。猫の写真は商品使用の証拠として扱わない。"
+    },
+    {
+      "id": "A8-20261103-20",
+      "requested_url": "https://withpety.com/products/nekobihada/a8.html?ad_code=2200",
+      "retrieved_at": "2026-11-03T15:08:39.5570680Z",
+      "download_status": "downloaded_not_reviewed",
+      "error": "",
+      "reviewed_at": "2026-11-04",
+      "disposition": "原稿完成・公開準備",
+      "source_sha256": "47ada2369af0b7716df05f951f58facee58959aa370f053517d2d769b5a76b17",
+      "review_note": "提供された公式ページ保存データを確認。未使用の紹介記事。猫の写真は商品使用の証拠として扱わない。"
+    },
+    {
+      "id": "A8-20261103-21",
+      "requested_url": "https://oneko-sama.com/",
+      "retrieved_at": "2026-11-03T15:08:39.6710304Z",
+      "download_status": "downloaded_not_reviewed",
+      "error": "",
+      "reviewed_at": "2026-11-04",
+      "disposition": "原稿完成・公開準備",
+      "source_sha256": "9111628ea2726d6eeb4ef76beefff48f000738aae50572c617deaeda4462c134",
+      "review_note": "提供された公式ページ保存データを確認。未使用の紹介記事。猫の写真は商品使用の証拠として扱わない。"
+    },
+    {
+      "id": "A8-20261103-22",
+      "requested_url": "https://withpety.com/products/nekoryoukan/a8.html?ad_code=2400",
+      "retrieved_at": "2026-11-03T15:08:41.1986782Z",
+      "download_status": "downloaded_not_reviewed",
+      "error": "",
+      "reviewed_at": "2026-11-04",
+      "disposition": "原稿完成・公開準備",
+      "source_sha256": "871d2dce432f7300247b928a71392694392630eeb65a4004a4038fb77b8e025d",
+      "review_note": "提供された公式ページ保存データを確認。未使用の紹介記事。猫の写真は商品使用の証拠として扱わない。"
+    },
+    {
+      "id": "A8-20261103-23",
+      "requested_url": "https://rabo.cat/catlog/",
+      "retrieved_at": "2026-11-03T15:08:41.3337477Z",
+      "download_status": "downloaded_not_reviewed",
+      "error": "",
+      "reviewed_at": "2026-11-04",
+      "disposition": "原稿完成・公開準備",
+      "source_sha256": "831e1704c02b02f89ae4aaa1f0bd2b5fc0ec253b9f4f951d09943fc94720fad2",
+      "review_note": "提供された公式ページ保存データを確認。未使用の紹介記事。猫の写真は商品使用の証拠として扱わない。"
+    },
+    {
+      "id": "A8-20261103-24",
+      "requested_url": "https://withpety.com/products/nekoissho/a8.html?ad_code=20004",
+      "retrieved_at": "2026-11-03T15:08:43.5297891Z",
+      "download_status": "downloaded_not_reviewed",
+      "error": "",
+      "reviewed_at": "2026-11-04",
+      "disposition": "原稿完成・公開準備",
+      "source_sha256": "6fe34fa0c9612142337cef669a558a92470fc8aa0ca53dd818c56d436c308f57",
+      "review_note": "提供された公式ページ保存データを確認。未使用の紹介記事。猫の写真は商品使用の証拠として扱わない。"
+    }
+  ]
+}
