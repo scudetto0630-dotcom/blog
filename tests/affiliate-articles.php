@@ -17,6 +17,9 @@ foreach($added as $a){
 foreach($existing as $slug=>$fingerprint){$p=get_page_by_path($slug);check(($p?hsh_article_fingerprint($p):null)===$fingerprint,'existing article untouched '.$slug);}
 $aff_snapshot=hsh_planner_snapshot();foreach($added as $a)check(isset($aff_snapshot['articles']['article:'.$a['slug']])&&$aff_snapshot['articles']['article:'.$a['slug']]['stage']==='published','new public article appears in private planner '.$a['slug']);
 check(hsh_release_article(new Request(array('slug'=>'excluded-dog-product','expected'=>null)))->code==='hsh_scope','excluded product cannot be published through scoped endpoint');
+$schema_html='<html><head><script type="application/ld+json">{"@type":"Article","headline":"M&amp;Co.","author":{"name":"Owner"}}</script></head><body>Body</body></html>';
+$schema_fixed=hsh_growth_metadata($schema_html,array('description'=>'Description','og:image'=>'https://example.test/photo.webp','og:image:width'=>'100','og:image:height'=>'100'));
+check(strpos($schema_fixed,'"headline":"M&Co."')!==false&&strpos($schema_fixed,'"name":"Owner"')!==false,'schema headline decodes HTML entities while preserving author');
 echo "All affiliate checks passed. Total including shared suites: $tests\n";
 
 $aff_pages=array();$aff_public=hsh_reader_catalog();
