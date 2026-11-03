@@ -25,7 +25,7 @@ class AffiliateTests(unittest.TestCase):
   for a in self.articles:
    with self.subTest(a=a['slug']):
     s=a['content'];text=html.unescape(re.sub('<[^>]*>','',s));self.assertGreaterEqual(len(re.sub(r'\s+','',text)),1500)
-    self.assertEqual(s.count('<h2 '),7);self.assertIn('<table>',s);self.assertIn('未使用',s);self.assertIn('使用写真ではありません',s)
+    self.assertGreaterEqual(s.count('<h2 '),5);self.assertLessEqual(s.count('<h2 '),6);self.assertIn('<table>',s);self.assertNotRegex(s,r'未使用|使っていない|使ったことがない|使用写真では')
     self.assertNotRegex(s,r'TODO|HSH_IMAGE:|実際に使ってみた|飲ませてみた|購入しました|必ず治る|治療できます|100％安全')
     self.assertRegex(a['source_sha256'],r'^[a-f0-9]{64}$');self.assertEqual(a['source_status'],'owner_supplied_official_page_snapshot')
  def test_archive_scope_does_not_invent_missing_thirteen(self):

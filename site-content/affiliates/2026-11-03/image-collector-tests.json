@@ -1,0 +1,27 @@
+{
+  "runtime": "PowerShell 7.4.6/Linux",
+  "http": "mocked only",
+  "windows_runtime_verified": false,
+  "cases": [
+    {
+      "case": "success",
+      "downloaded_fixture_images": 38,
+      "zip_verified": true
+    },
+    {
+      "case": "mixed",
+      "downloaded_fixture_images": 37,
+      "zip_verified": true
+    },
+    {
+      "case": "allfail",
+      "downloaded_fixture_images": 0,
+      "zip_verified": true
+    },
+    {
+      "case": "notimage",
+      "downloaded_fixture_images": 0,
+      "zip_verified": true
+    }
+  ]
+}

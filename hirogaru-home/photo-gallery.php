@@ -22,7 +22,7 @@ function hsh_photo_cover($post,$eager=false){
 }
 /** Place body photos at separate, balanced section boundaries, never within paragraphs or tables. */
 function hsh_insert_inline_photos($content,$slug){
-    $m=hsh_photo_manifest();$keys=$m['inline'][$slug]??$m['affiliate_inline'][$slug]??array();
+    $m=hsh_photo_manifest();$keys=$m['affiliate_product_images'][$slug]??$m['inline'][$slug]??$m['affiliate_inline'][$slug]??array();
     if(!$keys||strpos($content,'hsh-inline-photo')!==false)return $content;
     $end=strpos($content,'<nav class="hsh-next-read"');
     $body=$end!==false?substr($content,0,$end):$content;

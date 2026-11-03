@@ -14,4 +14,6 @@ check(hsh_update_archive(new UpdateArchiveFixture(array('hirogaru-home/hirogaru-
 foreach(array(array('../x.php'),array('another-plugin/x.php'),array('hirogaru-home/../x.php'),array('hirogaru-home/a.php','hirogaru-home/A.php'),array('hirogaru-home/assets/home.css')) as $names){check(!hsh_update_archive(new UpdateArchiveFixture($names)),'unsafe or incomplete archive rejected');}
 check(!hsh_update_archive(new UpdateArchiveFixture(array('hirogaru-home/hirogaru-home.php'),100,true)),'symlink rejected');
 check(!hsh_update_archive(new UpdateArchiveFixture(array('hirogaru-home/hirogaru-home.php'),60000000)),'expanded size bounded');
+$at_limit=array('hirogaru-home/hirogaru-home.php');for($n=1;$n<400;$n++)$at_limit[]='hirogaru-home/assets/test-'.$n.'.webp';
+check(hsh_update_archive(new UpdateArchiveFixture($at_limit)),'400-file photo bundle remains inside the bounded updater');$at_limit[]='hirogaru-home/assets/over-limit.webp';check(!hsh_update_archive(new UpdateArchiveFixture($at_limit)),'401-file archive is rejected');
 echo "All plugin update validation tests passed. Total tests: $tests\n";

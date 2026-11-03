@@ -6,10 +6,10 @@ check(count(hsh_expanded_articles())===10&&count(hsh_article_map())===3,'existin
 $manifest=hsh_photo_manifest();check(count(array_unique($manifest['affiliate_articles']))===13,'new articles use thirteen distinct cover choices');
 $existing=array();foreach(hsh_expanded_articles() as $a){$p=get_page_by_path($a['slug']);$existing[$a['slug']]=$p?hsh_article_fingerprint($p):null;}
 foreach($added as $a){
-    check($a['topic']==='cats'&&strpos($a['content'],'この記事には広告を含みます')!==false&&strpos($a['content'],'未使用')!==false,'ad and non-use disclosure '.$a['slug']);
-    $img=hsh_photo_for_slug($a['slug']);check($img&&$img['kind']==='provided','owned cat photograph cover '.$a['slug']);
-    $keys=array_merge(array($manifest['affiliate_articles'][$a['slug']]),$manifest['affiliate_inline'][$a['slug']]);check(count(array_unique($keys))===3,'cover and body photos differ within '.$a['slug']);
-    $body=hsh_insert_inline_photos($a['content'],$a['slug']);check(substr_count($body,'hsh-inline-photo')===2,'two actual body photos '.$a['slug']);
+    check($a['topic']==='cats'&&strpos($a['content'],'class="hsh-ad-notice"')!==false&&strpos($a['content'],'未使用')===false,'ad disclosure without non-use boilerplate '.$a['slug']);
+    $img=hsh_photo_for_slug($a['slug']);check($img&&$img['kind']==='generated'&&count($img['source_photos'])===2,'composite derived from provided cat photos '.$a['slug']);
+    check(isset($manifest['affiliate_product_images'][$a['slug']])&&$manifest['affiliate_inline'][$a['slug']]===array(),'original cat photos removed from affiliate body '.$a['slug']);
+    $body=hsh_insert_inline_photos($a['content'],$a['slug']);check(substr_count($body,'hsh-inline-photo')===0,'no unrelated original photos while official product files are pending '.$a['slug']);
     $response=hsh_release_article(new Request(array('slug'=>$a['slug'],'expected'=>null)));check($response instanceof WP_REST_Response,'only packaged affiliate article can publish '.$a['slug']);
     $p=get_post($response->data['id']);check($p->post_content===$a['content']&&$p->post_status==='publish','published exact reviewed body '.$a['slug']);
     check(hsh_release_article(new Request(array('slug'=>$a['slug'],'expected'=>null)))->code==='hsh_conflict','repeat cannot overwrite human edits '.$a['slug']);

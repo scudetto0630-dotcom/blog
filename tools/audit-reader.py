@@ -83,7 +83,9 @@ def fetch(path):
     request = Request(BASE + quote(path, safe='/?=&%'), headers={'User-Agent': 'HirogaruReaderAudit/1.0 bot'})
     with urlopen(request, timeout=60) as response:
         p = Page()
-        p.feed(response.read().decode('utf-8'))
+        raw = response.read().decode('utf-8')
+        p.feed(raw)
+        p.php_diagnostics = any(term in raw for term in ('Undefined array key', 'Trying to access array offset', 'Fatal error:', 'Uncaught Error:'))
         return path, p, response.status
 
 
@@ -97,6 +99,8 @@ def audit():
             pages[path] = p
             if status != 200 or len(p.canonical) != 1 or unquote(p.canonical[0]) != BASE + path:
                 problems.append({'path': path, 'problem': 'HTTP or canonical mismatch'})
+            if getattr(p, 'php_diagnostics', False):
+                problems.append({'path': path, 'problem': 'visible PHP diagnostic'})
             if p.json_errors:
                 problems.append({'path': path, 'problem': 'JSON-LD syntax'})
             if any(not a.get('alt') or not a.get('width') or not a.get('height') for a in p.photos):

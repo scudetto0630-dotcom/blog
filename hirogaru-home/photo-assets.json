@@ -1248,6 +1248,305 @@
         "sleep",
         "relax"
       ]
+    },
+    "a8-collage-01": {
+      "file": "a8-collage-01.webp",
+      "kind": "generated",
+      "subject": "manmos",
+      "rights": "generated",
+      "alt": "まんもすの写真を使った合成表紙",
+      "caption": "まんもすの合成表紙（AI生成）",
+      "width": 1200,
+      "height": 800,
+      "sha256": "ee8163f8a4e6643e5bf33b0632d875570a871bc621f2fd0142e3d4a1adae742f",
+      "variants": [
+        {
+          "file": "a8-collage-01-480.webp",
+          "width": 480,
+          "height": 320
+        }
+      ],
+      "source_photos": [
+        "manmos-front",
+        "manmos-portrait"
+      ],
+      "generation_date": "2026-11-04"
+    },
+    "a8-collage-02": {
+      "file": "a8-collage-02.webp",
+      "kind": "generated",
+      "subject": "manmos",
+      "rights": "generated",
+      "alt": "まんもすの写真を使った合成表紙",
+      "caption": "まんもすの合成表紙（AI生成）",
+      "width": 1200,
+      "height": 800,
+      "sha256": "d386ea5633fabe171481821629fdf3d19d6bdc2f766c63ffe0cb5e3d9a05bb7e",
+      "variants": [
+        {
+          "file": "a8-collage-02-480.webp",
+          "width": 480,
+          "height": 320
+        }
+      ],
+      "source_photos": [
+        "manmos-front",
+        "manmos-portrait"
+      ],
+      "generation_date": "2026-11-04"
+    },
+    "a8-collage-05": {
+      "file": "a8-collage-05.webp",
+      "kind": "generated",
+      "subject": "manmos",
+      "rights": "generated",
+      "alt": "まんもすの写真を使った合成表紙",
+      "caption": "まんもすの合成表紙（AI生成）",
+      "width": 1200,
+      "height": 800,
+      "sha256": "b2fe7301ed20dba4ca4987b1b398735c82dbab201fd9ce3689759f0396f330fe",
+      "variants": [
+        {
+          "file": "a8-collage-05-480.webp",
+          "width": 480,
+          "height": 320
+        }
+      ],
+      "source_photos": [
+        "manmos-front",
+        "manmos-portrait"
+      ],
+      "generation_date": "2026-11-04"
+    },
+    "a8-collage-06": {
+      "file": "a8-collage-06.webp",
+      "kind": "generated",
+      "subject": "manmos",
+      "rights": "generated",
+      "alt": "まんもすの写真を使った合成表紙",
+      "caption": "まんもすの合成表紙（AI生成）",
+      "width": 1200,
+      "height": 800,
+      "sha256": "e5edcd4c299bb6663e65dda356cfd830ff98ff18616d2ec1d16562078bb2609c",
+      "variants": [
+        {
+          "file": "a8-collage-06-480.webp",
+          "width": 480,
+          "height": 320
+        }
+      ],
+      "source_photos": [
+        "manmos-front",
+        "manmos-portrait"
+      ],
+      "generation_date": "2026-11-04"
+    },
+    "a8-collage-07": {
+      "file": "a8-collage-07.webp",
+      "kind": "generated",
+      "subject": "manmos",
+      "rights": "generated",
+      "alt": "まんもすの写真を使った合成表紙",
+      "caption": "まんもすの合成表紙（AI生成）",
+      "width": 1200,
+      "height": 800,
+      "sha256": "2237165f592e19e779091539ddafa12ad8567f9692789aa5353205c6c46ddf3a",
+      "variants": [
+        {
+          "file": "a8-collage-07-480.webp",
+          "width": 480,
+          "height": 320
+        }
+      ],
+      "source_photos": [
+        "manmos-front",
+        "manmos-portrait"
+      ],
+      "generation_date": "2026-11-04"
+    },
+    "a8-collage-10": {
+      "file": "a8-collage-10.webp",
+      "kind": "generated",
+      "subject": "manmos",
+      "rights": "generated",
+      "alt": "まんもすの写真を使った合成表紙",
+      "caption": "まんもすの合成表紙（AI生成）",
+      "width": 1200,
+      "height": 800,
+      "sha256": "f6be0b30d1a6dfcee0b0199196f9166ca819d5a5d2d9bfea9544ca2c761e157f",
+      "variants": [
+        {
+          "file": "a8-collage-10-480.webp",
+          "width": 480,
+          "height": 320
+        }
+      ],
+      "source_photos": [
+        "manmos-front",
+        "manmos-portrait"
+      ],
+      "generation_date": "2026-11-04"
+    },
+    "a8-collage-18": {
+      "file": "a8-collage-18.webp",
+      "kind": "generated",
+      "subject": "manmos",
+      "rights": "generated",
+      "alt": "まんもすの写真を使った合成表紙",
+      "caption": "まんもすの合成表紙（AI生成）",
+      "width": 1200,
+      "height": 800,
+      "sha256": "3244f31f332143f652772e4de307ea0ec9eae02ff5ef4831e74ebf8f51b3e1a8",
+      "variants": [
+        {
+          "file": "a8-collage-18-480.webp",
+          "width": 480,
+          "height": 320
+        }
+      ],
+      "source_photos": [
+        "manmos-front",
+        "manmos-portrait"
+      ],
+      "generation_date": "2026-11-04"
+    },
+    "a8-collage-19": {
+      "file": "a8-collage-19.webp",
+      "kind": "generated",
+      "subject": "manmos",
+      "rights": "generated",
+      "alt": "まんもすの写真を使った合成表紙",
+      "caption": "まんもすの合成表紙（AI生成）",
+      "width": 1200,
+      "height": 800,
+      "sha256": "07b98eefe052427baf695a566858a59876ba65ae3f05679ae83161091a5240fa",
+      "variants": [
+        {
+          "file": "a8-collage-19-480.webp",
+          "width": 480,
+          "height": 320
+        }
+      ],
+      "source_photos": [
+        "manmos-front",
+        "manmos-portrait"
+      ],
+      "generation_date": "2026-11-04"
+    },
+    "a8-collage-20": {
+      "file": "a8-collage-20.webp",
+      "kind": "generated",
+      "subject": "manmos",
+      "rights": "generated",
+      "alt": "まんもすの写真を使った合成表紙",
+      "caption": "まんもすの合成表紙（AI生成）",
+      "width": 1200,
+      "height": 800,
+      "sha256": "2812577b25ea3f6e063f2b788cfe97245b29c127b1a947c18ffed989e6eae424",
+      "variants": [
+        {
+          "file": "a8-collage-20-480.webp",
+          "width": 480,
+          "height": 320
+        }
+      ],
+      "source_photos": [
+        "manmos-front",
+        "manmos-portrait"
+      ],
+      "generation_date": "2026-11-04"
+    },
+    "a8-collage-21": {
+      "file": "a8-collage-21.webp",
+      "kind": "generated",
+      "subject": "manmos",
+      "rights": "generated",
+      "alt": "まんもすの写真を使った合成表紙",
+      "caption": "まんもすの合成表紙（AI生成）",
+      "width": 1200,
+      "height": 800,
+      "sha256": "24031c350b47e11e360238dc225f08d3a15089e53d26bff51b434f84b6599e44",
+      "variants": [
+        {
+          "file": "a8-collage-21-480.webp",
+          "width": 480,
+          "height": 320
+        }
+      ],
+      "source_photos": [
+        "manmos-front",
+        "manmos-portrait"
+      ],
+      "generation_date": "2026-11-04"
+    },
+    "a8-collage-22": {
+      "file": "a8-collage-22.webp",
+      "kind": "generated",
+      "subject": "manmos",
+      "rights": "generated",
+      "alt": "まんもすの写真を使った合成表紙",
+      "caption": "まんもすの合成表紙（AI生成）",
+      "width": 1200,
+      "height": 800,
+      "sha256": "5cdc304816fecf0c385f4b7239e5d2eb946101a50099e4efc737025df6e61659",
+      "variants": [
+        {
+          "file": "a8-collage-22-480.webp",
+          "width": 480,
+          "height": 320
+        }
+      ],
+      "source_photos": [
+        "manmos-front",
+        "manmos-portrait"
+      ],
+      "generation_date": "2026-11-04"
+    },
+    "a8-collage-23": {
+      "file": "a8-collage-23.webp",
+      "kind": "generated",
+      "subject": "manmos",
+      "rights": "generated",
+      "alt": "まんもすの写真を使った合成表紙",
+      "caption": "まんもすの合成表紙（AI生成）",
+      "width": 1200,
+      "height": 800,
+      "sha256": "0ef49cd5978aa07d06d0b6e76ca26f4bd954e5bc03b52ae36e02005ecf4f9e1c",
+      "variants": [
+        {
+          "file": "a8-collage-23-480.webp",
+          "width": 480,
+          "height": 320
+        }
+      ],
+      "source_photos": [
+        "manmos-front",
+        "manmos-portrait"
+      ],
+      "generation_date": "2026-11-04"
+    },
+    "a8-collage-24": {
+      "file": "a8-collage-24.webp",
+      "kind": "generated",
+      "subject": "manmos",
+      "rights": "generated",
+      "alt": "まんもすの写真を使った合成表紙",
+      "caption": "まんもすの合成表紙（AI生成）",
+      "width": 1200,
+      "height": 800,
+      "sha256": "2ff70b4f1b6e7648a676541db6e4bc482e447d1b5fde51de5cf7fe931dc166f5",
+      "variants": [
+        {
+          "file": "a8-collage-24-480.webp",
+          "width": 480,
+          "height": 320
+        }
+      ],
+      "source_photos": [
+        "manmos-front",
+        "manmos-portrait"
+      ],
+      "generation_date": "2026-11-04"
     }
   },
   "articles": {
@@ -1350,72 +1649,48 @@
     "hsh-editorial": "manmos-portrait"
   },
   "affiliate_articles": {
-    "paws-green-deli-cat-food": "manmos-portrait",
-    "hario-cat-bowl-guide": "manmos-back",
-    "mirai-cat-food-types": "manmos-stretch",
-    "m-and-cat-knit-bag": "manmos-tower",
-    "pet-sougi-110-cat-guide": "manmos-front",
-    "digxipop-cat-figure": "manmos-lying",
-    "withpety-nekokenshin": "manmos-sitting",
-    "pontely-cat-dna-test": "manmos-window",
-    "withpety-nekobihada": "manmos-zip-back",
-    "onekosama-cat-tower": "manmos-zip-bed",
-    "withpety-nekoryoukan": "manmos-zip-window",
-    "catlog-cat-monitor": "manmos-zip-sitting",
-    "withpety-nekoissho": "manmos-zip-paw"
+    "paws-green-deli-cat-food": "a8-collage-01",
+    "hario-cat-bowl-guide": "a8-collage-02",
+    "mirai-cat-food-types": "a8-collage-05",
+    "m-and-cat-knit-bag": "a8-collage-06",
+    "pet-sougi-110-cat-guide": "a8-collage-07",
+    "digxipop-cat-figure": "a8-collage-10",
+    "withpety-nekokenshin": "a8-collage-18",
+    "pontely-cat-dna-test": "a8-collage-19",
+    "withpety-nekobihada": "a8-collage-20",
+    "onekosama-cat-tower": "a8-collage-21",
+    "withpety-nekoryoukan": "a8-collage-22",
+    "catlog-cat-monitor": "a8-collage-23",
+    "withpety-nekoissho": "a8-collage-24"
   },
   "affiliate_inline": {
-    "paws-green-deli-cat-food": [
-      "manmos-lying",
-      "manmos-zip-window"
-    ],
-    "hario-cat-bowl-guide": [
-      "manmos-sitting",
-      "manmos-zip-sitting"
-    ],
-    "mirai-cat-food-types": [
-      "manmos-window",
-      "manmos-zip-paw"
-    ],
-    "m-and-cat-knit-bag": [
-      "manmos-zip-back",
-      "manmos-zip-groom"
-    ],
-    "pet-sougi-110-cat-guide": [
-      "manmos-zip-bed",
-      "manmos-zip-scratcher"
-    ],
-    "digxipop-cat-figure": [
-      "manmos-zip-window",
-      "manmos-zip-pillow"
-    ],
-    "withpety-nekokenshin": [
-      "manmos-zip-sitting",
-      "manmos-zip-stretch"
-    ],
-    "pontely-cat-dna-test": [
-      "manmos-zip-paw",
-      "manmos-portrait"
-    ],
-    "withpety-nekobihada": [
-      "manmos-zip-groom",
-      "manmos-back"
-    ],
-    "onekosama-cat-tower": [
-      "manmos-zip-scratcher",
-      "manmos-stretch"
-    ],
-    "withpety-nekoryoukan": [
-      "manmos-zip-pillow",
-      "manmos-tower"
-    ],
-    "catlog-cat-monitor": [
-      "manmos-zip-stretch",
-      "manmos-front"
-    ],
-    "withpety-nekoissho": [
-      "manmos-portrait",
-      "manmos-lying"
-    ]
+    "paws-green-deli-cat-food": [],
+    "hario-cat-bowl-guide": [],
+    "mirai-cat-food-types": [],
+    "m-and-cat-knit-bag": [],
+    "pet-sougi-110-cat-guide": [],
+    "digxipop-cat-figure": [],
+    "withpety-nekokenshin": [],
+    "pontely-cat-dna-test": [],
+    "withpety-nekobihada": [],
+    "onekosama-cat-tower": [],
+    "withpety-nekoryoukan": [],
+    "catlog-cat-monitor": [],
+    "withpety-nekoissho": []
+  },
+  "affiliate_product_images": {
+    "paws-green-deli-cat-food": [],
+    "hario-cat-bowl-guide": [],
+    "mirai-cat-food-types": [],
+    "m-and-cat-knit-bag": [],
+    "pet-sougi-110-cat-guide": [],
+    "digxipop-cat-figure": [],
+    "withpety-nekokenshin": [],
+    "pontely-cat-dna-test": [],
+    "withpety-nekobihada": [],
+    "onekosama-cat-tower": [],
+    "withpety-nekoryoukan": [],
+    "catlog-cat-monitor": [],
+    "withpety-nekoissho": []
   }
 }

@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-04",
+  "kind": "generated_photo_composite",
+  "source_photos": [
+    "manmos-front",
+    "manmos-portrait"
+  ],
+  "files": {
+    "10": "/workspace/generated_images/exec-cfb144e9-e46f-4ea8-a95a-462768d0d687.png",
+    "18": "/workspace/generated_images/exec-257fa360-5d14-41d3-85c2-0ad31cc7dcea.png",
+    "19": "/workspace/generated_images/exec-4c8dfca5-511d-460b-9285-20ed4bf76100.png",
+    "20": "/workspace/generated_images/exec-6ce6811e-344a-4a2e-a470-13ecc92ca033.png",
+    "21": "/workspace/generated_images/exec-1744306a-bf90-4625-84ee-7275120d6d46.png",
+    "22": "/workspace/generated_images/exec-68dcca70-db98-4132-847e-a6e0c34aa97a.png",
+    "23": "/workspace/generated_images/exec-b7654833-d446-43b9-9820-c68b48c07f8a.png",
+    "24": "/workspace/generated_images/exec-25340d0a-b1d8-43f1-94f6-e913ab1b8c76.png",
+    "01": "/workspace/generated_images/exec-dc7f7423-e0ce-4f4a-8f62-d1d81a6b3434.png",
+    "02": "/workspace/generated_images/exec-311cc803-fdba-40c9-9a0d-589fe2cf8cfa.png",
+    "05": "/workspace/generated_images/exec-e09996e2-a7bc-4407-8a42-3fb10662e485.png",
+    "06": "/workspace/generated_images/exec-71f1aa4a-bf27-4a93-b977-03807a863f08.png",
+    "07": "/workspace/generated_images/exec-a1da4898-ce52-4616-b7bf-555fd99cc213.png"
+  }
+}

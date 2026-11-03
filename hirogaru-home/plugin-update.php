@@ -8,7 +8,7 @@ function hsh_update_spec($data) {
     return 'https://raw.githubusercontent.com/scudetto0630-dotcom/blog/' . $data['commit'] . '/hirogaru-home.zip';
 }
 function hsh_update_archive($zip) {
-    if ($zip->numFiles < 1 || $zip->numFiles > 200) { return false; }
+    if ($zip->numFiles < 1 || $zip->numFiles > 400) { return false; }
     $total = 0; $main = false; $seen = array();
     for ($i = 0; $i < $zip->numFiles; $i++) {
         $stat = $zip->statIndex($i);
