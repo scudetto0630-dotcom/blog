@@ -1,0 +1,109 @@
+{
+  "scope": "HTML verification only; no advertiser URL or pixel requested, no ad clicked",
+  "articles": [
+    {
+      "id": "A8-20261103-01",
+      "article_url": "https://hirogarushumi.com/paws-green-deli-cat-food/",
+      "affiliate_url_matches": true,
+      "pixel_count": 1,
+      "pixels_match_received_code": true,
+      "nofollow_sponsored": true
+    },
+    {
+      "id": "A8-20261103-02",
+      "article_url": "https://hirogarushumi.com/hario-cat-bowl-guide/",
+      "affiliate_url_matches": true,
+      "pixel_count": 1,
+      "pixels_match_received_code": true,
+      "nofollow_sponsored": true
+    },
+    {
+      "id": "A8-20261103-05",
+      "article_url": "https://hirogarushumi.com/mirai-cat-food-types/",
+      "affiliate_url_matches": true,
+      "pixel_count": 1,
+      "pixels_match_received_code": true,
+      "nofollow_sponsored": true
+    },
+    {
+      "id": "A8-20261103-06",
+      "article_url": "https://hirogarushumi.com/m-and-cat-knit-bag/",
+      "affiliate_url_matches": true,
+      "pixel_count": 1,
+      "pixels_match_received_code": true,
+      "nofollow_sponsored": true
+    },
+    {
+      "id": "A8-20261103-07",
+      "article_url": "https://hirogarushumi.com/pet-sougi-110-cat-guide/",
+      "affiliate_url_matches": true,
+      "pixel_count": 1,
+      "pixels_match_received_code": true,
+      "nofollow_sponsored": true
+    },
+    {
+      "id": "A8-20261103-10",
+      "article_url": "https://hirogarushumi.com/digxipop-cat-figure/",
+      "affiliate_url_matches": true,
+      "pixel_count": 1,
+      "pixels_match_received_code": true,
+      "nofollow_sponsored": true
+    },
+    {
+      "id": "A8-20261103-18",
+      "article_url": "https://hirogarushumi.com/withpety-nekokenshin/",
+      "affiliate_url_matches": true,
+      "pixel_count": 0,
+      "pixels_match_received_code": true,
+      "nofollow_sponsored": true
+    },
+    {
+      "id": "A8-20261103-19",
+      "article_url": "https://hirogarushumi.com/pontely-cat-dna-test/",
+      "affiliate_url_matches": true,
+      "pixel_count": 1,
+      "pixels_match_received_code": true,
+      "nofollow_sponsored": true
+    },
+    {
+      "id": "A8-20261103-20",
+      "article_url": "https://hirogarushumi.com/withpety-nekobihada/",
+      "affiliate_url_matches": true,
+      "pixel_count": 0,
+      "pixels_match_received_code": true,
+      "nofollow_sponsored": true
+    },
+    {
+      "id": "A8-20261103-21",
+      "article_url": "https://hirogarushumi.com/onekosama-cat-tower/",
+      "affiliate_url_matches": true,
+      "pixel_count": 1,
+      "pixels_match_received_code": true,
+      "nofollow_sponsored": true
+    },
+    {
+      "id": "A8-20261103-22",
+      "article_url": "https://hirogarushumi.com/withpety-nekoryoukan/",
+      "affiliate_url_matches": true,
+      "pixel_count": 0,
+      "pixels_match_received_code": true,
+      "nofollow_sponsored": true
+    },
+    {
+      "id": "A8-20261103-23",
+      "article_url": "https://hirogarushumi.com/catlog-cat-monitor/",
+      "affiliate_url_matches": true,
+      "pixel_count": 1,
+      "pixels_match_received_code": true,
+      "nofollow_sponsored": true
+    },
+    {
+      "id": "A8-20261103-24",
+      "article_url": "https://hirogarushumi.com/withpety-nekoissho/",
+      "affiliate_url_matches": true,
+      "pixel_count": 1,
+      "pixels_match_received_code": true,
+      "nofollow_sponsored": true
+    }
+  ]
+}

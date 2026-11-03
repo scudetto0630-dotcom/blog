@@ -1,0 +1,36 @@
+{
+  "date": "2026-11-04",
+  "live_version": "1.25.1",
+  "plugin_deployed_commit": "63f7b99",
+  "links_received": 24,
+  "source_pages_received": 17,
+  "published_articles": 13,
+  "excluded": 5,
+  "held": 6,
+  "held_reasons": {
+    "official_page_403": 5,
+    "insufficient_cat_product_information": 1
+  },
+  "private_planner_records_saved": 13,
+  "publication_dates": "actual WordPress publication timestamps read from live Article schema; stored in JST and original ISO offset",
+  "tests": {
+    "php_including_shared": 568,
+    "python": 21,
+    "local_browser_4_widths": 52,
+    "live_browser_4_widths": 52,
+    "existing_page_smoke_4_widths": 18,
+    "public_audit_pages": 40,
+    "public_audit_problems": 0,
+    "live_affiliate_link_integrity": 13
+  },
+  "validation_ad_clicks": 0,
+  "validation_advertiser_or_pixel_requests": 0,
+  "limits": [
+    "No product was used or reviewed as personal usage.",
+    "Source is the owner-supplied official HTML snapshot, not an independent current fetch.",
+    "The remaining 13 links from the originally planned 37 have not been received.",
+    "Windows collection succeeded for 17 pages; five pages remained HTTP 403.",
+    "Core blog photos are reused as owned-cat context; they are not product-usage photographs.",
+    "No search-rank improvement, conversion, approved revenue or field performance gain was measured."
+  ]
+}
