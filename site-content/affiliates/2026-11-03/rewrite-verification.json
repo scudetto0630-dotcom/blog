@@ -1,0 +1,19 @@
+{
+  "version": "1.26.0",
+  "revision_date_jst": "2026-11-04",
+  "published_articles_rewritten": 13,
+  "distinct_composite_covers": 13,
+  "private_management_verified": true,
+  "php_checks": 610,
+  "python_tests": 21,
+  "preview_browser_checks": 52,
+  "live_browser_checks": 52,
+  "public_pages_audited": 40,
+  "public_audit_problems": 0,
+  "affiliate_clicks": 0,
+  "pending": [
+    "Actual official product image binaries must be received, visually inspected, and placed in article bodies."
+  ],
+  "product_image_candidates": 38,
+  "body_product_images_complete": false
+}
