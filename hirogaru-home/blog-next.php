@@ -10,6 +10,7 @@ function hsh_affiliate_articles(){
 }
 function hsh_release_items(){return array_merge(hsh_expanded_articles(),hsh_affiliate_articles());}
 function hsh_catalog(){return array_merge(hsh_article_map(),hsh_release_items());}
+function hsh_catalog_topic($slug){if(!is_string($slug))return '';foreach(hsh_catalog() as $a)if($a['slug']===$slug&&isset(hsh_topics()[$a['topic']]))return $a['topic'];return '';}
 function hsh_owned_blog_post($post){
     return $post&&$post->post_type==='post'&&(get_post_meta($post->ID,'_hsh_starter_owned',true)===$post->post_name||get_post_meta($post->ID,'_hsh_bundle_owned',true)===$post->post_name);
 }
@@ -135,7 +136,8 @@ add_filter('the_content',function($content){
     if(!is_singular('post')||!in_the_loop()||!is_main_query())return $content;
     $p=get_post();if(!hsh_owned_blog_post($p))return $content;
     if(get_post_meta($p->ID,'_hsh_bundle_owned',true)){
-        $topic='';foreach(hsh_expanded_articles() as $a)if($a['slug']===$p->post_name)$topic=$a['topic'];
+        $topic=hsh_catalog_topic($p->post_name);
+        if(!isset(hsh_topics()[$topic]))return $content.hsh_report_markup($p);
         $content='<div class="hsh-article-visual">'.hsh_card_cover($p).'</div>'.$content;
         $content.='<p class="hsh-review-note">本文の見直し：<time datetime="'.esc_attr(get_post_meta($p->ID,'_hsh_content_reviewed',true)?:get_post_modified_time('Y-m-d',false,$p)).'">'.esc_html(str_replace('-','/',get_post_meta($p->ID,'_hsh_content_reviewed',true)?:get_post_modified_time('Y-m-d',false,$p))).'</time></p><p><a href="'.esc_url(hsh_category_url($topic)).'">'.esc_html(hsh_topics()[$topic][0]).'の記事一覧へ →</a></p>'.hsh_related_markup($topic,$p->ID).hsh_profile_markup();
     }
@@ -143,8 +145,8 @@ add_filter('the_content',function($content){
 },25);
 add_action('wp_enqueue_scripts',function(){
     if(is_admin())return;
-    wp_enqueue_style('hsh-next',plugin_dir_url(__FILE__).'assets/blog-next.css',array(),'1.25.1');
-    wp_enqueue_script('hsh-next',plugin_dir_url(__FILE__).'assets/blog-next.js',array(),'1.25.1',true);
+    wp_enqueue_style('hsh-next',plugin_dir_url(__FILE__).'assets/blog-next.css',array(),'1.25.2');
+    wp_enqueue_script('hsh-next',plugin_dir_url(__FILE__).'assets/blog-next.js',array(),'1.25.2',true);
     wp_localize_script('hsh-next','hshBlogTools',array('reportUrl'=>rest_url('hirogaru/v1/blog-report'),'tokenUrl'=>rest_url('hirogaru/v1/blog-report-token')));
 },110);
 add_filter('template_include',function($template){return is_404()?__DIR__.'/not-found-template.php':$template;},102);

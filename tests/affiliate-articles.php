@@ -20,6 +20,8 @@ check(hsh_release_article(new Request(array('slug'=>'excluded-dog-product','expe
 $schema_html='<html><head><script type="application/ld+json">{"@type":"Article","headline":"M&amp;Co.","author":{"name":"Owner"}}</script></head><body>Body</body></html>';
 $schema_fixed=hsh_growth_metadata($schema_html,array('description'=>'Description','og:image'=>'https://example.test/photo.webp','og:image:width'=>'100','og:image:height'=>'100'));
 check(strpos($schema_fixed,'"headline":"M&Co."')!==false&&strpos($schema_fixed,'"name":"Owner"')!==false,'schema headline decodes HTML entities while preserving author');
+foreach($added as $a)check(hsh_catalog_topic($a['slug'])==='cats','affiliate article topic is available to full content rendering '.$a['slug']);
+check(hsh_catalog_topic('not-owned')===''&&hsh_catalog_topic(array('cats'))==='','unknown and invalid topics fail closed without array warnings');
 echo "All affiliate checks passed. Total including shared suites: $tests\n";
 
 $aff_pages=array();$aff_public=hsh_reader_catalog();
