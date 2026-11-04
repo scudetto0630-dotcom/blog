@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns#">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>
+            マックアダムズ｜本気で偏食克服を目指すプレミアムキャットフード
+        </title>
+
+    <meta name="description" content="偏食のネコちゃんでも食べたくなる、バツグンの食いつきを誇る「マックアダムズ」。チキン丸鶏を贅沢に使用したお肉の旨味たっぷりの絶品フードです。さらに愛猫の偏食でお悩みのオーナー様を安心の特典でサポートします。">
+
+    <!-- OGP -->
+    <link rel="icon" href="https://www.mcadamspetfoods.co.jp/public/images/default/mcadamspetfoods/catfood/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="https://www.mcadamspetfoods.co.jp/public/images/default/mcadamspetfoods/catfood/apple-touch-icon.png" sizes="180x180">
+
+    <meta property="og:type" content="artcle">
+    <meta property="og:title" content="マックアダムズ｜本気で偏食克服を目指すプレミアムキャットフード">
+    <meta property="og:description" content="偏食のネコちゃんでも食べたくなる、バツグンの食いつきを誇る「マックアダムズ」。チキン丸鶏を贅沢に使用したお肉の旨味たっぷりの絶品フードです。さらに愛猫の偏食でお悩みのオーナー様を安心の特典でサポートします。">
+    <meta property="og:site_name" content="">
+    <meta property="og:image" content="https://www.mcadamspetfoods.co.jp/public/images/default/mcadamspetfoods/catfood/ogp.jpg">
+    <meta property="og:url" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://www.mcadamspetfoods.co.jp/public/images/default/mcadamspetfoods/catfood/ogp.jpg">
+    <meta name="twitter:title" content="マックアダムズ｜本気で偏食克服を目指すプレミアムキャットフード">
+    <meta name="twitter:description" content="偏食のネコちゃんでも食べたくなる、バツグンの食いつきを誇る「マックアダムズ」。チキン丸鶏を贅沢に使用したお肉の旨味たっぷりの絶品フードです。さらに愛猫の偏食でお悩みのオーナー様を安心の特典でサポートします。">
+    <!-- OGP -->
+        <meta name="google-site-verification" content="aoBU0czedQ45bHpU4rdX9bY69dBKsj27se9eoMXnZGM" />
+    
+        <link href='https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&amp;display=swap' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Copse|Noto+Serif+JP:400,700&amp;display=swap&amp;subset=japanese' rel='stylesheet'>
+    <link rel="preload" href="/public/images/default/mcadamspetfoods/catfood/img_01.webp" as="image" type="image/webp">
+    <link rel="preload" href="/public/images/default/mcadamspetfoods/catfood/img_02.webp" as="image" type="image/webp">
+    <link rel="preload" href="/public/styles/default/mcadamspetfoods/catfood/style.css" as="style">
+    <link rel="stylesheet" href="/public/styles/default/mcadamspetfoods/catfood/style.css">
+    <link rel="stylesheet" type="text/css" href="/public/styles/default/mcadamspetfoods/catfood/style_pc.css">
+        <script type="text/javascript" src="/public/js/jquery-1.7.1.min.js"></script>
+    <script defer>
+      window.jQuery || document.write('<script src="/public/js/default/mcadamspetfoods/catfood/jquery-3.4.1.min.js"><\/script>')
+    </script>
+    <script type="text/javascript" src="/public/js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="/public/js/default/calculate_price_new.js"></script>
+    <script type="text/javascript" src="/public/js/get-postcode.js"></script>
+    <script type="text/javascript" src="/public/js/slick.min.js"></script>
+    <script type="text/javascript" src="/public/js/common.js"></script>
+
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.2/velocity.min.js' type='text/javascript'></script>
+    <link rel="preload" href="/public/js/default/mcadamspetfoods/catfood/common.js" as="script">
+    
+    
+    <!-- lazyload用 -->
+    <!-- intersection-observer.js & yall.min.js -->
+    <script src="/public/js/default/mcadamspetfoods/catfood/lazy.min.js" defer></script>
+    <script defer>
+      document.addEventListener("DOMContentLoaded", function() {
+        yall({
+          observeChanges: true
+        });
+      });
+    </script>
+    <!-- lazyload用 -->
+    
+
+    <script type="text/javascript">
+    
+    $(function(){
+    $("#tabChange").click(function(){
+        $("input[name=card_number]").val("");
+        
+        $('#nform').attr('action', "https://www.mcadamspetfoods.co.jp/catfood/cart/change");
+        
+        $('#nform').submit();
+    });
+    $("#tabChange2").click(function(){
+        $("input[name=card_number]").val("");
+        
+        $('#nform').attr('action', "https://www.mcadamspetfoods.co.jp/catfood/cart/change");
+        
+        $('#nform').submit();
+    });
+
+    var chk = $('#payment_id_2').attr('checked');
+    if(chk){
+        $("#card_form").css("display", "block");
+        $("#delivery_box_1").removeAttr('disabled');
+    }else{
+        $("#card_form").css("display", "none");
+        $("#delivery_box_1").attr('checked',false);
+        $("#delivery_box_1").attr('disabled','disabled');
+    }
+    $("#payment_id_1").click(function(){
+        var check = $('#payment_id_2').attr('checked');
+        if(check){
+            $("#card_form").css("display", "block");
+            $("#delivery_box_1").removeAttr('disabled');
+        }else{
+            $("#card_form").css("display", "none");
+            $("#delivery_box_1").attr('checked',false);
+            $("#delivery_box_1").attr('disabled','disabled');
+        }
+    });
+    $("#payment_id_2").click(function(){
+        var check = $('#payment_id_1').attr('checked');
+        if(check){
+            $("#card_form").css("display", "none");
+            $("#delivery_box_1").attr('checked',false);
+            $("#delivery_box_1").attr('disabled','disabled');
+        }else{
+            $("#card_form").css("display", "block");
+            $("#delivery_box_1").removeAttr('disabled');
+        }
+    });
+    var chk = $('#shipment_type_2').attr('checked');
+    if(chk){
+        $("#tbl_otodoke_info").css("display", "table");
+    }else{
+        $("#tbl_otodoke_info").css("display", "none");
+    }
+    $("#shipment_type_2").click(function(){
+        var check = $('#shipment_type_2').attr('checked');
+        if(check){
+            $("#tbl_otodoke_info").css("display", "table");
+        }else{
+            $("#tbl_otodoke_info").css("display", "none");
+        }
+    });
+    $("#shipment_type_1").click(function(){
+        var check = $('#shipment_type_1').attr('checked');
+        if(check){
+            $("#tbl_otodoke_info").css("display", "none");
+        }else{
+            $("#tbl_otodoke_info").css("display", "table");
+        }
+    });
+
+    if(!$.support.opacity) {
+        
+                
+    }
+
+    $(window).on('load', function() {
+    	if($.support.opacity) {
+        
+                
+        }
+    });
+    });
+
+    
+    
+    </script>
+
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-865777250"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-865777250');
+</script>
+
+
+
+
+<script async src="https://s.yimg.jp/images/listing/tool/cv/ytag.js"></script>
+<script>
+window.yjDataLayer = window.yjDataLayer || [];
+function ytag() { yjDataLayer.push(arguments); }
+ytag({"type":"ycl_cookie"});
+</script>
+
+
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10886723399"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-10886723399');
+</script>
+
+
+
+
+<script async src="https://s.yimg.jp/images/listing/tool/cv/ytag.js"></script>
+<script>
+window.yjDataLayer = window.yjDataLayer || [];
+function ytag() { yjDataLayer.push(arguments); }
+ytag({"type":"ycl_cookie", "config":{"ycl_use_non_cookie_storage":true}});
+</script>
+
+
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '305220393392951');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=305220393392951&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+
+
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XW3RC0EKFL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XW3RC0EKFL');
+</script>
+
+
+
+
+
+<!-- Begin Mieruca Embed Code -->
+<script type="text/javascript" id="mierucajs">
+window.__fid = window.__fid || [];__fid.push([299268547]);
+(function() {
+function mieruca(){if(typeof window.__fjsld != "undefined") return; window.__fjsld = 1; var fjs = document.createElement('script'); fjs.type = 'text/javascript'; fjs.async = true; fjs.id = "fjssync"; var timestamp = new Date;fjs.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://hm.mieru-ca.com/service/js/mieruca-hm.js?v='+ timestamp.getTime(); var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(fjs, x); };
+setTimeout(mieruca, 500); document.readyState != "complete" ? (window.attachEvent ? window.attachEvent("onload", mieruca) : window.addEventListener("load", mieruca, false)) : mieruca();
+})();
+</script>
+<!-- End Mieruca Embed Code -->
+
+
+  </head>
+
+  <body id="" class="cat_pc">
+
+                <div style="text-align:center;line-height:25px;">
+      
+
+
+
+    </div>
+    
+        <main>
+      <section class="cat">
+        <section class="mv">
+          <h1><img src="/public/images/default/mcadamspetfoods/catfood/img_01.webp" alt="マックアダムズキャットフードチキン&ターキー"></h1>
+        </section>
+        <section class="support">
+          <p class="txt">いつでも返品可能な<br><span>全額返金保証</span></p>
+          <p class="txt">愛猫の食生活・生活習慣のお悩みに答える<br><span>獣医師相談窓口</span></p>
+        </section>
+        <div class="cv">
+          <p><img class="lazy" src="/public/images/default/mcadamspetfoods/catfood/placeholder.webp" data-src="/public/images/default/mcadamspetfoods/catfood/btn_01.webp" alt="通常 価格8,020円(税抜)（税込8,822円）定期コースなら…6,416円(税抜)（税込7,057円）最大20%OFF"></p>
+          <p class="link"><a href="#nform" rel="noopener noreferrer"><img class="lazy" src="/public/images/default/mcadamspetfoods/catfood/placeholder.webp" data-src="/public/images/default/mcadamspetfoods/catfood/btn.webp" alt="全額返金保証付き お申し込みはこちら"></a></p>
+        </div>
+        <section class="why">
+          <p><img class="lazy" src="/public/images/default/mcadamspetfoods/catfood/placeholder.webp" data-src="/public/images/default/mcadamspetfoods/catfood/img_02.webp" alt="どうしてご飯を食べてくれないの？愛猫がご飯を食べなくなる度に、食べてくれそうな新しいフードを探すのは一苦労"></p>
+          <p class="txt">さらにその頑張って選んだフードも<br>食べてくれなかった時には…<br><span>「愛猫のために」と尽力しているオーナー様には本当に頭が下がるばかりです！</span></p>
+          <p class="txt">私たちは、<span>そんなオーナー様の</span><br><span>お力になりたい</span>と思っています。</p>
+          <p class="txt"><span class="cl">食いつきバツグンのマックアダムズで</span><br>偏食<span class="sml">を</span>克服しましょう! </p>
+        </section>
+        <section class="dglist">
+          <p><img class="lazy" src="/public/images/default/mcadamspetfoods/catfood/placeholder.webp" data-src="/public/images/default/mcadamspetfoods/catfood/img_03.webp" alt="喜びの声も続々！"></p>
+          <p class="txt">いつものフードはあまり食べないのでトッピングをかけ<br>てあげるのですが、<span>マックアダムズはそのままでもよく<br>食べてくれます。</span></p>
+          <p class="txt"><span>休まずに夢中で食べ、</span>食べ終わると2匹とも満<br>足そうに毛づくろいをしています。</p>
+          <p class="txt">ごはんを出してもすぐに食べ始めなかった猫が<span>何の迷い<br>もなく食いついてくれたことに驚きました。</span></p>
+          <p class="txt">しっかり噛んで<span>美味しそうに食べています。</span><br><span>最後はいつも名残惜しそうにお皿をなめています。</span></p>
+          <!-- <p class="hideBtn_02"><a href="" class="btn">さらにユーザーボイスをご覧になりたい方はこちら</a></p> -->
+        </section>
+        <p class="p-ttl"><img class="lazy" src="/public/images/default/mcadamspetfoods/catfood/placeholder.webp" data-src="/public/images/default/mcadamspetfoods/catfood/img_04.webp" alt="なぜマックアダムズはこんなに食いつきがいいのでしょう？バツグンの食いつきを実現する4つのポイント"></p>
+        <section class="point">
+          <p><img class="lazy" src="/public/images/default/mcadamspetfoods/catfood/placeholder.webp" data-src="/public/images/default/mcadamspetfoods/catfood/img_05.webp" alt="point01:ヒューマングレードの放し飼いチキン丸鶏と放し飼いターキーを使用※point02:香ばしいオーブンベイク製法point03:食感がいいカリカリビスケット"></p>
+          <p class="txt">フードの美味しさはお肉の量によって決まりますが、<span>マックアダムズではチキンとターキーを合わせてなんと原材料全体の50%以上も使用しています！</span>マックアダムズは贅沢に1kgあたりチキンを丸ごと1羽分たっぷりと使っているので、チキンの旨みをしっかりと感じられます。お肉の品質にもこだわり、DEFRA（英国環境・食料・農村地域省）が承認した適正な農場で育ったヒューマングレードの放し飼いチキンと放し飼いターキーを採用しています。<br><span>自由に草原をかけまわりストレスなく育ったチキンとターキーは美味しさも栄養も満点です。</span><br><span class="cap">※ヒューマングレードの食品工場から仕入れた肉を使用</span></p>
+          <p class="txt">マックアダムズのフードは低温で優しく焼き上げるオーブンベイク製法を採用しています。<span>オーブンでじっくり焼き上げられたお肉のビスケットは他に類を見ない風味と美味しさを誇ります。</span><br>低温調理で原材料の栄養も落とすことなく仕上げました。</p>
+          <p class="txt">子猫やシニア猫でも食べやすいカリカリビスケットに仕上げました。コロンと丸いビスケットは程よく厚みがあり、カリカリサクサクとした食感で、<span>ネコちゃんの食がどんどん進みます。</span></p>
+        </section>
+        <section class="point_04">
+          <p><img class="lazy" src="/public/images/default/mcadamspetfoods/catfood/placeholder.webp" data-src="/public/images/default/mcadamspetfoods/catfood/img_07.webp" alt="point4:高品質な原材料を使用"></p>
+          <p class="txt"><span>食物繊維・ビタミン・ミネラルなどを豊富に含んだ栄養価の高い原材料を使用しています。</span><br>美味しさにもこだわって厳選しているので、好き嫌いの多い愛猫にも気に入ってもらえるはずです。またネコちゃんには<span>消化しづらいとされている穀物を一切使用していないので、体にも優しいレシピに仕上げています。</span></p>
+          <div class="txtArea">
+            <p class="txtArea-txt">ニュージーランド産の緑イ貝は体の健康に重要なグルコサミン・コンドロイチン・DHAを豊富に含んでいます。</p>
+            <p class="txtArea-txt">丁寧に手摘みされた海藻「アスコフィラムノドサム」をブレンドしています。この海藻の抽出物は世界各国で特許を取得した天然のケア成分です。さらに健やかな発達に不可欠なオメガ3脂肪酸や体のコンディションを助けるヨウ素も多く含んでいます。</p>
+            <div class="txtArea-btm">
+              <h2 class="txtArea-btm-ttl">ニンジン</h2>
+              <p class="txtArea-btm-txt">健康な体に重要で、体を守ってくれるビタミンAを豊富に含んでいます。</p>
+              <h2 class="txtArea-btm-ttl">クランベリー</h2>
+              <p class="txtArea-btm-txt">キナ酸を豊富に含み、健康な体のサポートをします。</p>
+              <h2 class="txtArea-btm-ttl">ハーブ類</h2>
+              <p class="txtArea-btm-txt">西洋では薬草としても使用されているラベンダー・ローズマリー・ユッカ・カモミールをブレンドしています。</p>
+            </div>
+          </div>
+        </section>
+        <!-- <p class="point_btn"><a href="" class="btn">さらに詳しいこだわりはこちら</a></p> -->
+        <section class="talk">
+          <p class="img"><img class="lazy" src="/public/images/default/mcadamspetfoods/catfood/placeholder.webp" data-src="/public/images/default/mcadamspetfoods/catfood/img_08.webp" alt="マックアダムズの美味しさの秘密"></p>
+          <div class="talk-ms">
+            <p class="talk-name">片山政都先生</p>
+            <p class="talk-txt">日本獣医生命科学大学を卒業。<br>2019年1月に「ブルーム動物病院」を開業。<br>「動物と飼い主様が共に幸せになれる道を開ける診療」を目指し、呼吸器や画像診断、腫瘍、また、猫伝染性腹膜炎（FIP）の治療など、幅広く獣医療に注力している。</p>
+          </div>
+          <div class="talk-dtl">
+            <p>放し飼いチキンと放し飼いターキーといった低脂肪高タンパク質な素材を使っています。<span>中でもチキンは丸ごと1羽使うことで良質なタンパク源となっています。</span>またグレインフリーなため、肉食動物であるネコちゃんの消化器系に負担が少ないフードです。</p>
+            <p>オーブンベイクドという製法を用いているため、通常のドライフードより時間はかかりますが、<span>栄養や味、香りを落とすことなくフードを製造することができます。</span></p>
+            <p>アイルランド産のオメガ３脂肪酸が豊富な海藻を使用しているため、<span>体の健康維持にはとても大事な栄養素が多く含まれています。他にもグルコサミンや緑イ貝といった活動的なネコちゃんにも配慮された原材料が豊富です。</span>またタウリンやリジンといったネコちゃんに必要なアミノ酸も配合されています。</p>
+          </div>
+          <p class="txt">マックアダムズは香りもしっかりあり、嗜好性にも特化しているので、あまりごはんの食いつきが良くない子でも好んで食べてくれる可能性があります。健康面を気にしつつ、美味しく食べてくれるフードを探しているネコちゃんには最適なフードと言えるでしょう。</p>
+        </section>
+        <div class="cv_01">
+          <p><img class="lazy" src="/public/images/default/mcadamspetfoods/catfood/placeholder.webp" data-src="/public/images/default/mcadamspetfoods/catfood/btn_02.webp" alt="通常 価格8,020円(税抜)（税込8,822円）定期コースなら…6,416円(税抜)（税込7,057円）最大20%OFF"></p>
+          <p class="link"><a href="#nform" rel="noopener noreferrer"><img class="lazy" src="/public/images/default/mcadamspetfoods/catfood/placeholder.webp" data-src="/public/images/default/mcadamspetfoods/catfood/btn.webp" alt="全額返金保証付き お申し込みはこちら"></a></p>
+        </div>
+        <p><img class="lazy" src="/public/images/default/mcadamspetfoods/catfood/placeholder.webp" data-src="/public/images/default/mcadamspetfoods/catfood/img_09.webp" alt="定期コース限定特典がたくさん"></p>
+        <section class="benefits_01">
+          <p><img class="lazy" src="/public/images/default/mcadamspetfoods/catfood/placeholder.webp" data-src="/public/images/default/mcadamspetfoods/catfood/img_10.webp" alt="特典1:食いつきに圧倒的な自信があるから…食べなかったら・食べなくなったら全額返金保証"></p>
+          <p class="txt">オーナー様に安心してお試しいただくため、<br>マックアダムズはご購入個数・回数にかかわらず、</p>
+          <p class="txt">なんと開封済みの商品でも返品可能です！<span>※</span></p>
+          <p class="txt">※1個まで</p>
+        </section>
+        <section class="benefits_02">
+          <p><img class="lazy" src="/public/images/default/mcadamspetfoods/catfood/placeholder.webp" data-src="/public/images/default/mcadamspetfoods/catfood/img_11.webp" alt="特典2:愛猫の食生活・生活習慣に関するお悩みを獣医師に相談できる獣医師相談窓口"></p>
+          <p class="txt">このように悩まれているオーナー様のために<br>定期コースご利用者様限定の獣医師相談窓口を設けています！</p>
+          <p class="txt">どんな小さなご相談でも結構です。お気軽にご連絡ください。</p>
+          <p class="b-btn"><a href="https://www.laetitienpet.com/contact" target="_blank" rel="noopener noreferrer">獣医師相談窓口はこちら</a></p>
+        </section>
+        <p><img class="lazy" src="/public/images/default/mcadamspetfoods/catfood/placeholder.webp" data-src="/public/images/default/mcadamspetfoods/catfood/img_12.webp" alt="だからマックアダムズキャットフード チキン&ターキーは偏食な子におすすめ!"></p>
+        <section class="support_02">
+          <p><img class="lazy" src="/public/images/default/mcadamspetfoods/catfood/placeholder.webp" data-src="/public/images/default/mcadamspetfoods/catfood/img_13.webp" alt=""></p>
+          <h2 class="ttl"><span class="bg">偏食克服<span class="sm">を</span>サポート！</span><br>定期コース限定特典も充実！</h2>
+          <p class="txt">いつでも返品可能な<br><span>全額返金保証</span></p>
+          <p class="txt">愛猫の食生活・生活習慣のお悩みに答える<br><span>獣医師相談窓口</span></p>
+        </section>
+        <div class="cv_01">
+          <p><img class="lazy" src="/public/images/default/mcadamspetfoods/catfood/placeholder.webp" data-src="/public/images/default/mcadamspetfoods/catfood/btn_02.webp" alt="通常 価格8,020円(税抜)（税込8,822円）定期コースなら…6,416円(税抜)（税込7,057円）最大20%OFF"></p>
+          <p class="link"><a href="#nform" rel="noopener noreferrer"><img class="lazy" src="/public/images/default/mcadamspetfoods/catfood/placeholder.webp" data-src="/public/images/default/mcadamspetfoods/catfood/btn.webp" alt="全額返金保証付き お申し込みはこちら"></a></p>
+        </div>
+        <section class="story">
+          <p><img class="lazy" src="/public/images/default/mcadamspetfoods/catfood/placeholder.webp" data-src="/public/images/default/mcadamspetfoods/catfood/img_14.webp" alt="マックアダムズのストーリー"></p>
+          <div class="story-top">
+            <p class="txt">マックアダムズの創業者であるニール氏の愛犬・ジョージは市販のペットフードを食べることができませんでした。色んなフードをどんなに買い与えても多くを食べないジョージにニール氏は頭を悩ませます。<span>フードをもっと美味しく食べてほしい、という切実な思いから自宅のキッチンでジョージ専用のドッグフードを作り始めました。</span>これがマックアダムズの始まりです。</p>
+            <p class="txt">ニール氏はジョージのごはんにいつも放し飼いチキンをたっぷりと使っていました。「放し飼いチキン」にこだわったのは、散歩するときに通りかかる農場の放し飼いチキンを見て「家族の一員であるジョージにも上質なチキンを食べてほしい」という思いがあったからです。その美味しいチキンを食べたジョージは大喜び！ニール氏の手作りごはんのおかげでまたごはんを食べられるようになったのでした。</p>
+          </div>
+          <p class="story-btm">愛犬のために高品質な食材を使ったこだわりのレシピは今でも変わらず、マックアダムズのフードに受け継がれています。ニール氏は、マックアダムズの一番のこだわりはチキンを丸々贅沢に使用しているところだと言います。自由に外を走り回ることができ、ストレスなく育てられた放し飼いチキンは品質だけでなく味も抜群に良いので、グルメなペットにぴったりです。</p>
+        </section>
+        <section class="story_02">
+          <p><img class="lazy" src="/public/images/default/mcadamspetfoods/catfood/placeholder.webp" data-src="/public/images/default/mcadamspetfoods/catfood/img_15.webp" alt="一人の愛犬家から始まった「マックアダムズ」はイギリス産高級ペットフードとして、今では販売国数20か国以上※で展開！世界中から愛されています。"></p>
+          <!-- <p class="btn hideBtn_03"><a href="">さらに詳しいブランドストーリーはこちら</a></p> -->
+        </section>
+        <section class="plant">
+          <p><img class="lazy" src="/public/images/default/mcadamspetfoods/catfood/placeholder.webp" data-src="/public/images/default/mcadamspetfoods/catfood/img_16.webp" alt="我が子が毎日食べるごはんだからイギリス大手ペットフード専門工場で安心安全をとことん追求しました！"></p>
+          <p class="txt-top">イギリスは世界屈指の動物愛護国と言われており、ペットフードは人間の食事と同等に捉えられ、法規制も厳しく設定されています。マックアダムズが作られているのは、そんなペット先進国イギリスの中でも特に高い評価と信頼を集めるペットフード専門工場。<br>イングランドの自然豊かなエリアに広い敷地を構えるこの工場は、<span>FEDIAF*(欧州ペットフード工業会連合) の厳しい基準をクリアした安心の施設</span>となっています。</p>
+          <p class="txt-middle">ヨーロッパのペットフード業界を代表する団体で、ペットフードの製造や最先端の栄養学に関するガイドラインを定めています。原材料の流通過程を明確にすることや、管理された工場での製造、適切な製品ラベルの記載など細かく制定されています。</p>
+          <ul class="txt-btm">
+            <li>この第一段階のテストをクリアした原材料だけが、生産ラインに回されます。</li>
+            <li>専門の品質管理官が最新設備を駆使して、異常がないか監視を行っています。</li>
+            <li>最新の機器と技術を用いて最終製品のテストを行い、あらかじめ登録されたデータと差異がないことを確認しています。</li>
+          </ul>
+        </section>
+        <section class="store">
+          <p><img class="lazy" src="/public/images/default/mcadamspetfoods/catfood/placeholder.webp" data-src="/public/images/default/mcadamspetfoods/catfood/img_17.webp" alt="プレミアムペットフード専門店レティシアン"></p>
+          <p class="txt-top">これが、私たちレティシアンの理念です。<br>ただ商品をお届けするだけでなく、ペットオーナー様と愛犬・愛猫が真に幸せで豊かな毎日を送るための<br>お手伝いをすることが、私たちの目指すゴールです。</p>
+          <p class="txt-middle">私たちレティシアンでは、入荷したすべてのロットについて毎回社内のスタッフが品質チェックを行っています。粒の色の濃淡など小さな変化も見逃さず、しっかりと生産者に確認をとったうえで安心してお客様にお届けできる商品を出荷しています。<br><br>また、安定してお客様に商品をお届けできるよう、社内の輸入チームがイギリスから日本への航路に関わる情報を随時チェック。大切なフードを欠かすことのないよう、安定供給を実現する輸入・在庫管理体制を敷いています。100％安心できるまでしっかりと生産者とのコミュニケーションを行っています。</p>
+          <p class="txt-btm">私たちはただ商品をお届けするだけではなく、その先の生活までしっかりとサポートさせていただきたいと思っています。<br><br>そのような想いから、レティシアンでは<span>動物看護大学や動物専門学校などの卒業生をはじめ、ペット栄養管理士・ホリスティックケアカウンセラーなどの資格を持った専門スタッフ約30名が常駐</span>し、ペットオーナー様からのご質問やご相談に答えられる体制を整えています。</p>
+        </section>
+        <div class="cv_01">
+          <p><img class="lazy" src="/public/images/default/mcadamspetfoods/catfood/placeholder.webp" data-src="/public/images/default/mcadamspetfoods/catfood/btn_02.webp" alt="通常 価格8,020円(税抜)（税込8,822円）定期コースなら…6,416円(税抜)（税込7,057円）最大20%OFF"></p>
+          <p class="link"><a href="#nform" rel="noopener noreferrer"><img class="lazy" src="/public/images/default/mcadamspetfoods/catfood/placeholder.webp" data-src="/public/images/default/mcadamspetfoods/catfood/btn.webp" alt="全額返金保証付き お申し込みはこちら"></a></p>
+        </div>
+        <p><img class="lazy" src="/public/images/default/mcadamspetfoods/catfood/placeholder.webp" data-src="/public/images/default/mcadamspetfoods/catfood/img_18.webp" alt="マックアダムズには愛猫の偏食で悩むオーナー様にとって嬉しい特典がたくさん"></p>
+        <section class="privilege_01">
+          <p><img class="lazy" src="/public/images/default/mcadamspetfoods/catfood/placeholder.webp" data-src="/public/images/default/mcadamspetfoods/catfood/img_19.webp" alt="特典1:食いつきに圧倒的な自信があるから…食べなかったら・食べなくなったら全額返金保証"></p>
+          <p class="txt">オーナー様に安心してお試しいただくため、<br>マックアダムズはご購入個数・回数にかかわらず、</p>
+          <ul class="list">
+            <li>全額返金保証はレティシアンより直接お申し込みいただいた定期コースのご注文のみ対象となります。</li>
+            <li>単品購入でご購入いただいた商品や、オークションサイト、フリマサイト等でご購入いただいた商品は対象外となりますのでご注意ください。</li>
+            <li>複数ご注文いただいた場合、開封済みの商品で返金対象となるのは１個までです。未開封の商品につきましては、個数に限らずすべて返金対象となります。</li>
+            <li>返金をご希望の方は、商品到着後に0570-200-012（平日11:00～18:00・土日祝休）までご連絡のうえ、返金対象となる商品すべてを当店までご返送ください。<br>※お電話の際、お客様と愛犬・愛猫に合わせた各種ペットフードやペット用品、おトクな定期コースのご案内をさせていただきます。</li>
+            <li>当店にて商品返送を確認後、商品代金を全額ご返金いたします。</li>
+            <li>商品返送時の送料はお客様ご負担でお願いいたします。</li>
+            <li>返金対象外の商品をご返送いただいた場合、返金・商品の返送・代品の提供はいたしかねます。<br>あらかじめご了承ください。</li>
+          </ul>
+        </section>
+        <section class="privilege_02">
+          <p><img class="lazy" src="/public/images/default/mcadamspetfoods/catfood/placeholder.webp" data-src="/public/images/default/mcadamspetfoods/catfood/img_20.webp" alt="特典2:愛猫の食生活・生活習慣に関するお悩みを獣医師に相談できる獣医師相談窓口"></p>
+          <h2 class="ttl">愛猫の食に関するお悩みを持つオーナー様のために</h2>
+          <p class="txt">定期コースご利用者様限定の獣医師相談窓口を設けています！</p>
+          <p class="cap">どんな小さなご相談でも結構です。お気軽にご連絡ください。</p>
+          <p class="b-btn"><a href="https://www.laetitienpet.com/contact" target="_blank" rel="noopener noreferrer">獣医師相談窓口はこちら</a></p>
+          <ul class="list">
+            <li>本サービスはお問い合わせフォームからのご相談のみとさせていただいております。お電話での対応はいたしかねますのでご了承ください。</li>
+            <li>こちらにいただいたご相談に対する返信はすべて獣医師の資格を持ったスタッフが監修し、ご対応させていただきますが、診察ではございませんので責任は負いかねますことをご了承ください。</li>
+            <li>愛猫の体調が優れない場合は、すぐに最寄りの動物病院までご相談ください。</li>
+          </ul>
+        </section>
+        <section class="privilege_03">
+          <p><img class="lazy" src="/public/images/default/mcadamspetfoods/catfood/placeholder.webp" data-src="/public/images/default/mcadamspetfoods/catfood/img_21.webp" alt="特典3:あなたの愛猫は何タイプ？獣医師監修 偏食診断Book"></p>
+          <p class="txt">という方のためにマックアダムズは愛猫の偏食タイプがわかる、<br>獣医師監修の「偏食診断BOOK」をすべての方にお届けしています。</p>
+        </section>
+        <section class="privilege_04">
+          <p><img class="lazy" src="/public/images/default/mcadamspetfoods/catfood/placeholder.webp" data-src="/public/images/default/mcadamspetfoods/catfood/img_22.webp" alt="特典4:どうしてもキャットフードを食べてくれない子のための獣医師監修マックアダムズキャットフードの始め方"></p>
+          <p class="txt">「初めてのフードに警戒して食べてもらえない！」なんてことを避けるために、すべての方に「マックアダムズキャットフードの始め方」をお届けします。</p>
+          <p class="txt">マックアダムズに慣れてもらうところから偏食克服をサポートします！</p>
+          <!-- <p class="p-btn hideBtn_01"><a href="" class="btn">さらに詳しい特典はこちら</a></p> -->
+        </section>
+        <section class="course">
+          <p><img class="lazy" src="/public/images/default/mcadamspetfoods/catfood/placeholder.webp" data-src="/public/images/default/mcadamspetfoods/catfood/img_23.webp" alt="最大20%OFFの割引!"></p>
+          <p class="course-img"><img class="lazy" src="/public/images/default/mcadamspetfoods/catfood/placeholder.webp" data-src="/public/images/default/mcadamspetfoods/catfood/img_24.webp" alt="おトクな定期コースのご案内。通常 価格8,020円(税抜)（税込8,822円）定期コースなら…6,416円(税抜)（税込7,057円）最大20%OFF"></p>
+          <ol class="course-list">
+            <li>定期コースなら、1個ずつのご購入でも通常価格の15%OFFでお届け。<br>1度に3個以上ご購入の場合、20%OFFでお届けします。</li>
+            <li>まとめて2個以上(税抜10,000円以上)のご購入で、送料税抜800円(税込880円)、<br>代引き手数料税抜237円(税込260円)が無料になります。</li>
+            <li>ご使用のペースに合わせて、「1週間ごと」から「13週間ごと」まで1週間単位でお届け周期を選べます。<br>お届け個数も自由にお選びいただけます。お届け周期・お届け個数はいつでもご変更いただけます。<span>※ご変更は、次回お届け日の7日前までにご連絡ください。</span></li>
+            <li>商品がたまってしまったら、お届けをお休みすることができます。途中解約も可能です。<span>※ご解約は、次回お届け日の7日前までにご連絡ください。</span></li>
+            <li>定期コース1回目のお届けの際に、便利なフードスクープを同梱しています。<span>※都合により特典内容が変更になる場合がございます。あらかじめご了承ください。</span></li>
+          </ol>
+        </section>
+        <div class="cv_01">
+          <p><img class="lazy" src="/public/images/default/mcadamspetfoods/catfood/placeholder.webp" data-src="/public/images/default/mcadamspetfoods/catfood/btn_02.webp" alt="通常 価格8,020円(税抜)（税込8,822円）定期コースなら…6,416円(税抜)（税込7,057円）最大20%OFF"></p>
+          <p class="link"><a href="#nform" rel="noopener noreferrer"><img class="lazy" src="/public/images/default/mcadamspetfoods/catfood/placeholder.webp" data-src="/public/images/default/mcadamspetfoods/catfood/btn.webp" alt="全額返金保証付き お申し込みはこちら"></a></p>
+        </div>
+        <section class="faq">
+          <p><img class="lazy" src="/public/images/default/mcadamspetfoods/catfood/placeholder.webp" data-src="/public/images/default/mcadamspetfoods/catfood/img_25_260701.webp" alt="よくあるご質問"></p>
+          <p class="answer">申し訳ございませんが、サンプルのご用意はございません。偏食を克服するには、まずは1個じっくりとお使いいただき、フードに慣れていただくことが大切だと考えているためです。<span>さらにマックアダムズでは定期コースご利用者様限定特典として全額返金保証制度をご用意しております。</span><br>ご不安であれば、まずいつでも解約可能な定期コースでご注文いただき、万が一食べてもらえなかったら、全額返金保証制度をご活用ください。<span class="cap">※ご解約は次回お届け日の7日前までにご連絡ください。</span></p>
+          <p class="answer">マックアダムズは1つ1つの原材料にこだわって作った、美味しさと栄養を兼ね備えたフードです。<br><span>そのため少々お高く感じられるかもしれませんが、1日のコストはこれだけです。</span></p>
+          <!-- <p class="p-btn hideBtn_04"><a href="" class="btn">さらによくある質問をご覧になりたい方はこちら</a></p> -->
+          <div class="bg"></div>
+        </section>
+        <section class="call">
+          <p><img class="lazy" src="/public/images/default/mcadamspetfoods/catfood/placeholder.webp" data-src="/public/images/default/mcadamspetfoods/catfood/img_26.webp" alt="0570-200-012(平日11:00~18:00土日祝)"></p>
+          <p class="txt">ペット栄養管理士をはじめ、ペットの健康にまつわる専門知識を持ったスタッフが<br>ペットオーナー様の疑問にお答えします！<br>当店では、<span>ペット栄養管理士やホリスティックケアカウンセラーなどの資格を持ったスタッフが常駐し、ペットオーナー様の疑問やお悩みにお答えしています。</span><br>どんな小さな疑問でも結構です。不安があればご連絡ください。</p>
+          <p class="btn"><a href="https://www.laetitienpet.com/contact" target="_blank" rel="noopener noreferrer">ご相談・お問い合わせはこちらから</a></p>
+          <p class="cap">お電話の際、お客様と愛犬・愛猫に合わせた各種ペットフードやペット用品、おトクな定期コースのご案内をさせていただきます。</p>
+        </section>
+        <section class="item">
+          <div class="item-inner">
+            <h2 class="item-inner-ttl">商品情報</h2>
+            <p class="img"><img class="lazy" src="/public/images/default/mcadamspetfoods/catfood/placeholder.webp" data-src="/public/images/default/mcadamspetfoods/catfood/img_27.webp" alt=""></p>
+            <div class="item-inner-dtl">
+              <dl class="parent tp">
+                <dt>名称</dt>
+                <dd>マックアダムズキャットフード チキン＆ターキー</dd>
+              </dl>
+              <dl class="parent">
+                <dt>内容量</dt>
+                <dd>1.5kg</dd>
+              </dl>
+              <dl class="parent">
+                <dt>対象</dt>
+                <dd>全猫種・全年齢</dd>
+              </dl>
+              <dl class="parent">
+                <dt>原産国</dt>
+                <dd>イギリス</dd>
+              </dl>
+              <dl class="parent ls">
+                <dt>原材料名</dt>
+                <dd class="cm">放し飼いチキン丸鶏30%、放し飼いターキー生肉27%、ジャガイモ、エンドウ豆、ジャガイモタンパク、チキンオイル6%、ビール酵母、ジャガイモ繊維、チキングレイビー1%、セルロース、海藻、フラクトオリゴ糖、マンナンオリゴ糖、グルコサミン、メチルスルフォニルメタン、コンドロイチン硫酸、マリーゴールド、ユッカエキス、カモミール、ニンジン、クランベリー、緑イ貝、ローズマリー、ホウレンソウ、トマト、ラベンダー、タウリン、メチオニン、リジン、ミネラル類(亜鉛、鉄、マンガン、銅、ヨウ素、セレン)、ビタミン類(E、A、D3) 、酸化防止剤(ローズマリー抽出物、ミックストコフェロール)</dd>
+              </dl>
+              <dl class="parent">
+                <dt class="comp">成分</dt>
+                <dd class="component">
+                  <dl class="child">
+                    <dt>タンパク質</dt>
+                    <dd>29.5%以上</dd>
+                  </dl>
+                  <dl class="child">
+                    <dt>オメガ6脂肪酸</dt>
+                    <dd>3.6%</dd>
+                  </dl>
+                  <dl class="child">
+                    <dt>脂質</dt>
+                    <dd>14%以上</dd>
+                  </dl>
+                  <dl class="child">
+                    <dt>オメガ3脂肪酸</dt>
+                    <dd>0.5%</dd>
+                  </dl>
+                  <dl class="child">
+                    <dt>粗繊維</dt>
+                    <dd>4.25%以下</dd>
+                  </dl>
+                  <dl class="child">
+                    <dt>カルシウム</dt>
+                    <dd>1.1%</dd>
+                  </dl>
+                  <dl class="child">
+                    <dt>灰分</dt>
+                    <dd>11.25%以下</dd>
+                  </dl>
+                  <dl class="child">
+                    <dt>リン</dt>
+                    <dd>0.7%</dd>
+                  </dl>
+                  <dl class="child">
+                    <dt>水分</dt>
+                    <dd>8%以下</dd>
+                  </dl>
+                  <dl class="child">
+                    <dt>エネルギー(100gあたり)</dt>
+                    <dd>379.0kcal</dd>
+                  </dl>
+                </dd>
+              </dl>
+            </div>
+            <h2 class="dayTtl">1日あたりの給与量</h2>
+            <div class="chart">
+              <h3 class="chart-ttl">子猫（2ヶ月～13ヶ月）</h3>
+              <div class="chart-tbl">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td class="tp">成猫時の体重(kg)</td>
+                      <td class="tp">2～5ヶ月</td>
+                      <td class="tp">6～9ヶ月</td>
+                      <td class="tp">10～13ヶ月</td>
+                    </tr>
+                    <tr>
+                      <td>1　〜　2 kg</td>
+                      <td>30　〜　45 kg</td>
+                      <td>45　〜　55 g</td>
+                      <td>45　〜　50 g</td>
+                    </tr>
+                    <tr>
+                      <td>2　〜　3 kg</td>
+                      <td>40　〜　55 kg</td>
+                      <td>55　〜　60 g</td>
+                      <td>40　〜　55 g</td>
+                    </tr>
+                    <tr>
+                      <td>3　〜　4 kg</td>
+                      <td>40　〜　65 kg</td>
+                      <td>65　〜　75 g</td>
+                      <td>40　〜　65 g</td>
+                    </tr>
+                    <tr>
+                      <td>4　〜　5 kg</td>
+                      <td>45　〜　75 kg</td>
+                      <td>75　〜　90 g</td>
+                      <td>45　〜　75 g</td>
+                    </tr>
+                    <tr>
+                      <td>5　〜　6 kg</td>
+                      <td>45　〜　80 kg</td>
+                      <td>80　〜　95 g</td>
+                      <td>50　〜　80 g</td>
+                    </tr>
+                    <tr>
+                      <td>6　〜　7 kg</td>
+                      <td>50　〜　85 kg</td>
+                      <td>85　〜　100 g</td>
+                      <td>55　〜　85 g</td>
+                    </tr>
+                    <tr>
+                      <td>7　〜　8 kg</td>
+                      <td>50　〜　90 kg</td>
+                      <td>90　〜　115 g</td>
+                      <td>60　〜　90 g</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="chart add">
+              <h3 class="chart-ttl">成猫（1歳～7歳）</h3>
+              <div class="chart-tbl">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td class="lp">体重</td>
+                      <td class="tp">1～2 kg</td>
+                      <td class="tp">2～3 kg</td>
+                      <td class="tp">3～4 kg</td>
+                      <td class="tp">4～5 kg</td>
+                      <td class="tp">5～6 kg</td>
+                      <td class="tp">6～7 kg</td>
+                      <td class="tp">7～8 kg</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>15〜25g</td>
+                      <td>25〜35g</td>
+                      <td>35〜45g</td>
+                      <td>45〜55g</td>
+                      <td>55〜65g</td>
+                      <td>65〜75g</td>
+                      <td>75〜85g</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="chart add">
+              <h3 class="chart-ttl">シニア猫（7歳～）</h3>
+              <div class="chart-tbl">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td class="lp">体重</td>
+                      <td class="tp">1～2 kg</td>
+                      <td class="tp">2～3 kg</td>
+                      <td class="tp">3～4 kg</td>
+                      <td class="tp">4～5 kg</td>
+                      <td class="tp">5～6 kg</td>
+                      <td class="tp">6～7 kg</td>
+                      <td class="tp">7～8 kg</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>13〜21g</td>
+                      <td>21〜30g</td>
+                      <td>30〜38g</td>
+                      <td>38〜47g</td>
+                      <td>47〜55g</td>
+                      <td>55〜64g</td>
+                      <td>64〜72g</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <h4 class="item-inner-subTtl">給与方法</h4>
+            <ul class="item-inner-list">
+              <li>上記の給与量を目安に、1日2～3回に分けて与えてください。</li>
+              <li>猫には個体差があり、年齢・活動量・代謝・住環境などにより、適切な給与量は大きく異なります。まずは給与量の下限から始め、適宜調節していくことをおすすめします。</li>
+              <li>現在お使いのフードからマックアダムズに切り替える場合、現在のフードにマックアダムズを少しずつ混ぜ、少なくとも7日間ほどかけてゆっくり慣らしていくようにしてください。1日目はマックアダムズを10%、もとのフードを90%の比率で与え、3日目はマックアダムズを50%、5日目はマックアダムズを75%、7日目はマックアダムズを100%の比率で与えるようにしましょう。</li>
+              <li>新しいフードへの切り替え時は、一時的におなかがゆるくなることがありますので、愛猫の様子を見ながら時間をかけて調節してください。</li>
+              <li>ボウルに毎日新しい水を入れ、常に新鮮できれいな水が飲めるようにしておきましょう。</li>
+            </ul>
+          </div>
+        </section>
+        <p><img src="/public/images/default/mcadamspetfoods/catfood/img_28.webp" alt="マックアダムズキャットフードチキン&ターキー"></p>
+      </section>
+    </main>
+
+  <div id="form">
+    <div id="kagoform">
+      <form id="nform" action="https://www.mcadamspetfoods.co.jp/catfood/cart" method="POST" name="nform">
+              <link type="text/css" rel="stylesheet" href="/public/styles/default/form/form-style.css">
+<script type="text/javascript" src="/public/js/amount-detail.js" ></script>
+<div class="wrap" id="teiki">
+
+<script type="text/javascript" src="/public/js/jquery.autoKana.js"></script>
+<script>
+
+  $(function(){
+    $.fn.autoKana('#pc_order_name','[name=order_kana]',{
+        katakana:true
+    });
+    $.fn.autoKana('#pc_shipment_name','[name=shipment_kana]',{
+        katakana:true
+    });
+});
+
+</script>
+<script>
+  const nformActionPageBody = "https://www.mcadamspetfoods.co.jp/catfood/cart/#pageBody";
+</script>
+<script type="text/javascript">
+
+var classNamePc = "";
+
+</script>
+
+
+
+
+<img alt="１電話番号メールアドレス入力" src="/public/images/default/form/2021/formnavi_PC_step1.jpg">
+<h2 class="f-h-type01"><img alt="お客様情報" src="/public/images/default/form/teiki-h02.gif" width="900" height="43" decoding="async"></h2>
+<a id="order_tel"></a>
+<a id="order_email"></a>
+<div class="form_login">
+    <dl>
+        <dt>電話番号<span class="f-require">［必須］</span></dt>
+        <dd>
+            <input type="text" name="order_tel" value="" placeholder="例）0570-200-012" class="wd_L text-input" />
+        </dd>
+        <dt>メールアドレス<span class="f-require">［必須］</span></dt>
+        <dd>
+            <input type="text" name="order_email" value="" placeholder="例）info@laetitienpet.com" class="wd_L text-input" />
+        </dd>
+    </dl>
+    <ul class="f-btn-type01">
+        <li>
+<input type="submit" name="_login" value="次へ" />
+       </li>
+    </ul>
+    <!--/form_login-->
+</div>
+<a name="pageBody"></a>
+
+
+<script type="text/javascript" src="/public/js/amount-detail.js" ></script>
+<script type="text/javascript">
+  window.addEventListener('load', quantityChange);
+</script>
+<link rel="stylesheet" href="/public/styles/default/form/amount-detail.css" type="text/css" />
+<script src="/public/js/lp/pc/check-order.js" defer></script>
+<script src="/public/js/jquery.blockUI.js"></script>
+<script src="https://static.mul-pay.jp/ext/js/token.js"></script>
+<script src="/public/js/new_card_deal.js?v=20230224" defer></script>
+
+<input type="hidden" name="regular_flg" value="" id="regular_flg" />
+<input type="hidden" name="brand_code" value="mcadamspetfoods" id="brand_code" />
+<input type="hidden" name="brand_id" value="25" id="brand_id" />
+<input type="hidden" name="adcode" value="" id="adcode" />
+<input type="hidden" name="member_id" value="" id="member_id" />
+<input type="hidden" name="form_mode" value="regular" id="form_mode" />
+
+<!-- >div class="wrap"-->
+
+
+<div class="btm-link">
+<br>
+</div>
+
+
+
+<!--/wrap -->
+</div>            </form>
+    </div>
+  </div>
+
+
+        <link type="text/css" rel="stylesheet" href="/public/styles/default/common/footer.css">
+<!--フッター -->
+<div id="commonFooter">
+    <!-- footerGuideArea -->
+    <div class="footerGuide">
+        <div class="footerGuideContent">
+            &nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://www.laetitienpet.com/guide.html" rel="nofollow" onclick="window.open('https://www.laetitienpet.com/guide.html', '', 'width=650,height=480,resizable=yes,scrollbars=yes'); return false;">ご利用案内・特定商取引法に基づく表記</a>
+            &nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://www.laetitienpet.com/contact" rel="nofollow">お問い合わせフォーム</a>
+            &nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://www.laetitienpet.com/support/guide_top.html" rel="nofollow" onclick="window.open('https://www.laetitienpet.com/support/guide_top.html', '', 'width=650,height=480,resizable=yes,scrollbars=yes'); return false;">ヘルプページ</a>
+            &nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://www.laetitienpet.com/support/suggest_top.html" rel="nofollow" target="_blank">フード診断ページ</a>
+            &nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://www.laetitienpet.com/mypage" rel="nofollow">マイページ</a>
+            &nbsp;&nbsp;|&nbsp;&nbsp;<br>
+                                                                                                                                                                                                                                                                                                                    </div>
+    </div>
+    <!-- /footerGuideArea -->
+    <footer>
+                <div class="pageTop">
+            <a href="#top" id="btn-backtotop"><img src="/public/images/default/common/pagetop.png" alt="ページトップに戻る" decoding="async" /></a>
+        </div>
+                <div class="footerLogoWrap">
+            <div class="footerLogo">
+                <a href="https://laetitien.co.jp/" target="_blank"><img class="laetitien" src="/public/images/default/common/footer_logo.png" alt="株式会社レティシアン" decoding="async" /></a>
+            </div>
+            <div class="footerMarkJadma"><a href="https://www.jadma.or.jp/" target="_blank">
+                <img class="jadma" src="/public/images/default/form/mark_jadma.gif" alt="公益社団法人日本通信販売協会会員" decoding="async" />
+            </a></div>
+        </div>
+        <p id="copyright">Copyright &copy; 2013-2026 Laetitien Co., Ltd. All Rights Reserved.</p>
+    </footer>
+</div>
+
+
+<script async src="https://s.yimg.jp/images/listing/tool/cv/ytag.js"></script>
+<script>
+window.yjDataLayer = window.yjDataLayer || [];
+function ytag() { yjDataLayer.push(arguments); }
+ytag({
+  "type":"yjad_retargeting",
+  "config":{
+    "yahoo_retargeting_id": "B3VGL326PF",
+    "yahoo_retargeting_label": "mcadams",
+    "yahoo_retargeting_page_type": "",
+    "yahoo_retargeting_items":[
+      {item_id: '', category_id: '', price: '', quantity: ''}
+    ]
+  }
+});
+</script>
+
+
+
+
+
+
+
+
+<script defer src="/public/js/default/mcadamspetfoods/catfood/common.js"></script>
+
+  </body>
+</html>

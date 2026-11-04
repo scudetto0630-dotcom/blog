@@ -145,8 +145,8 @@ add_filter('the_content',function($content){
 },25);
 add_action('wp_enqueue_scripts',function(){
     if(is_admin())return;
-    wp_enqueue_style('hsh-next',plugin_dir_url(__FILE__).'assets/blog-next.css',array(),'1.26.2');
-    wp_enqueue_script('hsh-next',plugin_dir_url(__FILE__).'assets/blog-next.js',array(),'1.26.2',true);
+    wp_enqueue_style('hsh-next',plugin_dir_url(__FILE__).'assets/blog-next.css',array(),'1.27.0');
+    wp_enqueue_script('hsh-next',plugin_dir_url(__FILE__).'assets/blog-next.js',array(),'1.27.0',true);
     wp_localize_script('hsh-next','hshBlogTools',array('reportUrl'=>rest_url('hirogaru/v1/blog-report'),'tokenUrl'=>rest_url('hirogaru/v1/blog-report-token')));
 },110);
 add_filter('template_include',function($template){return is_404()?__DIR__.'/not-found-template.php':$template;},102);
@@ -203,7 +203,7 @@ function hsh_blog_dashboard(){
     }
     echo '<h2>画像の確認</h2><p>画像の有無・代替説明・ファイル容量を確認します。写真が必要な記事は、実際の写真が届くまでイラストであることを表示します。</p><ul>';
     foreach($posts as $p){preg_match_all('~<img\b[^>]*>~i',$p->post_content,$imgs);$missing=0;foreach($imgs[0] as $img)if(!preg_match('~\balt=[\x22\x27][^\x22\x27]+~',$img))$missing++;echo '<li>'.esc_html($p->post_title).'：本文画像 '.count($imgs[0]).'点、代替説明の要確認 '.(int)$missing.'点、表紙 '.(function_exists('hsh_photo_for_slug')&&hsh_photo_for_slug($p->post_name)?(hsh_photo_for_slug($p->post_name)['kind']==='provided'?'提供写真':'AI生成画像'):(has_post_thumbnail($p)?'設定済み':'カテゴリー共通イラスト')).'</li>';}
-    if(function_exists('hsh_photo_manifest'))foreach(hsh_photo_manifest()['assets'] as $photo){$file=__DIR__.'/assets/photos/'.$photo['file'];echo '<li>'.esc_html($photo['file']).'：'.(is_file($file)?esc_html(number_format(filesize($file)/1024,1)).' KB':'ファイルを確認してください').' ／ '.esc_html($photo['kind']==='provided'?'提供写真':'AI生成').'</li>';}
+    if(function_exists('hsh_photo_manifest'))foreach(hsh_photo_manifest()['assets'] as $photo){$file=__DIR__.'/assets/photos/'.$photo['file'];echo '<li>'.esc_html($photo['file']).'：'.(is_file($file)?esc_html(number_format(filesize($file)/1024,1)).' KB':'ファイルを確認してください').' ／ '.esc_html($photo['kind']==='official'?'公式商品画像':($photo['kind']==='provided'?'提供写真':'AI生成')).'</li>';}
     foreach(array('blog-scene.webp','brand-avatar.webp','cover-cat.svg','cover-glass.svg','cover-data.svg') as $asset)if(is_file(__DIR__.'/assets/'.$asset))echo '<li>'.esc_html($asset).'：'.esc_html(number_format(filesize(__DIR__.'/assets/'.$asset)/1024,1)).' KB'.(filesize(__DIR__.'/assets/'.$asset)>400000?'（容量を見直す）':'').'</li>';echo '</ul>';
     echo '<h2>リンク・保存資料の応答</h2><p>毎日6件ずつ巡回します。WordPressの定期実行はアクセス状況に依存します。転送や接続失敗はリンク切れと断定せず、確認対象として残します。応答があっても、資料の内容を確認したことにはなりません。</p><form method="post">';wp_nonce_field('hsh_blog_maintenance');echo '<button class="button" name="hsh_blog_action" value="scan">次の6件を確認</button></form><ul>';
     $health=get_option('hsh_health_rows',array());foreach((array)$health as $url=>$row)echo '<li><a href="'.esc_url($url).'">'.esc_html($url).'</a>：'.esc_html($row['result']).' / HTTP '.(int)$row['code'].' / '.esc_html(wp_date('Y/m/d H:i',$row['time'])).(!empty($row['bytes'])?' / '.esc_html(number_format($row['bytes']/1024,1)).' KB':'').'</li>';echo '</ul>';

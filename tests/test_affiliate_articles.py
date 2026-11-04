@@ -12,8 +12,8 @@ class AffiliateTests(unittest.TestCase):
  def setUpClass(cls):
   cls.rows=json.loads((ROOT/'site-content/affiliates/2026-11-03/links.json').read_text());cls.articles=json.loads((ROOT/'hirogaru-home/affiliate-articles.json').read_text());cls.by={r['id']:r for r in cls.rows}
  def test_received_count_and_approved_scope(self):
-  self.assertEqual(len(self.rows),24);self.assertEqual(len(self.articles),13);self.assertEqual(len({a['affiliate_id'] for a in self.articles}),13)
-  self.assertFalse({'A8-20261103-03','A8-20261103-04','A8-20261103-08','A8-20261103-09','A8-20261103-11','A8-20261103-12'}&{a['affiliate_id'] for a in self.articles})
+  self.assertEqual(len(self.rows),24);self.assertEqual(len(self.articles),19);self.assertEqual(len({a['affiliate_id'] for a in self.articles}),19)
+  self.assertFalse({'A8-20261103-03','A8-20261103-04','A8-20261103-08','A8-20261103-09','A8-20261103-11'}&{a['affiliate_id'] for a in self.articles})
  def test_original_affiliate_destinations_and_pixels_preserved(self):
   for a in self.articles:
    with self.subTest(a=a['slug']):
@@ -27,7 +27,11 @@ class AffiliateTests(unittest.TestCase):
     s=a['content'];text=html.unescape(re.sub('<[^>]*>','',s));self.assertGreaterEqual(len(re.sub(r'\s+','',text)),1500)
     self.assertGreaterEqual(s.count('<h2 '),5);self.assertLessEqual(s.count('<h2 '),6);self.assertIn('<table>',s);self.assertNotRegex(s,r'未使用|使っていない|使ったことがない|使用写真では')
     self.assertNotRegex(s,r'TODO|HSH_IMAGE:|実際に使ってみた|飲ませてみた|購入しました|必ず治る|治療できます|100％安全')
-    self.assertRegex(a['source_sha256'],r'^[a-f0-9]{64}$');self.assertEqual(a['source_status'],'owner_supplied_official_page_snapshot')
+    self.assertRegex(a['source_sha256'],r'^[a-f0-9]{64}$');self.assertIn(a['source_status'],('owner_supplied_official_page_snapshot','official_live_verified'))
+    if a['source_status']=='official_live_verified':
+     import hashlib
+     snapshot=ROOT/'site-content/affiliates/2026-11-03/source-recovery'/(a['affiliate_id']+'.html')
+     self.assertEqual(hashlib.sha256(snapshot.read_bytes()).hexdigest(),a['source_sha256'])
  def test_archive_scope_does_not_invent_missing_thirteen(self):
   self.assertEqual(len({r['id'] for r in self.rows}),24)
   self.assertTrue(all(r['received_date']=='2026-11-03' for r in self.rows))

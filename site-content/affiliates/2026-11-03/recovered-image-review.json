@@ -1,0 +1,403 @@
+{
+  "checked_at": "2026-11-04",
+  "articles": 19,
+  "selected_images": 39,
+  "images": [
+    {
+      "article_id": "A8-20261103-01",
+      "asset_key": "official-a8-01-1",
+      "source_url": "https://paws-green-deli.com/cdn/shop/files/2_b22d2355-5f77-4351-97d5-b644c2042581.png?v=1781969969&width=1400",
+      "source_page": "https://paws-green-deli.com/",
+      "source_sha256": "b49e4a822c90bde0c9cf587e021a23d55539ccc85904d89e70c291ac72df9cfd",
+      "visually_reviewed": true,
+      "selected": true,
+      "alt": "パウズグリーンデリの猫用お試しアソート"
+    },
+    {
+      "article_id": "A8-20261103-01",
+      "asset_key": "official-a8-01-2",
+      "source_url": "https://paws-green-deli.com/cdn/shop/files/ChatGPT_Image_2026_7_8_23_27_12.png?v=1783520872&width=800",
+      "source_page": "https://paws-green-deli.com/",
+      "source_sha256": "60ea8b86341500cd82a5c2762913c99c2b499bf67792cf3d8440a52563af75da",
+      "visually_reviewed": true,
+      "selected": true,
+      "alt": "猫用グルメデリのパウチ"
+    },
+    {
+      "article_id": "A8-20261103-02",
+      "asset_key": "official-a8-02-1",
+      "source_url": "https://shop.hariocorp.co.jp/cdn/shop/files/PTS-NYT-W.jpg?v=1736149905&width=533",
+      "source_page": "https://shop.hariocorp.co.jp",
+      "source_sha256": "745bd2289c731dac2b46c0a578fd88fadc8f576eca874b00846cae31dcd352e3",
+      "visually_reviewed": true,
+      "selected": true,
+      "alt": "HARIOのにゃんプレトール"
+    },
+    {
+      "article_id": "A8-20261103-02",
+      "asset_key": "official-a8-02-2",
+      "source_url": "https://shop.hariocorp.co.jp/cdn/shop/files/35_PTS-NK-2P-SH___EC.jpg?v=1775802223&width=533",
+      "source_page": "https://shop.hariocorp.co.jp",
+      "source_sha256": "c15c4f00c2ade2b996b93b32ce9b7b896169ef5a3d771b642b055c72bbabdce1",
+      "visually_reviewed": true,
+      "selected": true,
+      "alt": "HARIOの猫草栽培キット・にゃんベジのリフィル"
+    },
+    {
+      "article_id": "A8-20261103-05",
+      "asset_key": "official-a8-05-1",
+      "source_url": "https://shizenno-mori.com/images/item_box_DCLT.jpg",
+      "source_page": "https://mirai-cat.com/AF/",
+      "source_sha256": "24864c6f416e1195326a8b88ca3c1f5cadfbf6764eab7da5e2c4e465182c4fcb",
+      "visually_reviewed": true,
+      "selected": true,
+      "alt": "和漢みらいの特別療法食・低たんぱく"
+    },
+    {
+      "article_id": "A8-20261103-05",
+      "asset_key": "official-a8-05-2",
+      "source_url": "https://shizenno-mori.com/images/item_box_DCBA.jpg",
+      "source_page": "https://mirai-cat.com/AF/",
+      "source_sha256": "c9d5cb2d0f7ffecb1a5537e8fac7106fcd0db7381942fb42c4675add87b1aedf",
+      "visually_reviewed": true,
+      "selected": true,
+      "alt": "和漢みらいの特別療法食・バランス"
+    },
+    {
+      "article_id": "A8-20261103-05",
+      "asset_key": "official-a8-05-3",
+      "source_url": "https://shizenno-mori.com/images/item_box_DCHE.jpg",
+      "source_page": "https://mirai-cat.com/AF/",
+      "source_sha256": "1880bdf899a030e540272a39f1888b6d13e1c08a1854f366590d0d53d1f5d602",
+      "visually_reviewed": true,
+      "selected": true,
+      "alt": "和漢みらいの特別療法食・高エナジー"
+    },
+    {
+      "article_id": "A8-20261103-06",
+      "asset_key": "official-a8-06-1",
+      "source_url": "https://baseec-img-mng.akamaized.net/images/item/origin/7d86186b07be6de2846a5dc2f1701351.jpg?imformat=generic&q=90&im=Resize,width=640,type=normal",
+      "source_page": "https://www.m-and.co.jp/",
+      "source_sha256": "6d0dd302cabf7da4e1a1288473c37e11f8268359a3d70743d818cbcdb71cfc9c",
+      "visually_reviewed": true,
+      "selected": true,
+      "alt": "M&Co.の猫柄ニットバッグ"
+    },
+    {
+      "article_id": "A8-20261103-06",
+      "asset_key": "official-a8-06-2",
+      "source_url": "https://baseec-img-mng.akamaized.net/images/item/origin/0087694c64498c134c6fad995769ead7.jpg?imformat=generic&q=90&im=Resize,width=640,type=normal",
+      "source_page": "https://www.m-and.co.jp/",
+      "source_sha256": "5afc7ad9fb83646deede27838033063ab7d1f9fadd8ac4c11f96beada1dcda8d",
+      "visually_reviewed": true,
+      "selected": true,
+      "alt": "M&Co.のアメリカンショートヘアのチャーム"
+    },
+    {
+      "article_id": "A8-20261103-07",
+      "asset_key": "official-a8-07-1",
+      "source_url": "https://aff.life-110.com/verticalsites/pet_sougi/img/desktop/img_lp02.png",
+      "source_page": "https://aff.life-110.com/?st_site=pet_sougi&st_aff=a8",
+      "source_sha256": "01b80837941fe1e5a4a4ca1b60407f577610a8cc4f860ea9556ad56b157cd01c",
+      "visually_reviewed": true,
+      "selected": true,
+      "alt": "ペット葬儀110番のサービス案内"
+    },
+    {
+      "article_id": "A8-20261103-07",
+      "asset_key": "official-a8-07-2",
+      "source_url": "https://aff.life-110.com/verticalsites/pet_sougi/img/desktop/img_lp03.png",
+      "source_page": "https://aff.life-110.com/?st_site=pet_sougi&st_aff=a8",
+      "source_sha256": "1d6863f433b1167d0c113766ef2f099cb4a5efdeddc0e67c1daff2669d13495d",
+      "visually_reviewed": true,
+      "selected": true,
+      "alt": "ペット葬儀110番の火葬プラン比較"
+    },
+    {
+      "article_id": "A8-20261103-10",
+      "asset_key": "official-a8-10-1",
+      "source_url": "https://cdn.shopify.com/s/files/1/0956/8128/2411/files/IMG_8419_1_640x900.jpg.webp?v=1776341139&width=640",
+      "source_page": "https://www.digxipop.com/ja-jp",
+      "source_sha256": "458460487b3d5f750e5bfacd5969405785323a557a6f7ecc5603d5e0cea9e312",
+      "visually_reviewed": true,
+      "selected": true,
+      "alt": "digxipop公式掲載の猫のフィギュア制作例"
+    },
+    {
+      "article_id": "A8-20261103-10",
+      "asset_key": "official-a8-10-2",
+      "source_url": "https://cdn.shopify.com/s/files/1/0956/8128/2411/files/IMG_8821_640x900.jpg.webp?v=1776341542&width=640",
+      "source_page": "https://www.digxipop.com/ja-jp",
+      "source_sha256": "7dd205cbf8fd25d054c663dfb1a9fe0846891a65bc6066ed631b8210324f68cc",
+      "visually_reviewed": true,
+      "selected": true,
+      "alt": "digxipop公式掲載の猫のフィギュア"
+    },
+    {
+      "article_id": "A8-20261103-12",
+      "asset_key": "official-a8-12-1",
+      "source_url": "https://shop.creativeyoko.co.jp/img01/w_750.h_750/trim_ofmgp_itemd8630e26cb9911f19a7f0242ac110005.jpg?ts=202610190848",
+      "source_page": "https://shop.creativeyoko.co.jp/items?lcc=05",
+      "source_sha256": "04146b44372540bf8ce5bf03610a306acc8914990e063c6ba5c1f21c3f2de1c6",
+      "visually_reviewed": true,
+      "selected": true,
+      "alt": "ペットパラダイスの洋ナシのけりぐるみ"
+    },
+    {
+      "article_id": "A8-20261103-12",
+      "asset_key": "official-a8-12-2",
+      "source_url": "https://shop.creativeyoko.co.jp/img01/w_750.h_750/trim_ofmgp_item361fe55cb33011f19e900242ac11000e.jpg?ts=202609180711",
+      "source_page": "https://shop.creativeyoko.co.jp/items?lcc=05",
+      "source_sha256": "18ea35f88077e3de0bcbad43dadc58ecaaeecf7b05f2c3b11370f4d5e6a63b58",
+      "visually_reviewed": true,
+      "selected": true,
+      "alt": "ペットパラダイスのかもめの猫じゃらし"
+    },
+    {
+      "article_id": "A8-20261103-13",
+      "asset_key": "official-a8-13-1",
+      "source_url": "https://www.canagancatfood.co.jp/public/images/default/canagancatfood/dental/sec01_03.png",
+      "source_page": "https://www.canagancatfood.co.jp/dental/CDC20003",
+      "source_sha256": "54a306522ada93c8bbdffc77e756482c0239fc9594e3b97d176ae1178aed97eb",
+      "visually_reviewed": true,
+      "selected": true,
+      "alt": "カナガンデンタルのパッケージと粒"
+    },
+    {
+      "article_id": "A8-20261103-13",
+      "asset_key": "official-a8-13-2",
+      "source_url": "https://www.canagancatfood.co.jp/public/images/default/canagancatfood/dental/sec03_1.jpg",
+      "source_page": "https://www.canagancatfood.co.jp/dental/CDC20003",
+      "source_sha256": "faad104853ffaa92af4a4075b84d388c56428fe1e47f2e479ab0bce5f36476c3",
+      "visually_reviewed": true,
+      "selected": true,
+      "alt": "カナガンデンタル公式掲載の食事の様子"
+    },
+    {
+      "article_id": "A8-20261103-14",
+      "asset_key": "official-a8-14-1",
+      "source_url": "https://www.canagancatfood.co.jp/public/images/default/canagancatfood/new/product.png",
+      "source_page": "https://www.canagancatfood.co.jp/3201/",
+      "source_sha256": "609bc5d44d4a9db99b3cd6ebef8e3148bd623f254fbcee6acb9c2fc390d58700",
+      "visually_reviewed": true,
+      "selected": true,
+      "alt": "カナガンキャットフード・チキン"
+    },
+    {
+      "article_id": "A8-20261103-14",
+      "asset_key": "official-a8-14-2",
+      "source_url": "https://www.canagancatfood.co.jp/public/images/default/canagancatfood/new/product_fish.png",
+      "source_page": "https://www.canagancatfood.co.jp/3201/",
+      "source_sha256": "d59718160d1d97d687f2c789108a3a4e1d1d468468ad68849eb9a85737e35ccd",
+      "visually_reviewed": true,
+      "selected": true,
+      "alt": "カナガンキャットフード・サーモン"
+    },
+    {
+      "article_id": "A8-20261103-15",
+      "asset_key": "official-a8-15-1",
+      "source_url": "https://www.mcadamspetfoods.co.jp/public/images/default/mcadamspetfoods/catfood/img_01.webp",
+      "source_page": "https://www.mcadamspetfoods.co.jp/catfood/MAC20000",
+      "source_sha256": "8d06019f33e6b3149bbdbb1ec350b6ffaa9da10a87a09485ec06e9abdb6e0351",
+      "visually_reviewed": true,
+      "selected": true,
+      "alt": "マックアダムズの猫用チキン＆ターキー"
+    },
+    {
+      "article_id": "A8-20261103-15",
+      "asset_key": "official-a8-15-2",
+      "source_url": "https://www.mcadamspetfoods.co.jp/public/images/default/mcadamspetfoods/catfood/img_05.webp",
+      "source_page": "https://www.mcadamspetfoods.co.jp/catfood/MAC20000",
+      "source_sha256": "65f720dbbc2b2c60fc60e09036016e0c4b46f04f60957757e3a95afb3b21a8b6",
+      "visually_reviewed": true,
+      "selected": true,
+      "alt": "マックアダムズの原材料とビスケット状の粒"
+    },
+    {
+      "article_id": "A8-20261103-16",
+      "asset_key": "official-a8-16-1",
+      "source_url": "https://www.essentialfoods.jp/public/images/default/essentialfoods/products/package/jcf.jpg",
+      "source_page": "https://www.essentialfoods.jp/products/detail/6001",
+      "source_sha256": "febeded28ac956b43fcfffced3b00eb32122445f0e556afdf34b13e12af67d0e",
+      "visually_reviewed": true,
+      "selected": true,
+      "alt": "ジャガーキャットフードのパッケージ"
+    },
+    {
+      "article_id": "A8-20261103-16",
+      "asset_key": "official-a8-16-2",
+      "source_url": "https://www.essentialfoods.jp/public/images/default/essentialfoods/products/kibble/kibble_jcf_thumb.jpg",
+      "source_page": "https://www.essentialfoods.jp/products/detail/6001",
+      "source_sha256": "a2758309470cb82912f2beee4166c5b567e3e2c7bb33d7d592181e45aa88ffac",
+      "visually_reviewed": true,
+      "selected": true,
+      "alt": "ジャガーキャットフードのリング形の粒"
+    },
+    {
+      "article_id": "A8-20261103-17",
+      "asset_key": "official-a8-17-1",
+      "source_url": "https://www.mognyancatfood.co.jp/public/images/default/mognyancatfood/id6803/sec_b_tyukiari_img10.jpg",
+      "source_page": "https://www.mognyancatfood.co.jp/MGN20009/",
+      "source_sha256": "e1ca91cf2c60508135d8c416d27ffb629684f4068c1abaec7ab35fd576442d42",
+      "visually_reviewed": true,
+      "selected": true,
+      "alt": "モグニャンのパッケージと公式掲載の食事の様子"
+    },
+    {
+      "article_id": "A8-20261103-17",
+      "asset_key": "official-a8-17-2",
+      "source_url": "https://www.mognyancatfood.co.jp/public/images/default/mognyancatfood/202508/sec_i_img08-1.gif",
+      "source_page": "https://www.mognyancatfood.co.jp/MGN20009/",
+      "source_sha256": "0f48dfacad9f421afa4ac20207e6494ffdad1a37da93cc5aef8de615ac50b584",
+      "visually_reviewed": true,
+      "selected": true,
+      "alt": "モグニャンの商品詳細と粒の形状の案内"
+    },
+    {
+      "article_id": "A8-20261103-18",
+      "asset_key": "official-a8-18-1",
+      "source_url": "https://withpety.com/products/nekokenshin/img202104ama/1600x1600_slide_01.jpg",
+      "source_page": "https://withpety.com/products/nekokenshin/a8.html?ad_code=20800",
+      "source_sha256": "0f0d553f4568dddf5596ddc2f7abf164929f91f5d651dd69df6179d794b058ba",
+      "visually_reviewed": true,
+      "selected": true,
+      "alt": "毎日健心のパッケージと錠剤"
+    },
+    {
+      "article_id": "A8-20261103-18",
+      "asset_key": "official-a8-18-2",
+      "source_url": "https://withpety.com/products/nekokenshin/img202104ama/1600x1600_slide_04.jpg",
+      "source_page": "https://withpety.com/products/nekokenshin/a8.html?ad_code=20800",
+      "source_sha256": "53048bac33e32ce67a343ee9d883642fee2cfb87f717f9b8a65fd9c2e00e1d40",
+      "visually_reviewed": true,
+      "selected": true,
+      "alt": "毎日健心の配合成分の案内"
+    },
+    {
+      "article_id": "A8-20261103-19",
+      "asset_key": "official-a8-19-1",
+      "source_url": "https://www.pontely.com/wp-content/uploads/card_sample_3_cat.png",
+      "source_page": "https://www.pontely.com/forowner/cat?ref=a8",
+      "source_sha256": "de3ab6a34bbf9e406857ad92195eb6a0ec0cd0e02cd16a778a5598895829c5d6",
+      "visually_reviewed": true,
+      "selected": true,
+      "alt": "Pontelyの猫用検査結果証とマイページ表示例"
+    },
+    {
+      "article_id": "A8-20261103-19",
+      "asset_key": "official-a8-19-2",
+      "source_url": "https://www.pontely.com/wp-content/uploads/forowner_read1_cat.jpg",
+      "source_page": "https://www.pontely.com/forowner/cat?ref=a8",
+      "source_sha256": "cab686f1fcbdf88b4f6d8bafe8b1b1a41769e31e5e00e2f0ac6fdd076b6bd9d1",
+      "visually_reviewed": true,
+      "selected": true,
+      "alt": "Pontely公式サイトの猫の遺伝子検査の案内"
+    },
+    {
+      "article_id": "A8-20261103-20",
+      "asset_key": "official-a8-20-1",
+      "source_url": "https://withpety.com/products/nekobihada/img202104ama/top_item.jpg",
+      "source_page": "https://withpety.com/products/nekobihada/",
+      "source_sha256": "3f06587de3e008403bd07de2ebb17c473bf751683ffa21b050edbcfb6abc0170",
+      "visually_reviewed": true,
+      "selected": true,
+      "alt": "猫用・毎日美肌 PS-B1＆ローヤルゼリー"
+    },
+    {
+      "article_id": "A8-20261103-20",
+      "asset_key": "official-a8-20-2",
+      "source_url": "https://withpety.com/products/nekobihada/img202112lp/pc_detail.jpg",
+      "source_page": "https://withpety.com/products/nekobihada/a8.html?ad_code=2200",
+      "source_sha256": "631fdfd8d3b15ba49dedcdb9eede995b52d5b477eeb05968bd5a34db3d94e086",
+      "visually_reviewed": true,
+      "selected": true,
+      "alt": "猫用・毎日美肌 PS-B1＆ローヤルゼリーの商品詳細"
+    },
+    {
+      "article_id": "A8-20261103-21",
+      "asset_key": "official-a8-21-1",
+      "source_url": "https://d2w53g1q050m78.cloudfront.net/onekosamacom/ec_assets/d3d680e3687d55c2625269afabbc5c89982962e8-original.jpg?1783587000",
+      "source_page": "https://oneko-sama.com/",
+      "source_sha256": "ca0038ff88bfbfed373d2613551138ed1a4cd4598d4e06cbe3cded2007ad82ed",
+      "visually_reviewed": true,
+      "selected": true,
+      "alt": "おねこさまのWALK tree"
+    },
+    {
+      "article_id": "A8-20261103-21",
+      "asset_key": "official-a8-21-2",
+      "source_url": "https://d2w53g1q050m78.cloudfront.net/onekosamacom/ec_assets/5ee14bcf9e9a900ea5fb26ec53986c1a0edfbde3-original.?1773304825",
+      "source_page": "https://oneko-sama.com/",
+      "source_sha256": "baf67d8e02156596ebc4cd97ae22a856ec9a54dab78e0534835802a9b729f489",
+      "visually_reviewed": true,
+      "selected": true,
+      "alt": "おねこさまのRESIDENCE"
+    },
+    {
+      "article_id": "A8-20261103-22",
+      "asset_key": "official-a8-22-1",
+      "source_url": "https://withpety.com/products/nekoryoukan/img202104ama/1600x1600_slide_01.jpg",
+      "source_page": "https://withpety.com/products/nekoryoukan/a8.html?ad_code=2400",
+      "source_sha256": "357b1d7d68d9be3684b4489bfc076d3b1e9c4ebde9b72f36a16c64ec3b15828b",
+      "visually_reviewed": true,
+      "selected": true,
+      "alt": "毎日良肝のパッケージと錠剤"
+    },
+    {
+      "article_id": "A8-20261103-22",
+      "asset_key": "official-a8-22-2",
+      "source_url": "https://withpety.com/products/nekoryoukan/img202104ama/1600x1600_slide_04.jpg",
+      "source_page": "https://withpety.com/products/nekoryoukan/a8.html?ad_code=2400",
+      "source_sha256": "e2ba85213e7293ce92a3076ef8bda66605141cd3ad40e0e7fca71c16d86d318e",
+      "visually_reviewed": true,
+      "selected": true,
+      "alt": "毎日良肝の配合成分の案内"
+    },
+    {
+      "article_id": "A8-20261103-23",
+      "asset_key": "official-a8-23-1",
+      "source_url": "https://rabo.cat/static/473ebe9affd3167a7092a85476ae2366/d22e9/StarterSet.jpg",
+      "source_page": "https://rabo.cat/catlog/",
+      "source_sha256": "223bd2bc45eb2c99761fcb064a47204c43b69aa516dd7af0ea20d885b3fe419e",
+      "visually_reviewed": true,
+      "selected": true,
+      "alt": "Catlogの首輪とデバイスを着けた猫"
+    },
+    {
+      "article_id": "A8-20261103-23",
+      "asset_key": "official-a8-23-2",
+      "source_url": "https://rabo.cat/static/57673f18e32d41acce598b894baf69a1/d22e9/Board2ForJp.jpg",
+      "source_page": "https://rabo.cat/catlog/",
+      "source_sha256": "280a51d12b608d18eb0316b4710199af10f5e8685845297eb41d1799b18cb935",
+      "visually_reviewed": true,
+      "selected": true,
+      "alt": "Catlog Boardを設置したトイレ"
+    },
+    {
+      "article_id": "A8-20261103-24",
+      "asset_key": "official-a8-24-1",
+      "source_url": "https://withpety.com/products/nekoissho/img202104ama/1600x1600_slide_01.jpg",
+      "source_page": "https://withpety.com/products/nekoissho/a8.html?ad_code=20004",
+      "source_sha256": "0dbd0c02caac1847b2bf0291d3e194afafb4bf5e22d10aa77bb9973add3a5a82",
+      "visually_reviewed": true,
+      "selected": true,
+      "alt": "毎日一緒のパッケージと錠剤"
+    },
+    {
+      "article_id": "A8-20261103-24",
+      "asset_key": "official-a8-24-2",
+      "source_url": "https://withpety.com/products/nekoissho/img202104ama/1600x1600_slide_04.jpg",
+      "source_page": "https://withpety.com/products/nekoissho/a8.html?ad_code=20004",
+      "source_sha256": "94ccb94d9c15d17447538f191991eb088e9862629bfeea6fe3221a3837954bb4",
+      "visually_reviewed": true,
+      "selected": true,
+      "alt": "毎日一緒の配合成分の案内"
+    }
+  ],
+  "rejected": [
+    "Dog and human digxipop examples",
+    "Social media user screenshots",
+    "Unverified old promotional prices",
+    "Everyday Bihada collagen formula images that do not match the supplied PS-B1 affiliate LP"
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "checked_at": "2026-11-04T15:14:14.607795+00:00",
+  "runtime_spec_revision": "7",
+  "runtime_policy": "enforced",
+  "publication_restored": true,
+  "pages": [
+    {
+      "id": "A8-20261103-01",
+      "url": "https://paws-green-deli.com/",
+      "final_url": "https://paws-green-deli.com/",
+      "status": 200,
+      "type": "text/html; charset=utf-8",
+      "sha256": "2b12b524f39e63ce67b8ae882a12881a6c5be38bd1fbbb1f7b305928bb5f0193",
+      "bytes": 295703
+    },
+    {
+      "id": "A8-20261103-02",
+      "url": "https://shop.hariocorp.co.jp",
+      "final_url": "https://shop.hariocorp.co.jp",
+      "status": 200,
+      "type": "text/html; charset=utf-8",
+      "sha256": "56e592608a9db988e912a5423dca170d35f33463726ada09e942787a7a1c1311",
+      "bytes": 1141620
+    },
+    {
+      "id": "A8-20261103-05",
+      "url": "https://mirai-cat.com/AF/",
+      "final_url": "https://mirai-cat.com/AF/",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "sha256": "260c482f3b74d1b3e85d96b5baae40ac1b93cd2215fa7824ea65ae915947b291",
+      "bytes": 46481
+    },
+    {
+      "id": "A8-20261103-06",
+      "url": "https://www.m-and.co.jp/",
+      "final_url": "https://www.m-and.co.jp/",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "sha256": "77f2d284b960621410edd5437178ae2d147adc88e3952efe2fbfa91efc930ec5",
+      "bytes": 143876
+    },
+    {
+      "id": "A8-20261103-07",
+      "url": "https://aff.life-110.com/?st_site=pet_sougi&st_aff=a8",
+      "final_url": "https://aff.life-110.com/?st_site=pet_sougi&st_aff=a8",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "sha256": "1c0bd2e8bfd5173e56f9c6c0da197c6f21398e2555c996da2ea0181e2d2b06de",
+      "bytes": 98831
+    },
+    {
+      "id": "A8-20261103-10",
+      "url": "https://www.digxipop.com/ja-jp",
+      "final_url": "https://www.digxipop.com/ja-jp",
+      "status": 200,
+      "type": "text/html; charset=utf-8",
+      "sha256": "63cf6f8aa64dd75550de4a8ccd1ddc35a7086087a03f066e60474e08517369ba",
+      "bytes": 301057
+    },
+    {
+      "id": "A8-20261103-12",
+      "url": "https://shop.creativeyoko.co.jp/",
+      "final_url": "https://shop.creativeyoko.co.jp/",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "sha256": "f99e83c531995d1d38381eb510012c51cba32d176ef919bf6259b785526d18a4",
+      "bytes": 75628
+    },
+    {
+      "id": "A8-20261103-13",
+      "url": "https://www.canagancatfood.co.jp/dental/CDC20003",
+      "final_url": "https://www.canagancatfood.co.jp/dental/cart?a8=",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "sha256": "11c7ec9256b3e2597994394c313736b603aa73509cd51c706bb0714d55c94c42",
+      "bytes": 42395
+    },
+    {
+      "id": "A8-20261103-14",
+      "url": "https://www.canagancatfood.co.jp/3201/",
+      "final_url": "https://www.canagancatfood.co.jp/cart?a8=",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "sha256": "ac8356363d3c23c4c72118033788592c638f031212aa2ebb9c38bbf646423e24",
+      "bytes": 193589
+    },
+    {
+      "id": "A8-20261103-15",
+      "url": "https://www.mcadamspetfoods.co.jp/catfood/MAC20000",
+      "final_url": "https://www.mcadamspetfoods.co.jp/catfood/cart",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "sha256": "e58f8debc111a0b5d3e600a7098cf38bcf7051119ddcf82c32aaf6cd951cd060",
+      "bytes": 57673
+    },
+    {
+      "id": "A8-20261103-16",
+      "url": "https://www.essentialfoods.jp/ESN20000",
+      "final_url": "https://www.essentialfoods.jp/",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "sha256": "3e975b9def69af245640e090e6dcc0d56b155b66a149909b83c4e0aa1226668f",
+      "bytes": 50330
+    },
+    {
+      "id": "A8-20261103-17",
+      "url": "https://www.mognyancatfood.co.jp/MGN20009/",
+      "final_url": "https://www.mognyancatfood.co.jp/cart?a8=",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "sha256": "a1d97b6d6bd9c1d9eed578603053184715e82878584ff4a9f06bc87698c4e30c",
+      "bytes": 86429
+    },
+    {
+      "id": "A8-20261103-18",
+      "url": "https://withpety.com/products/nekokenshin/a8.html?ad_code=20800",
+      "final_url": "https://withpety.com/products/nekokenshin/a8.html?ad_code=20800",
+      "status": 200,
+      "type": "text/html",
+      "sha256": "ac35fd2e0c61d3bbb7554f926c60bd0679adc893973fe664c4fe2c5b2efc28c0",
+      "bytes": 13708
+    },
+    {
+      "id": "A8-20261103-19",
+      "url": "https://www.pontely.com/forowner/cat?ref=a8",
+      "final_url": "https://www.pontely.com/forowner/%e7%8c%ab%e3%81%ae%e9%81%ba%e4%bc%9d%e5%ad%90%e6%a4%9c%e6%9f%bb?ref=a8",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "sha256": "1327a7f1d369723c1dcb2e664737bb65cad671e4efe00edace90b5eebe6b4ef1",
+      "bytes": 61036
+    },
+    {
+      "id": "A8-20261103-20",
+      "url": "https://withpety.com/products/nekobihada/a8.html?ad_code=2200",
+      "final_url": "https://withpety.com/products/nekobihada/a8.html?ad_code=2200",
+      "status": 200,
+      "type": "text/html",
+      "sha256": "0acc35c70fe485bde4389841d2d8e581bff8997662141499c22dd9c7c36ccfbf",
+      "bytes": 13650
+    },
+    {
+      "id": "A8-20261103-21",
+      "url": "https://oneko-sama.com/",
+      "final_url": "https://oneko-sama.com/",
+      "status": 200,
+      "type": "text/html; charset=utf-8",
+      "sha256": "fdcdd7c16fe808ddaa1cb361fa566067e4ce0934b51da537ca94d7e6d7e80ac2",
+      "bytes": 204947
+    },
+    {
+      "id": "A8-20261103-22",
+      "url": "https://withpety.com/products/nekoryoukan/a8.html?ad_code=2400",
+      "final_url": "https://withpety.com/products/nekoryoukan/a8.html?ad_code=2400",
+      "status": 200,
+      "type": "text/html",
+      "sha256": "e0c6e58df3017cd6e0b3e3ad2873575162aa0826948234ab5ced49df8779c2c0",
+      "bytes": 14900
+    },
+    {
+      "id": "A8-20261103-23",
+      "url": "https://rabo.cat/catlog/",
+      "final_url": "https://rabo.cat/catlog/",
+      "status": 200,
+      "type": "text/html; charset=utf-8",
+      "sha256": "877b7b980bcfea648790fe9cb6c411a742d3d4b4f9fef336ceac1ace3410fee3",
+      "bytes": 852176
+    },
+    {
+      "id": "A8-20261103-24",
+      "url": "https://withpety.com/products/nekoissho/a8.html?ad_code=20004",
+      "final_url": "https://withpety.com/products/nekoissho/a8.html?ad_code=20004",
+      "status": 200,
+      "type": "text/html",
+      "sha256": "c745537bc9eeca0cf9f37c0b4edef80662f91ad72ec35ecfcc8ce56dcba56851",
+      "bytes": 13374
+    }
+  ],
+  "previously_held_articles": 6,
+  "selected_official_images": 39,
+  "articles_with_two_or_more_body_images": 19,
+  "note": "All 19 original destinations and 38 original image candidates returned HTTP 200. Additional images were visually reviewed; rejected mismatched formulas and unrelated dog/person examples."
+}

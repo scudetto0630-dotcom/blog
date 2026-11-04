@@ -1550,9 +1550,9 @@
     },
     "product-a8-20261103-23-image-01": {
       "file": "product-a8-20261103-23-image-01.webp",
-      "kind": "provided",
+      "kind": "official",
       "subject": "cat-care",
-      "rights": "permission",
+      "rights": "advertiser",
       "alt": "Catlogの首輪とデバイスを着けた猫",
       "caption": "Catlogの首輪とデバイスを着けた猫（公式サイト掲載画像）",
       "width": 576,
@@ -1572,9 +1572,9 @@
     },
     "product-a8-20261103-23-image-02": {
       "file": "product-a8-20261103-23-image-02.webp",
-      "kind": "provided",
+      "kind": "official",
       "subject": "cat-care",
-      "rights": "permission",
+      "rights": "advertiser",
       "alt": "猫用トイレの下に置いたCatlog Board",
       "caption": "猫用トイレの下に置いたCatlog Board（公式サイト掲載画像）",
       "width": 576,
@@ -1594,9 +1594,9 @@
     },
     "product-a8-20261103-18-package": {
       "file": "product-a8-20261103-18-package.webp",
-      "kind": "provided",
+      "kind": "official",
       "subject": "cat-care",
-      "rights": "permission",
+      "rights": "advertiser",
       "alt": "猫用「毎日健心」の商品パッケージ",
       "caption": "猫用「毎日健心」の商品パッケージ（公式サイト掲載画像）",
       "width": 200,
@@ -1609,9 +1609,9 @@
     },
     "product-a8-20261103-20-package": {
       "file": "product-a8-20261103-20-package.webp",
-      "kind": "provided",
+      "kind": "official",
       "subject": "cat-care",
-      "rights": "permission",
+      "rights": "advertiser",
       "alt": "猫用「毎日美肌」の商品パッケージ",
       "caption": "猫用「毎日美肌」の商品パッケージ（公式サイト掲載画像）",
       "width": 200,
@@ -1624,9 +1624,9 @@
     },
     "product-a8-20261103-22-package": {
       "file": "product-a8-20261103-22-package.webp",
-      "kind": "provided",
+      "kind": "official",
       "subject": "cat-care",
-      "rights": "permission",
+      "rights": "advertiser",
       "alt": "猫用「毎日良肝」の商品パッケージ",
       "caption": "猫用「毎日良肝」の商品パッケージ（公式サイト掲載画像）",
       "width": 200,
@@ -1639,9 +1639,9 @@
     },
     "product-a8-20261103-24-package": {
       "file": "product-a8-20261103-24-package.webp",
-      "kind": "provided",
+      "kind": "official",
       "subject": "cat-care",
-      "rights": "permission",
+      "rights": "advertiser",
       "alt": "猫用「毎日一緒」の商品パッケージ",
       "caption": "猫用「毎日一緒」の商品パッケージ（公式サイト掲載画像）",
       "width": 200,
@@ -1651,6 +1651,966 @@
       "source_url": "https://withpety.com/products/nekoissho/img202104ama/top_item.jpg",
       "source_page": "https://withpety.com/products/nekoissho/",
       "retrieved_at": "2026-11-04"
+    },
+    "official-a8-01-1": {
+      "file": "official-a8-01-1.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "パウズグリーンデリの猫用お試しアソート",
+      "caption": "パウズグリーンデリの猫用お試しアソート",
+      "width": 1100,
+      "height": 1100,
+      "sha256": "1fd7e861a04c142e33199aefffb67d74c7543635229b16b1a3b2b497512077ad",
+      "variants": [
+        {
+          "file": "official-a8-01-1-480.webp",
+          "width": 480,
+          "height": 480
+        }
+      ],
+      "source_url": "https://paws-green-deli.com/cdn/shop/files/2_b22d2355-5f77-4351-97d5-b644c2042581.png?v=1781969969&width=1400",
+      "source_page": "https://paws-green-deli.com/",
+      "retrieved_at": "2026-11-04",
+      "bytes": 119846
+    },
+    "official-a8-01-2": {
+      "file": "official-a8-01-2.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "猫用グルメデリのパウチ",
+      "caption": "猫用グルメデリのパウチ",
+      "width": 800,
+      "height": 955,
+      "sha256": "96b9e46306a977d8b29a5813f67ed25a11607cf3775bff430a3befcd431cb880",
+      "variants": [
+        {
+          "file": "official-a8-01-2-480.webp",
+          "width": 402,
+          "height": 480
+        }
+      ],
+      "source_url": "https://paws-green-deli.com/cdn/shop/files/ChatGPT_Image_2026_7_8_23_27_12.png?v=1783520872&width=800",
+      "source_page": "https://paws-green-deli.com/",
+      "retrieved_at": "2026-11-04",
+      "bytes": 40428
+    },
+    "official-a8-02-1": {
+      "file": "official-a8-02-1.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "HARIOのにゃんプレトール",
+      "caption": "HARIOのにゃんプレトール",
+      "width": 533,
+      "height": 533,
+      "sha256": "71363693d99e39133cbf07a72ee7842eff0a613b46fc3ee60ae3a569857674da",
+      "variants": [
+        {
+          "file": "official-a8-02-1-480.webp",
+          "width": 480,
+          "height": 480
+        }
+      ],
+      "source_url": "https://shop.hariocorp.co.jp/cdn/shop/files/PTS-NYT-W.jpg?v=1736149905&width=533",
+      "source_page": "https://shop.hariocorp.co.jp",
+      "retrieved_at": "2026-11-04",
+      "bytes": 3768
+    },
+    "official-a8-02-2": {
+      "file": "official-a8-02-2.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "HARIOの猫草栽培キット・にゃんベジのリフィル",
+      "caption": "HARIOの猫草栽培キット・にゃんベジのリフィル",
+      "width": 533,
+      "height": 533,
+      "sha256": "29852437b1aa5b2ebac399dd3841ef06ceb912150d37563bef1eeed213a1b21d",
+      "variants": [
+        {
+          "file": "official-a8-02-2-480.webp",
+          "width": 480,
+          "height": 480
+        }
+      ],
+      "source_url": "https://shop.hariocorp.co.jp/cdn/shop/files/35_PTS-NK-2P-SH___EC.jpg?v=1775802223&width=533",
+      "source_page": "https://shop.hariocorp.co.jp",
+      "retrieved_at": "2026-11-04",
+      "bytes": 21706
+    },
+    "official-a8-05-1": {
+      "file": "official-a8-05-1.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "和漢みらいの特別療法食・低たんぱく",
+      "caption": "和漢みらいの特別療法食・低たんぱく",
+      "width": 480,
+      "height": 480,
+      "sha256": "6128c8e33b24bef8c0d70d2a8e4bc246669889027a79591290c4a249b7f7003a",
+      "variants": [],
+      "source_url": "https://shizenno-mori.com/images/item_box_DCLT.jpg",
+      "source_page": "https://mirai-cat.com/AF/",
+      "retrieved_at": "2026-11-04",
+      "bytes": 36510
+    },
+    "official-a8-05-2": {
+      "file": "official-a8-05-2.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "和漢みらいの特別療法食・バランス",
+      "caption": "和漢みらいの特別療法食・バランス",
+      "width": 480,
+      "height": 480,
+      "sha256": "84f45e66e251fa04f2f627597adca91972e13e95f4a8ac87c65ce77687f6ebdc",
+      "variants": [],
+      "source_url": "https://shizenno-mori.com/images/item_box_DCBA.jpg",
+      "source_page": "https://mirai-cat.com/AF/",
+      "retrieved_at": "2026-11-04",
+      "bytes": 37552
+    },
+    "official-a8-05-3": {
+      "file": "official-a8-05-3.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "和漢みらいの特別療法食・高エナジー",
+      "caption": "和漢みらいの特別療法食・高エナジー",
+      "width": 480,
+      "height": 480,
+      "sha256": "b7d06b319765ea26581664d4727b8e5b370ee07768c0d4ebedc38c8793806878",
+      "variants": [],
+      "source_url": "https://shizenno-mori.com/images/item_box_DCHE.jpg",
+      "source_page": "https://mirai-cat.com/AF/",
+      "retrieved_at": "2026-11-04",
+      "bytes": 39500
+    },
+    "official-a8-06-1": {
+      "file": "official-a8-06-1.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "M&Co.の猫柄ニットバッグ",
+      "caption": "M&Co.の猫柄ニットバッグ",
+      "width": 640,
+      "height": 640,
+      "sha256": "46fa18a4746ea534ed22c0dbf6118522dba6f3c76d34e67c68095307a9646267",
+      "variants": [
+        {
+          "file": "official-a8-06-1-480.webp",
+          "width": 480,
+          "height": 480
+        }
+      ],
+      "source_url": "https://baseec-img-mng.akamaized.net/images/item/origin/7d86186b07be6de2846a5dc2f1701351.jpg?imformat=generic&q=90&im=Resize,width=640,type=normal",
+      "source_page": "https://www.m-and.co.jp/",
+      "retrieved_at": "2026-11-04",
+      "bytes": 24076
+    },
+    "official-a8-06-2": {
+      "file": "official-a8-06-2.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "M&Co.のアメリカンショートヘアのチャーム",
+      "caption": "M&Co.のアメリカンショートヘアのチャーム",
+      "width": 640,
+      "height": 640,
+      "sha256": "dc64129ad398f722077315a77cc91d9590d4972e5cf0148c26fbc375267af436",
+      "variants": [
+        {
+          "file": "official-a8-06-2-480.webp",
+          "width": 480,
+          "height": 480
+        }
+      ],
+      "source_url": "https://baseec-img-mng.akamaized.net/images/item/origin/0087694c64498c134c6fad995769ead7.jpg?imformat=generic&q=90&im=Resize,width=640,type=normal",
+      "source_page": "https://www.m-and.co.jp/",
+      "retrieved_at": "2026-11-04",
+      "bytes": 24008
+    },
+    "official-a8-07-1": {
+      "file": "official-a8-07-1.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "ペット葬儀110番のサービス案内",
+      "caption": "ペット葬儀110番のサービス案内",
+      "width": 1000,
+      "height": 563,
+      "sha256": "d0c03c6d6c0c1e7b631ff4d3c47e2fe961b04ee1a6185d50eeb1fc1b2156b91e",
+      "variants": [
+        {
+          "file": "official-a8-07-1-480.webp",
+          "width": 480,
+          "height": 270
+        }
+      ],
+      "source_url": "https://aff.life-110.com/verticalsites/pet_sougi/img/desktop/img_lp02.png",
+      "source_page": "https://aff.life-110.com/?st_site=pet_sougi&st_aff=a8",
+      "retrieved_at": "2026-11-04",
+      "bytes": 59164
+    },
+    "official-a8-07-2": {
+      "file": "official-a8-07-2.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "ペット葬儀110番の火葬プラン比較",
+      "caption": "ペット葬儀110番の火葬プラン比較",
+      "width": 758,
+      "height": 1100,
+      "sha256": "69b9fe7c235659ec9cde818e54fc1641e03a59c996d5d0cea2daf31ba4ea80b4",
+      "variants": [
+        {
+          "file": "official-a8-07-2-480.webp",
+          "width": 331,
+          "height": 480
+        }
+      ],
+      "source_url": "https://aff.life-110.com/verticalsites/pet_sougi/img/desktop/img_lp03.png",
+      "source_page": "https://aff.life-110.com/?st_site=pet_sougi&st_aff=a8",
+      "retrieved_at": "2026-11-04",
+      "bytes": 117424
+    },
+    "official-a8-10-1": {
+      "file": "official-a8-10-1.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "digxipop公式掲載の猫のフィギュア制作例",
+      "caption": "digxipop公式掲載の猫のフィギュア制作例",
+      "width": 532,
+      "height": 900,
+      "sha256": "5bd111110c1b9c67f98915da19321a1e6a93b04ca7e0bbed896b527da9fd2e47",
+      "variants": [
+        {
+          "file": "official-a8-10-1-480.webp",
+          "width": 284,
+          "height": 480
+        }
+      ],
+      "source_url": "https://cdn.shopify.com/s/files/1/0956/8128/2411/files/IMG_8419_1_640x900.jpg.webp?v=1776341139&width=640",
+      "source_page": "https://www.digxipop.com/ja-jp",
+      "retrieved_at": "2026-11-04",
+      "bytes": 22532
+    },
+    "official-a8-10-2": {
+      "file": "official-a8-10-2.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "digxipop公式掲載の猫のフィギュア",
+      "caption": "digxipop公式掲載の猫のフィギュア",
+      "width": 640,
+      "height": 640,
+      "sha256": "f5dfca6412b58b9586c08a518003ecb7091aa29ec346463f63e0c5e4d8772846",
+      "variants": [
+        {
+          "file": "official-a8-10-2-480.webp",
+          "width": 480,
+          "height": 480
+        }
+      ],
+      "source_url": "https://cdn.shopify.com/s/files/1/0956/8128/2411/files/IMG_8821_640x900.jpg.webp?v=1776341542&width=640",
+      "source_page": "https://www.digxipop.com/ja-jp",
+      "retrieved_at": "2026-11-04",
+      "bytes": 56382
+    },
+    "official-a8-12-1": {
+      "file": "official-a8-12-1.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "ペットパラダイスの洋ナシのけりぐるみ",
+      "caption": "ペットパラダイスの洋ナシのけりぐるみ",
+      "width": 625,
+      "height": 750,
+      "sha256": "502c7e6f4628e14c2432c54d928d5305dffe642a1d591932f5fca9fee16fa669",
+      "variants": [
+        {
+          "file": "official-a8-12-1-480.webp",
+          "width": 400,
+          "height": 480
+        }
+      ],
+      "source_url": "https://shop.creativeyoko.co.jp/img01/w_750.h_750/trim_ofmgp_itemd8630e26cb9911f19a7f0242ac110005.jpg?ts=202610190848",
+      "source_page": "https://shop.creativeyoko.co.jp/items?lcc=05",
+      "retrieved_at": "2026-11-04",
+      "bytes": 19988
+    },
+    "official-a8-12-2": {
+      "file": "official-a8-12-2.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "ペットパラダイスのかもめの猫じゃらし",
+      "caption": "ペットパラダイスのかもめの猫じゃらし",
+      "width": 625,
+      "height": 750,
+      "sha256": "9a109d289c9b67a6a1c7ed493d25297d9600a16d9bffe495bba8981db6f8ae1b",
+      "variants": [
+        {
+          "file": "official-a8-12-2-480.webp",
+          "width": 400,
+          "height": 480
+        }
+      ],
+      "source_url": "https://shop.creativeyoko.co.jp/img01/w_750.h_750/trim_ofmgp_item361fe55cb33011f19e900242ac11000e.jpg?ts=202609180711",
+      "source_page": "https://shop.creativeyoko.co.jp/items?lcc=05",
+      "retrieved_at": "2026-11-04",
+      "bytes": 10232
+    },
+    "official-a8-13-1": {
+      "file": "official-a8-13-1.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "カナガンデンタルのパッケージと粒",
+      "caption": "カナガンデンタルのパッケージと粒",
+      "width": 1100,
+      "height": 767,
+      "sha256": "c214a7f73ce86a13698b96136712952f102b23b4cfe4ba15d409248019c5a218",
+      "variants": [
+        {
+          "file": "official-a8-13-1-480.webp",
+          "width": 480,
+          "height": 335
+        }
+      ],
+      "source_url": "https://www.canagancatfood.co.jp/public/images/default/canagancatfood/dental/sec01_03.png",
+      "source_page": "https://www.canagancatfood.co.jp/dental/CDC20003",
+      "retrieved_at": "2026-11-04",
+      "bytes": 56196
+    },
+    "official-a8-13-2": {
+      "file": "official-a8-13-2.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "カナガンデンタル公式掲載の食事の様子",
+      "caption": "カナガンデンタル公式掲載の食事の様子",
+      "width": 1000,
+      "height": 710,
+      "sha256": "b7b32949fc5d9ddd4011905cdc372e4b341064c46768593f51d23cf37f933dd7",
+      "variants": [
+        {
+          "file": "official-a8-13-2-480.webp",
+          "width": 480,
+          "height": 341
+        }
+      ],
+      "source_url": "https://www.canagancatfood.co.jp/public/images/default/canagancatfood/dental/sec03_1.jpg",
+      "source_page": "https://www.canagancatfood.co.jp/dental/CDC20003",
+      "retrieved_at": "2026-11-04",
+      "bytes": 53720
+    },
+    "official-a8-14-1": {
+      "file": "official-a8-14-1.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "カナガンキャットフード・チキン",
+      "caption": "カナガンキャットフード・チキン",
+      "width": 145,
+      "height": 277,
+      "sha256": "e09fa23b6b024c346b20b10ac3c58c42a1fcca84c2d0587967cf37ff441473a9",
+      "variants": [],
+      "source_url": "https://www.canagancatfood.co.jp/public/images/default/canagancatfood/new/product.png",
+      "source_page": "https://www.canagancatfood.co.jp/3201/",
+      "retrieved_at": "2026-11-04",
+      "bytes": 7240
+    },
+    "official-a8-14-2": {
+      "file": "official-a8-14-2.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "カナガンキャットフード・サーモン",
+      "caption": "カナガンキャットフード・サーモン",
+      "width": 145,
+      "height": 277,
+      "sha256": "3b9f75825f4d2ce39befa4cb9c7c1121879260aac5043cb70278053fb8a56d05",
+      "variants": [],
+      "source_url": "https://www.canagancatfood.co.jp/public/images/default/canagancatfood/new/product_fish.png",
+      "source_page": "https://www.canagancatfood.co.jp/3201/",
+      "retrieved_at": "2026-11-04",
+      "bytes": 9388
+    },
+    "official-a8-15-1": {
+      "file": "official-a8-15-1.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "マックアダムズの猫用チキン＆ターキー",
+      "caption": "マックアダムズの猫用チキン＆ターキー",
+      "width": 987,
+      "height": 1100,
+      "sha256": "eca3324e51c956f00899b28d21e5e3cb755ade911fa307f8a65c54e102bc0bf3",
+      "variants": [
+        {
+          "file": "official-a8-15-1-480.webp",
+          "width": 431,
+          "height": 480
+        }
+      ],
+      "source_url": "https://www.mcadamspetfoods.co.jp/public/images/default/mcadamspetfoods/catfood/img_01.webp",
+      "source_page": "https://www.mcadamspetfoods.co.jp/catfood/MAC20000",
+      "retrieved_at": "2026-11-04",
+      "bytes": 132960
+    },
+    "official-a8-15-2": {
+      "file": "official-a8-15-2.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "マックアダムズの原材料とビスケット状の粒",
+      "caption": "マックアダムズの原材料とビスケット状の粒",
+      "width": 668,
+      "height": 1100,
+      "sha256": "f315e05391201f6f7795c9a50710c8e1efedd267c08738edbd91b5cda78f08dc",
+      "variants": [
+        {
+          "file": "official-a8-15-2-480.webp",
+          "width": 291,
+          "height": 480
+        }
+      ],
+      "source_url": "https://www.mcadamspetfoods.co.jp/public/images/default/mcadamspetfoods/catfood/img_05.webp",
+      "source_page": "https://www.mcadamspetfoods.co.jp/catfood/MAC20000",
+      "retrieved_at": "2026-11-04",
+      "bytes": 76020
+    },
+    "official-a8-16-1": {
+      "file": "official-a8-16-1.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "ジャガーキャットフードのパッケージ",
+      "caption": "ジャガーキャットフードのパッケージ",
+      "width": 750,
+      "height": 750,
+      "sha256": "f05dfb56e5d4ed9aae46451ae0966d4db72c01633e87a75dce2e393d32b18167",
+      "variants": [
+        {
+          "file": "official-a8-16-1-480.webp",
+          "width": 480,
+          "height": 480
+        }
+      ],
+      "source_url": "https://www.essentialfoods.jp/public/images/default/essentialfoods/products/package/jcf.jpg",
+      "source_page": "https://www.essentialfoods.jp/products/detail/6001",
+      "retrieved_at": "2026-11-04",
+      "bytes": 22856
+    },
+    "official-a8-16-2": {
+      "file": "official-a8-16-2.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "ジャガーキャットフードのリング形の粒",
+      "caption": "ジャガーキャットフードのリング形の粒",
+      "width": 800,
+      "height": 800,
+      "sha256": "8f0af51827a97b7ef599f53a14c8325829eec611ea10ff40abae34d9d90d3d32",
+      "variants": [
+        {
+          "file": "official-a8-16-2-480.webp",
+          "width": 480,
+          "height": 480
+        }
+      ],
+      "source_url": "https://www.essentialfoods.jp/public/images/default/essentialfoods/products/kibble/kibble_jcf_thumb.jpg",
+      "source_page": "https://www.essentialfoods.jp/products/detail/6001",
+      "retrieved_at": "2026-11-04",
+      "bytes": 29652
+    },
+    "official-a8-17-1": {
+      "file": "official-a8-17-1.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "モグニャンのパッケージと公式掲載の食事の様子",
+      "caption": "モグニャンのパッケージと公式掲載の食事の様子",
+      "width": 1000,
+      "height": 580,
+      "sha256": "7596791433c5e2fd73b9de493f2eea0fab0444c5561c074592e9f82085b2e660",
+      "variants": [
+        {
+          "file": "official-a8-17-1-480.webp",
+          "width": 480,
+          "height": 278
+        }
+      ],
+      "source_url": "https://www.mognyancatfood.co.jp/public/images/default/mognyancatfood/id6803/sec_b_tyukiari_img10.jpg",
+      "source_page": "https://www.mognyancatfood.co.jp/MGN20009/",
+      "retrieved_at": "2026-11-04",
+      "bytes": 35040
+    },
+    "official-a8-17-2": {
+      "file": "official-a8-17-2.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "モグニャンの商品詳細と粒の形状の案内",
+      "caption": "モグニャンの商品詳細と粒の形状の案内",
+      "width": 880,
+      "height": 697,
+      "sha256": "08720ba4fbdeae4eb029501e1906420048697537b18df83155c73a3143101977",
+      "variants": [
+        {
+          "file": "official-a8-17-2-480.webp",
+          "width": 480,
+          "height": 380
+        }
+      ],
+      "source_url": "https://www.mognyancatfood.co.jp/public/images/default/mognyancatfood/202508/sec_i_img08-1.gif",
+      "source_page": "https://www.mognyancatfood.co.jp/MGN20009/",
+      "retrieved_at": "2026-11-04",
+      "bytes": 43746
+    },
+    "official-a8-18-1": {
+      "file": "official-a8-18-1.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "毎日健心のパッケージと錠剤",
+      "caption": "毎日健心のパッケージと錠剤",
+      "width": 750,
+      "height": 1000,
+      "sha256": "65ba395f8bbbe2d1511351e7995446fddb1d32303839e333bdb0999c39347164",
+      "variants": [
+        {
+          "file": "official-a8-18-1-480.webp",
+          "width": 360,
+          "height": 480
+        }
+      ],
+      "source_url": "https://withpety.com/products/nekokenshin/img202104ama/1600x1600_slide_01.jpg",
+      "source_page": "https://withpety.com/products/nekokenshin/a8.html?ad_code=20800",
+      "retrieved_at": "2026-11-04",
+      "bytes": 39152
+    },
+    "official-a8-18-2": {
+      "file": "official-a8-18-2.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "毎日健心の配合成分の案内",
+      "caption": "毎日健心の配合成分の案内",
+      "width": 1100,
+      "height": 1100,
+      "sha256": "868658167a90a2d29e4ab84e39ea376a7233bd6db805985250569219b46ff1b1",
+      "variants": [
+        {
+          "file": "official-a8-18-2-480.webp",
+          "width": 480,
+          "height": 480
+        }
+      ],
+      "source_url": "https://withpety.com/products/nekokenshin/img202104ama/1600x1600_slide_04.jpg",
+      "source_page": "https://withpety.com/products/nekokenshin/a8.html?ad_code=20800",
+      "retrieved_at": "2026-11-04",
+      "bytes": 85760
+    },
+    "official-a8-19-1": {
+      "file": "official-a8-19-1.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "Pontelyの猫用検査結果証とマイページ表示例",
+      "caption": "Pontelyの猫用検査結果証とマイページ表示例",
+      "width": 798,
+      "height": 347,
+      "sha256": "a5744ada1366785337e79b593f0b7b0c6c6e3784f80a346d35b767639e533428",
+      "variants": [
+        {
+          "file": "official-a8-19-1-480.webp",
+          "width": 480,
+          "height": 209
+        }
+      ],
+      "source_url": "https://www.pontely.com/wp-content/uploads/card_sample_3_cat.png",
+      "source_page": "https://www.pontely.com/forowner/cat?ref=a8",
+      "retrieved_at": "2026-11-04",
+      "bytes": 23160
+    },
+    "official-a8-19-2": {
+      "file": "official-a8-19-2.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "Pontely公式サイトの猫の遺伝子検査の案内",
+      "caption": "Pontely公式サイトの猫の遺伝子検査の案内",
+      "width": 1100,
+      "height": 734,
+      "sha256": "6516f9a04fbd4f1c1ecad93f31fff6c1be353e4ca75f6db2b3b2f18a90594323",
+      "variants": [
+        {
+          "file": "official-a8-19-2-480.webp",
+          "width": 480,
+          "height": 320
+        }
+      ],
+      "source_url": "https://www.pontely.com/wp-content/uploads/forowner_read1_cat.jpg",
+      "source_page": "https://www.pontely.com/forowner/cat?ref=a8",
+      "retrieved_at": "2026-11-04",
+      "bytes": 57070
+    },
+    "official-a8-20-1": {
+      "file": "official-a8-20-1.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "猫用・毎日美肌 PS-B1＆ローヤルゼリー",
+      "caption": "猫用・毎日美肌 PS-B1＆ローヤルゼリー",
+      "width": 200,
+      "height": 267,
+      "sha256": "8f17e324d7a8289549ec2f50b2b048734e9efbb9aa5d9b1ac29b2e384f948158",
+      "variants": [],
+      "source_url": "https://withpety.com/products/nekobihada/img202104ama/top_item.jpg",
+      "source_page": "https://withpety.com/products/nekobihada/",
+      "retrieved_at": "2026-11-04",
+      "bytes": 6760
+    },
+    "official-a8-20-2": {
+      "file": "official-a8-20-2.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "猫用・毎日美肌 PS-B1＆ローヤルゼリーの商品詳細",
+      "caption": "猫用・毎日美肌 PS-B1＆ローヤルゼリーの商品詳細",
+      "width": 1100,
+      "height": 1027,
+      "sha256": "50a42392097c38daeeb45595d6367a91c62852edfd896b062704ed3fc1f88364",
+      "variants": [
+        {
+          "file": "official-a8-20-2-480.webp",
+          "width": 480,
+          "height": 448
+        }
+      ],
+      "source_url": "https://withpety.com/products/nekobihada/img202112lp/pc_detail.jpg",
+      "source_page": "https://withpety.com/products/nekobihada/a8.html?ad_code=2200",
+      "retrieved_at": "2026-11-04",
+      "bytes": 52606
+    },
+    "official-a8-21-1": {
+      "file": "official-a8-21-1.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "おねこさまのWALK tree",
+      "caption": "おねこさまのWALK tree",
+      "width": 800,
+      "height": 1042,
+      "sha256": "2b3c34eda6fae4caa74282ac645308889321375a486ea336badd9815251197ea",
+      "variants": [
+        {
+          "file": "official-a8-21-1-480.webp",
+          "width": 369,
+          "height": 480
+        }
+      ],
+      "source_url": "https://d2w53g1q050m78.cloudfront.net/onekosamacom/ec_assets/d3d680e3687d55c2625269afabbc5c89982962e8-original.jpg?1783587000",
+      "source_page": "https://oneko-sama.com/",
+      "retrieved_at": "2026-11-04",
+      "bytes": 59054
+    },
+    "official-a8-21-2": {
+      "file": "official-a8-21-2.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "おねこさまのRESIDENCE",
+      "caption": "おねこさまのRESIDENCE",
+      "width": 917,
+      "height": 1100,
+      "sha256": "09fab8c6d6b2b14b22aee5c18fec59953f7e92f44c365e209cbf5f9c2f4067f3",
+      "variants": [
+        {
+          "file": "official-a8-21-2-480.webp",
+          "width": 400,
+          "height": 480
+        }
+      ],
+      "source_url": "https://d2w53g1q050m78.cloudfront.net/onekosamacom/ec_assets/5ee14bcf9e9a900ea5fb26ec53986c1a0edfbde3-original.?1773304825",
+      "source_page": "https://oneko-sama.com/",
+      "retrieved_at": "2026-11-04",
+      "bytes": 78000
+    },
+    "official-a8-22-1": {
+      "file": "official-a8-22-1.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "毎日良肝のパッケージと錠剤",
+      "caption": "毎日良肝のパッケージと錠剤",
+      "width": 750,
+      "height": 1000,
+      "sha256": "b62350463678cd722ed3b7b32d265d47d7239b771a617f82505b27e74c5e0751",
+      "variants": [
+        {
+          "file": "official-a8-22-1-480.webp",
+          "width": 360,
+          "height": 480
+        }
+      ],
+      "source_url": "https://withpety.com/products/nekoryoukan/img202104ama/1600x1600_slide_01.jpg",
+      "source_page": "https://withpety.com/products/nekoryoukan/a8.html?ad_code=2400",
+      "retrieved_at": "2026-11-04",
+      "bytes": 38354
+    },
+    "official-a8-22-2": {
+      "file": "official-a8-22-2.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "毎日良肝の配合成分の案内",
+      "caption": "毎日良肝の配合成分の案内",
+      "width": 750,
+      "height": 750,
+      "sha256": "b3b702673cd112f4a7db097401a27a867bf10ef4ab42a4f72f455805e8b218c5",
+      "variants": [
+        {
+          "file": "official-a8-22-2-480.webp",
+          "width": 480,
+          "height": 480
+        }
+      ],
+      "source_url": "https://withpety.com/products/nekoryoukan/img202104ama/1600x1600_slide_04.jpg",
+      "source_page": "https://withpety.com/products/nekoryoukan/a8.html?ad_code=2400",
+      "retrieved_at": "2026-11-04",
+      "bytes": 51254
+    },
+    "official-a8-23-1": {
+      "file": "official-a8-23-1.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "Catlogの首輪とデバイスを着けた猫",
+      "caption": "Catlogの首輪とデバイスを着けた猫",
+      "width": 576,
+      "height": 767,
+      "sha256": "63fbd8f5e2a26f9cb80b6d49b3ce174ac46e95d18dfebaaca9da133d2c5b10eb",
+      "variants": [
+        {
+          "file": "official-a8-23-1-480.webp",
+          "width": 360,
+          "height": 480
+        }
+      ],
+      "source_url": "https://rabo.cat/static/473ebe9affd3167a7092a85476ae2366/d22e9/StarterSet.jpg",
+      "source_page": "https://rabo.cat/catlog/",
+      "retrieved_at": "2026-11-04",
+      "bytes": 44300
+    },
+    "official-a8-23-2": {
+      "file": "official-a8-23-2.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "Catlog Boardを設置したトイレ",
+      "caption": "Catlog Boardを設置したトイレ",
+      "width": 576,
+      "height": 767,
+      "sha256": "d533b71d41e308f65cf4e5bc73c017d35ba49b81eab81680cd1e2d18c20e51d0",
+      "variants": [
+        {
+          "file": "official-a8-23-2-480.webp",
+          "width": 360,
+          "height": 480
+        }
+      ],
+      "source_url": "https://rabo.cat/static/57673f18e32d41acce598b894baf69a1/d22e9/Board2ForJp.jpg",
+      "source_page": "https://rabo.cat/catlog/",
+      "retrieved_at": "2026-11-04",
+      "bytes": 11864
+    },
+    "official-a8-24-1": {
+      "file": "official-a8-24-1.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "毎日一緒のパッケージと錠剤",
+      "caption": "毎日一緒のパッケージと錠剤",
+      "width": 750,
+      "height": 1000,
+      "sha256": "3e2302378bdd4c92e698c958d1fb384835c5171ffad0eb1098f6341299ca22ec",
+      "variants": [
+        {
+          "file": "official-a8-24-1-480.webp",
+          "width": 360,
+          "height": 480
+        }
+      ],
+      "source_url": "https://withpety.com/products/nekoissho/img202104ama/1600x1600_slide_01.jpg",
+      "source_page": "https://withpety.com/products/nekoissho/a8.html?ad_code=20004",
+      "retrieved_at": "2026-11-04",
+      "bytes": 34744
+    },
+    "official-a8-24-2": {
+      "file": "official-a8-24-2.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "毎日一緒の配合成分の案内",
+      "caption": "毎日一緒の配合成分の案内",
+      "width": 750,
+      "height": 750,
+      "sha256": "b267dde95120ab0844b35e7eb2f6ffd9ee2370c329cd870620b8c37df8736252",
+      "variants": [
+        {
+          "file": "official-a8-24-2-480.webp",
+          "width": 480,
+          "height": 480
+        }
+      ],
+      "source_url": "https://withpety.com/products/nekoissho/img202104ama/1600x1600_slide_04.jpg",
+      "source_page": "https://withpety.com/products/nekoissho/a8.html?ad_code=20004",
+      "retrieved_at": "2026-11-04",
+      "bytes": 47184
+    },
+    "a8-collage-12": {
+      "file": "a8-collage-12.webp",
+      "kind": "generated",
+      "subject": "manmos",
+      "rights": "generated",
+      "alt": "まんもすの提供写真をもとにしたコラージュ表紙",
+      "caption": "提供写真を元にしたAI生成コラージュ",
+      "width": 1200,
+      "height": 800,
+      "sha256": "8b0ccee0fd61c84177f2121a8871c24b3d250ba37b5f05ddf67b206250d4bf8a",
+      "variants": [
+        {
+          "file": "a8-collage-12-480.webp",
+          "width": 480,
+          "height": 320
+        }
+      ],
+      "source_photos": [
+        "manmos-front",
+        "manmos-portrait"
+      ],
+      "generated_at": "2026-11-04"
+    },
+    "a8-collage-13": {
+      "file": "a8-collage-13.webp",
+      "kind": "generated",
+      "subject": "manmos",
+      "rights": "generated",
+      "alt": "まんもすの提供写真をもとにしたコラージュ表紙",
+      "caption": "提供写真を元にしたAI生成コラージュ",
+      "width": 1200,
+      "height": 800,
+      "sha256": "fc281a5a394499bd2d1319a0f480d890879793cd6b473e64ce7bba072b097be1",
+      "variants": [
+        {
+          "file": "a8-collage-13-480.webp",
+          "width": 480,
+          "height": 320
+        }
+      ],
+      "source_photos": [
+        "manmos-front",
+        "manmos-portrait"
+      ],
+      "generated_at": "2026-11-04"
+    },
+    "a8-collage-14": {
+      "file": "a8-collage-14.webp",
+      "kind": "generated",
+      "subject": "manmos",
+      "rights": "generated",
+      "alt": "まんもすの提供写真をもとにしたコラージュ表紙",
+      "caption": "提供写真を元にしたAI生成コラージュ",
+      "width": 1200,
+      "height": 800,
+      "sha256": "6011179e884f3e31b560f3cb71f57e53ec48d321044aaf46fe6f29126ca283b5",
+      "variants": [
+        {
+          "file": "a8-collage-14-480.webp",
+          "width": 480,
+          "height": 320
+        }
+      ],
+      "source_photos": [
+        "manmos-front",
+        "manmos-portrait"
+      ],
+      "generated_at": "2026-11-04"
+    },
+    "a8-collage-15": {
+      "file": "a8-collage-15.webp",
+      "kind": "generated",
+      "subject": "manmos",
+      "rights": "generated",
+      "alt": "まんもすの提供写真をもとにしたコラージュ表紙",
+      "caption": "提供写真を元にしたAI生成コラージュ",
+      "width": 1200,
+      "height": 800,
+      "sha256": "f1b769146ff5edd7585ccc4db5024dfe8ede4dec5cf7a6b86d035a1badd32f79",
+      "variants": [
+        {
+          "file": "a8-collage-15-480.webp",
+          "width": 480,
+          "height": 320
+        }
+      ],
+      "source_photos": [
+        "manmos-front",
+        "manmos-portrait"
+      ],
+      "generated_at": "2026-11-04"
+    },
+    "a8-collage-16": {
+      "file": "a8-collage-16.webp",
+      "kind": "generated",
+      "subject": "manmos",
+      "rights": "generated",
+      "alt": "まんもすの提供写真をもとにしたコラージュ表紙",
+      "caption": "提供写真を元にしたAI生成コラージュ",
+      "width": 1200,
+      "height": 800,
+      "sha256": "be3343ae9537e2b6cc144915464df79d68c19a9d435f19441e2189246dd1d115",
+      "variants": [
+        {
+          "file": "a8-collage-16-480.webp",
+          "width": 480,
+          "height": 320
+        }
+      ],
+      "source_photos": [
+        "manmos-front",
+        "manmos-portrait"
+      ],
+      "generated_at": "2026-11-04"
+    },
+    "a8-collage-17": {
+      "file": "a8-collage-17.webp",
+      "kind": "generated",
+      "subject": "manmos",
+      "rights": "generated",
+      "alt": "まんもすの提供写真をもとにしたコラージュ表紙",
+      "caption": "提供写真を元にしたAI生成コラージュ",
+      "width": 1200,
+      "height": 800,
+      "sha256": "cb31eb759ce078a953df875f3d7c12576c192757d6e9605682f04f78715a7671",
+      "variants": [
+        {
+          "file": "a8-collage-17-480.webp",
+          "width": 480,
+          "height": 320
+        }
+      ],
+      "source_photos": [
+        "manmos-front",
+        "manmos-portrait"
+      ],
+      "generated_at": "2026-11-04"
     }
   },
   "articles": {
@@ -1765,7 +2725,13 @@
     "onekosama-cat-tower": "a8-collage-21",
     "withpety-nekoryoukan": "a8-collage-22",
     "catlog-cat-monitor": "a8-collage-23",
-    "withpety-nekoissho": "a8-collage-24"
+    "withpety-nekoissho": "a8-collage-24",
+    "pet-paradise-cat-toys": "a8-collage-12",
+    "canagan-dental-cat-food": "a8-collage-13",
+    "canagan-chicken-salmon": "a8-collage-14",
+    "mcadams-cat-chicken-turkey": "a8-collage-15",
+    "essential-jaguar-cat-food": "a8-collage-16",
+    "mognyan-cat-food-guide": "a8-collage-17"
   },
   "affiliate_inline": {
     "paws-green-deli-cat-food": [],
@@ -1780,32 +2746,91 @@
     "onekosama-cat-tower": [],
     "withpety-nekoryoukan": [],
     "catlog-cat-monitor": [],
-    "withpety-nekoissho": []
+    "withpety-nekoissho": [],
+    "pet-paradise-cat-toys": [],
+    "canagan-dental-cat-food": [],
+    "canagan-chicken-salmon": [],
+    "mcadams-cat-chicken-turkey": [],
+    "essential-jaguar-cat-food": [],
+    "mognyan-cat-food-guide": []
   },
   "affiliate_product_images": {
-    "paws-green-deli-cat-food": [],
-    "hario-cat-bowl-guide": [],
-    "mirai-cat-food-types": [],
-    "m-and-cat-knit-bag": [],
-    "pet-sougi-110-cat-guide": [],
-    "digxipop-cat-figure": [],
+    "paws-green-deli-cat-food": [
+      "official-a8-01-1",
+      "official-a8-01-2"
+    ],
+    "hario-cat-bowl-guide": [
+      "official-a8-02-1",
+      "official-a8-02-2"
+    ],
+    "mirai-cat-food-types": [
+      "official-a8-05-1",
+      "official-a8-05-2",
+      "official-a8-05-3"
+    ],
+    "m-and-cat-knit-bag": [
+      "official-a8-06-1",
+      "official-a8-06-2"
+    ],
+    "pet-sougi-110-cat-guide": [
+      "official-a8-07-1",
+      "official-a8-07-2"
+    ],
+    "digxipop-cat-figure": [
+      "official-a8-10-1",
+      "official-a8-10-2"
+    ],
     "withpety-nekokenshin": [
-      "product-a8-20261103-18-package"
+      "official-a8-18-1",
+      "official-a8-18-2"
     ],
-    "pontely-cat-dna-test": [],
+    "pontely-cat-dna-test": [
+      "official-a8-19-1",
+      "official-a8-19-2"
+    ],
     "withpety-nekobihada": [
-      "product-a8-20261103-20-package"
+      "official-a8-20-1",
+      "official-a8-20-2"
     ],
-    "onekosama-cat-tower": [],
+    "onekosama-cat-tower": [
+      "official-a8-21-1",
+      "official-a8-21-2"
+    ],
     "withpety-nekoryoukan": [
-      "product-a8-20261103-22-package"
+      "official-a8-22-1",
+      "official-a8-22-2"
     ],
     "catlog-cat-monitor": [
-      "product-a8-20261103-23-image-01",
-      "product-a8-20261103-23-image-02"
+      "official-a8-23-1",
+      "official-a8-23-2"
     ],
     "withpety-nekoissho": [
-      "product-a8-20261103-24-package"
+      "official-a8-24-1",
+      "official-a8-24-2"
+    ],
+    "pet-paradise-cat-toys": [
+      "official-a8-12-1",
+      "official-a8-12-2"
+    ],
+    "canagan-dental-cat-food": [
+      "official-a8-13-1",
+      "official-a8-13-2"
+    ],
+    "canagan-chicken-salmon": [
+      "official-a8-14-1",
+      "official-a8-14-2"
+    ],
+    "mcadams-cat-chicken-turkey": [
+      "official-a8-15-1",
+      "official-a8-15-2"
+    ],
+    "essential-jaguar-cat-food": [
+      "official-a8-16-1",
+      "official-a8-16-2"
+    ],
+    "mognyan-cat-food-guide": [
+      "official-a8-17-1",
+      "official-a8-17-2"
     ]
   }
 }

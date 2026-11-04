@@ -1,0 +1,536 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>ジャガーキャットフード｜エッセンシャルブランドサイト</title>
+      <meta name="description" content="エッセンシャルは、あなたと愛犬・愛猫が最高の人生を送るために、ラグジュアリーなライフスタイルを提案するブランドです。私たちの想いを込めたフードは、世界中で愛されています。">
+    <meta name="keywords" content="エッセンシャル,ドッグフード,キャットフード">
+  <link rel="icon" href="/public/images/default/essentialfoods/base/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" type="text/css" href="/public/styles/default/essentialfoods/style.css" />
+  <link rel="stylesheet" type="text/css" href="/public/styles/default/essentialfoods/splide.min.css" />
+  <link rel="stylesheet" type="text/css" href="/public/styles/default/essentialfoods/modal.css" />
+  <link rel="stylesheet" type="text/css" href="/public/styles/default/essentialfoods/info.css" />
+
+  <script src="/public/js/default/essentialfoods/splide.min.js" type="text/javascript"></script>
+  <script src="/public/js/default/essentialfoods/jquery-3.7.1.min.js" type="text/javascript"></script>
+  <script src="/public/js/default/essentialfoods/animation.js" type="text/javascript"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Noto+Serif+JP&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <script src="/public/js/default/essentialfoods/logics/common.js"></script>
+      <script src="/public/js/default/essentialfoods/logics/detail.js"></script>
+  
+  
+  <script>
+    $(function() {
+      // パラメータ引き継ぎ処理
+      setSessionStorageQueryParams();
+
+      // カート内商品数アイコン表示
+      updateCartItemCountIcon();
+    });
+  </script>
+  
+
+  
+    <!-- Google tag (gtag.js) -->
+    <script async src=""https://www.googletagmanager.com/gtag/js?id=G-WDYN3CGPP9""></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-WDYN3CGPP9');
+    </script>
+  
+
+  
+  
+  </head>
+
+<body>
+
+  <header>
+    <div class="header_topic">愛犬・愛猫との「最上の暮らし」のために</div>
+
+    <div class="header_mobile">
+      <p class="header_mobile_logo"><a href="/"><img src="/public/images/default/essentialfoods/base/logo_white.svg" alt="エッセンシャル" /></a></p>
+      <p class="header_btn icn"></p>
+      <ul>
+        <li class="icn mypage"><a href="https://www.laetitienpet.com/mypage"></a></li>
+        <li class="icn cart">
+          <a href="/products/cart"></a>
+          <div class="cart-item-count"></div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="header_menu">
+      <div class="header_main">
+        <p class="header_logo"><a href="/"><img src="/public/images/default/essentialfoods/base/logo_white.svg" alt="エッセンシャル" /></a></p>
+
+        <p class="header_btn_close icn"></p>
+
+        <div class="header_link">
+          <ul>
+            <li class="icn mypage"><a href="https://www.laetitienpet.com/mypage">マイページ</a></li>
+            <li class="icn cart">
+              <a href="/products/cart">カート</a>
+              <div class="cart-item-count"></div>
+          </li>
+          </ul>
+        </div>
+
+        <div class="header_search">
+          <p class="icn search"><a href="/products/dog">ドッグフードを探す</a></p>
+          <ul class="flex">
+            <li><a href="/products/dog/#dog-dryfood">ドライ</a></li>
+            <li><a href="/products/dog/#dog-wetfood">ウェット</a></li>
+            <li><a href="/products/dog/#dog-treats">おやつ・トッピング</a></li>
+          </ul>
+          <p class="icn search"><a href="/products/cat">キャットフードを探す</a></p>
+          <ul class="flex">
+            <li><a href="/products/cat/#cat-dryfood">ドライ</a></li>
+            <li><a href="/products/cat/#cat-wetfood">ウェット</a></li>
+            <li><a href="/products/cat/#cat-treats">おやつ・トッピング</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <nav class="header_nav">
+        <ul>
+          <li><a href="/page/about">『エッセンシャル』について</a></li>
+          <li><a href="/page/our-ingredients">原材料のこだわり</a></li>
+          <li><a href="/page/regular-delivery">定期コースについて</a></li>
+          <li><a href="/page/faq">よくあるご質問</a></li>
+          <li><a href="https://www.laetitienpet.com/contact">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="wrap" id="products">
+
+  <ul class="pan">
+    <li><a href="/">TOP</a></li>
+    <li class="icn"><a href="/products/cat">キャットフードを探す</a></li>
+    <li class="icn">ジャガーキャットフード</li>
+  </ul>
+
+  <section class="products_main">
+    <div class="inner">
+      <div class="flex">
+        <div class="flex_h">
+          <div id="products_pic_slide" class="splide">
+            <div class="splide__track">
+              <div class="splide__list">
+                <div class="splide__slide"><img src="/public/images/default/essentialfoods/products/package/jcf.jpg" alt="" /></div>
+                <div class="splide__slide"><img src="/public/images/default/essentialfoods/products/kibble/kibble_jcf_thumb.jpg" alt="" /></div>
+                <div class="splide__slide"><img src="/public/images/default/essentialfoods/products/image/image_jcf.jpg" alt="" /></div>
+              </div>
+            </div>
+          </div>
+          <div id="products_thumbnail" class="splide">
+            <div class="splide__track">
+              <div class="splide__list">
+                <div class="splide__slide"><img src="/public/images/default/essentialfoods/products/package/jcf.jpg" alt="" /></div>
+                <div class="splide__slide"><img src="/public/images/default/essentialfoods/products/kibble/kibble_jcf_thumb.jpg" alt="" /></div>
+                <div class="splide__slide"><img src="/public/images/default/essentialfoods/products/image/image_jcf.jpg" alt="" /></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex_h products_about">
+          <h1 class="serif">ジャガーキャットフード<span>1.5kg</span></h1>
+          <p class="item_copy">愛猫のための“最高の食事”を追求し、エッセンシャルが辿り着いた結論。<br>
+            肉と魚の絶妙コンビネーションが生み出す、極上の味わい。</p>
+          <ul class="item_tag">
+            <li>全猫種・全年齢</li>
+            <li>チキン</li>
+            <li>ダック</li>
+            <li>サーモン</li>
+            <li>マス</li>
+            <li>グレインフリー</li>
+            <li>スーパーフード</li>
+          </ul>
+          <div class="item_single">
+            <h4 class="icn serif">通常価格：</h4>
+            <p class="item_price">税抜 <span class="num">5,320</span>円（税込 <span class="num">5,852</span>円）</p>
+          </div>
+          <div class="item_regular">
+            <h4 class="icn serif">定期コースだけの<br class="sp_br">おトクな特典</h4>
+            <ul>
+              <li>
+                <h5><span class="num">1.</span>定期コースだけの特別優待価格（最大20%OFF）</h5>
+                <div class="flex">
+                  <div class="flex_t">
+                    <p class="item_sp_percent"><span class="num">10</span>%OFF</p>
+                    <p class="item_sp_price">合計金額が<br>税抜<span class="num">7,000</span>円未満</p>
+                  </div>
+                  <div class="flex_t">
+                    <p class="item_sp_percent"><span class="num">15</span>%OFF</p>
+                    <p class="item_sp_price">合計金額が<br>税抜<span class="num">7,000</span>円以上</p>
+                  </div>
+                  <div class="flex_t">
+                    <p class="item_sp_percent"><span class="num">20</span>%OFF</p>
+                    <p class="item_sp_price">合計金額が<br>税抜<span class="num">20,000</span>円以上</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <h5><span class="num">2.</span>いつでも解約・再開OK</h5>
+                <p class="notes">※次回お届け日の7日前までに、お電話・お問い合わせフォームから解約の旨をご連絡いただくかマイページからお手続きください。</p>
+              </li>
+              <li>
+                <h5><span class="num">3.</span>初回はフードスクーププレゼント</h5>
+              </li>
+            </ul>
+            <p class="item_regular_link"><a href="/page/regular-delivery">定期コース詳細はこちら</a></p>
+          </div>
+
+          <div class="flex item_cart">
+            <div class="quantity_select">個数：
+              <div class="select_box">
+                <select name="quantity">
+                  <option value="1" selected>1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                </select>
+              </div>
+            </div>
+
+                        
+<input type="hidden" name="product_code" value="6001" />
+<input type="hidden" name="product_name" value="ジャガーキャットフード" />
+<input type="hidden" name="price" value="5320" />
+<input type="hidden" name="image_url" value="/public/images/default/essentialfoods/products/package/jcf.jpg" />
+
+<div class="item_button">
+  <button id="addcart_single" type="button" class="icn btn btn_single">単品購入</button>
+  <button id="addcart_regular" type="button" class="icn btn btn_regular">定期コース</button>
+</div>
+
+<div class="cp_modal_area" id="cp_modal_tab">
+  <div class="cp_modal_cont">
+    <h4 class="cp_modal_border">カートページに移動しますか？</h4>
+    <div class="cp_modal_button">
+      <button type="button" id="transitiondetail" class="round-btn">このまま買い物を続ける</button>
+      <button type="button" id="transitioncart" class="round-btn">カートページに移動する</button>
+    </div>
+  </div>
+</div>            <input type="hidden" name="amount" value="1.5kg" />
+
+                        
+<div id="info_notice">
+  </div>          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="products_ingredients bg_light">
+    <div class="inner">
+      <h2 class="title">こだわりの原材料<span>FEATURED INGREDIENTS</span></h2>
+      <div class="splide js-splide" data-per-page="3" data-sp-per-page="1">
+        <div class="splide__track">
+          <div class="splide__list">
+            <div class="list_block splide__slide">
+              <div class="list_upper">
+                <p class="list_pic"><img src="/public/images/default/essentialfoods/contents/ing_chicken.jpg" alt="放し飼いブリティッシュチキン"></p>
+                <div class="list_dtl">
+                  <h5 class="serif">放し飼い<br>ブリティッシュチキン</h5>
+                  <p>放し飼いで育った鶏は、一般的な飼育方法で育った鶏よりもタンパク質含有量が高いといわれています。ストレスの少ない環境で健康的に育つため、肉質が柔らかく、旨味もたっぷりです。鶏肉は低脂肪のタンパク源であり、必須アミノ酸やビタミンB群、鉄分などの栄養素も豊富。日々の健康を、内側からしっかりと支えます。</p>
+                </div>
+              </div>
+              <div class="list_bottom">
+                <ul class="ingredients_tag">
+                  <li class="redtruck icn">レッドトラクター認証</li>
+                  <li>ヒューマングレード</li>
+                </ul>
+              </div>
+            </div>
+            <div class="list_block splide__slide">
+              <div class="list_upper">
+                <p class="list_pic"><img src="/public/images/default/essentialfoods/contents/ing_duck.jpg" alt="ブリティッシュダック"></p>
+                <div class="list_dtl">
+                  <h5 class="serif">ブリティッシュダック</h5>
+                  <p>ブリティッシュダックは、動物の福祉基準を満たした農場で育った安心の品質です。ダックは低脂肪で栄養価が高いタンパク源であり、鉄分、セレン、ビタミンB群、亜鉛、オメガ3脂肪酸、オメガ6脂肪酸なども豊富で、体の健康維持に役立ちます。</p>
+                </div>
+              </div>
+              <div class="list_bottom">
+                <ul class="ingredients_tag">
+                  <li class="redtruck icn">レッドトラクター認証</li>
+                  <li>ヒューマングレード</li>
+                </ul>
+              </div>
+            </div>
+            <div class="list_block splide__slide">
+              <div class="list_upper">
+                <p class="list_pic"><img src="/public/images/default/essentialfoods/contents/ing_salmon.jpg" alt="スコティッシュサーモン"></p>
+                <div class="list_dtl">
+                  <h5 class="serif">スコティッシュサーモン</h5>
+                  <p>上質な飼料を食べ、自由に泳げる養殖環境で育ったスコティッシュサーモンは、身が引き締まっており、弾力があります。EPAやDHAといったオメガ3脂肪酸が豊富に含まれているので、健康維持効果をもたらします。</p>
+                </div>
+              </div>
+              <div class="list_bottom">
+                <ul class="ingredients_tag">
+                  <li>ヒューマングレード</li>
+                </ul>
+              </div>
+            </div>
+            <div class="list_block splide__slide">
+              <div class="list_upper">
+                <p class="list_pic"><img src="/public/images/default/essentialfoods/contents/ing_trout.jpg" alt="マス"></p>
+                <div class="list_dtl">
+                  <h5 class="serif">マス</h5>
+                  <p>マスは天然のオメガ3脂肪酸を豊富に含み、美しい体や健やかな毎日をサポートするといわれています。</p>
+                </div>
+              </div>
+              <div class="list_bottom">
+                <ul class="ingredients_tag">
+                  <li>ヒューマングレード</li>
+                </ul>
+              </div>
+            </div>
+            <div class="list_block splide__slide">
+              <div class="list_upper">
+                <p class="list_pic"><img src="/public/images/default/essentialfoods/contents/ing_acai.jpg" alt="アサイー"></p>
+                <div class="list_dtl">
+                  <h5 class="serif">アサイー</h5>
+                  <p>ポリフェノールやビタミンEを含む南国のスーパーフルーツです。健康維持をサポートする自然素材として注目されています。</p>
+                </div>
+              </div>
+              <div class="list_bottom">
+                <ul class="ingredients_tag">
+                  <li class="superfood">スーパーフード</li>
+                </ul>
+              </div>
+            </div>
+            <div class="list_block splide__slide">
+              <div class="list_upper">
+                <p class="list_pic"><img src="/public/images/default/essentialfoods/contents/ing_bilberry.jpg" alt="ビルベリー"></p>
+                <div class="list_dtl">
+                  <h5 class="serif">ビルベリー</h5>
+                  <p>北欧原産のワイルドベリーで、アントシアニンを含んでいます。健やかな毎日を考えた食材として、食欲を引き立ててくれます。</p>
+                </div>
+              </div>
+              <div class="list_bottom">
+                <ul class="ingredients_tag">
+                  <li class="superfood">スーパーフード</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="splide__arrows">
+          <button class="splide__arrow splide__arrow--prev button prev"></button>
+          <button class="splide__arrow splide__arrow--next button next"></button>
+        </div>
+        <ul class="splide__pagination"></ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="products_detail">
+    <div class="inner">
+      <div class="flex">
+        <p class="pic"><img src="/public/images/default/essentialfoods/products/package/jcf.jpg" alt="ジャガーキャットフード" /></p>
+        <dl class="supply_dl flex">
+          <dt>名称</dt>
+          <dd class="sp_center">ジャガーキャットフード</dd>
+          <dt>内容量</dt>
+          <dd class="sp_center">1.5kg</dd>
+          <dt>対象</dt>
+          <dd class="sp_center">全猫種・全年齢</dd>
+          <dt>原産国名</dt>
+          <dd class="sp_center">イギリス</dd>
+          <dt>成分</dt>
+          <dd>タンパク質：37％以上、脂質：14.88％以上、粗繊維：5.25％以下、灰分：10.13％以下、水分：8％以下、エネルギー（100gあたり）：387.5kcal</dd>
+          <dt>原材料名</dt>
+          <dd>肉類（チキン生肉、乾燥チキン、乾燥鴨肉、チキンレバー、鴨生肉）、魚類（生サーモン、生マス）、ジャガイモ、エンドウ豆、サツマイモ、乾燥卵、チキングレイビー、チキンオイル、アルファルファ、エンドウ豆繊維、サーモンオイル、フェンネル、マリーゴールド、カモミール、ペパーミント、フラクトオリゴ糖、アニス、フェヌグリーク、リンゴ、ニンジン、クランベリー、セイヨウタンポポ、海藻、カボチャパウダー、ローズマリー、ホウレンソウ、ビルベリー、ミネラル類（亜鉛、鉄、マンガン、銅、ヨウ素）、ビタミン類（E、C、A、B1、B2、D3）、メチオニン、タウリン、リジン、L-カルニチン、乳酸菌</dd>
+          <dt>粒の形状<br class="pc_br">・サイズ</dt>
+          <dd>
+            <p class="kibble"><img src="/public/images/default/essentialfoods/products/kibble/kibble_jcf.jpg" alt="ジャガーキャットフード粒" /></p>
+            <p class="kibble_size">リング形・直径約11mm 厚さ約4mm</p>
+            <p class="notes">※生産ロットにより、粒の形状・サイズ・色・香り・質感に違いが生じる場合があります。</p>
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="products_supply bg_light">
+    <div class="inner">
+      <h2 class="title">給与量</h2>
+      <div class="flex table_w">
+        <div class="flex_h">
+          <h3 class="title">子猫</h3>
+          <table class="table_supply">
+            <tr>
+              <th class="weight">年齢</th>
+              <th>1日あたりの給与量(g)</th>
+            </tr>
+            <tr>
+              <th>2ヶ月</th>
+              <td>25 - 40</td>
+            </tr>
+            <tr>
+              <th>2-3ヶ月</th>
+              <td>40 - 50</td>
+            </tr>
+            <tr>
+              <th>3-4ヶ月</th>
+              <td>50 - 55</td>
+            </tr>
+            <tr>
+              <th>4-6ヶ月</th>
+              <td>55 - 60</td>
+            </tr>
+            <tr>
+              <th>6-10ヶ月</th>
+              <td>60 - 80</td>
+            </tr>
+            <tr>
+              <th>10-12ヶ月</th>
+              <td>80 - 110</td>
+            </tr>
+          </table>
+        </div>
+        <div class="flex_h">
+          <h3 class="title">成猫</h3>
+          <table class="table_supply">
+            <tr>
+              <th class="weight">体重(kg)</th>
+              <th>1日あたりの給与量(g)</th>
+            </tr>
+            <tr>
+              <th>- 2.5</th>
+              <td>30 - 40</td>
+            </tr>
+            <tr>
+              <th>2.5 - 3.5</th>
+              <td>40 - 50</td>
+            </tr>
+            <tr>
+              <th>3.5 - 5</th>
+              <td>50 - 55</td>
+            </tr>
+            <tr>
+              <th>5 - 6.5</th>
+              <td>55 - 60</td>
+            </tr>
+            <tr>
+              <th>6.5 - 8</th>
+              <td>65 - 70</td>
+            </tr>
+            <tr>
+              <th>8 - 10</th>
+              <td>70 - 80</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <dl class="supply_dl flex">
+        <dt>給与方法</dt>
+        <dd>
+          <ul>
+            <li>上記の給与量を目安に、1日2～3回に分けて与えてください。</li>
+            <li>猫には個体差があり、年齢・活動量・代謝・住環境などにより、適切な給与量は大きく異なります。まずは給与量の下限から始め、適宜調節していくことをおすすめします。</li>
+            <li>現在お使いのフードからジャガーに切り替える場合、現在のフードにジャガーを少しずつ混ぜ、少なくとも７日間ほどかけてゆっくり慣らしていくようにしてください。1日目はジャガーを25%、もとのフードを75%の比率で与え、3日目は50%、5日目は75%、7日目は100%の比率で与えるようにしましょう。</li>
+            <li>新しいフードへの切り替え時は、一時的におなかがゆるくなることがありますので、愛猫の様子を見ながら時間をかけて調節してください。</li>
+            <li>ボウルに毎日新しい水を入れ、常に新鮮できれいな水が飲めるようにしておきましょう。</li>
+          </ul>
+        </dd>
+        <dt>保存方法</dt>
+        <dd>高温多湿を避け、直射日光の当たらない場所で保存してください。<br>
+          開封後は袋をしっかりと密閉し、できる限りお早めにお使いください。</dd>
+      </dl>
+    </div>
+  </section>
+  <section class="bottom_link">
+    <div class="inner">
+      <ul class="flex">
+        <li class="flex_h">
+          <a href="/products/dog">
+            <img src="/public/images/default/essentialfoods/base/bottom_link_dog.jpg" alt="ドッグフード一覧">
+            <p class="serif"><span>Dog meals</span><span>愛犬のための食事</span><span class="icn">ドッグフード一覧</span></p>
+          </a>
+        </li>
+        <li class="flex_h">
+          <a href="/products/cat">
+            <img src="/public/images/default/essentialfoods/base/bottom_link_cat.jpg" alt="キャットフード一覧">
+            <p class="serif"><span>Cat meals</span><span>愛猫のための食事</span><span class="icn">キャットフード一覧</span></p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+</div>
+
+  <footer>
+    <div class="footer_menu">
+      <div class="inner flex">
+        <div class="footer_logo">
+          <p><a href="/"><img src="/public/images/default/essentialfoods/base/logo_white.svg" alt="エッセンシャル" /></a></p>
+        </div>
+        <div class="footer_search">
+          <h5 class="icn search"><a href="/products/dog">ドッグフードを探す</a></h5>
+          <ul>
+            <li><a href="/products/dog/#dog-dryfood">ドライ</a></li>
+            <li><a href="/products/dog/#dog-wetfood">ウェット</a></li>
+            <li><a href="/products/dog/#dog-treats">おやつ・トッピング</a></li>
+          </ul>
+        </div>
+        <div class="footer_search">
+          <h5 class="icn search"><a href="/products/cat">キャットフードを探す</a></h5>
+          <ul>
+            <li><a href="/products/cat/#cat-dryfood">ドライ</a></li>
+            <li><a href="/products/cat/#cat-wetfood">ウェット</a></li>
+            <li><a href="/products/cat/#cat-treats">おやつ・トッピング</a></li>
+          </ul>
+        </div>
+        <div class="footer_nav">
+          <ul>
+            <li class="icn"><a href="/page/about">『エッセンシャル』について</a></li>
+            <li class="icn"><a href="/page/our-ingredients">原材料のこだわり</a></li>
+            <li class="icn"><a href="/page/regular-delivery">定期コースについて</a></li>
+            <li class="icn"><a href="/page/faq">よくあるご質問</a></li>
+            <li class="icn"><a href="https://www.laetitienpet.com/contact">お問い合わせ</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer_link">
+      <ul>
+        <li><a href="https://www.laetitienpet.com/guide.html">ご利用案内・特定商取引法に基づく表記</a></li>
+        <li><a href="https://www.laetitienpet.com/contact">お問い合わせフォーム</a></li>
+        <li><a href="https://www.laetitienpet.com/support/guide_top.html">ヘルプページ</a></li>
+        <li><a href="https://www.laetitienpet.com/support/suggest_top.html">フード診断ページ</a></li>
+        <li><a href="https://www.laetitienpet.com/mypage">マイページ</a></li>
+      </ul>
+      <p class="logo_laetitien"><a href="https://pet.laetitien.co.jp/" target="_blank"><img src="/public/images/default/essentialfoods/base/logo_laetitien.svg" alt="株式会社レティシアン" /></a></p>
+      <p class="logo_jadma"><a href="https://www.jadma.or.jp/" target="_blank"><img src="/public/images/default/essentialfoods/base/mark_jadma.png" alt="" /></a></p>
+      <p class="footer_copy">Copyright © 2013-2026 Laetitien Co., Ltd. <br class="sp_br">All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  
+  </body>
+
+</html>

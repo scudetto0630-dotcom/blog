@@ -7,9 +7,9 @@ function hsh_planner_labels(){return array(
     'affiliate'=>array('none'=>'未選定','candidate'=>'候補あり','applying'=>'提携申請中','approved'=>'提携済み','added'=>'記事に掲載済み','ended'=>'終了・見直し'),
     'experience'=>array('unknown'=>'まだ確認していない','used'=>'自分で使った','researched'=>'調べた内容を紹介','mixed'=>'体験と調べた内容の両方'),
     'topic'=>array('cats'=>'猫との暮らし','whisky'=>'ウイスキー','it-freelance'=>'ITの仕事と働き方'),
-    'kind'=>array('provided'=>'実写写真','generated'=>'生成画像'),
+    'kind'=>array('provided'=>'実写写真','generated'=>'生成画像','official'=>'公式商品・サービス画像'),
     'purpose'=>array('reference'=>'参考用のみ','publish'=>'記事掲載に使える','hold'=>'使用を保留'),
-    'rights'=>array('unknown'=>'権利・許可を未確認','owner'=>'自分で撮影','permission'=>'使用許可あり','generated'=>'生成した画像'),
+    'rights'=>array('unknown'=>'権利・許可を未確認','owner'=>'自分で撮影','permission'=>'使用許可あり','generated'=>'生成した画像','advertiser'=>'広告主公式素材'),
     'subject'=>array('manmos'=>'まんもす','cat-care'=>'猫の道具・世話','whisky'=>'ウイスキー','work'=>'IT・仕事','other'=>'その他')
 );}
 function hsh_planner_store(){ $v=get_option('hsh_editorial_planner',array());return is_array($v)?$v:array(); }
@@ -89,7 +89,7 @@ function hsh_planner_validate($d,$snapshot){
     if(trim($row['title'])==='')return new WP_Error('hsh_planner_title','タイトルか写真の説明を入力してください。',array('status'=>400));
     if($photo){
         if(strpos($id,'asset:')===0&&$row['kind']!==$snapshot['photos'][$id]['kind'])return new WP_Error('hsh_planner_origin','既存写真の実写・生成の区別は変更できません。',array('status'=>400));
-        if(($row['kind']==='generated'&&in_array($row['rights'],array('owner','permission'),true))||($row['kind']==='provided'&&$row['rights']==='generated'))return new WP_Error('hsh_planner_rights','写真の種類と権利の記録を確認してください。',array('status'=>400));
+        if(($row['kind']==='generated'&&in_array($row['rights'],array('owner','permission'),true))||($row['kind']==='provided'&&$row['rights']==='generated')||($row['kind']==='official'&&!in_array($row['rights'],array('unknown','advertiser'),true))||($row['kind']!=='official'&&$row['rights']==='advertiser'))return new WP_Error('hsh_planner_rights','写真の種類と権利の記録を確認してください。',array('status'=>400));
         if($row['purpose']==='publish'&&$row['rights']==='unknown')return new WP_Error('hsh_planner_rights','権利・許可を確認してから「記事掲載に使える」を選んでください。',array('status'=>400));
         foreach(array('articles','sources') as $k){
             $values=$f[$k]??array();if(!is_array($values)||count($values)>100)return new WP_Error('hsh_planner_relation','関連付けが多すぎるか、形式が違います。',array('status'=>400));
@@ -192,6 +192,6 @@ function hsh_planner_admin(){
     echo '<script type="application/json" id="hsh-planner-data">'.wp_json_encode($saved_snapshot,JSON_HEX_TAG|JSON_HEX_AMP|JSON_HEX_APOS|JSON_HEX_QUOT).'</script>';
 }
 add_action('admin_menu',function(){add_menu_page('記事・写真管理','記事・写真管理','manage_options','hsh-editorial-planner','hsh_planner_admin','dashicons-portfolio',26);});
-add_action('admin_enqueue_scripts',function($hook){if($hook!=='toplevel_page_hsh-editorial-planner'||!current_user_can('manage_options'))return;wp_enqueue_media();wp_enqueue_style('hsh-planner',plugin_dir_url(__FILE__).'assets/editorial-planner.css',array(),'1.26.2');wp_enqueue_script('hsh-planner',plugin_dir_url(__FILE__).'assets/editorial-planner.js',array(),'1.26.2',true);});
+add_action('admin_enqueue_scripts',function($hook){if($hook!=='toplevel_page_hsh-editorial-planner'||!current_user_can('manage_options'))return;wp_enqueue_media();wp_enqueue_style('hsh-planner',plugin_dir_url(__FILE__).'assets/editorial-planner.css',array(),'1.27.0');wp_enqueue_script('hsh-planner',plugin_dir_url(__FILE__).'assets/editorial-planner.js',array(),'1.27.0',true);});
 
 require_once __DIR__.'/planner-advanced.php';
