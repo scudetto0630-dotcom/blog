@@ -1,65 +1,53 @@
-# A8案件の原稿と掲載管理
+# A8案件の記事と掲載管理
 
-受領24件（2026-11-03）。公式資料ZIPを2026-11-04に受領し、17ページのHTMLを確認。犬向け2件、ジュエリー1件、人用健康食品1件、ベビー用品1件を除外。情報を確認できない6件は保留。13件を公開済み。37件予定の残り13件は未受領。
+受領24件。犬向け2件・ジュエリー1件・人用健康食品1件・ベビー用品1件を除外し、対象19件を公開済み。今回、接続制限で保留していた6件の調査・執筆・公開と、既存記事の商品画像の配置を完了した。対象案件に保留は残っていない。37件予定のうち未受領13件は作成対象に含めていない。
 
-## 2026-11-04 改稿・写真変更
+## 接続復旧後の反映
 
-改稿時の公開版1.26.0。13記事のタイトル・本文を全面改稿（約1,506〜1,665字、5〜6節と確認表）。公開記事の「未使用」という定型文を削除し、広告表示は維持した。使用経験や効果は創作しない。公式仕様と本人が話した経験を分けて書く。
+公開版1.27.1。環境設定の公開後、公式ページ19件と、元の画像候補38点すべての取得が成功。公式情報を直接読んで保留6件を新規作成した。新記事は約1,500字、5節と確認表。既存13記事のタイトルと本文は変更せず保持した。
 
-提供されたまんもすの写真を元に、13種類の合成表紙を生成した。元写真・生成記録は cover-generation.json と写真管理に記録。本文に入っていた商品の写真ではない猫の実写は外した。既存の通常記事の写真割当は変更していない。
+本文に合計39点の公式商品・サービス画像を配置。各記事2点以上（和漢みらいは3点）。表紙は19種類すべて、提供されたまんもすの写真を元に生成した合成画像。本文の商品画像と区別して管理し、実際に使った写真や使用経験は作っていない。写真下に提供写真・AI生成などの定型ラベルは表示しない。
 
-**本文の商品写真は未完了。** 提供された公式HTMLから候補38点を抽出済みだが、この環境から画像本体を取得すると接続制限で403になる。未確認の画像URLや架空の商品写真は公開していない。product-image-candidates.json に候補を保存。collect-product-images.ps1 で画像本体を取得し、受領後に目視確認して各記事に配置する。画像取得コードは /workspace/artifacts/hsh-product-images.txt にも用意した。取得補助はPowerShellで模擬通信の成功・一部失敗・全失敗・画像以外の応答を検証済み。利用者のWindows上での新コード実行結果は未確認。
+毎日美肌は、広告リンク先のPS-B1＆ローヤルゼリーのパッケージ・説明画像を使用。別処方のコラーゲンのパッケージを採用しない。公式素材も所有者撮影とは扱わず、管理画面に「公式商品・サービス画像」「広告主公式素材」の区分を追加した。
 
-記事上部の警告は、関連記事のカテゴリ参照で存在しないキーを使う不具合を修正した。サーバーパスを隠すだけの処理にはしていない。
+A8の元URLと受領した計測画像を保持。リンクにはnofollow/sponsoredを指定。公開検証では広告をクリックせず、外部計測を遮断する。公開記事の冒頭は広告表示のみ。未使用という定型文は置かず、購入・使用・効果の体験談も創作しない。
 
-## 2026-11-04 商品画像の取得・本番配置
+## ファイル
 
-今回の環境では、ネットワークアクセスを有効にしたコマンドから許可先へ接続できた。WithpetyとCatlogの14候補をHTTP 200で取得し、画像形式と商品を目視確認。元ファイルは `product-images/originals/`、応答記録は `product-image-connectivity.json`、採否・出典・SHA256は `product-image-review.json` に保存した。
+- 掲載管理.csv：24行。元URL、掲載先、実際の公開日時、画像数、出典確認状況を管理。UTF-8 BOM、スプレッドシートへ取り込み可能。
+- links.json：元のA8コード・遷移先・管理IDを保持した機械可読の管理表。
+- 記事/：公開中19記事の原稿。
+- source-recovery-report.json：直接取得成功の記録。以前の資料ZIPの確認記録はresearch.jsonに残す。
+- source-recovery/：新規6記事で使用した公式ページ保存データ。
+- recovered-image-review.json：掲載した公式画像39点の出典・SHA256・目視確認記録。
+- cover-generation.json：19枚の合成表紙と元写真の記録。
+- recovery-verification.json：今回の最終確認。以前のverification、rewrite-verification、product-image-verificationは当時の履歴。
+- 構成案/：以前の保留時点の検討メモ。現在の公開原稿は記事/を参照。
 
-毎日健心・毎日美肌・毎日良肝・毎日一緒に商品パッケージ画像を各1点、Catlogに首輪とBoardの2点、計5記事6点を既存の本文画像差し込み設定へ配置した。公開済み13記事の文章、広告リンク、計測画像、合成表紙、通常記事の写真割当は変更していない。価格キャンペーン画像と成分数の見出し入り画像は採用しない。追加でパッケージ単体の画像4点を取得・確認し、元の14候補と合わせて18点を保存した。公開版1.26.2へ本番反映済み。公開ページの4幅52件の表示確認を通過し、保存本文・タイトル・抜粋・アイキャッチを含む13記事の指紋が更新前後で一致した。商品画像がない残り8記事の取得・配置は未完了。検証記録は `product-image-verification.json`。
+非公開管理画面にも掲載先・元リンク・画像の出典・表紙の元写真を記録。管理ファイルや取得HTMLを公開プラグインへ同梱しない。自動生成の画像取得コードは復旧前の補助手段として残すが、今回は使用者によるZIP作成を必要としなかった。
 
-残り24候補はプロキシのCONNECT段階で403。次の画像配信ホストは現在の許可一覧にないため、環境のネットワーク設定への追加が必要：
+## 掲載一覧
 
-- `paws-green-deli.com`
-- `shop.hariocorp.co.jp`
-- `shizenno-mori.com`
-- `baseec-img-mng.akamaized.net`
-- `aff.life-110.com`
-- `cdn.shopify.com`
-- `www.pontely.com`
-- `d2w53g1q050m78.cloudfront.net`
+| 記事 | 公開日（WordPress記録・日本時間） | 本文画像 |
+|---|---|---|
+| [パウズグリーンデリの猫用お試しセット。主食とトッピング、どちらを選ぶ？](https://hirogarushumi.com/paws-green-deli-cat-food/) | 2026-11-04 | 2点 |
+| [HARIOの猫用食器「にゃんプレトール」。大きさと手入れで選びたい](https://hirogarushumi.com/hario-cat-bowl-guide/) | 2026-11-04 | 2点 |
+| [和漢みらいのキャットフードは3タイプ。低たんぱく・バランス・高エナジーの違いを見る](https://hirogarushumi.com/mirai-cat-food-types/) | 2026-11-04 | 3点 |
+| [M&Co.の猫モチーフ雑貨。ニットバッグとチャームを見てみる](https://hirogarushumi.com/m-and-cat-knit-bag/) | 2026-11-04 | 2点 |
+| [猫の葬儀、何を決めればいい？ ペット葬儀110番の相談前に](https://hirogarushumi.com/pet-sougi-110-cat-guide/) | 2026-11-04 | 2点 |
+| [猫の写真がフィギュアに。digxipopの作り方と注文前の確認点](https://hirogarushumi.com/digxipop-cat-figure/) | 2026-11-04 | 2点 |
+| [ペットパラダイスの猫おもちゃ。洋ナシのけりぐるみと、かもめの猫じゃらしが気になる](https://hirogarushumi.com/pet-paradise-cat-toys/) | 2026-11-05 | 2点 |
+| [カナガンデンタルはどんなフード？ 海藻成分と、選ぶ前に知っておきたいこと](https://hirogarushumi.com/canagan-dental-cat-food/) | 2026-11-05 | 2点 |
+| [カナガンのチキンとサーモン、何が違う？ 原材料とカロリーを比べてみた](https://hirogarushumi.com/canagan-chicken-salmon/) | 2026-11-05 | 2点 |
+| [マックアダムズの猫用フード。チキン＆ターキーと、オーブンベイクの特徴を見る](https://hirogarushumi.com/mcadams-cat-chicken-turkey/) | 2026-11-05 | 2点 |
+| [エッセンシャルの猫用フードを探すなら。ジャガーの原材料と粒の大きさを確認](https://hirogarushumi.com/essential-jaguar-cat-food/) | 2026-11-05 | 2点 |
+| [モグニャンは白身魚65%。粒の大きさと、切り替え方を見ておきたい](https://hirogarushumi.com/mognyan-cat-food-guide/) | 2026-11-05 | 2点 |
+| [猫用「毎日健心」はどんなサプリ？ 成分と与え方の確認ポイント](https://hirogarushumi.com/withpety-nekokenshin/) | 2026-11-04 | 2点 |
+| [猫の遺伝子検査Pontely。3つのプランと検査の流れを知っておく](https://hirogarushumi.com/pontely-cat-dna-test/) | 2026-11-04 | 2点 |
+| [猫用「毎日美肌」の成分は？ 毛と皮膚のケアを考えるときに](https://hirogarushumi.com/withpety-nekobihada/) | 2026-11-04 | 2点 |
+| [おねこさまのキャットタワー、置き場所と猫の動きから選ぶ](https://hirogarushumi.com/onekosama-cat-tower/) | 2026-11-04 | 2点 |
+| [猫用「毎日良肝」は肝臓ケア向け。成分と購入前の確認点](https://hirogarushumi.com/withpety-nekoryoukan/) | 2026-11-04 | 2点 |
+| [CatlogとCatlog Boardの違いは？ 首輪で行動、トイレで体重を記録](https://hirogarushumi.com/catlog-cat-monitor/) | 2026-11-04 | 2点 |
+| [猫用「毎日一緒」はシニアケア向け。DHA・EPAと毎日の見守り](https://hirogarushumi.com/withpety-nekoissho/) | 2026-11-04 | 2点 |
 
-取得した18点のうち、未採用12点は資料として保存し、本文には差し込んでいない。全13記事の商品画像設置完了を意味しない。
-
-## 管理ファイル
-
-- 掲載管理.csv：24行。受領日、公開日、実際の更新日時、掲載URL、合成表紙への変更、商品画像の取得待ち状態を記録。スプレッドシートへ取り込み可能。
-- links.json：元のA8コード、計測URL、遷移先、管理IDを保持。
-- 記事/：公開中の改稿13件。
-- research.json：資料取得時点の確認記録。公式ページを再取得できたとは扱わない。
-- 構成案/：保留案件の検討メモ。
-- verification.json：以前の1.25.1公開時点の検証記録。今回の結果は rewrite-verification.json を参照。
-
-掲載条件は利用者が確認済み・特別な条件なしと回答。A8のリンク・提供済み計測画像を維持し、広告リンクにnofollow/sponsoredを付ける。検証時は広告をクリックせず、外部計測を遮断する。非公開管理画面へ13件の改稿・画像待ち状況、合成表紙の元写真参照を保存済み。個人用の管理メモと生HTMLはプラグインに同梱しない。
-
-毎日美肌の成分数には資料内の不整合があるため数を転載しない。毎日良肝は肝臓向け。保存HTML中の別商品に関する記述は混同しない。
-
-## 公開した記事
-
-| 記事 | 初回公開日（日本時間） |
-|---|---|
-| [パウズグリーンデリの猫用お試しセット。主食とトッピング、どちらを選ぶ？](https://hirogarushumi.com/paws-green-deli-cat-food/) | 2026-11-04 |
-| [HARIOの猫用食器「にゃんプレトール」。大きさと手入れで選びたい](https://hirogarushumi.com/hario-cat-bowl-guide/) | 2026-11-04 |
-| [和漢みらいのキャットフードは3タイプ。低たんぱく・バランス・高エナジーの違いを見る](https://hirogarushumi.com/mirai-cat-food-types/) | 2026-11-04 |
-| [M&Co.の猫モチーフ雑貨。ニットバッグとチャームを見てみる](https://hirogarushumi.com/m-and-cat-knit-bag/) | 2026-11-04 |
-| [猫の葬儀、何を決めればいい？ ペット葬儀110番の相談前に](https://hirogarushumi.com/pet-sougi-110-cat-guide/) | 2026-11-04 |
-| [猫の写真がフィギュアに。digxipopの作り方と注文前の確認点](https://hirogarushumi.com/digxipop-cat-figure/) | 2026-11-04 |
-| [猫用「毎日健心」はどんなサプリ？ 成分と与え方の確認ポイント](https://hirogarushumi.com/withpety-nekokenshin/) | 2026-11-04 |
-| [猫の遺伝子検査Pontely。3つのプランと検査の流れを知っておく](https://hirogarushumi.com/pontely-cat-dna-test/) | 2026-11-04 |
-| [猫用「毎日美肌」の成分は？ 毛と皮膚のケアを考えるときに](https://hirogarushumi.com/withpety-nekobihada/) | 2026-11-04 |
-| [おねこさまのキャットタワー、置き場所と猫の動きから選ぶ](https://hirogarushumi.com/onekosama-cat-tower/) | 2026-11-04 |
-| [猫用「毎日良肝」は肝臓ケア向け。成分と購入前の確認点](https://hirogarushumi.com/withpety-nekoryoukan/) | 2026-11-04 |
-| [CatlogとCatlog Boardの違いは？ 首輪で行動、トイレで体重を記録](https://hirogarushumi.com/catlog-cat-monitor/) | 2026-11-04 |
-| [猫用「毎日一緒」はシニアケア向け。DHA・EPAと毎日の見守り](https://hirogarushumi.com/withpety-nekoissho/) | 2026-11-04 |
-
-今回の検証：PHP610件・Python21件、公開前52件・本番52件のブラウザー確認を通過。全40ページの公開監査は問題0件。13件の広告リンク・計測画像が受領コードと一致。商品写真の設置完了を意味する検証ではない。
+検証：PHP825項目・Python21件、公開前76件の画面確認。公開後も76件の画面確認と、全46ページの監査を通過（問題0件）。19件の元広告URLと計測画像の一致、管理画面への保存も検証済み。詳細は recovery-verification.json を参照。校正ツールの指摘は確認したが、会話調や製品固有名に対する指摘もあり、無指摘を意味するものではない。

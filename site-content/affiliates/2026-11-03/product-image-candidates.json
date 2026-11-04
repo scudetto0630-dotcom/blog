@@ -1,6 +1,6 @@
 {
-  "status": "awaiting_binary_images",
-  "note": "URLs extracted from user-supplied official HTML. Product identity and suitability must be checked after files are received; do not claim that these images have already been inspected.",
+  "status": "retrieved_and_reviewed",
+  "note": "All 38 original candidate files retrieved after environment publication. Actual selected product/service images and sources are in recovered-image-review.json; 39 images placed across 19 articles.",
   "images": [
     {
       "id": "A8-20261103-01-image-01",

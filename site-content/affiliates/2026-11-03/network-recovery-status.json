@@ -1,33 +1,12 @@
 {
-  "checked_at": "2026-11-04T14:40:20.088654+00:00",
-  "runtime_policy": "enforced",
-  "runtime_custom_allowed_hosts": [
-    "hirogarushumi.com",
-    "www.hirogarushumi.com"
-  ],
-  "verified_denials": [
-    "withpety.com",
-    "paws-green-deli.com",
-    "www.canagancatfood.co.jp"
-  ],
-  "draft_status": "published",
-  "added_image_hosts": [
-    "baseec-img-mng.akamaized.net",
-    "cdn.shopify.com",
-    "d2w53g1q050m78.cloudfront.net",
-    "shizenno-mori.com"
-  ],
-  "remaining_scope": {
-    "source_acquisition_failures": 0,
-    "articles_prepared_for_release": 6,
-    "official_body_images_prepared": 39
-  },
-  "next_step": "Source acquisition recovered; publishing and live verification in progress.",
-  "public_site_changed": false,
+  "checked_at": "2026-11-04T15:25:17.309423+00:00",
   "runtime_spec_revision": "7",
-  "verified_https_successes": [
-    "paws-green-deli.com",
-    "withpety.com",
-    "www.canagancatfood.co.jp"
-  ]
+  "runtime_policy": "enforced",
+  "configuration_publication": "succeeded",
+  "official_pages_http_200": 19,
+  "original_image_candidates_http_200": 38,
+  "remaining_connection_blockers_for_received_cat_entries": 0,
+  "public_version": "1.27.1",
+  "public_site_updated": true,
+  "previous_failure": "Before environment publication, proxy policy denied official sites. Publication applied the prepared allowlist."
 }

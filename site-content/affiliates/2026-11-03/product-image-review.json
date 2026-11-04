@@ -232,5 +232,6 @@
       "asset_key": "product-a8-20261103-24-package",
       "review_note": "Package-only image verified: cat product label, no promotional price or ingredient-count headline; use original 200px width without enlargement."
     }
-  ]
+  ],
+  "superseded_by": "recovery-verification.json"
 }

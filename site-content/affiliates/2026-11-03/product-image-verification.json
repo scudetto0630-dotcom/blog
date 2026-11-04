@@ -92,5 +92,6 @@
         "product_images": 1
       }
     ]
-  }
+  },
+  "superseded_by": "recovery-verification.json"
 }

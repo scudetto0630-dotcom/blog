@@ -15,5 +15,6 @@
     "Actual official product image binaries must be received, visually inspected, and placed in article bodies."
   ],
   "product_image_candidates": 38,
-  "body_product_images_complete": false
+  "body_product_images_complete": false,
+  "superseded_by": "recovery-verification.json"
 }

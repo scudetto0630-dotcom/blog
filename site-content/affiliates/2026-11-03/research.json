@@ -239,5 +239,15 @@
       "source_sha256": "6fe34fa0c9612142337cef669a558a92470fc8aa0ca53dd818c56d436c308f57",
       "review_note": "提供された公式ページ保存データを確認。未使用の紹介記事。猫の写真は商品使用の証拠として扱わない。"
     }
-  ]
+  ],
+  "live_recovery": {
+    "checked_at": "2026-11-04T15:22:59.492711+00:00",
+    "official_pages_retrieved": 19,
+    "previously_held_articles_published": 6,
+    "current_published_articles": 19,
+    "excluded": 5,
+    "held": 0,
+    "report": "source-recovery-report.json",
+    "images": "recovered-image-review.json"
+  }
 }
