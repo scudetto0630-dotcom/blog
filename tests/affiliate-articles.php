@@ -4,6 +4,7 @@ $added=hsh_affiliate_articles();
 check(count($added)===19&&count(array_unique(array_column($added,'slug')))===19,'nineteen separately scoped affiliate articles');
 check(count(hsh_expanded_articles())===10&&count(hsh_article_map())===3,'existing packaged article catalogs remain unchanged');
 $manifest=hsh_photo_manifest();check(count(array_unique($manifest['affiliate_articles']))===19,'new articles use nineteen distinct cover choices');
+check(strpos($manifest['assets']['official-a8-20-1']['source_url'],'img202112lp/pc_top.jpg')!==false&&strpos($manifest['assets']['official-a8-20-1']['alt'],'PS-B1')!==false,'Bihada picture matches PS-B1 affiliate variant rather than collagen package');
 $existing=array();foreach(hsh_expanded_articles() as $a){$p=get_page_by_path($a['slug']);$existing[$a['slug']]=$p?hsh_article_fingerprint($p):null;}
 foreach($added as $a){
     check($a['topic']==='cats'&&strpos($a['content'],'class="hsh-ad-notice"')!==false&&strpos($a['content'],'未使用')===false,'ad disclosure without non-use boilerplate '.$a['slug']);

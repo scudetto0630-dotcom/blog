@@ -2261,20 +2261,26 @@
       "bytes": 57070
     },
     "official-a8-20-1": {
-      "file": "official-a8-20-1.webp",
+      "file": "official-a8-20-psb1.webp",
       "kind": "official",
       "subject": "cat-care",
       "rights": "advertiser",
-      "alt": "猫用・毎日美肌 PS-B1＆ローヤルゼリー",
-      "caption": "猫用・毎日美肌 PS-B1＆ローヤルゼリー",
-      "width": 200,
-      "height": 267,
-      "sha256": "8f17e324d7a8289549ec2f50b2b048734e9efbb9aa5d9b1ac29b2e384f948158",
-      "variants": [],
-      "source_url": "https://withpety.com/products/nekobihada/img202104ama/top_item.jpg",
+      "alt": "猫用・毎日美肌 PS-B1＆ローヤルゼリーのパッケージと公式案内",
+      "caption": "猫用・毎日美肌 PS-B1＆ローヤルゼリーの公式案内",
+      "width": 1100,
+      "height": 580,
+      "sha256": "4562e2fb864db9ca6aadcfcc50dbffbe5f3c0fbf049efa258ee10c138dbf81c5",
+      "variants": [
+        {
+          "file": "official-a8-20-psb1-480.webp",
+          "width": 480,
+          "height": 253
+        }
+      ],
+      "source_url": "https://withpety.com/products/nekobihada/img202112lp/pc_top.jpg",
       "source_page": "https://withpety.com/products/nekobihada/",
       "retrieved_at": "2026-11-04",
-      "bytes": 6760
+      "bytes": 42302
     },
     "official-a8-20-2": {
       "file": "official-a8-20-2.webp",
