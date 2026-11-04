@@ -1,6 +1,6 @@
 {
-  "prepared_version": "1.26.1",
-  "deployment_status": "not_deployed",
+  "prepared_version": "1.26.2",
+  "deployment_status": "deployed_partial_product_coverage",
   "checked_at": "2026-11-04T00:24:08.187260+00:00",
   "downloaded_originals": 18,
   "prepared_product_images": 6,
@@ -23,6 +23,74 @@
     "all pre-existing photo asset files"
   ],
   "preserved_manifest_fields": "all original asset records and all mappings except selected affiliate_product_images",
-  "zip_bytes": 12969257,
-  "zip_sha256": "2ca9bf8bb4abf5cc68a98e230bf5d2d5368814a5e252bba25551f4e277ba456a"
+  "zip_bytes": 12969256,
+  "zip_sha256": "c6d37a88ed0da97074f11cd3a6f67141207fdb16e116ba8f75260a62594d31c2",
+  "deployed_commit": "74021a0a3bcdc53577c4a5c63a02734391c54087",
+  "deployed_at": "2026-11-04T00:32:53.944544+00:00",
+  "live_browser": {
+    "passed": 52,
+    "failed": 0,
+    "scope": "live public pages",
+    "externalRequestsBlocked": 40,
+    "affiliate_links_clicked": 0,
+    "forms_submitted": 0
+  },
+  "final_public_verification": {
+    "version": "1.26.2",
+    "fingerprints_unchanged": true,
+    "articles": [
+      {
+        "slug": "paws-green-deli-cat-food",
+        "product_images": 0
+      },
+      {
+        "slug": "hario-cat-bowl-guide",
+        "product_images": 0
+      },
+      {
+        "slug": "mirai-cat-food-types",
+        "product_images": 0
+      },
+      {
+        "slug": "m-and-cat-knit-bag",
+        "product_images": 0
+      },
+      {
+        "slug": "pet-sougi-110-cat-guide",
+        "product_images": 0
+      },
+      {
+        "slug": "digxipop-cat-figure",
+        "product_images": 0
+      },
+      {
+        "slug": "withpety-nekokenshin",
+        "product_images": 1
+      },
+      {
+        "slug": "pontely-cat-dna-test",
+        "product_images": 0
+      },
+      {
+        "slug": "withpety-nekobihada",
+        "product_images": 1
+      },
+      {
+        "slug": "onekosama-cat-tower",
+        "product_images": 0
+      },
+      {
+        "slug": "withpety-nekoryoukan",
+        "product_images": 1
+      },
+      {
+        "slug": "catlog-cat-monitor",
+        "product_images": 2
+      },
+      {
+        "slug": "withpety-nekoissho",
+        "product_images": 1
+      }
+    ]
+  }
 }
