@@ -1,0 +1,348 @@
+{
+  "checked_at": "2026-11-04T00:18:19.458868+00:00",
+  "method": "GET via inherited proxy with network-enabled sandbox; TLS verification enabled; no advertisement tracking URLs requested",
+  "results": [
+    {
+      "id": "A8-20261103-01-image-01",
+      "url": "https://paws-green-deli.com/cdn/shop/files/2_b22d2355-5f77-4351-97d5-b644c2042581.png?v=1781969969&width=1400",
+      "http_status": "000",
+      "curl_exit": 56,
+      "error": "curl: (56) CONNECT tunnel failed, response 403",
+      "headers": "HTTP/1.1 403 Forbidden\ncontent-length: 16\ncontent-type: text/plain\ndate: Wed, 04 Nov 2026 00:18:17 GMT\nserver: envoy\nconnection: close\n\n",
+      "bytes": 0
+    },
+    {
+      "id": "A8-20261103-01-image-02",
+      "url": "https://paws-green-deli.com/cdn/shop/files/ChatGPT_Image_2026_7_8_23_27_12.png?v=1783520872&width=800",
+      "http_status": "000",
+      "curl_exit": 56,
+      "error": "curl: (56) CONNECT tunnel failed, response 403",
+      "headers": "HTTP/1.1 403 Forbidden\ncontent-length: 16\ncontent-type: text/plain\ndate: Wed, 04 Nov 2026 00:18:17 GMT\nserver: envoy\nconnection: close\n\n",
+      "bytes": 0
+    },
+    {
+      "id": "A8-20261103-01-image-03",
+      "url": "https://paws-green-deli.com/cdn/shop/files/ChatGPT_Image_2026_7_8_23_32_32.png?v=1783521178&width=800",
+      "http_status": "000",
+      "curl_exit": 56,
+      "error": "curl: (56) CONNECT tunnel failed, response 403",
+      "headers": "HTTP/1.1 403 Forbidden\ncontent-length: 16\ncontent-type: text/plain\ndate: Wed, 04 Nov 2026 00:18:17 GMT\nserver: envoy\nconnection: close\n\n",
+      "bytes": 0
+    },
+    {
+      "id": "A8-20261103-02-image-01",
+      "url": "https://shop.hariocorp.co.jp/cdn/shop/files/35_PTS-NK-2P-SH___EC.jpg?v=1775802223&width=533",
+      "http_status": "000",
+      "curl_exit": 56,
+      "error": "curl: (56) CONNECT tunnel failed, response 403",
+      "headers": "HTTP/1.1 403 Forbidden\ncontent-length: 16\ncontent-type: text/plain\ndate: Wed, 04 Nov 2026 00:18:17 GMT\nserver: envoy\nconnection: close\n\n",
+      "bytes": 0
+    },
+    {
+      "id": "A8-20261103-02-image-02",
+      "url": "https://shop.hariocorp.co.jp/cdn/shop/files/PTS-NYT-W.jpg?v=1736149905&width=533",
+      "http_status": "000",
+      "curl_exit": 56,
+      "error": "curl: (56) CONNECT tunnel failed, response 403",
+      "headers": "HTTP/1.1 403 Forbidden\ncontent-length: 16\ncontent-type: text/plain\ndate: Wed, 04 Nov 2026 00:18:17 GMT\nserver: envoy\nconnection: close\n\n",
+      "bytes": 0
+    },
+    {
+      "id": "A8-20261103-05-image-01",
+      "url": "https://shizenno-mori.com/images/item_box_DCLT.jpg",
+      "http_status": "000",
+      "curl_exit": 56,
+      "error": "curl: (56) CONNECT tunnel failed, response 403",
+      "headers": "HTTP/1.1 403 Forbidden\ncontent-length: 16\ncontent-type: text/plain\ndate: Wed, 04 Nov 2026 00:18:17 GMT\nserver: envoy\nconnection: close\n\n",
+      "bytes": 0
+    },
+    {
+      "id": "A8-20261103-05-image-02",
+      "url": "https://shizenno-mori.com/images/item_box_DCBA.jpg",
+      "http_status": "000",
+      "curl_exit": 56,
+      "error": "curl: (56) CONNECT tunnel failed, response 403",
+      "headers": "HTTP/1.1 403 Forbidden\ncontent-length: 16\ncontent-type: text/plain\ndate: Wed, 04 Nov 2026 00:18:17 GMT\nserver: envoy\nconnection: close\n\n",
+      "bytes": 0
+    },
+    {
+      "id": "A8-20261103-05-image-03",
+      "url": "https://shizenno-mori.com/images/item_box_DCHE.jpg",
+      "http_status": "000",
+      "curl_exit": 56,
+      "error": "curl: (56) CONNECT tunnel failed, response 403",
+      "headers": "HTTP/1.1 403 Forbidden\ncontent-length: 16\ncontent-type: text/plain\ndate: Wed, 04 Nov 2026 00:18:17 GMT\nserver: envoy\nconnection: close\n\n",
+      "bytes": 0
+    },
+    {
+      "id": "A8-20261103-06-image-01",
+      "url": "https://baseec-img-mng.akamaized.net/images/item/origin/7d86186b07be6de2846a5dc2f1701351.jpg?imformat=generic&q=90&im=Resize,width=640,type=normal",
+      "http_status": "000",
+      "curl_exit": 56,
+      "error": "curl: (56) CONNECT tunnel failed, response 403",
+      "headers": "HTTP/1.1 403 Forbidden\ncontent-length: 16\ncontent-type: text/plain\ndate: Wed, 04 Nov 2026 00:18:17 GMT\nserver: envoy\nconnection: close\n\n",
+      "bytes": 0
+    },
+    {
+      "id": "A8-20261103-06-image-02",
+      "url": "https://baseec-img-mng.akamaized.net/images/item/origin/0087694c64498c134c6fad995769ead7.jpg?imformat=generic&q=90&im=Resize,width=640,type=normal",
+      "http_status": "000",
+      "curl_exit": 56,
+      "error": "curl: (56) CONNECT tunnel failed, response 403",
+      "headers": "HTTP/1.1 403 Forbidden\ncontent-length: 16\ncontent-type: text/plain\ndate: Wed, 04 Nov 2026 00:18:17 GMT\nserver: envoy\nconnection: close\n\n",
+      "bytes": 0
+    },
+    {
+      "id": "A8-20261103-07-image-01",
+      "url": "https://aff.life-110.com/verticalsites/pet_sougi/img/desktop/img_lp01.png",
+      "http_status": "000",
+      "curl_exit": 56,
+      "error": "curl: (56) CONNECT tunnel failed, response 403",
+      "headers": "HTTP/1.1 403 Forbidden\ncontent-length: 16\ncontent-type: text/plain\ndate: Wed, 04 Nov 2026 00:18:17 GMT\nserver: envoy\nconnection: close\n\n",
+      "bytes": 0
+    },
+    {
+      "id": "A8-20261103-07-image-02",
+      "url": "https://aff.life-110.com/verticalsites/pet_sougi/img/desktop/img_lp02.png",
+      "http_status": "000",
+      "curl_exit": 56,
+      "error": "curl: (56) CONNECT tunnel failed, response 403",
+      "headers": "HTTP/1.1 403 Forbidden\ncontent-length: 16\ncontent-type: text/plain\ndate: Wed, 04 Nov 2026 00:18:17 GMT\nserver: envoy\nconnection: close\n\n",
+      "bytes": 0
+    },
+    {
+      "id": "A8-20261103-10-image-01",
+      "url": "https://cdn.shopify.com/s/files/1/0956/8128/2411/files/IMG_9761_640x900.jpg.webp?v=1776341141&width=640",
+      "http_status": "000",
+      "curl_exit": 56,
+      "error": "curl: (56) CONNECT tunnel failed, response 403",
+      "headers": "HTTP/1.1 403 Forbidden\ncontent-length: 16\ncontent-type: text/plain\ndate: Wed, 04 Nov 2026 00:18:17 GMT\nserver: envoy\nconnection: close\n\n",
+      "bytes": 0
+    },
+    {
+      "id": "A8-20261103-10-image-02",
+      "url": "https://cdn.shopify.com/s/files/1/0956/8128/2411/files/IMG_9834_640x900.jpg.webp?v=1776341141&width=640",
+      "http_status": "000",
+      "curl_exit": 56,
+      "error": "curl: (56) CONNECT tunnel failed, response 403",
+      "headers": "HTTP/1.1 403 Forbidden\ncontent-length: 16\ncontent-type: text/plain\ndate: Wed, 04 Nov 2026 00:18:17 GMT\nserver: envoy\nconnection: close\n\n",
+      "bytes": 0
+    },
+    {
+      "id": "A8-20261103-10-image-03",
+      "url": "https://cdn.shopify.com/s/files/1/0956/8128/2411/files/IMG_0102_640x900.jpg.webp?v=1776341140&width=640",
+      "http_status": "000",
+      "curl_exit": 56,
+      "error": "curl: (56) CONNECT tunnel failed, response 403",
+      "headers": "HTTP/1.1 403 Forbidden\ncontent-length: 16\ncontent-type: text/plain\ndate: Wed, 04 Nov 2026 00:18:17 GMT\nserver: envoy\nconnection: close\n\n",
+      "bytes": 0
+    },
+    {
+      "id": "A8-20261103-10-image-04",
+      "url": "https://cdn.shopify.com/s/files/1/0956/8128/2411/files/IMG_8488_2_640x900.heic.webp?v=1776341140&width=640",
+      "http_status": "000",
+      "curl_exit": 56,
+      "error": "curl: (56) CONNECT tunnel failed, response 403",
+      "headers": "HTTP/1.1 403 Forbidden\ncontent-length: 16\ncontent-type: text/plain\ndate: Wed, 04 Nov 2026 00:18:17 GMT\nserver: envoy\nconnection: close\n\n",
+      "bytes": 0
+    },
+    {
+      "id": "A8-20261103-10-image-05",
+      "url": "https://cdn.shopify.com/s/files/1/0956/8128/2411/files/IMG_8683_640x900.jpg.webp?v=1776341140&width=640",
+      "http_status": "000",
+      "curl_exit": 56,
+      "error": "curl: (56) CONNECT tunnel failed, response 403",
+      "headers": "HTTP/1.1 403 Forbidden\ncontent-length: 16\ncontent-type: text/plain\ndate: Wed, 04 Nov 2026 00:18:17 GMT\nserver: envoy\nconnection: close\n\n",
+      "bytes": 0
+    },
+    {
+      "id": "A8-20261103-10-image-06",
+      "url": "https://cdn.shopify.com/s/files/1/0956/8128/2411/files/IMG_8419_1_640x900.jpg.webp?v=1776341139&width=640",
+      "http_status": "000",
+      "curl_exit": 56,
+      "error": "curl: (56) CONNECT tunnel failed, response 403",
+      "headers": "HTTP/1.1 403 Forbidden\ncontent-length: 16\ncontent-type: text/plain\ndate: Wed, 04 Nov 2026 00:18:17 GMT\nserver: envoy\nconnection: close\n\n",
+      "bytes": 0
+    },
+    {
+      "id": "A8-20261103-10-image-07",
+      "url": "https://cdn.shopify.com/s/files/1/0956/8128/2411/files/IMG_8821_640x900.jpg.webp?v=1776341542&width=640",
+      "http_status": "000",
+      "curl_exit": 56,
+      "error": "curl: (56) CONNECT tunnel failed, response 403",
+      "headers": "HTTP/1.1 403 Forbidden\ncontent-length: 16\ncontent-type: text/plain\ndate: Wed, 04 Nov 2026 00:18:17 GMT\nserver: envoy\nconnection: close\n\n",
+      "bytes": 0
+    },
+    {
+      "id": "A8-20261103-18-image-01",
+      "url": "https://withpety.com/products/nekokenshin/img202112lp/pc_top.jpg",
+      "http_status": "200",
+      "curl_exit": 0,
+      "error": "",
+      "headers": "HTTP/1.1 200 OK\ndate: Wed, 04 Nov 2026 00:18:17 GMT\nserver: envoy\n\nHTTP/2 200 \ndate: Wed, 04 Nov 2026 00:18:18 GMT\nserver: envoy\nlast-modified: Mon, 05 Dec 2022 04:49:04 GMT\naccept-ranges: bytes\ncontent-length: 357404\ncontent-type: image/jpeg\nx-envoy-upstream-service-time: 660\n\n",
+      "bytes": 357404
+    },
+    {
+      "id": "A8-20261103-18-image-02",
+      "url": "https://withpety.com/products/nekokenshin/img202112lp/pc_cmp1_1.jpg",
+      "http_status": "200",
+      "curl_exit": 0,
+      "error": "",
+      "headers": "HTTP/1.1 200 OK\ndate: Wed, 04 Nov 2026 00:18:17 GMT\nserver: envoy\n\nHTTP/2 200 \ndate: Wed, 04 Nov 2026 00:18:18 GMT\nserver: envoy\nlast-modified: Mon, 05 Dec 2022 04:48:44 GMT\naccept-ranges: bytes\ncontent-length: 207986\ncontent-type: image/jpeg\nx-envoy-upstream-service-time: 398\n\n",
+      "bytes": 207986
+    },
+    {
+      "id": "A8-20261103-18-image-03",
+      "url": "https://withpety.com/products/nekokenshin/img202112lp/pc_cmp1_2.jpg",
+      "http_status": "200",
+      "curl_exit": 0,
+      "error": "",
+      "headers": "HTTP/1.1 200 OK\ndate: Wed, 04 Nov 2026 00:18:17 GMT\nserver: envoy\n\nHTTP/2 200 \ndate: Wed, 04 Nov 2026 00:18:18 GMT\nserver: envoy\nlast-modified: Mon, 05 Dec 2022 04:48:45 GMT\naccept-ranges: bytes\ncontent-length: 118045\ncontent-type: image/jpeg\nx-envoy-upstream-service-time: 775\n\n",
+      "bytes": 118045
+    },
+    {
+      "id": "A8-20261103-19-image-01",
+      "url": "https://www.pontely.com/wp-content/uploads/forowner_read1_cat.jpg",
+      "http_status": "000",
+      "curl_exit": 56,
+      "error": "curl: (56) CONNECT tunnel failed, response 403",
+      "headers": "HTTP/1.1 403 Forbidden\ncontent-length: 16\ncontent-type: text/plain\ndate: Wed, 04 Nov 2026 00:18:17 GMT\nserver: envoy\nconnection: close\n\n",
+      "bytes": 0
+    },
+    {
+      "id": "A8-20261103-19-image-02",
+      "url": "https://www.pontely.com/wp-content/uploads/forowner_read2_cat.jpg",
+      "http_status": "000",
+      "curl_exit": 56,
+      "error": "curl: (56) CONNECT tunnel failed, response 403",
+      "headers": "HTTP/1.1 403 Forbidden\ncontent-length: 16\ncontent-type: text/plain\ndate: Wed, 04 Nov 2026 00:18:17 GMT\nserver: envoy\nconnection: close\n\n",
+      "bytes": 0
+    },
+    {
+      "id": "A8-20261103-19-image-03",
+      "url": "https://www.pontely.com/wp-content/uploads/forowner_read3_cat.jpg",
+      "http_status": "000",
+      "curl_exit": 56,
+      "error": "curl: (56) CONNECT tunnel failed, response 403",
+      "headers": "HTTP/1.1 403 Forbidden\ncontent-length: 16\ncontent-type: text/plain\ndate: Wed, 04 Nov 2026 00:18:17 GMT\nserver: envoy\nconnection: close\n\n",
+      "bytes": 0
+    },
+    {
+      "id": "A8-20261103-20-image-01",
+      "url": "https://withpety.com/products/nekobihada/img202112lp/pc_top.jpg",
+      "http_status": "200",
+      "curl_exit": 0,
+      "error": "",
+      "headers": "HTTP/1.1 200 OK\ndate: Wed, 04 Nov 2026 00:18:17 GMT\nserver: envoy\n\nHTTP/2 200 \ndate: Wed, 04 Nov 2026 00:18:18 GMT\nserver: envoy\nlast-modified: Mon, 05 Dec 2022 04:37:01 GMT\naccept-ranges: bytes\ncontent-length: 364149\ncontent-type: image/jpeg\nx-envoy-upstream-service-time: 808\n\n",
+      "bytes": 364149
+    },
+    {
+      "id": "A8-20261103-20-image-02",
+      "url": "https://withpety.com/products/nekobihada/img202112lp/pc_cmp1_1.jpg",
+      "http_status": "200",
+      "curl_exit": 0,
+      "error": "",
+      "headers": "HTTP/1.1 200 OK\ndate: Wed, 04 Nov 2026 00:18:17 GMT\nserver: envoy\n\nHTTP/2 200 \ndate: Wed, 04 Nov 2026 00:18:18 GMT\nserver: envoy\nlast-modified: Mon, 05 Dec 2022 04:36:41 GMT\naccept-ranges: bytes\ncontent-length: 202031\ncontent-type: image/jpeg\nx-envoy-upstream-service-time: 758\n\n",
+      "bytes": 202031
+    },
+    {
+      "id": "A8-20261103-20-image-03",
+      "url": "https://withpety.com/products/nekobihada/img202112lp/pc_cmp1_2.jpg",
+      "http_status": "200",
+      "curl_exit": 0,
+      "error": "",
+      "headers": "HTTP/1.1 200 OK\ndate: Wed, 04 Nov 2026 00:18:17 GMT\nserver: envoy\n\nHTTP/2 200 \ndate: Wed, 04 Nov 2026 00:18:18 GMT\nserver: envoy\nlast-modified: Mon, 05 Dec 2022 04:36:41 GMT\naccept-ranges: bytes\ncontent-length: 116808\ncontent-type: image/jpeg\nx-envoy-upstream-service-time: 408\n\n",
+      "bytes": 116808
+    },
+    {
+      "id": "A8-20261103-21-image-01",
+      "url": "https://d2w53g1q050m78.cloudfront.net/onekosamacom/ec_assets/d3d680e3687d55c2625269afabbc5c89982962e8-original.jpg?1783587000",
+      "http_status": "000",
+      "curl_exit": 56,
+      "error": "curl: (56) CONNECT tunnel failed, response 403",
+      "headers": "HTTP/1.1 403 Forbidden\ncontent-length: 16\ncontent-type: text/plain\ndate: Wed, 04 Nov 2026 00:18:17 GMT\nserver: envoy\nconnection: close\n\n",
+      "bytes": 0
+    },
+    {
+      "id": "A8-20261103-21-image-02",
+      "url": "https://d2w53g1q050m78.cloudfront.net/onekosamacom/ec_assets/5ee14bcf9e9a900ea5fb26ec53986c1a0edfbde3-original.?1773304825",
+      "http_status": "000",
+      "curl_exit": 56,
+      "error": "curl: (56) CONNECT tunnel failed, response 403",
+      "headers": "HTTP/1.1 403 Forbidden\ncontent-length: 16\ncontent-type: text/plain\ndate: Wed, 04 Nov 2026 00:18:17 GMT\nserver: envoy\nconnection: close\n\n",
+      "bytes": 0
+    },
+    {
+      "id": "A8-20261103-22-image-01",
+      "url": "https://withpety.com/products/nekoryoukan/img202112lp/pc_top.jpg",
+      "http_status": "200",
+      "curl_exit": 0,
+      "error": "",
+      "headers": "HTTP/1.1 200 OK\ndate: Wed, 04 Nov 2026 00:18:17 GMT\nserver: envoy\n\nHTTP/2 200 \ndate: Wed, 04 Nov 2026 00:18:18 GMT\nserver: envoy\nlast-modified: Mon, 05 Dec 2022 04:51:41 GMT\naccept-ranges: bytes\ncontent-length: 453383\ncontent-type: image/jpeg\nx-envoy-upstream-service-time: 583\n\n",
+      "bytes": 453383
+    },
+    {
+      "id": "A8-20261103-22-image-02",
+      "url": "https://withpety.com/products/nekoryoukan/img202112lp/pc_cmp1_1.jpg",
+      "http_status": "200",
+      "curl_exit": 0,
+      "error": "",
+      "headers": "HTTP/1.1 200 OK\ndate: Wed, 04 Nov 2026 00:18:17 GMT\nserver: envoy\n\nHTTP/2 200 \ndate: Wed, 04 Nov 2026 00:18:18 GMT\nserver: envoy\nlast-modified: Mon, 05 Dec 2022 04:51:23 GMT\naccept-ranges: bytes\ncontent-length: 212199\ncontent-type: image/jpeg\nx-envoy-upstream-service-time: 788\n\n",
+      "bytes": 212199
+    },
+    {
+      "id": "A8-20261103-22-image-03",
+      "url": "https://withpety.com/products/nekoryoukan/img202112lp/pc_cmp1_2.jpg",
+      "http_status": "200",
+      "curl_exit": 0,
+      "error": "",
+      "headers": "HTTP/1.1 200 OK\ndate: Wed, 04 Nov 2026 00:18:18 GMT\nserver: envoy\n\nHTTP/2 200 \ndate: Wed, 04 Nov 2026 00:18:18 GMT\nserver: envoy\nlast-modified: Mon, 05 Dec 2022 04:51:23 GMT\naccept-ranges: bytes\ncontent-length: 117579\ncontent-type: image/jpeg\nx-envoy-upstream-service-time: 192\n\n",
+      "bytes": 117579
+    },
+    {
+      "id": "A8-20261103-23-image-01",
+      "url": "https://rabo.cat/static/473ebe9affd3167a7092a85476ae2366/d22e9/StarterSet.jpg",
+      "http_status": "200",
+      "curl_exit": 0,
+      "error": "",
+      "headers": "HTTP/1.1 200 OK\ndate: Wed, 04 Nov 2026 00:18:18 GMT\nserver: envoy\n\nHTTP/2 200 \ndate: Wed, 04 Nov 2026 00:18:19 GMT\ncontent-type: image/jpeg\ncf-ray: a54f70d4cd6716ff-SJC\ncf-cache-status: HIT\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=7M51md0IDbtnNkbvo8iMrEPfdUAi%2FFvxMaVt7q4ujIo7lhLUv2ZbXv5C%2F2LKUbVuDNIvPH2yl3kpdzH4GVHL4RGHqJ22cungm%2FiFQ9a3%2FB%2B0E%2FiRJ1dwXHGv\"}]}\nage: 31788\ncache-control: public, max-age=31536000, immutable\netag: W/\"7797f4554e315bf28d2bac606c8f8b65c45ba066a8820e8b9fc6313a7b1ab492\"\nnel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}\nlast-modified: Fri, 30 Oct 2026 03:16:30 GMT\nserver: envoy\nstrict-transport-security: max-age=31556926\nvary: x-fh-requested-host, accept-encoding\ncf-bgj: h2pri,imgq:85\ncf-polished: vary_header_present\nx-cache: HIT\nx-cache-hits: 0\nx-served-by: cache-sjc1000086-SJC\nx-timer: S1793719711.017891,VS0,VE2\nx-envoy-upstream-service-time: 86\n\n",
+      "bytes": 264047
+    },
+    {
+      "id": "A8-20261103-23-image-02",
+      "url": "https://rabo.cat/static/57673f18e32d41acce598b894baf69a1/d22e9/Board2ForJp.jpg",
+      "http_status": "200",
+      "curl_exit": 0,
+      "error": "",
+      "headers": "HTTP/1.1 200 OK\ndate: Wed, 04 Nov 2026 00:18:19 GMT\nserver: envoy\n\nHTTP/2 200 \ndate: Wed, 04 Nov 2026 00:18:19 GMT\ncontent-type: image/jpeg\ncf-ray: a54f70d72d44cf13-SJC\ncf-cache-status: HIT\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=4aS3hyGgsMppWErjpP670iTfzQcfxHg%2BwQnXUGLJT6LphoB1l5NuCilx9BhJJIQFMUV1JI68YNBgLLto4VIg1x2B0N%2Buvm05v61d5ZdBcVxFc4gj%2F7BjqXM5\"}]}\nage: 60463\ncache-control: public, max-age=31536000, immutable\netag: W/\"57e9c4a800d4c354a198fb1852138b7b3976000eedcee7b62c15e811933c87f5\"\nnel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}\nlast-modified: Fri, 30 Oct 2026 03:16:30 GMT\nserver: envoy\nstrict-transport-security: max-age=31556926\nvary: x-fh-requested-host, accept-encoding\ncf-bgj: imgq:85,h2pri\ncf-polished: vary_header_present\nx-cache: HIT\nx-cache-hits: 0\nx-served-by: cache-sjc1000093-SJC\nx-timer: S1793691036.599772,VS0,VE1\nx-envoy-upstream-service-time: 81\n\n",
+      "bytes": 174404
+    },
+    {
+      "id": "A8-20261103-24-image-01",
+      "url": "https://withpety.com/products/nekoissho/img202112lp/pc_top.jpg",
+      "http_status": "200",
+      "curl_exit": 0,
+      "error": "",
+      "headers": "HTTP/1.1 200 OK\ndate: Wed, 04 Nov 2026 00:18:19 GMT\nserver: envoy\n\nHTTP/2 200 \ndate: Wed, 04 Nov 2026 00:18:19 GMT\nserver: envoy\nlast-modified: Mon, 05 Dec 2022 04:40:37 GMT\naccept-ranges: bytes\ncontent-length: 326091\ncontent-type: image/jpeg\nx-envoy-upstream-service-time: 124\n\n",
+      "bytes": 326091
+    },
+    {
+      "id": "A8-20261103-24-image-02",
+      "url": "https://withpety.com/products/nekoissho/img202112lp/pc_cmp1_1.jpg",
+      "http_status": "200",
+      "curl_exit": 0,
+      "error": "",
+      "headers": "HTTP/1.1 200 OK\ndate: Wed, 04 Nov 2026 00:18:19 GMT\nserver: envoy\n\nHTTP/2 200 \ndate: Wed, 04 Nov 2026 00:18:19 GMT\nserver: envoy\nlast-modified: Mon, 05 Dec 2022 04:40:18 GMT\naccept-ranges: bytes\ncontent-length: 197169\ncontent-type: image/jpeg\nx-envoy-upstream-service-time: 141\n\n",
+      "bytes": 197169
+    },
+    {
+      "id": "A8-20261103-24-image-03",
+      "url": "https://withpety.com/products/nekoissho/img202112lp/pc_cmp1_2.jpg",
+      "http_status": "200",
+      "curl_exit": 0,
+      "error": "",
+      "headers": "HTTP/1.1 200 OK\ndate: Wed, 04 Nov 2026 00:18:19 GMT\nserver: envoy\n\nHTTP/2 200 \ndate: Wed, 04 Nov 2026 00:18:19 GMT\nserver: envoy\nlast-modified: Mon, 05 Dec 2022 04:40:18 GMT\naccept-ranges: bytes\ncontent-length: 118044\ncontent-type: image/jpeg\nx-envoy-upstream-service-time: 131\n\n",
+      "bytes": 118044
+    }
+  ]
+}

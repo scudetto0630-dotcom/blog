@@ -2,7 +2,7 @@
 /**
  * Plugin Name: ひろがる趣味暮らし トップページ
  * Description: 猫・ウイスキー・ITとフリーランスのトップページ。管理画面から適用・復元できます。
- * Version: 1.26.0
+ * Version: 1.26.1
  * Requires at least: 6.0
  * Requires PHP: 7.4
  */

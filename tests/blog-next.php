@@ -50,7 +50,7 @@ check(strpos($dashboard,'関連記事を保存')!==false&&strpos($dashboard,'fix
 check(strpos($dashboard,'1つ前の保存内容へ戻す')!==false||strpos($dashboard,'保存履歴')!==false,'dashboard exposes snapshot history and restore controls');
 $GLOBALS['test_admin_cap']=false;
 $photos=hsh_photo_manifest();
-check(count($photos['assets'])===78&&count($photos['articles'])===13,'base assets and thirteen new composite covers preserve original article map');
+check(count($photos['assets'])===84&&count($photos['articles'])===13,'base assets, thirteen composite covers and six product images preserve original article map');
 check(count(array_unique($photos['articles']))===13,'every article has its own cover');
 $used=array_values($photos['articles']);foreach($photos['inline'] as $keys)foreach($keys as $key){check(isset($photos['assets'][$key]),'inline asset exists '.$key);$used[]=$key;}
 check(count(array_unique($used))===count($used),'no image is shared between article covers and inline scenes');
@@ -66,7 +66,7 @@ foreach(array('cats','whisky','it-freelance') as $slug)check(strpos(hsh_topic_ph
 foreach($photos['assets'] as $asset){
     $file=__DIR__.'/../hirogaru-home/assets/photos/'.$asset['file'];
     check(is_file($file)&&hash_file('sha256',$file)===$asset['sha256'],'photo integrity '.$asset['file']);
-    check($asset['kind']==='provided'?strpos($asset['caption'],'提供写真')!==false:strpos($asset['caption'],'AI生成')!==false,'honest photo caption '.$asset['file']);
+    check($asset['kind']==='provided'?(strpos($asset['caption'],'提供写真')!==false||(!empty($asset['source_url'])&&strpos($asset['caption'],'公式サイト掲載画像')!==false)):strpos($asset['caption'],'AI生成')!==false,'honest photo caption '.$asset['file']);
 }
 check(hsh_photo_for_slug('unrelated')===null,'photo mapping does not affect unrelated articles');
 check(strpos(hsh_photo_image(array('file'=>'../escape.webp')), '<img')===false,'photo helper rejects non-packaged paths');

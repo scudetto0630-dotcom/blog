@@ -1547,6 +1547,110 @@
         "manmos-portrait"
       ],
       "generation_date": "2026-11-04"
+    },
+    "product-a8-20261103-23-image-01": {
+      "file": "product-a8-20261103-23-image-01.webp",
+      "kind": "provided",
+      "subject": "cat-care",
+      "rights": "permission",
+      "alt": "Catlogの首輪とデバイスを着けた猫",
+      "caption": "Catlogの首輪とデバイスを着けた猫（公式サイト掲載画像）",
+      "width": 576,
+      "height": 767,
+      "sha256": "8259edd363f6188579944f0c0d3f22961a5891f33382cbff2c4e6f5fe33cee5a",
+      "variants": [
+        {
+          "file": "product-a8-20261103-23-image-01-480.webp",
+          "width": 360,
+          "height": 480
+        }
+      ],
+      "source_url": "https://rabo.cat/static/473ebe9affd3167a7092a85476ae2366/d22e9/StarterSet.jpg",
+      "source_page": "https://rabo.cat/catlog/",
+      "retrieved_at": "2026-11-04",
+      "bytes": 69154
+    },
+    "product-a8-20261103-23-image-02": {
+      "file": "product-a8-20261103-23-image-02.webp",
+      "kind": "provided",
+      "subject": "cat-care",
+      "rights": "permission",
+      "alt": "猫用トイレの下に置いたCatlog Board",
+      "caption": "猫用トイレの下に置いたCatlog Board（公式サイト掲載画像）",
+      "width": 576,
+      "height": 767,
+      "sha256": "f36e1f67bb44cc86e74cc35e2bfd4bcdf5e3bb00b3974f96f447dca5f9649a22",
+      "variants": [
+        {
+          "file": "product-a8-20261103-23-image-02-480.webp",
+          "width": 360,
+          "height": 480
+        }
+      ],
+      "source_url": "https://rabo.cat/static/57673f18e32d41acce598b894baf69a1/d22e9/Board2ForJp.jpg",
+      "source_page": "https://rabo.cat/catlog/",
+      "retrieved_at": "2026-11-04",
+      "bytes": 20012
+    },
+    "product-a8-20261103-18-package": {
+      "file": "product-a8-20261103-18-package.webp",
+      "kind": "provided",
+      "subject": "cat-care",
+      "rights": "permission",
+      "alt": "猫用「毎日健心」の商品パッケージ",
+      "caption": "猫用「毎日健心」の商品パッケージ（公式サイト掲載画像）",
+      "width": 200,
+      "height": 267,
+      "bytes": 12404,
+      "sha256": "f69b0726263cfaebf51e1ea73fd1799153c9b54156d5f7439f4bafc4668f8cc8",
+      "source_url": "https://withpety.com/products/nekokenshin/img202104ama/top_item.jpg",
+      "source_page": "https://withpety.com/products/nekokenshin/",
+      "retrieved_at": "2026-11-04"
+    },
+    "product-a8-20261103-20-package": {
+      "file": "product-a8-20261103-20-package.webp",
+      "kind": "provided",
+      "subject": "cat-care",
+      "rights": "permission",
+      "alt": "猫用「毎日美肌」の商品パッケージ",
+      "caption": "猫用「毎日美肌」の商品パッケージ（公式サイト掲載画像）",
+      "width": 200,
+      "height": 267,
+      "bytes": 11902,
+      "sha256": "3f06587de3e008403bd07de2ebb17c473bf751683ffa21b050edbcfb6abc0170",
+      "source_url": "https://withpety.com/products/nekobihada/img202104ama/top_item.jpg",
+      "source_page": "https://withpety.com/products/nekobihada/",
+      "retrieved_at": "2026-11-04"
+    },
+    "product-a8-20261103-22-package": {
+      "file": "product-a8-20261103-22-package.webp",
+      "kind": "provided",
+      "subject": "cat-care",
+      "rights": "permission",
+      "alt": "猫用「毎日良肝」の商品パッケージ",
+      "caption": "猫用「毎日良肝」の商品パッケージ（公式サイト掲載画像）",
+      "width": 200,
+      "height": 267,
+      "bytes": 11978,
+      "sha256": "c01948421d46612a158e62db63335531432b566f1b0899c27a4bbb9e78769421",
+      "source_url": "https://withpety.com/products/nekoryoukan/img202104ama/top_item.jpg",
+      "source_page": "https://withpety.com/products/nekoryoukan/",
+      "retrieved_at": "2026-11-04"
+    },
+    "product-a8-20261103-24-package": {
+      "file": "product-a8-20261103-24-package.webp",
+      "kind": "provided",
+      "subject": "cat-care",
+      "rights": "permission",
+      "alt": "猫用「毎日一緒」の商品パッケージ",
+      "caption": "猫用「毎日一緒」の商品パッケージ（公式サイト掲載画像）",
+      "width": 200,
+      "height": 267,
+      "bytes": 10878,
+      "sha256": "5b52d7b16d643ea9c68492eac061b748041ca88c3de97a27515251186e2b3f57",
+      "source_url": "https://withpety.com/products/nekoissho/img202104ama/top_item.jpg",
+      "source_page": "https://withpety.com/products/nekoissho/",
+      "retrieved_at": "2026-11-04"
     }
   },
   "articles": {
@@ -1685,12 +1789,23 @@
     "m-and-cat-knit-bag": [],
     "pet-sougi-110-cat-guide": [],
     "digxipop-cat-figure": [],
-    "withpety-nekokenshin": [],
+    "withpety-nekokenshin": [
+      "product-a8-20261103-18-package"
+    ],
     "pontely-cat-dna-test": [],
-    "withpety-nekobihada": [],
+    "withpety-nekobihada": [
+      "product-a8-20261103-20-package"
+    ],
     "onekosama-cat-tower": [],
-    "withpety-nekoryoukan": [],
-    "catlog-cat-monitor": [],
-    "withpety-nekoissho": []
+    "withpety-nekoryoukan": [
+      "product-a8-20261103-22-package"
+    ],
+    "catlog-cat-monitor": [
+      "product-a8-20261103-23-image-01",
+      "product-a8-20261103-23-image-02"
+    ],
+    "withpety-nekoissho": [
+      "product-a8-20261103-24-package"
+    ]
   }
 }

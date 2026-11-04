@@ -9,7 +9,7 @@ foreach($added as $a){
     check($a['topic']==='cats'&&strpos($a['content'],'class="hsh-ad-notice"')!==false&&strpos($a['content'],'未使用')===false,'ad disclosure without non-use boilerplate '.$a['slug']);
     $img=hsh_photo_for_slug($a['slug']);check($img&&$img['kind']==='generated'&&count($img['source_photos'])===2,'composite derived from provided cat photos '.$a['slug']);
     check(isset($manifest['affiliate_product_images'][$a['slug']])&&$manifest['affiliate_inline'][$a['slug']]===array(),'original cat photos removed from affiliate body '.$a['slug']);
-    $body=hsh_insert_inline_photos($a['content'],$a['slug']);check(substr_count($body,'hsh-inline-photo')===0,'no unrelated original photos while official product files are pending '.$a['slug']);
+    $body=hsh_insert_inline_photos($a['content'],$a['slug']);check(substr_count($body,'hsh-inline-photo')===count($manifest['affiliate_product_images'][$a['slug']]),'only reviewed official product images appear in article body '.$a['slug']);
     $response=hsh_release_article(new Request(array('slug'=>$a['slug'],'expected'=>null)));check($response instanceof WP_REST_Response,'only packaged affiliate article can publish '.$a['slug']);
     $p=get_post($response->data['id']);check($p->post_content===$a['content']&&$p->post_status==='publish','published exact reviewed body '.$a['slug']);
     check(hsh_release_article(new Request(array('slug'=>$a['slug'],'expected'=>null)))->code==='hsh_conflict','repeat cannot overwrite human edits '.$a['slug']);

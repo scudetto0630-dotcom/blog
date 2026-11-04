@@ -1,0 +1,28 @@
+{
+  "prepared_version": "1.26.1",
+  "deployment_status": "not_deployed",
+  "checked_at": "2026-11-04T00:24:08.187260+00:00",
+  "downloaded_originals": 18,
+  "prepared_product_images": 6,
+  "prepared_articles": 5,
+  "pending_articles": 8,
+  "blocked_candidates": 24,
+  "php_wasm_checks": 622,
+  "python_affiliate_tests": 4,
+  "browser": {
+    "passed": 52,
+    "failed": 0,
+    "scope": "read-only local preview",
+    "externalRequestsBlocked": 0,
+    "affiliate_links_clicked": 0,
+    "forms_submitted": 0
+  },
+  "preserved_byte_for_byte": [
+    "13 article JSON payloads",
+    "bundled affiliate article catalog",
+    "all pre-existing photo asset files"
+  ],
+  "preserved_manifest_fields": "all original asset records and all mappings except selected affiliate_product_images",
+  "zip_bytes": 12969257,
+  "zip_sha256": "2ca9bf8bb4abf5cc68a98e230bf5d2d5368814a5e252bba25551f4e277ba456a"
+}

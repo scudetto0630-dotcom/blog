@@ -14,7 +14,8 @@ function hsh_photo_image($asset,$eager=false,$sizes='(max-width:760px) calc(100v
     $base=plugin_dir_url(__FILE__).'assets/photos/';$responsive='';$candidates=array();
     foreach($asset['variants']??array() as $v)if(isset($v['file'],$v['width'])&&preg_match('/^[a-z0-9-]+\.webp$/D',$v['file'])&&(int)$v['width']>0)$candidates[]=$base.$v['file'].' '.(int)$v['width'].'w';
     if($candidates){$candidates[]=$base.$asset['file'].' '.(int)$asset['width'].'w';$responsive=' srcset="'.esc_attr(implode(', ',$candidates)).'" sizes="'.esc_attr($sizes).'" data-hsh-full="'.esc_url($base.$asset['file']).'"';}
-    return '<img src="'.esc_url($base.$asset['file']).'"'.$responsive.' alt="'.esc_attr($asset['alt']).'" width="'.(int)$asset['width'].'" height="'.(int)$asset['height'].'" loading="'.($eager?'eager':'lazy').'" decoding="async"'.($eager?' fetchpriority="high"':'').'>';
+    $native=isset($asset['source_url'])&&(int)$asset['width']<480?' style="max-width:'.(int)$asset['width'].'px;margin-inline:auto"':'';
+    return '<img'.$native.' src="'.esc_url($base.$asset['file']).'"'.$responsive.' alt="'.esc_attr($asset['alt']).'" width="'.(int)$asset['width'].'" height="'.(int)$asset['height'].'" loading="'.($eager?'eager':'lazy').'" decoding="async"'.($eager?' fetchpriority="high"':'').'>';
 }
 function hsh_photo_cover($post,$eager=false){
     if(!$post)return '';$asset=hsh_photo_for_slug($post->post_name);if(!$asset)return '';
