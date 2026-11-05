@@ -1,0 +1,26 @@
+[
+  {
+    "article": "cat-carrier-checklist",
+    "url": "https://www.jreast.co.jp/kippu/20.html",
+    "checked_at": "2026-11-05T00:35:24.577566+00:00",
+    "source_sha256": "c13ec04eb6c730b6b1061214f34870d9c199418ad7e4143db6209e11d4c0ce3f",
+    "change": "Verified official details and source link added; owner experience kept separate.",
+    "body_changed": true
+  },
+  {
+    "article": "highball-measure-and-adjust",
+    "url": "https://www.suntory.co.jp/whisky/beginner/drink/highball.html",
+    "checked_at": "2026-11-05T00:35:24.577634+00:00",
+    "source_sha256": "b8d00e989dece2237f0c34ae33fad52d1fe36eedbeb47bb0e18be62a927af9e2",
+    "change": "Verified official details and source link added; owner experience kept separate.",
+    "body_changed": true
+  },
+  {
+    "article": "csv-import-seven-checks",
+    "url": "https://support.microsoft.com/ja-jp/office/%E3%83%86%E3%82%AD%E3%82%B9%E3%83%88-txt-%E3%81%BE%E3%81%9F%E3%81%AF-csv-%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E3%82%A4%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%88%E3%81%BE%E3%81%9F%E3%81%AF%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%88-5250ac4c-663c-47ce-937b-339e391393ba",
+    "checked_at": "2026-11-05T00:35:24.577730+00:00",
+    "source_sha256": "210e66c3cc42053555344628e16b382ec1e79e9f1eeb77a55aad5c1e9e06b2fc",
+    "change": "Verified official details and source link added; owner experience kept separate.",
+    "body_changed": true
+  }
+]

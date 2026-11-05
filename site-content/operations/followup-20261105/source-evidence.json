@@ -1,0 +1,61 @@
+[
+  {
+    "url": "https://support.microsoft.com/ja-jp/office/%E3%83%86%E3%82%AD%E3%82%B9%E3%83%88-txt-%E3%81%BE%E3%81%9F%E3%81%AF-csv-%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E3%82%A4%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%88%E3%81%BE%E3%81%9F%E3%81%AF%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%88-5250ac4c-663c-47ce-937b-339e391393ba",
+    "status": 200,
+    "sha256": "210e66c3cc42053555344628e16b382ec1e79e9f1eeb77a55aad5c1e9e06b2fc",
+    "checked_at": "2026-11-05T00:39:11.788936+00:00",
+    "verified_claims": [
+      "CSVを直接開く方法と外部データとして取り込む方法の違い",
+      "文字列として取り込み先頭の0を保持"
+    ]
+  },
+  {
+    "url": "https://www.rfc-editor.org/rfc/rfc4180",
+    "status": 200,
+    "sha256": "db0753681f0fb78f9dd417b933d0fc6da4043f86665fed377f34b19596b30fa3",
+    "checked_at": "2026-11-05T00:39:11.789131+00:00",
+    "verified_claims": [
+      "カンマ・改行・二重引用符を含むフィールドの引用",
+      "フィールド内の二重引用符は二重化"
+    ]
+  },
+  {
+    "url": "https://www.suntory.co.jp/whisky/beginner/drink/highball.html",
+    "status": 200,
+    "sha256": "b8d00e989dece2237f0c34ae33fad52d1fe36eedbeb47bb0e18be62a927af9e2",
+    "checked_at": "2026-11-05T00:39:11.789173+00:00",
+    "verified_claims": [
+      "ウイスキー1に対してソーダ3〜4",
+      "ソーダ後は混ぜすぎない"
+    ]
+  },
+  {
+    "url": "https://www.suntory.co.jp/whisky/beginner/drink/half.html",
+    "status": 200,
+    "sha256": "32f96fc50cbaf43c7a0ff6c6273fb4dbc51ac7f0a809aaa761c82f172dd5cfe6",
+    "checked_at": "2026-11-05T00:39:11.789203+00:00",
+    "verified_claims": [
+      "氷を入れたグラスでウイスキーと水を1対1"
+    ]
+  },
+  {
+    "url": "https://www.suntory.co.jp/whisky/malt/",
+    "status": 200,
+    "sha256": "cc5badc2e6b002d30f344e7d7974c63d8e6b7acd342a3c785a9995de60a372b8",
+    "checked_at": "2026-11-05T00:39:11.789293+00:00",
+    "verified_claims": [
+      "シングルモルトは単一蒸溜所のモルトウイスキー"
+    ]
+  },
+  {
+    "url": "https://www.jreast.co.jp/kippu/20.html",
+    "status": 200,
+    "sha256": "c13ec04eb6c730b6b1061214f34870d9c199418ad7e4143db6209e11d4c0ce3f",
+    "checked_at": "2026-11-05T00:39:11.789332+00:00",
+    "verified_claims": [
+      "専用ケース3辺合計120cm以内",
+      "ケースと動物の合計10kg以内",
+      "1個290円"
+    ]
+  }
+]

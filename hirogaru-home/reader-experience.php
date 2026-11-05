@@ -72,9 +72,9 @@ add_action('wp_body_open', function() {
 });
 add_action('wp_enqueue_scripts', function() {
     if (!hsh_reader_scope()) return;
-    wp_enqueue_style('hsh-home', plugin_dir_url(__FILE__).'assets/home.css', array(), '1.27.1');
-    wp_enqueue_style('hsh-reader', plugin_dir_url(__FILE__).'assets/reader.css', array('hsh-growth'), '1.27.1');
-    wp_enqueue_script('hsh-reader', plugin_dir_url(__FILE__).'assets/reader.js', array(), '1.27.1', true);
+    wp_enqueue_style('hsh-home', plugin_dir_url(__FILE__).'assets/home.css', array(), '1.28.0');
+    wp_enqueue_style('hsh-reader', plugin_dir_url(__FILE__).'assets/reader.css', array('hsh-growth'), '1.28.0');
+    wp_enqueue_script('hsh-reader', plugin_dir_url(__FILE__).'assets/reader.js', array(), '1.28.0', true);
 }, 120);
 function hsh_reader_bootstrap(){return '<script>document.documentElement.classList.add("hsh-reader-js");</script>';}
 add_action('wp_head',function(){if(hsh_reader_scope())echo hsh_reader_bootstrap();},0);

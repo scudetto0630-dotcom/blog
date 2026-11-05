@@ -1,0 +1,13 @@
+{
+  "backup": "/workspace/artifacts/blog-content-backup-20261105.zip",
+  "bytes": 16481659,
+  "sha256": "a6da53835966ecd787620ca7b074bf5d3b7526e01b84c8a520dea2c3cd544a39",
+  "archive_extraction_and_hash_check": true,
+  "wordpress_restore_probe": {
+    "passed": true,
+    "scope": "temporary unpublished draft"
+  },
+  "published_content_unchanged": true,
+  "full_hosting_restore_tested": false,
+  "contains_private_editorial_records": true
+}
