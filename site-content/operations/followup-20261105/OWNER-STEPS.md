@@ -8,6 +8,8 @@
 
 ## Google Search Console
 
+既に所有権確認済みなら再登録は不要。取得済みの実績CSVがあれば、それを使う。
+
 1. https://search.google.com/search-console/welcome を本人のGoogleアカウントで開く。
 2. 「URLプレフィックス」に https://hirogarushumi.com/ を登録し、「HTMLタグ」の確認用タグを取得する。これは公開用の所有権確認文字列。受領後、専用の設定機能で設置できる。
 3. Googleの画面で所有権を確認し、サイトマップ https://hirogarushumi.com/wp-sitemap.xml を送信する。

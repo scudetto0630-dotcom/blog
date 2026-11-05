@@ -1,0 +1,422 @@
+{
+  "scope": "own public pages, local JSON-LD field checks; not Google Rich Results or Search Console index validation",
+  "pages": [
+    {
+      "path": "/cat-carrier-checklist/",
+      "status": 200,
+      "article_schema_nodes": 1,
+      "photos": 5,
+      "robots": [
+        "max-image-preview:large"
+      ]
+    },
+    {
+      "path": "/highball-measure-and-adjust/",
+      "status": 200,
+      "article_schema_nodes": 1,
+      "photos": 6,
+      "robots": [
+        "max-image-preview:large"
+      ]
+    },
+    {
+      "path": "/csv-import-seven-checks/",
+      "status": 200,
+      "article_schema_nodes": 1,
+      "photos": 6,
+      "robots": [
+        "max-image-preview:large"
+      ]
+    },
+    {
+      "path": "/before-welcoming-cat/",
+      "status": 200,
+      "article_schema_nodes": 1,
+      "photos": 6,
+      "robots": [
+        "max-image-preview:large"
+      ]
+    },
+    {
+      "path": "/manmos-cat-life/",
+      "status": 200,
+      "article_schema_nodes": 1,
+      "photos": 9,
+      "robots": [
+        "max-image-preview:large"
+      ]
+    },
+    {
+      "path": "/cat-teaser-small-parts/",
+      "status": 200,
+      "article_schema_nodes": 1,
+      "photos": 7,
+      "robots": [
+        "max-image-preview:large"
+      ]
+    },
+    {
+      "path": "/cat-vet-routine/",
+      "status": 200,
+      "article_schema_nodes": 1,
+      "photos": 6,
+      "robots": [
+        "max-image-preview:large"
+      ]
+    },
+    {
+      "path": "/glenlivet-12-first-bottles/",
+      "status": 200,
+      "article_schema_nodes": 1,
+      "photos": 7,
+      "robots": [
+        "max-image-preview:large"
+      ]
+    },
+    {
+      "path": "/single-malt-label-guide/",
+      "status": 200,
+      "article_schema_nodes": 1,
+      "photos": 6,
+      "robots": [
+        "max-image-preview:large"
+      ]
+    },
+    {
+      "path": "/sherry-cask-notes/",
+      "status": 200,
+      "article_schema_nodes": 1,
+      "photos": 7,
+      "robots": [
+        "max-image-preview:large"
+      ]
+    },
+    {
+      "path": "/it-data-work-flow/",
+      "status": 200,
+      "article_schema_nodes": 1,
+      "photos": 7,
+      "robots": [
+        "max-image-preview:large"
+      ]
+    },
+    {
+      "path": "/starting-it-without-specialty/",
+      "status": 200,
+      "article_schema_nodes": 1,
+      "photos": 7,
+      "robots": [
+        "max-image-preview:large"
+      ]
+    },
+    {
+      "path": "/ai-data-extraction-checks/",
+      "status": 200,
+      "article_schema_nodes": 1,
+      "photos": 7,
+      "robots": [
+        "max-image-preview:large"
+      ]
+    },
+    {
+      "path": "/paws-green-deli-cat-food/",
+      "status": 200,
+      "article_schema_nodes": 1,
+      "photos": 6,
+      "robots": [
+        "max-image-preview:large"
+      ]
+    },
+    {
+      "path": "/hario-cat-bowl-guide/",
+      "status": 200,
+      "article_schema_nodes": 1,
+      "photos": 6,
+      "robots": [
+        "max-image-preview:large"
+      ]
+    },
+    {
+      "path": "/mirai-cat-food-types/",
+      "status": 200,
+      "article_schema_nodes": 1,
+      "photos": 7,
+      "robots": [
+        "max-image-preview:large"
+      ]
+    },
+    {
+      "path": "/m-and-cat-knit-bag/",
+      "status": 200,
+      "article_schema_nodes": 1,
+      "photos": 6,
+      "robots": [
+        "max-image-preview:large"
+      ]
+    },
+    {
+      "path": "/pet-sougi-110-cat-guide/",
+      "status": 200,
+      "article_schema_nodes": 1,
+      "photos": 7,
+      "robots": [
+        "max-image-preview:large"
+      ]
+    },
+    {
+      "path": "/digxipop-cat-figure/",
+      "status": 200,
+      "article_schema_nodes": 1,
+      "photos": 6,
+      "robots": [
+        "max-image-preview:large"
+      ]
+    },
+    {
+      "path": "/withpety-nekokenshin/",
+      "status": 200,
+      "article_schema_nodes": 1,
+      "photos": 7,
+      "robots": [
+        "max-image-preview:large"
+      ]
+    },
+    {
+      "path": "/pontely-cat-dna-test/",
+      "status": 200,
+      "article_schema_nodes": 1,
+      "photos": 6,
+      "robots": [
+        "max-image-preview:large"
+      ]
+    },
+    {
+      "path": "/withpety-nekobihada/",
+      "status": 200,
+      "article_schema_nodes": 1,
+      "photos": 7,
+      "robots": [
+        "max-image-preview:large"
+      ]
+    },
+    {
+      "path": "/onekosama-cat-tower/",
+      "status": 200,
+      "article_schema_nodes": 1,
+      "photos": 6,
+      "robots": [
+        "max-image-preview:large"
+      ]
+    },
+    {
+      "path": "/withpety-nekoryoukan/",
+      "status": 200,
+      "article_schema_nodes": 1,
+      "photos": 6,
+      "robots": [
+        "max-image-preview:large"
+      ]
+    },
+    {
+      "path": "/catlog-cat-monitor/",
+      "status": 200,
+      "article_schema_nodes": 1,
+      "photos": 7,
+      "robots": [
+        "max-image-preview:large"
+      ]
+    },
+    {
+      "path": "/withpety-nekoissho/",
+      "status": 200,
+      "article_schema_nodes": 1,
+      "photos": 6,
+      "robots": [
+        "max-image-preview:large"
+      ]
+    },
+    {
+      "path": "/pet-paradise-cat-toys/",
+      "status": 200,
+      "article_schema_nodes": 1,
+      "photos": 6,
+      "robots": [
+        "max-image-preview:large"
+      ]
+    },
+    {
+      "path": "/canagan-dental-cat-food/",
+      "status": 200,
+      "article_schema_nodes": 1,
+      "photos": 6,
+      "robots": [
+        "max-image-preview:large"
+      ]
+    },
+    {
+      "path": "/canagan-chicken-salmon/",
+      "status": 200,
+      "article_schema_nodes": 1,
+      "photos": 6,
+      "robots": [
+        "max-image-preview:large"
+      ]
+    },
+    {
+      "path": "/mcadams-cat-chicken-turkey/",
+      "status": 200,
+      "article_schema_nodes": 1,
+      "photos": 7,
+      "robots": [
+        "max-image-preview:large"
+      ]
+    },
+    {
+      "path": "/essential-jaguar-cat-food/",
+      "status": 200,
+      "article_schema_nodes": 1,
+      "photos": 6,
+      "robots": [
+        "max-image-preview:large"
+      ]
+    },
+    {
+      "path": "/mognyan-cat-food-guide/",
+      "status": 200,
+      "article_schema_nodes": 1,
+      "photos": 6,
+      "robots": [
+        "max-image-preview:large"
+      ]
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "article_schema_nodes": 1,
+      "photos": 14,
+      "robots": [
+        "max-image-preview:large"
+      ]
+    },
+    {
+      "path": "/category/cats/",
+      "status": 200,
+      "article_schema_nodes": 0,
+      "photos": 14,
+      "robots": [
+        "max-image-preview:large"
+      ]
+    },
+    {
+      "path": "/category/whisky/",
+      "status": 200,
+      "article_schema_nodes": 0,
+      "photos": 5,
+      "robots": [
+        "max-image-preview:large"
+      ]
+    },
+    {
+      "path": "/category/it-freelance/",
+      "status": 200,
+      "article_schema_nodes": 0,
+      "photos": 5,
+      "robots": [
+        "max-image-preview:large"
+      ]
+    },
+    {
+      "path": "/hsh-about/",
+      "status": 200,
+      "article_schema_nodes": 1,
+      "photos": 1,
+      "robots": [
+        "max-image-preview:large"
+      ]
+    },
+    {
+      "path": "/hsh-editorial/",
+      "status": 200,
+      "article_schema_nodes": 1,
+      "photos": 0,
+      "robots": [
+        "max-image-preview:large"
+      ]
+    },
+    {
+      "path": "/hsh-gallery/",
+      "status": 200,
+      "article_schema_nodes": 1,
+      "photos": 17,
+      "robots": [
+        "max-image-preview:large"
+      ]
+    },
+    {
+      "path": "/hsh-whisky-notes/",
+      "status": 200,
+      "article_schema_nodes": 1,
+      "photos": 5,
+      "robots": [
+        "max-image-preview:large"
+      ]
+    },
+    {
+      "path": "/hsh-updates/",
+      "status": 200,
+      "article_schema_nodes": 1,
+      "photos": 0,
+      "robots": [
+        "max-image-preview:large"
+      ]
+    },
+    {
+      "path": "/hsh-hakushu-visit/",
+      "status": 200,
+      "article_schema_nodes": 1,
+      "photos": 6,
+      "robots": [
+        "max-image-preview:large"
+      ]
+    },
+    {
+      "path": "/hsh-reading-list/",
+      "status": 200,
+      "article_schema_nodes": 1,
+      "photos": 0,
+      "robots": [
+        "noindex, max-image-preview:large"
+      ]
+    },
+    {
+      "path": "/ひろがる趣味暮らしについて/",
+      "status": 200,
+      "article_schema_nodes": 1,
+      "photos": 1,
+      "robots": [
+        "max-image-preview:large"
+      ]
+    },
+    {
+      "path": "/お問い合わせ/",
+      "status": 200,
+      "article_schema_nodes": 1,
+      "photos": 0,
+      "robots": [
+        "max-image-preview:large"
+      ]
+    },
+    {
+      "path": "/プライバシーポリシー/",
+      "status": 200,
+      "article_schema_nodes": 1,
+      "photos": 0,
+      "robots": [
+        "max-image-preview:large"
+      ]
+    }
+  ],
+  "internal_links_checked": 2093,
+  "orphaned": [],
+  "problems": []
+}

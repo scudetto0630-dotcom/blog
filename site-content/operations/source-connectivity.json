@@ -1,38 +1,101 @@
 {
   "jr": {
     "url": "https://www.jreast.co.jp/kippu/20.html",
-    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    "previous_check": {
+      "url": "https://www.jreast.co.jp/kippu/20.html",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    "checked_at": "2026-11-05T00:45:37.875483+00:00",
+    "http_status": 200,
+    "content_reviewed": true,
+    "note": "Direct public-page retrieval. Normal browser User-Agent required for JR and Catlog. Short redirect response is not treated as verified service information."
   },
   "suntory": {
-    "url": "https://www.suntory.co.jp/whisky/museum/enter/howto/highball.html",
-    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    "url": "https://www.suntory.co.jp/whisky/beginner/drink/highball.html",
+    "previous_check": {
+      "url": "https://www.suntory.co.jp/whisky/museum/enter/howto/highball.html",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    "checked_at": "2026-11-05T00:45:37.875527+00:00",
+    "http_status": 200,
+    "content_reviewed": true,
+    "note": "See followup-20261105/source-evidence.json."
   },
   "microsoft": {
     "url": "https://support.microsoft.com/ja-jp/office/%E3%83%86%E3%82%AD%E3%82%B9%E3%83%88-txt-%E3%81%BE%E3%81%9F%E3%81%AF-csv-%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E3%82%A4%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%88%E3%81%BE%E3%81%9F%E3%81%AF%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%88-5250ac4c-663c-47ce-937b-339e391393ba",
-    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    "previous_check": {
+      "url": "https://support.microsoft.com/ja-jp/office/%E3%83%86%E3%82%AD%E3%82%B9%E3%83%88-txt-%E3%81%BE%E3%81%9F%E3%81%AF-csv-%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E3%82%A4%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%88%E3%81%BE%E3%81%9F%E3%81%AF%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%88-5250ac4c-663c-47ce-937b-339e391393ba",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    "checked_at": "2026-11-05T00:45:37.875542+00:00",
+    "http_status": 200,
+    "content_reviewed": true,
+    "note": "See followup-20261105/source-evidence.json."
   },
   "rfc": {
     "url": "https://www.rfc-editor.org/rfc/rfc4180",
-    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    "previous_check": {
+      "url": "https://www.rfc-editor.org/rfc/rfc4180",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    "checked_at": "2026-11-05T00:45:37.875553+00:00",
+    "http_status": 200,
+    "content_reviewed": true,
+    "note": "See followup-20261105/source-evidence.json."
   },
   "catlog": {
-    "url": "https://rabo.cat/",
-    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    "url": "https://rabo.cat/catlog/",
+    "previous_check": {
+      "url": "https://rabo.cat/",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    "checked_at": "2026-11-05T00:45:37.875562+00:00",
+    "http_status": 200,
+    "content_reviewed": false,
+    "note": "Direct public-page retrieval. Normal browser User-Agent required for JR and Catlog. Short redirect response is not treated as verified service information."
   },
   "freee": {
     "url": "https://www.freee.co.jp/accounting/individual/",
-    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    "previous_check": {
+      "url": "https://www.freee.co.jp/accounting/individual/",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    "checked_at": "2026-11-05T00:45:37.875571+00:00",
+    "http_status": 200,
+    "content_reviewed": false,
+    "note": "Direct public-page retrieval. Normal browser User-Agent required for JR and Catlog. Short redirect response is not treated as verified service information."
   },
   "moneyforward": {
     "url": "https://biz.moneyforward.com/tax_return/",
-    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    "previous_check": {
+      "url": "https://biz.moneyforward.com/tax_return/",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    "checked_at": "2026-11-05T00:45:37.875579+00:00",
+    "http_status": 200,
+    "content_reviewed": false,
+    "note": "See followup-20261105/source-evidence.json."
   },
   "google_spam": {
     "url": "https://developers.google.com/search/docs/essentials/spam-policies?hl=ja",
-    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    "previous_check": {
+      "url": "https://developers.google.com/search/docs/essentials/spam-policies?hl=ja",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    "checked_at": "2026-11-05T00:45:37.875587+00:00",
+    "http_status": 200,
+    "content_reviewed": true,
+    "note": "See followup-20261105/source-evidence.json."
   },
   "gsc": {
     "url": "https://support.google.com/webmasters/answer/9008080?hl=ja",
-    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    "previous_check": {
+      "url": "https://support.google.com/webmasters/answer/9008080?hl=ja",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    "checked_at": "2026-11-05T00:45:37.875597+00:00",
+    "http_status": 200,
+    "content_reviewed": true,
+    "note": "See followup-20261105/source-evidence.json."
   }
 }

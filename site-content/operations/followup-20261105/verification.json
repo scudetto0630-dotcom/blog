@@ -1,0 +1,49 @@
+{
+  "checked_at": "2026-11-05T00:47:42.624447+00:00",
+  "public_version": "1.28.0",
+  "deployment": {
+    "commit": "d4cc3521e1eff1597a7ea3d88832413611ea0ecd",
+    "sha256": "0ae89d2666bfaa6d8c8a25c0147db247cb775279a95965da418eb572d99b0a87",
+    "expected_version": "1.27.1"
+  },
+  "published_article_source_updates": [
+    "cat-carrier-checklist",
+    "highball-measure-and-adjust",
+    "csv-import-seven-checks",
+    "single-malt-label-guide"
+  ],
+  "affiliate_articles_unchanged": 19,
+  "php_checks": 825,
+  "python_tests": 21,
+  "browser": {
+    "passed": 98,
+    "failed": 0,
+    "viewports": [
+      1440,
+      768,
+      390,
+      320
+    ],
+    "public_url": "https://hirogarushumi.com/",
+    "provided_assets": 28,
+    "generated_assets": 56
+  },
+  "public_audit_pages": 46,
+  "public_audit_problems": [],
+  "availability_check_failures": 0,
+  "backup_archive_restore_verified": true,
+  "private_draft_saved": "Arboralis; awaiting manufacturer specification/image review",
+  "pending": {
+    "environment_publication": "7 additional official/GitHub API domains saved in draft, current runtime revision remains 7 with 63 hosts; new connections not verified",
+    "manufacturer_sources": [
+      "Arboralis specifications and product images",
+      "Glenfarclas 12 year specifications",
+      "Oloroso / Pedro Ximenez regulatory source"
+    ],
+    "google_search_console": "Owner verification completion unconfirmed; no search metrics imported",
+    "hosting_backup": "No hosting account access; full database/media restore not verified",
+    "carrier_model": "Owner model, dimensions and capacity not received",
+    "affiliate_links": "13 of originally planned 37 not received",
+    "updated_workflow_execution": "Existing schedule verified; newer pinned actions and summary workflow not yet run remotely; textlint findings are retained"
+  }
+}
