@@ -54,7 +54,7 @@ add_filter('the_content',function($c){
  if(in_array($slug,array('ai-data-extraction-checks','it-data-work-flow','csv-import-seven-checks'),true))$c.=hsh_studio_examples();
  return $c.hsh_studio_postscript($slug,$a['topic']);
 },29);
-add_action('wp_enqueue_scripts',function(){if(!hsh_reader_scope())return;wp_enqueue_style('hsh-studio',plugin_dir_url(__FILE__).'assets/studio.css',array('hsh-brushup'),'1.31.2');wp_enqueue_script('hsh-studio',plugin_dir_url(__FILE__).'assets/studio.js',array('hsh-brushup'),'1.31.2',true);},140);
+add_action('wp_enqueue_scripts',function(){if(!hsh_reader_scope())return;wp_enqueue_style('hsh-studio',plugin_dir_url(__FILE__).'assets/studio.css',array('hsh-brushup'),'1.31.3');wp_enqueue_script('hsh-studio',plugin_dir_url(__FILE__).'assets/studio.js',array('hsh-brushup'),'1.31.3',true);},140);
 // The native WordPress relevance ordering already prioritizes matching titles.
 add_action('pre_get_posts',function($q){if(!is_admin()&&$q->is_main_query()&&$q->is_search())$q->set('orderby','relevance');},35);
 function hsh_studio_home_products(){
