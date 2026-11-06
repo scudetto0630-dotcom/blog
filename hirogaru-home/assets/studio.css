@@ -12,3 +12,4 @@
 .hsh-affiliate-context{padding:14px;background:#edf3ee;border-radius:8px}.hsh-affiliate-context small{display:inline-block;font-size:11px;color:#52635b;margin-right:8px}
 @media print{.hsh-affiliate-context{display:none!important}}
 .hsh-reader-site .hsh-reader-tools>p:empty,.hsh-reader-site .hsh-reader-tools>.hsh-reader-status:empty{display:none}.hsh-reader-site .hsh-reader-tools{gap:8px}.hsh-reader-site .hsh-reader-tools>.hsh-reader-settings,.hsh-reader-site .hsh-reader-tools>.hsh-in-article-find{margin:0;padding:0 2px}.hsh-reader-site .hsh-reader-tools summary{min-height:40px}.hsh-reader-site .hsh-reader-settings[open],.hsh-reader-site .hsh-in-article-find[open]{padding-bottom:12px}
+.hsh-reader-site .article-header .date-tags{display:none}.hsh-reader-site .hsh-entry-dates{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:12px!important;color:#52635b;margin:0 0 14px}

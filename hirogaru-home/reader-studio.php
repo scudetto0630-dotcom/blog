@@ -54,7 +54,7 @@ add_filter('the_content',function($c){
  if(in_array($slug,array('ai-data-extraction-checks','it-data-work-flow','csv-import-seven-checks'),true))$c.=hsh_studio_examples();
  return $c.hsh_studio_postscript($slug,$a['topic']);
 },29);
-add_action('wp_enqueue_scripts',function(){if(!hsh_reader_scope())return;wp_enqueue_style('hsh-studio',plugin_dir_url(__FILE__).'assets/studio.css',array('hsh-brushup'),'1.31.1');wp_enqueue_script('hsh-studio',plugin_dir_url(__FILE__).'assets/studio.js',array('hsh-brushup'),'1.31.1',true);},140);
+add_action('wp_enqueue_scripts',function(){if(!hsh_reader_scope())return;wp_enqueue_style('hsh-studio',plugin_dir_url(__FILE__).'assets/studio.css',array('hsh-brushup'),'1.31.2');wp_enqueue_script('hsh-studio',plugin_dir_url(__FILE__).'assets/studio.js',array('hsh-brushup'),'1.31.2',true);},140);
 // The native WordPress relevance ordering already prioritizes matching titles.
 add_action('pre_get_posts',function($q){if(!is_admin()&&$q->is_main_query()&&$q->is_search())$q->set('orderby','relevance');},35);
 function hsh_studio_home_products(){
@@ -67,7 +67,7 @@ function hsh_studio_series($slug){
  return '';
 }
 function hsh_studio_care(){return '<section class="hsh-care-notes"><h3>素材と部品ごとに、手入れの表示を確認</h3><dl><dt>陶器・ガラスの器</dt><dd>欠けやひびを点検し、使用できる洗剤・温度・食器洗浄機への対応は、その商品の説明に従います。</dd><dt>布・ニット・クッション</dt><dd>洗濯表示と取り外せる部品を確認します。水洗いできると決めつけず、指定の乾かし方まで確認します。</dd><dt>木・段ボール・支柱</dt><dd>濡らしてよい範囲や交換方法は素材・製品で異なります。固定部の緩みもメーカーの案内に沿って点検します。</dd><dt>電子機器</dt><dd>水洗いできる部分と電子部品を分けて確認し、電源・充電・清掃方法は取扱説明書に従います。</dd></dl></section>';}
-add_filter('the_content',function($c){if(!in_the_loop()||!is_main_query())return $c;$p=get_post();if(!$p||!hsh_owned_blog_post($p))return $c;$c=hsh_studio_series($p->post_name).$c;if(in_array($p->post_name,array('hario-cat-bowl-guide','onekosama-cat-tower','catlog-cat-monitor','m-and-cat-knit-bag'),true))$c.=hsh_studio_care();return $c;},30);
+add_filter('the_content',function($c){if(!in_the_loop()||!is_main_query())return $c;$p=get_post();if(!$p||!hsh_owned_blog_post($p))return $c;$c=hsh_studio_dates($p).hsh_studio_series($p->post_name).$c;if(in_array($p->post_name,array('hario-cat-bowl-guide','onekosama-cat-tower','catlog-cat-monitor','m-and-cat-knit-bag'),true))$c.=hsh_studio_care();return $c;},30);
 function hsh_studio_rendered($html){
  if(strpos($html,'hsh-reader-site')===false||strpos($html,'</head>')===false)return $html;
  $paged=function_exists('get_query_var')?max(1,(int)get_query_var('paged')):1;if($paged>1&&hsh_current_topic())$html=preg_replace_callback('~<title>(.*?)</title>~s',function($m)use($paged){return '<title>'.$m[1].'（'.$paged.'ページ目）</title>';},$html,1);
@@ -75,3 +75,9 @@ function hsh_studio_rendered($html){
  return preg_replace_callback('~(<a\b[^>]*href=[\x22\x27]'.preg_quote(home_url('/'),'~').'[^\x22\x27]*[\x22\x27][^>]*>)([^<]+)(</a>)~u',function($m)use($map){$label=html_entity_decode($m[2],ENT_QUOTES,'UTF-8');return isset($map[$label])?$m[1].esc_html($map[$label]).$m[3]:$m[0];},$html);
 }
 add_filter('the_content',function($c){$p=get_post();if($p&&in_the_loop()&&is_main_query()&&rawurldecode($p->post_name)==='プライバシーポリシー')$c.='<section><h2>この端末に保存する読書の記録</h2><p>保存した記事、閲覧履歴、読了マーク、読んだ位置、文字サイズ、記録シートは、ご利用のブラウザー内に保存します。これらの記録を、この読書機能からサーバーへ送信することはありません。「読み方・この端末の記録」から履歴の停止や記録の削除ができます。記録シートに個人情報を書き込まないでください。保存データは各機能で削除するか、ブラウザーのサイトデータを消去するまで残ります。別の端末とは同期しません。お問い合わせフォームの入力内容を、この機能で自動保存することはありません。</p></section>';return $c;},31);
+function hsh_studio_dates($p){
+ $published=get_the_date('c',$p);$modified=get_post_modified_time('c',false,$p);
+ $out='<p class="hsh-entry-dates"><span>公開：<time data-date-kind="published" datetime="'.esc_attr($published).'">'.esc_html(get_the_date('Y.m.d',$p)).'</time></span>';
+ if($modified&&$modified!==$published)$out.='<span>更新：<time data-date-kind="modified" datetime="'.esc_attr($modified).'">'.esc_html(get_post_modified_time('Y.m.d',false,$p)).'</time></span>';
+ return $out.'</p>';
+}
