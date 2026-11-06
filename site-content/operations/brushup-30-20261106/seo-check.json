@@ -1,0 +1,166 @@
+{
+  "pages": 32,
+  "unique_descriptions": 32,
+  "rows": [
+    {
+      "slug": "cat-carrier-checklist",
+      "description": "猫用キャリーは、内寸と耐荷重に加え、出し入れ、留め具、総重量、掃除、置き場所を見て選びたい。自分も、まんもすを入れると形が崩れたリュック型から、本体のしっかりした大きめの物に買い替えた。",
+      "canonical": "https://hirogarushumi.com/cat-carrier-checklist/"
+    },
+    {
+      "slug": "highball-measure-and-adjust",
+      "description": "ハイボールが薄いと感じたら、ウイスキーを足す前に、分量、氷、炭酸水の状態を確認してみよう。味が物足りないのか、炭酸の刺激が弱いのかで、変えるところは違う。",
+      "canonical": "https://hirogarushumi.com/highball-measure-and-adjust/"
+    },
+    {
+      "slug": "csv-import-seven-checks",
+      "description": "CSVを取り込む前に見るのは、文字コードと区切り、列の対応、先頭の0、日付、空欄、重複、結果の件数。まず原本を残し、コピーで数行を試す。形式を整える前に、どんな値を残すかを決めておきたい。",
+      "canonical": "https://hirogarushumi.com/csv-import-seven-checks/"
+    },
+    {
+      "slug": "before-welcoming-cat",
+      "description": "猫を迎える前は、ごはん、水、トイレ、猫砂、キャリー、爪とぎ、休める場所を用意する。最初のフードと猫砂は、今使っている物を保護主さんに聞いてから選びたい。まんもすも猫砂には好みがあって、紙砂がお気に入りだ。",
+      "canonical": "https://hirogarushumi.com/before-welcoming-cat/"
+    },
+    {
+      "slug": "manmos-cat-life",
+      "description": "うちの猫、まんもすは5歳のスコティッシュフォールド。体重は5.5kgで、長い毛がふわっと広がっている。2025年4月に保護猫シェルターから迎えた。見た瞬間に運命を感じたくらい、かわいかった。年齢と体重は2026年10月時点の話です。",
+      "canonical": "https://hirogarushumi.com/manmos-cat-life/"
+    },
+    {
+      "slug": "cat-teaser-small-parts",
+      "description": "まんもすには100均のおもちゃも使っている。ただ、すぐ取れそうな小さな部品が付いた物は避けたい。値段より先に見るのは、先端の飾りとつなぎ目。遊んだ後は傷みを確かめ、猫が取り出せない場所へしまう。",
+      "canonical": "https://hirogarushumi.com/cat-teaser-small-parts/"
+    },
+    {
+      "slug": "cat-vet-routine",
+      "description": "通院の前にまとめたいのは、いつから、普段と何が違うか、今使っている薬やフードの情報。持ち物と食事・薬の扱いは病院へ確認する。まんもすも定期的に通院しているので、普段の様子と分けて伝えられるようにしておきたい。",
+      "canonical": "https://hirogarushumi.com/cat-vet-routine/"
+    },
+    {
+      "slug": "glenlivet-12-first-bottles",
+      "description": "自分が3本目に買ったウイスキーは、グレンリベット12年。選んだ理由は、グラスが付いていてお得だったから。",
+      "canonical": "https://hirogarushumi.com/glenlivet-12-first-bottles/"
+    },
+    {
+      "slug": "single-malt-label-guide",
+      "description": "ボトルを選ぶときは、ブランド名だけでなく、商品名、年数、容量、アルコール度数を一緒に見る。似たラベルでも別の商品はある。樽や香りの説明を読むのは、その1本を見分けてからで大丈夫。",
+      "canonical": "https://hirogarushumi.com/single-malt-label-guide/"
+    },
+    {
+      "slug": "sherry-cask-notes",
+      "description": "シェリーカスクが好きで、特に気に入っているのがグレンファークラス12年。香りを説明するなら、ぶどうパンに顔をうずめたみたいな感じだ。少し変な例えかもしれないけど、自分にはそれが一番しっくりくる。",
+      "canonical": "https://hirogarushumi.com/sherry-cask-notes/"
+    },
+    {
+      "slug": "it-data-work-flow",
+      "description": "今しているのは、データを加工する仕事。抽出したり、並べ替えたり、整理したりする。使うのはChatGPT、Codex、Excel、スプレッドシート。データ抽出をAIに頼むと一瞬でやってくれるので、本当に楽だと感じている。",
+      "canonical": "https://hirogarushumi.com/it-data-work-flow/"
+    },
+    {
+      "slug": "starting-it-without-specialty",
+      "description": "ITに興味を持った理由は、稼げそうだったから。それと、これからも需要がありそうだと思ったからだ。ただ、今の仕事にたどり着くまでには、なんだかんだ1年近くかかった。",
+      "canonical": "https://hirogarushumi.com/starting-it-without-specialty/"
+    },
+    {
+      "slug": "ai-data-extraction-checks",
+      "description": "AIで抽出した表は、件数だけでなく、残ったID、条件に合わない行の混入、空欄や先頭の0を確認する。ここでは架空の4行を使って、依頼文と正解例を比べてみる。自分の実務で毎回行っている手順の再現ではなく、確認方法を試すための練習です。",
+      "canonical": "https://hirogarushumi.com/ai-data-extraction-checks/"
+    },
+    {
+      "slug": "paws-green-deli-cat-food",
+      "description": "猫用のお試しセットの内容と、主食・トッピングの違いを紹介します。袋の数、保存方法、購入時の条件も確認しておきましょう。",
+      "canonical": "https://hirogarushumi.com/paws-green-deli-cat-food/"
+    },
+    {
+      "slug": "hario-cat-bowl-guide",
+      "description": "高さのある猫用食器「にゃんプレトール」を紹介。大きさや洗いやすさ、置き場所を決めるときのポイントをまとめました。",
+      "canonical": "https://hirogarushumi.com/hario-cat-bowl-guide/"
+    },
+    {
+      "slug": "mirai-cat-food-types",
+      "description": "低たんぱく・バランス・高エナジーの3タイプを比較。それぞれの違いと、療法食を選ぶ前に確認したいことを紹介します。",
+      "canonical": "https://hirogarushumi.com/mirai-cat-food-types/"
+    },
+    {
+      "slug": "m-and-cat-knit-bag",
+      "description": "猫のモチーフを、いつもの持ち物に。M&Co.のニットバッグとチャームを、サイズやデザインとあわせて紹介します。",
+      "canonical": "https://hirogarushumi.com/m-and-cat-knit-bag/"
+    },
+    {
+      "slug": "pet-sougi-110-cat-guide",
+      "description": "猫の葬儀を相談するときに知っておきたい、火葬プラン・見積もり・返骨のこと。ペット葬儀110番の案内をもとに整理しました。",
+      "canonical": "https://hirogarushumi.com/pet-sougi-110-cat-guide/"
+    },
+    {
+      "slug": "digxipop-cat-figure",
+      "description": "写真から猫のフィギュアを作るdigxipop。写真の選び方、仕上がりの確認、注文から発送までの流れを紹介します。",
+      "canonical": "https://hirogarushumi.com/digxipop-cat-figure/"
+    },
+    {
+      "slug": "withpety-nekokenshin",
+      "description": "コエンザイムQ10などを配合した猫用サプリ「毎日健心」。成分・錠剤の形・内容量と、購入前に確認したいことをまとめました。",
+      "canonical": "https://hirogarushumi.com/withpety-nekokenshin/"
+    },
+    {
+      "slug": "pontely-cat-dna-test",
+      "description": "猫用の遺伝子検査Pontelyについて、検査内容と3つのプランを紹介。申し込みから結果の確認までの流れもまとめました。",
+      "canonical": "https://hirogarushumi.com/pontely-cat-dna-test/"
+    },
+    {
+      "slug": "withpety-nekobihada",
+      "description": "猫用「毎日美肌」のPS-B1＆ローヤルゼリー配合タイプを紹介。成分と内容量、皮膚のケアを考えるときの確認点をまとめました。",
+      "canonical": "https://hirogarushumi.com/withpety-nekobihada/"
+    },
+    {
+      "slug": "onekosama-cat-tower",
+      "description": "おねこさまのキャットタワー2モデルを紹介。高さや設置方法に加え、猫の動きと部屋の広さに合わせた選び方を考えます。",
+      "canonical": "https://hirogarushumi.com/onekosama-cat-tower/"
+    },
+    {
+      "slug": "withpety-nekoryoukan",
+      "description": "肝臓の健康維持向けに案内される猫用サプリ「毎日良肝」。配合成分と内容量、購入前に確認しておきたいことを紹介します。",
+      "canonical": "https://hirogarushumi.com/withpety-nekoryoukan/"
+    },
+    {
+      "slug": "catlog-cat-monitor",
+      "description": "首輪で行動を記録するCatlogと、トイレの下で体重などを記録するCatlog Board。機能の違いと設置・利用条件を紹介します。",
+      "canonical": "https://hirogarushumi.com/catlog-cat-monitor/"
+    },
+    {
+      "slug": "withpety-nekoissho",
+      "description": "シニア猫の健康維持向けに案内される「毎日一緒」。DHA・EPAなどの成分、錠剤の形、購入時の確認点を紹介します。",
+      "canonical": "https://hirogarushumi.com/withpety-nekoissho/"
+    },
+    {
+      "slug": "pet-paradise-cat-toys",
+      "description": "洋ナシのけりぐるみと、かもめの猫じゃらし。見た目のかわいさだけでなく、遊び方や片付けるときの注意点も紹介します。",
+      "canonical": "https://hirogarushumi.com/pet-paradise-cat-toys/"
+    },
+    {
+      "slug": "canagan-dental-cat-food",
+      "description": "海藻由来の成分を配合したカナガンデンタル。主原料やカロリー、与える前に確認が必要な条件をまとめました。",
+      "canonical": "https://hirogarushumi.com/canagan-dental-cat-food/"
+    },
+    {
+      "slug": "canagan-chicken-salmon",
+      "description": "チキンとサーモンで迷ったら、原材料と成分表示を比べてみましょう。容量・原産国・カロリーの違いを紹介します。",
+      "canonical": "https://hirogarushumi.com/canagan-chicken-salmon/"
+    },
+    {
+      "slug": "mcadams-cat-chicken-turkey",
+      "description": "チキンとターキーを使い、オーブンで焼き上げた猫用フード。原材料、粒の特徴、購入時に確認したい条件を紹介します。",
+      "canonical": "https://hirogarushumi.com/mcadams-cat-chicken-turkey/"
+    },
+    {
+      "slug": "essential-jaguar-cat-food",
+      "description": "エッセンシャルの猫用フード「ジャガー」を紹介。肉と魚を組み合わせた原材料、リング形の粒、カロリーを確認できます。",
+      "canonical": "https://hirogarushumi.com/essential-jaguar-cat-food/"
+    },
+    {
+      "slug": "mognyan-cat-food-guide",
+      "description": "白身魚65%のモグニャン。原材料や粒のサイズ、今のフードから少しずつ切り替える方法、開封後の保存について紹介します。",
+      "canonical": "https://hirogarushumi.com/mognyan-cat-food-guide/"
+    }
+  ]
+}

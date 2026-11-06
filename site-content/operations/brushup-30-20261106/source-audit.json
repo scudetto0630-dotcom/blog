@@ -1,0 +1,160 @@
+{
+  "checked_at": "2026-11-06T03:38:19.386146+00:00",
+  "scope": "Official source reachability only; HTTP 200 does not establish availability, current pricing, or sale conditions. No affiliate clicks.",
+  "results": [
+    {
+      "slug": "paws-green-deli-cat-food",
+      "url": "https://paws-green-deli.com/",
+      "status": 200,
+      "final_url": "https://paws-green-deli.com/",
+      "sampled_bytes": 262144,
+      "result": "retrieved"
+    },
+    {
+      "slug": "hario-cat-bowl-guide",
+      "url": "https://shop.hariocorp.co.jp",
+      "status": 200,
+      "final_url": "https://shop.hariocorp.co.jp",
+      "sampled_bytes": 262144,
+      "result": "retrieved"
+    },
+    {
+      "slug": "mirai-cat-food-types",
+      "url": "https://mirai-cat.com/AF/",
+      "status": 200,
+      "final_url": "https://mirai-cat.com/AF/",
+      "sampled_bytes": 46349,
+      "result": "retrieved"
+    },
+    {
+      "slug": "m-and-cat-knit-bag",
+      "url": "https://www.m-and.co.jp/",
+      "status": 200,
+      "final_url": "https://www.m-and.co.jp/",
+      "sampled_bytes": 143876,
+      "result": "retrieved"
+    },
+    {
+      "slug": "pet-sougi-110-cat-guide",
+      "url": "https://aff.life-110.com/?st_site=pet_sougi&st_aff=a8",
+      "status": 200,
+      "final_url": "https://aff.life-110.com/?st_site=pet_sougi&st_aff=a8",
+      "sampled_bytes": 98830,
+      "result": "retrieved"
+    },
+    {
+      "slug": "digxipop-cat-figure",
+      "url": "https://www.digxipop.com/ja-jp",
+      "status": 200,
+      "final_url": "https://www.digxipop.com/ja-jp",
+      "sampled_bytes": 262144,
+      "result": "retrieved"
+    },
+    {
+      "slug": "withpety-nekokenshin",
+      "url": "https://withpety.com/products/nekokenshin/a8.html?ad_code=20800",
+      "status": 200,
+      "final_url": "https://withpety.com/products/nekokenshin/a8.html?ad_code=20800",
+      "sampled_bytes": 13708,
+      "result": "retrieved"
+    },
+    {
+      "slug": "pontely-cat-dna-test",
+      "url": "https://www.pontely.com/forowner/cat?ref=a8",
+      "status": 200,
+      "final_url": "https://www.pontely.com/forowner/%e7%8c%ab%e3%81%ae%e9%81%ba%e4%bc%9d%e5%ad%90%e6%a4%9c%e6%9f%bb?ref=a8",
+      "sampled_bytes": 61036,
+      "result": "retrieved"
+    },
+    {
+      "slug": "withpety-nekobihada",
+      "url": "https://withpety.com/products/nekobihada/a8.html?ad_code=2200",
+      "status": 200,
+      "final_url": "https://withpety.com/products/nekobihada/a8.html?ad_code=2200",
+      "sampled_bytes": 13650,
+      "result": "retrieved"
+    },
+    {
+      "slug": "onekosama-cat-tower",
+      "url": "https://oneko-sama.com/",
+      "status": 200,
+      "final_url": "https://oneko-sama.com/",
+      "sampled_bytes": 204906,
+      "result": "retrieved"
+    },
+    {
+      "slug": "withpety-nekoryoukan",
+      "url": "https://withpety.com/products/nekoryoukan/a8.html?ad_code=2400",
+      "status": 200,
+      "final_url": "https://withpety.com/products/nekoryoukan/a8.html?ad_code=2400",
+      "sampled_bytes": 14900,
+      "result": "retrieved"
+    },
+    {
+      "slug": "catlog-cat-monitor",
+      "url": "https://rabo.cat/catlog/",
+      "status": 200,
+      "final_url": "https://rabo.cat/catlog/",
+      "sampled_bytes": 262144,
+      "result": "retrieved"
+    },
+    {
+      "slug": "withpety-nekoissho",
+      "url": "https://withpety.com/products/nekoissho/a8.html?ad_code=20004",
+      "status": 200,
+      "final_url": "https://withpety.com/products/nekoissho/a8.html?ad_code=20004",
+      "sampled_bytes": 13374,
+      "result": "retrieved"
+    },
+    {
+      "slug": "pet-paradise-cat-toys",
+      "url": "https://shop.creativeyoko.co.jp/items?lcc=05",
+      "status": 200,
+      "final_url": "https://shop.creativeyoko.co.jp/items?lcc=05&du=2",
+      "sampled_bytes": 262144,
+      "result": "retrieved"
+    },
+    {
+      "slug": "canagan-dental-cat-food",
+      "url": "https://www.canagancatfood.co.jp/dental/CDC20003",
+      "status": 200,
+      "final_url": "https://www.canagancatfood.co.jp/dental/cart?a8=",
+      "sampled_bytes": 42471,
+      "result": "retrieved"
+    },
+    {
+      "slug": "canagan-chicken-salmon",
+      "url": "https://www.canagancatfood.co.jp/3201/",
+      "status": 200,
+      "final_url": "https://www.canagancatfood.co.jp/cart?a8=",
+      "sampled_bytes": 194115,
+      "result": "retrieved"
+    },
+    {
+      "slug": "mcadams-cat-chicken-turkey",
+      "url": "https://www.mcadamspetfoods.co.jp/catfood/MAC20000",
+      "status": 200,
+      "final_url": "https://www.mcadamspetfoods.co.jp/catfood/cart",
+      "sampled_bytes": 57749,
+      "result": "retrieved"
+    },
+    {
+      "slug": "essential-jaguar-cat-food",
+      "url": "https://www.essentialfoods.jp/products/detail/6001",
+      "status": 200,
+      "final_url": "https://www.essentialfoods.jp/products/detail/6001",
+      "sampled_bytes": 26470,
+      "result": "retrieved"
+    },
+    {
+      "slug": "mognyan-cat-food-guide",
+      "url": "https://www.mognyancatfood.co.jp/MGN20009/",
+      "status": 200,
+      "final_url": "https://www.mognyancatfood.co.jp/cart?a8=",
+      "sampled_bytes": 86505,
+      "result": "retrieved"
+    }
+  ],
+  "missing": [],
+  "needs_review": []
+}
