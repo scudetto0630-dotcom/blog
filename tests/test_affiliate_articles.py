@@ -24,6 +24,7 @@ class AffiliateTests(unittest.TestCase):
  def test_substance_structure_and_nonfabrication(self):
   for a in self.articles:
    with self.subTest(a=a['slug']):
+    self.assertTrue(a['title'].startswith('【ご紹介】'));self.assertEqual(a['title'].count('【ご紹介】'),1)
     s=a['content'];text=html.unescape(re.sub('<[^>]*>','',s));self.assertGreaterEqual(len(re.sub(r'\s+','',text)),1500)
     self.assertGreaterEqual(s.count('<h2 '),5);self.assertLessEqual(s.count('<h2 '),6);self.assertIn('<table>',s);self.assertNotRegex(s,r'未使用|使っていない|使ったことがない|使用写真では')
     self.assertNotRegex(s,r'TODO|HSH_IMAGE:|実際に使ってみた|飲ませてみた|購入しました|必ず治る|治療できます|100％安全')
