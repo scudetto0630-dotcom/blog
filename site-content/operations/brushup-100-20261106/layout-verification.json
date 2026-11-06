@@ -1,0 +1,82 @@
+{
+  "passed": 15,
+  "failed": 0,
+  "rows": [
+    {
+      "slug": "home",
+      "width": 1440,
+      "screenshot": "home-1440.png"
+    },
+    {
+      "slug": "category/cats",
+      "width": 1440,
+      "screenshot": "category-cats-1440.png"
+    },
+    {
+      "slug": "category/whisky",
+      "width": 1440,
+      "screenshot": "category-whisky-1440.png"
+    },
+    {
+      "slug": "mognyan-cat-food-guide",
+      "width": 1440,
+      "screenshot": "mognyan-cat-food-guide-1440.png"
+    },
+    {
+      "slug": "highball-measure-and-adjust",
+      "width": 1440,
+      "screenshot": "highball-measure-and-adjust-1440.png"
+    },
+    {
+      "slug": "home",
+      "width": 390,
+      "screenshot": "home-390.png"
+    },
+    {
+      "slug": "category/cats",
+      "width": 390,
+      "screenshot": "category-cats-390.png"
+    },
+    {
+      "slug": "category/whisky",
+      "width": 390,
+      "screenshot": "category-whisky-390.png"
+    },
+    {
+      "slug": "mognyan-cat-food-guide",
+      "width": 390,
+      "screenshot": "mognyan-cat-food-guide-390.png"
+    },
+    {
+      "slug": "highball-measure-and-adjust",
+      "width": 390,
+      "screenshot": "highball-measure-and-adjust-390.png"
+    },
+    {
+      "slug": "home",
+      "width": 320,
+      "screenshot": "home-320.png"
+    },
+    {
+      "slug": "category/cats",
+      "width": 320,
+      "screenshot": "category-cats-320.png"
+    },
+    {
+      "slug": "category/whisky",
+      "width": 320,
+      "screenshot": "category-whisky-320.png"
+    },
+    {
+      "slug": "mognyan-cat-food-guide",
+      "width": 320,
+      "screenshot": "mognyan-cat-food-guide-320.png"
+    },
+    {
+      "slug": "highball-measure-and-adjust",
+      "width": 320,
+      "screenshot": "highball-measure-and-adjust-320.png"
+    }
+  ],
+  "scope": "Public layout assertions and screenshots; no affiliate clicks, form submissions or private analytics"
+}

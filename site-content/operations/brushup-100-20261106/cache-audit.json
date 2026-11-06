@@ -1,0 +1,35 @@
+[
+  {
+    "url": "https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/reader.js?ver=1.30.1",
+    "status": 200,
+    "headers": {
+      "Cache-Control": null,
+      "Expires": null,
+      "Last-Modified": "Fri, 06 Nov 2026 03:44:10 GMT",
+      "Content-Type": "application/javascript",
+      "Content-Length": "13636"
+    }
+  },
+  {
+    "url": "https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/palette.css?ver=1.30.1",
+    "status": 200,
+    "headers": {
+      "Cache-Control": null,
+      "Expires": null,
+      "Last-Modified": "Fri, 06 Nov 2026 03:44:10 GMT",
+      "Content-Type": "text/css",
+      "Content-Length": "10722"
+    }
+  },
+  {
+    "url": "https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/photos/manmos-zip-window-240.webp",
+    "status": 200,
+    "headers": {
+      "Cache-Control": null,
+      "Expires": null,
+      "Last-Modified": "Fri, 06 Nov 2026 03:44:10 GMT",
+      "Content-Type": "image/webp",
+      "Content-Length": "9052"
+    }
+  }
+]

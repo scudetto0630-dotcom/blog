@@ -1,0 +1,602 @@
+[
+  {
+    "id": 1,
+    "item": "トップの体験談と商品紹介の分離",
+    "implementation": "home-template.php、hsh_studio_home_products",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 2,
+    "item": "PCヘッダーの縮小",
+    "implementation": "studio.js、studio.css",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 3,
+    "item": "上へ戻る",
+    "implementation": "studio.js",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 4,
+    "item": "画像読み込み中の表示",
+    "implementation": "studio.js、studio.css",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 5,
+    "item": "画像読み込み失敗時の代替表示",
+    "implementation": "studio.js、本番の画像失敗テスト",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 6,
+    "item": "端末別の余白",
+    "implementation": "studio.css、PC・390px・320px点検",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 7,
+    "item": "箇条書きの字下げと行間",
+    "implementation": "studio.css",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 8,
+    "item": "写真説明文の統一",
+    "implementation": "studio.css、photo-assets.json",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 9,
+    "item": "外部リンクの目印",
+    "implementation": "studio.js、既存目印との重複を除去",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 10,
+    "item": "公開日と更新日の区別",
+    "implementation": "hsh_studio_dates、初回公開日19件を復元・照合",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 11,
+    "item": "保存記事の並べ替え",
+    "implementation": "studio.js",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 12,
+    "item": "保存記事内検索",
+    "implementation": "studio.js",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 13,
+    "item": "保存解除の取り消し",
+    "implementation": "studio.js",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 14,
+    "item": "保存したURL一覧のコピー",
+    "implementation": "studio.js",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 15,
+    "item": "保存できない環境への案内",
+    "implementation": "reader.js、studio.js、保存無効テスト",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 16,
+    "item": "検索語の強調",
+    "implementation": "studio.js、文字列を安全にmarkへ分割",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 17,
+    "item": "検索欄のクリア",
+    "implementation": "studio.js",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 18,
+    "item": "ブランド名の表記ゆれ",
+    "implementation": "hsh_search_alias",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 19,
+    "item": "タイトル一致の検索優先",
+    "implementation": "WordPressのrelevance順を使用",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 20,
+    "item": "検索結果件数と条件",
+    "implementation": "search-template.php、category-template.php",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 21,
+    "item": "0件の条件解除",
+    "implementation": "category-template.php",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 22,
+    "item": "戻る操作時の条件維持",
+    "implementation": "条件付きURLと標準の戻る・pageshowを利用",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 23,
+    "item": "読む順番の説明",
+    "implementation": "hsh_start_routesの番号付き一覧と概要",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 24,
+    "item": "読了後の分野選択",
+    "implementation": "hsh_studio_postscript",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 25,
+    "item": "拡大写真の読み込み・失敗表示",
+    "implementation": "reader.js",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 26,
+    "item": "拡大写真のスワイプ",
+    "implementation": "reader.js",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 27,
+    "item": "写真の追加分類",
+    "implementation": "paws・whole、既存写真だけを分類",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 28,
+    "item": "写真ごとの説明文",
+    "implementation": "photo-assets.json、17枚の猫写真を個別に説明",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 29,
+    "item": "この記事で分かること",
+    "implementation": "本文見出しから生成するhsh-article-outline",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 30,
+    "item": "導入文の短縮",
+    "implementation": "案件19記事を改稿",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 31,
+    "item": "共通一般論の整理",
+    "implementation": "content-review.json、導入短縮と商品固有の注意点",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 32,
+    "item": "商品ごとの見出し",
+    "implementation": "product-reader-notes.jsonの19種類の見出し",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 33,
+    "item": "仕様上の制約",
+    "implementation": "案件ごとのhsh-product-scope",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 34,
+    "item": "注文・申し込みの流れ",
+    "implementation": "product-reader-notes.json",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 35,
+    "item": "単位表記の統一",
+    "implementation": "terminology.json、分量計算・比較表の単位を明示",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 36,
+    "item": "比較条件の統一",
+    "implementation": "比較表の共通列、優劣ランキングにはしない",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 37,
+    "item": "公式情報に基づくQ&A",
+    "implementation": "19商品・サービスに2問ずつ",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 38,
+    "item": "猫の用語説明",
+    "implementation": "hsh_studio_terms",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 39,
+    "item": "ウイスキー用語の説明リンク",
+    "implementation": "hsh_studio_terms、既存見出しへのリンク",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 40,
+    "item": "内容に近い商品リンク",
+    "implementation": "商品Q&Aの後に広告と分かる案内を追加",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 41,
+    "item": "リンク密集の整理",
+    "implementation": "外部目印の重複除去、無目的な広告リンク増設はしない",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 42,
+    "item": "古い記事名のリンク修正",
+    "implementation": "legacy-title-labels.json、完全一致の旧見出しのみ修正",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 43,
+    "item": "画像の代替テキスト",
+    "implementation": "photo-assets.json、写っている内容を記述",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 44,
+    "item": "関連見出しへの直接リンク",
+    "implementation": "用語説明の見出しリンク、各節へのコピーリンク",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 45,
+    "item": "ページ送りのSEO点検",
+    "implementation": "2ページ目のタイトルを区別、canonicalは既存のページ別URLを保持",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 46,
+    "item": "構造化データの照合",
+    "implementation": "audit-reader.py、headline・画像・H1の整合",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 47,
+    "item": "キャッシュ設定点検",
+    "implementation": "cache-audit.json。Last-Modifiedあり。Cache-Control未指定。サーバー設定は変更せずバージョン付きCSS/JSを更新",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 48,
+    "item": "不要なスクリプトの削減",
+    "implementation": "共有用growth.jsと記事用blog-next.jsの読み込みを対象ページに限定",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 49,
+    "item": "キーボード・読み上げ情報・文字拡大点検",
+    "implementation": "ローカル操作テスト、Chromeアクセシビリティツリー、本番文字サイズ変更",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 50,
+    "item": "定期の画面テスト",
+    "implementation": "browser-layoutジョブ、15画面の検証とスクリーンショット",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 51,
+    "item": "体験談の特集枠",
+    "implementation": "hsh_studio_featured",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 52,
+    "item": "読了時間",
+    "implementation": "hsh_studio_minutes。本文600文字/分の概算で表示",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 53,
+    "item": "分野別の記事数",
+    "implementation": "トップのカテゴリカード",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 54,
+    "item": "読む順番の現在位置",
+    "implementation": "hsh_studio_series",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 55,
+    "item": "最近読んだ記事",
+    "implementation": "studio.js、端末内に最大100記事",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 56,
+    "item": "閲覧履歴の停止と削除",
+    "implementation": "読書設定パネル",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 57,
+    "item": "読了マーク",
+    "implementation": "studio.js、明示操作で登録・解除",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 58,
+    "item": "保存一覧で読了済みを隠す",
+    "implementation": "studio.js",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 59,
+    "item": "読書記録の設定集約",
+    "implementation": "読み方・この端末の記録、まとめて削除",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 60,
+    "item": "保存記事数",
+    "implementation": "ヘッダーの保存件数",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 61,
+    "item": "目次の現在位置",
+    "implementation": "IntersectionObserverによる強調",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 62,
+    "item": "見出しへの移動先強調",
+    "implementation": "studio.js",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 63,
+    "item": "見出しリンクのコピー",
+    "implementation": "安定したIDを補完しコピー。追加見出しは目次にも反映",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 64,
+    "item": "本文内検索",
+    "implementation": "この記事の中を探す",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 65,
+    "item": "文字サイズ変更",
+    "implementation": "標準・大きめ・さらに大きく",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 66,
+    "item": "記事の印刷レイアウト",
+    "implementation": "studio.cssのprint指定",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 67,
+    "item": "チェックリストだけ印刷",
+    "implementation": "印刷用コピーを作り、完了後に破棄",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 68,
+    "item": "チェック進捗の保存",
+    "implementation": "端末内のhsh-sheet記録",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 69,
+    "item": "チェックとメモの解除",
+    "implementation": "各シートのすべて解除",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 70,
+    "item": "比較対象の絞り込み",
+    "implementation": "比較表のチェックボックス",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 71,
+    "item": "相違点の強調",
+    "implementation": "実際の列内容を比較して強調",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 72,
+    "item": "キャリーの採寸メモ",
+    "implementation": "既存の型番や寸法を捏造せず、確認項目と空欄メモ",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 73,
+    "item": "移動手段別の確認",
+    "implementation": "徒歩・車・公共交通のチェック欄",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 74,
+    "item": "猫用品の設置前確認",
+    "implementation": "食器・タワー・Catlogの設置メモ",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 75,
+    "item": "フード切り替えの記録",
+    "implementation": "日付・量・体調の自由記録シート",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 76,
+    "item": "診察で伝えるメモ",
+    "implementation": "通院記事の確認シート",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 77,
+    "item": "サプリとフード・薬の区分",
+    "implementation": "用語とサプリ記事の説明",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 78,
+    "item": "素材別の手入れ確認",
+    "implementation": "hsh_studio_care。実製品の説明書で確認すべき点を整理",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 79,
+    "item": "白州の展示写真の説明",
+    "implementation": "入口・日本・アイルランドの展示写真の説明を更新",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 80,
+    "item": "ウイスキーの印象の一覧",
+    "implementation": "既存の感想比較とhsh_growth_tastesを使用。本人未確認の香りは追加しない",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 81,
+    "item": "ハイボール分量計算",
+    "implementation": "hsh_studio_highball",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 82,
+    "item": "グラス容量と氷の区別",
+    "implementation": "液量合計・容量との差・氷の余地を区別",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 83,
+    "item": "感想の空欄メモ",
+    "implementation": "銘柄・日付・飲み方・香り・次の調整の記録シート",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 84,
+    "item": "データ加工の処理前後の例",
+    "implementation": "本文内の4行の架空データと抽出結果。ダウンロードは追加しない",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 85,
+    "item": "データ抽出条件の具体例",
+    "implementation": "一致条件、先頭の0、件数・合計の例",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 86,
+    "item": "Excel・スプレッドシート・CSVの違い",
+    "implementation": "本文内の説明",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 87,
+    "item": "依頼文のコピー",
+    "implementation": "抽出・並べ替え・重複確認の3種類",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 88,
+    "item": "練習用CSVファイル",
+    "implementation": "利用者の追加指示で除外。新規ファイルは作らず既存の練習CSV案内も非表示",
+    "status": "利用者指示で除外"
+  },
+  {
+    "id": 89,
+    "item": "練習例の期待結果",
+    "implementation": "本文内に対象ID2件と合計2700円を掲載。答えのCSVは追加しない",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 90,
+    "item": "記事統合の点検",
+    "implementation": "content-review.json。目的・処方の異なる記事は統合しない",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 91,
+    "item": "情報不足の記事の補強",
+    "implementation": "商品別の制約・Q&A、道具確認、用語、体験記事の読む順番を追加",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 92,
+    "item": "表記辞書",
+    "implementation": "terminology.json",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 93,
+    "item": "公式情報との照合表",
+    "implementation": "source-review.json、19案件の出典と注意点",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 94,
+    "item": "商品写真の種類・処方照合",
+    "implementation": "使用中の公式画像39点の既存記録を確認。毎日美肌PS-B1・毎日良肝の誤認防止テスト",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 95,
+    "item": "画像メタデータ点検",
+    "implementation": "公開用写真129点でEXIF・XMPなし",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 96,
+    "item": "フォームのエラー表示",
+    "implementation": "既存の欄別エラーとフォーカス移動を維持・確認。invalid時の属性も補助",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 97,
+    "item": "入力中の誤操作対策",
+    "implementation": "編集中の離脱警告。個人情報の下書きを自動保存しない",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 98,
+    "item": "更新前後の比較記録",
+    "implementation": "Git履歴、保護された更新前ZIP、WordPressの既存記事スナップショット",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 99,
+    "item": "更新失敗時の復旧手順",
+    "implementation": "RECOVERY.md、バージョン・ハッシュ・指紋照合。WordPressの一時バックアップを必須化した既存更新口を使用",
+    "status": "対応・確認済み"
+  },
+  {
+    "id": 100,
+    "item": "異常系テスト",
+    "implementation": "保存無効・不正JSON・コピー代替・画像失敗・印刷・入力検証を追加",
+    "status": "対応・確認済み"
+  }
+]
