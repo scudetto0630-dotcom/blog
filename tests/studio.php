@@ -13,6 +13,7 @@ check(strpos(hsh_studio_examples(),'download')===false,'user excluded practice C
 check(strpos(hsh_studio_featured(),'STORIES')!==false&&strpos(hsh_studio_home_products(),'商品紹介')!==false,'home separates original stories and product introductions');
 check(strpos(hsh_studio_series('manmos-cat-life'),'1 / 5')!==false,'reading route shows actual position');
 check(strpos(hsh_studio_care(),'取扱説明書')!==false,'material care defers unverified specifics to actual product instructions');
+$dateArticle=hsh_affiliate_articles()[0];$datePost=get_page_by_path($dateArticle['slug']);$dateResult=hsh_release_article(new Request(array('slug'=>$dateArticle['slug'],'expected'=>hsh_article_fingerprint($datePost))));$datePost=get_post($datePost->ID);$knownDate=new DateTimeImmutable($dateArticle['original_published_at']);check(!is_wp_error($dateResult)&&$datePost->post_date===$knownDate->format('Y-m-d H:i:s')&&$datePost->post_date_gmt===$knownDate->setTimezone(new DateTimeZone('UTC'))->format('Y-m-d H:i:s'),'article refresh restores and preserves verified publication date independently from modification date');
 echo "All studio checks passed. Total: $tests\n";
 $public=hsh_reader_catalog();
 $extras=hsh_studio_highball().hsh_studio_checklist('preview-test','確認シート',array('確認1','確認2')).hsh_studio_examples().hsh_brushup_comparison('cats').hsh_studio_product_notes('mognyan-cat-food-guide');

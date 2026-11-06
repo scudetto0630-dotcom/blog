@@ -12,7 +12,8 @@
     "source_status": "owner_supplied_official_page_snapshot",
     "source_url": "https://paws-green-deli.com/",
     "source_sha256": "8f19ecbaa7ef97b19cbc767c3f9c3f14de0b77fdb33e8599dfedadab4549b85d",
-    "revision": "reader-studio-20261106"
+    "revision": "reader-studio-20261106",
+    "original_published_at": "2026-11-04T01:38:03+09:00"
   },
   {
     "slug": "hario-cat-bowl-guide",
@@ -27,7 +28,8 @@
     "source_status": "owner_supplied_official_page_snapshot",
     "source_url": "https://shop.hariocorp.co.jp",
     "source_sha256": "40450e98e39ad44b0ef789f98180bc504591e86fdeeb670f099aec6e44f4d124",
-    "revision": "reader-studio-20261106"
+    "revision": "reader-studio-20261106",
+    "original_published_at": "2026-11-04T01:38:05+09:00"
   },
   {
     "slug": "mirai-cat-food-types",
@@ -42,7 +44,8 @@
     "source_status": "owner_supplied_official_page_snapshot",
     "source_url": "https://mirai-cat.com/AF/",
     "source_sha256": "c4a7460907b94dea0497a663335fd993b95c0494f3e7e72ac41aa9364c504109",
-    "revision": "reader-studio-20261106"
+    "revision": "reader-studio-20261106",
+    "original_published_at": "2026-11-04T01:38:07+09:00"
   },
   {
     "slug": "m-and-cat-knit-bag",
@@ -57,7 +60,8 @@
     "source_status": "owner_supplied_official_page_snapshot",
     "source_url": "https://www.m-and.co.jp/",
     "source_sha256": "c55c1fc74504db90858ebba549acdc6837c400eb7a34cdaa3f165c76cc8a53a1",
-    "revision": "reader-studio-20261106"
+    "revision": "reader-studio-20261106",
+    "original_published_at": "2026-11-04T01:38:09+09:00"
   },
   {
     "slug": "pet-sougi-110-cat-guide",
@@ -72,7 +76,8 @@
     "source_status": "owner_supplied_official_page_snapshot",
     "source_url": "https://aff.life-110.com/?st_site=pet_sougi&st_aff=a8",
     "source_sha256": "978d8ab6d6aca7d126b86d82c3d0216ba84e3dc206f7e5e021253a79687fb4e1",
-    "revision": "reader-studio-20261106"
+    "revision": "reader-studio-20261106",
+    "original_published_at": "2026-11-04T01:38:10+09:00"
   },
   {
     "slug": "digxipop-cat-figure",
@@ -87,7 +92,8 @@
     "source_status": "owner_supplied_official_page_snapshot",
     "source_url": "https://www.digxipop.com/ja-jp",
     "source_sha256": "06485473353ca07c2ae8a4e18de3521820615d3aa27b73783927a641a5ebd75d",
-    "revision": "reader-studio-20261106"
+    "revision": "reader-studio-20261106",
+    "original_published_at": "2026-11-04T01:38:11+09:00"
   },
   {
     "slug": "withpety-nekokenshin",
@@ -102,7 +108,8 @@
     "source_status": "owner_supplied_official_page_snapshot",
     "source_url": "https://withpety.com/products/nekokenshin/a8.html?ad_code=20800",
     "source_sha256": "0b6a0af405d43cbe478ea199ba270598f2fdf58a8e6322c51af9e3916fa80b3d",
-    "revision": "reader-studio-20261106"
+    "revision": "reader-studio-20261106",
+    "original_published_at": "2026-11-04T01:38:13+09:00"
   },
   {
     "slug": "pontely-cat-dna-test",
@@ -117,7 +124,8 @@
     "source_status": "owner_supplied_official_page_snapshot",
     "source_url": "https://www.pontely.com/forowner/cat?ref=a8",
     "source_sha256": "6d4083c6fc85735dfdeae1437d464bbb4519fb47a43b6f9b41d142ba798d6d71",
-    "revision": "reader-studio-20261106"
+    "revision": "reader-studio-20261106",
+    "original_published_at": "2026-11-04T01:38:14+09:00"
   },
   {
     "slug": "withpety-nekobihada",
@@ -132,7 +140,8 @@
     "source_status": "owner_supplied_official_page_snapshot",
     "source_url": "https://withpety.com/products/nekobihada/a8.html?ad_code=2200",
     "source_sha256": "47ada2369af0b7716df05f951f58facee58959aa370f053517d2d769b5a76b17",
-    "revision": "reader-studio-20261106"
+    "revision": "reader-studio-20261106",
+    "original_published_at": "2026-11-04T01:38:16+09:00"
   },
   {
     "slug": "onekosama-cat-tower",
@@ -147,7 +156,8 @@
     "source_status": "owner_supplied_official_page_snapshot",
     "source_url": "https://oneko-sama.com/",
     "source_sha256": "9111628ea2726d6eeb4ef76beefff48f000738aae50572c617deaeda4462c134",
-    "revision": "reader-studio-20261106"
+    "revision": "reader-studio-20261106",
+    "original_published_at": "2026-11-04T01:38:17+09:00"
   },
   {
     "slug": "withpety-nekoryoukan",
@@ -162,7 +172,8 @@
     "source_status": "owner_supplied_official_page_snapshot",
     "source_url": "https://withpety.com/products/nekoryoukan/a8.html?ad_code=2400",
     "source_sha256": "871d2dce432f7300247b928a71392694392630eeb65a4004a4038fb77b8e025d",
-    "revision": "reader-studio-20261106"
+    "revision": "reader-studio-20261106",
+    "original_published_at": "2026-11-04T01:38:18+09:00"
   },
   {
     "slug": "catlog-cat-monitor",
@@ -177,7 +188,8 @@
     "source_status": "owner_supplied_official_page_snapshot",
     "source_url": "https://rabo.cat/catlog/",
     "source_sha256": "831e1704c02b02f89ae4aaa1f0bd2b5fc0ec253b9f4f951d09943fc94720fad2",
-    "revision": "reader-studio-20261106"
+    "revision": "reader-studio-20261106",
+    "original_published_at": "2026-11-04T01:38:20+09:00"
   },
   {
     "slug": "withpety-nekoissho",
@@ -192,7 +204,8 @@
     "source_status": "owner_supplied_official_page_snapshot",
     "source_url": "https://withpety.com/products/nekoissho/a8.html?ad_code=20004",
     "source_sha256": "6fe34fa0c9612142337cef669a558a92470fc8aa0ca53dd818c56d436c308f57",
-    "revision": "reader-studio-20261106"
+    "revision": "reader-studio-20261106",
+    "original_published_at": "2026-11-04T01:38:21+09:00"
   },
   {
     "slug": "pet-paradise-cat-toys",
@@ -207,7 +220,8 @@
     "source_status": "official_live_verified",
     "source_url": "https://shop.creativeyoko.co.jp/items?lcc=05",
     "source_sha256": "e1a25cd4e0914b776689bb7d5dc617bd4e8ffbd15e43e3f827d5c03c37c81f61",
-    "revision": "reader-studio-20261106"
+    "revision": "reader-studio-20261106",
+    "original_published_at": "2026-11-05T00:16:58+09:00"
   },
   {
     "slug": "canagan-dental-cat-food",
@@ -222,7 +236,8 @@
     "source_status": "official_live_verified",
     "source_url": "https://www.canagancatfood.co.jp/dental/CDC20003",
     "source_sha256": "11c7ec9256b3e2597994394c313736b603aa73509cd51c706bb0714d55c94c42",
-    "revision": "reader-studio-20261106"
+    "revision": "reader-studio-20261106",
+    "original_published_at": "2026-11-05T00:16:59+09:00"
   },
   {
     "slug": "canagan-chicken-salmon",
@@ -237,7 +252,8 @@
     "source_status": "official_live_verified",
     "source_url": "https://www.canagancatfood.co.jp/3201/",
     "source_sha256": "ac8356363d3c23c4c72118033788592c638f031212aa2ebb9c38bbf646423e24",
-    "revision": "reader-studio-20261106"
+    "revision": "reader-studio-20261106",
+    "original_published_at": "2026-11-05T00:17:00+09:00"
   },
   {
     "slug": "mcadams-cat-chicken-turkey",
@@ -252,7 +268,8 @@
     "source_status": "official_live_verified",
     "source_url": "https://www.mcadamspetfoods.co.jp/catfood/MAC20000",
     "source_sha256": "e58f8debc111a0b5d3e600a7098cf38bcf7051119ddcf82c32aaf6cd951cd060",
-    "revision": "reader-studio-20261106"
+    "revision": "reader-studio-20261106",
+    "original_published_at": "2026-11-05T00:17:01+09:00"
   },
   {
     "slug": "essential-jaguar-cat-food",
@@ -267,7 +284,8 @@
     "source_status": "official_live_verified",
     "source_url": "https://www.essentialfoods.jp/products/detail/6001",
     "source_sha256": "0199802d25f070ececcf37490854eacb56913732bd31458dae7e7a4fef962252",
-    "revision": "reader-studio-20261106"
+    "revision": "reader-studio-20261106",
+    "original_published_at": "2026-11-05T00:17:02+09:00"
   },
   {
     "slug": "mognyan-cat-food-guide",
@@ -282,6 +300,7 @@
     "source_status": "official_live_verified",
     "source_url": "https://www.mognyancatfood.co.jp/MGN20009/",
     "source_sha256": "a1d97b6d6bd9c1d9eed578603053184715e82878584ff4a9f06bc87698c4e30c",
-    "revision": "reader-studio-20261106"
+    "revision": "reader-studio-20261106",
+    "original_published_at": "2026-11-05T00:17:03+09:00"
   }
 ]

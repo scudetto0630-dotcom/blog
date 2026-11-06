@@ -60,6 +60,7 @@ if(typeof IntersectionObserver!=='undefined'){const obs=new IntersectionObserver
 document.querySelectorAll('.toc a').forEach(a=>a.addEventListener('click',()=>{let id;try{id=decodeURIComponent(a.hash.slice(1));}catch{return;}const h=document.getElementById(id);if(h){h.classList.add('hsh-heading-target');setTimeout(()=>h.classList.remove('hsh-heading-target'),2200);}}));
 }
 
+for(const [selector,label] of [['.article-header .post-date','公開 '],['.article-header .post-update','更新 ']])for(const node of document.querySelectorAll(selector)){if(!node.querySelector('.hsh-date-label'))node.prepend(el('span',label,'hsh-date-label'));}
 for(const time of document.querySelectorAll('.hsh-post-grid time')){if(!time.querySelector('.hsh-date-label'))time.prepend(el('span','公開 ', 'hsh-date-label'));}
 for(const a of document.querySelectorAll('.hsh-post-grid>article>a')){const item=byPath.get(new URL(a.href).pathname);if(item&&records(doneKey).includes(item.id))a.append(el('span','読了済み','hsh-read-done'));}
 

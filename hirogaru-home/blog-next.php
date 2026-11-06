@@ -31,7 +31,10 @@ function hsh_release_article($request){
         if(!$p&&$d['expected']!==null)return new WP_Error('hsh_conflict','新規記事の指紋は空にしてください。',array('status'=>409));
         $category=get_term_by('slug',$a['topic'],'category');if(!$category)return new WP_Error('hsh_category','カテゴリーを確認できません。',array('status'=>409));
         $data=array('post_type'=>'post','post_author'=>$author,'post_status'=>'publish','post_name'=>$a['slug'],'post_title'=>sanitize_text_field($a['title']),'post_content'=>wp_kses_post($a['content']),'post_excerpt'=>sanitize_text_field($a['excerpt']),'post_category'=>array((int)$category->term_id),'comment_status'=>'closed');
-        if($p){hsh_remember_blog_post($p);$data['ID']=$p->ID;}else{$data['meta_input']=array('_hsh_bundle_owned'=>$a['slug']);}
+        if($p){hsh_remember_blog_post($p);$data['ID']=$p->ID;if(!empty($p->post_date))$data['post_date']=$p->post_date;if(!empty($p->post_date_gmt))$data['post_date_gmt']=$p->post_date_gmt;
+            // Restore the verified first-publication timestamp where the earlier updater reset it.
+            if(!empty($a['original_published_at'])){$original=new DateTimeImmutable($a['original_published_at']);$data['post_date']=$original->setTimezone(new DateTimeZone('Asia/Tokyo'))->format('Y-m-d H:i:s');$data['post_date_gmt']=$original->setTimezone(new DateTimeZone('UTC'))->format('Y-m-d H:i:s');}
+        }else{$data['meta_input']=array('_hsh_bundle_owned'=>$a['slug']);}
         $id=wp_insert_post(wp_slash($data),true);if(is_wp_error($id))return $id;
         update_post_meta($id,'the_page_meta_description',sanitize_text_field($a['excerpt']));
         update_post_meta($id,'_hsh_content_reviewed',$a['updated_at']);
@@ -146,8 +149,8 @@ add_filter('the_content',function($content){
 },25);
 add_action('wp_enqueue_scripts',function(){
     if(is_admin())return;
-    wp_enqueue_style('hsh-next',plugin_dir_url(__FILE__).'assets/blog-next.css',array(),'1.31.0');
-    if(hsh_reader_managed()||is_page())wp_enqueue_script('hsh-next',plugin_dir_url(__FILE__).'assets/blog-next.js',array(),'1.31.0',true);
+    wp_enqueue_style('hsh-next',plugin_dir_url(__FILE__).'assets/blog-next.css',array(),'1.31.1');
+    if(hsh_reader_managed()||is_page())wp_enqueue_script('hsh-next',plugin_dir_url(__FILE__).'assets/blog-next.js',array(),'1.31.1',true);
     wp_localize_script('hsh-next','hshBlogTools',array('reportUrl'=>rest_url('hirogaru/v1/blog-report'),'tokenUrl'=>rest_url('hirogaru/v1/blog-report-token')));
 },110);
 add_filter('template_include',function($template){return is_404()?__DIR__.'/not-found-template.php':$template;},102);
