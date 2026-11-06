@@ -1,0 +1,27 @@
+<?php
+require __DIR__.'/affiliate-articles.php';
+if(!defined('MINUTE_IN_SECONDS'))define('MINUTE_IN_SECONDS',60);
+require_once __DIR__.'/../hirogaru-home/reader-brushup.php';
+require_once __DIR__.'/../hirogaru-home/engagement.php';
+check(hsh_brushup_type('mognyan-cat-food-guide')==='product','affiliate articles classified as introductions');
+check(hsh_brushup_type('manmos-cat-life')==='story'&&hsh_brushup_type('cat-carrier-checklist')==='guide','experience and guide filters are distinct');
+check(hsh_brushup_choice(array('bad'))==='all'&&hsh_brushup_choice('product')==='product','invalid filter falls back without exposing arbitrary queries');
+$shop=hsh_brushup_shopping('mognyan-cat-food-guide');check(strpos($shop,'切り替え方')!==false&&strpos($shop,'休止・解約')!==false&&strpos($shop,'2026年11月4日')!==false,'food purchase block includes suitability, recurring purchase and source date');
+check(hsh_brushup_shopping('unknown')==='','non-catalog products cannot acquire invented shopping details');
+$compare=hsh_brushup_comparison('cats');check(substr_count($compare,'<tr>')===5&&strpos($compare,'data-label=')!==false&&strpos($compare,'ランキングではなく')!==false,'food comparison has four sourced products and mobile labels');
+check(strpos(hsh_brushup_comparison('whisky'),'ぶどうパン')!==false,'whisky comparison preserves owner words');
+check(substr_count(hsh_brushup_photo_stories(),'<article>')===3,'photo stories use existing supplied photographs');
+check(strpos(hsh_brushup_first_steps(),'初めての方へ')!==false,'homepage introduction uses public starter routes');
+check(substr_count(hsh_brushup_empty_search(),'<a href=')===3,'empty search provides real article recommendations');
+check(strpos(hsh_brushup_related('mognyan-cat-food-guide'),'カナガン')!==false,'food article gets contextual related food article');
+check(hsh_search_alias('アーボラリス')===hsh_search_alias('アルボラリス')&&hsh_search_alias('ウィスキー')==='ウイスキー','search variants converge');
+check(hsh_engagement_allowed('mognyan-cat-food-guide')&&!hsh_engagement_allowed('cat-carrier-checklist')&&!hsh_engagement_allowed('evil'),'click endpoint accepts only published owned affiliate posts');
+$_SERVER['HTTP_ORIGIN']='https://foreign.test';$r=hsh_engagement_receive(new Request(array('slug'=>'mognyan-cat-food-guide')));check(is_wp_error($r),'foreign-origin click event rejected');
+$_SERVER['HTTP_ORIGIN']='https://example.test';$_SERVER['HTTP_SEC_FETCH_SITE']='same-origin';$_SERVER['HTTP_DNT']='1';check(hsh_engagement_receive(new Request(array('slug'=>'mognyan-cat-food-guide')))===array('recorded'=>false),'DNT prevents aggregate event');unset($_SERVER['HTTP_DNT']);
+check(is_wp_error(hsh_engagement_receive(new Request(array('slug'=>'evil')))),'unknown click slug rejected');
+check(is_wp_error(hsh_engagement_receive(new Request(array('slug'=>'mognyan-cat-food-guide','url'=>'https://evil.test')))),'client cannot submit arbitrary destination');
+$_SERVER['REMOTE_ADDR']='192.0.2.1';$r=hsh_engagement_receive(new Request(array('slug'=>'mognyan-cat-food-guide')));check(!is_wp_error($r)&&$r['recorded'],'anonymous daily click total recorded locally');
+$rows=get_option('hsh_ad_click_counts');check(array_keys($rows[wp_date('Y-m-d')])===array('mognyan-cat-food-guide')&&strpos(json_encode($rows),'192.0.2.1')===false,'aggregate stores only date, slug and count');
+update_option('hsh_ad_click_counts',array('2026-10-10'=>array('mognyan-cat-food-guide'=>2),'2026-09-10'=>array('mognyan-cat-food-guide'=>9)),false);check(hsh_engagement_totals('2026-10')===array('mognyan-cat-food-guide'=>2),'monthly click report isolates requested month');
+$GLOBALS['test_admin_cap']=false;ob_start();hsh_engagement_admin();check(ob_get_clean()==='','engagement dashboard requires administration capability');
+echo "All brushup checks passed. Total including shared suites: $tests\n";

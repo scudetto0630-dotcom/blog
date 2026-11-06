@@ -72,10 +72,10 @@ add_action('wp_body_open', function() {
 });
 add_action('wp_enqueue_scripts', function() {
     if (!hsh_reader_scope()) return;
-    wp_enqueue_style('hsh-home', plugin_dir_url(__FILE__).'assets/home.css', array(), '1.29.0');
-    wp_enqueue_style('hsh-reader', plugin_dir_url(__FILE__).'assets/reader.css', array('hsh-growth'), '1.29.0');
-    wp_enqueue_script('hsh-reader', plugin_dir_url(__FILE__).'assets/reader.js', array(), '1.29.0', true);
-    wp_enqueue_style('hsh-palette', plugin_dir_url(__FILE__).'assets/palette.css', array('hsh-reader'), '1.29.0');
+    wp_enqueue_style('hsh-home', plugin_dir_url(__FILE__).'assets/home.css', array(), '1.30.0');
+    wp_enqueue_style('hsh-reader', plugin_dir_url(__FILE__).'assets/reader.css', array('hsh-growth'), '1.30.0');
+    wp_enqueue_script('hsh-reader', plugin_dir_url(__FILE__).'assets/reader.js', array(), '1.30.0', true);
+    wp_enqueue_style('hsh-palette', plugin_dir_url(__FILE__).'assets/palette.css', array('hsh-reader'), '1.30.0');
 }, 120);
 function hsh_reader_bootstrap(){return '<script>document.documentElement.classList.add("hsh-reader-js");</script>';}
 add_action('wp_head',function(){if(hsh_reader_scope())echo hsh_reader_bootstrap();},0);
@@ -110,6 +110,7 @@ function hsh_reader_gallery_filters() {
     return $out.'</div><p class="hsh-gallery-count" role="status" aria-live="polite">'.(int)$count.'枚の写真を表示しています</p>';
 }
 function hsh_reader_search_excerpt($content,$query,$length=135) {
+    $query=hsh_search_alias($query);
     $plain = trim(preg_replace('/\s+/u',' ',wp_strip_all_tags(strip_shortcodes($content))));
     $terms = preg_split('/\s+/u',trim((string)$query)); $offset=false;
     foreach($terms as $term) { if($term==='')continue; $hit=mb_stripos($plain,$term,0,'UTF-8'); if($hit!==false&&($offset===false||$hit<$offset))$offset=$hit; }

@@ -1057,6 +1057,11 @@
           "height": 1200,
           "bytes": 131300,
           "sha256": "867af6539b3d0ffc0ebed4999211097ed8523d0f107b63407daaf2805639b081"
+        },
+        "240": {
+          "file": "manmos-zip-window-240.webp",
+          "width": 240,
+          "height": 320
         }
       },
       "tags": [
@@ -1264,6 +1269,11 @@
           "file": "a8-collage-01-480.webp",
           "width": 480,
           "height": 320
+        },
+        {
+          "file": "a8-collage-01-240.webp",
+          "width": 240,
+          "height": 160
         }
       ],
       "source_photos": [
@@ -1287,6 +1297,11 @@
           "file": "a8-collage-02-480.webp",
           "width": 480,
           "height": 320
+        },
+        {
+          "file": "a8-collage-02-240.webp",
+          "width": 240,
+          "height": 160
         }
       ],
       "source_photos": [
@@ -1310,6 +1325,11 @@
           "file": "a8-collage-05-480.webp",
           "width": 480,
           "height": 320
+        },
+        {
+          "file": "a8-collage-05-240.webp",
+          "width": 240,
+          "height": 160
         }
       ],
       "source_photos": [
@@ -1333,6 +1353,11 @@
           "file": "a8-collage-06-480.webp",
           "width": 480,
           "height": 320
+        },
+        {
+          "file": "a8-collage-06-240.webp",
+          "width": 240,
+          "height": 160
         }
       ],
       "source_photos": [
@@ -1356,6 +1381,11 @@
           "file": "a8-collage-07-480.webp",
           "width": 480,
           "height": 320
+        },
+        {
+          "file": "a8-collage-07-240.webp",
+          "width": 240,
+          "height": 160
         }
       ],
       "source_photos": [
@@ -1379,6 +1409,11 @@
           "file": "a8-collage-10-480.webp",
           "width": 480,
           "height": 320
+        },
+        {
+          "file": "a8-collage-10-240.webp",
+          "width": 240,
+          "height": 160
         }
       ],
       "source_photos": [
@@ -1402,6 +1437,11 @@
           "file": "a8-collage-18-480.webp",
           "width": 480,
           "height": 320
+        },
+        {
+          "file": "a8-collage-18-240.webp",
+          "width": 240,
+          "height": 160
         }
       ],
       "source_photos": [
@@ -1425,6 +1465,11 @@
           "file": "a8-collage-19-480.webp",
           "width": 480,
           "height": 320
+        },
+        {
+          "file": "a8-collage-19-240.webp",
+          "width": 240,
+          "height": 160
         }
       ],
       "source_photos": [
@@ -1448,6 +1493,11 @@
           "file": "a8-collage-20-480.webp",
           "width": 480,
           "height": 320
+        },
+        {
+          "file": "a8-collage-20-240.webp",
+          "width": 240,
+          "height": 160
         }
       ],
       "source_photos": [
@@ -1471,6 +1521,11 @@
           "file": "a8-collage-21-480.webp",
           "width": 480,
           "height": 320
+        },
+        {
+          "file": "a8-collage-21-240.webp",
+          "width": 240,
+          "height": 160
         }
       ],
       "source_photos": [
@@ -1494,6 +1549,11 @@
           "file": "a8-collage-22-480.webp",
           "width": 480,
           "height": 320
+        },
+        {
+          "file": "a8-collage-22-240.webp",
+          "width": 240,
+          "height": 160
         }
       ],
       "source_photos": [
@@ -1517,6 +1577,11 @@
           "file": "a8-collage-23-480.webp",
           "width": 480,
           "height": 320
+        },
+        {
+          "file": "a8-collage-23-240.webp",
+          "width": 240,
+          "height": 160
         }
       ],
       "source_photos": [
@@ -1540,6 +1605,11 @@
           "file": "a8-collage-24-480.webp",
           "width": 480,
           "height": 320
+        },
+        {
+          "file": "a8-collage-24-240.webp",
+          "width": 240,
+          "height": 160
         }
       ],
       "source_photos": [
@@ -1667,6 +1737,11 @@
           "file": "official-a8-01-1-480.webp",
           "width": 480,
           "height": 480
+        },
+        {
+          "file": "official-a8-01-1-160.webp",
+          "width": 160,
+          "height": 160
         }
       ],
       "source_url": "https://paws-green-deli.com/cdn/shop/files/2_b22d2355-5f77-4351-97d5-b644c2042581.png?v=1781969969&width=1400",
@@ -1711,6 +1786,11 @@
           "file": "official-a8-02-1-480.webp",
           "width": 480,
           "height": 480
+        },
+        {
+          "file": "official-a8-02-1-160.webp",
+          "width": 160,
+          "height": 160
         }
       ],
       "source_url": "https://shop.hariocorp.co.jp/cdn/shop/files/PTS-NYT-W.jpg?v=1736149905&width=533",
@@ -1750,7 +1830,13 @@
       "width": 480,
       "height": 480,
       "sha256": "6128c8e33b24bef8c0d70d2a8e4bc246669889027a79591290c4a249b7f7003a",
-      "variants": [],
+      "variants": [
+        {
+          "file": "official-a8-05-1-160.webp",
+          "width": 160,
+          "height": 160
+        }
+      ],
       "source_url": "https://shizenno-mori.com/images/item_box_DCLT.jpg",
       "source_page": "https://mirai-cat.com/AF/",
       "retrieved_at": "2026-11-04",
@@ -1803,6 +1889,11 @@
           "file": "official-a8-06-1-480.webp",
           "width": 480,
           "height": 480
+        },
+        {
+          "file": "official-a8-06-1-160.webp",
+          "width": 160,
+          "height": 160
         }
       ],
       "source_url": "https://baseec-img-mng.akamaized.net/images/item/origin/7d86186b07be6de2846a5dc2f1701351.jpg?imformat=generic&q=90&im=Resize,width=640,type=normal",
@@ -1847,6 +1938,11 @@
           "file": "official-a8-07-1-480.webp",
           "width": 480,
           "height": 270
+        },
+        {
+          "file": "official-a8-07-1-160.webp",
+          "width": 160,
+          "height": 90
         }
       ],
       "source_url": "https://aff.life-110.com/verticalsites/pet_sougi/img/desktop/img_lp02.png",
@@ -1891,6 +1987,11 @@
           "file": "official-a8-10-1-480.webp",
           "width": 284,
           "height": 480
+        },
+        {
+          "file": "official-a8-10-1-160.webp",
+          "width": 160,
+          "height": 271
         }
       ],
       "source_url": "https://cdn.shopify.com/s/files/1/0956/8128/2411/files/IMG_8419_1_640x900.jpg.webp?v=1776341139&width=640",
@@ -1935,6 +2036,11 @@
           "file": "official-a8-12-1-480.webp",
           "width": 400,
           "height": 480
+        },
+        {
+          "file": "official-a8-12-1-160.webp",
+          "width": 160,
+          "height": 192
         }
       ],
       "source_url": "https://shop.creativeyoko.co.jp/img01/w_750.h_750/trim_ofmgp_itemd8630e26cb9911f19a7f0242ac110005.jpg?ts=202610190848",
@@ -1979,6 +2085,11 @@
           "file": "official-a8-13-1-480.webp",
           "width": 480,
           "height": 335
+        },
+        {
+          "file": "official-a8-13-1-160.webp",
+          "width": 160,
+          "height": 112
         }
       ],
       "source_url": "https://www.canagancatfood.co.jp/public/images/default/canagancatfood/dental/sec01_03.png",
@@ -2018,7 +2129,13 @@
       "width": 145,
       "height": 277,
       "sha256": "e09fa23b6b024c346b20b10ac3c58c42a1fcca84c2d0587967cf37ff441473a9",
-      "variants": [],
+      "variants": [
+        {
+          "file": "official-a8-14-1-160.webp",
+          "width": 145,
+          "height": 277
+        }
+      ],
       "source_url": "https://www.canagancatfood.co.jp/public/images/default/canagancatfood/new/product.png",
       "source_page": "https://www.canagancatfood.co.jp/3201/",
       "retrieved_at": "2026-11-04",
@@ -2055,6 +2172,11 @@
           "file": "official-a8-15-1-480.webp",
           "width": 431,
           "height": 480
+        },
+        {
+          "file": "official-a8-15-1-160.webp",
+          "width": 160,
+          "height": 178
         }
       ],
       "source_url": "https://www.mcadamspetfoods.co.jp/public/images/default/mcadamspetfoods/catfood/img_01.webp",
@@ -2099,6 +2221,11 @@
           "file": "official-a8-16-1-480.webp",
           "width": 480,
           "height": 480
+        },
+        {
+          "file": "official-a8-16-1-160.webp",
+          "width": 160,
+          "height": 160
         }
       ],
       "source_url": "https://www.essentialfoods.jp/public/images/default/essentialfoods/products/package/jcf.jpg",
@@ -2143,6 +2270,11 @@
           "file": "official-a8-17-1-480.webp",
           "width": 480,
           "height": 278
+        },
+        {
+          "file": "official-a8-17-1-160.webp",
+          "width": 160,
+          "height": 93
         }
       ],
       "source_url": "https://www.mognyancatfood.co.jp/public/images/default/mognyancatfood/id6803/sec_b_tyukiari_img10.jpg",
@@ -2187,6 +2319,11 @@
           "file": "official-a8-18-1-480.webp",
           "width": 360,
           "height": 480
+        },
+        {
+          "file": "official-a8-18-1-160.webp",
+          "width": 160,
+          "height": 213
         }
       ],
       "source_url": "https://withpety.com/products/nekokenshin/img202104ama/1600x1600_slide_01.jpg",
@@ -2231,6 +2368,11 @@
           "file": "official-a8-19-1-480.webp",
           "width": 480,
           "height": 209
+        },
+        {
+          "file": "official-a8-19-1-160.webp",
+          "width": 160,
+          "height": 70
         }
       ],
       "source_url": "https://www.pontely.com/wp-content/uploads/card_sample_3_cat.png",
@@ -2275,6 +2417,11 @@
           "file": "official-a8-20-psb1-480.webp",
           "width": 480,
           "height": 253
+        },
+        {
+          "file": "official-a8-20-psb1-160.webp",
+          "width": 160,
+          "height": 84
         }
       ],
       "source_url": "https://withpety.com/products/nekobihada/img202112lp/pc_top.jpg",
@@ -2319,6 +2466,11 @@
           "file": "official-a8-21-1-480.webp",
           "width": 369,
           "height": 480
+        },
+        {
+          "file": "official-a8-21-1-160.webp",
+          "width": 160,
+          "height": 208
         }
       ],
       "source_url": "https://d2w53g1q050m78.cloudfront.net/onekosamacom/ec_assets/d3d680e3687d55c2625269afabbc5c89982962e8-original.jpg?1783587000",
@@ -2363,6 +2515,11 @@
           "file": "official-a8-22-1-480.webp",
           "width": 360,
           "height": 480
+        },
+        {
+          "file": "official-a8-22-1-160.webp",
+          "width": 160,
+          "height": 213
         }
       ],
       "source_url": "https://withpety.com/products/nekoryoukan/img202104ama/1600x1600_slide_01.jpg",
@@ -2407,6 +2564,11 @@
           "file": "official-a8-23-1-480.webp",
           "width": 360,
           "height": 480
+        },
+        {
+          "file": "official-a8-23-1-160.webp",
+          "width": 160,
+          "height": 213
         }
       ],
       "source_url": "https://rabo.cat/static/473ebe9affd3167a7092a85476ae2366/d22e9/StarterSet.jpg",
@@ -2451,6 +2613,11 @@
           "file": "official-a8-24-1-480.webp",
           "width": 360,
           "height": 480
+        },
+        {
+          "file": "official-a8-24-1-160.webp",
+          "width": 160,
+          "height": 213
         }
       ],
       "source_url": "https://withpety.com/products/nekoissho/img202104ama/1600x1600_slide_01.jpg",
@@ -2495,6 +2662,11 @@
           "file": "a8-collage-12-480.webp",
           "width": 480,
           "height": 320
+        },
+        {
+          "file": "a8-collage-12-240.webp",
+          "width": 240,
+          "height": 160
         }
       ],
       "source_photos": [
@@ -2518,6 +2690,11 @@
           "file": "a8-collage-13-480.webp",
           "width": 480,
           "height": 320
+        },
+        {
+          "file": "a8-collage-13-240.webp",
+          "width": 240,
+          "height": 160
         }
       ],
       "source_photos": [
@@ -2541,6 +2718,11 @@
           "file": "a8-collage-14-480.webp",
           "width": 480,
           "height": 320
+        },
+        {
+          "file": "a8-collage-14-240.webp",
+          "width": 240,
+          "height": 160
         }
       ],
       "source_photos": [
@@ -2564,6 +2746,11 @@
           "file": "a8-collage-15-480.webp",
           "width": 480,
           "height": 320
+        },
+        {
+          "file": "a8-collage-15-240.webp",
+          "width": 240,
+          "height": 160
         }
       ],
       "source_photos": [
@@ -2587,6 +2774,11 @@
           "file": "a8-collage-16-480.webp",
           "width": 480,
           "height": 320
+        },
+        {
+          "file": "a8-collage-16-240.webp",
+          "width": 240,
+          "height": 160
         }
       ],
       "source_photos": [
@@ -2610,6 +2802,11 @@
           "file": "a8-collage-17-480.webp",
           "width": 480,
           "height": 320
+        },
+        {
+          "file": "a8-collage-17-240.webp",
+          "width": 240,
+          "height": 160
         }
       ],
       "source_photos": [
