@@ -31,6 +31,7 @@ const fs=require('fs'),path=require('path'),assert=require('node:assert/strict')
      });assert.ok(contrast>=4.5,'card heading contrast '+contrast);
     }
     if(!preview&&slug.includes('cat-food'))assert.ok((await p.locator('h1').innerText()).startsWith('【ご紹介】'));
+    await p.locator('.hsh-art img,.hsh-post-grid img').evaluateAll(async imgs=>{for(const i of imgs){i.loading='eager';await i.decode();if(!i.naturalWidth)throw Error('Image failed to load');}});
     if([1440,390].includes(width)&&['','category/cats','mognyan-cat-food-guide'].includes(slug))await p.screenshot({path:'/tmp/hsh-design-20261106/'+(preview?'preview-':'live-')+(slug.replaceAll('/','-')||'home')+'-'+width+'.png',fullPage:false});
     count++;console.log('CHECK',width,slug||'home');
    }

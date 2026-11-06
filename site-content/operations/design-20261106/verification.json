@@ -1,0 +1,17 @@
+{
+  "version": "1.29.0",
+  "deployment_commit": "772c5ab",
+  "affiliate_titles_updated": 19,
+  "palette_browser_checks": 40,
+  "affiliate_browser_checks": 76,
+  "reader_audit_problems": 0,
+  "viewports": [
+    1440,
+    1024,
+    768,
+    390,
+    320
+  ],
+  "image_decode_verified": true,
+  "affiliate_links_clicked": 0
+}
