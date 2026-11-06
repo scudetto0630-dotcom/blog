@@ -14,7 +14,8 @@ function hsh_local_footer_assets($html) {
         return $m[1].esc_url(plugin_dir_url(__FILE__).'assets/vendor/clipboard-1.5.13.min.js').$m[2];
     },$html);
     $html=function_exists('hsh_growth_rendered')?hsh_growth_rendered($html):$html;
-    return function_exists('hsh_reader_rendered')?hsh_reader_rendered($html):$html;
+    $html=function_exists('hsh_reader_rendered')?hsh_reader_rendered($html):$html;
+    return function_exists('hsh_studio_rendered')?hsh_studio_rendered($html):$html;
 }
 // Cocoon prints this legacy tag after wp_footer, so filter the rendered HTML.
 // WordPress flushes the buffer on shutdown; feeds, REST and admin do not use templates.
@@ -31,7 +32,7 @@ function hsh_topic_reading_route($topic) {
     $routes=array(
         'cats'=>array('サイズを確認する'=>'cat-carrier-checklist-5','運び方を考える'=>'cat-carrier-checklist-2','確認メモを保存する'=>'cat-carrier-checklist-checklist'),
         'whisky'=>array('分量を確認する'=>'highball-measure-and-adjust-0','味と炭酸の違いを調べる'=>'highball-measure-and-adjust-2','配合メモを保存する'=>'highball-measure-and-adjust-checklist'),
-        'it-freelance'=>array('元ファイルを残す'=>'csv-import-seven-checks-0','先頭の0を確認する'=>'csv-import-seven-checks-3','確認メモと練習用CSV'=>'csv-import-seven-checks-checklist'),
+        'it-freelance'=>array('元ファイルを残す'=>'csv-import-seven-checks-0','先頭の0を確認する'=>'csv-import-seven-checks-3','作業前の確認メモ'=>'csv-import-seven-checks-checklist'),
     );
     if(!isset($routes[$topic]))return '';
     $details=hsh_topic_details();$post=get_page_by_path($details[$topic][2],OBJECT,'post');

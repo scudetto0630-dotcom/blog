@@ -8,7 +8,7 @@
       "sha256": "29d95927c7d7e67d8fc091bf3ad73a46f056e7d61cb246b831c2d493eb016471",
       "bytes": 132160,
       "subject": "manmos",
-      "alt": "まんもすの顔のアップ。管理人提供の写真です。",
+      "alt": "まんもすの顔のアップ",
       "caption": "まんもす（提供写真）",
       "dhash": "0909888c8c8c8c99",
       "variants": {
@@ -32,7 +32,7 @@
       "sha256": "e029bee79d5eb9f0de9c884d463b1894b9051bc73107925ba0c0f1babf02ed20",
       "bytes": 113918,
       "subject": "manmos",
-      "alt": "茶色の長い毛をしたまんもすの後ろ姿。管理人提供の写真です。",
+      "alt": "茶色の長い毛をしたまんもすの後ろ姿",
       "caption": "まんもすの後ろ姿（提供写真）",
       "dhash": "1e1f0e0d2d3f9bd7",
       "variants": {
@@ -56,7 +56,7 @@
       "sha256": "9add35497d7c9fee07bd3f6f6060821d734f8dc6c8bf7cabef65b4c18a3819c1",
       "bytes": 42162,
       "subject": "manmos",
-      "alt": "布団の上で体を伸ばしているまんもす。管理人提供の写真です。",
+      "alt": "布団の上で体を伸ばしているまんもす",
       "caption": "体を伸ばしたまんもす（提供写真）",
       "dhash": "9d2433233220298c",
       "variants": {
@@ -70,7 +70,8 @@
       },
       "tags": [
         "relax",
-        "sleep"
+        "sleep",
+        "whole"
       ]
     },
     "manmos-tower": {
@@ -81,7 +82,7 @@
       "sha256": "7169e245b731d0c48e0980ac404aebb83bb21c27aeeb56472a6aafa65d8912e9",
       "bytes": 59702,
       "subject": "manmos",
-      "alt": "キャットタワーの上にいるまんもす。管理人提供の写真です。",
+      "alt": "キャットタワーの上にいるまんもす",
       "caption": "まんもす（提供写真）",
       "dhash": "13038488185a120e",
       "variants": {
@@ -106,7 +107,7 @@
       "sha256": "22327bf8a1939f2f3a915069eaa8b47465791484099fff7644fc99ea3c2f6cad",
       "bytes": 115430,
       "subject": "manmos",
-      "alt": "まんもすの提供写真を参考に、ソファでくつろぐ姿を作成したAI生成画像です。",
+      "alt": "まんもすの写真を参考に、ソファでくつろぐ姿を作成したAI生成画像です。",
       "caption": "提供写真を参考にしたAI生成画像です。",
       "dhash": "4536bcb0b2b2e2c2"
     },
@@ -118,7 +119,7 @@
       "sha256": "5d18ef9b4d1e759c6d59edb8eabfdf33bcafdef14257d21241eb5444d36148e8",
       "bytes": 118604,
       "subject": "manmos",
-      "alt": "まんもすの提供写真を参考に、布のねこじゃらしを見る姿を作成したAI生成画像です。",
+      "alt": "まんもすの写真を参考に、布のねこじゃらしを見る姿を作成したAI生成画像です。",
       "caption": "提供写真を参考にしたAI生成画像です。",
       "dhash": "010be3e3e1c2d0d6"
     },
@@ -181,7 +182,7 @@
       "kind": "provided",
       "subject": "manmos",
       "caption": "まんもす（提供写真）",
-      "alt": "正面から撮影したまんもすの顔。管理人提供の写真です。",
+      "alt": "正面から撮影したまんもすの顔",
       "sha256": "d30cbb751777351301e25a5d19687664570007195dc0550caf7512754e019572",
       "bytes": 180630,
       "dhash": "1f57664e0c2c98ac",
@@ -205,7 +206,7 @@
       "kind": "provided",
       "subject": "manmos",
       "caption": "横になったまんもす（提供写真）",
-      "alt": "横になって顔をこちらへ向けるまんもす。管理人提供の写真です。",
+      "alt": "横になって顔をこちらへ向けるまんもす",
       "sha256": "59b995b9da073996a3963d6fa6f95cefeb62b39d92b3f42bd75722b2de8912e5",
       "bytes": 145584,
       "dhash": "8393bb2b2b33171c",
@@ -229,7 +230,7 @@
       "kind": "provided",
       "subject": "manmos",
       "caption": "座っているまんもす（提供写真）",
-      "alt": "後ろ脚を前へ伸ばして座っているまんもす。管理人提供の写真です。",
+      "alt": "後ろ脚を前へ伸ばして座っているまんもす",
       "sha256": "c7fa64ad3039d9197f6a23ebad8ef8191487bab52e79be11985a1433c8b3231c",
       "bytes": 88502,
       "dhash": "e626b33333277362",
@@ -243,7 +244,8 @@
         }
       },
       "tags": [
-        "relax"
+        "relax",
+        "whole"
       ]
     },
     "article-carrier": {
@@ -663,7 +665,7 @@
       "height": 900,
       "kind": "provided",
       "subject": "manmos",
-      "alt": "窓のそばで顔をこちらへ向けるまんもす。管理人提供の写真です。",
+      "alt": "窓のそばで顔をこちらへ向けるまんもす",
       "caption": "まんもす（提供写真）",
       "sha256": "dfcdfe975cb76adac87430d07a024bbf3ab25c173cd9311a784f6e74ced463c0",
       "bytes": 128288,
@@ -1129,7 +1131,9 @@
         }
       },
       "tags": [
-        "relax"
+        "relax",
+        "whole",
+        "paws"
       ]
     },
     "manmos-zip-groom": {
@@ -1251,7 +1255,8 @@
       },
       "tags": [
         "sleep",
-        "relax"
+        "relax",
+        "whole"
       ]
     },
     "a8-collage-01": {
@@ -2652,7 +2657,7 @@
       "kind": "generated",
       "subject": "manmos",
       "rights": "generated",
-      "alt": "まんもすの提供写真をもとにしたコラージュ表紙",
+      "alt": "まんもすの写真をもとにしたコラージュ表紙",
       "caption": "提供写真を元にしたAI生成コラージュ",
       "width": 1200,
       "height": 800,
@@ -2680,7 +2685,7 @@
       "kind": "generated",
       "subject": "manmos",
       "rights": "generated",
-      "alt": "まんもすの提供写真をもとにしたコラージュ表紙",
+      "alt": "まんもすの写真をもとにしたコラージュ表紙",
       "caption": "提供写真を元にしたAI生成コラージュ",
       "width": 1200,
       "height": 800,
@@ -2708,7 +2713,7 @@
       "kind": "generated",
       "subject": "manmos",
       "rights": "generated",
-      "alt": "まんもすの提供写真をもとにしたコラージュ表紙",
+      "alt": "まんもすの写真をもとにしたコラージュ表紙",
       "caption": "提供写真を元にしたAI生成コラージュ",
       "width": 1200,
       "height": 800,
@@ -2736,7 +2741,7 @@
       "kind": "generated",
       "subject": "manmos",
       "rights": "generated",
-      "alt": "まんもすの提供写真をもとにしたコラージュ表紙",
+      "alt": "まんもすの写真をもとにしたコラージュ表紙",
       "caption": "提供写真を元にしたAI生成コラージュ",
       "width": 1200,
       "height": 800,
@@ -2764,7 +2769,7 @@
       "kind": "generated",
       "subject": "manmos",
       "rights": "generated",
-      "alt": "まんもすの提供写真をもとにしたコラージュ表紙",
+      "alt": "まんもすの写真をもとにしたコラージュ表紙",
       "caption": "提供写真を元にしたAI生成コラージュ",
       "width": 1200,
       "height": 800,
@@ -2792,7 +2797,7 @@
       "kind": "generated",
       "subject": "manmos",
       "rights": "generated",
-      "alt": "まんもすの提供写真をもとにしたコラージュ表紙",
+      "alt": "まんもすの写真をもとにしたコラージュ表紙",
       "caption": "提供写真を元にしたAI生成コラージュ",
       "width": 1200,
       "height": 800,

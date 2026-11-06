@@ -14,7 +14,7 @@ function hsh_growth_summaries(){return array(
 'it-data-work-flow'=>'抽出や並び替えなど、今の仕事でしているデータ加工とAIの使いどころ。',
 'starting-it-without-specialty'=>'ITに興味を持った理由と、今の仕事にたどり着くまでの約1年。',
 'ai-data-extraction-checks'=>'架空の表で、抽出条件や件数をどう確かめるか試します。',
-'csv-import-seven-checks'=>'元ファイル、文字コード、先頭の0など、取り込み前の確認と練習用CSV。');}
+'csv-import-seven-checks'=>'元ファイル、文字コード、先頭の0など、取り込み前に確かめたいこと。');}
 function hsh_growth_next($slug){$pairs=array(
 'before-welcoming-cat'=>'manmos-cat-life','manmos-cat-life'=>'cat-carrier-checklist','cat-carrier-checklist'=>'cat-vet-routine','cat-vet-routine'=>'cat-carrier-checklist','cat-teaser-small-parts'=>'manmos-cat-life',
 'glenlivet-12-first-bottles'=>'sherry-cask-notes','sherry-cask-notes'=>'single-malt-label-guide','single-malt-label-guide'=>'glenlivet-12-first-bottles','highball-measure-and-adjust'=>'glenlivet-12-first-bottles',
@@ -56,7 +56,7 @@ function hsh_growth_updates(){
     return $out.'</ul><p>内容の訂正に関する方針は、<a href="'.esc_url(home_url('/hsh-editorial/')).'">記事・広告について</a>にまとめています。</p></section>';
 }
 add_shortcode('hsh_manmos_gallery','hsh_growth_gallery');add_shortcode('hsh_whisky_notes','hsh_growth_whisky');add_shortcode('hsh_updates','hsh_growth_updates');
-add_action('wp_enqueue_scripts',function(){wp_enqueue_style('hsh-growth',plugin_dir_url(__FILE__).'assets/growth.css',array('hsh-reading'),'1.30.1');wp_enqueue_script('hsh-growth',plugin_dir_url(__FILE__).'assets/growth.js',array(),'1.30.1',true);},110);
+add_action('wp_enqueue_scripts',function(){wp_enqueue_style('hsh-growth',plugin_dir_url(__FILE__).'assets/growth.css',array('hsh-reading'),'1.31.0');if(hsh_reader_managed())wp_enqueue_script('hsh-growth',plugin_dir_url(__FILE__).'assets/growth.js',array(),'1.31.0',true);},110);
 add_filter('the_content',function($content){
     if(!is_singular('post')||!in_the_loop()||!is_main_query())return $content;$p=get_post();if(!hsh_owned_blog_post($p))return $content;
     $slug=hsh_growth_next($p->post_name);$next=$slug?get_page_by_path($slug,OBJECT,'post'):null;$summaries=hsh_growth_summaries();

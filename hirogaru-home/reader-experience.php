@@ -8,7 +8,7 @@ function hsh_reader_catalog() {
         $p = get_page_by_path($a['slug'], OBJECT, 'post');
         if (!$p || $p->post_status !== 'publish') continue;
         $photo = hsh_photo_for_slug($a['slug']);
-        $rows[] = array('id'=>$a['slug'], 'title'=>$p->post_title, 'url'=>get_permalink($p), 'topic'=>$a['topic'], 'summary'=>hsh_growth_summaries()[$a['slug']]??'', 'image'=>$photo?plugin_dir_url(__FILE__).'assets/photos/'.$photo['file']:'');
+        $rows[] = array('id'=>$a['slug'], 'title'=>$p->post_title, 'url'=>get_permalink($p), 'topic'=>$a['topic'], 'summary'=>hsh_growth_summaries()[$a['slug']]??$p->post_excerpt,'minutes'=>function_exists('hsh_studio_minutes')?hsh_studio_minutes($p->post_content):1, 'image'=>$photo?plugin_dir_url(__FILE__).'assets/photos/'.$photo['file']:'');
     }
     $known=array_column($rows,'id');
     foreach(get_posts(array('post_type'=>'post','post_status'=>'publish','numberposts'=>500,'orderby'=>'date','order'=>'DESC')) as $p){
@@ -72,10 +72,10 @@ add_action('wp_body_open', function() {
 });
 add_action('wp_enqueue_scripts', function() {
     if (!hsh_reader_scope()) return;
-    wp_enqueue_style('hsh-home', plugin_dir_url(__FILE__).'assets/home.css', array(), '1.30.1');
-    wp_enqueue_style('hsh-reader', plugin_dir_url(__FILE__).'assets/reader.css', array('hsh-growth'), '1.30.1');
-    wp_enqueue_script('hsh-reader', plugin_dir_url(__FILE__).'assets/reader.js', array(), '1.30.1', true);
-    wp_enqueue_style('hsh-palette', plugin_dir_url(__FILE__).'assets/palette.css', array('hsh-reader'), '1.30.1');
+    wp_enqueue_style('hsh-home', plugin_dir_url(__FILE__).'assets/home.css', array(), '1.31.0');
+    wp_enqueue_style('hsh-reader', plugin_dir_url(__FILE__).'assets/reader.css', array('hsh-growth'), '1.31.0');
+    wp_enqueue_script('hsh-reader', plugin_dir_url(__FILE__).'assets/reader.js', array(), '1.31.0', true);
+    wp_enqueue_style('hsh-palette', plugin_dir_url(__FILE__).'assets/palette.css', array('hsh-reader'), '1.31.0');
 }, 120);
 function hsh_reader_bootstrap(){return '<script>document.documentElement.classList.add("hsh-reader-js");</script>';}
 add_action('wp_head',function(){if(hsh_reader_scope())echo hsh_reader_bootstrap();},0);
@@ -101,11 +101,11 @@ function hsh_reader_saved_page() {
 }
 add_shortcode('hsh_reading_list','hsh_reader_saved_page');
 
-function hsh_reader_gallery_choice(){return isset($_GET['hsh_photo'])&&is_string($_GET['hsh_photo'])&&in_array($_GET['hsh_photo'],array('all','face','relax','sleep','scratcher'),true)?$_GET['hsh_photo']:'all';}
+function hsh_reader_gallery_choice(){return isset($_GET['hsh_photo'])&&is_string($_GET['hsh_photo'])&&in_array($_GET['hsh_photo'],array('all','face','relax','sleep','scratcher','paws','whole'),true)?$_GET['hsh_photo']:'all';}
 function hsh_reader_gallery_matches($asset){$choice=hsh_reader_gallery_choice();return $choice==='all'||in_array($choice,$asset['tags']??array('relax'),true);}
 function hsh_reader_gallery_filters() {
     $out='<div class="hsh-gallery-filters" role="group" aria-label="まんもすの写真を絞り込む">';
-    foreach(array('all'=>'すべて','face'=>'顔・表情','relax'=>'くつろぐ','sleep'=>'寝姿','scratcher'=>'爪とぎの上') as $key=>$label) $out.='<button type="button" data-hsh-photo-filter="'.esc_attr($key).'" aria-pressed="'.($key===hsh_reader_gallery_choice()?'true':'false').'">'.esc_html($label).'</button>';
+    foreach(array('all'=>'すべて','face'=>'顔・表情','relax'=>'くつろぐ','sleep'=>'寝姿','scratcher'=>'爪とぎの上','paws'=>'肉球','whole'=>'全身') as $key=>$label) $out.='<button type="button" data-hsh-photo-filter="'.esc_attr($key).'" aria-pressed="'.($key===hsh_reader_gallery_choice()?'true':'false').'">'.esc_html($label).'</button>';
     $count=0;foreach(hsh_photo_manifest()['assets'] as $a)if($a['kind']==='provided'&&$a['subject']==='manmos'&&hsh_reader_gallery_matches($a))$count++;
     return $out.'</div><p class="hsh-gallery-count" role="status" aria-live="polite">'.(int)$count.'枚の写真を表示しています</p>';
 }
