@@ -6,10 +6,10 @@ function hsh_growth_summaries(){return array(
 'manmos-cat-life'=>'抱っこは苦手なまんもすの、好きな場所や毎日のブラッシングの話。',
 'cat-teaser-small-parts'=>'100均のおもちゃも使う飼い主が、小さな部品や片付けで気にしていること。',
 'cat-vet-routine'=>'診察で伝えたい様子と、出発前にまとめておきたい持ち物。',
-'cat-carrier-checklist'=>'リュック型が変形して買い替えた経験から、サイズと構造を考えます。',
-'glenlivet-12-first-bottles'=>'グラスのおまけが購入のきっかけ。飲んで感じた香りと、普段の飲み方。',
+'cat-carrier-checklist'=>'5.5kgの猫でリュック型が変形。買い替え経験と、内寸・構造の確認点。',
+'glenlivet-12-first-bottles'=>'飲みやすさと花のような香りが好き。グラス付きで買ったきっかけも。',
 'single-malt-label-guide'=>'シングルモルト、年数、樽。ボトルの表示を順番に見ていきます。',
-'sherry-cask-notes'=>'グレンファークラス12年で感じたぶどうパンの香りと、シェリー樽の話。',
+'sherry-cask-notes'=>'グレンファークラス12年の香りの感想。ぶどうパンやレーズンを思い浮かべた話。',
 'highball-measure-and-adjust'=>'薄さと炭酸の弱さを分けて考え、少しずつ好みの配合を探す方法。',
 'it-data-work-flow'=>'抽出や並び替えなど、今の仕事でしているデータ加工とAIの使いどころ。',
 'starting-it-without-specialty'=>'ITに興味を持った理由と、今の仕事にたどり着くまでの約1年。',
@@ -40,7 +40,7 @@ array('name'=>'グレンファークラス12年','note'=>'ぶどうパンに顔�
 array('name'=>'ジムビーム','note'=>'自分の口には合わなかった。ジムビームを飲んだときの感想です。','reason'=>'購入した理由は、まだメモに残していない。','slug'=>''));}
 function hsh_growth_whisky(){
     $out='<section class="hsh-taste-index"><p>飲んだときの印象を、自分の言葉で残しています。詳しい香りの名前は分からなくても、「これは好き」はあるので。</p><p>普段はハイボールかハーフロック。自分が飲んだときの印象を、短くまとめています。</p>';
-    foreach(hsh_growth_tastes() as $r){$out.='<article class="hsh-taste-card"><h2>'.esc_html($r['name']).'</h2><p>'.esc_html($r['note']).'</p><dl><dt>選んだきっかけ・好み</dt><dd>'.esc_html($r['reason']).'</dd></dl>';if($r['slug'])$out.='<a href="'.esc_url(home_url('/'.$r['slug'].'/')).'">詳しい感想を読む →</a>';$out.='</article>';}
+    foreach(hsh_growth_tastes() as $r){$arboralis=strpos($r['name'],'アルボラリス')!==false;$out.='<article class="hsh-taste-card"'.($arboralis?' id="arboralis-taste"':'').'><h2>'.esc_html($arboralis?'アルボラリスは甘い？飲んだ感想':$r['name']).'</h2><p>'.esc_html($r['note']).'</p><dl><dt>選んだきっかけ・好み</dt><dd>'.esc_html($r['reason']).'</dd></dl>';if($arboralis)$out.='<p>YouTubeで飲んでいるのを見て、オレンジジュースのような甘さを勝手に想像していた。でも、実際には甘くなかった。それでも飲みやすかったので、好きなウイスキーの一つです。</p><p>自分の印象は「想像ほど甘くなかったけれど、飲みやすかった」。ほかの人の香りの例えを、そのまま自分の味の感想にしなくてもいいんだと思う。</p>';if($r['slug'])$out.='<a href="'.esc_url(home_url('/'.$r['slug'].'/')).'">詳しい感想を読む →</a>';$out.='</article>';}
     return $out.hsh_whisky_display_gallery().'<p><a href="'.esc_url(home_url('/highball-measure-and-adjust/')).'">ハイボールの分量を調整したいときはこちら</a></p></section>';
 }
 function hsh_whisky_display_gallery(){
@@ -56,7 +56,7 @@ function hsh_growth_updates(){
     return $out.'</ul><p>内容の訂正に関する方針は、<a href="'.esc_url(home_url('/hsh-editorial/')).'">記事・広告について</a>にまとめています。</p></section>';
 }
 add_shortcode('hsh_manmos_gallery','hsh_growth_gallery');add_shortcode('hsh_whisky_notes','hsh_growth_whisky');add_shortcode('hsh_updates','hsh_growth_updates');
-add_action('wp_enqueue_scripts',function(){wp_enqueue_style('hsh-growth',plugin_dir_url(__FILE__).'assets/growth.css',array('hsh-reading'),'1.31.3');if(hsh_reader_managed())wp_enqueue_script('hsh-growth',plugin_dir_url(__FILE__).'assets/growth.js',array(),'1.31.3',true);},110);
+add_action('wp_enqueue_scripts',function(){wp_enqueue_style('hsh-growth',plugin_dir_url(__FILE__).'assets/growth.css',array('hsh-reading'),'1.32.0');if(hsh_reader_managed())wp_enqueue_script('hsh-growth',plugin_dir_url(__FILE__).'assets/growth.js',array(),'1.32.0',true);},110);
 add_filter('the_content',function($content){
     if(!is_singular('post')||!in_the_loop()||!is_main_query())return $content;$p=get_post();if(!hsh_owned_blog_post($p))return $content;
     $slug=hsh_growth_next($p->post_name);$next=$slug?get_page_by_path($slug,OBJECT,'post'):null;$summaries=hsh_growth_summaries();
@@ -80,7 +80,7 @@ function hsh_growth_metadata($html,$data){
 function hsh_growth_rendered($html){
     if(strpos($html,'</head>')===false)return $html;
     if(is_singular('post')){$p=get_post();if(!hsh_owned_blog_post($p)){if((int)$p->ID!==8||is_wp_error(hsh_intro_post()))return $html;$a=hsh_photo_manifest()['assets']['manmos-front'];}else $a=hsh_photo_for_slug($p->post_name);$description=$p->post_excerpt;$type='article';$url=get_permalink($p);$title=$p->post_title.' | ひろがる趣味暮らし';}
-    elseif(is_page()&&(in_array((int)get_queried_object_id(),array_map('intval',(array)get_option('hsh_edit_pages',array())),true)||hsh_reader_scope())){$p=get_post();$m=hsh_photo_manifest();$key=$p->post_name==='hsh-hakushu-visit'?'hakushu-entrance':($p->post_name==='hsh-whisky-notes'?($m['topics']['whisky']??'manmos-tower'):'manmos-portrait');$key=$m['pages'][$p->post_name]??$key;$a=$m['assets'][$key]??null;$descriptions=array('お問い合わせ'=>'ひろがる趣味暮らしへのお問い合わせ。記事に関するご連絡はこちらからお送りください。','プライバシーポリシー'=>'ひろがる趣味暮らしの個人情報の取り扱いとプライバシーポリシーについて。','hsh-reading-list'=>'この端末で保存した、ひろがる趣味暮らしの記事をまとめて読み返せます。','hsh-hakushu-visit'=>'2025年7月、初めての蒸溜所見学で白州へ。楽しかった飲み比べと、館内で撮影した展示やグラスの写真をまとめました。','hsh-gallery'=>'うちの保護猫まんもすの写真。枕の上で休んだり、爪とぎに座ったり、いろいろな姿を集めました。','hsh-whisky-notes'=>'グレンリベット12年、アルボラリス、グレンファークラス12年、ジムビーム。実際に飲んだときの感想をまとめました。','hsh-updates'=>'ひろがる趣味暮らしの最近の更新。猫・ウイスキー・ITの公開記事を更新日順に紹介します。');$description=$descriptions[rawurldecode($p->post_name)]??wp_trim_words(wp_strip_all_tags($p->post_content),70);$title=$p->post_title.' | ひろがる趣味暮らし';$type='website';$url=get_permalink($p);}
+    elseif(is_page()&&(in_array((int)get_queried_object_id(),array_map('intval',(array)get_option('hsh_edit_pages',array())),true)||hsh_reader_scope())){$p=get_post();$m=hsh_photo_manifest();$key=$p->post_name==='hsh-hakushu-visit'?'hakushu-entrance':($p->post_name==='hsh-whisky-notes'?($m['topics']['whisky']??'manmos-tower'):'manmos-portrait');$key=$m['pages'][$p->post_name]??$key;$a=$m['assets'][$key]??null;$descriptions=array('お問い合わせ'=>'ひろがる趣味暮らしへのお問い合わせ。記事に関するご連絡はこちらからお送りください。','プライバシーポリシー'=>'ひろがる趣味暮らしの個人情報の取り扱いとプライバシーポリシーについて。','hsh-reading-list'=>'この端末で保存した、ひろがる趣味暮らしの記事をまとめて読み返せます。','hsh-hakushu-visit'=>'白州蒸溜所を初めて見学した2025年7月の感想。館内展示や飲み比べの写真と、これから行く前に公式案内で確認したい予約・アクセス情報をまとめます。','hsh-gallery'=>'うちの保護猫まんもすの写真。枕の上で休んだり、爪とぎに座ったり、いろいろな姿を集めました。','hsh-whisky-notes'=>'グレンリベット12年、アルボラリス、グレンファークラス12年、ジムビーム。実際に飲んだときの感想をまとめました。','hsh-updates'=>'ひろがる趣味暮らしの最近の更新。猫・ウイスキー・ITの公開記事を更新日順に紹介します。');$description=$descriptions[rawurldecode($p->post_name)]??wp_trim_words(wp_strip_all_tags($p->post_content),70);$title=$p->post_title.' | ひろがる趣味暮らし';$type='website';$url=get_permalink($p);}
     elseif(is_front_page()||hsh_current_topic()){$m=hsh_photo_manifest();$key=hsh_current_topic()?($m['topics'][hsh_current_topic()]??'manmos-tower'):($m['home']??'manmos-tower');$a=$m['assets'][$key]??null;$description=hsh_current_topic()?hsh_topic_details()[hsh_current_topic()][4]:'保護猫まんもすとの暮らし、飲んだウイスキーの感想、フリーランスのデータ加工の仕事を書いています。';$type='website';$url=hsh_current_topic()?get_pagenum_link(max(1,(int)get_query_var('paged'))):home_url('/');$title=hsh_current_topic()?hsh_topics()[hsh_current_topic()][0].' | ひろがる趣味暮らし':'ひろがる趣味暮らし｜猫・ウイスキー・ITの仕事';}
     else return $html;
     if(!$a)return $html;$image=plugin_dir_url(__FILE__).'assets/photos/'.$a['file'];

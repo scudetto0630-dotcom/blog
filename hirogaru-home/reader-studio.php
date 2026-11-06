@@ -22,9 +22,10 @@ function hsh_studio_highball(){return '<section class="hsh-highball-tool"><h2>�
 function hsh_studio_examples(){
  return '<section class="hsh-data-practice"><h2>架空の表で、データ抽出を試す</h2><p>次の4行は練習用に作った架空データです。顧客や勤務先の実データではありません。「区分が猫、金額が1,000円以上」を条件に抜き出します。</p><h3>処理前</h3><table><thead><tr><th>ID</th><th>区分</th><th>金額（円）</th></tr></thead><tbody><tr><td>0001</td><td>猫</td><td>1200</td></tr><tr><td>0002</td><td>ウイスキー</td><td>4000</td></tr><tr><td>0003</td><td>猫</td><td>800</td></tr><tr><td>0004</td><td>猫</td><td>1500</td></tr></tbody></table><h3>期待する結果</h3><p>ID「0001」「0004」の2件です。合計金額は2,700円。先頭の0を残し、元の表の順番を保ちます。</p><h3>依頼文の例</h3><pre data-copy-example>元データを残したまま、区分が「猫」、金額が1000円以上の行を抽出してください。IDは文字列として先頭の0を保持し、元の並び順を維持してください。抽出件数と金額の合計を示してください。</pre><pre data-copy-example>金額を数値として昇順に並べ替えてください。同額の場合は元の並び順を保ち、IDと金額の対応を変えないでください。</pre><pre data-copy-example>IDの重複を調べ、重複したIDと該当行を別表にまとめてください。元データからは削除しないでください。</pre><h3>Excel・スプレッドシート・CSVの違い</h3><dl><dt>Excel</dt><dd>表計算ソフトです。xlsx形式なら複数のシート、書式、数式などを保存できます。</dd><dt>スプレッドシート</dt><dd>ブラウザーで共同編集できる表計算サービスです。共有範囲と編集権限を確認して使います。</dd><dt>CSV</dt><dd>行と列の値を区切り文字で表すテキスト形式です。書式や複数シートの保存には向きません。取り込み時の文字コードやデータ型に注意が必要です。</dd></dl></section>';
 }
-function hsh_studio_terms($topic){
+function hsh_studio_terms($topic,$slug=''){
  if($topic==='cats')$terms=array('総合栄養食'=>'指定された対象や成長段階に合う製品を、表示に従って与えるための栄養区分。個々の商品表示を確認します。','療法食'=>'病気などに応じて栄養成分を調整した食事。自己判断で選ばず獣医師に相談します。','サプリメント'=>'健康維持のために使われる補助的な製品。医薬品と同じ治療効果を意味するものではありません。');
  elseif($topic==='whisky')$terms=array('シングルモルト'=>'ひとつの蒸溜所で造られたモルトウイスキーを指します。','年数表示'=>'混和された原酒のうち最も若い原酒の熟成年数を示します。','ハーフロック'=>'氷を入れたグラスに、ウイスキーと水を同量程度ずつ加える飲み方。');else return '';
+ $article=$slug!==''?hsh_studio_catalog($slug):null;if($article){$post=get_page_by_path($slug,OBJECT,'post');$body=wp_strip_all_tags($article['content']??($post->post_content??''));$terms=array_filter($terms,function($description,$term)use($body){return strpos($body,$term)!==false;},ARRAY_FILTER_USE_BOTH);}if(!$terms)return '';
  $out='<details class="hsh-term-notes"><summary>この記事に出てくる言葉</summary><dl>';foreach($terms as $term=>$description)$out.='<dt>'.esc_html($term).'</dt><dd>'.esc_html($description).'</dd>';
  if($topic==='whisky')$out.='<dd>'.hsh_studio_article_link('single-malt-label-guide','ボトルの表示をもう少し詳しく読む','single-malt-label-guide-1').'</dd>';
  return $out.'</dl></details>';
@@ -43,7 +44,7 @@ add_filter('the_content',function($c){
  $heads=array();preg_match_all('~<h2\b[^>]*>(.*?)</h2>~s',$p->post_content,$matches);foreach(array_slice($matches[1],0,3) as $h)$heads[]=wp_strip_all_tags($h);
  $intro='<aside class="hsh-article-outline"><strong>この記事で分かること</strong><ul>';foreach($heads as $h)$intro.='<li>'.esc_html($h).'</li>';$intro.='</ul></aside>';
  $c=preg_replace_callback('~(<p class="hsh-answer">.*?</p>)~s',function($m)use($intro){return $m[1].$intro;},$c,1,$inserted);if(!$inserted)$c=$intro.$c;
- $c.=hsh_studio_terms($a['topic']);
+ $c.=hsh_studio_terms($a['topic'],$slug);
  if(hsh_brushup_type($slug)==='product'){$c.=hsh_studio_product_notes($slug);if(strpos($slug,'withpety-')===0)$c.='<aside class="hsh-supplement-note"><h2>フード・サプリ・医薬品の違い</h2><p>サプリは、主食となるフードや治療に使う医薬品と役割が異なります。現在の薬や食事と一緒に獣医師へ伝え、病気の治療の代わりとして使わないでください。</p></aside>';}
  if($slug==='cat-carrier-checklist'){$c.=hsh_studio_checklist('carrier-measure','キャリーの採寸メモ',array('猫が自然に立ち、向きを変え、伏せられる内寸か確認する','入口の幅・高さと、持ち手の位置を確認する','徒歩：持ち上げたときの安定と自分が運べる重さを確認する','車：車内で固定できるか、メーカーの案内を確認する','公共交通：利用する交通機関の寸法・重量・容器の規定を確認する'));}
  if(in_array($slug,array('hario-cat-bowl-guide','onekosama-cat-tower','catlog-cat-monitor'),true))$c.=hsh_studio_checklist('place-'.$slug,'設置前に測っておくこと',array('設置場所の幅・奥行き・高さを測る','猫が出入りする動線を確保する','扉・窓・家具との干渉を確認する','掃除や電源、固定方法をメーカーの説明で確認する'));
@@ -51,10 +52,11 @@ add_filter('the_content',function($c){
  if(in_array($slug,array('mognyan-cat-food-guide','canagan-chicken-salmon','paws-green-deli-cat-food'),true))$c.=hsh_studio_checklist('food-note','ごはんの切り替え記録',array('開始日と、これまでのフードを記録する','与えた種類・量・食べ残しを記録する','便や体調で気付いたことを記録する','不調があれば変更を進めず獣医師に相談する'));
  if($slug==='highball-measure-and-adjust')$c.=hsh_studio_highball();
  if(in_array($slug,array('glenlivet-12-first-bottles','sherry-cask-notes','highball-measure-and-adjust'),true))$c.=hsh_studio_checklist('tasting-'.$slug,'自分の好みを残すメモ',array('銘柄と飲んだ日','飲み方と、自分で用意した分量','香りで思い浮かんだもの','飲みやすさと、次に変えてみたいこと'));
- if(in_array($slug,array('ai-data-extraction-checks','it-data-work-flow','csv-import-seven-checks'),true))$c.=hsh_studio_examples();
+ if($slug==='ai-data-extraction-checks')$c.=hsh_studio_examples();
+ if($slug==='csv-import-seven-checks'){$example=hsh_studio_examples();if(preg_match('~<h3>Excel・スプレッドシート・CSVの違い</h3>(.*?)</section>~s',$example,$formats))$c.='<section class="hsh-data-practice"><h2>Excel・スプレッドシート・CSVの違い</h2>'.$formats[1].'</section>';}
  return $c.hsh_studio_postscript($slug,$a['topic']);
 },29);
-add_action('wp_enqueue_scripts',function(){if(!hsh_reader_scope())return;wp_enqueue_style('hsh-studio',plugin_dir_url(__FILE__).'assets/studio.css',array('hsh-brushup'),'1.31.3');wp_enqueue_script('hsh-studio',plugin_dir_url(__FILE__).'assets/studio.js',array('hsh-brushup'),'1.31.3',true);},140);
+add_action('wp_enqueue_scripts',function(){if(!hsh_reader_scope())return;wp_enqueue_style('hsh-studio',plugin_dir_url(__FILE__).'assets/studio.css',array('hsh-brushup'),'1.32.0');wp_enqueue_script('hsh-studio',plugin_dir_url(__FILE__).'assets/studio.js',array('hsh-brushup'),'1.32.0',true);},140);
 // The native WordPress relevance ordering already prioritizes matching titles.
 add_action('pre_get_posts',function($q){if(!is_admin()&&$q->is_main_query()&&$q->is_search())$q->set('orderby','relevance');},35);
 function hsh_studio_home_products(){

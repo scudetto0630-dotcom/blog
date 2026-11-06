@@ -42,15 +42,16 @@ add_action('rest_api_init', function () {
         register_rest_route('hirogaru/v1', '/' . $name, array('methods' => $method, 'callback' => 'hsh_edit_' . $name, 'permission_callback' => 'hsh_edit_permission'));
     }
 });
+function hsh_page_fingerprint($page){return hash('sha256',json_encode(array($page->post_title,$page->post_content,$page->post_status),JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES));}
 function hsh_edit_status() {
     $pages = array();
     foreach (get_option('hsh_edit_pages', array()) as $key => $id) {
         if (get_post_meta((int) $id, '_hsh_bridge_owned', true) === '1') {
             $page = get_post((int) $id);
-            if ($page) { $pages[$key] = array('id' => $page->ID, 'status' => $page->post_status, 'title' => $page->post_title, 'content' => $page->post_content, 'url' => get_permalink($page)); }
+            if ($page) { $pages[$key] = array('id' => $page->ID, 'status' => $page->post_status, 'title' => $page->post_title, 'content' => $page->post_content, 'fingerprint'=>hsh_page_fingerprint($page), 'url' => get_permalink($page)); }
         }
     }
-    return hsh_edit_response(array('version' => '1.31.3', 'scope' => array('homepage_text_colors', 'bridge_owned_pages', 'publish_three_packaged_posts', 'refresh_three_owned_posts_with_packaged_images', 'update_only_hirogaru_home_from_pinned_repository', 'read_site_audit', 'set_public_google_verification_token', 'refresh_packaged_site_introduction'), 'home_page_id' => (int) get_option('hsh_page_id'), 'home_settings' => get_option('hsh_home_settings', array()), 'pages' => $pages));
+    return hsh_edit_response(array('version' => '1.32.0', 'scope' => array('homepage_text_colors', 'bridge_owned_pages', 'publish_three_packaged_posts', 'refresh_three_owned_posts_with_packaged_images', 'update_only_hirogaru_home_from_pinned_repository', 'read_site_audit', 'set_public_google_verification_token', 'refresh_packaged_site_introduction'), 'home_page_id' => (int) get_option('hsh_page_id'), 'home_settings' => get_option('hsh_home_settings', array()), 'pages' => $pages));
 }
 function hsh_edit_home($request) {
     $data = $request->get_json_params();
@@ -81,10 +82,11 @@ function hsh_edit_home($request) {
 }
 function hsh_edit_page($request) {
     $data = $request->get_json_params();
-    if (!is_array($data) || array_diff(array_keys($data), array('key', 'title', 'content', 'status'))) { return new WP_Error('hsh_input', 'JSON項目が不正です。', array('status' => 400)); }
+    if (!is_array($data) || array_diff(array_keys($data), array('key', 'title', 'content', 'status', 'expected'))) { return new WP_Error('hsh_input', 'JSON項目が不正です。', array('status' => 400)); }
     if (!isset($data['key'], $data['title'], $data['content']) || !is_string($data['key']) || !in_array($data['key'], array('about', 'editorial', 'contact', 'gallery', 'whisky-notes', 'updates', 'hakushu-visit', 'reading-list'), true) || !is_string($data['title']) || !is_string($data['content']) || strlen($data['title']) > 600 || strlen($data['content']) > 100000 || trim(sanitize_text_field($data['title'])) === '') {
         return new WP_Error('hsh_input', 'key / title / content が不正です。', array('status' => 400));
     }
+    if(array_key_exists('expected',$data)&&$data['expected']!==null&&(!is_string($data['expected'])||!preg_match('/^[a-f0-9]{64}$/D',$data['expected'])))return new WP_Error('hsh_input','確認用の指紋が不正です。',array('status'=>400));
     $status = isset($data['status']) ? $data['status'] : 'draft';
     if (!is_string($status) || !in_array($status, array('draft', 'publish'), true)) { return new WP_Error('hsh_status', '公開状態が不正です。', array('status' => 400)); }
     $lock = 'hsh_edit_page_lock';
@@ -94,7 +96,7 @@ function hsh_edit_page($request) {
         $id = isset($pages[$data['key']]) ? (int) $pages[$data['key']] : 0;
         if ($id && (get_post_type($id) !== 'page' || get_post_meta($id, '_hsh_bridge_owned', true) !== '1')) { return new WP_Error('hsh_scope', '既存ページは編集できません。', array('status' => 403)); }
         $post = array('post_type' => 'page', 'post_status' => $status, 'post_title' => sanitize_text_field($data['title']), 'post_content' => wp_kses_post($data['content']));
-        if ($id) { $post['ID'] = $id; }
+        if ($id) { $previous=get_post($id);if(array_key_exists('expected',$data)&&(!is_string($data['expected'])||!hash_equals(hsh_page_fingerprint($previous),$data['expected'])))return new WP_Error('hsh_conflict','固定ページが変更されています。',array('status'=>409));$post['ID'] = $id;if(!empty($previous->post_date))$post['post_date']=$previous->post_date;if(!empty($previous->post_date_gmt))$post['post_date_gmt']=$previous->post_date_gmt; }
         else {
             $slug = 'hsh-' . $data['key'];
             if (get_page_by_path($slug, OBJECT, 'page')) { return new WP_Error('hsh_conflict', '同名ページが存在します。既存ページは上書きしません。', array('status' => 409)); }
