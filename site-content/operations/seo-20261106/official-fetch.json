@@ -1,0 +1,30 @@
+[
+  {
+    "key": "hakushu-official",
+    "url": "https://www.suntory.co.jp/factory/hakushu/",
+    "final_url": "https://www.suntory.co.jp/factory/hakushu/",
+    "status": 200,
+    "bytes": 62727
+  },
+  {
+    "key": "google-essentials",
+    "url": "https://developers.google.com/search/docs/essentials?hl=ja",
+    "final_url": "https://developers.google.com/search/docs/essentials?hl=ja",
+    "status": 200,
+    "bytes": 181892
+  },
+  {
+    "key": "google-helpful",
+    "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content?hl=ja",
+    "final_url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content?hl=ja",
+    "status": 200,
+    "bytes": 202949
+  },
+  {
+    "key": "google-crawl",
+    "url": "https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl?hl=ja",
+    "final_url": "https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl?hl=ja",
+    "status": 200,
+    "bytes": 177946
+  }
+]

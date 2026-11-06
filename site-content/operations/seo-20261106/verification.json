@@ -1,0 +1,88 @@
+{
+  "checked_at": "2026-11-06T08:30:17.434806+00:00",
+  "scope": "HTTP・HTML・サイトマップの検証。Googleの登録や順位を証明するものではない。",
+  "pages": [
+    {
+      "slug": "cat-carrier-checklist",
+      "url": "https://hirogarushumi.com/cat-carrier-checklist/",
+      "status": 200,
+      "h1": "\n          猫用リュックキャリーが変形した話｜5.5kgの猫の買い替えで確認したこと        ",
+      "description": "5.5kgの猫まんもすを入れると、以前のリュック型キャリーは形が崩れてしまいました。本体のしっかりした大きめのキャリーへ買い替えた経験と、内寸・耐荷重・留め具・運び方の確認点をまとめます。",
+      "canonical": "https://hirogarushumi.com/cat-carrier-checklist/",
+      "robots": [
+        "max-image-preview:large"
+      ],
+      "x_robots_tag": "",
+      "publicly_crawlable": true,
+      "google_index_status": null,
+      "google_rank": null,
+      "in_wordpress_sitemap": true
+    },
+    {
+      "slug": "glenlivet-12-first-bottles",
+      "url": "https://hirogarushumi.com/glenlivet-12-first-bottles/",
+      "status": 200,
+      "h1": "\n          グレンリベット12年の感想｜飲みやすさと花のような香りが好き        ",
+      "description": "グレンリベット12年を飲んで感じたのは、飲みやすさと花のような上品な香り。3本目に買った理由は、おまけのグラスでした。購入のきっかけと、実際に好きだったところを紹介します。",
+      "canonical": "https://hirogarushumi.com/glenlivet-12-first-bottles/",
+      "robots": [
+        "max-image-preview:large"
+      ],
+      "x_robots_tag": "",
+      "publicly_crawlable": true,
+      "google_index_status": null,
+      "google_rank": null,
+      "in_wordpress_sitemap": true
+    },
+    {
+      "slug": "sherry-cask-notes",
+      "url": "https://hirogarushumi.com/sherry-cask-notes/",
+      "status": 200,
+      "h1": "\n          グレンファークラス12年の感想｜ぶどうパンのような香りが好き        ",
+      "description": "グレンファークラス12年の香りを例えるなら、ぶどうパンに顔をうずめたような感じ。レーズンを思い浮かべる香りが好きです。実際の感想を先に、オロロソとペドロ・ヒメネスなどの用語も分けて紹介します。",
+      "canonical": "https://hirogarushumi.com/sherry-cask-notes/",
+      "robots": [
+        "max-image-preview:large"
+      ],
+      "x_robots_tag": "",
+      "publicly_crawlable": true,
+      "google_index_status": null,
+      "google_rank": null,
+      "in_wordpress_sitemap": true
+    },
+    {
+      "slug": "hsh-hakushu-visit",
+      "url": "https://hirogarushumi.com/hsh-hakushu-visit/",
+      "status": 200,
+      "h1": "\n          白州蒸溜所見学の感想｜初めて訪れた2025年7月の写真と飲み比べ        ",
+      "description": "白州蒸溜所を初めて見学した2025年7月の感想。館内展示や飲み比べの写真と、これから行く前に公式案内で確認したい予約・アクセス情報をまとめます。",
+      "canonical": "https://hirogarushumi.com/hsh-hakushu-visit/",
+      "robots": [
+        "max-image-preview:large"
+      ],
+      "x_robots_tag": "",
+      "publicly_crawlable": true,
+      "google_index_status": null,
+      "google_rank": null,
+      "in_wordpress_sitemap": true
+    },
+    {
+      "slug": "hsh-whisky-notes",
+      "url": "https://hirogarushumi.com/hsh-whisky-notes/",
+      "status": 200,
+      "h1": "\n          飲んだウイスキーのメモ        ",
+      "description": "グレンリベット12年、アルボラリス、グレンファークラス12年、ジムビーム。実際に飲んだときの感想をまとめました。",
+      "canonical": "https://hirogarushumi.com/hsh-whisky-notes/",
+      "robots": [
+        "max-image-preview:large"
+      ],
+      "x_robots_tag": "",
+      "publicly_crawlable": true,
+      "google_index_status": null,
+      "google_rank": null,
+      "in_wordpress_sitemap": true
+    }
+  ],
+  "gsc_available": false,
+  "valid_google_serp_observation": false
+}
