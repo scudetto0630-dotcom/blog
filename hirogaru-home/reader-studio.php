@@ -41,9 +41,7 @@ add_filter('the_content',function($c){
  if(!in_the_loop()||!is_main_query())return $c;$p=get_post();if(!$p||!hsh_owned_blog_post($p))return $c;$slug=$p->post_name;$a=hsh_studio_catalog($slug);if(!$a)return $c;
  $c=preg_replace('~<p[^>]*>(?:(?!</p>).)*csv-practice\.csv(?:(?!</p>).)*</p>~s','',$c);
  $c=preg_replace('~<li[^>]*>(?:(?!</li>).)*extraction-(?:input|expected)\.csv(?:(?!</li>).)*</li>~s','',$c);
- $heads=array();preg_match_all('~<h2\b[^>]*>(.*?)</h2>~s',$p->post_content,$matches);foreach(array_slice($matches[1],0,3) as $h)$heads[]=wp_strip_all_tags($h);
- $intro='<aside class="hsh-article-outline"><strong>この記事で分かること</strong><ul>';foreach($heads as $h)$intro.='<li>'.esc_html($h).'</li>';$intro.='</ul></aside>';
- $c=preg_replace_callback('~(<p class="hsh-answer">.*?</p>)~s',function($m)use($intro){return $m[1].$intro;},$c,1,$inserted);if(!$inserted)$c=$intro.$c;
+ // Keep the introduction continuous; the native table of contents remains available.
  $c.=hsh_studio_terms($a['topic'],$slug);
  if(hsh_brushup_type($slug)==='product'){$c.=hsh_studio_product_notes($slug);if(strpos($slug,'withpety-')===0)$c.='<aside class="hsh-supplement-note"><h2>フード・サプリ・医薬品の違い</h2><p>サプリは、主食となるフードや治療に使う医薬品と役割が異なります。現在の薬や食事と一緒に獣医師へ伝え、病気の治療の代わりとして使わないでください。</p></aside>';}
  if($slug==='cat-carrier-checklist'){$c.=hsh_studio_checklist('carrier-measure','キャリーの採寸メモ',array('猫が自然に立ち、向きを変え、伏せられる内寸か確認する','入口の幅・高さと、持ち手の位置を確認する','徒歩：持ち上げたときの安定と自分が運べる重さを確認する','車：車内で固定できるか、メーカーの案内を確認する','公共交通：利用する交通機関の寸法・重量・容器の規定を確認する'));}
@@ -56,7 +54,7 @@ add_filter('the_content',function($c){
  if($slug==='csv-import-seven-checks'){$example=hsh_studio_examples();if(preg_match('~<h3>Excel・スプレッドシート・CSVの違い</h3>(.*?)</section>~s',$example,$formats))$c.='<section class="hsh-data-practice"><h2>Excel・スプレッドシート・CSVの違い</h2>'.$formats[1].'</section>';}
  return $c.hsh_studio_postscript($slug,$a['topic']);
 },29);
-add_action('wp_enqueue_scripts',function(){if(!hsh_reader_scope())return;wp_enqueue_style('hsh-studio',plugin_dir_url(__FILE__).'assets/studio.css',array('hsh-brushup'),'1.33.2');wp_enqueue_script('hsh-studio',plugin_dir_url(__FILE__).'assets/studio.js',array('hsh-brushup'),'1.33.2',true);},140);
+add_action('wp_enqueue_scripts',function(){if(!hsh_reader_scope())return;wp_enqueue_style('hsh-studio',plugin_dir_url(__FILE__).'assets/studio.css',array('hsh-brushup'),'1.33.3');wp_enqueue_script('hsh-studio',plugin_dir_url(__FILE__).'assets/studio.js',array('hsh-brushup'),'1.33.3',true);},140);
 // The native WordPress relevance ordering already prioritizes matching titles.
 add_action('pre_get_posts',function($q){if(!is_admin()&&$q->is_main_query()&&$q->is_search())$q->set('orderby','relevance');},35);
 function hsh_studio_home_products(){

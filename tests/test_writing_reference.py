@@ -42,6 +42,14 @@ class WritingReference(unittest.TestCase):
   with self.assertRaises(ValueError):editor.merge_paragraph_corrections('<p>5kg</p>','<p>6kg</p>','<p>5kg</p>')
  def test_copy_merge_refuses_tracking_pixel_loss(self):
   with self.assertRaises(ValueError):editor.merge_paragraph_corrections('<p>広告<img src="tracking.gif"></p>','<p>広告</p>','<p>広告<img src="tracking.gif"></p>')
+ def test_related_paragraphs_can_be_joined(self):
+  before='<p>一つ目。</p>\n<p>同じ話の続き。</p><!--HSH_IMAGE:diagram-->'
+  after='<p>一つ目。同じ話の続き。</p><!--HSH_IMAGE:diagram-->'
+  live='<p>一つ目。</p>\n<p>同じ話の続き。</p><figure><img src="diagram.webp"></figure>'
+  merged=editor.merge_paragraph_corrections(before,after,live)
+  self.assertIn('<p>一つ目。同じ話の続き。</p>',merged);self.assertIn('<figure>',merged)
+ def test_join_cannot_cross_a_heading(self):
+  with self.assertRaises(ValueError):editor.merge_paragraph_corrections('<p>前。</p><h2 id="x">別の話</h2><p>後。</p>','<p>前。後。</p><h2 id="x">別の話</h2>','<p>前。</p><h2 id="x">別の話</h2><p>後。</p>')
  def test_copy_merge_refuses_heading_changes(self):
   with self.assertRaises(ValueError):editor.merge_paragraph_corrections('<h2 id="a">前</h2><p>文</p>','<h2 id="b">後</h2><p>文</p>','<p>文</p>')
  def test_editing_meta_is_review_flag(self):

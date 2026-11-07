@@ -13,8 +13,8 @@ def facts(body):
     text=plain(body)
     return {'numbers':sorted(re.findall(r'\d+(?:\.\d+)?\s*(?:kg|ml|g|％|%|年|月|日|袋|粒|円|歳)',text)), 'sources':sorted(set(html.unescape(x) for x in re.findall(r'href="(https?://[^"]+)"',body)))}
 def merge_paragraph_corrections(source_before,source_after,published):
-    """Apply reviewed paragraph replacements to live copy, preserving rendered media."""
-    pattern=r'<p\b[^>]*>.*?</p>'
+    """Apply reviewed contiguous paragraph blocks without crossing headings or media."""
+    pattern=r'<p\b[^>]*>.*?</p>(?:[ \t\r\n]*<p\b[^>]*>.*?</p>)*'
     before=re.findall(pattern,source_before,re.S);after=re.findall(pattern,source_after,re.S)
     if len(before)!=len(after) or re.sub(pattern,'<PARAGRAPH>',source_before,flags=re.S)!=re.sub(pattern,'<PARAGRAPH>',source_after,flags=re.S):raise ValueError('Only paragraph corrections can use this merge')
     result=published

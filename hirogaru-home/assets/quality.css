@@ -5,3 +5,7 @@
 @media(min-width:600px) and (max-width:1024px){.hsh-post-grid{gap:20px}.hsh-post-grid>article>a{padding:20px}}
 @media print{body.hsh-print-no-photos :is(.hsh-photo,.hsh-art,.hsh-visit-photo,.hsh-manmos-gallery,.hsh-inline-photo,.hsh-card-product,.hsh-image-button){display:none!important}.hsh-transfer,.hsh-bulk-select,.hsh-image-retry,.hsh-sort{display:none!important}.hsh-item-note{border:0;border-bottom:1px solid #999;color:#000;background:#fff}}
 .hsh-report-form label{display:block;min-width:0}.hsh-report-form select{width:100%;min-width:0;max-width:100%;box-sizing:border-box}.hsh-reader-site .hsh-reader-settings{min-width:0;max-width:100%}.hsh-reader-site .hsh-reader-tools>*{min-width:0;max-width:100%;box-sizing:border-box}
+
+/* Narrative paragraphs form a continuous reading surface. */
+.hsh-reader-site .entry-content>p{margin-block:1em;line-height:1.9}
+.hsh-reader-site .entry-content>.hsh-answer{padding:0;border:0;background:transparent;border-radius:0;box-shadow:none;font-weight:400;color:inherit}
