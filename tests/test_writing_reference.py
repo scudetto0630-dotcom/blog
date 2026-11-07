@@ -18,6 +18,30 @@ class WritingReference(unittest.TestCase):
   with patch('urllib.request.build_opener') as request:
    with self.assertRaises(ValueError):reader.read('https://example.org/2026/11/07/123/',Path('/tmp/unused'))
    request.assert_not_called()
+ def test_author_with_nested_image(self):
+  page='<li class="author"><a href="https://rocketnews24.com/author/ahiruneko/" rel="author"><img src="photo.webp">あひるねこ</a></li>'
+  self.assertEqual(reader.verify_author(page,'ahiruneko')[0]['name'],'あひるねこ')
+ def test_other_author_rejected(self):
+  with self.assertRaises(ValueError):reader.verify_author('<a href="https://rocketnews24.com/author/other/" rel="author">別の人</a>','ahiruneko')
+ def test_navigation_does_not_verify_author(self):
+  with self.assertRaises(ValueError):reader.verify_author('<nav><a href="https://rocketnews24.com/author/ahiruneko/">あひるねこ</a></nav>','ahiruneko')
+ def test_offsite_author_link_rejected(self):
+  with self.assertRaises(ValueError):reader.verify_author('<a href="https://example.org/author/ahiruneko/" rel="author">あひるねこ</a>','ahiruneko')
+ def test_related_byline_does_not_replace_primary_author(self):
+  page='<a href="https://rocketnews24.com/author/other/" rel="author">別の人</a><aside><a href="https://rocketnews24.com/author/ahiruneko/" rel="author">あひるねこ</a></aside>'
+  with self.assertRaises(ValueError):reader.verify_author(page,'ahiruneko')
+ def test_copy_merge_preserves_published_figure(self):
+  before='<p>前の文章です。</p><!--HSH_IMAGE:diagram-->'
+  after='<p>整えた文章です。</p><!--HSH_IMAGE:diagram-->'
+  live='<p>前の文章です。</p><figure><a href="https://example.org/diagram.webp"><img src="diagram.webp"></a></figure>'
+  merged=editor.merge_paragraph_corrections(before,after,live)
+  self.assertIn('<figure>',merged);self.assertIn('整えた文章',merged);self.assertNotIn('HSH_IMAGE:',merged)
+ def test_copy_merge_refuses_stale_paragraph(self):
+  with self.assertRaises(ValueError):editor.merge_paragraph_corrections('<p>前</p>','<p>後</p>','<p>別の変更</p>')
+ def test_copy_merge_refuses_numeric_changes(self):
+  with self.assertRaises(ValueError):editor.merge_paragraph_corrections('<p>5kg</p>','<p>6kg</p>','<p>5kg</p>')
+ def test_copy_merge_refuses_heading_changes(self):
+  with self.assertRaises(ValueError):editor.merge_paragraph_corrections('<h2 id="a">前</h2><p>文</p>','<h2 id="b">後</h2><p>文</p>','<p>文</p>')
  def test_editing_meta_is_review_flag(self):
   d=editor.inspect({'slug':'test','title':'感想','content':'<p>詳しい香りの名前を足すより感想を書く。</p>'})
   self.assertIn('editorial-meta',[x['rule'] for x in d]);self.assertTrue(all(x['kind']=='style' for x in d))

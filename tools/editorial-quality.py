@@ -12,6 +12,19 @@ def plain(body):
 def facts(body):
     text=plain(body)
     return {'numbers':sorted(re.findall(r'\d+(?:\.\d+)?\s*(?:kg|ml|g|％|%|年|月|日|袋|粒|円|歳)',text)), 'sources':sorted(set(html.unescape(x) for x in re.findall(r'href="(https?://[^"]+)"',body)))}
+def merge_paragraph_corrections(source_before,source_after,published):
+    """Apply reviewed paragraph replacements to live copy, preserving rendered media."""
+    pattern=r'<p\b[^>]*>.*?</p>'
+    before=re.findall(pattern,source_before,re.S);after=re.findall(pattern,source_after,re.S)
+    if len(before)!=len(after) or re.sub(pattern,'<PARAGRAPH>',source_before,flags=re.S)!=re.sub(pattern,'<PARAGRAPH>',source_after,flags=re.S):raise ValueError('Only paragraph corrections can use this merge')
+    result=published
+    for old,new in zip(before,after):
+        if old==new:continue
+        if result.count(old)!=1:raise ValueError('Published paragraph is missing or ambiguous; stop for review')
+        result=result.replace(old,new,1)
+    if facts(published)!=facts(result):raise ValueError('Numerical or link facts changed during copy correction')
+    return result
+
 def inspect(article, affiliate=False):
     out=[];slug=article['slug'];title=article['title'];body=article.get('content','');text=plain(body)
     def flag(kind,rule,detail):out.append({'slug':slug,'kind':kind,'rule':rule,'detail':detail})
