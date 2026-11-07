@@ -1,0 +1,13 @@
+{
+  "additional_articles": 20,
+  "previous_articles": 10,
+  "overlap": 0,
+  "total_author_articles_read": 30,
+  "body_text_p_elements": 578,
+  "median_p_characters": 51.0,
+  "p_text_characters_total": 29031,
+  "counting_note": "HTMLのp要素のうち、見出し・画像のみの段落・出典以降を除く。会話や引用・商品案内を含む概算。目標値ではない。",
+  "website_modified": false,
+  "article_content_modified": false,
+  "copyrighted_full_text_committed": false
+}

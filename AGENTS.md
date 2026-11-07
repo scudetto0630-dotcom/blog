@@ -13,3 +13,5 @@ For sponsored articles preserve `【ご紹介】`, the advertising disclosure, a
 For managed starter posts, apply paragraph corrections to the current published body with `merge_paragraph_corrections` in `tools/editorial-quality.py`. Published figures may replace source `HSH_IMAGE` markers; never overwrite those figures with the source placeholders. Use the current live fingerprint and stop on conflicting edits.
 
 Readability is not a quota of short sentences. Connect reasons, actions and results naturally, and group paragraphs by topic. Do not insert summary boxes or unrelated article cards between an introduction and its continuation. Avoid both sentence-by-sentence fragmentation and indiscriminate merging across headings, photos or safety notices.
+
+Also apply the general techniques documented in `site-content/operations/ahiruneko-additional-20-20261107/REPORT.md`: one concrete article question, evidence before judgment, and an ending that answers the opening. Match the progression to the genre; do not manufacture a product trial or personal reaction. Preserve photo context when reordering sections.
