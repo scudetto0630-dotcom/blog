@@ -40,6 +40,8 @@ class WritingReference(unittest.TestCase):
   with self.assertRaises(ValueError):editor.merge_paragraph_corrections('<p>前</p>','<p>後</p>','<p>別の変更</p>')
  def test_copy_merge_refuses_numeric_changes(self):
   with self.assertRaises(ValueError):editor.merge_paragraph_corrections('<p>5kg</p>','<p>6kg</p>','<p>5kg</p>')
+ def test_copy_merge_refuses_tracking_pixel_loss(self):
+  with self.assertRaises(ValueError):editor.merge_paragraph_corrections('<p>広告<img src="tracking.gif"></p>','<p>広告</p>','<p>広告<img src="tracking.gif"></p>')
  def test_copy_merge_refuses_heading_changes(self):
   with self.assertRaises(ValueError):editor.merge_paragraph_corrections('<h2 id="a">前</h2><p>文</p>','<h2 id="b">後</h2><p>文</p>','<p>文</p>')
  def test_editing_meta_is_review_flag(self):

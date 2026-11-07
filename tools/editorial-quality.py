@@ -22,6 +22,7 @@ def merge_paragraph_corrections(source_before,source_after,published):
         if old==new:continue
         if result.count(old)!=1:raise ValueError('Published paragraph is missing or ambiguous; stop for review')
         result=result.replace(old,new,1)
+    if re.findall(r'<img\b[^>]*>',published,re.I)!=re.findall(r'<img\b[^>]*>',result,re.I):raise ValueError('Images or tracking pixels changed during copy correction')
     if facts(published)!=facts(result):raise ValueError('Numerical or link facts changed during copy correction')
     return result
 
