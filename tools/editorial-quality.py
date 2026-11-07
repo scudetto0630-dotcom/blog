@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Offline editorial checks. Review flags are not automated factual verdicts."""
 import argparse, hashlib, html, json, re
+from difflib import SequenceMatcher
 from collections import Counter, defaultdict
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
@@ -24,6 +25,9 @@ def inspect(article, affiliate=False):
         if len(sentence)>125:flag('style','long-sentence',sentence[:160])
         if sentence.count('、')>=5:flag('style','compound-sentence',sentence[:160])
         if re.match(r'^(?:これ|それ|こちら|その点)[はがを]',sentence.strip()):flag('style','unclear-reference',sentence[:120])
+    if re.search(r'詳しい香りの名前を足す|記事として(?:整理|まとめ)|読者に伝わる(?:文章|構成)',text):flag('style','editorial-meta','本文に執筆上の都合が出ていないか確認してください。')
+    leads=[plain(p).strip() for attrs,p in re.findall(r'<p\b([^>]*)>(.*?)</p>',body,re.S) if not re.search(r'hsh-ad-notice|hsh-product-scope',attrs)][:3]
+    if len(leads)>1 and min(len(leads[0]),len(leads[1]))>=30 and SequenceMatcher(None,leads[0],leads[1],autojunk=False).ratio()>=.62:flag('style','repeated-opening','導入と直後の段落が近い表現です。次の段落で話が進むか確認してください。')
     weak=sum(text.count(x) for x in ['確認したい','見ておこう','知っておきたい'])
     if weak>=4:flag('style','weak-repetition',str(weak)+'箇所。書き手の口調を残しながら個別に検討します。')
     for term in re.findall('[ァ-ヶー]{4,}',title):

@@ -17,6 +17,7 @@ jobs:
       - name: Check editorial rules and fact-signature regressions
         run: |
           python -m unittest discover -s tests -p test_editorial_quality.py
+          python -m unittest discover -s tests -p test_writing_reference.py
           python -m unittest discover -s tests -p test_search_period_review.py
           python tools/editorial-quality.py --output editorial-quality.json
       - name: Check public pages and internal links

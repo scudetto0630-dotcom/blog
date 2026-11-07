@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "cat-carrier-checklist",
+    "bundle": "starter",
+    "paragraphs_changed": 2,
+    "numbers_preserved": true,
+    "source_urls_preserved": true,
+    "note": "数値・単位の出現数も維持。"
+  },
+  {
+    "slug": "glenlivet-12-first-bottles",
+    "bundle": "expanded",
+    "paragraphs_changed": 3,
+    "numbers_preserved": true,
+    "source_urls_preserved": true,
+    "note": "数値・単位の出現数も維持。"
+  },
+  {
+    "slug": "sherry-cask-notes",
+    "bundle": "expanded",
+    "paragraphs_changed": 1,
+    "numbers_preserved": false,
+    "source_urls_preserved": true,
+    "note": "冒頭と直後の重複で12年が二度出ていたため一度に整理。銘柄・年数は維持。"
+  },
+  {
+    "slug": "it-data-work-flow",
+    "bundle": "expanded",
+    "paragraphs_changed": 1,
+    "numbers_preserved": true,
+    "source_urls_preserved": true,
+    "note": "数値・単位の出現数も維持。"
+  },
+  {
+    "slug": "canagan-chicken-salmon",
+    "bundle": "affiliate",
+    "paragraphs_changed": 1,
+    "numbers_preserved": true,
+    "source_urls_preserved": true,
+    "note": "数値・単位の出現数も維持。"
+  },
+  {
+    "slug": "mognyan-cat-food-guide",
+    "bundle": "affiliate",
+    "paragraphs_changed": 1,
+    "numbers_preserved": true,
+    "source_urls_preserved": true,
+    "note": "数値・単位の出現数も維持。"
+  }
+]
