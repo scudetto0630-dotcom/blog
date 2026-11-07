@@ -31,5 +31,13 @@
     "orphaned": 0
   },
   "search_rank_improvement_confirmed": false,
-  "social_publication": false
+  "social_publication": false,
+  "github_actions": {
+    "run": "https://github.com/scudetto0630-dotcom/blog/actions/runs/42371991231",
+    "tested_commit": "3b9146195dece2ce308d49d79531c2a24559444f",
+    "public_checks": "success",
+    "browser_layout_and_saved_regressions": "success",
+    "strict_japanese_textlint": "failure_review_findings_remaining",
+    "overall": "failure_due_to_strict_japanese_textlint"
+  }
 }
