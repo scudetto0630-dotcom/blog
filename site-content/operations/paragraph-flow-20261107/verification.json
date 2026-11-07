@@ -1,0 +1,272 @@
+{
+  "date": "2026-11-07",
+  "plugin": "1.33.3",
+  "deployed_content_commit": "84c2bd8",
+  "posts_revised": 29,
+  "paragraphs_rewritten": 20,
+  "same_topic_paragraph_merges": 17,
+  "public_paragraph_checks": [
+    {
+      "slug": "cat-carrier-checklist",
+      "status": 200,
+      "h1_count": 1,
+      "datePublished": [
+        "2026-10-15T22:05:09+09:00"
+      ]
+    },
+    {
+      "slug": "highball-measure-and-adjust",
+      "status": 200,
+      "h1_count": 1,
+      "datePublished": [
+        "2026-10-15T22:05:09+09:00"
+      ]
+    },
+    {
+      "slug": "csv-import-seven-checks",
+      "status": 200,
+      "h1_count": 1,
+      "datePublished": [
+        "2026-10-15T22:05:09+09:00"
+      ]
+    },
+    {
+      "slug": "before-welcoming-cat",
+      "status": 200,
+      "h1_count": 1,
+      "datePublished": [
+        "2026-11-03T02:43:36+09:00"
+      ]
+    },
+    {
+      "slug": "manmos-cat-life",
+      "status": 200,
+      "h1_count": 1,
+      "datePublished": [
+        "2026-11-03T02:43:36+09:00"
+      ]
+    },
+    {
+      "slug": "cat-teaser-small-parts",
+      "status": 200,
+      "h1_count": 1,
+      "datePublished": [
+        "2026-11-03T02:43:37+09:00"
+      ]
+    },
+    {
+      "slug": "cat-vet-routine",
+      "status": 200,
+      "h1_count": 1,
+      "datePublished": [
+        "2026-11-03T02:43:38+09:00"
+      ]
+    },
+    {
+      "slug": "glenlivet-12-first-bottles",
+      "status": 200,
+      "h1_count": 1,
+      "datePublished": [
+        "2026-11-03T02:43:38+09:00"
+      ]
+    },
+    {
+      "slug": "single-malt-label-guide",
+      "status": 200,
+      "h1_count": 1,
+      "datePublished": [
+        "2026-11-05T09:42:21+09:00"
+      ]
+    },
+    {
+      "slug": "sherry-cask-notes",
+      "status": 200,
+      "h1_count": 1,
+      "datePublished": [
+        "2026-11-03T02:43:39+09:00"
+      ]
+    },
+    {
+      "slug": "it-data-work-flow",
+      "status": 200,
+      "h1_count": 1,
+      "datePublished": [
+        "2026-11-03T02:43:40+09:00"
+      ]
+    },
+    {
+      "slug": "starting-it-without-specialty",
+      "status": 200,
+      "h1_count": 1,
+      "datePublished": [
+        "2026-11-03T02:43:40+09:00"
+      ]
+    },
+    {
+      "slug": "ai-data-extraction-checks",
+      "status": 200,
+      "h1_count": 1,
+      "datePublished": [
+        "2026-11-03T02:43:41+09:00"
+      ]
+    },
+    {
+      "slug": "mirai-cat-food-types",
+      "status": 200,
+      "h1_count": 1,
+      "datePublished": [
+        "2026-11-04T01:38:07+09:00"
+      ]
+    },
+    {
+      "slug": "m-and-cat-knit-bag",
+      "status": 200,
+      "h1_count": 1,
+      "datePublished": [
+        "2026-11-04T01:38:09+09:00"
+      ]
+    },
+    {
+      "slug": "pet-sougi-110-cat-guide",
+      "status": 200,
+      "h1_count": 1,
+      "datePublished": [
+        "2026-11-04T01:38:10+09:00"
+      ]
+    },
+    {
+      "slug": "digxipop-cat-figure",
+      "status": 200,
+      "h1_count": 1,
+      "datePublished": [
+        "2026-11-04T01:38:11+09:00"
+      ]
+    },
+    {
+      "slug": "withpety-nekokenshin",
+      "status": 200,
+      "h1_count": 1,
+      "datePublished": [
+        "2026-11-04T01:38:13+09:00"
+      ]
+    },
+    {
+      "slug": "pontely-cat-dna-test",
+      "status": 200,
+      "h1_count": 1,
+      "datePublished": [
+        "2026-11-04T01:38:14+09:00"
+      ]
+    },
+    {
+      "slug": "withpety-nekobihada",
+      "status": 200,
+      "h1_count": 1,
+      "datePublished": [
+        "2026-11-04T01:38:16+09:00"
+      ]
+    },
+    {
+      "slug": "onekosama-cat-tower",
+      "status": 200,
+      "h1_count": 1,
+      "datePublished": [
+        "2026-11-04T01:38:17+09:00"
+      ]
+    },
+    {
+      "slug": "withpety-nekoryoukan",
+      "status": 200,
+      "h1_count": 1,
+      "datePublished": [
+        "2026-11-04T01:38:18+09:00"
+      ]
+    },
+    {
+      "slug": "catlog-cat-monitor",
+      "status": 200,
+      "h1_count": 1,
+      "datePublished": [
+        "2026-11-04T01:38:20+09:00"
+      ]
+    },
+    {
+      "slug": "withpety-nekoissho",
+      "status": 200,
+      "h1_count": 1,
+      "datePublished": [
+        "2026-11-04T01:38:21+09:00"
+      ]
+    },
+    {
+      "slug": "canagan-dental-cat-food",
+      "status": 200,
+      "h1_count": 1,
+      "datePublished": [
+        "2026-11-05T00:16:59+09:00"
+      ]
+    },
+    {
+      "slug": "canagan-chicken-salmon",
+      "status": 200,
+      "h1_count": 1,
+      "datePublished": [
+        "2026-11-05T00:17:00+09:00"
+      ]
+    },
+    {
+      "slug": "mcadams-cat-chicken-turkey",
+      "status": 200,
+      "h1_count": 1,
+      "datePublished": [
+        "2026-11-05T00:17:01+09:00"
+      ]
+    },
+    {
+      "slug": "essential-jaguar-cat-food",
+      "status": 200,
+      "h1_count": 1,
+      "datePublished": [
+        "2026-11-05T00:17:02+09:00"
+      ]
+    },
+    {
+      "slug": "mognyan-cat-food-guide",
+      "status": 200,
+      "h1_count": 1,
+      "datePublished": [
+        "2026-11-05T00:17:03+09:00"
+      ]
+    }
+  ],
+  "browser_flow_check": {
+    "passed": 18,
+    "failed": 0,
+    "mode": "live-flow-check",
+    "writes": 0,
+    "affiliate_links_clicked": 0
+  },
+  "php_checks": 959,
+  "python_copy_and_author_checks": 18,
+  "python_editorial_checks": 6,
+  "python_existing_articles_checks": 4,
+  "titles_publication_dates_numbers_links_images_preserved": true,
+  "intro_outline_removed": true,
+  "native_toc_retained": true,
+  "related_cards_follow_main_narrative": true,
+  "screenshots_reviewed": [
+    "after-glenlivet-12-first-bottles.png",
+    "after-mognyan-cat-food-guide.png"
+  ],
+  "site_audit": {
+    "pages": 46,
+    "internal_links_checked": 2463,
+    "problems": 0,
+    "orphaned": 0
+  },
+  "limits": [
+    "段落を文字数だけで一律に結合しない。",
+    "厳格なtextlintの文体指摘をすべて解消したという検証ではない。",
+    "ブラウザーは代表6記事×3幅。全記事の全画面を手作業で見終えたという意味ではない。"
+  ]
+}
