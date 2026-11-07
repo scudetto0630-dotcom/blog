@@ -1,0 +1,19 @@
+{
+  "version": "1.34.0",
+  "published_articles": 32,
+  "openings_reworked": 32,
+  "affiliate_endings_reworked": 19,
+  "section_order_reworked": 9,
+  "heading_wording_reworked": 2,
+  "public_body_and_publication_dates_verified": 32,
+  "live_heading_order_verified": 32,
+  "flow_browser_checks": 18,
+  "php_checks": 959,
+  "article_and_editorial_tests": 34,
+  "existing_editorial_flags": {
+    "style": 18,
+    "fact_review": 8
+  },
+  "note": "最新本文はキャッシュを避けた公開URLで照合。画像・リンク・数値・アンカーIDを保持。文体の自動指摘は残存し、全文の自動校正完了を意味しない。",
+  "affiliate_browser_checks": 76
+}
