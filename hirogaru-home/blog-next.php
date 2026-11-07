@@ -44,7 +44,7 @@ function hsh_release_article($request){
 add_action('rest_api_init',function(){register_rest_route('hirogaru/v1','/content-release',array(array('methods'=>'GET','callback'=>'hsh_release_status','permission_callback'=>'hsh_edit_permission'),array('methods'=>'POST','callback'=>'hsh_release_article','permission_callback'=>'hsh_edit_permission')));});
 
 function hsh_search_topic($value){return is_string($value)&&in_array($value,array('cats','whisky','it-freelance'),true)?$value:'';}
-function hsh_search_alias($text){return strtr($text,array('アルボらリス'=>'グレングラント','グレン・グラント'=>'グレングラント','グレングラント アルボラリス'=>'グレングラント','アルボラリス'=>'グレングラント','アーボラリス'=>'グレングラント','グレンファークラス'=>'グレンファークラス','シェリーカスク'=>'シェリー','ハーフロック'=>'ハーフロック','chatgpt'=>'ChatGPT','codex'=>'Codex','エクセル'=>'Excel','スプレッドシート'=>'スプレッドシート','ねこじゃらし'=>'ねこじゃらし','猫じゃらし'=>'ねこじゃらし','ネコじゃらし'=>'ねこじゃらし','コーデックス'=>'Codex','ねこ'=>'猫','ネコ'=>'猫','チャッピー'=>'ChatGPT','チャットGPT'=>'ChatGPT','チャットＧＰＴ'=>'ChatGPT','ＣＳＶ'=>'CSV','ウィスキー'=>'ウイスキー','もぐにゃん'=>'モグニャン','キャットログ'=>'Catlog','猫ログ'=>'Catlog','はりお'=>'HARIO','ハリオ'=>'HARIO','ぽんてりー'=>'Pontely','カナガン キャット'=>'カナガン','グレンリベット１２年'=>'グレンリベット12年','まんもう'=>'まんもす','マンモス'=>'まんもす'));}
+function hsh_search_alias($text){if(function_exists('hsh_quality_aliases'))$text=strtr($text,hsh_quality_aliases(get_option('hsh_search_aliases',array())));return strtr($text,array('アルボらリス'=>'グレングラント','グレン・グラント'=>'グレングラント','グレングラント アルボラリス'=>'グレングラント','アルボラリス'=>'グレングラント','アーボラリス'=>'グレングラント','グレンファークラス'=>'グレンファークラス','シェリーカスク'=>'シェリー','ハーフロック'=>'ハーフロック','chatgpt'=>'ChatGPT','codex'=>'Codex','エクセル'=>'Excel','スプレッドシート'=>'スプレッドシート','ねこじゃらし'=>'ねこじゃらし','猫じゃらし'=>'ねこじゃらし','ネコじゃらし'=>'ねこじゃらし','コーデックス'=>'Codex','ねこ'=>'猫','ネコ'=>'猫','チャッピー'=>'ChatGPT','チャットGPT'=>'ChatGPT','チャットＧＰＴ'=>'ChatGPT','ＣＳＶ'=>'CSV','ウィスキー'=>'ウイスキー','もぐにゃん'=>'モグニャン','キャットログ'=>'Catlog','猫ログ'=>'Catlog','はりお'=>'HARIO','ハリオ'=>'HARIO','ぽんてりー'=>'Pontely','カナガン キャット'=>'カナガン','グレンリベット１２年'=>'グレンリベット12年','まんもう'=>'まんもす','マンモス'=>'まんもす'));}
 add_action('pre_get_posts',function($q){
     if(is_admin()||!$q->is_main_query()||!$q->is_search())return;
     $term=$q->get('s');if(is_string($term))$q->set('s',hsh_search_alias($term));
@@ -149,8 +149,8 @@ add_filter('the_content',function($content){
 },25);
 add_action('wp_enqueue_scripts',function(){
     if(is_admin())return;
-    wp_enqueue_style('hsh-next',plugin_dir_url(__FILE__).'assets/blog-next.css',array(),'1.32.0');
-    if(hsh_reader_managed()||is_page())wp_enqueue_script('hsh-next',plugin_dir_url(__FILE__).'assets/blog-next.js',array(),'1.32.0',true);
+    wp_enqueue_style('hsh-next',plugin_dir_url(__FILE__).'assets/blog-next.css',array(),'1.33.0');
+    if(hsh_reader_managed()||is_page())wp_enqueue_script('hsh-next',plugin_dir_url(__FILE__).'assets/blog-next.js',array(),'1.33.0',true);
     wp_localize_script('hsh-next','hshBlogTools',array('reportUrl'=>rest_url('hirogaru/v1/blog-report'),'tokenUrl'=>rest_url('hirogaru/v1/blog-report-token')));
 },110);
 add_filter('template_include',function($template){return is_404()?__DIR__.'/not-found-template.php':$template;},102);

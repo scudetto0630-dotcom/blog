@@ -1,0 +1,702 @@
+[
+  {
+    "id": 1,
+    "category": "デザイン",
+    "item": "写真・見出し・一覧の階層",
+    "status": "実装",
+    "evidence": "quality.css：見出し・本文・カードの階層"
+  },
+  {
+    "id": 2,
+    "category": "デザイン",
+    "item": "分野別の差し色",
+    "status": "実装",
+    "evidence": "猫は緑、ウイスキーは琥珀、仕事は青"
+  },
+  {
+    "id": 3,
+    "category": "デザイン",
+    "item": "スマホ見出しの改行",
+    "status": "実装",
+    "evidence": "text-wrap:balance、line-break:strict"
+  },
+  {
+    "id": 4,
+    "category": "デザイン",
+    "item": "カードの情報比率",
+    "status": "実装",
+    "evidence": "文字サイズ・行間・商品写真の余白"
+  },
+  {
+    "id": 5,
+    "category": "デザイン",
+    "item": "案件と体験の区別",
+    "status": "確認",
+    "evidence": "既存ラベル・体験談と商品紹介の分離を維持"
+  },
+  {
+    "id": 6,
+    "category": "デザイン",
+    "item": "縦横写真の表示",
+    "status": "確認",
+    "evidence": "既存写真グリッドとcontain表示を維持"
+  },
+  {
+    "id": 7,
+    "category": "デザイン",
+    "item": "商品写真の背景・余白",
+    "status": "実装",
+    "evidence": "商品小枠の背景とcontain"
+  },
+  {
+    "id": 8,
+    "category": "デザイン",
+    "item": "文字の役割別階層",
+    "status": "実装",
+    "evidence": "本文・見出し・キャプション・補足のサイズ"
+  },
+  {
+    "id": 9,
+    "category": "デザイン",
+    "item": "強調の整理",
+    "status": "確認",
+    "evidence": "過剰な太字を追加せず既存強調を維持。自動一括削除はしない"
+  },
+  {
+    "id": 10,
+    "category": "デザイン",
+    "item": "リンクの役割別表現",
+    "status": "実装",
+    "evidence": "広告ボタン・保存・通常リンクの既存表現に押下表示"
+  },
+  {
+    "id": 11,
+    "category": "デザイン",
+    "item": "記事上部の操作整理",
+    "status": "実装",
+    "evidence": "details折り畳み、狭い画面の間隔"
+  },
+  {
+    "id": 12,
+    "category": "デザイン",
+    "item": "表・シート・Q&Aの整合",
+    "status": "確認",
+    "evidence": "既存スタイルと新しい項目メモを整合"
+  },
+  {
+    "id": 13,
+    "category": "デザイン",
+    "item": "キャプション改行",
+    "status": "実装",
+    "evidence": "最大幅・行間・overflow-wrap"
+  },
+  {
+    "id": 14,
+    "category": "デザイン",
+    "item": "記事末尾の導線",
+    "status": "確認",
+    "evidence": "既存関連記事・共有・報告を維持、重複追加なし"
+  },
+  {
+    "id": 15,
+    "category": "デザイン",
+    "item": "フッターの整理",
+    "status": "実装",
+    "evidence": "navの折り返しと間隔"
+  },
+  {
+    "id": 16,
+    "category": "デザイン",
+    "item": "アイコンの整合",
+    "status": "確認",
+    "evidence": "既存アイコンを維持、新機能は明瞭な文字ボタン"
+  },
+  {
+    "id": 17,
+    "category": "デザイン",
+    "item": "hover・押下・選択",
+    "status": "実装",
+    "evidence": "focus-visible、active、aria-pressedの下線"
+  },
+  {
+    "id": 18,
+    "category": "デザイン",
+    "item": "小画面・タブレット",
+    "status": "検証",
+    "evidence": "320/390/768/1440pxのブラウザー検証"
+  },
+  {
+    "id": 19,
+    "category": "デザイン",
+    "item": "色以外の状態表示",
+    "status": "実装",
+    "evidence": "選択チェック、aria-pressed、読了の文字"
+  },
+  {
+    "id": 20,
+    "category": "デザイン",
+    "item": "共通デザイントークン",
+    "status": "実装",
+    "evidence": "quality.cssの色・余白・角丸変数"
+  },
+  {
+    "id": 21,
+    "category": "機能性",
+    "item": "保存・読了・履歴の別タブ同期",
+    "status": "実装",
+    "evidence": "storageイベントで反映"
+  },
+  {
+    "id": 22,
+    "category": "機能性",
+    "item": "保存条件と件数の記憶",
+    "status": "実装",
+    "evidence": "hsh-saved-filters-v1"
+  },
+  {
+    "id": 23,
+    "category": "機能性",
+    "item": "保存記事の複数解除",
+    "status": "実装",
+    "evidence": "表示中選択・解除・取り消し"
+  },
+  {
+    "id": 24,
+    "category": "機能性",
+    "item": "保存記事の読み込み",
+    "status": "実装",
+    "evidence": "100KB/100件/既知IDのみJSON統合"
+  },
+  {
+    "id": 25,
+    "category": "機能性",
+    "item": "旧データの維持",
+    "status": "実装",
+    "evidence": "既存保存配列を維持、シート旧checked/noteを読む"
+  },
+  {
+    "id": 26,
+    "category": "機能性",
+    "item": "公開一覧外の保存記事",
+    "status": "実装",
+    "evidence": "一覧外の件数と代わりの探し先、削除断定なし"
+  },
+  {
+    "id": 27,
+    "category": "機能性",
+    "item": "記事内検索の前後移動",
+    "status": "実装",
+    "evidence": "前の一致・次の一致・現在/総数"
+  },
+  {
+    "id": 28,
+    "category": "機能性",
+    "item": "検索辞書を管理画面で編集",
+    "status": "実装",
+    "evidence": "manage_options・nonce・50件・文字列置換"
+  },
+  {
+    "id": 29,
+    "category": "機能性",
+    "item": "記事の並び替え",
+    "status": "実装",
+    "evidence": "カテゴリの新着・更新・読む順"
+  },
+  {
+    "id": 30,
+    "category": "機能性",
+    "item": "表見出しの固定",
+    "status": "実装",
+    "evidence": "横スクロール表のthead sticky"
+  },
+  {
+    "id": 31,
+    "category": "機能性",
+    "item": "比較表条件の復元",
+    "status": "実装",
+    "evidence": "ページ別sessionStorage"
+  },
+  {
+    "id": 32,
+    "category": "機能性",
+    "item": "項目ごとのメモ",
+    "status": "実装",
+    "evidence": "各300文字、既存全体メモ2000文字を維持"
+  },
+  {
+    "id": 33,
+    "category": "機能性",
+    "item": "メモ削除の取り消し",
+    "status": "実装",
+    "evidence": "ページを閉じるまでの取消スナップショット"
+  },
+  {
+    "id": 34,
+    "category": "機能性",
+    "item": "写真付き印刷の選択",
+    "status": "実装",
+    "evidence": "設定を端末に保存、print CSS"
+  },
+  {
+    "id": 35,
+    "category": "機能性",
+    "item": "写真を閉じた位置",
+    "status": "実装",
+    "evidence": "スクロールと開いたボタンのフォーカス復帰"
+  },
+  {
+    "id": 36,
+    "category": "機能性",
+    "item": "画像単位の再試行",
+    "status": "実装",
+    "evidence": "同一オリジン画像だけ再取得、ページ再送信なし"
+  },
+  {
+    "id": 37,
+    "category": "機能性",
+    "item": "送信状態と二重送信",
+    "status": "確認・補強",
+    "evidence": "既存disabled・送信中・成功・失敗、成功時dirty解除"
+  },
+  {
+    "id": 38,
+    "category": "機能性",
+    "item": "誤り報告の見出し",
+    "status": "実装",
+    "evidence": "見出し選択を既存messageに添付、800文字制限"
+  },
+  {
+    "id": 39,
+    "category": "機能性",
+    "item": "JavaScript無効時",
+    "status": "検証",
+    "evidence": "本文と通常リンクをブラウザー確認。送信は既存noscript案内"
+  },
+  {
+    "id": 40,
+    "category": "機能性",
+    "item": "保存機能の回帰テスト",
+    "status": "実装",
+    "evidence": "quality-browser.cjsと既存studio-browser.cjs"
+  },
+  {
+    "id": 41,
+    "category": "文書校正能力向上",
+    "item": "サイト表記基準",
+    "status": "作成",
+    "evidence": "編集基準.md"
+  },
+  {
+    "id": 42,
+    "category": "文書校正能力向上",
+    "item": "本人の事実台帳",
+    "status": "作成",
+    "evidence": "確認済み事実と未確認の範囲"
+  },
+  {
+    "id": 43,
+    "category": "文書校正能力向上",
+    "item": "体験・公式・一般論の区別",
+    "status": "作成",
+    "evidence": "下書きと公開前チェック手順"
+  },
+  {
+    "id": 44,
+    "category": "文書校正能力向上",
+    "item": "型番・配合・写真照合",
+    "status": "整備",
+    "evidence": "既存19商品メモと画像manifest、PS-B1の回帰テスト。全仕様再保証はしない"
+  },
+  {
+    "id": 45,
+    "category": "文書校正能力向上",
+    "item": "タイトルと冒頭の一致",
+    "status": "整備",
+    "evidence": "32記事の冒頭と目的を台帳化、最終判断は個別レビュー"
+  },
+  {
+    "id": 46,
+    "category": "文書校正能力向上",
+    "item": "見出しだけで意味を伝える",
+    "status": "実装",
+    "evidence": "vague-headingを検出、既存見出しを維持"
+  },
+  {
+    "id": 47,
+    "category": "文書校正能力向上",
+    "item": "弱い定型句の反復",
+    "status": "実装",
+    "evidence": "weak-repetitionを検出"
+  },
+  {
+    "id": 48,
+    "category": "文書校正能力向上",
+    "item": "重複段落",
+    "status": "実装",
+    "evidence": "記事内重複と記事間長文一致を検出"
+  },
+  {
+    "id": 49,
+    "category": "文書校正能力向上",
+    "item": "長い複文",
+    "status": "実装",
+    "evidence": "長文・読点過多の指摘"
+  },
+  {
+    "id": 50,
+    "category": "文書校正能力向上",
+    "item": "指示語の曖昧さ",
+    "status": "実装",
+    "evidence": "文頭これ/それの確認候補"
+  },
+  {
+    "id": 51,
+    "category": "文書校正能力向上",
+    "item": "本人の口調を残す",
+    "status": "整備",
+    "evidence": "話し言葉を一括変換しない基準"
+  },
+  {
+    "id": 52,
+    "category": "文書校正能力向上",
+    "item": "キーワード過多",
+    "status": "実装",
+    "evidence": "タイトル語の本文反復を検出"
+  },
+  {
+    "id": 53,
+    "category": "文書校正能力向上",
+    "item": "数量・単位の整合",
+    "status": "整備",
+    "evidence": "数値署名と差分検知。意味の一致は人の確認"
+  },
+  {
+    "id": 54,
+    "category": "文書校正能力向上",
+    "item": "根拠のない断定",
+    "status": "実装",
+    "evidence": "必ず・絶対・効能表現を確認候補化"
+  },
+  {
+    "id": 55,
+    "category": "文書校正能力向上",
+    "item": "体験日と確認日",
+    "status": "整備",
+    "evidence": "台帳で自動点検日と内容確認日を分離"
+  },
+  {
+    "id": 56,
+    "category": "文書校正能力向上",
+    "item": "根拠URLと主張",
+    "status": "整備",
+    "evidence": "32記事の出典一覧、19公式URL到達確認。意味の再確認は随時"
+  },
+  {
+    "id": 57,
+    "category": "文書校正能力向上",
+    "item": "指摘の分類",
+    "status": "実装",
+    "evidence": "error/fact/styleを分離"
+  },
+  {
+    "id": 58,
+    "category": "文書校正能力向上",
+    "item": "理由付き例外",
+    "status": "作成",
+    "evidence": "8件の否定文脈をハッシュ・理由付き記録"
+  },
+  {
+    "id": 59,
+    "category": "文書校正能力向上",
+    "item": "過去の誤り回帰",
+    "status": "実装",
+    "evidence": "広告欠落・架空体験・型番などテスト"
+  },
+  {
+    "id": 60,
+    "category": "文書校正能力向上",
+    "item": "修正前後の事実保持",
+    "status": "実装",
+    "evidence": "facts署名の比較オプション"
+  },
+  {
+    "id": 61,
+    "category": "閲覧数増加",
+    "item": "改稿前後の同期間比較",
+    "status": "準備・実績待ち",
+    "evidence": "28日×2・非重複・欠損を0にしないツール"
+  },
+  {
+    "id": 62,
+    "category": "閲覧数増加",
+    "item": "表示された記事を優先",
+    "status": "準備・実績待ち",
+    "evidence": "実データがあるページを優先する基準"
+  },
+  {
+    "id": 63,
+    "category": "閲覧数増加",
+    "item": "CTRの判断基準",
+    "status": "準備・実績待ち",
+    "evidence": "100表示を入口に検索語・国・端末・順位も比較"
+  },
+  {
+    "id": 64,
+    "category": "閲覧数増加",
+    "item": "検索意図とのずれを修正",
+    "status": "実績待ち",
+    "evidence": "具体的検索語が得られたものから実施"
+  },
+  {
+    "id": 65,
+    "category": "閲覧数増加",
+    "item": "未登録ページの原因別対応",
+    "status": "実績待ち",
+    "evidence": "URLごとのGSC理由が必要。登録済みのキャリーは再申請強制なし"
+  },
+  {
+    "id": 66,
+    "category": "閲覧数増加",
+    "item": "自サイト記事の競合",
+    "status": "整備",
+    "evidence": "共有段落の点検。検索語の競合判断は実績待ち"
+  },
+  {
+    "id": 67,
+    "category": "閲覧数増加",
+    "item": "需要に沿うまとめページ",
+    "status": "実績待ち",
+    "evidence": "推定需要だけで新規量産しない"
+  },
+  {
+    "id": 68,
+    "category": "閲覧数増加",
+    "item": "読まれたページからの導線",
+    "status": "確認・実績待ち",
+    "evidence": "既存関連リンクを維持、実績による追加配分は保留"
+  },
+  {
+    "id": 69,
+    "category": "閲覧数増加",
+    "item": "購入前の疑問",
+    "status": "確認",
+    "evidence": "既存19案件の個別Q&Aと選び方を維持"
+  },
+  {
+    "id": 70,
+    "category": "閲覧数増加",
+    "item": "体験・本人写真を入口に",
+    "status": "確認",
+    "evidence": "キャリー・まんもす・白州・ウイスキー体験を維持"
+  },
+  {
+    "id": 71,
+    "category": "閲覧数増加",
+    "item": "実際の検索結果の不足を埋める",
+    "status": "調査待ち",
+    "evidence": "検索結果のCAPTCHAを回避せず未確認と記録"
+  },
+  {
+    "id": 72,
+    "category": "閲覧数増加",
+    "item": "季節前の更新計画",
+    "status": "作成",
+    "evidence": "編集基準の年間点検時期"
+  },
+  {
+    "id": 73,
+    "category": "閲覧数増加",
+    "item": "古い数字・販売状況",
+    "status": "点検・継続",
+    "evidence": "19公式URLは取得可。価格・終売の断定は内容確認時のみ"
+  },
+  {
+    "id": 74,
+    "category": "閲覧数増加",
+    "item": "SNS向け短文と画像",
+    "status": "作成",
+    "evidence": "2記事×2角度の短文、2比率×2記事の画像下書き"
+  },
+  {
+    "id": 75,
+    "category": "閲覧数増加",
+    "item": "SNS比率とOGP",
+    "status": "作成・確認",
+    "evidence": "1200×630/1080×1350の下書き、既存OGP維持"
+  },
+  {
+    "id": 76,
+    "category": "閲覧数増加",
+    "item": "記事ごとの複数訴求",
+    "status": "作成",
+    "evidence": "social-drafts.jsonの2角度"
+  },
+  {
+    "id": 77,
+    "category": "閲覧数増加",
+    "item": "サイトの軸と再訪",
+    "status": "整備",
+    "evidence": "編集軸・最近読んだ記事と保存を整合"
+  },
+  {
+    "id": 78,
+    "category": "閲覧数増加",
+    "item": "古い記事の発見",
+    "status": "実装",
+    "evidence": "更新順・読む順と既存関連記事"
+  },
+  {
+    "id": 79,
+    "category": "閲覧数増加",
+    "item": "流入元の区別",
+    "status": "整備",
+    "evidence": "不明流入を検索扱いしない、指標定義を記録"
+  },
+  {
+    "id": 80,
+    "category": "閲覧数増加",
+    "item": "変更と成果の記録",
+    "status": "整備",
+    "evidence": "同期間比較・変更単位・実績待ちを明示"
+  },
+  {
+    "id": 81,
+    "category": "提案・運用",
+    "item": "ブログの軸",
+    "status": "作成",
+    "evidence": "まんもすと暮らす人のブログ"
+  },
+  {
+    "id": 82,
+    "category": "提案・運用",
+    "item": "テーマの優先順位",
+    "status": "作成",
+    "evidence": "誤情報→疑問→実績→見た目"
+  },
+  {
+    "id": 83,
+    "category": "提案・運用",
+    "item": "案件と体験の配分",
+    "status": "整備",
+    "evidence": "体験を入口、既存分離を維持"
+  },
+  {
+    "id": 84,
+    "category": "提案・運用",
+    "item": "公開の最低基準",
+    "status": "作成",
+    "evidence": "広告・根拠・操作・スマホの確認手順"
+  },
+  {
+    "id": 85,
+    "category": "提案・運用",
+    "item": "記事の読者と問い",
+    "status": "作成・レビュー候補",
+    "evidence": "32記事台帳。冒頭由来の仮案と明記"
+  },
+  {
+    "id": 86,
+    "category": "提案・運用",
+    "item": "記事台帳",
+    "status": "作成",
+    "evidence": "役割・出典・点検日・内容確認日・ハッシュ"
+  },
+  {
+    "id": 87,
+    "category": "提案・運用",
+    "item": "改稿と新記事の判断",
+    "status": "作成",
+    "evidence": "既存記事で答えられるかを基準"
+  },
+  {
+    "id": 88,
+    "category": "提案・運用",
+    "item": "優先順位の判断",
+    "status": "作成",
+    "evidence": "読者影響・データ・作業範囲"
+  },
+  {
+    "id": 89,
+    "category": "提案・運用",
+    "item": "変更を小分けに記録",
+    "status": "整備",
+    "evidence": "変更単位・対象・検証・バージョン"
+  },
+  {
+    "id": 90,
+    "category": "提案・運用",
+    "item": "機能の目的と保守",
+    "status": "作成",
+    "evidence": "機能別の担当ファイルと影響"
+  },
+  {
+    "id": 91,
+    "category": "提案・運用",
+    "item": "重複UIを増やさない",
+    "status": "実装",
+    "evidence": "保存既存controllerを拡張、単一のフィルター制御"
+  },
+  {
+    "id": 92,
+    "category": "提案・運用",
+    "item": "内部メモの露出防止",
+    "status": "確認",
+    "evidence": "運用資料はWordPress本文へ挿入しない"
+  },
+  {
+    "id": 93,
+    "category": "提案・運用",
+    "item": "生成を実用品と誤認させない",
+    "status": "整備",
+    "evidence": "画像のkindを保持、架空の使用を検出"
+  },
+  {
+    "id": 94,
+    "category": "提案・運用",
+    "item": "原本と派生の対応",
+    "status": "整備",
+    "evidence": "129素材のmanifest台帳、追跡不足は要確認と明示"
+  },
+  {
+    "id": 95,
+    "category": "提案・運用",
+    "item": "終売・案件終了",
+    "status": "作成",
+    "evidence": "無断転送せず広告停止と確認日追記"
+  },
+  {
+    "id": 96,
+    "category": "提案・運用",
+    "item": "変更履歴",
+    "status": "作成",
+    "evidence": "READMEと100項目対応表"
+  },
+  {
+    "id": 97,
+    "category": "提案・運用",
+    "item": "障害時の影響範囲",
+    "status": "作成",
+    "evidence": "JS/PHP/CSSごとの影響表"
+  },
+  {
+    "id": 98,
+    "category": "提案・運用",
+    "item": "バックアップの限界",
+    "status": "作成",
+    "evidence": "プラグイン控えと記事履歴、DB全体復元は未確認"
+  },
+  {
+    "id": 99,
+    "category": "提案・運用",
+    "item": "月次の継続・改善・中止",
+    "status": "作成",
+    "evidence": "判断基準と月次記録テンプレート"
+  },
+  {
+    "id": 100,
+    "category": "提案・運用",
+    "item": "指標を混ぜない",
+    "status": "整備",
+    "evidence": "閲覧・記事到達・再訪・広告関心・売上を分離"
+  }
+]

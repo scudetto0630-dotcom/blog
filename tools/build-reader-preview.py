@@ -24,7 +24,7 @@ def build(source, output):
     shutil.copytree(ROOT / 'hirogaru-home/assets', output / 'assets', ignore=shutil.ignore_patterns('*.png', 'vendor'))
     for file in ('brand-32.png', 'brand-180.png'):
         shutil.copy2(ROOT / 'hirogaru-home/assets' / file, output / 'assets' / file)
-    styles = ['home.css', 'reading.css', 'blog-next.css', 'growth.css', 'reader.css', 'palette.css', 'brushup.css', 'studio.css']
+    styles = ['home.css', 'reading.css', 'blog-next.css', 'growth.css', 'reader.css', 'palette.css', 'brushup.css', 'studio.css', 'quality.css']
     head = '<meta http-equiv="Content-Security-Policy" content="default-src \'self\'; img-src \'self\' data:; style-src \'self\' \'unsafe-inline\'; script-src \'self\' \'unsafe-inline\'; connect-src \'none\'; form-action \'none\'; base-uri \'none\'">'
     head += ''.join('<link rel="stylesheet" href="assets/' + f + '">' for f in styles)
     head += '<style>body{margin:0;background:#fffaf3;color:#49382e;font-family:Meiryo,sans-serif}.hsh-preview-main{max-width:740px;padding:24px;margin:auto}.hsh-preview-note{padding:10px 24px;background:#eee2cf;font-size:13px}.hsh-anchor{display:block;scroll-margin-top:24px}</style>'
@@ -46,7 +46,7 @@ def build(source, output):
             html = html.replace('https://hirogarushumi.com/' + slug + '/', slug + '.html')
         html = html.replace('</head>', head + '</head>')
         html = html.replace('<body class="hsh-reader-site">', '<body class="hsh-reader-site"><div class="hsh-preview-note">公開前のローカル確認画面です。送信・通信は無効です。</div>')
-        html = html.replace('</body>', '<script>window.hshBlogTools={tokenUrl:"preview-disabled",reportUrl:"preview-disabled"}</script><script src="assets/blog-next.js"></script><script src="assets/reader.js"></script><script src="assets/brushup.js"></script><script src="assets/studio.js"></script></body>')
+        html = html.replace('</body>', '<script>window.hshBlogTools={tokenUrl:"preview-disabled",reportUrl:"preview-disabled"}</script><script src="assets/blog-next.js"></script><script src="assets/reader.js"></script><script src="assets/brushup.js"></script><script src="assets/studio.js"></script><script src="assets/quality.js"></script></body>')
         if key == 'index':
             html = html.replace('<h1>まんもすとの暮らし、ウイスキー、仕事の話</h1>', '<h2>まんもすとの暮らし、ウイスキー、仕事の話</h2>')
         (output / (key + '.html')).write_text(html)

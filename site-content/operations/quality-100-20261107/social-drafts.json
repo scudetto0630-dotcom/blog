@@ -1,0 +1,28 @@
+{
+  "status": "draft_only_not_posted",
+  "privacy": "No social platform API calls",
+  "posts": [
+    {
+      "slug": "manmos-cat-life",
+      "photo": "manmos-portrait.webp",
+      "title": "まんもすと暮らす毎日",
+      "subtitle": "好きな遊びや、ちょっと苦手なこと。",
+      "angles": [
+        "羽のおもちゃが好きで、抱っこは苦手。うちの猫「まんもす」の話を書いています。",
+        "猫と暮らす日々の写真と、まんもすの好きなことをまとめました。"
+      ],
+      "url": "https://hirogarushumi.com/manmos-cat-life/"
+    },
+    {
+      "slug": "hsh-hakushu-visit",
+      "photo": "hakushu-entrance.webp",
+      "title": "はじめての白州蒸溜所",
+      "subtitle": "2025年7月の写真と、楽しかった飲み比べ。",
+      "angles": [
+        "2025年7月、初めての蒸溜所見学へ。白州で撮った写真と、飲み比べの思い出をまとめました。",
+        "白州蒸溜所を訪れた日の写真。初めての見学で印象に残ったことを書いています。"
+      ],
+      "url": "https://hirogarushumi.com/hsh-hakushu-visit/"
+    }
+  ]
+}

@@ -26,7 +26,7 @@ function hsh_search_markup($id) {
     return '<form class="hsh-search" role="search" method="get" action="'.esc_url(home_url('/')).'"><label for="'.esc_attr($id).'">ブログ内を検索</label><div><input id="'.esc_attr($id).'" name="s" type="search" value="'.esc_attr($value).'" maxlength="100" placeholder="キャリー、ハイボール、CSVなど"><select name="hsh_topic" aria-label="検索するカテゴリー">'.$options.'</select><button type="submit">検索</button></div></form>';
 }
 add_action('wp_enqueue_scripts', function () {
-    wp_enqueue_style('hsh-reading', plugin_dir_url(__FILE__) . 'assets/reading.css', array(), '1.32.0');
+    wp_enqueue_style('hsh-reading', plugin_dir_url(__FILE__) . 'assets/reading.css', array(), '1.33.0');
     if ((int)get_option('hsh_page_id') && is_page((int)get_option('hsh_page_id'))) {
         foreach (array('cocoon-style','cocoon-keyframes','font-awesome-style','icomoon-style','baguettebox-style','cocoon-child-style','cocoon-child-keyframes','contact-form-7') as $handle) { wp_dequeue_style($handle); }
     }
@@ -87,7 +87,7 @@ add_action('admin_menu',function(){add_theme_page('ブログ運用状況','ブ�
     if(!current_user_can('manage_options')){return;} $audit=hsh_site_audit()->get_data();
     echo '<div class="wrap"><h1>ブログ運用状況</h1><p>検索登録や成約数を、未接続のまま取得済みとは表示しません。</p><h2>検索への公開</h2><p>'.($audit['public_indexing']?'公開設定は有効です。Googleへの登録・掲載は別途確認が必要です。':'検索エンジンへの公開が無効です。設定を確認してください。').'</p><p><a href="'.esc_url($audit['sitemap']).'">サイトマップを見る</a></p><h2>Search Console</h2><p>所有権確認とサイトマップ送信は完了しています（管理者からの報告）。検索データの自動取得はまだ接続していません。</p><h2>バックアップ</h2><p>専用記事には変更前の履歴を最大10件保持します。これはサイト全体のバックアップではありません。ConoHa側のデータベース・メディアを含む復元可否は未確認です。</p><h2>記事への到達件数（概数）</h2><p>ログイン中・既知のボットを除外。キャッシュ配信や同時アクセスの影響があり、正確なPV・訪問者数ではありません。個人識別用CookieやIPはこの集計に保存しません。</p><table class="widefat striped"><thead><tr><th>日付</th><th>猫</th><th>ウイスキー</th><th>IT・フリーランス</th></tr></thead><tbody>';
     foreach($audit['measurement']['daily'] as $day=>$counts){echo '<tr><td>'.esc_html(str_replace('_','-',$day)).'</td>';foreach(array('cat-carrier-checklist','highball-measure-and-adjust','csv-import-seven-checks') as $slug){echo '<td>'.(int)($counts[$slug]??0).'</td>';}echo '</tr>';}
-    echo '</tbody></table><p><a href="'.esc_url(admin_url('themes.php?page=hsh-search-review')).'">Search ConsoleのCSVから改善候補を確認する</a></p><h2>収益</h2><p>広告リンクは未登録です。クリック数・成約数はまだ計測していません。提携条件を確認してから掲載します。</p></div>';
+    echo '</tbody></table><p><a href="'.esc_url(admin_url('themes.php?page=hsh-search-review')).'">Search ConsoleのCSVから改善候補を確認する</a></p><h2>収益</h2><p>猫向け19案件を掲載しています。広告クリックの集計と、A8側の成約・確定報酬は別です。成約数や売上をクリックだけから推定しません。</p></div>';
 });});
 
 /** Custom templates bypass Cocoon header.php, so supply missing SEO basics once. */
@@ -97,7 +97,7 @@ function hsh_document_head() {
     $description = $slug ? $details[$slug][4] : '保護猫まんもすとの生活やウイスキーの楽しみ方、未経験で始めたITの仕事について書いている個人ブログです。';
     if (!preg_match('/<meta\b[^>]*name=[\'"]description[\'"]/i', $head)) { echo '<meta name="description" content="'.esc_attr($description).'">' . "\n"; }
     if (!preg_match('/<link\b[^>]*rel=[\'"]canonical[\'"]/i', $head)) {
-        $url = $slug ? get_pagenum_link(max(1,(int)get_query_var('paged'))) : home_url('/');
+        $url = $slug ? get_pagenum_link(max(1,(int)get_query_var('paged'))) : home_url('/');if(function_exists('remove_query_arg'))$url=remove_query_arg(array('hsh_kind','hsh_order'),$url);
         echo '<link rel="canonical" href="'.esc_url($url).'">' . "\n";
     }
     if(function_exists('hsh_blog_extra_head')){

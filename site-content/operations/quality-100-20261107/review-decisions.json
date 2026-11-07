@@ -1,0 +1,226 @@
+[
+  {
+    "slug": "cat-carrier-checklist",
+    "rule": "unclear-reference",
+    "context_sha256": "69f67238b4c0e659e5dbdc50e732150a134d2443096f0af7edb1cefe421f94a2",
+    "decision": "retain_contextual_reference",
+    "reason": "直前の体験・説明・計算例を受ける文脈で、読み手に対象が分かる。本人の口調も維持。",
+    "reviewed_at": "2026-11-07"
+  },
+  {
+    "slug": "csv-import-seven-checks",
+    "rule": "compound-sentence",
+    "context_sha256": "d7471279618f1d08acaa268d8d02811e0c810ef4b988a59b4f9b2d1e73476436",
+    "decision": "retain_listing",
+    "reason": "列挙された準備品・成分・比較条件。数や対象を落とさないため現状を維持。読点だけで分割しない。",
+    "reviewed_at": "2026-11-07"
+  },
+  {
+    "slug": "before-welcoming-cat",
+    "rule": "compound-sentence",
+    "context_sha256": "5a20cecad28699a056a2e7f49f9a25e0600d88d31cf354626ca36ea5e31415a4",
+    "decision": "retain_listing",
+    "reason": "列挙された準備品・成分・比較条件。数や対象を落とさないため現状を維持。読点だけで分割しない。",
+    "reviewed_at": "2026-11-07"
+  },
+  {
+    "slug": "before-welcoming-cat",
+    "rule": "compound-sentence",
+    "context_sha256": "4c69c1bab593aa0dc895b8be1647af1a78f6a5bbb8fcb22bd7e2ea5b42c23a25",
+    "decision": "retain_listing",
+    "reason": "列挙された準備品・成分・比較条件。数や対象を落とさないため現状を維持。読点だけで分割しない。",
+    "reviewed_at": "2026-11-07"
+  },
+  {
+    "slug": "manmos-cat-life",
+    "rule": "unclear-reference",
+    "context_sha256": "3351f8f7c9953399684501a776534104d440f00c954be53f7c4cdbe47db436ed",
+    "decision": "retain_contextual_reference",
+    "reason": "直前の体験・説明・計算例を受ける文脈で、読み手に対象が分かる。本人の口調も維持。",
+    "reviewed_at": "2026-11-07"
+  },
+  {
+    "slug": "cat-teaser-small-parts",
+    "rule": "unsupported-claim",
+    "context_sha256": "47fd40a46ea41e91891926455279cb84d594331061f0be18c5ac0261c19a63ae",
+    "decision": "accepted_negative_context",
+    "reason": "断定を否定・制限する文脈。効能や安全性の保証として記述していない。全文脈を確認。",
+    "reviewed_at": "2026-11-07"
+  },
+  {
+    "slug": "glenlivet-12-first-bottles",
+    "rule": "unclear-reference",
+    "context_sha256": "2bdc983ca84d0a8c6b98cf3fa8ecf8df5edcb4dcf15d58f51e880a6986b8b870",
+    "decision": "retain_contextual_reference",
+    "reason": "直前の体験・説明・計算例を受ける文脈で、読み手に対象が分かる。本人の口調も維持。",
+    "reviewed_at": "2026-11-07"
+  },
+  {
+    "slug": "single-malt-label-guide",
+    "rule": "unsupported-claim",
+    "context_sha256": "35895e8ff15974f08253ef9923a2abd28c9676e5c018893c49570bb59d0a6007",
+    "decision": "accepted_negative_context",
+    "reason": "断定を否定・制限する文脈。効能や安全性の保証として記述していない。全文脈を確認。",
+    "reviewed_at": "2026-11-07"
+  },
+  {
+    "slug": "single-malt-label-guide",
+    "rule": "compound-sentence",
+    "context_sha256": "64a6dc2969ae51b58cbec0c159b08ed82fd5965abe1e02889a92c9dfc36754dc",
+    "decision": "retain_listing",
+    "reason": "列挙された準備品・成分・比較条件。数や対象を落とさないため現状を維持。読点だけで分割しない。",
+    "reviewed_at": "2026-11-07"
+  },
+  {
+    "slug": "sherry-cask-notes",
+    "rule": "unclear-reference",
+    "context_sha256": "5428c06a3ccda9c34efff282dd2a1127799cc7c3e965b7b66539757f0dbe99c5",
+    "decision": "retain_contextual_reference",
+    "reason": "直前の体験・説明・計算例を受ける文脈で、読み手に対象が分かる。本人の口調も維持。",
+    "reviewed_at": "2026-11-07"
+  },
+  {
+    "slug": "starting-it-without-specialty",
+    "rule": "compound-sentence",
+    "context_sha256": "3725f9dc81561527c2412dad153d0c8b5294a894a6bbc6af808e7a0875304689",
+    "decision": "retain_listing",
+    "reason": "列挙された準備品・成分・比較条件。数や対象を落とさないため現状を維持。読点だけで分割しない。",
+    "reviewed_at": "2026-11-07"
+  },
+  {
+    "slug": "hario-cat-bowl-guide",
+    "rule": "unsupported-claim",
+    "context_sha256": "6e4a47c360c7126f07a934afe7ef8b6d9f08c74af2346abebb6ba5badc8070f7",
+    "decision": "accepted_negative_context",
+    "reason": "断定を否定・制限する文脈。効能や安全性の保証として記述していない。全文脈を確認。",
+    "reviewed_at": "2026-11-07"
+  },
+  {
+    "slug": "pet-sougi-110-cat-guide",
+    "rule": "compound-sentence",
+    "context_sha256": "3f4e58d0400a28a77d4179aa60eae527389f777fc56dee560c384486e7961ca1",
+    "decision": "retain_listing",
+    "reason": "列挙された準備品・成分・比較条件。数や対象を落とさないため現状を維持。読点だけで分割しない。",
+    "reviewed_at": "2026-11-07"
+  },
+  {
+    "slug": "digxipop-cat-figure",
+    "rule": "weak-repetition",
+    "context_sha256": "e3dfb0ae337f8fbc961df19ee24c1299ed3fdd9f1067b8b3c6995dd402daeaab",
+    "decision": "style_review_candidate",
+    "reason": "文体の確認候補として残す。数値や本人の経験を一括置換しない。",
+    "reviewed_at": "2026-11-07"
+  },
+  {
+    "slug": "withpety-nekokenshin",
+    "rule": "compound-sentence",
+    "context_sha256": "5907fb917c7455d58138f228bb71bb1aa93442b966898e06ae2719eef6bae24c",
+    "decision": "retain_listing",
+    "reason": "列挙された準備品・成分・比較条件。数や対象を落とさないため現状を維持。読点だけで分割しない。",
+    "reviewed_at": "2026-11-07"
+  },
+  {
+    "slug": "withpety-nekoryoukan",
+    "rule": "compound-sentence",
+    "context_sha256": "886135c1adbbbdb962ad500ab34ed80afe5cbf6e451c97f89d646655366786ad",
+    "decision": "retain_listing",
+    "reason": "列挙された準備品・成分・比較条件。数や対象を落とさないため現状を維持。読点だけで分割しない。",
+    "reviewed_at": "2026-11-07"
+  },
+  {
+    "slug": "catlog-cat-monitor",
+    "rule": "unsupported-claim",
+    "context_sha256": "d74e9022d67aa7a651b3ebff547aee5cc9838fd639053ee7fab8403d62d367cc",
+    "decision": "accepted_negative_context",
+    "reason": "断定を否定・制限する文脈。効能や安全性の保証として記述していない。全文脈を確認。",
+    "reviewed_at": "2026-11-07"
+  },
+  {
+    "slug": "catlog-cat-monitor",
+    "rule": "unsupported-claim",
+    "context_sha256": "7d4c098be5c2e4072a8627a989fab8f75924bfdf9b5b50c6d29d8d938723d1af",
+    "decision": "accepted_negative_context",
+    "reason": "断定を否定・制限する文脈。効能や安全性の保証として記述していない。全文脈を確認。",
+    "reviewed_at": "2026-11-07"
+  },
+  {
+    "slug": "catlog-cat-monitor",
+    "rule": "compound-sentence",
+    "context_sha256": "bd585770ce6bee176c5c52395fb4ec30acf6c5545c6e2981dba0d21e48ad71d0",
+    "decision": "retain_listing",
+    "reason": "列挙された準備品・成分・比較条件。数や対象を落とさないため現状を維持。読点だけで分割しない。",
+    "reviewed_at": "2026-11-07"
+  },
+  {
+    "slug": "withpety-nekoissho",
+    "rule": "compound-sentence",
+    "context_sha256": "e5ba288a64dd591eb7a7ccbf31a6f6256c0e8e07b542ba80c1fa6c6cc5268f78",
+    "decision": "retain_listing",
+    "reason": "列挙された準備品・成分・比較条件。数や対象を落とさないため現状を維持。読点だけで分割しない。",
+    "reviewed_at": "2026-11-07"
+  },
+  {
+    "slug": "pet-paradise-cat-toys",
+    "rule": "unsupported-claim",
+    "context_sha256": "0a0249092418b63df1b1bdacd81946a4ca90fbade8d7232d057e89c3dc72c2af",
+    "decision": "accepted_negative_context",
+    "reason": "断定を否定・制限する文脈。効能や安全性の保証として記述していない。全文脈を確認。",
+    "reviewed_at": "2026-11-07"
+  },
+  {
+    "slug": "canagan-dental-cat-food",
+    "rule": "unsupported-claim",
+    "context_sha256": "7f8425f2f02f1266aa2b7ebf74d17173f4af99a400d3c3218b7d195c228200b3",
+    "decision": "accepted_negative_context",
+    "reason": "断定を否定・制限する文脈。効能や安全性の保証として記述していない。全文脈を確認。",
+    "reviewed_at": "2026-11-07"
+  },
+  {
+    "slug": "canagan-dental-cat-food",
+    "rule": "unclear-reference",
+    "context_sha256": "ab50557747700222cc1326cc903ca6005f68cc7961a62621ea5e7a114d0b1ed3",
+    "decision": "retain_contextual_reference",
+    "reason": "直前の体験・説明・計算例を受ける文脈で、読み手に対象が分かる。本人の口調も維持。",
+    "reviewed_at": "2026-11-07"
+  },
+  {
+    "slug": "canagan-chicken-salmon",
+    "rule": "unclear-reference",
+    "context_sha256": "aa72f099d2040fe1b21e476282b5d6973e04b2ffc2686de4b8bd03a190b9f6d6",
+    "decision": "retain_contextual_reference",
+    "reason": "直前の体験・説明・計算例を受ける文脈で、読み手に対象が分かる。本人の口調も維持。",
+    "reviewed_at": "2026-11-07"
+  },
+  {
+    "slug": "canagan-chicken-salmon",
+    "rule": "unclear-reference",
+    "context_sha256": "67e579a7c968fc0debe2bdb3b08c769594eab3f30aff7cc8f8622aef5bc6db54",
+    "decision": "retain_contextual_reference",
+    "reason": "直前の体験・説明・計算例を受ける文脈で、読み手に対象が分かる。本人の口調も維持。",
+    "reviewed_at": "2026-11-07"
+  },
+  {
+    "slug": "canagan-chicken-salmon",
+    "rule": "compound-sentence",
+    "context_sha256": "fd825abbea3582788c9a3c13d49250f7e7da1e2dfc69725f6b6b4d7c291de197",
+    "decision": "retain_listing",
+    "reason": "列挙された準備品・成分・比較条件。数や対象を落とさないため現状を維持。読点だけで分割しない。",
+    "reviewed_at": "2026-11-07"
+  },
+  {
+    "slug": "mcadams-cat-chicken-turkey",
+    "rule": "unsupported-claim",
+    "context_sha256": "67a0fa2e86bc2fad476e1563a41c3cd988a5504e541144b5f877767edc2301ca",
+    "decision": "accepted_negative_context",
+    "reason": "断定を否定・制限する文脈。効能や安全性の保証として記述していない。全文脈を確認。",
+    "reviewed_at": "2026-11-07"
+  },
+  {
+    "slug": "mognyan-cat-food-guide",
+    "rule": "unclear-reference",
+    "context_sha256": "8ffe2e2dc3166c71dc7c9cba7e45a9674d15f926273ab54b98e4411beda25872",
+    "decision": "retain_contextual_reference",
+    "reason": "直前の体験・説明・計算例を受ける文脈で、読み手に対象が分かる。本人の口調も維持。",
+    "reviewed_at": "2026-11-07"
+  }
+]

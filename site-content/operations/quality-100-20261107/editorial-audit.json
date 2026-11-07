@@ -1,0 +1,2442 @@
+{
+  "articles": 32,
+  "counts": {
+    "style": 20,
+    "fact": 8
+  },
+  "flags": [
+    {
+      "slug": "cat-carrier-checklist",
+      "kind": "style",
+      "rule": "unclear-reference",
+      "detail": "これは、うちで使ったキャリーとまんもすの組み合わせでの経験だ"
+    },
+    {
+      "slug": "csv-import-seven-checks",
+      "kind": "style",
+      "rule": "compound-sentence",
+      "detail": "CSVを取り込む前に見るのは、文字コードと区切り、列の対応、先頭の0、日付、空欄、重複、結果の件数"
+    },
+    {
+      "slug": "before-welcoming-cat",
+      "kind": "style",
+      "rule": "compound-sentence",
+      "detail": "猫を迎える前は、ごはん、水、トイレ、猫砂、キャリー、爪とぎ、休める場所を用意する"
+    },
+    {
+      "slug": "before-welcoming-cat",
+      "kind": "style",
+      "rule": "compound-sentence",
+      "detail": "買い物の候補は、フード、ごはんと水の器、トイレと猫砂、キャリー、爪とぎ"
+    },
+    {
+      "slug": "manmos-cat-life",
+      "kind": "style",
+      "rule": "unclear-reference",
+      "detail": "こちらが触れ合いたいと思った形で、いつも応えてくれるわけでもない"
+    },
+    {
+      "slug": "cat-teaser-small-parts",
+      "kind": "fact",
+      "rule": "unsupported-claim",
+      "detail": "のおもちゃと交代で出す方法もある。ただ、片付ければ必ず飽きなくなる、とまでは言えない。まんもすの反応がどう変わるか"
+    },
+    {
+      "slug": "glenlivet-12-first-bottles",
+      "kind": "style",
+      "rule": "unclear-reference",
+      "detail": "これは自分が飲んだときの好みの話で、バーボン全体の評価ではない"
+    },
+    {
+      "slug": "single-malt-label-guide",
+      "kind": "fact",
+      "rule": "unsupported-claim",
+      "detail": "よさそうに見える。でも、長く熟成した物なら自分にも必ずおいしいかというと、それは飲む人の好みもある。\n\n年数は商品"
+    },
+    {
+      "slug": "single-malt-label-guide",
+      "kind": "style",
+      "rule": "compound-sentence",
+      "detail": "ボトルを選ぶときは、ブランド名だけでなく、商品名、年数、容量、アルコール度数を一緒に見る"
+    },
+    {
+      "slug": "sherry-cask-notes",
+      "kind": "style",
+      "rule": "unclear-reference",
+      "detail": "これは香りから思い浮かべたものの話で、パンやレーズンが原材料に入っているという意味ではない"
+    },
+    {
+      "slug": "starting-it-without-specialty",
+      "kind": "style",
+      "rule": "compound-sentence",
+      "detail": "抽出、並べ替え、整理などで、ChatGPT、Codex、Excel、スプレッドシートを使う"
+    },
+    {
+      "slug": "hario-cat-bowl-guide",
+      "kind": "fact",
+      "rule": "unsupported-claim",
+      "detail": "トール」。\n\n器を替えるだけで、猫の食べ方や体調が必ず変わるわけではありません。今の器の寸法や食べている姿から、変"
+    },
+    {
+      "slug": "pet-sougi-110-cat-guide",
+      "kind": "style",
+      "rule": "compound-sentence",
+      "detail": "基本料金に加えて、出張、時間帯、立ち会い、返骨、容器など、どこまで含むのかを聞く"
+    },
+    {
+      "slug": "digxipop-cat-figure",
+      "kind": "style",
+      "rule": "weak-repetition",
+      "detail": "4箇所。書き手の口調を残しながら個別に検討します。"
+    },
+    {
+      "slug": "withpety-nekokenshin",
+      "kind": "style",
+      "rule": "compound-sentence",
+      "detail": "公式の説明には、還元型コエンザイムQ10、フランス海岸松、L-シトルリン、L-カルニチン、ルンブルクス末、ゴマエキス、タウリンが挙げられている"
+    },
+    {
+      "slug": "withpety-nekoryoukan",
+      "kind": "style",
+      "rule": "compound-sentence",
+      "detail": "公式説明には、肝臓加水分解物、プラセンタ、天然酵母、BCAA、ウコン、マリアアザミエキス、亜鉛、オルニチンが挙げられている"
+    },
+    {
+      "slug": "catlog-cat-monitor",
+      "kind": "fact",
+      "rule": "unsupported-claim",
+      "detail": "。\n\n今のトイレを使う方式でも、寸法や設置条件まで必ず合うとは限らない。トイレの形、床、周りとの干渉を商品説明と照"
+    },
+    {
+      "slug": "catlog-cat-monitor",
+      "kind": "fact",
+      "rule": "unsupported-claim",
+      "detail": "いう目安が載っている。使用環境によって変わるため、必ずその日数で使えるという保証としてではなく、日々の管理を考える"
+    },
+    {
+      "slug": "catlog-cat-monitor",
+      "kind": "style",
+      "rule": "compound-sentence",
+      "detail": "公式では、食事、水飲み、運動、睡眠、毛づくろいなどを記録し、専用アプリで確認できる仕組みとして案内されている"
+    },
+    {
+      "slug": "withpety-nekoissho",
+      "kind": "style",
+      "rule": "compound-sentence",
+      "detail": "公式の説明には、DHA、EPA、亜麻仁油、フェルラ酸、イチョウ葉エキス、ビタミンE、ビタミンB12が掲載されている"
+    },
+    {
+      "slug": "pet-paradise-cat-toys",
+      "kind": "fact",
+      "rule": "unsupported-claim",
+      "detail": "トニップへの反応には個体差がある。「入っているから絶対に夢中になる」とまでは考えず、普段、抱えて蹴る遊びをするかを思"
+    },
+    {
+      "slug": "canagan-dental-cat-food",
+      "kind": "fact",
+      "rule": "unsupported-claim",
+      "detail": "方で、食べれば歯磨きがいらなくなる、歯石や歯周病が治る、とまでは考えない。フード選びと口の診察は別の話。口を痛がる"
+    },
+    {
+      "slug": "canagan-dental-cat-food",
+      "kind": "style",
+      "rule": "unclear-reference",
+      "detail": "これは計算例で、どの猫にも70gを与えるという意味ではない"
+    },
+    {
+      "slug": "canagan-chicken-salmon",
+      "kind": "style",
+      "rule": "unclear-reference",
+      "detail": "それが分かるだけでも、似た配合から探すか、違う物を候補にするか考えやすい"
+    },
+    {
+      "slug": "canagan-chicken-salmon",
+      "kind": "style",
+      "rule": "unclear-reference",
+      "detail": "こちらはタンパク質31%以上、脂質18%以上、100gあたり407kcal"
+    },
+    {
+      "slug": "canagan-chicken-salmon",
+      "kind": "style",
+      "rule": "compound-sentence",
+      "detail": "「穀物不使用なら、どの猫にも一番いい」と決めるより、年齢、体形、今の体調、食べている量を含めて選ぶ方が納得しやすい"
+    },
+    {
+      "slug": "mcadams-cat-chicken-turkey",
+      "kind": "fact",
+      "rule": "unsupported-claim",
+      "detail": "種類の肉を合わせると57%。ただ、割合が大きければ必ず食べる、という話ではない。今のフードとの違いを知る材料として"
+    },
+    {
+      "slug": "mognyan-cat-food-guide",
+      "kind": "style",
+      "rule": "unclear-reference",
+      "detail": "これは計算例なので、そのまま一日の適量と考えないようにしたい"
+    }
+  ],
+  "inventory": [
+    {
+      "slug": "cat-carrier-checklist",
+      "title": "猫用リュックキャリーが変形した話｜5.5kgの猫の買い替えで確認したこと",
+      "topic": "cats",
+      "role": "story-or-guide",
+      "audience_question": "5.5kgの猫まんもすを入れると、以前のリュック型キャリーは形が崩れてしまいました。本体のしっかりした大きめのキャリーへ買い替えた経験と、内寸・耐荷重・留め具・運び方の確認点をまとめます。",
+      "question_status": "draft_from_opening_needs_editorial_review",
+      "sources": [
+        "https://www.jreast.co.jp/kippu/20.html"
+      ],
+      "reviewed_at": null,
+      "automated_checked_at": "2026-11-07",
+      "content_sha256": "4d2e652c77f60ba5a1a196dfa0e5a2fb97f2f48b2bdfbf94aca1e24621ba61e7",
+      "fact_signature": {
+        "numbers": [
+          "10kg",
+          "10月",
+          "2026年",
+          "290円",
+          "5.5kg"
+        ],
+        "sources": [
+          "https://hirogarushumi.com/before-welcoming-cat/",
+          "https://hirogarushumi.com/cat-vet-routine/",
+          "https://hirogarushumi.com/neko-guide/articles/first-days/",
+          "https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/resources/cat-carrier-checklist.txt",
+          "https://www.jreast.co.jp/kippu/20.html"
+        ]
+      }
+    },
+    {
+      "slug": "highball-measure-and-adjust",
+      "title": "ハイボールが薄い？ ウイスキーを足す前に見てみよう",
+      "topic": "whisky",
+      "role": "story-or-guide",
+      "audience_question": "ハイボールが薄いと感じたら、ウイスキーを足す前に、分量、氷、炭酸水の状態を確認してみよう。味が物足りないのか、炭酸の刺激が弱いのかで、変えるところは違う。",
+      "question_status": "draft_from_opening_needs_editorial_review",
+      "sources": [
+        "https://www.suntory.co.jp/whisky/beginner/drink/highball.html"
+      ],
+      "reviewed_at": null,
+      "automated_checked_at": "2026-11-07",
+      "content_sha256": "5f9ffdaf83d9c4b5e5f96ea916f011d987edac3dfecb3e78579551722b031efd",
+      "fact_signature": {
+        "numbers": [
+          "12年",
+          "12年",
+          "12年",
+          "20歳",
+          "40％",
+          "8％"
+        ],
+        "sources": [
+          "https://hirogarushumi.com/glenlivet-12-first-bottles/",
+          "https://hirogarushumi.com/single-malt-label-guide/",
+          "https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/resources/highball-note.txt",
+          "https://www.suntory.co.jp/whisky/beginner/drink/highball.html"
+        ]
+      }
+    },
+    {
+      "slug": "csv-import-seven-checks",
+      "title": "CSVを取り込む前に。0や空欄を変えないための7つの確認",
+      "topic": "it-freelance",
+      "role": "story-or-guide",
+      "audience_question": "CSVを取り込む前に見るのは、文字コードと区切り、列の対応、先頭の0、日付、空欄、重複、結果の件数。まず原本を残し、コピーで数行を試す。形式を整える前に、どんな値を残すかを決めておきたい。",
+      "question_status": "draft_from_opening_needs_editorial_review",
+      "sources": [
+        "https://support.microsoft.com/ja-jp/office/%E3%83%86%E3%82%AD%E3%82%B9%E3%83%88-txt-%E3%81%BE%E3%81%9F%E3%81%AF-csv-%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E3%82%A4%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%88%E3%81%BE%E3%81%9F%E3%81%AF%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%88-5250ac4c-663c-47ce-937b-339e391393ba",
+        "https://www.rfc-editor.org/rfc/rfc4180"
+      ],
+      "reviewed_at": null,
+      "automated_checked_at": "2026-11-07",
+      "content_sha256": "fd45b35b6788a2f96e6cda2c96946c7bff03d188be57a26fc4f0245376aad2fc",
+      "fact_signature": {
+        "numbers": [],
+        "sources": [
+          "https://hirogarushumi.com/ai-data-extraction-checks/",
+          "https://hirogarushumi.com/it-data-work-flow/",
+          "https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/resources/csv-import-checklist.txt",
+          "https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/resources/csv-practice.csv",
+          "https://support.microsoft.com/ja-jp/office/%E3%83%86%E3%82%AD%E3%82%B9%E3%83%88-txt-%E3%81%BE%E3%81%9F%E3%81%AF-csv-%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E3%82%A4%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%88%E3%81%BE%E3%81%9F%E3%81%AF%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%88-5250ac4c-663c-47ce-937b-339e391393ba",
+          "https://www.rfc-editor.org/rfc/rfc4180"
+        ]
+      }
+    },
+    {
+      "slug": "before-welcoming-cat",
+      "title": "猫を迎える準備、まず何を買う？ 部屋の片付けも忘れずに",
+      "topic": "cats",
+      "role": "story-or-guide",
+      "audience_question": "猫を迎える前は、ごはん、水、トイレ、猫砂、キャリー、爪とぎ、休める場所を用意する。最初のフードと猫砂は、今使っている物を保護主さんに聞いてから選びたい。まんもすも猫砂には好みがあって、紙砂がお気に入りだ。",
+      "question_status": "draft_from_opening_needs_editorial_review",
+      "sources": [],
+      "reviewed_at": null,
+      "automated_checked_at": "2026-11-07",
+      "content_sha256": "fa393e98300a8e076f373962762064d6d8b258518213b3b0e57de70010af45c6",
+      "fact_signature": {
+        "numbers": [
+          "2025年",
+          "4月"
+        ],
+        "sources": [
+          "https://hirogarushumi.com/cat-carrier-checklist/",
+          "https://hirogarushumi.com/manmos-cat-life/"
+        ]
+      }
+    },
+    {
+      "slug": "manmos-cat-life",
+      "title": "抱っこは苦手。でも甘えん坊。5歳のまんもすと暮らしています",
+      "topic": "cats",
+      "role": "story-or-guide",
+      "audience_question": "うちの猫、まんもすは5歳のスコティッシュフォールド。体重は5.5kgで、長い毛がふわっと広がっている。2025年4月に保護猫シェルターから迎えた。見た瞬間に運命を感じたくらい、かわいかった。年齢と体重は2026年10月時点の話です。",
+      "question_status": "draft_from_opening_needs_editorial_review",
+      "sources": [],
+      "reviewed_at": null,
+      "automated_checked_at": "2026-11-07",
+      "content_sha256": "c1f7752ce485dbfd7b76d36d7ed59f4b5d09854a17a9986b75622780a281a33c",
+      "fact_signature": {
+        "numbers": [
+          "10月",
+          "2025年",
+          "2026年",
+          "4月",
+          "5.5kg",
+          "5.5kg",
+          "5.5kg",
+          "5歳"
+        ],
+        "sources": [
+          "https://hirogarushumi.com/before-welcoming-cat/",
+          "https://hirogarushumi.com/cat-teaser-small-parts/"
+        ]
+      }
+    },
+    {
+      "slug": "cat-teaser-small-parts",
+      "title": "100均のねこじゃらしも使う。でも、小さな飾りは気になる",
+      "topic": "cats",
+      "role": "story-or-guide",
+      "audience_question": "まんもすには100均のおもちゃも使っている。ただ、すぐ取れそうな小さな部品が付いた物は避けたい。値段より先に見るのは、先端の飾りとつなぎ目。遊んだ後は傷みを確かめ、猫が取り出せない場所へしまう。",
+      "question_status": "draft_from_opening_needs_editorial_review",
+      "sources": [],
+      "reviewed_at": null,
+      "automated_checked_at": "2026-11-07",
+      "content_sha256": "ce41722a71e8ebd60d973ac76772ecd9804cf23742f5efe9de891a2bb21ca551",
+      "fact_signature": {
+        "numbers": [],
+        "sources": [
+          "https://hirogarushumi.com/cat-vet-routine/",
+          "https://hirogarushumi.com/manmos-cat-life/"
+        ]
+      }
+    },
+    {
+      "slug": "cat-vet-routine",
+      "title": "猫の通院前に何を用意する？ 持ち物と、伝えたいことの整理",
+      "topic": "cats",
+      "role": "story-or-guide",
+      "audience_question": "通院の前にまとめたいのは、いつから、普段と何が違うか、今使っている薬やフードの情報。持ち物と食事・薬の扱いは病院へ確認する。まんもすも定期的に通院しているので、普段の様子と分けて伝えられるようにしておきたい。",
+      "question_status": "draft_from_opening_needs_editorial_review",
+      "sources": [],
+      "reviewed_at": null,
+      "automated_checked_at": "2026-11-07",
+      "content_sha256": "06d43beb9f804478d9b9a7562dc2876c9d329063eba645dabbee2d7f9fdc186a",
+      "fact_signature": {
+        "numbers": [],
+        "sources": [
+          "https://hirogarushumi.com/before-welcoming-cat/",
+          "https://hirogarushumi.com/cat-carrier-checklist/"
+        ]
+      }
+    },
+    {
+      "slug": "glenlivet-12-first-bottles",
+      "title": "グレンリベット12年の感想｜飲みやすさと花のような香りが好き",
+      "topic": "whisky",
+      "role": "story-or-guide",
+      "audience_question": "グレンリベット12年を飲んで感じたのは、飲みやすさと花のような上品な香り。3本目に買った理由は、おまけのグラスでした。購入のきっかけと、実際に好きだったところを紹介します。",
+      "question_status": "draft_from_opening_needs_editorial_review",
+      "sources": [],
+      "reviewed_at": null,
+      "automated_checked_at": "2026-11-07",
+      "content_sha256": "9bfcb57ebdce0206352f88b3e2ecce90630f50d5b1069bc8e960534ed92c06b8",
+      "fact_signature": {
+        "numbers": [
+          "12年",
+          "12年",
+          "12年",
+          "12年",
+          "12年",
+          "12年",
+          "20歳"
+        ],
+        "sources": [
+          "https://hirogarushumi.com/highball-measure-and-adjust/",
+          "https://hirogarushumi.com/hsh-whisky-notes/#arboralis-taste",
+          "https://hirogarushumi.com/sherry-cask-notes/",
+          "https://hirogarushumi.com/single-malt-label-guide/"
+        ]
+      }
+    },
+    {
+      "slug": "single-malt-label-guide",
+      "title": "シングルモルトのラベル、最初はどこを見ればいい？",
+      "topic": "whisky",
+      "role": "story-or-guide",
+      "audience_question": "ボトルを選ぶときは、ブランド名だけでなく、商品名、年数、容量、アルコール度数を一緒に見る。似たラベルでも別の商品はある。樽や香りの説明を読むのは、その1本を見分けてからで大丈夫。",
+      "question_status": "draft_from_opening_needs_editorial_review",
+      "sources": [
+        "https://www.suntory.co.jp/whisky/malt/"
+      ],
+      "reviewed_at": null,
+      "automated_checked_at": "2026-11-07",
+      "content_sha256": "6a766c42120543f0f43e3041d3c47b681222ecb2e6ef201a580b61e3ed518420",
+      "fact_signature": {
+        "numbers": [
+          "12年",
+          "12年",
+          "12年",
+          "12年",
+          "12年",
+          "200円",
+          "200円",
+          "20歳",
+          "500円",
+          "500円",
+          "550円",
+          "600円"
+        ],
+        "sources": [
+          "https://hirogarushumi.com/glenlivet-12-first-bottles/",
+          "https://hirogarushumi.com/sherry-cask-notes/",
+          "https://www.suntory.co.jp/whisky/malt/"
+        ]
+      }
+    },
+    {
+      "slug": "sherry-cask-notes",
+      "title": "グレンファークラス12年の感想｜ぶどうパンのような香りが好き",
+      "topic": "whisky",
+      "role": "story-or-guide",
+      "audience_question": "グレンファークラス12年の香りを例えるなら、ぶどうパンに顔をうずめたような感じ。レーズンを思い浮かべる香りが好きです。実際の感想を先に、オロロソとペドロ・ヒメネスなどの用語も分けて紹介します。",
+      "question_status": "draft_from_opening_needs_editorial_review",
+      "sources": [
+        "https://www.sherry.wine/sherry-wine/dry-sherry-wines/oloroso",
+        "https://www.sherry.wine/sherry-wine/naturally-sweet-sherry-wine/pedro-ximenez"
+      ],
+      "reviewed_at": null,
+      "automated_checked_at": "2026-11-07",
+      "content_sha256": "d7ac424705623d6385b00178775846c59426f82fbcff7f06b9adb4bc50039f3d",
+      "fact_signature": {
+        "numbers": [
+          "12年",
+          "12年",
+          "12年",
+          "12年",
+          "20歳"
+        ],
+        "sources": [
+          "https://hirogarushumi.com/glenlivet-12-first-bottles/",
+          "https://hirogarushumi.com/hsh-whisky-notes/#arboralis-taste",
+          "https://hirogarushumi.com/single-malt-label-guide/",
+          "https://www.sherry.wine/sherry-wine/dry-sherry-wines/oloroso",
+          "https://www.sherry.wine/sherry-wine/naturally-sweet-sherry-wine/pedro-ximenez"
+        ]
+      }
+    },
+    {
+      "slug": "it-data-work-flow",
+      "title": "AIでデータ抽出が楽に。今しているデータ加工の仕事",
+      "topic": "it-freelance",
+      "role": "story-or-guide",
+      "audience_question": "今しているのは、データを加工する仕事。抽出したり、並べ替えたり、整理したりする。使うのはChatGPT、Codex、Excel、スプレッドシート。データ抽出をAIに頼むと一瞬でやってくれるので、本当に楽だと感じている。",
+      "question_status": "draft_from_opening_needs_editorial_review",
+      "sources": [],
+      "reviewed_at": null,
+      "automated_checked_at": "2026-11-07",
+      "content_sha256": "a9e43db17be3f06f8ac8cd6bc5bc8cffc0edc7757654bc19a1721e937127065d",
+      "fact_signature": {
+        "numbers": [
+          "1年"
+        ],
+        "sources": [
+          "https://hirogarushumi.com/ai-data-extraction-checks/",
+          "https://hirogarushumi.com/starting-it-without-specialty/"
+        ]
+      }
+    },
+    {
+      "slug": "starting-it-without-specialty",
+      "title": "ITに興味を持ってから、今の仕事まで約1年かかった",
+      "topic": "it-freelance",
+      "role": "story-or-guide",
+      "audience_question": "ITに興味を持った理由は、稼げそうだったから。それと、これからも需要がありそうだと思ったからだ。ただ、今の仕事にたどり着くまでには、なんだかんだ1年近くかかった。",
+      "question_status": "draft_from_opening_needs_editorial_review",
+      "sources": [],
+      "reviewed_at": null,
+      "automated_checked_at": "2026-11-07",
+      "content_sha256": "82644305c12c75857c7fa91d10a58726c547ac1d90756bda69ee06fde6655b1e",
+      "fact_signature": {
+        "numbers": [
+          "1年",
+          "1日"
+        ],
+        "sources": [
+          "https://hirogarushumi.com/ai-data-extraction-checks/",
+          "https://hirogarushumi.com/it-data-work-flow/"
+        ]
+      }
+    },
+    {
+      "slug": "ai-data-extraction-checks",
+      "title": "AIにデータ抽出を頼んだら、できた表のどこを見る？",
+      "topic": "it-freelance",
+      "role": "story-or-guide",
+      "audience_question": "AIで抽出した表は、件数だけでなく、残ったID、条件に合わない行の混入、空欄や先頭の0を確認する。ここでは架空の4行を使って、依頼文と正解例を比べてみる。自分の実務で毎回行っている手順の再現ではなく、確認方法を試すための練習です。",
+      "question_status": "draft_from_opening_needs_editorial_review",
+      "sources": [],
+      "reviewed_at": null,
+      "automated_checked_at": "2026-11-07",
+      "content_sha256": "341a124c0e6095cc5493eae8f638fcf521f9074ae37ba3054d091ee6548fd017",
+      "fact_signature": {
+        "numbers": [],
+        "sources": [
+          "https://hirogarushumi.com/csv-import-seven-checks/",
+          "https://hirogarushumi.com/it-data-work-flow/",
+          "https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/resources/extraction-expected.csv",
+          "https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/resources/extraction-input.csv",
+          "https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/resources/extraction-request.txt"
+        ]
+      }
+    },
+    {
+      "slug": "paws-green-deli-cat-food",
+      "title": "【ご紹介】パウズグリーンデリの猫用フード｜お試しセットの内容と選び方",
+      "topic": "cats",
+      "role": "product",
+      "audience_question": "猫用のお試しセットの内容と、主食・トッピングの違いを紹介します。袋の数、保存方法、購入時の条件も確認しておきましょう。",
+      "question_status": "draft_from_opening_needs_editorial_review",
+      "sources": [
+        "https://paws-green-deli.com/"
+      ],
+      "reviewed_at": null,
+      "automated_checked_at": "2026-11-07",
+      "content_sha256": "684619c314d09365a05de4dc09d1488875c1e06a9fcd947e34155d7453d6113f",
+      "fact_signature": {
+        "numbers": [
+          "11月",
+          "11月",
+          "2026年",
+          "2026年",
+          "2袋",
+          "2袋",
+          "2袋",
+          "30日",
+          "30日",
+          "4日",
+          "4日",
+          "650円",
+          "650円",
+          "6袋",
+          "6袋"
+        ],
+        "sources": [
+          "https://hirogarushumi.com/before-welcoming-cat/",
+          "https://paws-green-deli.com/",
+          "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+CPUCZ6+5PNW+BW8O2&a8ejpredirect=https%3A%2F%2Fpaws-green-deli.com%2F"
+        ]
+      }
+    },
+    {
+      "slug": "hario-cat-bowl-guide",
+      "title": "【ご紹介】HARIO「にゃんプレトール」｜猫用食器のサイズとお手入れ",
+      "topic": "cats",
+      "role": "product",
+      "audience_question": "高さのある猫用食器「にゃんプレトール」を紹介。大きさや洗いやすさ、置き場所を決めるときのポイントをまとめました。",
+      "question_status": "draft_from_opening_needs_editorial_review",
+      "sources": [
+        "https://shop.hariocorp.co.jp"
+      ],
+      "reviewed_at": null,
+      "automated_checked_at": "2026-11-07",
+      "content_sha256": "648dbca32dc5d6477d4819668c2fb3405af4b71a9aa2c57782247cd72eea0bc8",
+      "fact_signature": {
+        "numbers": [
+          "11月",
+          "2026年",
+          "4日",
+          "870円"
+        ],
+        "sources": [
+          "https://hirogarushumi.com/manmos-cat-life/",
+          "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+CP8XDE+4XPI+BW8O2&a8ejpredirect=https%3A%2F%2Fshop.hariocorp.co.jp",
+          "https://shop.hariocorp.co.jp"
+        ]
+      }
+    },
+    {
+      "slug": "mirai-cat-food-types",
+      "title": "【ご紹介】和漢みらいのキャットフード｜3タイプの違いと選ぶときの注意点",
+      "topic": "cats",
+      "role": "product",
+      "audience_question": "低たんぱく・バランス・高エナジーの3タイプを比較。それぞれの違いと、療法食を選ぶ前に確認したいことを紹介します。",
+      "question_status": "draft_from_opening_needs_editorial_review",
+      "sources": [
+        "https://mirai-cat.com/AF/"
+      ],
+      "reviewed_at": null,
+      "automated_checked_at": "2026-11-07",
+      "content_sha256": "bc0b1096f6c7719759c82abd27223a5c9c04e434ac52ebce4e2f36218932bdf2",
+      "fact_signature": {
+        "numbers": [
+          "100g",
+          "11月",
+          "2026年",
+          "4日"
+        ],
+        "sources": [
+          "https://hirogarushumi.com/cat-vet-routine/",
+          "https://mirai-cat.com/AF/",
+          "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+CMV6YA+3SZE+NSWRM&a8ejpredirect=https%3A%2F%2Fmirai-cat.com%2FAF%2F"
+        ]
+      }
+    },
+    {
+      "slug": "m-and-cat-knit-bag",
+      "title": "【ご紹介】M&Co.の猫モチーフ雑貨｜ニットバッグとチャーム",
+      "topic": "cats",
+      "role": "product",
+      "audience_question": "猫のモチーフを、いつもの持ち物に。M&Co.のニットバッグとチャームを、サイズやデザインとあわせて紹介します。",
+      "question_status": "draft_from_opening_needs_editorial_review",
+      "sources": [
+        "https://www.m-and.co.jp/"
+      ],
+      "reviewed_at": null,
+      "automated_checked_at": "2026-11-07",
+      "content_sha256": "6f97f27fce38a26d62d1d21c34d93ecb5deac842bc629ee5f03a926cc4476e7f",
+      "fact_signature": {
+        "numbers": [
+          "11月",
+          "2026年",
+          "4日",
+          "750円",
+          "750円"
+        ],
+        "sources": [
+          "https://hirogarushumi.com/hsh-gallery/",
+          "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+CM9RCI+5WF8+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.m-and.co.jp%2F",
+          "https://www.m-and.co.jp/"
+        ]
+      }
+    },
+    {
+      "slug": "pet-sougi-110-cat-guide",
+      "title": "【ご紹介】ペット葬儀110番｜火葬プランと相談前に確認したいこと",
+      "topic": "cats",
+      "role": "product",
+      "audience_question": "猫の葬儀を相談するときに知っておきたい、火葬プラン・見積もり・返骨のこと。ペット葬儀110番の案内をもとに整理しました。",
+      "question_status": "draft_from_opening_needs_editorial_review",
+      "sources": [
+        "https://aff.life-110.com/?st_site=pet_sougi&st_aff=a8"
+      ],
+      "reviewed_at": null,
+      "automated_checked_at": "2026-11-07",
+      "content_sha256": "1b7129826a01f1b15e783cec0ec26e2562ad6436027ced083d48c44ff3b1cb34",
+      "fact_signature": {
+        "numbers": [
+          "11月",
+          "2026年",
+          "4日"
+        ],
+        "sources": [
+          "https://aff.life-110.com/?st_site=pet_sougi&st_aff=a8",
+          "https://hirogarushumi.com/manmos-cat-life/",
+          "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+CLOBQQ+39GM+44TXSY&a8ejpredirect=https%3A%2F%2Faff.life-110.com%2F%3Fst_site%3Dpet_sougi%26st_aff%3Da8"
+        ]
+      }
+    },
+    {
+      "slug": "digxipop-cat-figure",
+      "title": "【ご紹介】愛猫の写真をフィギュアに。digxipopの注文方法",
+      "topic": "cats",
+      "role": "product",
+      "audience_question": "写真から猫のフィギュアを作るdigxipop。写真の選び方、仕上がりの確認、注文から発送までの流れを紹介します。",
+      "question_status": "draft_from_opening_needs_editorial_review",
+      "sources": [
+        "https://www.digxipop.com/ja-jp"
+      ],
+      "reviewed_at": null,
+      "automated_checked_at": "2026-11-07",
+      "content_sha256": "97ac9993065d7dbe33f565533b398e3c4e179b21566deb53e039c0ea83c5082f",
+      "fact_signature": {
+        "numbers": [
+          "11月",
+          "2026年",
+          "4日"
+        ],
+        "sources": [
+          "https://hirogarushumi.com/hsh-gallery/",
+          "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+C4ER76+5V36+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.digxipop.com%2Fja-jp",
+          "https://www.digxipop.com/ja-jp"
+        ]
+      }
+    },
+    {
+      "slug": "withpety-nekokenshin",
+      "title": "【ご紹介】猫用サプリ「毎日健心」｜成分と購入前の確認ポイント",
+      "topic": "cats",
+      "role": "product",
+      "audience_question": "コエンザイムQ10などを配合した猫用サプリ「毎日健心」。成分・錠剤の形・内容量と、購入前に確認したいことをまとめました。",
+      "question_status": "draft_from_opening_needs_editorial_review",
+      "sources": [
+        "https://withpety.com/products/nekokenshin/a8.html?ad_code=20800"
+      ],
+      "reviewed_at": null,
+      "automated_checked_at": "2026-11-07",
+      "content_sha256": "204fcd1771f83795776504950a5605ec787ae10ddc2251a56caa201d0c6ee7f8",
+      "fact_signature": {
+        "numbers": [
+          "11月",
+          "1袋",
+          "2026年",
+          "4日",
+          "60粒",
+          "60粒",
+          "60粒"
+        ],
+        "sources": [
+          "https://hirogarushumi.com/cat-vet-routine/",
+          "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+BLYBG2+3J9O+25DPHV&a8ejpredirect=https%3A%2F%2Fwithpety.com%2Fproducts%2Fnekokenshin%2Fa8.html%3Fad_code%3D20800",
+          "https://withpety.com/products/nekokenshin/a8.html?ad_code=20800"
+        ]
+      }
+    },
+    {
+      "slug": "pontely-cat-dna-test",
+      "title": "【ご紹介】猫の遺伝子検査Pontely｜検査内容とプランの違い",
+      "topic": "cats",
+      "role": "product",
+      "audience_question": "猫用の遺伝子検査Pontelyについて、検査内容と3つのプランを紹介。申し込みから結果の確認までの流れもまとめました。",
+      "question_status": "draft_from_opening_needs_editorial_review",
+      "sources": [
+        "https://www.pontely.com/forowner/cat?ref=a8"
+      ],
+      "reviewed_at": null,
+      "automated_checked_at": "2026-11-07",
+      "content_sha256": "29e16ec030ecbdca816d65b157711b946b24f2d648fdd94f8b76b1b652fb2230",
+      "fact_signature": {
+        "numbers": [
+          "11月",
+          "2026年",
+          "4日",
+          "500円"
+        ],
+        "sources": [
+          "https://hirogarushumi.com/cat-vet-routine/",
+          "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+BLCVUA+46DW+HUKPU&a8ejpredirect=https%3A%2F%2Fwww.pontely.com%2Fforowner%2Fcat%3Fref%3Da8",
+          "https://www.pontely.com/forowner/cat?ref=a8"
+        ]
+      }
+    },
+    {
+      "slug": "withpety-nekobihada",
+      "title": "【ご紹介】猫用サプリ「毎日美肌」｜PS-B1配合タイプの成分と特徴",
+      "topic": "cats",
+      "role": "product",
+      "audience_question": "猫用「毎日美肌」のPS-B1＆ローヤルゼリー配合タイプを紹介。成分と内容量、皮膚のケアを考えるときの確認点をまとめました。",
+      "question_status": "draft_from_opening_needs_editorial_review",
+      "sources": [
+        "https://withpety.com/products/nekobihada/a8.html?ad_code=2200"
+      ],
+      "reviewed_at": null,
+      "automated_checked_at": "2026-11-07",
+      "content_sha256": "4303b70f13600c15f97a62124cbbe24968a60b6425d7d9b9645a910ae84474ca",
+      "fact_signature": {
+        "numbers": [
+          "11月",
+          "1袋",
+          "2026年",
+          "4日",
+          "60粒",
+          "60粒",
+          "60粒"
+        ],
+        "sources": [
+          "https://hirogarushumi.com/manmos-cat-life/",
+          "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+BKRG8I+3J9O+2N8PN7&a8ejpredirect=https%3A%2F%2Fwithpety.com%2Fproducts%2Fnekobihada%2Fa8.html%3Fad_code%3D2200",
+          "https://withpety.com/products/nekobihada/a8.html?ad_code=2200"
+        ]
+      }
+    },
+    {
+      "slug": "onekosama-cat-tower",
+      "title": "【ご紹介】おねこさまのキャットタワー｜WALK treeとRESIDENCEの違い",
+      "topic": "cats",
+      "role": "product",
+      "audience_question": "おねこさまのキャットタワー2モデルを紹介。高さや設置方法に加え、猫の動きと部屋の広さに合わせた選び方を考えます。",
+      "question_status": "draft_from_opening_needs_editorial_review",
+      "sources": [
+        "https://oneko-sama.com/"
+      ],
+      "reviewed_at": null,
+      "automated_checked_at": "2026-11-07",
+      "content_sha256": "b7552abd2dc59dee146ac5580e339c9acf8f32f04623bd3b6e16378c3035869c",
+      "fact_signature": {
+        "numbers": [
+          "11月",
+          "2026年",
+          "4日"
+        ],
+        "sources": [
+          "https://hirogarushumi.com/manmos-cat-life/",
+          "https://oneko-sama.com/",
+          "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+BIZ5F6+3FF2+NSWRM&a8ejpredirect=https%3A%2F%2Foneko-sama.com%2F"
+        ]
+      }
+    },
+    {
+      "slug": "withpety-nekoryoukan",
+      "title": "【ご紹介】猫用サプリ「毎日良肝」｜成分と購入前の確認ポイント",
+      "topic": "cats",
+      "role": "product",
+      "audience_question": "肝臓の健康維持向けに案内される猫用サプリ「毎日良肝」。配合成分と内容量、購入前に確認しておきたいことを紹介します。",
+      "question_status": "draft_from_opening_needs_editorial_review",
+      "sources": [
+        "https://withpety.com/products/nekoryoukan/a8.html?ad_code=2400"
+      ],
+      "reviewed_at": null,
+      "automated_checked_at": "2026-11-07",
+      "content_sha256": "7a1b2e64a2b888aab8272af04fe06d64a8619854fec86f0b329de8349b19300f",
+      "fact_signature": {
+        "numbers": [
+          "11月",
+          "1袋",
+          "2026年",
+          "4日",
+          "60粒",
+          "60粒",
+          "60粒"
+        ],
+        "sources": [
+          "https://hirogarushumi.com/cat-vet-routine/",
+          "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+B5VM42+3J9O+2Z5DQR&a8ejpredirect=https%3A%2F%2Fwithpety.com%2Fproducts%2Fnekoryoukan%2Fa8.html%3Fad_code%3D2400",
+          "https://withpety.com/products/nekoryoukan/a8.html?ad_code=2400"
+        ]
+      }
+    },
+    {
+      "slug": "catlog-cat-monitor",
+      "title": "【ご紹介】CatlogとCatlog Board｜記録できることと機能の違い",
+      "topic": "cats",
+      "role": "product",
+      "audience_question": "首輪で行動を記録するCatlogと、トイレの下で体重などを記録するCatlog Board。機能の違いと設置・利用条件を紹介します。",
+      "question_status": "draft_from_opening_needs_editorial_review",
+      "sources": [
+        "https://rabo.cat/catlog/"
+      ],
+      "reviewed_at": null,
+      "automated_checked_at": "2026-11-07",
+      "content_sha256": "7735b5d9a4868ae571dd493cba3f01f62c8d9fe80f0ad56534a18618c0811af9",
+      "fact_signature": {
+        "numbers": [
+          "11月",
+          "2026年",
+          "25日",
+          "4日"
+        ],
+        "sources": [
+          "https://hirogarushumi.com/cat-vet-routine/",
+          "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+B72HBM+4WPO+BW8O2&a8ejpredirect=https%3A%2F%2Frabo.cat%2Fcatlog%2F",
+          "https://rabo.cat/catlog/"
+        ]
+      }
+    },
+    {
+      "slug": "withpety-nekoissho",
+      "title": "【ご紹介】猫用サプリ「毎日一緒」｜DHA・EPA配合タイプの成分と特徴",
+      "topic": "cats",
+      "role": "product",
+      "audience_question": "シニア猫の健康維持向けに案内される「毎日一緒」。DHA・EPAなどの成分、錠剤の形、購入時の確認点を紹介します。",
+      "question_status": "draft_from_opening_needs_editorial_review",
+      "sources": [
+        "https://withpety.com/products/nekoissho/a8.html?ad_code=20004"
+      ],
+      "reviewed_at": null,
+      "automated_checked_at": "2026-11-07",
+      "content_sha256": "bf3cedd9ebf4f71ab1d4e6466d9f039bbc001a806699f11377547091499adfec",
+      "fact_signature": {
+        "numbers": [
+          "11月",
+          "1袋",
+          "2026年",
+          "4日",
+          "60粒",
+          "60粒",
+          "60粒"
+        ],
+        "sources": [
+          "https://hirogarushumi.com/manmos-cat-life/",
+          "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+B5A6IA+3J9O+1HKL0I&a8ejpredirect=https%3A%2F%2Fwithpety.com%2Fproducts%2Fnekoissho%2Fa8.html%3Fad_code%3D20004",
+          "https://withpety.com/products/nekoissho/a8.html?ad_code=20004"
+        ]
+      }
+    },
+    {
+      "slug": "pet-paradise-cat-toys",
+      "title": "【ご紹介】ペットパラダイスの猫おもちゃ｜けりぐるみと猫じゃらし",
+      "topic": "cats",
+      "role": "product",
+      "audience_question": "洋ナシのけりぐるみと、かもめの猫じゃらし。見た目のかわいさだけでなく、遊び方や片付けるときの注意点も紹介します。",
+      "question_status": "draft_from_opening_needs_editorial_review",
+      "sources": [
+        "https://shop.creativeyoko.co.jp/items?lcc=05"
+      ],
+      "reviewed_at": null,
+      "automated_checked_at": "2026-11-07",
+      "content_sha256": "687556fadf57a6845dd5c9a0b5dcee481fb1677e3c1ed50c0fc62a6d5d22af3d",
+      "fact_signature": {
+        "numbers": [
+          "11月",
+          "2026年",
+          "4日",
+          "500円",
+          "870円",
+          "870円"
+        ],
+        "sources": [
+          "https://hirogarushumi.com/before-welcoming-cat/",
+          "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+C08PYQ+5LCC+BW8O2&a8ejpredirect=https%3A%2F%2Fshop.creativeyoko.co.jp%2F",
+          "https://shop.creativeyoko.co.jp/items?lcc=05"
+        ]
+      }
+    },
+    {
+      "slug": "canagan-dental-cat-food",
+      "title": "【ご紹介】カナガンデンタルの猫用フード｜原材料と与える前の注意点",
+      "topic": "cats",
+      "role": "product",
+      "audience_question": "海藻由来の成分を配合したカナガンデンタル。主原料やカロリー、与える前に確認が必要な条件をまとめました。",
+      "question_status": "draft_from_opening_needs_editorial_review",
+      "sources": [
+        "https://www.canagancatfood.co.jp/dental/CDC20003"
+      ],
+      "reviewed_at": null,
+      "automated_checked_at": "2026-11-07",
+      "content_sha256": "16a2e0a2a0f056ef0843a69007705bf8157b828963674b98b446e58abef517d0",
+      "fact_signature": {
+        "numbers": [
+          "1.5kg",
+          "1.5kg",
+          "1.5kg",
+          "1.5kg",
+          "100g",
+          "100g",
+          "100g",
+          "11月",
+          "15.2%",
+          "15.2%",
+          "17.9%",
+          "1袋",
+          "2026年",
+          "32%",
+          "36.8%",
+          "36.8%",
+          "4日",
+          "70g",
+          "70g",
+          "7日",
+          "8.0%",
+          "8.0%"
+        ],
+        "sources": [
+          "https://hirogarushumi.com/canagan-chicken-salmon/",
+          "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+BZNACY+3J8+3YVLR6&a8ejpredirect=https%3A%2F%2Fwww.canagancatfood.co.jp%2Fdental%2FCDC20003",
+          "https://www.canagancatfood.co.jp/dental/CDC20003"
+        ]
+      }
+    },
+    {
+      "slug": "canagan-chicken-salmon",
+      "title": "【ご紹介】カナガンの猫用フード｜チキンとサーモンの違い",
+      "topic": "cats",
+      "role": "product",
+      "audience_question": "チキンとサーモンで迷ったら、原材料と成分表示を比べてみましょう。容量・原産国・カロリーの違いを紹介します。",
+      "question_status": "draft_from_opening_needs_editorial_review",
+      "sources": [
+        "https://www.canagancatfood.co.jp/3201/"
+      ],
+      "reviewed_at": null,
+      "automated_checked_at": "2026-11-07",
+      "content_sha256": "f71d5cb52a215583bbc6fa85e0b2973708d60e6f3ca9dd4f4fa38f44e5ea9852",
+      "fact_signature": {
+        "numbers": [
+          "1.5kg",
+          "1.5kg",
+          "1.5kg",
+          "1.5kg",
+          "1.5kg",
+          "100g",
+          "100g",
+          "100g",
+          "11月",
+          "16.1%",
+          "16.7%",
+          "18%",
+          "2.4%",
+          "2026年",
+          "25%",
+          "31%",
+          "31%",
+          "34%",
+          "34%",
+          "35.5%",
+          "43.5%",
+          "4日",
+          "5%"
+        ],
+        "sources": [
+          "https://hirogarushumi.com/canagan-dental-cat-food/",
+          "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+CBJYGI+3J8+TR8TE&a8ejpredirect=http%3A%2F%2Fwww.canagancatfood.co.jp%2F3201%2F",
+          "https://www.canagancatfood.co.jp/3201/"
+        ]
+      }
+    },
+    {
+      "slug": "mcadams-cat-chicken-turkey",
+      "title": "【ご紹介】マックアダムズの猫用フード｜原材料とオーブンベイク製法",
+      "topic": "cats",
+      "role": "product",
+      "audience_question": "チキンとターキーを使い、オーブンで焼き上げた猫用フード。原材料、粒の特徴、購入時に確認したい条件を紹介します。",
+      "question_status": "draft_from_opening_needs_editorial_review",
+      "sources": [
+        "https://www.mcadamspetfoods.co.jp/catfood/MAC20000"
+      ],
+      "reviewed_at": null,
+      "automated_checked_at": "2026-11-07",
+      "content_sha256": "132926e57acae02cf3580b8ad684c9b01a479c6f418a60fe81ed46f9d109b4be",
+      "fact_signature": {
+        "numbers": [
+          "1.5kg",
+          "1.5kg",
+          "1.5kg",
+          "100g",
+          "100g",
+          "11月",
+          "14%",
+          "2026年",
+          "27%",
+          "27%",
+          "27%",
+          "29.5%",
+          "30%",
+          "30%",
+          "30%",
+          "4日",
+          "50g",
+          "57%",
+          "7日",
+          "8%"
+        ],
+        "sources": [
+          "https://hirogarushumi.com/canagan-chicken-salmon/",
+          "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+CAYIUQ+3J8+5MEY8Y&a8ejpredirect=https%3A%2F%2Fwww.mcadamspetfoods.co.jp%2Fcatfood%2FMAC20000",
+          "https://www.mcadamspetfoods.co.jp/catfood/MAC20000"
+        ]
+      }
+    },
+    {
+      "slug": "essential-jaguar-cat-food",
+      "title": "【ご紹介】ジャガーキャットフード｜原材料・カロリー・粒の特徴",
+      "topic": "cats",
+      "role": "product",
+      "audience_question": "エッセンシャルの猫用フード「ジャガー」を紹介。肉と魚を組み合わせた原材料、リング形の粒、カロリーを確認できます。",
+      "question_status": "draft_from_opening_needs_editorial_review",
+      "sources": [
+        "https://www.essentialfoods.jp/products/detail/6001"
+      ],
+      "reviewed_at": null,
+      "automated_checked_at": "2026-11-07",
+      "content_sha256": "97443201175afe8352f15a22596d8a4658c244486760820fc66660ee86316671",
+      "fact_signature": {
+        "numbers": [
+          "1.5kg",
+          "1.5kg",
+          "1.5kg",
+          "1.5kg",
+          "10%",
+          "100g",
+          "100g",
+          "11月",
+          "11月",
+          "14.88%",
+          "15%",
+          "20%",
+          "2026年",
+          "2026年",
+          "37%",
+          "4日",
+          "4日",
+          "55g",
+          "7日",
+          "7日",
+          "852円",
+          "852円",
+          "852円"
+        ],
+        "sources": [
+          "https://hirogarushumi.com/mcadams-cat-chicken-turkey/",
+          "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+BYGF5E+3J8+1BM8YQ&a8ejpredirect=https%3A%2F%2Fwww.essentialfoods.jp%2FESN20000",
+          "https://www.essentialfoods.jp/products/detail/6001"
+        ]
+      }
+    },
+    {
+      "slug": "mognyan-cat-food-guide",
+      "title": "【ご紹介】モグニャンのキャットフード｜原材料・粒の大きさ・切り替え方",
+      "topic": "cats",
+      "role": "product",
+      "audience_question": "白身魚65%のモグニャン。原材料や粒のサイズ、今のフードから少しずつ切り替える方法、開封後の保存について紹介します。",
+      "question_status": "draft_from_opening_needs_editorial_review",
+      "sources": [
+        "https://www.mognyancatfood.co.jp/MGN20009/"
+      ],
+      "reviewed_at": null,
+      "automated_checked_at": "2026-11-07",
+      "content_sha256": "72965bc9fedf51336aa4048a5e077bb3a6442e5fbebcb6f1ab0cddaf3a68c58e",
+      "fact_signature": {
+        "numbers": [
+          "1.5kg",
+          "1.5kg",
+          "1.5kg",
+          "10%",
+          "100%",
+          "100g",
+          "100g",
+          "100g",
+          "10日",
+          "10日",
+          "10日",
+          "10日",
+          "11%",
+          "11月",
+          "1日",
+          "1袋",
+          "2026年",
+          "27%",
+          "4日",
+          "5%",
+          "5日",
+          "60g",
+          "60g",
+          "65%",
+          "65%",
+          "65%",
+          "65%",
+          "90%"
+        ],
+        "sources": [
+          "https://hirogarushumi.com/canagan-chicken-salmon/",
+          "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+BOXHGY+3J8+1ZFL5U&a8ejpredirect=https%3A%2F%2Fwww.mognyancatfood.co.jp%2FMGN20009%2F",
+          "https://www.mognyancatfood.co.jp/MGN20009/"
+        ]
+      }
+    }
+  ],
+  "media": [
+    {
+      "id": "manmos-portrait",
+      "file": "manmos-portrait.webp",
+      "kind": "provided",
+      "subject": "manmos",
+      "sha256": "29d95927c7d7e67d8fc091bf3ad73a46f056e7d61cb246b831c2d493eb016471",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "manmos-back",
+      "file": "manmos-back.webp",
+      "kind": "provided",
+      "subject": "manmos",
+      "sha256": "e029bee79d5eb9f0de9c884d463b1894b9051bc73107925ba0c0f1babf02ed20",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "manmos-stretch",
+      "file": "manmos-stretch.webp",
+      "kind": "provided",
+      "subject": "manmos",
+      "sha256": "9add35497d7c9fee07bd3f6f6060821d734f8dc6c8bf7cabef65b4c18a3819c1",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "manmos-tower",
+      "file": "manmos-tower.webp",
+      "kind": "provided",
+      "subject": "manmos",
+      "sha256": "7169e245b731d0c48e0980ac404aebb83bb21c27aeeb56472a6aafa65d8912e9",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "manmos-rest",
+      "file": "manmos-rest.webp",
+      "kind": "generated",
+      "subject": "manmos",
+      "sha256": "22327bf8a1939f2f3a915069eaa8b47465791484099fff7644fc99ea3c2f6cad",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "manmos-toy",
+      "file": "manmos-toy.webp",
+      "kind": "generated",
+      "subject": "manmos",
+      "sha256": "5d18ef9b4d1e759c6d59edb8eabfdf33bcafdef14257d21241eb5444d36148e8",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "highball",
+      "file": "highball.webp",
+      "kind": "generated",
+      "subject": "whisky",
+      "sha256": "332ec89178e5817e1cf75c40c3bde19b041ce23abddd70f8e6ca80dd2eca1cef",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "glenlivet",
+      "file": "glenlivet.webp",
+      "kind": "generated",
+      "subject": "whisky",
+      "sha256": "2cf0631bb5778f6a7b579227353ba90b97d9902ced05daa8d8d595d835039a7d",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "desk",
+      "file": "desk.webp",
+      "kind": "generated",
+      "subject": "work",
+      "sha256": "9fc2ab9cbf2bb66d30d5458a121b7486a67f28de6edabde600bce885d2aa865f",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "manmos-front",
+      "file": "manmos-front.webp",
+      "kind": "provided",
+      "subject": "manmos",
+      "sha256": "d30cbb751777351301e25a5d19687664570007195dc0550caf7512754e019572",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "manmos-lying",
+      "file": "manmos-lying.webp",
+      "kind": "provided",
+      "subject": "manmos",
+      "sha256": "59b995b9da073996a3963d6fa6f95cefeb62b39d92b3f42bd75722b2de8912e5",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "manmos-sitting",
+      "file": "manmos-sitting.webp",
+      "kind": "provided",
+      "subject": "manmos",
+      "sha256": "c7fa64ad3039d9197f6a23ebad8ef8191487bab52e79be11985a1433c8b3231c",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "article-carrier",
+      "file": "article-carrier.webp",
+      "kind": "generated",
+      "subject": "manmos",
+      "sha256": "8c6f10a979b8ac10e484384e0ecff4840ccfd6895e00e56228dac0f55e9baee9",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "article-vet",
+      "file": "article-vet.webp",
+      "kind": "generated",
+      "subject": "manmos",
+      "sha256": "3be998584f4e897c1b53ab0e1ad2449acf8594071ffcad9b72c5d9a96846b597",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "article-labels",
+      "file": "article-labels.webp",
+      "kind": "generated",
+      "subject": "whisky",
+      "sha256": "2d04fbcd8a8d2f77bac46ac0576b1f5051725278017f299b2e9106432d8071d1",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "article-sherry",
+      "file": "article-sherry.webp",
+      "kind": "generated",
+      "subject": "whisky",
+      "sha256": "e8edb9b5cf8eb76db4770c890835861e38f9631f50ddaa16f600d76ec245b1bc",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "article-workflow",
+      "file": "article-workflow.webp",
+      "kind": "generated",
+      "subject": "work",
+      "sha256": "60d9153402964c120c540377ff39589067587a36c4167d85e244807732331433",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "article-beginner",
+      "file": "article-beginner.webp",
+      "kind": "generated",
+      "subject": "work",
+      "sha256": "aa378786089c0da544c0d242c80bca3607c6007a9ac4ebe8b3bc259732d0f075",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "article-checking",
+      "file": "article-checking.webp",
+      "kind": "generated",
+      "subject": "work",
+      "sha256": "1a678571c50ebf10359ebe67b09ba095651b9bc83e50e2d8968f715c0840b2a2",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "article-csv",
+      "file": "article-csv.webp",
+      "kind": "generated",
+      "subject": "work",
+      "sha256": "f91c4eacafe260f22163e1ad8a61c557253e02bb47718a7bc7ed0855f44f015a",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "article-measure",
+      "file": "article-measure.webp",
+      "kind": "generated",
+      "subject": "whisky",
+      "sha256": "5e4a9d05792cee2b49a690319cc7bda6bab179ea478bb408f8ef4bbedef4b45b",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "article-safe-toy",
+      "file": "article-safe-toy.webp",
+      "kind": "generated",
+      "subject": "manmos",
+      "sha256": "6975aa10e6cf043f996cccb661707b677b76d8d12bde690870b06950c3286991",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "detail-welcome-room",
+      "file": "detail-welcome-room.webp",
+      "kind": "generated",
+      "subject": "cat-care",
+      "sha256": "de8b7708e065ea4306a60e5e9181fae67a410c7083763c60e164d92ee812b7f3",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "detail-welcome-proof",
+      "file": "detail-welcome-proof.webp",
+      "kind": "generated",
+      "subject": "cat-care",
+      "sha256": "0ecf5f055978029bd485dd5c51f1313b0cdddb3b24d3b6b9cf304995fcdfbcb4",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "detail-toy-storage",
+      "file": "detail-toy-storage.webp",
+      "kind": "generated",
+      "subject": "cat-care",
+      "sha256": "2fca36f730a7810cbb11579040cba52e429ef3bd89c8550196849496a79d700f",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "detail-vet-memo",
+      "file": "detail-vet-memo.webp",
+      "kind": "generated",
+      "subject": "cat-care",
+      "sha256": "b2a90cfe685c1e3b8b000ff3fd836bc3941b23160ee03e64f654c9377d1cf092",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "detail-vet-towel",
+      "file": "detail-vet-towel.webp",
+      "kind": "generated",
+      "subject": "cat-care",
+      "sha256": "687b31fc5746106fb5e2e25350f1566d72bdc155a933c0461e9065d7b962c062",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "detail-glen-glass",
+      "file": "detail-glen-glass.webp",
+      "kind": "generated",
+      "subject": "whisky",
+      "sha256": "c122d483aa16de5993174441246aed4854c07ba8a34d75588bcabb185db8127e",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "detail-glen-aroma",
+      "file": "detail-glen-aroma.webp",
+      "kind": "generated",
+      "subject": "whisky",
+      "sha256": "149a622524d10cd0802e4dd80ab23ecd3e9aa9043ba101d3e0d22f4c2b118b7b",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "detail-label-detail",
+      "file": "detail-label-detail.webp",
+      "kind": "generated",
+      "subject": "whisky",
+      "sha256": "ac3772bb44dd39c6ef8febf80260a227a59913831a8a2bd064b507a7f42f7640",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "detail-label-compare",
+      "file": "detail-label-compare.webp",
+      "kind": "generated",
+      "subject": "whisky",
+      "sha256": "18bfee8488f03aa30ce4a36eddcfaf162849b544d106090dd2bfa22770377e42",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "detail-sherry-note",
+      "file": "detail-sherry-note.webp",
+      "kind": "generated",
+      "subject": "whisky",
+      "sha256": "ce51a68980f66df6a39541aab9d486a5142e096a79474f5b2fd8cad0e987c132",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "detail-sherry-water",
+      "file": "detail-sherry-water.webp",
+      "kind": "generated",
+      "subject": "whisky",
+      "sha256": "5a4226b9140d3e4cff4a04bc4a9bc7fab8bb3efb1a3690b17e2038c0630ba10e",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "detail-flow-delivery",
+      "file": "detail-flow-delivery.webp",
+      "kind": "generated",
+      "subject": "work",
+      "sha256": "d57e19f50b7aad832e4efe1d24af7016e2228c5540abceec82b363e038eaf3dc",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "detail-begin-small",
+      "file": "detail-begin-small.webp",
+      "kind": "generated",
+      "subject": "work",
+      "sha256": "8daa81a14007423d5c3bcf31c20aed16eb84d18278be615f7179ded1f83cfc62",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "detail-begin-choice",
+      "file": "detail-begin-choice.webp",
+      "kind": "generated",
+      "subject": "work",
+      "sha256": "d07499bbd790b6abefd6f6b616f5e06162c32b7676de15fdf866ef0eef87ed01",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "detail-ai-sample",
+      "file": "detail-ai-sample.webp",
+      "kind": "generated",
+      "subject": "work",
+      "sha256": "999329d896261d670d288a3abe2747bc55ada961ffb14248dba9b7b4ee773034",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "detail-ai-empty",
+      "file": "detail-ai-empty.webp",
+      "kind": "generated",
+      "subject": "work",
+      "sha256": "5316e3b35f0d414a74c7b3967241fdd21b5836a7d85e1798f8516937536ca5cf",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "detail-carrier-lock",
+      "file": "detail-carrier-lock.webp",
+      "kind": "generated",
+      "subject": "cat-care",
+      "sha256": "b76d23ccaa3c1810744be26143f5a9f78635c94dd13ffab86a98c3a57b0ecd27",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "detail-highball-notes",
+      "file": "detail-highball-notes.webp",
+      "kind": "generated",
+      "subject": "whisky",
+      "sha256": "b7669f478d091f62363714c3a4861350095ec78ee925f137a0e0d6f24ace3af7",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "detail-csv-original",
+      "file": "detail-csv-original.webp",
+      "kind": "generated",
+      "subject": "work",
+      "sha256": "7f7e8d1c668c8d8d89e67082fd5600feacfde9598f039d0c79ed7132fce137c7",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "detail-csv-preview",
+      "file": "detail-csv-preview.webp",
+      "kind": "generated",
+      "subject": "work",
+      "sha256": "e7fec374ba31e0979aa3cfab5419530c86f4727c4a08392f5a6c112488cbd8d0",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "detail-topic-whisky",
+      "file": "detail-topic-whisky.webp",
+      "kind": "generated",
+      "subject": "whisky",
+      "sha256": "162065ed4d8575970c2f9bc545f5d7a40aef15c65141a7d7330a63e2c9278bb1",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "detail-topic-work",
+      "file": "detail-topic-work.webp",
+      "kind": "generated",
+      "subject": "work",
+      "sha256": "7f03fdcfe0e49ae65a3e1d87edd8fd64b94b1d4b66b32264ee90d37c165291ba",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "manmos-window",
+      "file": "manmos-window.webp",
+      "kind": "provided",
+      "subject": "manmos",
+      "sha256": "dfcdfe975cb76adac87430d07a024bbf3ab25c173cd9311a784f6e74ced463c0",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "hakushu-highball",
+      "file": "hakushu-highball.webp",
+      "kind": "provided",
+      "subject": "whisky",
+      "sha256": "f385446a10395f9074473b1f41b3e2a6ac2c240dc538cc13a1e74ac2fefcd7dd",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "hakushu-entrance",
+      "file": "hakushu-entrance.webp",
+      "kind": "provided",
+      "subject": "whisky",
+      "sha256": "76b302d8f179f3e6d108dbac337aefbf65a38d7000bed9dac31ce3ee8db1d4e0",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "hakushu-history",
+      "file": "hakushu-history.webp",
+      "kind": "provided",
+      "subject": "whisky",
+      "sha256": "8eb9bc7aa85dc3af5db16d58d7ac0922bd3a73ab98b5142716fc239efe257c65",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "hakushu-still",
+      "file": "hakushu-still.webp",
+      "kind": "provided",
+      "subject": "whisky",
+      "sha256": "48f34c9ebd7ba9757d2d36be453e8038791c8b66384d584ccfaccd2f89ff5738",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "whisky-scotch-display",
+      "file": "whisky-scotch-display.webp",
+      "kind": "provided",
+      "subject": "whisky",
+      "sha256": "49bcea3e31b51fdecf2fa5430d9105b0caeb285c483e95197ca8099cb9c97e51",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "whisky-irish-display",
+      "file": "whisky-irish-display.webp",
+      "kind": "provided",
+      "subject": "whisky",
+      "sha256": "c8c6a471ab93e4801620d1bfea39881b5fa072f7cca49e4013da44dbbfbee940",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "whisky-japanese-display",
+      "file": "whisky-japanese-display.webp",
+      "kind": "provided",
+      "subject": "whisky",
+      "sha256": "7a6463a3a010061532fd38847d5c9e604997f1df2423a332190fc97307bc46d9",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "whisky-american-display",
+      "file": "whisky-american-display.webp",
+      "kind": "provided",
+      "subject": "whisky",
+      "sha256": "8f65e034094d8a517eb15c2f9d3311b2e4c1d34e57e97c6a996b50ff671eb90e",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "whisky-world-display",
+      "file": "whisky-world-display.webp",
+      "kind": "provided",
+      "subject": "whisky",
+      "sha256": "284e1954634441019d8509239f2d7307a107da1fbd20323f582a577f498b21cf",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "hakushu-tasting-table",
+      "file": "hakushu-tasting-table.webp",
+      "kind": "provided",
+      "subject": "whisky",
+      "sha256": "6a97c08380c4be4d5d0faab527c2075557259f2aa7bf7ff0fc5d3b1e9665c1e5",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "hakushu-tasting-glass",
+      "file": "hakushu-tasting-glass.webp",
+      "kind": "provided",
+      "subject": "whisky",
+      "sha256": "83787746720de213633c3c3aa2e1c38d3bacf7faf919a8b0523ba4e5b6ba67f0",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "manmos-zip-back",
+      "file": "manmos-zip-back.webp",
+      "kind": "provided",
+      "subject": "manmos",
+      "sha256": "06b8899f3ca3f724311cb687745026e489ad7c2fb110b23bb8e5a39f72f31994",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "manmos-zip-bed",
+      "file": "manmos-zip-bed.webp",
+      "kind": "provided",
+      "subject": "manmos",
+      "sha256": "6ba7459a12773ebcc32e515150773637df3a351c02577f9a3cdce84d4ac9f09f",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "manmos-zip-window",
+      "file": "manmos-zip-window.webp",
+      "kind": "provided",
+      "subject": "manmos",
+      "sha256": "6665f78f17bbbddfc50d840d28dc402c3322170d991e209ae14b25e0220c9eda",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "manmos-zip-sitting",
+      "file": "manmos-zip-sitting.webp",
+      "kind": "provided",
+      "subject": "manmos",
+      "sha256": "203ee06e0ce3c440645efbc41cc216295e695694e9a15c4b712a0b57b3e93f9d",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "manmos-zip-paw",
+      "file": "manmos-zip-paw.webp",
+      "kind": "provided",
+      "subject": "manmos",
+      "sha256": "47186b186fb5f304a27cdff9849472594cbced856e1bf6117734a9aac165eca5",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "manmos-zip-groom",
+      "file": "manmos-zip-groom.webp",
+      "kind": "provided",
+      "subject": "manmos",
+      "sha256": "cbb99d8fac811c385b0d3e0809b6f9991936acf1c07bea2e024f602c54f5251a",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "manmos-zip-scratcher",
+      "file": "manmos-zip-scratcher.webp",
+      "kind": "provided",
+      "subject": "manmos",
+      "sha256": "ccbdc6fa7108eea9f86436cdcb6c5e793260a27f2622fcc11bb2aaccb3e2898d",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "manmos-zip-pillow",
+      "file": "manmos-zip-pillow.webp",
+      "kind": "provided",
+      "subject": "manmos",
+      "sha256": "468955f9bc97bd2b76ea12a377b8acba916fd26767a73ac66bd9501ff015c538",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "manmos-zip-stretch",
+      "file": "manmos-zip-stretch.webp",
+      "kind": "provided",
+      "subject": "manmos",
+      "sha256": "67022faaa288ae58a0e3490f9e043b76647c62211466ed95e51ca3b0cc46eb41",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "a8-collage-01",
+      "file": "a8-collage-01.webp",
+      "kind": "generated",
+      "subject": "manmos",
+      "sha256": "ee8163f8a4e6643e5bf33b0632d875570a871bc621f2fd0142e3d4a1adae742f",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "a8-collage-02",
+      "file": "a8-collage-02.webp",
+      "kind": "generated",
+      "subject": "manmos",
+      "sha256": "d386ea5633fabe171481821629fdf3d19d6bdc2f766c63ffe0cb5e3d9a05bb7e",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "a8-collage-05",
+      "file": "a8-collage-05.webp",
+      "kind": "generated",
+      "subject": "manmos",
+      "sha256": "b2fe7301ed20dba4ca4987b1b398735c82dbab201fd9ce3689759f0396f330fe",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "a8-collage-06",
+      "file": "a8-collage-06.webp",
+      "kind": "generated",
+      "subject": "manmos",
+      "sha256": "e5edcd4c299bb6663e65dda356cfd830ff98ff18616d2ec1d16562078bb2609c",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "a8-collage-07",
+      "file": "a8-collage-07.webp",
+      "kind": "generated",
+      "subject": "manmos",
+      "sha256": "2237165f592e19e779091539ddafa12ad8567f9692789aa5353205c6c46ddf3a",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "a8-collage-10",
+      "file": "a8-collage-10.webp",
+      "kind": "generated",
+      "subject": "manmos",
+      "sha256": "f6be0b30d1a6dfcee0b0199196f9166ca819d5a5d2d9bfea9544ca2c761e157f",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "a8-collage-18",
+      "file": "a8-collage-18.webp",
+      "kind": "generated",
+      "subject": "manmos",
+      "sha256": "3244f31f332143f652772e4de307ea0ec9eae02ff5ef4831e74ebf8f51b3e1a8",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "a8-collage-19",
+      "file": "a8-collage-19.webp",
+      "kind": "generated",
+      "subject": "manmos",
+      "sha256": "07b98eefe052427baf695a566858a59876ba65ae3f05679ae83161091a5240fa",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "a8-collage-20",
+      "file": "a8-collage-20.webp",
+      "kind": "generated",
+      "subject": "manmos",
+      "sha256": "2812577b25ea3f6e063f2b788cfe97245b29c127b1a947c18ffed989e6eae424",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "a8-collage-21",
+      "file": "a8-collage-21.webp",
+      "kind": "generated",
+      "subject": "manmos",
+      "sha256": "24031c350b47e11e360238dc225f08d3a15089e53d26bff51b434f84b6599e44",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "a8-collage-22",
+      "file": "a8-collage-22.webp",
+      "kind": "generated",
+      "subject": "manmos",
+      "sha256": "5cdc304816fecf0c385f4b7239e5d2eb946101a50099e4efc737025df6e61659",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "a8-collage-23",
+      "file": "a8-collage-23.webp",
+      "kind": "generated",
+      "subject": "manmos",
+      "sha256": "0ef49cd5978aa07d06d0b6e76ca26f4bd954e5bc03b52ae36e02005ecf4f9e1c",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "a8-collage-24",
+      "file": "a8-collage-24.webp",
+      "kind": "generated",
+      "subject": "manmos",
+      "sha256": "2ff70b4f1b6e7648a676541db6e4bc482e447d1b5fde51de5cf7fe931dc166f5",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "product-a8-20261103-23-image-01",
+      "file": "product-a8-20261103-23-image-01.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "sha256": "8259edd363f6188579944f0c0d3f22961a5891f33382cbff2c4e6f5fe33cee5a",
+      "source": "https://rabo.cat/static/473ebe9affd3167a7092a85476ae2366/d22e9/StarterSet.jpg",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "product-a8-20261103-23-image-02",
+      "file": "product-a8-20261103-23-image-02.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "sha256": "f36e1f67bb44cc86e74cc35e2bfd4bcdf5e3bb00b3974f96f447dca5f9649a22",
+      "source": "https://rabo.cat/static/57673f18e32d41acce598b894baf69a1/d22e9/Board2ForJp.jpg",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "product-a8-20261103-18-package",
+      "file": "product-a8-20261103-18-package.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "sha256": "f69b0726263cfaebf51e1ea73fd1799153c9b54156d5f7439f4bafc4668f8cc8",
+      "source": "https://withpety.com/products/nekokenshin/img202104ama/top_item.jpg",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "product-a8-20261103-20-package",
+      "file": "product-a8-20261103-20-package.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "sha256": "3f06587de3e008403bd07de2ebb17c473bf751683ffa21b050edbcfb6abc0170",
+      "source": "https://withpety.com/products/nekobihada/img202104ama/top_item.jpg",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "product-a8-20261103-22-package",
+      "file": "product-a8-20261103-22-package.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "sha256": "c01948421d46612a158e62db63335531432b566f1b0899c27a4bbb9e78769421",
+      "source": "https://withpety.com/products/nekoryoukan/img202104ama/top_item.jpg",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "product-a8-20261103-24-package",
+      "file": "product-a8-20261103-24-package.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "sha256": "5b52d7b16d643ea9c68492eac061b748041ca88c3de97a27515251186e2b3f57",
+      "source": "https://withpety.com/products/nekoissho/img202104ama/top_item.jpg",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "official-a8-01-1",
+      "file": "official-a8-01-1.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "sha256": "1fd7e861a04c142e33199aefffb67d74c7543635229b16b1a3b2b497512077ad",
+      "source": "https://paws-green-deli.com/cdn/shop/files/2_b22d2355-5f77-4351-97d5-b644c2042581.png?v=1781969969&width=1400",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "official-a8-01-2",
+      "file": "official-a8-01-2.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "sha256": "96b9e46306a977d8b29a5813f67ed25a11607cf3775bff430a3befcd431cb880",
+      "source": "https://paws-green-deli.com/cdn/shop/files/ChatGPT_Image_2026_7_8_23_27_12.png?v=1783520872&width=800",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "official-a8-02-1",
+      "file": "official-a8-02-1.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "sha256": "71363693d99e39133cbf07a72ee7842eff0a613b46fc3ee60ae3a569857674da",
+      "source": "https://shop.hariocorp.co.jp/cdn/shop/files/PTS-NYT-W.jpg?v=1736149905&width=533",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "official-a8-02-2",
+      "file": "official-a8-02-2.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "sha256": "29852437b1aa5b2ebac399dd3841ef06ceb912150d37563bef1eeed213a1b21d",
+      "source": "https://shop.hariocorp.co.jp/cdn/shop/files/35_PTS-NK-2P-SH___EC.jpg?v=1775802223&width=533",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "official-a8-05-1",
+      "file": "official-a8-05-1.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "sha256": "6128c8e33b24bef8c0d70d2a8e4bc246669889027a79591290c4a249b7f7003a",
+      "source": "https://shizenno-mori.com/images/item_box_DCLT.jpg",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "official-a8-05-2",
+      "file": "official-a8-05-2.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "sha256": "84f45e66e251fa04f2f627597adca91972e13e95f4a8ac87c65ce77687f6ebdc",
+      "source": "https://shizenno-mori.com/images/item_box_DCBA.jpg",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "official-a8-05-3",
+      "file": "official-a8-05-3.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "sha256": "b7d06b319765ea26581664d4727b8e5b370ee07768c0d4ebedc38c8793806878",
+      "source": "https://shizenno-mori.com/images/item_box_DCHE.jpg",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "official-a8-06-1",
+      "file": "official-a8-06-1.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "sha256": "46fa18a4746ea534ed22c0dbf6118522dba6f3c76d34e67c68095307a9646267",
+      "source": "https://baseec-img-mng.akamaized.net/images/item/origin/7d86186b07be6de2846a5dc2f1701351.jpg?imformat=generic&q=90&im=Resize,width=640,type=normal",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "official-a8-06-2",
+      "file": "official-a8-06-2.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "sha256": "dc64129ad398f722077315a77cc91d9590d4972e5cf0148c26fbc375267af436",
+      "source": "https://baseec-img-mng.akamaized.net/images/item/origin/0087694c64498c134c6fad995769ead7.jpg?imformat=generic&q=90&im=Resize,width=640,type=normal",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "official-a8-07-1",
+      "file": "official-a8-07-1.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "sha256": "d0c03c6d6c0c1e7b631ff4d3c47e2fe961b04ee1a6185d50eeb1fc1b2156b91e",
+      "source": "https://aff.life-110.com/verticalsites/pet_sougi/img/desktop/img_lp02.png",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "official-a8-07-2",
+      "file": "official-a8-07-2.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "sha256": "69b9fe7c235659ec9cde818e54fc1641e03a59c996d5d0cea2daf31ba4ea80b4",
+      "source": "https://aff.life-110.com/verticalsites/pet_sougi/img/desktop/img_lp03.png",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "official-a8-10-1",
+      "file": "official-a8-10-1.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "sha256": "5bd111110c1b9c67f98915da19321a1e6a93b04ca7e0bbed896b527da9fd2e47",
+      "source": "https://cdn.shopify.com/s/files/1/0956/8128/2411/files/IMG_8419_1_640x900.jpg.webp?v=1776341139&width=640",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "official-a8-10-2",
+      "file": "official-a8-10-2.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "sha256": "f5dfca6412b58b9586c08a518003ecb7091aa29ec346463f63e0c5e4d8772846",
+      "source": "https://cdn.shopify.com/s/files/1/0956/8128/2411/files/IMG_8821_640x900.jpg.webp?v=1776341542&width=640",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "official-a8-12-1",
+      "file": "official-a8-12-1.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "sha256": "502c7e6f4628e14c2432c54d928d5305dffe642a1d591932f5fca9fee16fa669",
+      "source": "https://shop.creativeyoko.co.jp/img01/w_750.h_750/trim_ofmgp_itemd8630e26cb9911f19a7f0242ac110005.jpg?ts=202610190848",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "official-a8-12-2",
+      "file": "official-a8-12-2.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "sha256": "9a109d289c9b67a6a1c7ed493d25297d9600a16d9bffe495bba8981db6f8ae1b",
+      "source": "https://shop.creativeyoko.co.jp/img01/w_750.h_750/trim_ofmgp_item361fe55cb33011f19e900242ac11000e.jpg?ts=202609180711",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "official-a8-13-1",
+      "file": "official-a8-13-1.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "sha256": "c214a7f73ce86a13698b96136712952f102b23b4cfe4ba15d409248019c5a218",
+      "source": "https://www.canagancatfood.co.jp/public/images/default/canagancatfood/dental/sec01_03.png",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "official-a8-13-2",
+      "file": "official-a8-13-2.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "sha256": "b7b32949fc5d9ddd4011905cdc372e4b341064c46768593f51d23cf37f933dd7",
+      "source": "https://www.canagancatfood.co.jp/public/images/default/canagancatfood/dental/sec03_1.jpg",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "official-a8-14-1",
+      "file": "official-a8-14-1.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "sha256": "e09fa23b6b024c346b20b10ac3c58c42a1fcca84c2d0587967cf37ff441473a9",
+      "source": "https://www.canagancatfood.co.jp/public/images/default/canagancatfood/new/product.png",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "official-a8-14-2",
+      "file": "official-a8-14-2.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "sha256": "3b9f75825f4d2ce39befa4cb9c7c1121879260aac5043cb70278053fb8a56d05",
+      "source": "https://www.canagancatfood.co.jp/public/images/default/canagancatfood/new/product_fish.png",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "official-a8-15-1",
+      "file": "official-a8-15-1.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "sha256": "eca3324e51c956f00899b28d21e5e3cb755ade911fa307f8a65c54e102bc0bf3",
+      "source": "https://www.mcadamspetfoods.co.jp/public/images/default/mcadamspetfoods/catfood/img_01.webp",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "official-a8-15-2",
+      "file": "official-a8-15-2.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "sha256": "f315e05391201f6f7795c9a50710c8e1efedd267c08738edbd91b5cda78f08dc",
+      "source": "https://www.mcadamspetfoods.co.jp/public/images/default/mcadamspetfoods/catfood/img_05.webp",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "official-a8-16-1",
+      "file": "official-a8-16-1.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "sha256": "f05dfb56e5d4ed9aae46451ae0966d4db72c01633e87a75dce2e393d32b18167",
+      "source": "https://www.essentialfoods.jp/public/images/default/essentialfoods/products/package/jcf.jpg",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "official-a8-16-2",
+      "file": "official-a8-16-2.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "sha256": "8f0af51827a97b7ef599f53a14c8325829eec611ea10ff40abae34d9d90d3d32",
+      "source": "https://www.essentialfoods.jp/public/images/default/essentialfoods/products/kibble/kibble_jcf_thumb.jpg",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "official-a8-17-1",
+      "file": "official-a8-17-1.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "sha256": "7596791433c5e2fd73b9de493f2eea0fab0444c5561c074592e9f82085b2e660",
+      "source": "https://www.mognyancatfood.co.jp/public/images/default/mognyancatfood/id6803/sec_b_tyukiari_img10.jpg",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "official-a8-17-2",
+      "file": "official-a8-17-2.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "sha256": "08720ba4fbdeae4eb029501e1906420048697537b18df83155c73a3143101977",
+      "source": "https://www.mognyancatfood.co.jp/public/images/default/mognyancatfood/202508/sec_i_img08-1.gif",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "official-a8-18-1",
+      "file": "official-a8-18-1.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "sha256": "65ba395f8bbbe2d1511351e7995446fddb1d32303839e333bdb0999c39347164",
+      "source": "https://withpety.com/products/nekokenshin/img202104ama/1600x1600_slide_01.jpg",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "official-a8-18-2",
+      "file": "official-a8-18-2.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "sha256": "868658167a90a2d29e4ab84e39ea376a7233bd6db805985250569219b46ff1b1",
+      "source": "https://withpety.com/products/nekokenshin/img202104ama/1600x1600_slide_04.jpg",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "official-a8-19-1",
+      "file": "official-a8-19-1.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "sha256": "a5744ada1366785337e79b593f0b7b0c6c6e3784f80a346d35b767639e533428",
+      "source": "https://www.pontely.com/wp-content/uploads/card_sample_3_cat.png",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "official-a8-19-2",
+      "file": "official-a8-19-2.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "sha256": "6516f9a04fbd4f1c1ecad93f31fff6c1be353e4ca75f6db2b3b2f18a90594323",
+      "source": "https://www.pontely.com/wp-content/uploads/forowner_read1_cat.jpg",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "official-a8-20-1",
+      "file": "official-a8-20-psb1.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "sha256": "4562e2fb864db9ca6aadcfcc50dbffbe5f3c0fbf049efa258ee10c138dbf81c5",
+      "source": "https://withpety.com/products/nekobihada/img202112lp/pc_top.jpg",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "official-a8-20-2",
+      "file": "official-a8-20-2.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "sha256": "50a42392097c38daeeb45595d6367a91c62852edfd896b062704ed3fc1f88364",
+      "source": "https://withpety.com/products/nekobihada/img202112lp/pc_detail.jpg",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "official-a8-21-1",
+      "file": "official-a8-21-1.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "sha256": "2b3c34eda6fae4caa74282ac645308889321375a486ea336badd9815251197ea",
+      "source": "https://d2w53g1q050m78.cloudfront.net/onekosamacom/ec_assets/d3d680e3687d55c2625269afabbc5c89982962e8-original.jpg?1783587000",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "official-a8-21-2",
+      "file": "official-a8-21-2.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "sha256": "09fab8c6d6b2b14b22aee5c18fec59953f7e92f44c365e209cbf5f9c2f4067f3",
+      "source": "https://d2w53g1q050m78.cloudfront.net/onekosamacom/ec_assets/5ee14bcf9e9a900ea5fb26ec53986c1a0edfbde3-original.?1773304825",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "official-a8-22-1",
+      "file": "official-a8-22-1.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "sha256": "b62350463678cd722ed3b7b32d265d47d7239b771a617f82505b27e74c5e0751",
+      "source": "https://withpety.com/products/nekoryoukan/img202104ama/1600x1600_slide_01.jpg",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "official-a8-22-2",
+      "file": "official-a8-22-2.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "sha256": "b3b702673cd112f4a7db097401a27a867bf10ef4ab42a4f72f455805e8b218c5",
+      "source": "https://withpety.com/products/nekoryoukan/img202104ama/1600x1600_slide_04.jpg",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "official-a8-23-1",
+      "file": "official-a8-23-1.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "sha256": "63fbd8f5e2a26f9cb80b6d49b3ce174ac46e95d18dfebaaca9da133d2c5b10eb",
+      "source": "https://rabo.cat/static/473ebe9affd3167a7092a85476ae2366/d22e9/StarterSet.jpg",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "official-a8-23-2",
+      "file": "official-a8-23-2.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "sha256": "d533b71d41e308f65cf4e5bc73c017d35ba49b81eab81680cd1e2d18c20e51d0",
+      "source": "https://rabo.cat/static/57673f18e32d41acce598b894baf69a1/d22e9/Board2ForJp.jpg",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "official-a8-24-1",
+      "file": "official-a8-24-1.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "sha256": "3e2302378bdd4c92e698c958d1fb384835c5171ffad0eb1098f6341299ca22ec",
+      "source": "https://withpety.com/products/nekoissho/img202104ama/1600x1600_slide_01.jpg",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "official-a8-24-2",
+      "file": "official-a8-24-2.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "sha256": "b267dde95120ab0844b35e7eb2f6ffd9ee2370c329cd870620b8c37df8736252",
+      "source": "https://withpety.com/products/nekoissho/img202104ama/1600x1600_slide_04.jpg",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "a8-collage-12",
+      "file": "a8-collage-12.webp",
+      "kind": "generated",
+      "subject": "manmos",
+      "sha256": "8b0ccee0fd61c84177f2121a8871c24b3d250ba37b5f05ddf67b206250d4bf8a",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "a8-collage-13",
+      "file": "a8-collage-13.webp",
+      "kind": "generated",
+      "subject": "manmos",
+      "sha256": "fc281a5a394499bd2d1319a0f480d890879793cd6b473e64ce7bba072b097be1",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "a8-collage-14",
+      "file": "a8-collage-14.webp",
+      "kind": "generated",
+      "subject": "manmos",
+      "sha256": "6011179e884f3e31b560f3cb71f57e53ec48d321044aaf46fe6f29126ca283b5",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "a8-collage-15",
+      "file": "a8-collage-15.webp",
+      "kind": "generated",
+      "subject": "manmos",
+      "sha256": "f1b769146ff5edd7585ccc4db5024dfe8ede4dec5cf7a6b86d035a1badd32f79",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "a8-collage-16",
+      "file": "a8-collage-16.webp",
+      "kind": "generated",
+      "subject": "manmos",
+      "sha256": "be3343ae9537e2b6cc144915464df79d68c19a9d435f19441e2189246dd1d115",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    },
+    {
+      "id": "a8-collage-17",
+      "file": "a8-collage-17.webp",
+      "kind": "generated",
+      "subject": "manmos",
+      "sha256": "cb31eb759ce078a953df875f3d7c12576c192757d6e9605682f04f78715a7671",
+      "source": "",
+      "derived_from": [],
+      "mapping_status": "existing_manifest; incomplete derivative ancestry requires review"
+    }
+  ],
+  "limits": [
+    "型番・写真・公式ページの意味の一致は、機械的な文字検査だけでは保証できません。",
+    "数値は署名として差分を検出。本文と表の意味の一致は人の確認対象です。",
+    "検索需要・順位・体験の事実を推定しません。"
+  ]
+}

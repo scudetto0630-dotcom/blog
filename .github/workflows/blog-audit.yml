@@ -14,6 +14,11 @@ jobs:
       - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
         with:
           python-version: '3.12'
+      - name: Check editorial rules and fact-signature regressions
+        run: |
+          python -m unittest discover -s tests -p test_editorial_quality.py
+          python -m unittest discover -s tests -p test_search_period_review.py
+          python tools/editorial-quality.py --output editorial-quality.json
       - name: Check public pages and internal links
         run: python tools/blog-audit.py --output blog-audit.json
       - name: Check complete reader navigation and structured data
@@ -29,6 +34,7 @@ jobs:
             blog-audit.json
             reader-audit.json
             product-source-audit.json
+            editorial-quality.json
           retention-days: 30
 
   japanese-copy:
@@ -77,6 +83,18 @@ jobs:
           cache-dependency-path: tools/browser-audit/package-lock.json
       - run: npm ci --prefix tools/browser-audit --no-audit --no-fund
       - run: tools/browser-audit/node_modules/.bin/playwright install --with-deps chromium
+      - name: Build isolated reader fixtures
+        run: |
+          php tests/quality.php > quality-php.txt
+          python tools/build-quality-preview.py quality-php.txt --output /tmp/quality-preview
+      - name: Check saved records, import, notes, print and no-JS reading
+        env:
+          HSH_PLAYWRIGHT_MODULE: ${{ github.workspace }}/tools/browser-audit/node_modules/playwright
+          HSH_READER_PREVIEW: /tmp/quality-preview
+        run: |
+          export HSH_CHROMIUM="$(node -e "process.stdout.write(require('./tools/browser-audit/node_modules/playwright').chromium.executablePath())")"
+          node tests/studio-browser.cjs
+          node tests/quality-browser.cjs
       - name: Check public layouts and retain screenshots
         env:
           NODE_PATH: tools/browser-audit/node_modules
