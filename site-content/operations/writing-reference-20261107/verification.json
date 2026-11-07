@@ -1,0 +1,79 @@
+{
+  "date": "2026-11-07",
+  "live_version": "1.33.1",
+  "source_articles_read": 4,
+  "posts_updated": 6,
+  "titles_preserved": true,
+  "publication_dates_preserved": true,
+  "ad_links_and_tracking_pixels_preserved": true,
+  "public_pages": [
+    {
+      "slug": "cat-carrier-checklist",
+      "status": 200,
+      "h1_count": 1,
+      "datePublished": [
+        "2026-10-15T22:05:09+09:00"
+      ]
+    },
+    {
+      "slug": "glenlivet-12-first-bottles",
+      "status": 200,
+      "h1_count": 1,
+      "datePublished": [
+        "2026-11-03T02:43:38+09:00"
+      ]
+    },
+    {
+      "slug": "sherry-cask-notes",
+      "status": 200,
+      "h1_count": 1,
+      "datePublished": [
+        "2026-11-03T02:43:39+09:00"
+      ]
+    },
+    {
+      "slug": "it-data-work-flow",
+      "status": 200,
+      "h1_count": 1,
+      "datePublished": [
+        "2026-11-03T02:43:40+09:00"
+      ]
+    },
+    {
+      "slug": "canagan-chicken-salmon",
+      "status": 200,
+      "h1_count": 1,
+      "datePublished": [
+        "2026-11-05T00:17:00+09:00"
+      ]
+    },
+    {
+      "slug": "mognyan-cat-food-guide",
+      "status": 200,
+      "h1_count": 1,
+      "datePublished": [
+        "2026-11-05T00:17:03+09:00"
+      ]
+    }
+  ],
+  "browser": {
+    "passed": 15,
+    "failed": 0,
+    "viewports": [
+      1440,
+      390,
+      320
+    ],
+    "affiliate_links_clicked": 0,
+    "live_writes": 0
+  },
+  "php_checks": 959,
+  "python_reference_and_new_rules": 6,
+  "python_existing_editorial": 6,
+  "python_existing_articles": 4,
+  "limits": [
+    "参考4本の構成を抽象化。固有表現・本文・写真は転載しない。",
+    "全記事の読み終え・自動学習・検索順位上昇を意味しない。",
+    "厳格な日本語textlintの既存の文体指摘を解消したという検証ではない。"
+  ]
+}
