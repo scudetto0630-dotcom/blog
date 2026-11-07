@@ -37,14 +37,14 @@ def inspect(article, affiliate=False):
     return out
 
 def run():
-    articles=[];flags=[];inventory=[];photos=json.loads((ROOT/'hirogaru-home/photo-assets.json').read_text())
+    intents=json.loads((POLICY/'article-intents.json').read_text());articles=[];flags=[];inventory=[];photos=json.loads((ROOT/'hirogaru-home/photo-assets.json').read_text())
     for name in ['starter','expanded','affiliate']:
         for a in json.loads((ROOT/f'hirogaru-home/{name}-articles.json').read_text()):
             articles.append(a);flags+=inspect(a,name=='affiliate');sources=facts(a.get('content',''))['sources']
             official=[u for u in sources if not any(s in u for s in ['px.a8.net','hirogarushumi.com'])]
             notes=json.loads((ROOT/'hirogaru-home/product-reader-notes.json').read_text()).get(a['slug'],{})
             if notes.get('source'):official=sorted(set(official+[notes['source']]))
-            inventory.append({'slug':a['slug'],'title':a['title'],'topic':a.get('topic',a.get('category')),'role':'product' if name=='affiliate' else 'story-or-guide','audience_question':plain(a.get('excerpt') or re.sub(r'</p>.*','',a.get('content',''),flags=re.S))[:220], 'question_status':'draft_from_opening_needs_editorial_review','sources':official,'reviewed_at':None,'automated_checked_at':'2026-11-07','content_sha256':hashlib.sha256(a.get('content','').encode()).hexdigest(),'fact_signature':facts(a.get('content',''))})
+            inventory.append({'slug':a['slug'],'title':a['title'],'topic':a.get('topic',a.get('category')),'role':intents[a['slug']]['role'],'audience':intents[a['slug']]['reader'],'audience_question':intents[a['slug']]['question'],'question_status':'editorial_intent_defined_from_existing_article','sources':official,'reviewed_at':None,'automated_checked_at':'2026-11-07','content_sha256':hashlib.sha256(a.get('content','').encode()).hexdigest(),'fact_signature':facts(a.get('content',''))})
     # A near-duplicate warning is a lead, never a destructive merge decision.
     repeats=defaultdict(list)
     for a in articles:

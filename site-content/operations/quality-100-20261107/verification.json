@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-07",
+  "live_version": "1.33.0",
+  "deployed_commit": "3b91461",
+  "php_shared_and_new": 959,
+  "browser_existing": 34,
+  "browser_new": 14,
+  "browser_storage_fallback_cases": 2,
+  "python_editorial": 6,
+  "python_periods": 2,
+  "python_existing_articles": 4,
+  "official_sources_retrieved": 19,
+  "live_existing": {
+    "passed": 27,
+    "failed": 0,
+    "scope": "live public UI, print and accessibility tree",
+    "live_writes": 0,
+    "affiliate_links_clicked": 0
+  },
+  "live_new": {
+    "passed": 16,
+    "failed": 0,
+    "live_writes": 0,
+    "affiliate_links_clicked": 0,
+    "scope": "published quality assets, notes, migration, sorting and component retry"
+  },
+  "live_site_audit": {
+    "pages": 46,
+    "internal_links_checked": 2463,
+    "problems": 0,
+    "orphaned": 0
+  },
+  "search_rank_improvement_confirmed": false,
+  "social_publication": false
+}
