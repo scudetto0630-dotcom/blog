@@ -1,0 +1,46 @@
+{
+  "source_url": "https://acana.net/",
+  "review_date": "2026-11-08",
+  "verified_scope": "公式本文・表示数値・画像を照合。原文全文は私有作業領域にのみ保存。",
+  "pages": [
+    {
+      "url": "https://acana.net/",
+      "sha256": "2913ead9732047927e57d0029d3829b4249a09a7d2e352a7783e4f0c640ad361"
+    },
+    {
+      "url": "https://acana.net/collections/cat-foods",
+      "sha256": "d91eaba9b943455f42cb008edddee91ddb2bb8f4d34a17a76919fc4405e12025"
+    },
+    {
+      "url": "https://acana.net/products/wild-prairie-cats",
+      "sha256": "c60f65a312abdac6866336af9386381516a2038b9ae8fb7de17253d7ff26b357"
+    },
+    {
+      "url": "https://acana.net/products/orijen-original-cat",
+      "sha256": "f50d7d5781b6e57adc12abd69dd4ec70b0b66879ee1db44dc5ac787748f1647e"
+    }
+  ],
+  "verified_facts": {
+    "ワイルドプレイリーキャットレシピ": {
+      "粗たんぱく質": "37%以上",
+      "脂肪分": "18%以上",
+      "粗繊維": "3%以下",
+      "粗灰分": "9%以下",
+      "水分": "10%以下",
+      "代謝エネルギー": "3930kcal/kg"
+    },
+    "オリジナルキャット": {
+      "粗たんぱく質": "40%以上",
+      "脂肪分": "20%以上",
+      "粗繊維": "3%以下",
+      "粗灰分": "8%以下",
+      "水分": "10%以下",
+      "代謝エネルギー": "4160kcal/kg"
+    },
+    "limits": [
+      "2レシピの表示で、ブランド全体への一般化はしない",
+      "医療的効果や疾患予防は本文へ転載しない",
+      "掲載画像は340gパッケージの例"
+    ]
+  }
+}

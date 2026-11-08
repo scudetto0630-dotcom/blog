@@ -25,3 +25,7 @@ $rows=get_option('hsh_ad_click_counts');check(array_keys($rows[wp_date('Y-m-d')]
 update_option('hsh_ad_click_counts',array('2026-10-10'=>array('mognyan-cat-food-guide'=>2),'2026-09-10'=>array('mognyan-cat-food-guide'=>9)),false);check(hsh_engagement_totals('2026-10')===array('mognyan-cat-food-guide'=>2),'monthly click report isolates requested month');
 $GLOBALS['test_admin_cap']=false;ob_start();hsh_engagement_admin();check(ob_get_clean()==='','engagement dashboard requires administration capability');
 echo "All brushup checks passed. Total including shared suites: $tests\n";
+
+$course=hsh_brushup_shopping('aigan-dobutsu-course');check(strpos($course,'認定登録料')!==false&&strpos($course,'試験会場')!==false&&strpos($course,'猫の体格')===false&&strpos($course,'定期購入')===false,'qualification purchase guidance uses fees and study requirements');
+$linx=hsh_brushup_shopping('linx-as-store');check(strpos($linx,'20歳以上')!==false&&strpos($linx,'度数')!==false&&strpos($linx,'返品')!==false&&strpos($linx,'お手入れ')===false&&strpos($linx,'定期購入')===false,'whisky store purchase guidance uses adult bottle and delivery conditions');
+check(strpos(hsh_brushup_related('linx-as-store'),'グレンリベット')!==false&&strpos(hsh_brushup_related('linx-as-store'),'キャリー')===false,'whisky retailer gets whisky related reading');

@@ -1,0 +1,37 @@
+{
+  "source_url": "https://www.jpc.or.jp/kanrishi/",
+  "review_date": "2026-11-08",
+  "verified_scope": "公式本文・表示数値・画像を照合。原文全文は私有作業領域にのみ保存。",
+  "pages": [
+    {
+      "url": "https://www.jpc.or.jp/kanrishi/",
+      "sha256": "1b7bb6dfb25d75beefa5ce84a191bd5bb12a76bae2a4061b99e91ca8681d61c5"
+    },
+    {
+      "url": "https://www.jpc.or.jp/kanrishi/flow/",
+      "sha256": "b794156f3fea06e1afd05e3bbfaeb35d25e24739073c8003e82b5aa9690f59ce"
+    },
+    {
+      "url": "https://www.jpc.or.jp/kanrishi/faq/",
+      "sha256": "ddd619b75e6c1d032ce3bfe77793514eb75ddceb8f3d56d024d013e238f76f0b"
+    }
+  ],
+  "verified_facts": {
+    "2級": {
+      "受講受験料": 32000,
+      "認定登録料": 8000,
+      "合計": 40000,
+      "年齢条件": "該当年度4月1日時点で満15歳以上"
+    },
+    "1級": {
+      "受講受験料": 34000,
+      "認定登録料": 20000,
+      "合計": 54000,
+      "受講条件": "2級認定登録済み"
+    },
+    "スクーリング": "指定3週間のオンデマンド受講、全科目必須",
+    "課題": "期限内提出必須",
+    "試験": "会場受験、75分マークシート",
+    "資格区分": "日本愛玩動物協会認定。環境省登録の人材認定等事業。国家資格とは記載しない。"
+  }
+}

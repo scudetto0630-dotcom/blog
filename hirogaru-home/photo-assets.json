@@ -3052,6 +3052,96 @@
       "source_page": "https://withpety.com/products/nekosanpo/",
       "retrieved_at": "2026-11-08",
       "bytes": 32724
+    },
+    "official-recovered-course-1": {
+      "file": "official-recovered-course-1.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "日本愛玩動物協会の資格案内に掲載されたイメージ",
+      "caption": "日本愛玩動物協会の資格案内に掲載されたイメージ",
+      "width": 800,
+      "height": 350,
+      "bytes": 11124,
+      "sha256": "04d90c05f9fb5bbb94278201be0690d08c83666697e77b51942fa78d0a9d66c6",
+      "source_url": "https://www.jpc.or.jp/kanrishi/wp-content/themes/kanrishi/image/about/main.jpg",
+      "source_page": "https://www.jpc.or.jp/kanrishi/",
+      "retrieved_at": "2026-11-08"
+    },
+    "official-recovered-course-2": {
+      "file": "official-recovered-course-2.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "公式案内にある2級の認定証とバッジの見本",
+      "caption": "公式案内にある2級の認定証とバッジの見本",
+      "width": 281,
+      "height": 234,
+      "bytes": 7340,
+      "sha256": "e7cf3f74986ca0401c46463fd634d4bcd512a4e733c2c12cb7ea06125b7c644e",
+      "source_url": "https://www.jpc.or.jp/kanrishi/wp-content/themes/kanrishi/image/read/pict_007.jpg",
+      "source_page": "https://www.jpc.or.jp/kanrishi/",
+      "retrieved_at": "2026-11-08"
+    },
+    "official-recovered-acana-1": {
+      "file": "official-recovered-acana-1.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "ワイルドプレイリーキャットレシピのパッケージ例（340g）",
+      "caption": "ワイルドプレイリーキャットレシピのパッケージ例（340g）",
+      "width": 700,
+      "height": 700,
+      "bytes": 25540,
+      "sha256": "8ec968a1fb3cfee6155651e0331107ad400c85a3c490b1248ab7e744857b4de6",
+      "source_url": "https://cdn.shopify.com/s/files/1/0713/6873/7062/files/acanacathighestproteinwildprairiefrontright340gemeaapac_1_1x_d49013ba-6d0c-4e90-94ad-3b9d904640ed.webp?v=1777515875&width=700",
+      "source_page": "https://acana.net/",
+      "retrieved_at": "2026-11-08"
+    },
+    "official-recovered-acana-2": {
+      "file": "official-recovered-acana-2.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "オリジナルキャットのパッケージ例（340g）",
+      "caption": "オリジナルキャットのパッケージ例（340g）",
+      "width": 700,
+      "height": 700,
+      "bytes": 26442,
+      "sha256": "46d6ede8a72e6bb6d4ae1f5eb7cfac92d0b4543621dd7c4e86aefefc742bf214",
+      "source_url": "https://cdn.shopify.com/s/files/1/0713/6873/7062/files/orijenoriginalcatfrontright340gemeaapac_1_1x_dfd8bde9-9aa4-40bb-a100-168e12391a18.webp?v=1780031958&width=700",
+      "source_page": "https://acana.net/",
+      "retrieved_at": "2026-11-08"
+    },
+    "official-recovered-linx-1": {
+      "file": "official-recovered-linx-1.webp",
+      "kind": "official",
+      "subject": "whisky",
+      "rights": "advertiser",
+      "alt": "リンクサス酒販の掲載例：白州NV700mlと箱の正面",
+      "caption": "リンクサス酒販の掲載例：白州NV700mlと箱の正面",
+      "width": 700,
+      "height": 700,
+      "bytes": 23898,
+      "sha256": "287bc353421b862b9df91e415ade23183a5fbab4a6e80c994f7bbcda2db8cff1",
+      "source_url": "https://cdn.shopify.com/s/files/1/0551/7298/9010/files/suntory-santori-shirasu-nv-700-ml-43-pasento-bako-ari-uisuki-128.webp?v=1739348372&width=700",
+      "source_page": "https://linx-as.store/products/suntory-hakushu-nv-700-43",
+      "retrieved_at": "2026-11-08"
+    },
+    "official-recovered-linx-2": {
+      "file": "official-recovered-linx-2.webp",
+      "kind": "official",
+      "subject": "whisky",
+      "rights": "advertiser",
+      "alt": "同商品の背面。容量や度数などの表示も見られる",
+      "caption": "同商品の背面。容量や度数などの表示も見られる",
+      "width": 700,
+      "height": 700,
+      "bytes": 25192,
+      "sha256": "2ff217fcf728b6be133c5349127e81093c68d62a5bc2ee95ebe2aed0719e5e33",
+      "source_url": "https://cdn.shopify.com/s/files/1/0551/7298/9010/files/suntory-santori-shirasu-nv-700-ml-43-pasento-bako-ari-uisuki-356.webp?v=1739348372&width=700",
+      "source_page": "https://linx-as.store/products/suntory-hakushu-nv-700-43",
+      "retrieved_at": "2026-11-08"
     }
   },
   "articles": {
@@ -3179,7 +3269,10 @@
     "withpety-nekoshuukan": "official-ad-20261108-nekoshuukan-1",
     "withpety-nekoaigan": "official-ad-20261108-nekoaigan-1",
     "withpety-nekojinkatsu": "official-ad-20261108-nekojinkatsu-1",
-    "withpety-nekosanpo": "official-ad-20261108-nekosanpo-1"
+    "withpety-nekosanpo": "official-ad-20261108-nekosanpo-1",
+    "aigan-dobutsu-course": "official-recovered-course-1",
+    "acana-orijen-cat-food-guide": "official-recovered-acana-1",
+    "linx-as-store": "official-recovered-linx-1"
   },
   "affiliate_inline": {
     "paws-green-deli-cat-food": [],
@@ -3207,7 +3300,10 @@
     "withpety-nekoshuukan": [],
     "withpety-nekoaigan": [],
     "withpety-nekojinkatsu": [],
-    "withpety-nekosanpo": []
+    "withpety-nekosanpo": [],
+    "aigan-dobutsu-course": [],
+    "acana-orijen-cat-food-guide": [],
+    "linx-as-store": []
   },
   "affiliate_product_images": {
     "paws-green-deli-cat-food": [
@@ -3314,6 +3410,18 @@
     "withpety-nekosanpo": [
       "official-ad-20261108-nekosanpo-1",
       "official-ad-20261108-nekosanpo-2"
+    ],
+    "aigan-dobutsu-course": [
+      "official-recovered-course-1",
+      "official-recovered-course-2"
+    ],
+    "acana-orijen-cat-food-guide": [
+      "official-recovered-acana-1",
+      "official-recovered-acana-2"
+    ],
+    "linx-as-store": [
+      "official-recovered-linx-1",
+      "official-recovered-linx-2"
     ]
   }
 }

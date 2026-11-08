@@ -544,5 +544,68 @@
     ],
     "source": "https://withpety.com/products/nekosanpo/",
     "evidence": "official catalog/product specifications and labeled image reviewed, 2026-11-08"
+  },
+  "aigan-dobutsu-course": {
+    "heading": "愛玩動物飼養管理士を選ぶ前に",
+    "constraint": "動物の飼養管理を体系的に学び、半年程度の学習予定を組める方",
+    "steps": [
+      "対象年度の資料と募集期間を確認する",
+      "級ごとの受講条件と、登録までの費用を照合する",
+      "スクーリング・課題・会場試験の日程を学習予定へ入れる"
+    ],
+    "qa": [
+      [
+        "すべて自宅で受けられる？",
+        "スクーリングはオンラインですが、認定試験は指定会場での受験です。実施回ごとの会場も確認してください。"
+      ],
+      [
+        "2級に合格するまでの費用は？",
+        "受講受験料32,000円に加え、合格後に認定登録する場合は8,000円が必要です。合計40,000円で、交通費などは別に考えます。"
+      ]
+    ],
+    "source": "https://www.jpc.or.jp/kanrishi/",
+    "evidence": "site-content/affiliates/2026-11-08-advertising/aigan-dobutsu-course-evidence.json"
+  },
+  "acana-orijen-cat-food-guide": {
+    "heading": "アカナ・オリジンの猫用フードを選ぶ前に",
+    "constraint": "猫用の具体的なレシピを選び、今の食事との原材料・成分の違いを比べたい方",
+    "steps": [
+      "猫用のレシピと購入する容量を選ぶ",
+      "原材料・成分表示を、今の食事と同じ単位で比べる",
+      "給与量と保存方法、送料を含む支払額を確認する"
+    ],
+    "qa": [
+      [
+        "表の数値はブランド全体の比較？",
+        "ワイルドプレイリーキャットレシピとオリジナルキャットという、特定の2商品の公式表示を比べています。別のレシピへは当てはめません。"
+      ],
+      [
+        "カロリーの単位が違うときは？",
+        "1kgあたりのkcalを10で割ると100gあたりになります。今回の2商品では393kcal/100gと416kcal/100gです。"
+      ]
+    ],
+    "source": "https://acana.net/",
+    "evidence": "site-content/affiliates/2026-11-08-advertising/acana-orijen-cat-food-guide-evidence.json"
+  },
+  "linx-as-store": {
+    "heading": "リンクサス酒販を選ぶ前に",
+    "constraint": "ウイスキーの銘柄だけでなく、ボトルや箱の状態と購入条件を比べたい20歳以上の方",
+    "steps": [
+      "銘柄・年数・容量と、用途に合う箱の状態を選ぶ",
+      "個別の商品説明と写真を照合し、不明点を店舗へ問い合わせる",
+      "送料を含む支払額、発送予定、返品条件を確認する"
+    ],
+    "qa": [
+      [
+        "当日発送なら当日届く？",
+        "当日発送は発送手続きの予定で、到着日の約束とは異なります。決済方法や注文時刻、予約商品の扱いも確認してください。"
+      ],
+      [
+        "返品はいつでもできる？",
+        "到着後7日以内の連絡が必要です。開封した商品など対象外の条件があるため、公式の返品案内に従って手続きを進めます。"
+      ]
+    ],
+    "source": "https://linx-as.store/",
+    "evidence": "site-content/affiliates/2026-11-08/linx-as-store-evidence.json"
   }
 }

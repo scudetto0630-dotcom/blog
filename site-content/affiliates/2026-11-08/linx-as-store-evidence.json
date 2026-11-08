@@ -1,0 +1,37 @@
+{
+  "source_url": "https://linx-as.store/",
+  "review_date": "2026-11-08",
+  "verified_scope": "公式本文・表示数値・画像を照合。原文全文は私有作業領域にのみ保存。",
+  "pages": [
+    {
+      "url": "https://linx-as.store/",
+      "sha256": "b045f87c88b95eefb252befda7e85d27e6bddd986ac902c429ba212392bf859a"
+    },
+    {
+      "url": "https://linx-as.store/collections/whisky",
+      "sha256": "c9ee7245b57763738db01a47ecdc321d776356891031e4f93e01d131ee739474"
+    },
+    {
+      "url": "https://linx-as.store/pages/shippingcarrier",
+      "sha256": "6620eec9d874db30150508df59ffbddd40b0ab92d5ad59fca4854eb3935fae7e"
+    },
+    {
+      "url": "https://linx-as.store/policies/refund-policy",
+      "sha256": "2e38317ece233c9bf748e2743f420abd152bb23515b3124098406759d2d8c7e0"
+    }
+  ],
+  "verified_facts": {
+    "運営": "LINXAS株式会社",
+    "送料": "全国一律1000円、離島追加なし",
+    "配送": "日本郵便ゆうパック",
+    "即時決済発送": "14時まで当日発送、以降翌営業日。到着日とは区別する",
+    "返品連絡": "到着後7日以内、開封・購入者破損・元箱欠落・返品不可商品等の例外あり",
+    "購入対象": "20歳以上",
+    "写真": "白州NV700ml掲載商品、前面と背面",
+    "limits": [
+      "酒販店の販売価格とメーカー希望小売価格を混同しない",
+      "購入・来店・試飲した体験にしない",
+      "すべて新品同一状態、無条件返品の保証はしない"
+    ]
+  }
+}

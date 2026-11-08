@@ -35,7 +35,9 @@ function hsh_brushup_shopping($slug){
     $is_food=preg_match('/food|canagan|mcadams|jaguar|mognyan/',$slug);$is_supplement=strpos($slug,'withpety-')===0;
     $fit=$is_food?'原材料や粒の特徴、今のごはんからの切り替え方を比べたい方':($is_supplement?'成分と与え方を確認し、必要性を獣医師に相談してから選びたい方':($is_service?'依頼する内容と料金条件を、申し込み前に整理したい方':'サイズや使い方が、自宅の環境や猫の体格に合うか確かめたい方'));
     $checks=$is_food?'対象年齢、総合栄養食などの区分、一日の給与量、保存方法':($is_supplement?'対象動物、成分、給与量、薬との併用についての相談':($is_service?'プランに含まれる範囲、追加料金、依頼後の変更・キャンセル条件':'寸法、設置場所、対応条件、お手入れ方法'));
-    return '<aside class="hsh-buying-note"><h2>選ぶときのポイント</h2><dl><dt>こんな比較をしたい方に</dt><dd>'.esc_html($fit).'</dd><dt>注文前に確認すること</dt><dd>'.esc_html($checks).'</dd><dt>支払い・継続の条件</dt><dd>表示価格に加えて、送料と支払総額を確認してください。定期購入を選ぶ場合は、次回のお届け日、休止・解約の期限や手続きも確認しておきましょう。</dd></dl><p>商品情報の確認日：<time datetime="'.esc_attr($review_date).'">'.esc_html($review_label).'</time>。変更の可能性があるため、注文時は公式案内をご確認ください。</p></aside>';
+    $fit=$a['purchase_fit']??$fit;$checks=$a['purchase_checks']??$checks;
+    $condition=$a['purchase_condition']??'表示価格に加えて、送料と支払総額を確認してください。定期購入を選ぶ場合は、次回のお届け日、休止・解約の期限や手続きも確認しておきましょう。';
+    return '<aside class="hsh-buying-note"><h2>選ぶときのポイント</h2><dl><dt>こんな比較をしたい方に</dt><dd>'.esc_html($fit).'</dd><dt>注文前に確認すること</dt><dd>'.esc_html($checks).'</dd><dt>支払い・手続きの条件</dt><dd>'.esc_html($condition).'</dd></dl><p>商品情報の確認日：<time datetime="'.esc_attr($review_date).'">'.esc_html($review_label).'</time>。変更の可能性があるため、注文時は公式案内をご確認ください。</p></aside>';
 }
 function hsh_brushup_comparison($topic){
     if($topic==='cats'){$rows=array(array('canagan-chicken-salmon','カナガン','チキンとサーモンを比較','主原料・栄養成分・給与量'),array('mcadams-cat-chicken-turkey','マックアダムズ','チキン＆ターキー、オーブンベイク製法','原材料・粒の特徴'),array('mognyan-cat-food-guide','モグニャン','白身魚を使ったフード','原材料・粒の大きさ・切り替え方'),array('essential-jaguar-cat-food','ジャガー','肉と魚を組み合わせたフード','原材料・カロリー・粒の特徴'));$title='猫用フード、どこを比べる？';$heads=array('商品','記事で紹介している特徴','比べたい項目');}
@@ -48,6 +50,7 @@ function hsh_brushup_comparison($topic){
 function hsh_brushup_related($slug){
     if(hsh_brushup_type($slug)!=='product')return '';
     $slugs=preg_match('/food|canagan|mcadams|jaguar|mognyan/',$slug)?array('canagan-chicken-salmon','mognyan-cat-food-guide','cat-vet-routine'):(strpos($slug,'withpety-')===0?array('cat-vet-routine','before-welcoming-cat'):array('manmos-cat-life','cat-carrier-checklist','cat-teaser-small-parts'));
+    foreach(hsh_affiliate_articles() as $a)if($a['slug']===$slug&&isset($a['related_slugs'])){$slugs=$a['related_slugs'];break;}
     $out='<nav class="hsh-product-related" aria-label="この商品とあわせて読む"><h2>あわせて読みたい記事</h2><ul>';$n=0;foreach($slugs as $s){if($s===$slug)continue;$p=get_page_by_path($s,OBJECT,'post');if($p&&$p->post_status==='publish'){$out.='<li><a href="'.esc_url(get_permalink($p)).'">'.esc_html(get_the_title($p)).' →</a></li>';if(++$n===2)break;}}return $out.'</ul></nav>';
 }
 function hsh_brushup_empty_search(){
@@ -64,7 +67,7 @@ add_filter('the_content',function($content){
     if($p->post_name==='hsh-hakushu-visit'&&get_post_meta($p->ID,'_hsh_bridge_owned',true)==='1')$content='<nav class="hsh-visit-summary" aria-label="見学の思い出"><h2>2025年7月、初めての蒸溜所見学</h2><p>白州の看板、館内に並ぶボトル、そして飲み比べ。初めての見学で撮った写真を順に振り返ります。飲み比べも楽しかった。</p><ol><li>白州の入口へ</li><li>館内のウイスキー展示を見る</li><li>グラスと一緒に、楽しかった飲み比べを振り返る</li></ol></nav>'.$content;
     return $content;
 },27);
-add_action('wp_enqueue_scripts',function(){if(!hsh_reader_scope())return;wp_enqueue_style('hsh-brushup',plugin_dir_url(__FILE__).'assets/brushup.css',array('hsh-palette'),'1.37.0');wp_enqueue_script('hsh-brushup',plugin_dir_url(__FILE__).'assets/brushup.js',array('hsh-reader'),'1.37.0',true);},130);
+add_action('wp_enqueue_scripts',function(){if(!hsh_reader_scope())return;wp_enqueue_style('hsh-brushup',plugin_dir_url(__FILE__).'assets/brushup.css',array('hsh-palette'),'1.38.0');wp_enqueue_script('hsh-brushup',plugin_dir_url(__FILE__).'assets/brushup.js',array('hsh-reader'),'1.38.0',true);},130);
 function hsh_brushup_photo_stories(){
     $m=hsh_photo_manifest();$items=array(array('manmos-zip-pillow','枕の上でひと休み','まんもすは枕の上でのんびり。ふわふわの毛と、くつろいだ姿を写真に残しました。'),array('manmos-zip-scratcher','爪とぎの上が落ち着く場所','爪とぎの上もお気に入り。遊ぶためだけでなく、ひと休みする場所にもなっています。'),array('manmos-front','抱っこは苦手。でも甘えん坊','まんもすは抱っこがあまり好きではありません。甘えん坊でも、好きな距離感はまんもす次第。毎日のブラッシングをしながら、一緒に暮らしています。'));
     $out='<section class="hsh-photo-stories"><h2>写真でつづる、まんもすの毎日</h2>';

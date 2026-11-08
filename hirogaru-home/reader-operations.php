@@ -24,7 +24,7 @@ function hsh_reader_snapshot($label) {
     try {
     $rows=get_option('hsh_reader_checkpoints',array());if(!is_array($rows))$rows=array();
     $posts=array();foreach(hsh_catalog() as $a){$p=get_page_by_path($a['slug'],OBJECT,'post');if($p&&hsh_owned_blog_post($p))$posts[$a['slug']]=array('title'=>$p->post_title,'fingerprint'=>hsh_article_fingerprint($p));}
-    $rows[]=array('at'=>time(),'label'=>sanitize_text_field($label),'version'=>'1.37.0','articles'=>$posts,'requests'=>get_option('hsh_request_counts',array()),'search_pages'=>get_option('hsh_gsc_pages',null),'search_queries'=>get_option('hsh_gsc_queries',null));
+    $rows[]=array('at'=>time(),'label'=>sanitize_text_field($label),'version'=>'1.38.0','articles'=>$posts,'requests'=>get_option('hsh_request_counts',array()),'search_pages'=>get_option('hsh_gsc_pages',null),'search_queries'=>get_option('hsh_gsc_queries',null));
     return update_option('hsh_reader_checkpoints',array_slice($rows,-12),false);
     } finally { delete_option('hsh_reader_checkpoint_lock'); }
 }
@@ -46,7 +46,7 @@ function hsh_reader_search_growth($current,$history){
 
 function hsh_reader_audit_status() {
     $pages=get_option('hsh_gsc_pages',null);$queries=get_option('hsh_gsc_queries',null);$checkpoints=get_option('hsh_reader_checkpoints',array());
-    return hsh_edit_response(array('version'=>'1.37.0','published_catalog_count'=>count(hsh_reader_catalog()),'redirects'=>get_option('hsh_reader_redirects',array()),'checkpoints'=>array_map(function($r){return array('at'=>$r['at'],'label'=>$r['label'],'version'=>$r['version']);},is_array($checkpoints)?$checkpoints:array()),'search_metrics'=>array('pages'=>$pages,'queries'=>$queries),'search_pages_imported'=>is_array($pages),'search_queries_imported'=>is_array($queries),'query_scope'=>get_option('hsh_reader_query_scope',''),'metric_history_count'=>count((array)get_option('hsh_reader_metric_history',array()))));
+    return hsh_edit_response(array('version'=>'1.38.0','published_catalog_count'=>count(hsh_reader_catalog()),'redirects'=>get_option('hsh_reader_redirects',array()),'checkpoints'=>array_map(function($r){return array('at'=>$r['at'],'label'=>$r['label'],'version'=>$r['version']);},is_array($checkpoints)?$checkpoints:array()),'search_metrics'=>array('pages'=>$pages,'queries'=>$queries),'search_pages_imported'=>is_array($pages),'search_queries_imported'=>is_array($queries),'query_scope'=>get_option('hsh_reader_query_scope',''),'metric_history_count'=>count((array)get_option('hsh_reader_metric_history',array()))));
 }
 add_action('rest_api_init',function() {
     register_rest_route('hirogaru/v1','/reader-audit',array(
