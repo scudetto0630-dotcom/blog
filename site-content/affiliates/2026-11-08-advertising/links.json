@@ -9,10 +9,16 @@
     "supplied_format": "html",
     "supplied_label": "環境教育等促進法 人材認定等事業に登録されたペットの資格【愛玩動物飼養管理士 ２級・１級 】",
     "article_slug": "aigan-dobutsu-course",
-    "status": "pending_network",
+    "status": "published",
     "official_source_candidate": "https://www.jpc.or.jp/kanrishi/",
     "destination_url": null,
-    "notes": "参照先は通信許可の公開・適用待ち。広告計測リンクの試しクリックは行わない。"
+    "notes": "2026-11-08 公式本文・画像・条件を照合して公開。原URLと計測画像を保持。",
+    "official_source": "https://www.jpc.or.jp/kanrishi/",
+    "article_url": "https://hirogarushumi.com/aigan-dobutsu-course/",
+    "post_id": 436,
+    "published_date": "2026-11-08",
+    "last_checked_date": "2026-11-08",
+    "published_at": "2026-11-08T20:53:15+09:00"
   },
   {
     "id": "A8-20261108-AD02",
@@ -24,10 +30,11 @@
     "supplied_format": "html",
     "supplied_label": "【犬・猫の総合情報サイト『PEPPY（ペピイ）』】",
     "article_slug": "peppy-cat-shopping-guide",
-    "status": "pending_network",
+    "status": "source_access_upstream_403",
     "official_source_candidate": "https://www.peppynet.com/",
     "destination_url": null,
-    "notes": "参照先は通信許可の公開・適用待ち。広告計測リンクの試しクリックは行わない。"
+    "notes": "環境の許可反映後も公式トップ・/cats/・/shop/がCloudFront HTTP403。公式情報と商品画像は未確認。地理制限は回避せず、未公開のまま保留。",
+    "last_checked_date": "2026-11-08"
   },
   {
     "id": "A8-20261108-AD03",
@@ -39,10 +46,16 @@
     "supplied_format": "html",
     "supplied_label": "ペットフードのアカナ・オリジン",
     "article_slug": "acana-orijen-cat-food-guide",
-    "status": "pending_network",
+    "status": "published",
     "official_source_candidate": "https://acana.net/",
     "destination_url": null,
-    "notes": "参照先は通信許可の公開・適用待ち。広告計測リンクの試しクリックは行わない。"
+    "notes": "2026-11-08 公式本文・画像・条件を照合して公開。原URLと計測画像を保持。",
+    "official_source": "https://acana.net/",
+    "article_url": "https://hirogarushumi.com/acana-orijen-cat-food-guide/",
+    "post_id": 437,
+    "published_date": "2026-11-08",
+    "last_checked_date": "2026-11-08",
+    "published_at": "2026-11-08T20:53:31+09:00"
   },
   {
     "id": "A8-20261108-AD04",

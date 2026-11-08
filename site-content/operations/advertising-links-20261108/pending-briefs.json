@@ -9,13 +9,10 @@
       "申込時期・費用・追加手続き",
       "猫との暮らしで学びたいことを整理する"
     ],
-    "needs_verification": [
-      "受講条件",
-      "現行費用・募集時期",
-      "試験と資格認定の手続き",
-      "公式紹介素材の利用条件"
-    ],
-    "status": "research_outline_only_not_published"
+    "needs_verification": [],
+    "status": "resolved_published",
+    "article_url": "https://hirogarushumi.com/aigan-dobutsu-course/",
+    "resolved_at": "2026-11-08"
   },
   {
     "affiliate_id": "A8-20261108-AD02",
@@ -33,7 +30,8 @@
       "購入条件",
       "公式商品画像"
     ],
-    "status": "research_outline_only_not_published"
+    "status": "source_access_upstream_403",
+    "last_checked_date": "2026-11-08"
   },
   {
     "affiliate_id": "A8-20261108-AD03",
@@ -45,12 +43,9 @@
       "切り替えと保存",
       "容量と購入条件"
     ],
-    "needs_verification": [
-      "日本向け正規通販の対象商品",
-      "レシピ別の原材料・栄養区分・容量",
-      "価格・送料などの条件",
-      "公式パッケージ画像"
-    ],
-    "status": "research_outline_only_not_published"
+    "needs_verification": [],
+    "status": "resolved_published",
+    "article_url": "https://hirogarushumi.com/acana-orijen-cat-food-guide/",
+    "resolved_at": "2026-11-08"
   }
 ]

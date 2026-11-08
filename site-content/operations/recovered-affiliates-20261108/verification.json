@@ -1,0 +1,73 @@
+{
+  "date": "2026-11-08",
+  "version": "1.38.1",
+  "deployment_commit": "4881e215efa5d425b196fdd5310b5c4a64de8959",
+  "zip_sha256": "69cc9e513e2a62cb1f1a3698f6b6e75d89180d5128f4c5da68a0d81c9053a9a9",
+  "published_articles": [
+    {
+      "slug": "aigan-dobutsu-course",
+      "id": 436,
+      "status": "publish",
+      "fingerprint": "da9e40d0e10e2c9c881f233a8cf145db7a13cf5ee655a091ae7f3bf37f29cb08",
+      "url": "https://hirogarushumi.com/aigan-dobutsu-course/",
+      "published_at": "2026-11-08T20:53:15+09:00"
+    },
+    {
+      "slug": "acana-orijen-cat-food-guide",
+      "id": 437,
+      "status": "publish",
+      "fingerprint": "f810937137fc34312cda84f6fd02fecd956ebda5fcde7d8a4d3aed88f7504cee",
+      "url": "https://hirogarushumi.com/acana-orijen-cat-food-guide/",
+      "published_at": "2026-11-08T20:53:31+09:00"
+    },
+    {
+      "slug": "linx-as-store",
+      "id": 438,
+      "status": "publish",
+      "fingerprint": "186faa1d67448aaf3d9516becdc240f6c150cc1249d4becd2a3a11fa63775115",
+      "url": "https://hirogarushumi.com/linx-as-store/",
+      "published_at": "2026-11-08T20:53:46+09:00"
+    }
+  ],
+  "preserved_existing_article_count": 36,
+  "all_previous_fingerprints_unchanged": true,
+  "browser": {
+    "passed": 12,
+    "failed": 0,
+    "widths": [
+      1440,
+      768,
+      390,
+      320
+    ],
+    "scope": [
+      "aigan-dobutsu-course",
+      "acana-orijen-cat-food-guide",
+      "linx-as-store"
+    ],
+    "affiliate_links_clicked": 0,
+    "forms_submitted": 0
+  },
+  "public_page_audit": {
+    "pages": 56,
+    "internal_links_checked": 3111,
+    "problems": [],
+    "orphaned": [],
+    "scope": "own public pages, local JSON-LD field checks; not Google Rich Results or Search Console index validation"
+  },
+  "php_checks_passed": 1166,
+  "remaining": [
+    {
+      "affiliate_id": "A8-20261108-AD02",
+      "name": "PEPPY",
+      "status": "source_access_upstream_403",
+      "url": "https://www.peppynet.com/",
+      "detail": "許可反映後もCloudFront403。公式本文・画像未確認のため未公開。制限回避はしない。"
+    }
+  ],
+  "excluded_dog_ids": [
+    "A8-20261108-02",
+    "A8-20261108-AD05"
+  ],
+  "affiliate_requests_made": 0
+}
