@@ -1,0 +1,41 @@
+{
+  "date_jst": "2026-11-08",
+  "version": "1.36.1",
+  "deployed_commit": "a51d8d4",
+  "articles_published": [
+    "https://hirogarushumi.com/leo-luna-citta-bed/"
+  ],
+  "excluded_by_user": [
+    "A8-20261108-02"
+  ],
+  "pending_source_access": [
+    "A8-20261108-01"
+  ],
+  "pending_domain": "linx-as.store",
+  "network_draft_saved": true,
+  "network_draft_applied": false,
+  "php_checks": 982,
+  "python_article_checks": 4,
+  "python_editorial_checks": 6,
+  "python_writing_reference_checks": 18,
+  "python_story_checks": 6,
+  "python_product_operations_checks": 3,
+  "live_browser_checks": {
+    "passed": 8,
+    "failed": 0,
+    "affiliate_links_clicked": 0,
+    "forms_submitted": 0
+  },
+  "live_widths": [
+    1440,
+    768,
+    390,
+    320
+  ],
+  "live_pages_audited": 47,
+  "live_internal_links_checked": 2555,
+  "live_audit_problems": [],
+  "new_official_product_images": 2,
+  "introduction_setting_updated": true,
+  "additional_fix": "Inactive Cocoon baguetteBox controls no longer leak below footer; native image open/close tested."
+}
