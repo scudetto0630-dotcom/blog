@@ -8,3 +8,5 @@
 @media(max-width:760px){.hsh-reader-site .hsh-hero h1{font-size:22px}}
 @media(max-width:600px){.hsh-reader-site .hsh-post-grid>article>a>.hsh-photo{grid-row:1/5}.hsh-reader-site .hsh-post-grid>article>a>.hsh-card-label{grid-column:2;grid-row:1}.hsh-reader-site .hsh-post-grid>article>a>time{grid-row:2}.hsh-reader-site .hsh-post-grid>article>a>h2,.hsh-reader-site .hsh-post-grid>article>a>h3{grid-row:3}.hsh-reader-site .hsh-post-grid>article>a>p{grid-row:4}.hsh-reader-site .hsh-post-grid>article>a>.hsh-card-product{grid-column:2;grid-row:5}.hsh-reader-site .hsh-post-grid>article>a>.hsh-read-more{grid-row:6}.hsh-reader-site .hsh-post-grid>article>a>.hsh-card-product>span{font-size:10px}}
 @media(max-width:360px){.hsh-reader-site .hsh-hero{grid-template-columns:minmax(0,1fr) 80px;gap:12px}.hsh-reader-site .hsh-hero h1{font-size:17px}.hsh-reader-site .hsh-hero .hsh-art{width:80px;height:100px}}
+/* Preserve full labels and the official qualification illustration in new covers. */
+.hsh-reader-site .hsh-photo-cover img[src*="/official-recovered-"]{object-fit:contain!important;background:#fff}
