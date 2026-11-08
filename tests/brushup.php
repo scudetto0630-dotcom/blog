@@ -4,7 +4,7 @@ if(!defined('MINUTE_IN_SECONDS'))define('MINUTE_IN_SECONDS',60);
 require_once __DIR__.'/../hirogaru-home/reader-brushup.php';
 require_once __DIR__.'/../hirogaru-home/engagement.php';
 check(hsh_brushup_type('mognyan-cat-food-guide')==='product','affiliate articles classified as introductions');
-check(hsh_brushup_type('manmos-cat-life')==='story'&&hsh_brushup_type('cat-carrier-checklist')==='guide','experience and guide filters are distinct');
+check(hsh_brushup_type('manmos-cat-life')==='story'&&hsh_brushup_type('cat-carrier-checklist')==='story'&&hsh_brushup_type('cat-vet-routine')==='guide','experience and guide filters are distinct');
 check(hsh_brushup_choice(array('bad'))==='all'&&hsh_brushup_choice('product')==='product','invalid filter falls back without exposing arbitrary queries');
 $shop=hsh_brushup_shopping('mognyan-cat-food-guide');check(strpos($shop,'切り替え方')!==false&&strpos($shop,'休止・解約')!==false&&strpos($shop,'2026年11月4日')!==false,'food purchase block includes suitability, recurring purchase and source date');
 check(hsh_brushup_shopping('unknown')==='','non-catalog products cannot acquire invented shopping details');
