@@ -2,7 +2,7 @@
 require __DIR__.'/studio.php';
 $target=array('glenlivet-12-first-bottles'=>'glenlivet-12-first-impression','sherry-cask-notes'=>'glenfarclas-12-aroma-review');
 foreach(hsh_expanded_articles() as $a)if(isset($target[$a['slug']])){check(strpos($a['content'],'id="'.$target[$a['slug']].'"')!==false,'search question leads the review '.$a['slug']);check(strpos($a['content'],'/hsh-whisky-notes/#arboralis-taste')!==false,'review links to real Arboralis impression '.$a['slug']);preg_match_all('/\bid="([^"]+)"/',$a['content'],$ids);check(count($ids[1])===count(array_unique($ids[1])),'review anchors remain unique '.$a['slug']);}
-$carrier=hsh_starter_articles()[0];check(strpos($carrier['title'],'リュックキャリー')!==false&&strpos($carrier['title'],'5.5kg')!==false,'carrier title matches the actual experience');check(strpos($carrier['content'],'cat-carrier-backpack-experience')!==false,'carrier experience precedes the general checklist');
+$carrier=hsh_starter_articles()[0];check(strpos($carrier['title'],'リュックキャリー')!==false&&strpos($carrier['title'],'10年以上前')!==false&&strpos($carrier['content'],'5.5kg')!==false&&strpos($carrier['content'],'しまってあったキャリー')!==false,'carrier title matches the actual experience');check(strpos($carrier['content'],'cat-carrier-backpack-experience')!==false,'carrier experience precedes the general checklist');
 check(hsh_studio_terms('cats','cat-carrier-checklist')==='','unrelated nutrition glossary is absent from carrier story');
 check(strpos(hsh_studio_terms('cats','mirai-cat-food-types'),'療法食')!==false,'relevant food glossary remains');
 $notes=hsh_growth_whisky();check(strpos($notes,'id="arboralis-taste"')!==false&&strpos($notes,'アルボラリスは甘い？')!==false,'Arboralis landing section has a stable search-intent anchor');
