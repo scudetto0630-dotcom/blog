@@ -1,0 +1,30 @@
+{
+  "source_url": "https://alices-dogcat.com/products/leoeluna-dogcatbed-citta",
+  "retrieved_date": "2026-11-08",
+  "source_html_sha256": "3a6a20b6d426687dbb6fec6fee32e87d20170334575a716396a111f319f1be81",
+  "claims": {
+    "animal": "犬・猫",
+    "name": "Leo & Luna シッタコレクション",
+    "fabric": "コットン100%",
+    "filling": "ポリエステル",
+    "sizes": {
+      "S": "60×40cm",
+      "M": "70×50cm",
+      "L": "80×60cm",
+      "XL": "90×70cm",
+      "XXL": "100×75cm"
+    },
+    "wash": "30度以下、液体洗剤、洗濯ネット、短時間の洗濯機使用可、平干し自然乾燥",
+    "structure": "本体と中央クッションのセパレート式"
+  },
+  "excluded_claims": [
+    "健康状態の改善保証",
+    "すべての猫の使用満足",
+    "10年間の一般的な耐用年数の保証"
+  ],
+  "limits": [
+    "XSや円形も選択画面にあるが、本文の表は商品詳細のS〜XXLの表示に限定",
+    "同一ページの複数箇所に異なるサイズ説明があるため、内寸を固定計算しない",
+    "在庫と価格は選択条件で変わるため固定価格を本文へ転記しない"
+  ]
+}

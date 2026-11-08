@@ -1,14 +1,14 @@
 <?php
 require __DIR__.'/reader.php';
 $added=hsh_affiliate_articles();
-check(count($added)===19&&count(array_unique(array_column($added,'slug')))===19,'nineteen separately scoped affiliate articles');
+check(count($added)===20&&count(array_unique(array_column($added,'slug')))===20,'twenty separately scoped affiliate articles');
 check(count(hsh_expanded_articles())===10&&count(hsh_article_map())===3,'existing packaged article catalogs remain unchanged');
-$manifest=hsh_photo_manifest();check(count(array_unique($manifest['affiliate_articles']))===19,'new articles use nineteen distinct cover choices');
+$manifest=hsh_photo_manifest();check(count(array_unique($manifest['affiliate_articles']))===20,'new articles use twenty distinct cover choices');
 check(strpos($manifest['assets']['official-a8-20-1']['source_url'],'img202112lp/pc_top.jpg')!==false&&strpos($manifest['assets']['official-a8-20-1']['alt'],'PS-B1')!==false,'Bihada picture matches PS-B1 affiliate variant rather than collagen package');
 $existing=array();foreach(hsh_expanded_articles() as $a){$p=get_page_by_path($a['slug']);$existing[$a['slug']]=$p?hsh_article_fingerprint($p):null;}
 foreach($added as $a){
     check($a['topic']==='cats'&&strpos($a['content'],'class="hsh-ad-notice"')!==false&&strpos($a['content'],'未使用')===false,'ad disclosure without non-use boilerplate '.$a['slug']);
-    $img=hsh_photo_for_slug($a['slug']);check($img&&$img['kind']==='generated'&&count($img['source_photos'])===2,'composite derived from provided cat photos '.$a['slug']);
+    $img=hsh_photo_for_slug($a['slug']);check($img&&(strpos($a['affiliate_id'],'A8-20261103-')===0?($img['kind']==='generated'&&count($img['source_photos'])===2):$img['kind']==='official'),'composite derived from provided cat photos '.$a['slug']);
     check(isset($manifest['affiliate_product_images'][$a['slug']])&&$manifest['affiliate_inline'][$a['slug']]===array(),'original cat photos removed from affiliate body '.$a['slug']);
     check(count($manifest['affiliate_product_images'][$a['slug']])>=2,'at least two real official product or service images '.$a['slug']);
     foreach($manifest['affiliate_product_images'][$a['slug']] as $product_key){$product=$manifest['assets'][$product_key];check($product['kind']==='official'&&$product['rights']==='advertiser'&&!empty($product['source_url']),'official image provenance retained '.$product_key);}

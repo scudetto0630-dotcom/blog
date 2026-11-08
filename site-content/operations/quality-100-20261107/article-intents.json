@@ -1,34 +1,167 @@
 {
- "cat-carrier-checklist":{"reader":"大きめの猫のキャリーを買い替える飼い主","question":"5.5kgの猫でリュック型キャリーが変形した経験から、何を基準に買い替えたか？","role":"experience"},
- "highball-measure-and-adjust":{"reader":"家で作るハイボールが薄いと感じる人","question":"ウイスキーを足す前に、配合や氷のどこを見直せばよいか？","role":"guide"},
- "csv-import-seven-checks":{"reader":"CSVを表計算に取り込む人","question":"先頭の0や日付、空欄を変えずに取り込むには何を確認するか？","role":"guide"},
- "before-welcoming-cat":{"reader":"初めて猫を迎える人","question":"迎える前に何を用意し、保護主へ何を聞いておくか？","role":"guide"},
- "manmos-cat-life":{"reader":"このブログとまんもすを初めて知る人","question":"まんもすはどんな猫で、どんな遊びや触れ合いが好きか？","role":"experience"},
- "cat-teaser-small-parts":{"reader":"猫じゃらしを選び管理する飼い主","question":"安価なおもちゃも使う中で、小さな部品や傷みをどう点検するか？","role":"experience-and-guide"},
- "cat-vet-routine":{"reader":"猫の通院前の飼い主","question":"持ち物と獣医師に伝える情報をどう整理するか？","role":"guide"},
- "glenlivet-12-first-bottles":{"reader":"グレンリベット12年の個人の感想を知りたい人","question":"飲んだ本人は飲みやすさと香りをどう感じたか？","role":"experience"},
- "single-malt-label-guide":{"reader":"シングルモルト選びを始めた人","question":"年数・容量・度数など、ラベルのどこから読むか？","role":"guide"},
- "sherry-cask-notes":{"reader":"グレンファークラス12年の個人の感想を知りたい人","question":"本人が感じたぶどうパンのような香りとはどんな印象か？","role":"experience"},
- "it-data-work-flow":{"reader":"AIを使うデータ加工の仕事に関心がある人","question":"本人は今のデータ抽出・並べ替えでどのようにAIを使っているか？","role":"experience"},
- "starting-it-without-specialty":{"reader":"未経験からITの仕事を考える人","question":"本人は興味を持ってから今の仕事までどう進んだか？","role":"experience"},
- "ai-data-extraction-checks":{"reader":"AIに表やデータ抽出を頼む人","question":"返された表のどこを元データと照合すればよいか？","role":"guide"},
- "paws-green-deli-cat-food":{"reader":"猫用お試しフードを検討する飼い主","question":"セットの内容は何で、主食とトッピングをどう区別するか？","role":"product"},
- "hario-cat-bowl-guide":{"reader":"猫用食器を比較する飼い主","question":"にゃんプレトールの寸法と手入れで何を確認するか？","role":"product"},
- "mirai-cat-food-types":{"reader":"和漢みらいの猫用フードを検討する飼い主","question":"3タイプはどう違い、療法食と総合栄養食をどう分けるか？","role":"product"},
- "m-and-cat-knit-bag":{"reader":"猫モチーフ雑貨を探す人","question":"M&Co.のバッグとチャームは何が違い、購入前に何を見るか？","role":"product"},
- "pet-sougi-110-cat-guide":{"reader":"猫の葬儀について相談先を探す飼い主","question":"相談前に火葬方法・立ち会い・返骨・費用の何を整理するか？","role":"product"},
- "digxipop-cat-figure":{"reader":"愛猫のフィギュアを作りたい人","question":"写真の用意からプレビューと注文までどう進むか？","role":"product"},
- "withpety-nekokenshin":{"reader":"毎日健心の猫用タイプを調べる飼い主","question":"どんな成分のサプリで、与える前に何を確認するか？","role":"product"},
- "pontely-cat-dna-test":{"reader":"猫の遺伝子検査を検討する飼い主","question":"検査プランと採取方法はどう違い、何が分かる範囲か？","role":"product"},
- "withpety-nekobihada":{"reader":"毎日美肌のPS-B1タイプを調べる飼い主","question":"対象の配合・形状は何で、別タイプとどう区別するか？","role":"product"},
- "onekosama-cat-tower":{"reader":"キャットタワーと設置場所を検討する飼い主","question":"WALK treeとRESIDENCEを比較するとき、何を測り確認するか？","role":"product"},
- "withpety-nekoryoukan":{"reader":"毎日良肝の猫用タイプを調べる飼い主","question":"肝臓を意識したサプリの掲載成分と購入条件は何か？","role":"product"},
- "catlog-cat-monitor":{"reader":"猫の行動記録機器を比較する飼い主","question":"CatlogとCatlog Boardで記録できることはどう違うか？","role":"product"},
- "withpety-nekoissho":{"reader":"シニア猫向け毎日一緒を調べる飼い主","question":"DHA・EPA配合タイプの成分と与え方で何を見るか？","role":"product"},
- "pet-paradise-cat-toys":{"reader":"猫の遊びに合うおもちゃを探す飼い主","question":"けりぐるみと猫じゃらしをどのような遊びで選ぶか？","role":"product"},
- "canagan-dental-cat-food":{"reader":"カナガンデンタルの猫用タイプを検討する飼い主","question":"原材料と給与量をどう読み、口のケアと食事をどう分けるか？","role":"product"},
- "canagan-chicken-salmon":{"reader":"カナガンの2種類を比較する飼い主","question":"チキンとサーモンは原材料・成分・カロリーがどう違うか？","role":"product"},
- "mcadams-cat-chicken-turkey":{"reader":"マックアダムズの猫用フードを検討する飼い主","question":"チキンとターキーの配合、製法と給与の注意点は何か？","role":"product"},
- "essential-jaguar-cat-food":{"reader":"ジャガーキャットフードを検討する飼い主","question":"原材料・カロリー・粒を比較するとき何を確認するか？","role":"product"},
- "mognyan-cat-food-guide":{"reader":"モグニャンへの切り替えを考える飼い主","question":"白身魚を使う配合や粒、切り替え方で何を確認するか？","role":"product"}
+  "cat-carrier-checklist": {
+    "reader": "大きめの猫のキャリーを買い替える飼い主",
+    "question": "5.5kgの猫でリュック型キャリーが変形した経験から、何を基準に買い替えたか？",
+    "role": "experience"
+  },
+  "highball-measure-and-adjust": {
+    "reader": "家で作るハイボールが薄いと感じる人",
+    "question": "ウイスキーを足す前に、配合や氷のどこを見直せばよいか？",
+    "role": "guide"
+  },
+  "csv-import-seven-checks": {
+    "reader": "CSVを表計算に取り込む人",
+    "question": "先頭の0や日付、空欄を変えずに取り込むには何を確認するか？",
+    "role": "guide"
+  },
+  "before-welcoming-cat": {
+    "reader": "初めて猫を迎える人",
+    "question": "迎える前に何を用意し、保護主へ何を聞いておくか？",
+    "role": "guide"
+  },
+  "manmos-cat-life": {
+    "reader": "このブログとまんもすを初めて知る人",
+    "question": "まんもすはどんな猫で、どんな遊びや触れ合いが好きか？",
+    "role": "experience"
+  },
+  "cat-teaser-small-parts": {
+    "reader": "猫じゃらしを選び管理する飼い主",
+    "question": "安価なおもちゃも使う中で、小さな部品や傷みをどう点検するか？",
+    "role": "experience-and-guide"
+  },
+  "cat-vet-routine": {
+    "reader": "猫の通院前の飼い主",
+    "question": "持ち物と獣医師に伝える情報をどう整理するか？",
+    "role": "guide"
+  },
+  "glenlivet-12-first-bottles": {
+    "reader": "グレンリベット12年の個人の感想を知りたい人",
+    "question": "飲んだ本人は飲みやすさと香りをどう感じたか？",
+    "role": "experience"
+  },
+  "single-malt-label-guide": {
+    "reader": "シングルモルト選びを始めた人",
+    "question": "年数・容量・度数など、ラベルのどこから読むか？",
+    "role": "guide"
+  },
+  "sherry-cask-notes": {
+    "reader": "グレンファークラス12年の個人の感想を知りたい人",
+    "question": "本人が感じたぶどうパンのような香りとはどんな印象か？",
+    "role": "experience"
+  },
+  "it-data-work-flow": {
+    "reader": "AIを使うデータ加工の仕事に関心がある人",
+    "question": "本人は今のデータ抽出・並べ替えでどのようにAIを使っているか？",
+    "role": "experience"
+  },
+  "starting-it-without-specialty": {
+    "reader": "未経験からITの仕事を考える人",
+    "question": "本人は興味を持ってから今の仕事までどう進んだか？",
+    "role": "experience"
+  },
+  "ai-data-extraction-checks": {
+    "reader": "AIに表やデータ抽出を頼む人",
+    "question": "返された表のどこを元データと照合すればよいか？",
+    "role": "guide"
+  },
+  "paws-green-deli-cat-food": {
+    "reader": "猫用お試しフードを検討する飼い主",
+    "question": "セットの内容は何で、主食とトッピングをどう区別するか？",
+    "role": "product"
+  },
+  "hario-cat-bowl-guide": {
+    "reader": "猫用食器を比較する飼い主",
+    "question": "にゃんプレトールの寸法と手入れで何を確認するか？",
+    "role": "product"
+  },
+  "mirai-cat-food-types": {
+    "reader": "和漢みらいの猫用フードを検討する飼い主",
+    "question": "3タイプはどう違い、療法食と総合栄養食をどう分けるか？",
+    "role": "product"
+  },
+  "m-and-cat-knit-bag": {
+    "reader": "猫モチーフ雑貨を探す人",
+    "question": "M&Co.のバッグとチャームは何が違い、購入前に何を見るか？",
+    "role": "product"
+  },
+  "pet-sougi-110-cat-guide": {
+    "reader": "猫の葬儀について相談先を探す飼い主",
+    "question": "相談前に火葬方法・立ち会い・返骨・費用の何を整理するか？",
+    "role": "product"
+  },
+  "digxipop-cat-figure": {
+    "reader": "愛猫のフィギュアを作りたい人",
+    "question": "写真の用意からプレビューと注文までどう進むか？",
+    "role": "product"
+  },
+  "withpety-nekokenshin": {
+    "reader": "毎日健心の猫用タイプを調べる飼い主",
+    "question": "どんな成分のサプリで、与える前に何を確認するか？",
+    "role": "product"
+  },
+  "pontely-cat-dna-test": {
+    "reader": "猫の遺伝子検査を検討する飼い主",
+    "question": "検査プランと採取方法はどう違い、何が分かる範囲か？",
+    "role": "product"
+  },
+  "withpety-nekobihada": {
+    "reader": "毎日美肌のPS-B1タイプを調べる飼い主",
+    "question": "対象の配合・形状は何で、別タイプとどう区別するか？",
+    "role": "product"
+  },
+  "onekosama-cat-tower": {
+    "reader": "キャットタワーと設置場所を検討する飼い主",
+    "question": "WALK treeとRESIDENCEを比較するとき、何を測り確認するか？",
+    "role": "product"
+  },
+  "withpety-nekoryoukan": {
+    "reader": "毎日良肝の猫用タイプを調べる飼い主",
+    "question": "肝臓を意識したサプリの掲載成分と購入条件は何か？",
+    "role": "product"
+  },
+  "catlog-cat-monitor": {
+    "reader": "猫の行動記録機器を比較する飼い主",
+    "question": "CatlogとCatlog Boardで記録できることはどう違うか？",
+    "role": "product"
+  },
+  "withpety-nekoissho": {
+    "reader": "シニア猫向け毎日一緒を調べる飼い主",
+    "question": "DHA・EPA配合タイプの成分と与え方で何を見るか？",
+    "role": "product"
+  },
+  "pet-paradise-cat-toys": {
+    "reader": "猫の遊びに合うおもちゃを探す飼い主",
+    "question": "けりぐるみと猫じゃらしをどのような遊びで選ぶか？",
+    "role": "product"
+  },
+  "canagan-dental-cat-food": {
+    "reader": "カナガンデンタルの猫用タイプを検討する飼い主",
+    "question": "原材料と給与量をどう読み、口のケアと食事をどう分けるか？",
+    "role": "product"
+  },
+  "canagan-chicken-salmon": {
+    "reader": "カナガンの2種類を比較する飼い主",
+    "question": "チキンとサーモンは原材料・成分・カロリーがどう違うか？",
+    "role": "product"
+  },
+  "mcadams-cat-chicken-turkey": {
+    "reader": "マックアダムズの猫用フードを検討する飼い主",
+    "question": "チキンとターキーの配合、製法と給与の注意点は何か？",
+    "role": "product"
+  },
+  "essential-jaguar-cat-food": {
+    "reader": "ジャガーキャットフードを検討する飼い主",
+    "question": "原材料・カロリー・粒を比較するとき何を確認するか？",
+    "role": "product"
+  },
+  "mognyan-cat-food-guide": {
+    "reader": "モグニャンへの切り替えを考える飼い主",
+    "question": "白身魚を使う配合や粒、切り替え方で何を確認するか？",
+    "role": "product"
+  },
+  "leo-luna-citta-bed": {
+    "reader": "猫用ベッドのサイズと洗い方を比べる飼い主",
+    "question": "レオエルナのシッタは、猫の寝方と自宅の洗濯環境に合うか？",
+    "role": "product"
+  }
 }

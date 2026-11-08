@@ -397,5 +397,26 @@
     ],
     "source": "https://www.mognyancatfood.co.jp/MGN20009/",
     "evidence": "existing official-source article snapshot, 2026-11-04"
+  },
+  "leo-luna-citta-bed": {
+    "heading": "猫が寝られる広さと、洗って干せる場所を先に考える",
+    "constraint": "表記寸法は寝床の内側の広さとは別。厚みや縁の分も含め、内寸が必要なら販売店へ確認してください。",
+    "steps": [
+      "猫の寝方と置ける範囲を測る",
+      "色・サイズ・洗濯表示を確認する",
+      "発送予定と送料を含めた支払額を確認する"
+    ],
+    "qa": [
+      [
+        "猫にも使える？",
+        "公式では犬猫用ベッドとして案内されています。大きさは体重だけでなく寝る姿勢に合わせて選びます。"
+      ],
+      [
+        "洗濯機で洗える？",
+        "公式案内ではネットを使った短時間の洗濯機使用が可能です。30度以下のぬるま湯・液体洗剤・平干し自然乾燥など、製品の表示と洗濯機の説明書も合わせて確認してください。"
+      ]
+    ],
+    "source": "https://alices-dogcat.com/products/leoeluna-dogcatbed-citta",
+    "evidence": "official page and structured product description reviewed, 2026-11-08"
   }
 }

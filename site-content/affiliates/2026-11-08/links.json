@@ -1,0 +1,35 @@
+[
+  {
+    "id": "A8-20261108-01",
+    "received_date": "2026-11-08",
+    "affiliate_url": "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+92UZW2+5V1I+NSWRM&a8ejpredirect=https%3A%2F%2Flinx-as.store%2F",
+    "destination_url": "https://linx-as.store/",
+    "source_code": "<a href=\"https://px.a8.net/svt/ejp?a8mat=4BGCEZ+92UZW2+5V1I+NSWRM&a8ejpredirect=https%3A%2F%2Flinx-as.store%2F\" rel=\"nofollow\">商品を見る</a>\n<img border=\"0\" width=\"1\" height=\"1\" src=\"https://www19.a8.net/0.gif?a8mat=4BGCEZ+92UZW2+5V1I+NSWRM\" alt=\"\">",
+    "tracking_pixel": "https://www19.a8.net/0.gif?a8mat=4BGCEZ+92UZW2+5V1I+NSWRM",
+    "article_slug": "linx-as-store",
+    "status": "source_access_blocked",
+    "notes": "New domain denied by environment proxy; one-domain draft saved, not applied. No unsupported article published."
+  },
+  {
+    "id": "A8-20261108-02",
+    "received_date": "2026-11-08",
+    "affiliate_url": "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+C210S2+4DI0+NSWRM&a8ejpredirect=https%3A%2F%2Falices-dogcat.com%2Fproducts%2Fkangapooch-dogslingbag",
+    "destination_url": "https://alices-dogcat.com/products/kangapooch-dogslingbag",
+    "source_code": "<a href=\"https://px.a8.net/svt/ejp?a8mat=4BGCEZ+C210S2+4DI0+NSWRM&a8ejpredirect=https%3A%2F%2Falices-dogcat.com%2Fproducts%2Fkangapooch-dogslingbag\" rel=\"nofollow\">商品を見る</a>\n<img border=\"0\" width=\"1\" height=\"1\" src=\"https://www13.a8.net/0.gif?a8mat=4BGCEZ+C210S2+4DI0+NSWRM\" alt=\"\">",
+    "tracking_pixel": "https://www13.a8.net/0.gif?a8mat=4BGCEZ+C210S2+4DI0+NSWRM",
+    "article_slug": "kangapooch-sling-guide",
+    "status": "excluded_dog",
+    "notes": "2026-11-08: User explicitly requested exclusion because it is a dog product. No article or ad published."
+  },
+  {
+    "id": "A8-20261108-03",
+    "received_date": "2026-11-08",
+    "affiliate_url": "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+CJW0XE+4DI0+TR8TE&a8ejpredirect=https%3A%2F%2Falices-dogcat.com%2Fproducts%2Fleoeluna-dogcatbed-citta",
+    "destination_url": "https://alices-dogcat.com/products/leoeluna-dogcatbed-citta",
+    "source_code": "<a href=\"https://px.a8.net/svt/ejp?a8mat=4BGCEZ+CJW0XE+4DI0+TR8TE&a8ejpredirect=https%3A%2F%2Falices-dogcat.com%2Fproducts%2Fleoeluna-dogcatbed-citta\" rel=\"nofollow\">商品を見る</a>\n<img border=\"0\" width=\"1\" height=\"1\" src=\"https://www18.a8.net/0.gif?a8mat=4BGCEZ+CJW0XE+4DI0+TR8TE\" alt=\"\">",
+    "tracking_pixel": "https://www18.a8.net/0.gif?a8mat=4BGCEZ+CJW0XE+4DI0+TR8TE",
+    "article_slug": "leo-luna-citta-bed",
+    "status": "prepared",
+    "notes": "Official product page, structured product description and two images reviewed."
+  }
+]

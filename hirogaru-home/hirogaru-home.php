@@ -2,7 +2,7 @@
 /**
  * Plugin Name: ひろがる趣味暮らし トップページ
  * Description: 猫・ウイスキー・ITとフリーランスのトップページ。管理画面から適用・復元できます。
- * Version: 1.35.2
+ * Version: 1.36.0
  * Requires at least: 6.0
  * Requires PHP: 7.4
  */
@@ -86,7 +86,7 @@ add_filter('template_include', function ($template) {
 }, 99);
 add_action('wp_enqueue_scripts', function () {
     if (((int) get_option('hsh_page_id') && is_page((int) get_option('hsh_page_id'))) || (function_exists('hsh_current_topic') && hsh_current_topic())) {
-        wp_enqueue_style('hsh-home', plugin_dir_url(__FILE__) . 'assets/home.css', array(), '1.35.2');
+        wp_enqueue_style('hsh-home', plugin_dir_url(__FILE__) . 'assets/home.css', array(), '1.36.0');
     }
 });
 function hsh_category_url($slug) {
@@ -143,3 +143,14 @@ require_once plugin_dir_path(__FILE__) . 'engagement.php';
 
 require_once plugin_dir_path(__FILE__) . 'reader-studio.php';
 require_once plugin_dir_path(__FILE__) . 'reader-quality.php';
+
+/** Short, grouped labels keep long article titles out of the site footer. */
+function hsh_readable_footer(){
+    $groups=array(
+      '記事を探す'=>array('/category/cats/'=>'猫との暮らし','/category/whisky/'=>'ウイスキー','/category/it-freelance/'=>'ITの仕事と働き方','/hsh-reading-list/'=>'保存した記事'),
+      '写真と体験談'=>array('/hsh-gallery/'=>'まんもすの写真','/hsh-whisky-notes/'=>'飲んだウイスキー','/hsh-hakushu-visit/'=>'白州の蒸溜所見学','/hsh-updates/'=>'最近の更新'),
+      'このブログについて'=>array('/hsh-about/'=>'プロフィール','/hsh-editorial/'=>'記事・広告について','/お問い合わせ/'=>'お問い合わせ','/プライバシーポリシー/'=>'プライバシーポリシー'));
+    $out='<footer class="hsh-footer hsh-footer-readable"><div class="hsh-footer-brand"><a href="'.esc_url(home_url('/')).'">ひろがる趣味暮らし</a><p>猫との暮らし、ウイスキー、仕事の話。</p></div><nav aria-label="サイト情報">';
+    foreach($groups as $title=>$links){$out.='<section><h2>'.esc_html($title).'</h2><ul>';foreach($links as $url=>$label)$out.='<li><a href="'.esc_url(home_url($url)).'">'.esc_html($label).'</a></li>';$out.='</ul></section>';}
+    return $out.'</nav><small>© '.esc_html(wp_date('Y')).' ひろがる趣味暮らし</small></footer>';
+}

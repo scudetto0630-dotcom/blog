@@ -7,6 +7,15 @@ with zipfile.ZipFile(target) as z:names=z.namelist()
 for file in ['reader-quality.php','assets/quality.js','assets/quality.css']:
  name='hirogaru-home/'+file
  if name not in names:names.append(name)
+# Include only image files referenced by the reviewed manifest.
+import json
+manifest=json.loads((ROOT/'hirogaru-home/photo-assets.json').read_text())
+for asset in manifest['assets'].values():
+ variants=asset.get('variants',[])
+ if isinstance(variants,dict):variants=list(variants.values())
+ for image in [asset]+variants:
+  name='hirogaru-home/assets/photos/'+image['file']
+  if name not in names:names.append(name)
 if len(names)>400:raise SystemExit('Too many files for scoped updater')
 for name in names:
  if not name.startswith('hirogaru-home/') or '..' in Path(name).parts:raise SystemExit('Invalid member')

@@ -2818,6 +2818,60 @@
         "manmos-portrait"
       ],
       "generated_at": "2026-11-04"
+    },
+    "official-a8-20261108-bed-1": {
+      "file": "official-a8-20261108-bed-1.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "レオエルナのシッタベッドを使う犬の公式商品写真",
+      "caption": "レオエルナ シッタコレクション。公式の商品写真。",
+      "width": 680,
+      "height": 850,
+      "sha256": "2398fff44537d7ce11b35ca41b38e67217ea820272c660ad62079f7774a3b13a",
+      "variants": [
+        {
+          "file": "official-a8-20261108-bed-1-480.webp",
+          "width": 480,
+          "height": 600
+        },
+        {
+          "file": "official-a8-20261108-bed-1-160.webp",
+          "width": 160,
+          "height": 200
+        }
+      ],
+      "source_url": "https://cdn.shopify.com/s/files/1/0109/1567/6241/files/leo-luna-shop-name-538094.png?v=1744778827",
+      "source_page": "https://alices-dogcat.com/products/leoeluna-dogcatbed-citta",
+      "retrieved_at": "2026-11-08",
+      "bytes": 27262
+    },
+    "official-a8-20261108-bed-2": {
+      "file": "official-a8-20261108-bed-2.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "レオエルナのシッタコレクション、無地の色違いの公式商品写真",
+      "caption": "無地の色合いを選べるシッタコレクション。",
+      "width": 850,
+      "height": 850,
+      "sha256": "0f074837050909bf49f1c5b354afa1f607ac14f6d13a8e53c60fb97db74f310a",
+      "variants": [
+        {
+          "file": "official-a8-20261108-bed-2-480.webp",
+          "width": 480,
+          "height": 480
+        },
+        {
+          "file": "official-a8-20261108-bed-2-160.webp",
+          "width": 160,
+          "height": 160
+        }
+      ],
+      "source_url": "https://cdn.shopify.com/s/files/1/0109/1567/6241/files/leo-luna-shop-name-429701.jpg?v=1744690735",
+      "source_page": "https://alices-dogcat.com/products/leoeluna-dogcatbed-citta",
+      "retrieved_at": "2026-11-08",
+      "bytes": 67678
     }
   },
   "articles": {
@@ -2890,7 +2944,7 @@
     ]
   },
   "topics": {
-    "cats": "manmos-zip-scratcher",
+    "cats": "manmos-portrait",
     "whisky": "whisky-japanese-display",
     "it-freelance": "detail-topic-work"
   },
@@ -2938,7 +2992,8 @@
     "canagan-chicken-salmon": "a8-collage-14",
     "mcadams-cat-chicken-turkey": "a8-collage-15",
     "essential-jaguar-cat-food": "a8-collage-16",
-    "mognyan-cat-food-guide": "a8-collage-17"
+    "mognyan-cat-food-guide": "a8-collage-17",
+    "leo-luna-citta-bed": "official-a8-20261108-bed-2"
   },
   "affiliate_inline": {
     "paws-green-deli-cat-food": [],
@@ -2959,7 +3014,8 @@
     "canagan-chicken-salmon": [],
     "mcadams-cat-chicken-turkey": [],
     "essential-jaguar-cat-food": [],
-    "mognyan-cat-food-guide": []
+    "mognyan-cat-food-guide": [],
+    "leo-luna-citta-bed": []
   },
   "affiliate_product_images": {
     "paws-green-deli-cat-food": [
@@ -3038,6 +3094,10 @@
     "mognyan-cat-food-guide": [
       "official-a8-17-1",
       "official-a8-17-2"
+    ],
+    "leo-luna-citta-bed": [
+      "official-a8-20261108-bed-1",
+      "official-a8-20261108-bed-2"
     ]
   }
 }

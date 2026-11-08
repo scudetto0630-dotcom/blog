@@ -10,9 +10,9 @@ class Links(HTMLParser):
 class AffiliateTests(unittest.TestCase):
  @classmethod
  def setUpClass(cls):
-  cls.rows=json.loads((ROOT/'site-content/affiliates/2026-11-03/links.json').read_text());cls.articles=json.loads((ROOT/'hirogaru-home/affiliate-articles.json').read_text());cls.by={r['id']:r for r in cls.rows}
+  cls.rows=json.loads((ROOT/'site-content/affiliates/2026-11-03/links.json').read_text())+json.loads((ROOT/'site-content/affiliates/2026-11-08/links.json').read_text());cls.articles=json.loads((ROOT/'hirogaru-home/affiliate-articles.json').read_text());cls.by={r['id']:r for r in cls.rows}
  def test_received_count_and_approved_scope(self):
-  self.assertEqual(len(self.rows),24);self.assertEqual(len(self.articles),19);self.assertEqual(len({a['affiliate_id'] for a in self.articles}),19)
+  self.assertEqual(len(self.rows),27);self.assertEqual(len(self.articles),20);self.assertEqual(len({a['affiliate_id'] for a in self.articles}),20)
   self.assertFalse({'A8-20261103-03','A8-20261103-04','A8-20261103-08','A8-20261103-09','A8-20261103-11'}&{a['affiliate_id'] for a in self.articles})
  def test_original_affiliate_destinations_and_pixels_preserved(self):
   for a in self.articles:
@@ -31,9 +31,11 @@ class AffiliateTests(unittest.TestCase):
     self.assertRegex(a['source_sha256'],r'^[a-f0-9]{64}$');self.assertIn(a['source_status'],('owner_supplied_official_page_snapshot','official_live_verified'))
     if a['source_status']=='official_live_verified':
      import hashlib
-     snapshot=ROOT/'site-content/affiliates/2026-11-03/source-recovery'/(a['affiliate_id']+'.html')
+     snapshot=ROOT/a['source_evidence_path'] if 'source_evidence_path' in a else ROOT/'site-content/affiliates/2026-11-03/source-recovery'/(a['affiliate_id']+'.html')
      self.assertEqual(hashlib.sha256(snapshot.read_bytes()).hexdigest(),a['source_sha256'])
  def test_archive_scope_does_not_invent_missing_thirteen(self):
-  self.assertEqual(len({r['id'] for r in self.rows}),24)
-  self.assertTrue(all(r['received_date']=='2026-11-03' for r in self.rows))
+  self.assertEqual(len({r['id'] for r in self.rows}),27)
+  self.assertEqual(sum(r['received_date']=='2026-11-03' for r in self.rows),24)
+  self.assertEqual(sum(r['received_date']=='2026-11-08' for r in self.rows),3)
+  self.assertEqual({a['affiliate_id'] for a in self.articles if a['affiliate_id'].startswith('A8-20261108')},{'A8-20261108-03'})
 if __name__=='__main__':unittest.main()
