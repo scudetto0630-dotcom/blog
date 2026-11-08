@@ -1,0 +1,28 @@
+{
+  "source_url": "https://withpety.com/search.php?kw=%E6%AF%8E%E6%97%A5%E7%BF%92%E6%85%A3",
+  "review_date": "2026-11-08",
+  "source_html_sha256": "ab6e9509653a11140ddaac459a362ec7939034d3a9f448f40968f4df6b5532fe",
+  "verified_scope": "official catalog and labeled cat product image",
+  "product": "毎日習慣",
+  "animal": "猫用",
+  "form": "カツオ味錠剤",
+  "quantity": "60粒入り",
+  "ingredients": [
+    "イヌリン",
+    "ギムネマ",
+    "クロム",
+    "桑の葉",
+    "サラシア",
+    "難消化性デキストリン",
+    "バナバ",
+    "マイタケ末"
+  ],
+  "omitted": [
+    "初回キャンペーン価格の固定記載",
+    "効能・治療・減量・視力回復の保証",
+    "個々の猫への投薬・給与量の指示"
+  ],
+  "limits": [
+    "商品個別ページはHTTP200だがPHPコード断片のみ。本文根拠には使わず、公式一覧と猫用画像で確認できた範囲に限定。"
+  ]
+}

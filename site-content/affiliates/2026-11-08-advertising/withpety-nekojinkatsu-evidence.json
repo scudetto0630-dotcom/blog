@@ -1,0 +1,27 @@
+{
+  "source_url": "https://withpety.com/products/nekojinkatsu/",
+  "review_date": "2026-11-08",
+  "source_html_sha256": "17f6e8f16a9abfffd2c91940c763402f76f4e98521bcbc9559fd793681d7a618",
+  "verified_scope": "official product specifications, material list and labeled image",
+  "product": "毎日腎活",
+  "animal": "猫用",
+  "form": "カツオ味錠剤",
+  "quantity": "18g、300mg×60粒",
+  "ingredients": [
+    "ヤシ殻活性炭",
+    "ウラジロガシ",
+    "未焼成カルシウム",
+    "キトサン",
+    "アルギン酸ナトリウム",
+    "葉酸",
+    "ビタミンB6"
+  ],
+  "omitted": [
+    "初回キャンペーン価格の固定記載",
+    "効能・治療・減量・視力回復の保証",
+    "個々の猫への投薬・給与量の指示"
+  ],
+  "limits": [
+    "公式FAQに無条件の安全性の記述があっても、本文で副作用なしとは言わない。"
+  ]
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "slug": "withpety-nekokouken",
+    "kind": "fact",
+    "rule": "unsupported-claim",
+    "detail": "日口健を加えれば歯磨きが不要になる、口のトラブルが治る、という結論にはつなげないようにしたい。\n\n歯磨きが難しい場",
+    "decision": "retain_after_review",
+    "reason": "治療の効果を否定する文脈として確認。",
+    "sha256": "958960655ed97845356fb6b43ccee3b6691b7abcacd04d826aa05e0a79d9cff7",
+    "reviewed_at": "2026-11-08"
+  },
+  {
+    "slug": "withpety-nekokouken",
+    "kind": "style",
+    "rule": "compound-sentence",
+    "detail": "公式が挙げている配合成分は、ラクトフェリン、KT-11、卵黄粉末、甜茶抽出物、ポリグルタミン酸、ナタマメ、アスコフィラン",
+    "decision": "retain_after_review",
+    "reason": "配合・原材料の列挙。対象の欠落や細切れの短文化を避け、内容を残す。",
+    "sha256": "cba4bb7878191bc924db3fd94b20c14ab9f1bf4991bc6177a61811f861faeda3",
+    "reviewed_at": "2026-11-08"
+  },
+  {
+    "slug": "withpety-nekosoukai",
+    "kind": "style",
+    "rule": "compound-sentence",
+    "detail": "公式の配合成分には、植物発酵エキス、有胞子性乳酸菌、ビフィズス菌、ビタミンC、ビタミンB2、ビタミンB6が挙げられている",
+    "decision": "retain_after_review",
+    "reason": "配合・原材料の列挙。対象の欠落や細切れの短文化を避け、内容を残す。",
+    "sha256": "d9b7dfa7a302c7a8c12b5506cc477570b453378454d7ea54bc116afc6442781c",
+    "reviewed_at": "2026-11-08"
+  },
+  {
+    "slug": "withpety-nekoshuukan",
+    "kind": "style",
+    "rule": "compound-sentence",
+    "detail": "公式一覧の配合成分には、イヌリン、ギムネマ、クロム、桑の葉、サラシア、難消化性デキストリン、バナバ、マイタケ末が挙げられている",
+    "decision": "retain_after_review",
+    "reason": "配合・原材料の列挙。対象の欠落や細切れの短文化を避け、内容を残す。",
+    "sha256": "94d7a64004550e0c63e3922ed7122de67628392534f722cc3ca2975ac7360ea4",
+    "reviewed_at": "2026-11-08"
+  },
+  {
+    "slug": "withpety-nekoaigan",
+    "kind": "style",
+    "rule": "compound-sentence",
+    "detail": "公式が配合成分として挙げているのは、ブルーベリーエキス、ルテイン、プロポリス、アスタキサンチン、メグスリノキ、紫イモ、カシスなど",
+    "decision": "retain_after_review",
+    "reason": "配合・原材料の列挙。対象の欠落や細切れの短文化を避け、内容を残す。",
+    "sha256": "da2b002f8ff997e6fb26ff4b228bb86c1b00e0503bf228d3f176ab4d373c6604",
+    "reviewed_at": "2026-11-08"
+  },
+  {
+    "slug": "withpety-nekojinkatsu",
+    "kind": "style",
+    "rule": "compound-sentence",
+    "detail": "公式の商品詳細には、ヤシ殻活性炭、ウラジロガシ、未焼成カルシウム、キトサン、アルギン酸ナトリウム、葉酸、ビタミンB6が挙げられている",
+    "decision": "retain_after_review",
+    "reason": "配合・原材料の列挙。対象の欠落や細切れの短文化を避け、内容を残す。",
+    "sha256": "291e0d606bff58ca496cf13ec13a6793316ef410efc0b2aa1da2bfd24bce5bde",
+    "reviewed_at": "2026-11-08"
+  },
+  {
+    "slug": "withpety-nekojinkatsu",
+    "kind": "style",
+    "rule": "compound-sentence",
+    "detail": "原材料には、ビール酵母、かつお節粉末、チキンエキス末、豚肝臓末などがあり、キトサンはカニ由来と表示されている",
+    "decision": "retain_after_review",
+    "reason": "配合・原材料の列挙。対象の欠落や細切れの短文化を避け、内容を残す。",
+    "sha256": "bb04a649a521fc7fe3fc899613f0d343a67725d04286d854c26e772d78bac165",
+    "reviewed_at": "2026-11-08"
+  },
+  {
+    "slug": "withpety-nekosanpo",
+    "kind": "style",
+    "rule": "compound-sentence",
+    "detail": "公式の配合成分には、グルコサミン、イミダゾールペプチド、コンドロイチン、Ⅱ型コラーゲン、プロテオグリカン、ビタミンD3、緑イ貝、MSMなどが挙げられている",
+    "decision": "retain_after_review",
+    "reason": "配合・原材料の列挙。対象の欠落や細切れの短文化を避け、内容を残す。",
+    "sha256": "e5dbd6a541ca459af422b9a4a4bcc5a1740e0ef8c41fed0de32154f7759dc112",
+    "reviewed_at": "2026-11-08"
+  }
+]

@@ -1,7 +1,7 @@
 <?php
 require __DIR__.'/brushup.php';
 check(hsh_studio_minutes(str_repeat('あ',1201))===3&&hsh_studio_minutes('<b></b>')===1,'reading estimate counts text and has a one minute floor');
-check(count(hsh_studio_source_content())===20,'every affiliate article has distinct source-backed reader notes');
+check(count(hsh_studio_source_content())===26,'every affiliate article has distinct source-backed reader notes');
 foreach(hsh_affiliate_articles() as $a){$d=hsh_studio_source_content()[$a['slug']];check($d['source']===$a['source_url']&&count($d['steps'])===3&&count($d['qa'])===2,'product instructions and source stay aligned '.$a['slug']);}
 check(strpos(hsh_studio_product_notes('withpety-nekobihada'),'PS-B1')!==false&&strpos(hsh_studio_product_notes('withpety-nekobihada'),'コラーゲン')===false,'Bihada formula cannot drift to a different variant');
 check(strpos(hsh_studio_product_notes('withpety-nekoryoukan'),'肝臓')!==false&&strpos(hsh_studio_product_notes('withpety-nekoryoukan'),'腎臓')===false,'liver supplement remains distinct from kidney products');

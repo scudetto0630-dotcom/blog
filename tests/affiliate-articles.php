@@ -1,9 +1,9 @@
 <?php
 require __DIR__.'/reader.php';
 $added=hsh_affiliate_articles();
-check(count($added)===20&&count(array_unique(array_column($added,'slug')))===20,'twenty separately scoped affiliate articles');
+check(count($added)===26&&count(array_unique(array_column($added,'slug')))===26,'twenty-six separately scoped affiliate articles');
 check(count(hsh_expanded_articles())===10&&count(hsh_article_map())===3,'existing packaged article catalogs remain unchanged');
-$manifest=hsh_photo_manifest();check(count(array_unique($manifest['affiliate_articles']))===20,'new articles use twenty distinct cover choices');
+$manifest=hsh_photo_manifest();check(count(array_unique($manifest['affiliate_articles']))===26,'new articles use twenty-six distinct cover choices');
 check(strpos($manifest['assets']['official-a8-20-1']['source_url'],'img202112lp/pc_top.jpg')!==false&&strpos($manifest['assets']['official-a8-20-1']['alt'],'PS-B1')!==false,'Bihada picture matches PS-B1 affiliate variant rather than collagen package');
 $existing=array();foreach(hsh_expanded_articles() as $a){$p=get_page_by_path($a['slug']);$existing[$a['slug']]=$p?hsh_article_fingerprint($p):null;}
 foreach($added as $a){

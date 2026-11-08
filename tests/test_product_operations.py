@@ -9,7 +9,7 @@ class ProductOperations(unittest.TestCase):
  def test_register_retains_all_tracking_urls_without_requesting_them(self):
   with patch('urllib.request.urlopen',side_effect=AssertionError('No network')):
    rows=register.build(checked_at='2026-11-08')
-  self.assertEqual(len(rows),20)
+  self.assertEqual(len(rows),26)
   for row in rows:
    self.assertTrue(row['affiliate_links']);self.assertTrue(row['product_images']);self.assertEqual(row['publication_status'],'not_verified');self.assertEqual(row['checked_at'],'2026-11-08')
  def test_source_200_with_sold_out_is_a_review_signal_not_a_verdict(self):

@@ -2872,6 +2872,186 @@
       "source_page": "https://alices-dogcat.com/products/leoeluna-dogcatbed-citta",
       "retrieved_at": "2026-11-08",
       "bytes": 67678
+    },
+    "official-ad-20261108-konakouken-1": {
+      "file": "official-ad-20261108-konakouken-1.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "犬猫兼用・毎日口健のパッケージ写真",
+      "caption": "毎日口健のパッケージ。",
+      "width": 450,
+      "height": 600,
+      "sha256": "c5b70f4afdb805cdaf686558db2b155d49c856dc1908ed53dd403ad81898c89e",
+      "source_url": "https://withpety.com/products/konakouken/img202104ama/1600x1600_slide_01.jpg",
+      "source_page": "https://withpety.com/products/konakouken/",
+      "retrieved_at": "2026-11-08",
+      "bytes": 12718
+    },
+    "official-ad-20261108-konakouken-4": {
+      "file": "official-ad-20261108-konakouken-4.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "犬猫兼用・毎日口健のメーカー公式商品説明画像",
+      "caption": "毎日口健の公式商品案内。",
+      "width": 600,
+      "height": 600,
+      "sha256": "f38975fb226e33d8f145d32035b4206ae7b61a316e1fba8ed8ad2f6fb33a2f19",
+      "source_url": "https://withpety.com/products/konakouken/img202104ama/1600x1600_slide_04.jpg",
+      "source_page": "https://withpety.com/products/konakouken/",
+      "retrieved_at": "2026-11-08",
+      "bytes": 29970
+    },
+    "official-ad-20261108-nekosoukai-1": {
+      "file": "official-ad-20261108-nekosoukai-1.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "猫用・毎日爽快のパッケージ写真",
+      "caption": "毎日爽快のパッケージ。",
+      "width": 450,
+      "height": 600,
+      "sha256": "7795f7dbe354836afd05f819d6416e59b3208138a31207bec7418696a75592c1",
+      "source_url": "https://withpety.com/products/nekosoukai/img202104ama/1600x1600_slide_01.jpg",
+      "source_page": "https://withpety.com/products/nekosoukai/",
+      "retrieved_at": "2026-11-08",
+      "bytes": 15552
+    },
+    "official-ad-20261108-nekosoukai-2": {
+      "file": "official-ad-20261108-nekosoukai-2.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "猫用・毎日爽快のメーカー公式商品説明画像",
+      "caption": "毎日爽快の公式商品案内。",
+      "width": 600,
+      "height": 600,
+      "sha256": "029507e701556005af7ce107a7137c8cdb1aed01bf7bee5e15852fe7ffb980ef",
+      "source_url": "https://withpety.com/products/nekosoukai/img202104ama/1600x1600_slide_02.jpg",
+      "source_page": "https://withpety.com/products/nekosoukai/",
+      "retrieved_at": "2026-11-08",
+      "bytes": 30206
+    },
+    "official-ad-20261108-nekoshuukan-1": {
+      "file": "official-ad-20261108-nekoshuukan-1.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "猫用・毎日習慣のパッケージ写真",
+      "caption": "毎日習慣のパッケージ。",
+      "width": 450,
+      "height": 600,
+      "sha256": "0402265ab0435815ae94140366d429c91e53ec1500b2b544fdbd240e12b81ba5",
+      "source_url": "https://withpety.com/products/nekoshuukan/img202104ama/1600x1600_slide_01.jpg",
+      "source_page": "https://withpety.com/search.php?kw=%E6%AF%8E%E6%97%A5%E7%BF%92%E6%85%A3",
+      "retrieved_at": "2026-11-08",
+      "bytes": 13414
+    },
+    "official-ad-20261108-nekoshuukan-3": {
+      "file": "official-ad-20261108-nekoshuukan-3.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "猫用・毎日習慣のメーカー公式商品説明画像",
+      "caption": "毎日習慣の公式商品案内。",
+      "width": 600,
+      "height": 600,
+      "sha256": "f2a2f3e93611f967dea3b69b546086d7f90a9316013aeb60f8d662792e78c384",
+      "source_url": "https://withpety.com/products/nekoshuukan/img202104ama/1600x1600_slide_03.jpg",
+      "source_page": "https://withpety.com/search.php?kw=%E6%AF%8E%E6%97%A5%E7%BF%92%E6%85%A3",
+      "retrieved_at": "2026-11-08",
+      "bytes": 25298
+    },
+    "official-ad-20261108-nekoaigan-1": {
+      "file": "official-ad-20261108-nekoaigan-1.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "猫用・毎日愛眼のパッケージ写真",
+      "caption": "毎日愛眼のパッケージ。",
+      "width": 450,
+      "height": 600,
+      "sha256": "6ba708a71a1c7776b9094e6882b18198640f636273dffdbc26aad58fe56fc170",
+      "source_url": "https://withpety.com/products/nekoaigan/img202104ama/1600x1600_slide_01.jpg",
+      "source_page": "https://withpety.com/products/nekoaigan/",
+      "retrieved_at": "2026-11-08",
+      "bytes": 15972
+    },
+    "official-ad-20261108-nekoaigan-3": {
+      "file": "official-ad-20261108-nekoaigan-3.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "猫用・毎日愛眼のメーカー公式商品説明画像",
+      "caption": "毎日愛眼の公式商品案内。",
+      "width": 600,
+      "height": 600,
+      "sha256": "024736b4c24d3b256eac7b6a6b4d62c6904ef33a7935d1bcb78c1490b980ee19",
+      "source_url": "https://withpety.com/products/nekoaigan/img202104ama/1600x1600_slide_03.jpg",
+      "source_page": "https://withpety.com/products/nekoaigan/",
+      "retrieved_at": "2026-11-08",
+      "bytes": 33152
+    },
+    "official-ad-20261108-nekojinkatsu-1": {
+      "file": "official-ad-20261108-nekojinkatsu-1.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "猫用・毎日腎活のパッケージ写真",
+      "caption": "毎日腎活のパッケージ。",
+      "width": 450,
+      "height": 600,
+      "sha256": "5d90b9f5fcdc82ded2544debc29ecd01fc8aeaf145046a3d214daa156a3ba131",
+      "source_url": "https://withpety.com/products/nekojinkatsu/img202104ama/1600x1600_slide_01.jpg",
+      "source_page": "https://withpety.com/products/nekojinkatsu/",
+      "retrieved_at": "2026-11-08",
+      "bytes": 16070
+    },
+    "official-ad-20261108-nekojinkatsu-3": {
+      "file": "official-ad-20261108-nekojinkatsu-3.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "猫用・毎日腎活のメーカー公式商品説明画像",
+      "caption": "毎日腎活の公式商品案内。",
+      "width": 600,
+      "height": 600,
+      "sha256": "93e22f30b2e99686e09090f146e409892c0e0a35f66dc2616fe47cbde6ceaa34",
+      "source_url": "https://withpety.com/products/nekojinkatsu/img202104ama/1600x1600_slide_03.jpg",
+      "source_page": "https://withpety.com/products/nekojinkatsu/",
+      "retrieved_at": "2026-11-08",
+      "bytes": 34918
+    },
+    "official-ad-20261108-nekosanpo-1": {
+      "file": "official-ad-20261108-nekosanpo-1.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "猫用・毎日散歩のパッケージ写真",
+      "caption": "毎日散歩のパッケージ。",
+      "width": 450,
+      "height": 600,
+      "sha256": "617d6c919a43224a48993df091c9d2529dcf00e8a894b6a15b55b23c54be0e47",
+      "source_url": "https://withpety.com/products/nekosanpo/img202104ama/1600x1600_slide_01.jpg",
+      "source_page": "https://withpety.com/products/nekosanpo/",
+      "retrieved_at": "2026-11-08",
+      "bytes": 16690
+    },
+    "official-ad-20261108-nekosanpo-2": {
+      "file": "official-ad-20261108-nekosanpo-2.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "猫用・毎日散歩のメーカー公式商品説明画像",
+      "caption": "毎日散歩の公式商品案内。",
+      "width": 600,
+      "height": 600,
+      "sha256": "0efa0975526e9975cf4fd3aee68b68fdbf300ca0807b247d5b55f33e0e97c4d2",
+      "source_url": "https://withpety.com/products/nekosanpo/img202104ama/1600x1600_slide_02.jpg",
+      "source_page": "https://withpety.com/products/nekosanpo/",
+      "retrieved_at": "2026-11-08",
+      "bytes": 32724
     }
   },
   "articles": {
@@ -2993,7 +3173,13 @@
     "mcadams-cat-chicken-turkey": "a8-collage-15",
     "essential-jaguar-cat-food": "a8-collage-16",
     "mognyan-cat-food-guide": "a8-collage-17",
-    "leo-luna-citta-bed": "official-a8-20261108-bed-2"
+    "leo-luna-citta-bed": "official-a8-20261108-bed-2",
+    "withpety-nekokouken": "official-ad-20261108-konakouken-1",
+    "withpety-nekosoukai": "official-ad-20261108-nekosoukai-1",
+    "withpety-nekoshuukan": "official-ad-20261108-nekoshuukan-1",
+    "withpety-nekoaigan": "official-ad-20261108-nekoaigan-1",
+    "withpety-nekojinkatsu": "official-ad-20261108-nekojinkatsu-1",
+    "withpety-nekosanpo": "official-ad-20261108-nekosanpo-1"
   },
   "affiliate_inline": {
     "paws-green-deli-cat-food": [],
@@ -3015,7 +3201,13 @@
     "mcadams-cat-chicken-turkey": [],
     "essential-jaguar-cat-food": [],
     "mognyan-cat-food-guide": [],
-    "leo-luna-citta-bed": []
+    "leo-luna-citta-bed": [],
+    "withpety-nekokouken": [],
+    "withpety-nekosoukai": [],
+    "withpety-nekoshuukan": [],
+    "withpety-nekoaigan": [],
+    "withpety-nekojinkatsu": [],
+    "withpety-nekosanpo": []
   },
   "affiliate_product_images": {
     "paws-green-deli-cat-food": [
@@ -3098,6 +3290,30 @@
     "leo-luna-citta-bed": [
       "official-a8-20261108-bed-1",
       "official-a8-20261108-bed-2"
+    ],
+    "withpety-nekokouken": [
+      "official-ad-20261108-konakouken-1",
+      "official-ad-20261108-konakouken-4"
+    ],
+    "withpety-nekosoukai": [
+      "official-ad-20261108-nekosoukai-1",
+      "official-ad-20261108-nekosoukai-2"
+    ],
+    "withpety-nekoshuukan": [
+      "official-ad-20261108-nekoshuukan-1",
+      "official-ad-20261108-nekoshuukan-3"
+    ],
+    "withpety-nekoaigan": [
+      "official-ad-20261108-nekoaigan-1",
+      "official-ad-20261108-nekoaigan-3"
+    ],
+    "withpety-nekojinkatsu": [
+      "official-ad-20261108-nekojinkatsu-1",
+      "official-ad-20261108-nekojinkatsu-3"
+    ],
+    "withpety-nekosanpo": [
+      "official-ad-20261108-nekosanpo-1",
+      "official-ad-20261108-nekosanpo-2"
     ]
   }
 }

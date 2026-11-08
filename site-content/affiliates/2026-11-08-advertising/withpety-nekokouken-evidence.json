@@ -1,0 +1,27 @@
+{
+  "source_url": "https://withpety.com/products/konakouken/",
+  "review_date": "2026-11-08",
+  "source_html_sha256": "063d716c3e968e58400f8f70eb03b8f4b2bece509ca5e9cb3105723f4d2a08d2",
+  "verified_scope": "official product specifications, material list and labeled image",
+  "product": "毎日口健",
+  "animal": "犬猫兼用",
+  "form": "ミルク味粉末",
+  "quantity": "24g、付属スプーン60杯分",
+  "ingredients": [
+    "ラクトフェリン",
+    "KT-11",
+    "卵黄粉末",
+    "甜茶抽出物",
+    "ポリグルタミン酸",
+    "ナタマメ",
+    "アスコフィラン"
+  ],
+  "omitted": [
+    "初回キャンペーン価格の固定記載",
+    "効能・治療・減量・視力回復の保証",
+    "個々の猫への投薬・給与量の指示"
+  ],
+  "limits": [
+    "公式FAQに無条件の安全性の記述があっても、本文で副作用なしとは言わない。"
+  ]
+}

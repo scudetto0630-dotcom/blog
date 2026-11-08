@@ -163,5 +163,35 @@
     "reader": "猫用ベッドのサイズと洗い方を比べる飼い主",
     "question": "レオエルナのシッタは、猫の寝方と自宅の洗濯環境に合うか？",
     "role": "product"
+  },
+  "withpety-nekokouken": {
+    "reader": "毎日口健の購入を検討する猫の飼い主",
+    "question": "毎日口健の犬猫兼用サプリ｜粉末の与え方と口のケアで何を比べ、何を先に相談するか？",
+    "role": "product"
+  },
+  "withpety-nekosoukai": {
+    "reader": "毎日爽快の購入を検討する猫の飼い主",
+    "question": "猫用・毎日爽快｜植物酵素と乳酸菌の配合、選ぶ前に見ることで何を比べ、何を先に相談するか？",
+    "role": "product"
+  },
+  "withpety-nekoshuukan": {
+    "reader": "毎日習慣の購入を検討する猫の飼い主",
+    "question": "猫用・毎日習慣｜サラシア・イヌリンと、食事管理の考え方で何を比べ、何を先に相談するか？",
+    "role": "product"
+  },
+  "withpety-nekoaigan": {
+    "reader": "毎日愛眼の購入を検討する猫の飼い主",
+    "question": "猫用・毎日愛眼｜ブルーベリー・ルテインの配合と選び方で何を比べ、何を先に相談するか？",
+    "role": "product"
+  },
+  "withpety-nekojinkatsu": {
+    "reader": "毎日腎活の購入を検討する猫の飼い主",
+    "question": "猫用・毎日腎活｜活性炭・ウラジロガシと、薬との併用の注意で何を比べ、何を先に相談するか？",
+    "role": "product"
+  },
+  "withpety-nekosanpo": {
+    "reader": "毎日散歩の購入を検討する猫の飼い主",
+    "question": "猫用・毎日散歩｜関節向けサプリの配合と暮らしの見直しで何を比べ、何を先に相談するか？",
+    "role": "product"
   }
 }

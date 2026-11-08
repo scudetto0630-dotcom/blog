@@ -14,7 +14,7 @@ def build(live=None,checked_at=None):
         links=[unescape(u) for u in anchors if 'px.a8.net/' in u]
         pixels=re.findall(r'<img\b[^>]*src="([^"]+)"[^>]*>',body)
         rows.append({'slug':a['slug'],'title':a['title'],'page_url':'https://hirogarushumi.com/'+a['slug']+'/',
-          'placement':'記事末尾の商品案内（.hsh-affiliate-cta）','link_type':'商品リンク',
+          'placement':'記事末尾の商品案内（.hsh-affiliate-cta）','link_type':a.get('link_type','商品リンク'),
           'affiliate_links':links,'tracking_pixels':[unescape(u) for u in pixels if 'a8.net/' in u],
           'official_source':a['source_url'],'product_images':manifest.get('affiliate_product_images',{}).get(a['slug'],[]),
           'publication_status':record.get('status','not_verified'),'post_id':record.get('id'),

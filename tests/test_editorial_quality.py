@@ -18,5 +18,5 @@ class EditorialQuality(unittest.TestCase):
   f=m.inspect({'slug':'sample','title':'表','content':'<table>'+''.join('<tr><td>'+('項目'*25)+'</td><td>説明</td></tr>' for _ in range(6))+'</table>'})
   self.assertNotIn('long-sentence',[x['rule'] for x in f])
  def test_catalog_integrity(self):
-  d=m.run();self.assertEqual(d['articles'],33);self.assertEqual([x for x in d['flags'] if x['kind']=='error'],[])
+  d=m.run();self.assertEqual(d['articles'],39);self.assertEqual([x for x in d['flags'] if x['kind']=='error'],[])
 if __name__=='__main__':unittest.main()
