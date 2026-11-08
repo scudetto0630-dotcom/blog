@@ -20,3 +20,6 @@
 @media(prefers-reduced-motion:reduce){.hsh-reader-site *,.hsh-reader-site *::before,.hsh-reader-site *::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
 @media(forced-colors:active){.hsh-reader-site :is(button,.hsh-card-label,.hsh-affiliate-cta a){border:1px solid ButtonText}.hsh-reader-site a:focus-visible{outline:3px solid Highlight}.hsh-reader-site [aria-current]{text-decoration:underline}}
 @media print{.hsh-reader-site .hsh-affiliate-cta,.hsh-reader-site .hsh-reader-tools,.hsh-reader-site .hsh-product-related{display:none!important}}
+
+/* Sticky headings must stay within the visually hidden header in stacked tables. */
+@media screen and (max-width:600px){.hsh-reader-site .hsh-stack-table thead th{position:static}}
