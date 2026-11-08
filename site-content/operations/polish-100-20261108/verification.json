@@ -1,7 +1,6 @@
 {
   "date_jst": "2026-11-08",
   "prepared_version": "1.35.0",
-  "public_version_unchanged": "1.34.0",
   "implementation_commit": "33752bc",
   "items_reviewed": 100,
   "articles_prepared": 22,
@@ -17,8 +16,26 @@
   "python_writing_reference_tests": 18,
   "python_story_tests": 6,
   "python_product_operations_tests": 3,
-  "published": false,
-  "public_after_verification": "pending_deployment",
-  "blocker": "Automatic approval review rejected git push to the existing GitHub main branch twice; explicit destination approval requested. No alternate upload was attempted.",
-  "search_rank_improvement_confirmed": false
+  "published": true,
+  "public_after_verification": "passed",
+  "blocker": null,
+  "search_rank_improvement_confirmed": false,
+  "live_version": "1.35.2",
+  "deployed_commit": "0755029",
+  "approval_resolved": "User explicitly approved the existing GitHub main branch push and site publication.",
+  "published_articles": 22,
+  "public_body_and_original_publication_dates_verified": 22,
+  "live_product_image_and_ad_checks": 76,
+  "live_search_mobile_caption_cta_retry_print_checks": 14,
+  "live_public_pages_audited": 46,
+  "live_internal_links_checked": 2463,
+  "live_problems": 0,
+  "live_orphaned_pages": 0,
+  "affiliate_links_clicked": 0,
+  "forms_submitted": 0,
+  "followup_fixes": [
+    "19 CTA headings now use product labels",
+    "Mobile stacked table heading positioning and caption width fixed"
+  ],
+  "scope_note": "76 product-image/ad checks on 1.35.0; the same image and link assets were retained in 1.35.2. Latest UI checks passed on 1.35.2. Search rank improvement remains unconfirmed."
 }
