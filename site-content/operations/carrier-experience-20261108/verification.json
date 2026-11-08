@@ -1,0 +1,40 @@
+{
+  "date": "2026-11-08",
+  "version": "1.38.2",
+  "deployment_commit": "044d426abd6503288082e8fb46df7bb148c904de",
+  "zip_sha256": "90fc8d4a27f063712166ff8d507f2d29ddebac854fcb8a10c036efc615eac8be",
+  "updated_urls": [
+    "https://hirogarushumi.com/cat-carrier-checklist/",
+    "https://hirogarushumi.com/manmos-cat-life/"
+  ],
+  "existing_anchors_and_media_preserved": true,
+  "unrelated_article_fingerprints_unchanged": 40,
+  "browser": {
+    "passed": 8,
+    "failed": 0,
+    "widths": [
+      1440,
+      768,
+      390,
+      320
+    ],
+    "forms_submitted": 0,
+    "ads_clicked": 0
+  },
+  "php_checks": 1166,
+  "python_tests": {
+    "story_application": 6,
+    "editorial_quality": 6,
+    "longform": 5
+  },
+  "article_specific_editorial_flags": [],
+  "public_audit": {
+    "pages": 56,
+    "problems": [],
+    "orphaned": []
+  },
+  "limits": [
+    "Search Consoleの登録・順位・流入増加を確認した結果ではない。",
+    "メーカー仕様、耐荷重、電車持込可否や避難での使用経験を補完しない。"
+  ]
+}
