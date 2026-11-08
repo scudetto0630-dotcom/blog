@@ -27,7 +27,7 @@ try:
  with zipfile.ZipFile(temp) as z:
   assert not z.testzip();assert sum(i.file_size for i in z.infolist())<=50*1024*1024
   for name in names:assert z.read(name)==(ROOT/name).read_bytes()
- assert temp.stat().st_size<=16*1024*1024
+ assert temp.stat().st_size<=20*1024*1024
  temp.replace(target);print('Curated ZIP verified: '+str(len(names))+' files, '+str(target.stat().st_size)+' bytes')
 finally:
  if temp.exists():temp.unlink()

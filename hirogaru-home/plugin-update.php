@@ -7,6 +7,7 @@ function hsh_update_spec($data) {
     }
     return 'https://raw.githubusercontent.com/scudetto0630-dotcom/blog/' . $data['commit'] . '/hirogaru-home.zip';
 }
+function hsh_update_download_limit(){return 20 * 1024 * 1024;}
 function hsh_update_archive($zip) {
     if ($zip->numFiles < 1 || $zip->numFiles > 400) { return false; }
     $total = 0; $main = false; $seen = array();
@@ -41,7 +42,7 @@ function hsh_update_plugin($request) {
     try {
         require_once ABSPATH . 'wp-admin/includes/file.php';
         require_once ABSPATH . 'wp-admin/includes/class-wp-upgrader.php';
-        $reply = wp_safe_remote_get($url, array('timeout' => 90, 'redirection' => 0, 'limit_response_size' => 16 * 1024 * 1024));
+        $reply = wp_safe_remote_get($url, array('timeout' => 90, 'redirection' => 0, 'limit_response_size' => hsh_update_download_limit()));
         if (is_wp_error($reply) || wp_remote_retrieve_response_code($reply) !== 200) { return new WP_Error('hsh_update_download', '更新ファイルを取得できません。', array('status' => 502)); }
         $body = wp_remote_retrieve_body($reply);
         if (!hash_equals($data['sha256'], hash('sha256', $body))) { return new WP_Error('hsh_update_hash', '更新ファイルの検証に失敗しました。', array('status' => 400)); }

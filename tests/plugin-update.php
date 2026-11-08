@@ -1,6 +1,7 @@
 <?php
 require __DIR__ . '/article-refresh.php';
 require_once __DIR__ . '/../hirogaru-home/plugin-update.php';
+check(hsh_update_download_limit()===20*1024*1024,'download remains bounded for growing official photo bundles');
 $spec=array('commit'=>str_repeat('a',40),'sha256'=>str_repeat('b',64),'expected_version'=>'1.4.0');
 check(hsh_update_spec($spec)==='https://raw.githubusercontent.com/scudetto0630-dotcom/blog/'.str_repeat('a',40).'/hirogaru-home.zip','immutable repository URL');
 foreach(array(array(),array_merge($spec,array('commit'=>'main')),array_merge($spec,array('url'=>'https://evil.test')),array_merge($spec,array('sha256'=>'x'))) as $bad){check(is_wp_error(hsh_update_spec($bad)),'invalid update spec rejected');}
