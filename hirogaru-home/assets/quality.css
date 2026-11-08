@@ -23,3 +23,5 @@
 
 /* Sticky headings must stay within the visually hidden header in stacked tables. */
 @media screen and (max-width:600px){.hsh-reader-site .hsh-stack-table thead th{position:static}}
+
+@media screen and (max-width:600px){.hsh-reader-site .hsh-stack-table caption{display:block;inline-size:100%;max-inline-size:none;text-align:left;white-space:normal;margin-bottom:12px;box-sizing:border-box}}
