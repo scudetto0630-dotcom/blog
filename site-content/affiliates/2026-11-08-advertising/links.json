@@ -54,11 +54,16 @@
     "supplied_format": "html",
     "supplied_label": " ペットサプリ「お口の健康維持に」【ウィズペティ　毎日口健　ラクトフェリン＆KT-11】",
     "article_slug": "withpety-nekokouken",
-    "status": "prepared",
+    "status": "published",
     "official_source_candidate": null,
     "destination_url": null,
     "notes": "元URL・計測画像は保持。表示は既存の中立的な公式案内ボタンを使用し、古い広告価格を本文の固定価格にしない。",
-    "official_source": "https://withpety.com/products/konakouken/"
+    "official_source": "https://withpety.com/products/konakouken/",
+    "article_url": "https://hirogarushumi.com/withpety-nekokouken/",
+    "post_id": 430,
+    "published_at": "2026-11-08T20:26:44+09:00",
+    "published_date": "2026-11-08",
+    "last_checked_date": "2026-11-08"
   },
   {
     "id": "A8-20261108-AD05",
@@ -85,11 +90,16 @@
     "supplied_format": "html",
     "supplied_label": " 猫用サプリ「腸の健康維持に」獣医師がおススメ【毎日爽快　植物酵素＆乳酸菌】",
     "article_slug": "withpety-nekosoukai",
-    "status": "prepared",
+    "status": "published",
     "official_source_candidate": null,
     "destination_url": null,
     "notes": "元URL・計測画像は保持。表示は既存の中立的な公式案内ボタンを使用し、古い広告価格を本文の固定価格にしない。",
-    "official_source": "https://withpety.com/products/nekosoukai/"
+    "official_source": "https://withpety.com/products/nekosoukai/",
+    "article_url": "https://hirogarushumi.com/withpety-nekosoukai/",
+    "post_id": 431,
+    "published_at": "2026-11-08T20:26:45+09:00",
+    "published_date": "2026-11-08",
+    "last_checked_date": "2026-11-08"
   },
   {
     "id": "A8-20261108-AD07",
@@ -101,11 +111,16 @@
     "supplied_format": "html",
     "supplied_label": " 猫用サプリ「体重・糖質・血糖値の健康維持に」初回半額お試しキャンペーン実施中！2,827円⇒1,414円！猫用サプリ【毎日習慣　サラシア＆イヌリン】",
     "article_slug": "withpety-nekoshuukan",
-    "status": "prepared",
+    "status": "published",
     "official_source_candidate": null,
     "destination_url": null,
     "notes": "元URL・計測画像は保持。表示は既存の中立的な公式案内ボタンを使用し、古い広告価格を本文の固定価格にしない。",
-    "official_source": "https://withpety.com/search.php?kw=%E6%AF%8E%E6%97%A5%E7%BF%92%E6%85%A3"
+    "official_source": "https://withpety.com/search.php?kw=%E6%AF%8E%E6%97%A5%E7%BF%92%E6%85%A3",
+    "article_url": "https://hirogarushumi.com/withpety-nekoshuukan/",
+    "post_id": 432,
+    "published_at": "2026-11-08T20:26:46+09:00",
+    "published_date": "2026-11-08",
+    "last_checked_date": "2026-11-08"
   },
   {
     "id": "A8-20261108-AD08",
@@ -117,11 +132,16 @@
     "supplied_format": "html",
     "supplied_label": " 猫用サプリ「目の健康維持に」初回半額お試しキャンペーン実施中！2,827円⇒1,414円！猫用サプリ【毎日愛眼　ブルーベリー＆ルテイン】",
     "article_slug": "withpety-nekoaigan",
-    "status": "prepared",
+    "status": "published",
     "official_source_candidate": null,
     "destination_url": null,
     "notes": "元URL・計測画像は保持。表示は既存の中立的な公式案内ボタンを使用し、古い広告価格を本文の固定価格にしない。",
-    "official_source": "https://withpety.com/products/nekoaigan/"
+    "official_source": "https://withpety.com/products/nekoaigan/",
+    "article_url": "https://hirogarushumi.com/withpety-nekoaigan/",
+    "post_id": 433,
+    "published_at": "2026-11-08T20:26:47+09:00",
+    "published_date": "2026-11-08",
+    "last_checked_date": "2026-11-08"
   },
   {
     "id": "A8-20261108-AD09",
@@ -133,11 +153,16 @@
     "supplied_format": "html",
     "supplied_label": "猫用サプリのウィズペティから「腎臓の健康維持に」【毎日腎活　活性炭＆ウラジロガシ】",
     "article_slug": "withpety-nekojinkatsu",
-    "status": "prepared",
+    "status": "published",
     "official_source_candidate": null,
     "destination_url": null,
     "notes": "元URL・計測画像は保持。表示は既存の中立的な公式案内ボタンを使用し、古い広告価格を本文の固定価格にしない。",
-    "official_source": "https://withpety.com/products/nekojinkatsu/"
+    "official_source": "https://withpety.com/products/nekojinkatsu/",
+    "article_url": "https://hirogarushumi.com/withpety-nekojinkatsu/",
+    "post_id": 434,
+    "published_at": "2026-11-08T20:26:47+09:00",
+    "published_date": "2026-11-08",
+    "last_checked_date": "2026-11-08"
   },
   {
     "id": "A8-20261108-AD10",
@@ -149,10 +174,15 @@
     "supplied_format": "html",
     "supplied_label": " 猫用サプリ「関節の健康維持に」初回半額お試しキャンペーン実施中！2,827円⇒1,414円！猫用サプリ【毎日散歩　グルコサミン＆イミダゾールペプチド】",
     "article_slug": "withpety-nekosanpo",
-    "status": "prepared",
+    "status": "published",
     "official_source_candidate": null,
     "destination_url": null,
     "notes": "元URL・計測画像は保持。表示は既存の中立的な公式案内ボタンを使用し、古い広告価格を本文の固定価格にしない。",
-    "official_source": "https://withpety.com/products/nekosanpo/"
+    "official_source": "https://withpety.com/products/nekosanpo/",
+    "article_url": "https://hirogarushumi.com/withpety-nekosanpo/",
+    "post_id": 435,
+    "published_at": "2026-11-08T20:26:47+09:00",
+    "published_date": "2026-11-08",
+    "last_checked_date": "2026-11-08"
   }
 ]

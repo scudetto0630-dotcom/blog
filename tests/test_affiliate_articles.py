@@ -33,7 +33,7 @@ class AffiliateTests(unittest.TestCase):
      import hashlib
      snapshot=ROOT/a['source_evidence_path'] if 'source_evidence_path' in a else ROOT/'site-content/affiliates/2026-11-03/source-recovery'/(a['affiliate_id']+'.html')
      self.assertEqual(hashlib.sha256(snapshot.read_bytes()).hexdigest(),a['source_sha256'])
- def test_archive_scope_does_not_invent_missing_thirteen(self):
+ def test_received_batches_are_preserved_without_unreceived_entries(self):
   self.assertEqual(len({r['id'] for r in self.rows}),37)
   self.assertEqual(sum(r['received_date']=='2026-11-03' for r in self.rows),24)
   self.assertEqual(sum(r['received_date']=='2026-11-08' for r in self.rows),13)

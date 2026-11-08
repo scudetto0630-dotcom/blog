@@ -1,0 +1,81 @@
+{
+  "date_jst": "2026-11-08",
+  "version": "1.37.0",
+  "deployed_commit": "c307a32",
+  "received_advertisements": 10,
+  "published_articles": [
+    {
+      "slug": "withpety-nekokouken",
+      "url": "https://hirogarushumi.com/withpety-nekokouken/",
+      "id": 430
+    },
+    {
+      "slug": "withpety-nekosoukai",
+      "url": "https://hirogarushumi.com/withpety-nekosoukai/",
+      "id": 431
+    },
+    {
+      "slug": "withpety-nekoshuukan",
+      "url": "https://hirogarushumi.com/withpety-nekoshuukan/",
+      "id": 432
+    },
+    {
+      "slug": "withpety-nekoaigan",
+      "url": "https://hirogarushumi.com/withpety-nekoaigan/",
+      "id": 433
+    },
+    {
+      "slug": "withpety-nekojinkatsu",
+      "url": "https://hirogarushumi.com/withpety-nekojinkatsu/",
+      "id": 434
+    },
+    {
+      "slug": "withpety-nekosanpo",
+      "url": "https://hirogarushumi.com/withpety-nekosanpo/",
+      "id": 435
+    }
+  ],
+  "pending_network": [
+    "A8-20261108-AD01",
+    "A8-20261108-AD02",
+    "A8-20261108-AD03"
+  ],
+  "excluded_dog": [
+    "A8-20261108-AD05"
+  ],
+  "new_official_images": 12,
+  "local_php_checks": 1103,
+  "python_article_checks": 4,
+  "python_editorial_checks": 6,
+  "python_product_operations_checks": 3,
+  "python_story_checks": 6,
+  "python_writing_reference_checks": 18,
+  "live_browser": {
+    "passed": 24,
+    "failed": 0,
+    "scope": "six new advertising articles at four widths",
+    "affiliate_links_clicked": 0,
+    "forms_submitted": 0
+  },
+  "integrity": {
+    "published_tracking_pixels_verified": 6,
+    "published_dates_verified": 6,
+    "existing_article_fingerprints_unchanged": 30
+  },
+  "site_audit": {
+    "pages": 53,
+    "internal_links_checked": 2927,
+    "orphaned": [],
+    "problems": []
+  },
+  "network_draft_domains_added": [
+    "www.jpc.or.jp",
+    "www.peppynet.com",
+    "acana.net"
+  ],
+  "network_draft_saved": true,
+  "network_draft_applied": false,
+  "trial_affiliate_clicks": 0,
+  "forms_submitted": 0,
+  "search_rank_improvement_claimed": false
+}
