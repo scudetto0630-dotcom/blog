@@ -1,0 +1,802 @@
+[
+  {
+    "id": 1,
+    "category": "デザイン・見た目",
+    "item": "配色の役割を統一",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/assets/palette.css",
+    "result": "森色・白・セージ・琥珀の既存配色を維持"
+  },
+  {
+    "id": 2,
+    "category": "デザイン・見た目",
+    "item": "カテゴリの差し色",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/assets/quality.css",
+    "result": "猫・ウイスキー・仕事の文字ラベルと色"
+  },
+  {
+    "id": 3,
+    "category": "デザイン・見た目",
+    "item": "見出しの階層",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/assets/quality.css",
+    "result": "見出しサイズ・太さ・行間"
+  },
+  {
+    "id": 4,
+    "category": "デザイン・見た目",
+    "item": "長いタイトルの改行",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/assets/quality.css",
+    "result": "balanceとstrict、overflow-wrap"
+  },
+  {
+    "id": 5,
+    "category": "デザイン・見た目",
+    "item": "スマホ左右余白",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/assets/palette.css",
+    "result": "小画面の余白"
+  },
+  {
+    "id": 6,
+    "category": "デザイン・見た目",
+    "item": "PC本文幅",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/assets/reader.css",
+    "result": "読書幅の既存制御"
+  },
+  {
+    "id": 7,
+    "category": "デザイン・見た目",
+    "item": "本文と写真の間隔",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/assets/quality.css",
+    "result": "本文1em・行間1.9を維持"
+  },
+  {
+    "id": 8,
+    "category": "デザイン・見た目",
+    "item": "一覧画像比率",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/assets/palette.css",
+    "result": "一覧3:2"
+  },
+  {
+    "id": 9,
+    "category": "デザイン・見た目",
+    "item": "猫とボトルの切り抜き防止",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/assets/palette.css",
+    "result": "contain表示"
+  },
+  {
+    "id": 10,
+    "category": "デザイン・見た目",
+    "item": "縦長商品画像",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/assets/quality.css",
+    "result": "商品小枠contain"
+  },
+  {
+    "id": 11,
+    "category": "デザイン・見た目",
+    "item": "カードの文字階層",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/assets/palette.css",
+    "result": "見出し・説明・読むリンク"
+  },
+  {
+    "id": 12,
+    "category": "デザイン・見た目",
+    "item": "商品紹介と体験の区別",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/reader-brushup.php",
+    "result": "カードに分野と記事種別を表示"
+  },
+  {
+    "id": 13,
+    "category": "デザイン・見た目",
+    "item": "ボタン形状の統一",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/assets/reader.css",
+    "result": "共通操作部品"
+  },
+  {
+    "id": 14,
+    "category": "デザイン・見た目",
+    "item": "通常リンクと購入先の区別",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/assets/quality.css",
+    "result": "広告CTAの独立表示"
+  },
+  {
+    "id": 15,
+    "category": "デザイン・見た目",
+    "item": "囲み枠の整理",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/assets/quality.css",
+    "result": "導入は枠なしの通常段落"
+  },
+  {
+    "id": 16,
+    "category": "デザイン・見た目",
+    "item": "表の見出しと本文",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/assets/quality.css",
+    "result": "thead背景・固定"
+  },
+  {
+    "id": 17,
+    "category": "デザイン・見た目",
+    "item": "注釈の読みやすさ",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/assets/quality.css",
+    "result": "キャプションの文字色・幅・行間"
+  },
+  {
+    "id": 18,
+    "category": "デザイン・見た目",
+    "item": "フッターの整理",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/assets/quality.css",
+    "result": "折り返しと間隔"
+  },
+  {
+    "id": 19,
+    "category": "デザイン・見た目",
+    "item": "フォーカス表示",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/assets/quality.css",
+    "result": "focus-visible、強制カラーモードを補強"
+  },
+  {
+    "id": 20,
+    "category": "デザイン・見た目",
+    "item": "動きの軽減",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/assets/quality.css",
+    "result": "reduced-motionでアニメーションと遷移を停止"
+  },
+  {
+    "id": 21,
+    "category": "機能性・操作性",
+    "item": "タップ領域",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/assets/quality.css",
+    "result": "フィルタ・検索候補・目次の44px領域を補強"
+  },
+  {
+    "id": 22,
+    "category": "機能性・操作性",
+    "item": "目次移動時の見出し位置",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/assets/reader.css",
+    "result": "scroll-margin"
+  },
+  {
+    "id": 23,
+    "category": "機能性・操作性",
+    "item": "目次の開閉",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/assets/reader.js",
+    "result": "aria-expandedとcontrols"
+  },
+  {
+    "id": 24,
+    "category": "機能性・操作性",
+    "item": "検索結果のカテゴリと説明",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/search-template.php",
+    "result": "カード種別と検索語付近の抜粋"
+  },
+  {
+    "id": 25,
+    "category": "機能性・操作性",
+    "item": "検索0件の案内",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/search-template.php",
+    "result": "言い換え候補・カテゴリ・初めての記事"
+  },
+  {
+    "id": 26,
+    "category": "機能性・操作性",
+    "item": "検索の空白と表記差",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/blog-next.php",
+    "result": "全角数字・CSV・連続空白・不正入力を補強"
+  },
+  {
+    "id": 27,
+    "category": "機能性・操作性",
+    "item": "パンくず",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/reader-experience.php",
+    "result": "上位カテゴリへのリンク"
+  },
+  {
+    "id": 28,
+    "category": "機能性・操作性",
+    "item": "関連記事",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/reader-brushup.php",
+    "result": "本文の後へ商品別関連記事"
+  },
+  {
+    "id": 29,
+    "category": "機能性・操作性",
+    "item": "記事名付きの次の導線",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/reader-studio.php",
+    "result": "既存記事リンクはタイトルを表示"
+  },
+  {
+    "id": 30,
+    "category": "機能性・操作性",
+    "item": "保存状態",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/assets/reader.js",
+    "result": "aria-pressedと保存済みの文言"
+  },
+  {
+    "id": 31,
+    "category": "機能性・操作性",
+    "item": "保存不可時の本文",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/assets/reader.js",
+    "result": "メモリへのフォールバック"
+  },
+  {
+    "id": 32,
+    "category": "機能性・操作性",
+    "item": "上へ戻る操作",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/assets/reader.css",
+    "result": "既存の配置を維持"
+  },
+  {
+    "id": 33,
+    "category": "機能性・操作性",
+    "item": "スマホの横長表",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/assets/reader.js",
+    "result": "横スクロール案内とキーボード操作"
+  },
+  {
+    "id": 34,
+    "category": "機能性・操作性",
+    "item": "画像読み込み失敗",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/assets/quality.js",
+    "result": "記事内写真まで再試行対象を拡張、追跡画像は除外"
+  },
+  {
+    "id": 35,
+    "category": "機能性・操作性",
+    "item": "リンク切れ検出",
+    "status": "implemented_or_existing_checked",
+    "evidence": "tools/audit-reader.py",
+    "result": "公開ページとアンカーの検査"
+  },
+  {
+    "id": 36,
+    "category": "機能性・操作性",
+    "item": "404案内",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/not-found-template.php",
+    "result": "検索とカテゴリへの案内"
+  },
+  {
+    "id": 37,
+    "category": "機能性・操作性",
+    "item": "フォームのエラー",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/assets/reader.js",
+    "result": "各フィールドの近くに表示"
+  },
+  {
+    "id": 38,
+    "category": "機能性・操作性",
+    "item": "戻る操作と位置",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/assets/studio.js",
+    "result": "pageshow対応、ブラウザー標準の復元を妨げない"
+  },
+  {
+    "id": 39,
+    "category": "機能性・操作性",
+    "item": "印刷の整理",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/assets/quality.css",
+    "result": "広告CTAと操作部品を印刷から除外"
+  },
+  {
+    "id": 40,
+    "category": "機能性・操作性",
+    "item": "JavaScript失敗時",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/search-template.php",
+    "result": "通常のHTMLリンクとサーバー検索を維持"
+  },
+  {
+    "id": 41,
+    "category": "文章・校正品質",
+    "item": "記事の問い",
+    "status": "implemented_or_existing_checked",
+    "evidence": "site-content/operations/quality-100-20261107/article-intents.json",
+    "result": "32記事の対象読者と問い"
+  },
+  {
+    "id": 42,
+    "category": "文章・校正品質",
+    "item": "導入の重複",
+    "status": "implemented_or_existing_checked",
+    "evidence": "tools/editorial-quality.py",
+    "result": "repeated-opening検査、まんもす本文の重複を今回削減"
+  },
+  {
+    "id": 43,
+    "category": "文章・校正品質",
+    "item": "細切れ段落",
+    "status": "implemented_or_existing_checked",
+    "evidence": "site-content/operations/story-application-20261107/README.md",
+    "result": "前回の構成改稿を維持"
+  },
+  {
+    "id": 44,
+    "category": "文章・校正品質",
+    "item": "長い段落の分割",
+    "status": "implemented_or_existing_checked",
+    "evidence": "site-content/operations/ahiruneko-review-20261107/校正基準.md",
+    "result": "話題・写真・注意の区切りを基準にする"
+  },
+  {
+    "id": 45,
+    "category": "文章・校正品質",
+    "item": "弱い定型句",
+    "status": "implemented_or_existing_checked",
+    "evidence": "tools/editorial-quality.py",
+    "result": "weak-repetitionの継続検出、検出を無理に消さない"
+  },
+  {
+    "id": 46,
+    "category": "文章・校正品質",
+    "item": "曖昧な指示語",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/affiliate-articles.json",
+    "result": "サーモン・計算例など対象を明示"
+  },
+  {
+    "id": 47,
+    "category": "文章・校正品質",
+    "item": "主語と述語",
+    "status": "implemented_or_existing_checked",
+    "evidence": "site-content/operations/writing-reference-20261107/文章の基準.md",
+    "result": "本文の編集基準と今回の個別改稿"
+  },
+  {
+    "id": 48,
+    "category": "文章・校正品質",
+    "item": "語尾の連続",
+    "status": "implemented_or_existing_checked",
+    "evidence": "site-content/operations/ahiruneko-additional-20-20261107/REPORT.md",
+    "result": "文の役割に合わせて個別判断"
+  },
+  {
+    "id": 49,
+    "category": "文章・校正品質",
+    "item": "不自然な文の切れ方",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/expanded-articles.json",
+    "result": "前回の段落整理と今回の明示化"
+  },
+  {
+    "id": 50,
+    "category": "文章・校正品質",
+    "item": "商品名表記",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/affiliate-articles.json",
+    "result": "19商品のproduct_labelを追加しCTAに使用"
+  },
+  {
+    "id": 51,
+    "category": "文章・校正品質",
+    "item": "数字・単位",
+    "status": "implemented_or_existing_checked",
+    "evidence": "tests/test_affiliate_articles.py",
+    "result": "既存の事実を守るテスト"
+  },
+  {
+    "id": 52,
+    "category": "文章・校正品質",
+    "item": "見出しと内容",
+    "status": "implemented_or_existing_checked",
+    "evidence": "tests/test_story_application.py",
+    "result": "章順・商品写真の文脈を保護"
+  },
+  {
+    "id": 53,
+    "category": "文章・校正品質",
+    "item": "具体的な見出し",
+    "status": "implemented_or_existing_checked",
+    "evidence": "tools/editorial-quality.py",
+    "result": "vague-heading検出"
+  },
+  {
+    "id": 54,
+    "category": "文章・校正品質",
+    "item": "説明の重複",
+    "status": "implemented_or_existing_checked",
+    "evidence": "tools/editorial-quality.py",
+    "result": "記事内と記事間の重複検出"
+  },
+  {
+    "id": 55,
+    "category": "文章・校正品質",
+    "item": "体験と一般論",
+    "status": "implemented_or_existing_checked",
+    "evidence": "site-content/operations/quality-100-20261107/編集基準.md",
+    "result": "本人の確認済み事実と一般的説明を分離"
+  },
+  {
+    "id": 56,
+    "category": "文章・校正品質",
+    "item": "商品情報と判断",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/product-reader-notes.json",
+    "result": "公式資料と選ぶ条件を分ける"
+  },
+  {
+    "id": 57,
+    "category": "文章・校正品質",
+    "item": "根拠なしの断定",
+    "status": "implemented_or_existing_checked",
+    "evidence": "tools/editorial-quality.py",
+    "result": "効能・必ず等を要確認に分類、否定文は個別判断"
+  },
+  {
+    "id": 58,
+    "category": "文章・校正品質",
+    "item": "商品ごとの違い",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/affiliate-articles.json",
+    "result": "19記事の個別導入と結びを維持"
+  },
+  {
+    "id": 59,
+    "category": "文章・校正品質",
+    "item": "結びと導入の対応",
+    "status": "implemented_or_existing_checked",
+    "evidence": "site-content/operations/story-application-20261107/changes.json",
+    "result": "前回19記事の結びの改稿記録"
+  },
+  {
+    "id": 60,
+    "category": "文章・校正品質",
+    "item": "校正記録の再利用",
+    "status": "implemented_or_existing_checked",
+    "evidence": "tools/editorial-quality.py",
+    "result": "点検日時を実行時刻へ修正、指摘を隠さず保存"
+  },
+  {
+    "id": 61,
+    "category": "検索流入・回遊",
+    "item": "記事の検索意図",
+    "status": "implemented_or_existing_checked",
+    "evidence": "site-content/operations/quality-100-20261107/article-intents.json",
+    "result": "32記事の用途整理"
+  },
+  {
+    "id": 62,
+    "category": "検索流入・回遊",
+    "item": "同じ意図の記事",
+    "status": "implemented_or_existing_checked",
+    "evidence": "site-content/operations/quality-100-20261107/article-intents.json",
+    "result": "役割と問いを照合、根拠なしの統合はしない"
+  },
+  {
+    "id": 63,
+    "category": "検索流入・回遊",
+    "item": "タイトルの詰め込み",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/affiliate-articles.json",
+    "result": "自然なタイトルと【ご紹介】を保持"
+  },
+  {
+    "id": 64,
+    "category": "検索流入・回遊",
+    "item": "検索結果の説明",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/reader-experience.php",
+    "result": "ページごとのdescription"
+  },
+  {
+    "id": 65,
+    "category": "検索流入・回遊",
+    "item": "冒頭で疑問に答える",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/expanded-articles.json",
+    "result": "前回の導入改稿を維持"
+  },
+  {
+    "id": 66,
+    "category": "検索流入・回遊",
+    "item": "既存記事の内部リンク",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/reader-brushup.php",
+    "result": "商品別・体験別の関連記事"
+  },
+  {
+    "id": 67,
+    "category": "検索流入・回遊",
+    "item": "意味のあるリンク文言",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/reader-studio.php",
+    "result": "記事タイトル付きリンク、CTAも商品名へ改善"
+  },
+  {
+    "id": 68,
+    "category": "検索流入・回遊",
+    "item": "猫カテゴリ案内",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/blog-next.php",
+    "result": "初めての読む順番とカテゴリ"
+  },
+  {
+    "id": 69,
+    "category": "検索流入・回遊",
+    "item": "ウイスキーカテゴリ案内",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/blog-next.php",
+    "result": "ラベル・体験・ハイボールの読む順番"
+  },
+  {
+    "id": 70,
+    "category": "検索流入・回遊",
+    "item": "体験から解説へ",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/expanded-articles.json",
+    "result": "まんもすからキャリー・おもちゃ等の既存リンク"
+  },
+  {
+    "id": 71,
+    "category": "検索流入・回遊",
+    "item": "解説から体験へ",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/reader-brushup.php",
+    "result": "商品記事からまんもすの話へ"
+  },
+  {
+    "id": 72,
+    "category": "検索流入・回遊",
+    "item": "孤立記事",
+    "status": "implemented_or_existing_checked",
+    "evidence": "tools/audit-reader.py",
+    "result": "全公開対象の入リンク検査"
+  },
+  {
+    "id": 73,
+    "category": "検索流入・回遊",
+    "item": "サイトマップ",
+    "status": "implemented_or_existing_checked",
+    "evidence": "tools/blog-audit.py",
+    "result": "XMLサイトマップと公開URL"
+  },
+  {
+    "id": 74,
+    "category": "検索流入・回遊",
+    "item": "noindex",
+    "status": "implemented_or_existing_checked",
+    "evidence": "tools/blog-audit.py",
+    "result": "公開対象と検索・保存ページの区別"
+  },
+  {
+    "id": 75,
+    "category": "検索流入・回遊",
+    "item": "canonical",
+    "status": "implemented_or_existing_checked",
+    "evidence": "tools/audit-reader.py",
+    "result": "各公開URLとの一致"
+  },
+  {
+    "id": 76,
+    "category": "検索流入・回遊",
+    "item": "URLの重複",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/reader-experience.php",
+    "result": "並べ替え・検索などのインデックス制御"
+  },
+  {
+    "id": 77,
+    "category": "検索流入・回遊",
+    "item": "記事構造化データ",
+    "status": "implemented_or_existing_checked",
+    "evidence": "tools/audit-reader.py",
+    "result": "見出し・画像・著者・公開日の一致"
+  },
+  {
+    "id": 78,
+    "category": "検索流入・回遊",
+    "item": "パンくず構造化データ",
+    "status": "implemented_or_existing_checked",
+    "evidence": "tools/audit-reader.py",
+    "result": "位置・順序・リンクを確認"
+  },
+  {
+    "id": 79,
+    "category": "検索流入・回遊",
+    "item": "画像代替テキスト",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/photo-assets.json",
+    "result": "元の写真情報を維持し監査"
+  },
+  {
+    "id": 80,
+    "category": "検索流入・回遊",
+    "item": "検索データの優先判断",
+    "status": "implemented_or_existing_checked",
+    "evidence": "tools/search-period-review.py",
+    "result": "提供ZIPを再分析。期間不足のため順位上昇・CTR改善は判定しない"
+  },
+  {
+    "id": 81,
+    "category": "運用・信頼性・収益面",
+    "item": "商品リンクの掲載管理",
+    "status": "implemented_or_existing_checked",
+    "evidence": "tools/product-link-register.py",
+    "result": "19件の掲載URL・位置・商品リンクをJSON/CSV化"
+  },
+  {
+    "id": 82,
+    "category": "運用・信頼性・収益面",
+    "item": "リンク確認日と履歴",
+    "status": "implemented_or_existing_checked",
+    "evidence": "site-content/operations/polish-100-20261108/product-links.json",
+    "result": "認証APIで掲載状態を確認、確認日時と本文ハッシュ"
+  },
+  {
+    "id": 83,
+    "category": "運用・信頼性・収益面",
+    "item": "商品と画像の照合",
+    "status": "implemented_or_existing_checked",
+    "evidence": "tests/affiliate-articles.php",
+    "result": "PS-B1等の公式画像対応を回帰検証"
+  },
+  {
+    "id": 84,
+    "category": "運用・信頼性・収益面",
+    "item": "公式写真と本人写真",
+    "status": "implemented_or_existing_checked",
+    "evidence": "tests/test_story_application.py",
+    "result": "タワー商品写真と本人の体験の位置を保護"
+  },
+  {
+    "id": 85,
+    "category": "運用・信頼性・収益面",
+    "item": "広告表示",
+    "status": "implemented_or_existing_checked",
+    "evidence": "tests/test_affiliate_articles.py",
+    "result": "全19件のPR表示と追跡コードを保持"
+  },
+  {
+    "id": 86,
+    "category": "運用・信頼性・収益面",
+    "item": "購入先ボタン文言",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/reader-brushup.php",
+    "result": "記事タイトル由来の不自然な長文を商品名へ修正"
+  },
+  {
+    "id": 87,
+    "category": "運用・信頼性・収益面",
+    "item": "購入ボタンの重複",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/affiliate-articles.json",
+    "result": "本文末の既存CTAを維持、追加しない"
+  },
+  {
+    "id": 88,
+    "category": "運用・信頼性・収益面",
+    "item": "選ぶ際の注意",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/product-reader-notes.json",
+    "result": "個別の条件・Q&Aを維持"
+  },
+  {
+    "id": 89,
+    "category": "運用・信頼性・収益面",
+    "item": "価格・キャンペーン",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/reader-brushup.php",
+    "result": "情報確認日を保持。到達日を仕様確認日に偽装しない"
+  },
+  {
+    "id": 90,
+    "category": "運用・信頼性・収益面",
+    "item": "販売終了・リンク変更",
+    "status": "implemented_or_existing_checked",
+    "evidence": "tools/audit-product-sources.py",
+    "result": "最終URL・本文指紋・販売終了等の要確認語を記録"
+  },
+  {
+    "id": 91,
+    "category": "運用・信頼性・収益面",
+    "item": "猫の診療と商品",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/product-reader-notes.json",
+    "result": "治療・診断と商品紹介を分けた注意"
+  },
+  {
+    "id": 92,
+    "category": "運用・信頼性・収益面",
+    "item": "画像圧縮とサイズ",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/photo-assets.json",
+    "result": "既存WebPと寸法情報を維持"
+  },
+  {
+    "id": 93,
+    "category": "運用・信頼性・収益面",
+    "item": "先頭画像の優先",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/photo-gallery.php",
+    "result": "eagerとfetchpriority=high"
+  },
+  {
+    "id": 94,
+    "category": "運用・信頼性・収益面",
+    "item": "画面外の読み込み",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/photo-gallery.php",
+    "result": "lazyとasync"
+  },
+  {
+    "id": 95,
+    "category": "運用・信頼性・収益面",
+    "item": "表示のずれ",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/photo-gallery.php",
+    "result": "widthとheight、一覧のaspect-ratio"
+  },
+  {
+    "id": 96,
+    "category": "運用・信頼性・収益面",
+    "item": "不要なCSS・JS",
+    "status": "implemented_or_existing_checked",
+    "evidence": "hirogaru-home/reader-quality.php",
+    "result": "対象ページだけ読み込み。今回別ライブラリを追加しない"
+  },
+  {
+    "id": 97,
+    "category": "運用・信頼性・収益面",
+    "item": "公開PHP警告",
+    "status": "implemented_or_existing_checked",
+    "evidence": "tools/audit-reader.py",
+    "result": "内部パス・警告・Fatalの公開検査"
+  },
+  {
+    "id": 98,
+    "category": "運用・信頼性・収益面",
+    "item": "公開前の一括検証",
+    "status": "implemented_or_existing_checked",
+    "evidence": ".github/workflows/blog-audit.yml",
+    "result": "記事・リンク・画像・ブラウザー検証に今回の回帰テストを追加"
+  },
+  {
+    "id": 99,
+    "category": "運用・信頼性・収益面",
+    "item": "バックアップと復元",
+    "status": "implemented_or_existing_checked",
+    "evidence": "site-content/operations/quality-100-20261107/編集基準.md",
+    "result": "更新前パッケージ・記事JSONを非公開保存、限定更新APIのバージョンと競合検知"
+  },
+  {
+    "id": 100,
+    "category": "運用・信頼性・収益面",
+    "item": "100項目の進捗一覧",
+    "status": "implemented_or_existing_checked",
+    "evidence": "site-content/operations/polish-100-20261108/checklist.json",
+    "result": "今回の各項目・根拠・実施結果を記録"
+  }
+]

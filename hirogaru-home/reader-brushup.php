@@ -55,7 +55,7 @@ function hsh_brushup_empty_search(){
 add_filter('the_content',function($content){
     if(!in_the_loop()||!is_main_query())return $content;$p=get_post();if(!$p||$p->post_status!=='publish')return $content;
     if(hsh_owned_blog_post($p)&&hsh_brushup_type($p->post_name)==='product'){
-        $slug=$p->post_name;$label='公式サイトで詳細・購入条件を見る';foreach(hsh_affiliate_articles() as $a)if($a['slug']===$slug){$label=preg_replace('/^【ご紹介】/u','',$a['title']);$label=preg_split('/[｜。]/u',$label)[0].'の公式案内を見る';break;}
+        $slug=$p->post_name;$label='公式サイトで詳細・購入条件を見る';foreach(hsh_affiliate_articles() as $a)if($a['slug']===$slug){$label=($a['product_label']??preg_split('/[｜。]/u',preg_replace('/^【ご紹介】/u','',$a['title']))[0]).'の公式案内を見る';break;}
         $content=preg_replace_callback('~(<aside class="hsh-affiliate-cta"[^>]*>.*?<a\b[^>]*>)(.*?)(</a>)~s',function($m)use($slug,$label){return hsh_brushup_shopping($slug).$m[1].esc_html($label).$m[3];},$content,1);
         $content.=($slug==='canagan-chicken-salmon'?hsh_brushup_comparison('cats'):'').hsh_brushup_related($slug);
     }
@@ -63,7 +63,7 @@ add_filter('the_content',function($content){
     if($p->post_name==='hsh-hakushu-visit'&&get_post_meta($p->ID,'_hsh_bridge_owned',true)==='1')$content='<nav class="hsh-visit-summary" aria-label="見学の思い出"><h2>2025年7月、初めての蒸溜所見学</h2><p>白州の看板、館内に並ぶボトル、そして飲み比べ。初めての見学で撮った写真を順に振り返ります。飲み比べも楽しかった。</p><ol><li>白州の入口へ</li><li>館内のウイスキー展示を見る</li><li>グラスと一緒に、楽しかった飲み比べを振り返る</li></ol></nav>'.$content;
     return $content;
 },27);
-add_action('wp_enqueue_scripts',function(){if(!hsh_reader_scope())return;wp_enqueue_style('hsh-brushup',plugin_dir_url(__FILE__).'assets/brushup.css',array('hsh-palette'),'1.34.0');wp_enqueue_script('hsh-brushup',plugin_dir_url(__FILE__).'assets/brushup.js',array('hsh-reader'),'1.34.0',true);},130);
+add_action('wp_enqueue_scripts',function(){if(!hsh_reader_scope())return;wp_enqueue_style('hsh-brushup',plugin_dir_url(__FILE__).'assets/brushup.css',array('hsh-palette'),'1.35.0');wp_enqueue_script('hsh-brushup',plugin_dir_url(__FILE__).'assets/brushup.js',array('hsh-reader'),'1.35.0',true);},130);
 function hsh_brushup_photo_stories(){
     $m=hsh_photo_manifest();$items=array(array('manmos-zip-pillow','枕の上でひと休み','まんもすは枕の上でのんびり。ふわふわの毛と、くつろいだ姿を写真に残しました。'),array('manmos-zip-scratcher','爪とぎの上が落ち着く場所','爪とぎの上もお気に入り。遊ぶためだけでなく、ひと休みする場所にもなっています。'),array('manmos-front','抱っこは苦手。でも甘えん坊','まんもすは抱っこがあまり好きではありません。甘えん坊でも、好きな距離感はまんもす次第。毎日のブラッシングをしながら、一緒に暮らしています。'));
     $out='<section class="hsh-photo-stories"><h2>写真でつづる、まんもすの毎日</h2>';

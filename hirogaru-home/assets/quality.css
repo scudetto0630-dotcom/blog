@@ -9,3 +9,14 @@
 /* Narrative paragraphs form a continuous reading surface. */
 .hsh-reader-site .entry-content>p{margin-block:1em;line-height:1.9}
 .hsh-reader-site .entry-content>.hsh-answer{padding:0;border:0;background:transparent;border-radius:0;box-shadow:none;font-weight:400;color:inherit}
+
+/* Keep compact labels readable while expanding their interactive area. */
+.hsh-reader-site :is(.hsh-kind-filters,.hsh-sort,.hsh-search-suggestions,.hsh-pagination) a{display:inline-flex;align-items:center;min-height:44px;padding:8px 12px;box-sizing:border-box}
+.hsh-reader-site .hsh-search-clear{min-height:44px;min-width:44px}
+.hsh-reader-site :is(.hsh-heading-copy,.hsh-toc-toggle){min-height:44px}
+.hsh-reader-site .hsh-card-label{letter-spacing:.02em;line-height:1.6}
+.hsh-reader-site .hsh-card-summary{overflow-wrap:anywhere}
+.hsh-reader-site .hsh-image-retry{min-height:44px;white-space:normal}
+@media(prefers-reduced-motion:reduce){.hsh-reader-site *,.hsh-reader-site *::before,.hsh-reader-site *::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+@media(forced-colors:active){.hsh-reader-site :is(button,.hsh-card-label,.hsh-affiliate-cta a){border:1px solid ButtonText}.hsh-reader-site a:focus-visible{outline:3px solid Highlight}.hsh-reader-site [aria-current]{text-decoration:underline}}
+@media print{.hsh-reader-site .hsh-affiliate-cta,.hsh-reader-site .hsh-reader-tools,.hsh-reader-site .hsh-product-related{display:none!important}}

@@ -1,0 +1,192 @@
+[
+  {
+    "slug": "csv-import-seven-checks",
+    "kind": "style",
+    "rule": "compound-sentence",
+    "detail": "見た目を整える前に原本を残し、コピーで数行を試して、文字コードと区切り、列の対応、日付、空欄、重複、結果の件数を確かめたい",
+    "decision": "retain_after_context_review",
+    "reason": "原材料・準備品・操作の列挙。対象を省略せず、読点の数だけを理由に細切れにしない。",
+    "context_sha256": "7aa965d09c4cc40916cb9580aaabb8cb117433fc47b22ed45fdd72ec06d191d0",
+    "review_date": "2026-11-08"
+  },
+  {
+    "slug": "before-welcoming-cat",
+    "kind": "style",
+    "rule": "compound-sentence",
+    "detail": "迎える前にそろえるごはん、水、トイレ、猫砂、キャリー、爪とぎ、休める場所も、まずは保護主さんに今のお世話を聞くところから考えたい",
+    "decision": "retain_after_context_review",
+    "reason": "原材料・準備品・操作の列挙。対象を省略せず、読点の数だけを理由に細切れにしない。",
+    "context_sha256": "c2301c64293379300e7bbc78d36c120a0402818599f3417563168f88d2ee9908",
+    "review_date": "2026-11-08"
+  },
+  {
+    "slug": "before-welcoming-cat",
+    "kind": "style",
+    "rule": "compound-sentence",
+    "detail": "買い物の候補は、フード、ごはんと水の器、トイレと猫砂、キャリー、爪とぎ",
+    "decision": "retain_after_context_review",
+    "reason": "原材料・準備品・操作の列挙。対象を省略せず、読点の数だけを理由に細切れにしない。",
+    "context_sha256": "4c69c1bab593aa0dc895b8be1647af1a78f6a5bbb8fcb22bd7e2ea5b42c23a25",
+    "review_date": "2026-11-08"
+  },
+  {
+    "slug": "cat-teaser-small-parts",
+    "kind": "fact",
+    "rule": "unsupported-claim",
+    "detail": "のおもちゃと交代で出す方法もある。ただ、片付ければ必ず飽きなくなる、とまでは言えない。まんもすの反応がどう変わるか",
+    "decision": "retain_after_context_review",
+    "reason": "保証や効能を否定する文脈で、商品への効果を断定していない。注意として残す。",
+    "context_sha256": "47fd40a46ea41e91891926455279cb84d594331061f0be18c5ac0261c19a63ae",
+    "review_date": "2026-11-08"
+  },
+  {
+    "slug": "single-malt-label-guide",
+    "kind": "fact",
+    "rule": "unsupported-claim",
+    "detail": "よさそうに見える。でも、長く熟成した物なら自分にも必ずおいしいかというと、それは飲む人の好みもある。\n\n年数は商品",
+    "decision": "retain_after_context_review",
+    "reason": "保証や効能を否定する文脈で、商品への効果を断定していない。注意として残す。",
+    "context_sha256": "35895e8ff15974f08253ef9923a2abd28c9676e5c018893c49570bb59d0a6007",
+    "review_date": "2026-11-08"
+  },
+  {
+    "slug": "it-data-work-flow",
+    "kind": "style",
+    "rule": "compound-sentence",
+    "detail": "ChatGPT、Codex、Excel、スプレッドシートを使い、データを抽出したり、並べ替えたり、整理したりしている",
+    "decision": "retain_after_context_review",
+    "reason": "原材料・準備品・操作の列挙。対象を省略せず、読点の数だけを理由に細切れにしない。",
+    "context_sha256": "ff203ceec389121af5c03009bb811fedfbea97c16c3de6cefd562cfb2810e621",
+    "review_date": "2026-11-08"
+  },
+  {
+    "slug": "starting-it-without-specialty",
+    "kind": "style",
+    "rule": "compound-sentence",
+    "detail": "抽出、並べ替え、整理などで、ChatGPT、Codex、Excel、スプレッドシートを使う",
+    "decision": "retain_after_context_review",
+    "reason": "原材料・準備品・操作の列挙。対象を省略せず、読点の数だけを理由に細切れにしない。",
+    "context_sha256": "3725f9dc81561527c2412dad153d0c8b5294a894a6bbc6af808e7a0875304689",
+    "review_date": "2026-11-08"
+  },
+  {
+    "slug": "hario-cat-bowl-guide",
+    "kind": "fact",
+    "rule": "unsupported-claim",
+    "detail": "具体的になる。\n\n器を替えるだけで、食べ方や体調が必ず変わるわけではない。まずは今の器の寸法と猫が食べる姿を見て、",
+    "decision": "retain_after_context_review",
+    "reason": "保証や効能を否定する文脈で、商品への効果を断定していない。注意として残す。",
+    "context_sha256": "24b3c07aeb6ebd7a3f8e01657fff5c39e6c2339c298fbd109e11637dee852156",
+    "review_date": "2026-11-08"
+  },
+  {
+    "slug": "pet-sougi-110-cat-guide",
+    "kind": "style",
+    "rule": "compound-sentence",
+    "detail": "基本料金に加えて、出張、時間帯、立ち会い、返骨、容器など、どこまで含むのかを聞く",
+    "decision": "retain_after_context_review",
+    "reason": "原材料・準備品・操作の列挙。対象を省略せず、読点の数だけを理由に細切れにしない。",
+    "context_sha256": "3f4e58d0400a28a77d4179aa60eae527389f777fc56dee560c384486e7961ca1",
+    "review_date": "2026-11-08"
+  },
+  {
+    "slug": "withpety-nekokenshin",
+    "kind": "style",
+    "rule": "compound-sentence",
+    "detail": "公式の説明には、還元型コエンザイムQ10、フランス海岸松、L-シトルリン、L-カルニチン、ルンブルクス末、ゴマエキス、タウリンが挙げられている",
+    "decision": "retain_after_context_review",
+    "reason": "原材料・準備品・操作の列挙。対象を省略せず、読点の数だけを理由に細切れにしない。",
+    "context_sha256": "5907fb917c7455d58138f228bb71bb1aa93442b966898e06ae2719eef6bae24c",
+    "review_date": "2026-11-08"
+  },
+  {
+    "slug": "withpety-nekoryoukan",
+    "kind": "style",
+    "rule": "compound-sentence",
+    "detail": "公式説明には、肝臓加水分解物、プラセンタ、天然酵母、BCAA、ウコン、マリアアザミエキス、亜鉛、オルニチンが挙げられている",
+    "decision": "retain_after_context_review",
+    "reason": "原材料・準備品・操作の列挙。対象を省略せず、読点の数だけを理由に細切れにしない。",
+    "context_sha256": "886135c1adbbbdb962ad500ab34ed80afe5cbf6e451c97f89d646655366786ad",
+    "review_date": "2026-11-08"
+  },
+  {
+    "slug": "catlog-cat-monitor",
+    "kind": "fact",
+    "rule": "unsupported-claim",
+    "detail": "。\n\n今のトイレを使う方式でも、寸法や設置条件まで必ず合うとは限らない。トイレの形、床、周りとの干渉を商品説明と照",
+    "decision": "retain_after_context_review",
+    "reason": "保証や効能を否定する文脈で、商品への効果を断定していない。注意として残す。",
+    "context_sha256": "d74e9022d67aa7a651b3ebff547aee5cc9838fd639053ee7fab8403d62d367cc",
+    "review_date": "2026-11-08"
+  },
+  {
+    "slug": "catlog-cat-monitor",
+    "kind": "fact",
+    "rule": "unsupported-claim",
+    "detail": "いう目安が載っている。使用環境によって変わるため、必ずその日数で使えるという保証としてではなく、日々の管理を考える",
+    "decision": "retain_after_context_review",
+    "reason": "保証や効能を否定する文脈で、商品への効果を断定していない。注意として残す。",
+    "context_sha256": "7d4c098be5c2e4072a8627a989fab8f75924bfdf9b5b50c6d29d8d938723d1af",
+    "review_date": "2026-11-08"
+  },
+  {
+    "slug": "catlog-cat-monitor",
+    "kind": "style",
+    "rule": "compound-sentence",
+    "detail": "公式では、食事、水飲み、運動、睡眠、毛づくろいなどを記録し、専用アプリで確認できる仕組みとして案内されている",
+    "decision": "retain_after_context_review",
+    "reason": "原材料・準備品・操作の列挙。対象を省略せず、読点の数だけを理由に細切れにしない。",
+    "context_sha256": "bd585770ce6bee176c5c52395fb4ec30acf6c5545c6e2981dba0d21e48ad71d0",
+    "review_date": "2026-11-08"
+  },
+  {
+    "slug": "withpety-nekoissho",
+    "kind": "style",
+    "rule": "compound-sentence",
+    "detail": "公式の説明には、DHA、EPA、亜麻仁油、フェルラ酸、イチョウ葉エキス、ビタミンE、ビタミンB12が掲載されている",
+    "decision": "retain_after_context_review",
+    "reason": "原材料・準備品・操作の列挙。対象を省略せず、読点の数だけを理由に細切れにしない。",
+    "context_sha256": "e5ba288a64dd591eb7a7ccbf31a6f6256c0e8e07b542ba80c1fa6c6cc5268f78",
+    "review_date": "2026-11-08"
+  },
+  {
+    "slug": "pet-paradise-cat-toys",
+    "kind": "fact",
+    "rule": "unsupported-claim",
+    "detail": "トニップへの反応には個体差がある。「入っているから絶対に夢中になる」とまでは考えず、普段、抱えて蹴る遊びをするかを思",
+    "decision": "retain_after_context_review",
+    "reason": "保証や効能を否定する文脈で、商品への効果を断定していない。注意として残す。",
+    "context_sha256": "0a0249092418b63df1b1bdacd81946a4ca90fbade8d7232d057e89c3dc72c2af",
+    "review_date": "2026-11-08"
+  },
+  {
+    "slug": "canagan-dental-cat-food",
+    "kind": "fact",
+    "rule": "unsupported-claim",
+    "detail": "方で、食べれば歯磨きがいらなくなる、歯石や歯周病が治る、とまでは考えない。フード選びと口の診察は別の話。口を痛がる",
+    "decision": "retain_after_context_review",
+    "reason": "保証や効能を否定する文脈で、商品への効果を断定していない。注意として残す。",
+    "context_sha256": "7f8425f2f02f1266aa2b7ebf74d17173f4af99a400d3c3218b7d195c228200b3",
+    "review_date": "2026-11-08"
+  },
+  {
+    "slug": "canagan-chicken-salmon",
+    "kind": "style",
+    "rule": "compound-sentence",
+    "detail": "「穀物不使用なら、どの猫にも一番いい」と決めるより、年齢、体形、今の体調、食べている量を含めて選ぶ方が納得しやすい",
+    "decision": "retain_after_context_review",
+    "reason": "原材料・準備品・操作の列挙。対象を省略せず、読点の数だけを理由に細切れにしない。",
+    "context_sha256": "fd825abbea3582788c9a3c13d49250f7e7da1e2dfc69725f6b6b4d7c291de197",
+    "review_date": "2026-11-08"
+  },
+  {
+    "slug": "mcadams-cat-chicken-turkey",
+    "kind": "fact",
+    "rule": "unsupported-claim",
+    "detail": "種類の肉を合わせると57%。ただ、割合が大きければ必ず食べる、という話ではない。今のフードとの違いを知る材料として",
+    "decision": "retain_after_context_review",
+    "reason": "保証や効能を否定する文脈で、商品への効果を断定していない。注意として残す。",
+    "context_sha256": "67a0fa2e86bc2fad476e1563a41c3cd988a5504e541144b5f877767edc2301ca",
+    "review_date": "2026-11-08"
+  }
+]

@@ -10,4 +10,7 @@ check(hsh_quality_aliases(array('<b>ねこ</b>'=>'<i>猫</i>'))===array('ねこ'
 update_option('hsh_search_aliases',array('お猫'=>'猫'));
 check(hsh_search_alias('お猫')==='猫','custom search aliases integrate with existing search');
 check(hsh_search_alias('アルボラリス')==='グレングラント','built in alias remains');
+check(hsh_search_alias("　ＣＳＶ　 取り込み　")==='CSV 取り込み','search normalizes fullwidth letters and whitespace');
+check(hsh_search_alias(array('bad'))==='','search ignores non-string input');
+check(hsh_search_alias('グレンリベット１２年')==='グレンリベット12年','search normalizes fullwidth age digits');
 echo "All quality checks passed. Total with shared checks: $tests\n";

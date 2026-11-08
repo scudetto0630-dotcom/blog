@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Offline editorial checks. Review flags are not automated factual verdicts."""
-import argparse, hashlib, html, json, re
+import argparse, datetime, hashlib, html, json, re
 from difflib import SequenceMatcher
 from collections import Counter, defaultdict
 from pathlib import Path
@@ -62,7 +62,7 @@ def run():
             official=[u for u in sources if not any(s in u for s in ['px.a8.net','hirogarushumi.com'])]
             notes=json.loads((ROOT/'hirogaru-home/product-reader-notes.json').read_text()).get(a['slug'],{})
             if notes.get('source'):official=sorted(set(official+[notes['source']]))
-            inventory.append({'slug':a['slug'],'title':a['title'],'topic':a.get('topic',a.get('category')),'role':intents[a['slug']]['role'],'audience':intents[a['slug']]['reader'],'audience_question':intents[a['slug']]['question'],'question_status':'editorial_intent_defined_from_existing_article','sources':official,'reviewed_at':None,'automated_checked_at':'2026-11-07','content_sha256':hashlib.sha256(a.get('content','').encode()).hexdigest(),'fact_signature':facts(a.get('content',''))})
+            inventory.append({'slug':a['slug'],'title':a['title'],'topic':a.get('topic',a.get('category')),'role':intents[a['slug']]['role'],'audience':intents[a['slug']]['reader'],'audience_question':intents[a['slug']]['question'],'question_status':'editorial_intent_defined_from_existing_article','sources':official,'reviewed_at':None,'automated_checked_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'content_sha256':hashlib.sha256(a.get('content','').encode()).hexdigest(),'fact_signature':facts(a.get('content',''))})
     # A near-duplicate warning is a lead, never a destructive merge decision.
     repeats=defaultdict(list)
     for a in articles:
