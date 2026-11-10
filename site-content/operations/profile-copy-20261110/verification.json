@@ -1,0 +1,16 @@
+{
+  "version": "1.38.12",
+  "deployment": {
+    "commit": "4795dfac0e856db742caa072a213b90768022388",
+    "sha256": "7e96593d6d3cfa2fc842449179454109ffec9e2d799990e38734c0734d5e6163",
+    "expected_version": "1.38.11"
+  },
+  "browser": {
+    "viewport_checks": 4,
+    "tool_name_lists_removed": true,
+    "photos_preserved": true
+  },
+  "other_home_settings_and_owned_pages_preserved": true,
+  "php_checks": 1166,
+  "home_paragraph": "以前はMRとして働き、今はフリーランスでデータを扱う仕事をしています。仕事を変えるまでに迷ったことや、今の働き方についても書いています。"
+}
