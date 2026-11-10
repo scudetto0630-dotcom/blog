@@ -1,0 +1,657 @@
+{
+  "version": "1.38.11",
+  "deployment": {
+    "commit": "c0a61590887d7445458cafadd4c5016cf1df835d",
+    "sha256": "5a37e77397717d31db85c6cee09c1d2c298d3985cd40307bbdefb128abc6cf75",
+    "expected_version": "1.38.10"
+  },
+  "public_scan": {
+    "pages": 58,
+    "results": [
+      {
+        "url": "https://hirogarushumi.com/linx-as-store/",
+        "slug": "linx-as-store",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 6
+      },
+      {
+        "url": "https://hirogarushumi.com/acana-orijen-cat-food-guide/",
+        "slug": "acana-orijen-cat-food-guide",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 6
+      },
+      {
+        "url": "https://hirogarushumi.com/aigan-dobutsu-course/",
+        "slug": "aigan-dobutsu-course",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 6
+      },
+      {
+        "url": "https://hirogarushumi.com/withpety-nekosanpo/",
+        "slug": "withpety-nekosanpo",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 6
+      },
+      {
+        "url": "https://hirogarushumi.com/withpety-nekojinkatsu/",
+        "slug": "withpety-nekojinkatsu",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 6
+      },
+      {
+        "url": "https://hirogarushumi.com/withpety-nekoaigan/",
+        "slug": "withpety-nekoaigan",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 7
+      },
+      {
+        "url": "https://hirogarushumi.com/withpety-nekoshuukan/",
+        "slug": "withpety-nekoshuukan",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 6
+      },
+      {
+        "url": "https://hirogarushumi.com/withpety-nekosoukai/",
+        "slug": "withpety-nekosoukai",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 6
+      },
+      {
+        "url": "https://hirogarushumi.com/withpety-nekokouken/",
+        "slug": "withpety-nekokouken",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 6
+      },
+      {
+        "url": "https://hirogarushumi.com/leo-luna-citta-bed/",
+        "slug": "leo-luna-citta-bed",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 6
+      },
+      {
+        "url": "https://hirogarushumi.com/single-malt-label-guide/",
+        "slug": "single-malt-label-guide",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 7
+      },
+      {
+        "url": "https://hirogarushumi.com/mognyan-cat-food-guide/",
+        "slug": "mognyan-cat-food-guide",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 6
+      },
+      {
+        "url": "https://hirogarushumi.com/essential-jaguar-cat-food/",
+        "slug": "essential-jaguar-cat-food",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 6
+      },
+      {
+        "url": "https://hirogarushumi.com/mcadams-cat-chicken-turkey/",
+        "slug": "mcadams-cat-chicken-turkey",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 6
+      },
+      {
+        "url": "https://hirogarushumi.com/canagan-chicken-salmon/",
+        "slug": "canagan-chicken-salmon",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 7
+      },
+      {
+        "url": "https://hirogarushumi.com/canagan-dental-cat-food/",
+        "slug": "canagan-dental-cat-food",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 6
+      },
+      {
+        "url": "https://hirogarushumi.com/pet-paradise-cat-toys/",
+        "slug": "pet-paradise-cat-toys",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 6
+      },
+      {
+        "url": "https://hirogarushumi.com/withpety-nekoissho/",
+        "slug": "withpety-nekoissho",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 6
+      },
+      {
+        "url": "https://hirogarushumi.com/catlog-cat-monitor/",
+        "slug": "catlog-cat-monitor",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 6
+      },
+      {
+        "url": "https://hirogarushumi.com/withpety-nekoryoukan/",
+        "slug": "withpety-nekoryoukan",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 6
+      },
+      {
+        "url": "https://hirogarushumi.com/onekosama-cat-tower/",
+        "slug": "onekosama-cat-tower",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 6
+      },
+      {
+        "url": "https://hirogarushumi.com/withpety-nekobihada/",
+        "slug": "withpety-nekobihada",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 6
+      },
+      {
+        "url": "https://hirogarushumi.com/pontely-cat-dna-test/",
+        "slug": "pontely-cat-dna-test",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 7
+      },
+      {
+        "url": "https://hirogarushumi.com/withpety-nekokenshin/",
+        "slug": "withpety-nekokenshin",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 6
+      },
+      {
+        "url": "https://hirogarushumi.com/digxipop-cat-figure/",
+        "slug": "digxipop-cat-figure",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 6
+      },
+      {
+        "url": "https://hirogarushumi.com/pet-sougi-110-cat-guide/",
+        "slug": "pet-sougi-110-cat-guide",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 6
+      },
+      {
+        "url": "https://hirogarushumi.com/m-and-cat-knit-bag/",
+        "slug": "m-and-cat-knit-bag",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 6
+      },
+      {
+        "url": "https://hirogarushumi.com/mirai-cat-food-types/",
+        "slug": "mirai-cat-food-types",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 7
+      },
+      {
+        "url": "https://hirogarushumi.com/hario-cat-bowl-guide/",
+        "slug": "hario-cat-bowl-guide",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 6
+      },
+      {
+        "url": "https://hirogarushumi.com/paws-green-deli-cat-food/",
+        "slug": "paws-green-deli-cat-food",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 7
+      },
+      {
+        "url": "https://hirogarushumi.com/ai-data-extraction-checks/",
+        "slug": "ai-data-extraction-checks",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 7
+      },
+      {
+        "url": "https://hirogarushumi.com/starting-it-without-specialty/",
+        "slug": "starting-it-without-specialty",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 7
+      },
+      {
+        "url": "https://hirogarushumi.com/it-data-work-flow/",
+        "slug": "it-data-work-flow",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 7
+      },
+      {
+        "url": "https://hirogarushumi.com/sherry-cask-notes/",
+        "slug": "sherry-cask-notes",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 7
+      },
+      {
+        "url": "https://hirogarushumi.com/glenlivet-12-first-bottles/",
+        "slug": "glenlivet-12-first-bottles",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 8
+      },
+      {
+        "url": "https://hirogarushumi.com/cat-vet-routine/",
+        "slug": "cat-vet-routine",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 6
+      },
+      {
+        "url": "https://hirogarushumi.com/cat-teaser-small-parts/",
+        "slug": "cat-teaser-small-parts",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 6
+      },
+      {
+        "url": "https://hirogarushumi.com/manmos-cat-life/",
+        "slug": "manmos-cat-life",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 8
+      },
+      {
+        "url": "https://hirogarushumi.com/before-welcoming-cat/",
+        "slug": "before-welcoming-cat",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 6
+      },
+      {
+        "url": "https://hirogarushumi.com/csv-import-seven-checks/",
+        "slug": "csv-import-seven-checks",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 7
+      },
+      {
+        "url": "https://hirogarushumi.com/highball-measure-and-adjust/",
+        "slug": "highball-measure-and-adjust",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 7
+      },
+      {
+        "url": "https://hirogarushumi.com/cat-carrier-checklist/",
+        "slug": "cat-carrier-checklist",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 5
+      },
+      {
+        "url": "https://hirogarushumi.com/%e3%81%b2%e3%82%8d%e3%81%8c%e3%82%8b%e8%b6%a3%e5%91%b3%e6%9a%ae%e3%82%89%e3%81%97%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6/",
+        "slug": "%e3%81%b2%e3%82%8d%e3%81%8c%e3%82%8b%e8%b6%a3%e5%91%b3%e6%9a%ae%e3%82%89%e3%81%97%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 1
+      },
+      {
+        "url": "https://hirogarushumi.com/hsh-editorial/",
+        "slug": "hsh-editorial",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 0
+      },
+      {
+        "url": "https://hirogarushumi.com/hsh-reading-list/",
+        "slug": "hsh-reading-list",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 0
+      },
+      {
+        "url": "https://hirogarushumi.com/hsh-about/",
+        "slug": "hsh-about",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 1
+      },
+      {
+        "url": "https://hirogarushumi.com/hsh-hakushu-visit/",
+        "slug": "hsh-hakushu-visit",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 6
+      },
+      {
+        "url": "https://hirogarushumi.com/hsh-updates/",
+        "slug": "hsh-updates",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 0
+      },
+      {
+        "url": "https://hirogarushumi.com/hsh-whisky-notes/",
+        "slug": "hsh-whisky-notes",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 10
+      },
+      {
+        "url": "https://hirogarushumi.com/hsh-gallery/",
+        "slug": "hsh-gallery",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 20
+      },
+      {
+        "url": "https://hirogarushumi.com/",
+        "slug": "hirogaru-home",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 20
+      },
+      {
+        "url": "https://hirogarushumi.com/%e3%83%97%e3%83%a9%e3%82%a4%e3%83%90%e3%82%b7%e3%83%bc%e3%83%9d%e3%83%aa%e3%82%b7%e3%83%bc/",
+        "slug": "%e3%83%97%e3%83%a9%e3%82%a4%e3%83%90%e3%82%b7%e3%83%bc%e3%83%9d%e3%83%aa%e3%82%b7%e3%83%bc",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 0
+      },
+      {
+        "url": "https://hirogarushumi.com/%e3%81%8a%e5%95%8f%e3%81%84%e5%90%88%e3%82%8f%e3%81%9b/",
+        "slug": "%e3%81%8a%e5%95%8f%e3%81%84%e5%90%88%e3%82%8f%e3%81%9b",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 0
+      },
+      {
+        "url": "https://hirogarushumi.com/",
+        "slug": "/",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 20
+      },
+      {
+        "url": "https://hirogarushumi.com/category/cats/",
+        "slug": "/category/cats/",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 24
+      },
+      {
+        "url": "https://hirogarushumi.com/category/whisky/",
+        "slug": "/category/whisky/",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 7
+      },
+      {
+        "url": "https://hirogarushumi.com/category/it-freelance/",
+        "slug": "/category/it-freelance/",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 5
+      },
+      {
+        "url": "https://hirogarushumi.com/?s=ウイスキー",
+        "slug": "/?s=ウイスキー",
+        "http": 200,
+        "generation_labels": 0,
+        "image_alts_checked": 10
+      }
+    ],
+    "visible_generation_labels": 0,
+    "generation_labels_in_alts": 0
+  },
+  "browser": {
+    "pages": 3,
+    "viewport_checks": 9,
+    "results": [
+      {
+        "slug": "hsh-whisky-notes",
+        "width": 1440,
+        "http": 200,
+        "overflow": false,
+        "images_decoded": true
+      },
+      {
+        "slug": "hsh-whisky-notes",
+        "width": 390,
+        "http": 200,
+        "overflow": false,
+        "images_decoded": true
+      },
+      {
+        "slug": "hsh-whisky-notes",
+        "width": 320,
+        "http": 200,
+        "overflow": false,
+        "images_decoded": true
+      },
+      {
+        "slug": "sherry-cask-notes",
+        "width": 1440,
+        "http": 200,
+        "overflow": false,
+        "images_decoded": true
+      },
+      {
+        "slug": "sherry-cask-notes",
+        "width": 390,
+        "http": 200,
+        "overflow": false,
+        "images_decoded": true
+      },
+      {
+        "slug": "sherry-cask-notes",
+        "width": 320,
+        "http": 200,
+        "overflow": false,
+        "images_decoded": true
+      },
+      {
+        "slug": "glenlivet-12-first-bottles",
+        "width": 1440,
+        "http": 200,
+        "overflow": false,
+        "images_decoded": true
+      },
+      {
+        "slug": "glenlivet-12-first-bottles",
+        "width": 390,
+        "http": 200,
+        "overflow": false,
+        "images_decoded": true
+      },
+      {
+        "slug": "glenlivet-12-first-bottles",
+        "width": 320,
+        "http": 200,
+        "overflow": false,
+        "images_decoded": true
+      }
+    ],
+    "js_errors": [],
+    "five_image_hashes_match": true
+  },
+  "raw": {
+    "article_sources_match": 2,
+    "unrelated_article_fingerprints_unchanged": 40,
+    "pages_changed": 0,
+    "all_publication_dates_urls_media_ids_preserved": true,
+    "home_and_other_owned_pages_unchanged": true,
+    "fingerprints_after": {
+      "before-welcoming-cat": "92cea4ce6c60601447fae12a4ff1413a2b298958f9d14ac190adb9b9f6e86686",
+      "manmos-cat-life": "9cab8763e3cdfea4c0881511c22e065af01d657b0f92bf3dea0baa9e85f9a4e9",
+      "cat-teaser-small-parts": "a75dfab285bb8436683fe95f190762029c494b2fd15c4b3f0f344a0c66d66385",
+      "cat-vet-routine": "04b4a1012e071f70300a8027888a8b5d9e0a25f65dbdc19b0164249ddaeea7cb",
+      "glenlivet-12-first-bottles": "2e9afe4e6b30ad5fff98ba5ff8c117abfbb62c118941ddd651ee3bccfeac2266",
+      "single-malt-label-guide": "385554464a2d707e532c586f8dfa05141f288d97e0252f6cdbdfce659a902cc8",
+      "sherry-cask-notes": "aa542e49743e19663b9e9c80cf58307ac5275bab0c95cde020883555a4ed8e4e",
+      "it-data-work-flow": "3405ef5a9d1e5b3bec09ae5ad632478bbf5bf0ac6a5db37d67d15c8eb5ff32ae",
+      "starting-it-without-specialty": "9861b31583caf99ab081a76ea1f3c1366d686e9e3b01370a5c2a76044ce8d42e",
+      "ai-data-extraction-checks": "aa68a8bd3df65a8b6d814ca1bbd43bc2add82a24e31dd1254bf906ce140039f9",
+      "paws-green-deli-cat-food": "52eedc38fe088a075d7ec3878882e0101fe6cb24a77ec776526af4c6dc51bad3",
+      "hario-cat-bowl-guide": "8b80e0007d947874da4a6fed1c33045fbda256aacb739b9eec13f6ac9fdd24ca",
+      "mirai-cat-food-types": "cd5e9778dc3acd35300aa792cd721c85d483f6f57e1eb77ba2ae942022ee3fc2",
+      "m-and-cat-knit-bag": "2a0d9573e49516b5e042b41e3a0a7b76ceb96a936d777a9994b6c48ec7839177",
+      "pet-sougi-110-cat-guide": "9512a7cc3481218a55b40c959d022b563e9f3e0aa82398eb9855e269aef7dbe5",
+      "digxipop-cat-figure": "2f2df799b3ecf2e0cfef54e6f07034897c72882328feee66bf7eb146989b9026",
+      "withpety-nekokenshin": "9f0923de60df043e40a9708ef09596b13e3cfdaf8747b2a37d83674777bbf389",
+      "pontely-cat-dna-test": "749bf6fc3b40be21afddb69a448fc39cc778d51bccce4e325e67369e25df2916",
+      "withpety-nekobihada": "75441eb969ba823f0dd633ab5b2c3dda67ab4eae1c7a859203e066183adf6a6b",
+      "onekosama-cat-tower": "abfa76bc5fda97c07d7b0ab891f9811dce12b792a811b1757d89cd6a971ea550",
+      "withpety-nekoryoukan": "1b274599f5a73415af6f5c4ae22043489198950ca56a87402b66777d9f4e289a",
+      "catlog-cat-monitor": "8a3d76609c1a2d409b962294fdd4666532c21ef1ea749dbc583e84945adad9ec",
+      "withpety-nekoissho": "5c44904767235c995b657818af8975cbaf3db666c372bf92fdd3686a7ce06aaa",
+      "pet-paradise-cat-toys": "17e08a4abcda7b003ccee5135b0d0b0587bc6f1ab91565852e8440f51231b6d3",
+      "canagan-dental-cat-food": "364c6df1a3cac9267a56c819728410202def7033822173721281e887296f68a5",
+      "canagan-chicken-salmon": "2d3b050505e335056ae50eb34cf97ed8a25cfd6bc3328f0cc500ac4a00d7090c",
+      "mcadams-cat-chicken-turkey": "f0ff232280fd3888a45fbdd789060a14bad21a60dba51d76e27f41aecc975355",
+      "essential-jaguar-cat-food": "305548accd3e8d002a518c4489aca1e5ab05e77dea4593236adc3e17d74605de",
+      "mognyan-cat-food-guide": "334fa33bbaf18071555ba7cea29269ecfe00ea62a951220912be7dbab87c6f83",
+      "leo-luna-citta-bed": "7974343514524863509aaacd90323bd75a8ff0b972071ce8dcd80753e9d9ab59",
+      "withpety-nekokouken": "f46aac9fb2a9520e43f851286714468e08a19b48989eb0e76aa5cdc52c52d6c0",
+      "withpety-nekosoukai": "9ab357936fa83817a691bceacb719fc6d942350545bbe45b15d048c2d681dbf3",
+      "withpety-nekoshuukan": "8d082b05e767f4557605dd2ab20714f592dc0c172ab44cdab2829699c3be187c",
+      "withpety-nekoaigan": "16a136755e477fabe9a33fedf63f26d5c72f9ddf0931b04681823bf90945233b",
+      "withpety-nekojinkatsu": "4cf917240ddb657a99222e7ef6c3cac5e79431181d95036e9ec4c99b602be915",
+      "withpety-nekosanpo": "d707825369636133ca15a34ebd3a9fe7e061822424ecdbc338d69ebfcc68cdd3",
+      "aigan-dobutsu-course": "8f89dbba190073fc17ba83609ee864fb1b1652b886014aadac7ee2d6e2d63647",
+      "acana-orijen-cat-food-guide": "5065a13c42432fbc682e2a4e323fc74b610b2b3218d179751ad65f16e262261d",
+      "linx-as-store": "824cf0a25bca6593ad027cdeea9a32b51cfb4c4afe6fa6f11be95b42e4ce7762",
+      "cat-carrier-checklist": "de3dd810bcf567c12341b98a91ecc991eb933d6c16ffc07f43f7070edb745510",
+      "highball-measure-and-adjust": "67b96552d5d582fe279091fd38151dcbffc84b21d8509a8f08fa2d641dc3e479",
+      "csv-import-seven-checks": "99e2e71964765e6c189aa4243448810e499bd8aaa01287afb3258f1a35bea26e"
+    }
+  },
+  "reading_ui": {
+    "viewport_checks": 24,
+    "rows": [
+      {
+        "slug": "",
+        "width": 1440
+      },
+      {
+        "slug": "",
+        "width": 390
+      },
+      {
+        "slug": "",
+        "width": 320
+      },
+      {
+        "slug": "category/cats/",
+        "width": 1440
+      },
+      {
+        "slug": "category/cats/",
+        "width": 390
+      },
+      {
+        "slug": "category/cats/",
+        "width": 320
+      },
+      {
+        "slug": "category/whisky/",
+        "width": 1440
+      },
+      {
+        "slug": "category/whisky/",
+        "width": 390
+      },
+      {
+        "slug": "category/whisky/",
+        "width": 320
+      },
+      {
+        "slug": "?s=CSV",
+        "width": 1440
+      },
+      {
+        "slug": "?s=CSV",
+        "width": 390
+      },
+      {
+        "slug": "?s=CSV",
+        "width": 320
+      },
+      {
+        "slug": "?s=zzxx123xxx",
+        "width": 1440
+      },
+      {
+        "slug": "?s=zzxx123xxx",
+        "width": 390
+      },
+      {
+        "slug": "?s=zzxx123xxx",
+        "width": 320
+      },
+      {
+        "slug": "glenlivet-12-first-bottles/",
+        "width": 1440,
+        "toolbarHeight": 56
+      },
+      {
+        "slug": "glenlivet-12-first-bottles/",
+        "width": 390,
+        "toolbarHeight": 70.46875
+      },
+      {
+        "slug": "glenlivet-12-first-bottles/",
+        "width": 320,
+        "toolbarHeight": 123.65625
+      },
+      {
+        "slug": "hsh-whisky-notes/",
+        "width": 1440
+      },
+      {
+        "slug": "hsh-whisky-notes/",
+        "width": 390
+      },
+      {
+        "slug": "hsh-whisky-notes/",
+        "width": 320
+      },
+      {
+        "slug": "canagan-chicken-salmon/",
+        "width": 1440
+      },
+      {
+        "slug": "canagan-chicken-salmon/",
+        "width": 390
+      },
+      {
+        "slug": "canagan-chicken-salmon/",
+        "width": 320
+      }
+    ],
+    "js_errors": [],
+    "writes": 0,
+    "keyboard_search_photo_save_footer_and_sticky_header": true,
+    "scroll_article_rect_reads": 0,
+    "contact_fields_present": true
+  },
+  "reading_ui_retest": "24 viewport checks passed; see private reading-ux.log",
+  "python_tests": 64,
+  "php_checks": 1166,
+  "internal_provenance_retained": true,
+  "image_identity": "Glenfarclas 12 cream label red logo and navy tube from owner reference"
+}
