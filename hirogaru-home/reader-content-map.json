@@ -24,8 +24,8 @@
     "related_label": "選ぶ前に読む"
   },
   "cat-vet-routine": {
-    "role": "道具の選び方",
-    "related_label": "選ぶ前に読む"
+    "role": "通院の準備",
+    "related_label": "通院の準備をする"
   },
   "glenlivet-12-first-bottles": {
     "role": "飲んだ感想",
@@ -33,7 +33,7 @@
   },
   "single-malt-label-guide": {
     "role": "飲み方・表示の解説",
-    "related_label": "飲み方を調べる"
+    "related_label": "ラベルの見方を知る"
   },
   "sherry-cask-notes": {
     "role": "飲んだ感想",

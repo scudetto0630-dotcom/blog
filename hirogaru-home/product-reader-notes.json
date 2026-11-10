@@ -126,7 +126,7 @@
     "evidence": "existing official-source article snapshot, 2026-11-04"
   },
   "withpety-nekokenshin": {
-    "heading": "毎日健心の成分と、今の食事・薬との組み合わせを確認する",
+    "heading": "毎日健心の与え方と、併用するときの注意",
     "constraint": "毎日健心は心臓の健康維持向けに案内されている猫用サプリです。年齢や成分名だけで必要と決めず、現在の薬・食事と一緒に獣医師へ相談して検討します。",
     "steps": [
       "猫用の商品名と成分が、使いたい目的に合うか確認する",
@@ -168,7 +168,7 @@
     "evidence": "existing official-source article snapshot, 2026-11-04"
   },
   "withpety-nekobihada": {
-    "heading": "毎日美肌の成分と、今の食事・薬との組み合わせを確認する",
+    "heading": "毎日美肌の与え方と、併用するときの注意",
     "constraint": "毎日美肌は皮膚の健康維持向けに案内されている猫用サプリです。年齢や成分名だけで必要と決めず、現在の薬・食事と一緒に獣医師へ相談して検討します。",
     "steps": [
       "猫用の商品名と成分が、使いたい目的に合うか確認する",
@@ -210,7 +210,7 @@
     "evidence": "existing official-source article snapshot, 2026-11-04"
   },
   "withpety-nekoryoukan": {
-    "heading": "毎日良肝の成分と、今の食事・薬との組み合わせを確認する",
+    "heading": "毎日良肝の与え方と、併用するときの注意",
     "constraint": "毎日良肝は肝臓の健康維持向けに案内されている猫用サプリです。年齢や成分名だけで必要と決めず、現在の薬・食事と一緒に獣医師へ相談して検討します。",
     "steps": [
       "猫用の商品名と成分が、使いたい目的に合うか確認する",
@@ -234,7 +234,7 @@
     "heading": "記録したいことから機器を選ぶ",
     "constraint": "CatlogとCatlog Boardでは記録する情報や設置方法が違います。GPSで居場所を追う機器や、病気を診断する機器と同じ役割ではありません。",
     "steps": [
-      "行動の記録か、トイレの記録かを整理する",
+      "行動を記録したいか、体重やトイレを記録したいか決める",
       "猫の数、Wi-Fi、首輪やトイレの対応条件を確認する",
       "機器代と月額利用料、継続条件を確認する"
     ],
@@ -252,7 +252,7 @@
     "evidence": "existing official-source article snapshot, 2026-11-04"
   },
   "withpety-nekoissho": {
-    "heading": "毎日一緒の成分と、今の食事・薬との組み合わせを確認する",
+    "heading": "毎日一緒の与え方と、併用するときの注意",
     "constraint": "毎日一緒はシニアケアの健康維持向けに案内されている猫用サプリです。年齢や成分名だけで必要と決めず、現在の薬・食事と一緒に獣医師へ相談して検討します。",
     "steps": [
       "猫用の商品名と成分が、使いたい目的に合うか確認する",
@@ -294,7 +294,7 @@
     "evidence": "existing official-source article snapshot, 2026-11-04"
   },
   "canagan-dental-cat-food": {
-    "heading": "デンタルの名前だけで役割を決めない",
+    "heading": "海藻由来の成分と、与える前の注意点",
     "constraint": "フードの特徴と日々の口のケアは分けて考えます。口臭や食べにくさなど気になる様子がある場合は、フードだけで対処しようとせず獣医師へ相談します。",
     "steps": [
       "猫用デンタルフードの商品表示を読む",
@@ -420,7 +420,7 @@
     "evidence": "official page and structured product description reviewed, 2026-11-08"
   },
   "withpety-nekokouken": {
-    "heading": "毎日口健の与え方と、今の食事・薬との組み合わせを確認する",
+    "heading": "毎日口健の与え方と、併用するときの注意",
     "constraint": "歯の汚れを落とすケアの代わりにはなりません。痛みや食べにくさがある場合は、サプリを加える前に病院で相談してください。",
     "steps": [
       "対象動物、原材料、錠剤・粉末などの形状を製品表示で確認する",
@@ -441,7 +441,7 @@
     "evidence": "official catalog/product specifications and labeled image reviewed, 2026-11-08"
   },
   "withpety-nekosoukai": {
-    "heading": "毎日爽快の与え方と、今の食事・薬との組み合わせを確認する",
+    "heading": "毎日爽快の与え方と、併用するときの注意",
     "constraint": "便の変化が続く、食欲や元気も違う場合は、サプリだけで様子を見続けず獣医師に相談してください。食事を替えた日なども整理しておきましょう。",
     "steps": [
       "対象動物、原材料、錠剤・粉末などの形状を製品表示で確認する",
@@ -462,7 +462,7 @@
     "evidence": "official catalog/product specifications and labeled image reviewed, 2026-11-08"
   },
   "withpety-nekoshuukan": {
-    "heading": "毎日習慣の与え方と、今の食事・薬との組み合わせを確認する",
+    "heading": "毎日習慣の与え方と、併用するときの注意",
     "constraint": "食事管理や治療を、サプリだけで置き換えることはできません。服薬・通院中は配合成分を獣医師に見せ、追加する必要性を先に相談してください。",
     "steps": [
       "対象動物、原材料、錠剤・粉末などの形状を製品表示で確認する",
@@ -483,7 +483,7 @@
     "evidence": "official catalog/product specifications and labeled image reviewed, 2026-11-08"
   },
   "withpety-nekoaigan": {
-    "heading": "毎日愛眼の与え方と、今の食事・薬との組み合わせを確認する",
+    "heading": "毎日愛眼の与え方と、併用するときの注意",
     "constraint": "気になる変化はサプリ選びだけで済ませず動物病院へ相談してください。いつから・左右どちらかなど、普段との違いを伝えましょう。",
     "steps": [
       "対象動物、原材料、錠剤・粉末などの形状を製品表示で確認する",
@@ -504,7 +504,7 @@
     "evidence": "official catalog/product specifications and labeled image reviewed, 2026-11-08"
   },
   "withpety-nekojinkatsu": {
-    "heading": "毎日腎活の与え方と、今の食事・薬との組み合わせを確認する",
+    "heading": "毎日腎活の与え方と、併用するときの注意",
     "constraint": "活性炭が薬の吸収に影響する可能性への注意があります。薬名と製品情報を獣医師へ伝え、自己判断で与える時間や量を決めないでください。",
     "steps": [
       "対象動物、原材料、錠剤・粉末などの形状を製品表示で確認する",
@@ -525,7 +525,7 @@
     "evidence": "official catalog/product specifications and labeled image reviewed, 2026-11-08"
   },
   "withpety-nekosanpo": {
-    "heading": "毎日散歩の与え方と、今の食事・薬との組み合わせを確認する",
+    "heading": "毎日散歩の与え方と、併用するときの注意",
     "constraint": "急な歩き方の変化や痛そうな様子は、年齢だけで決めず動物病院へ相談してください。痛みなどの原因を確かめ、必要な対応を相談してからサプリを検討してください。",
     "steps": [
       "対象動物、原材料、錠剤・粉末などの形状を製品表示で確認する",
@@ -546,7 +546,7 @@
     "evidence": "official catalog/product specifications and labeled image reviewed, 2026-11-08"
   },
   "aigan-dobutsu-course": {
-    "heading": "愛玩動物飼養管理士を選ぶ前に",
+    "heading": "申し込み前に、費用と学習日程を確かめよう",
     "constraint": "動物の飼養管理を体系的に学び、半年程度の学習予定を組める方",
     "steps": [
       "対象年度の資料と募集期間を確認する",
