@@ -3166,15 +3166,15 @@
       "bytes": 99684
     },
     "riku-generated": {
-      "file": "riku-generated.webp",
+      "file": "riku-reference-generated.webp",
       "width": 1200,
       "height": 800,
       "kind": "generated",
       "subject": "whisky",
       "alt": "キリンウイスキー 陸のボトルを木のテーブルに置いたAI生成イメージ",
       "caption": "キリンウイスキー 陸のAI生成イメージ",
-      "sha256": "7e1314fab2d3ae03d4f4a491e8daf12888b368826ca9b0471308e08342a5f00a",
-      "bytes": 62462
+      "sha256": "627f8c781801a757c3bcf2206502649aad94e156002eb88675780f8d7c721d7f",
+      "bytes": 76572
     },
     "jim-beam-generated": {
       "file": "jim-beam-generated.webp",
@@ -3188,15 +3188,15 @@
       "bytes": 81326
     },
     "busker-green-generated": {
-      "file": "busker-green-generated.webp",
+      "file": "busker-green-reference-generated.webp",
       "width": 1200,
       "height": 800,
       "kind": "generated",
       "subject": "whisky",
       "alt": "バスカー アイリッシュウイスキーの緑ラベルのボトルを置いたAI生成イメージ",
       "caption": "バスカー緑のAI生成イメージ",
-      "sha256": "96cb4dfe1ea2cfd4cd6ff034b60d11237b2dc1eba6a1656cf7fa45c6c7601afa",
-      "bytes": 73680
+      "sha256": "6dffbc191c5f0cd2f059cdb08261c9ef4aed1c128f5502853222e8870b883de6",
+      "bytes": 76320
     }
   },
   "articles": {
