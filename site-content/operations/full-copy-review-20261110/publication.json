@@ -1,0 +1,555 @@
+{
+  "deployment": {
+    "commit": "a4f504406cb358de03f171054030608e1f508571",
+    "sha256": "5e18e7b4311ec6fe2f901f89201ef015e50980dcd00a2264bc89993741a0890b",
+    "expected_version": "1.38.13"
+  },
+  "api_verification": {
+    "catalog_articles_match": 42,
+    "original_introduction_matches": true,
+    "pages_changed": 2,
+    "all_publication_dates_urls_titles_media_ids_preserved": true,
+    "home_settings_and_other_owned_pages_unchanged": true,
+    "fingerprints_after": {
+      "before-welcoming-cat": "76188df3ea043d5e06d40892b3117e886caf80f49f1d12ec02f91a26e10c71fe",
+      "manmos-cat-life": "9b28a54228483a6e687093bbf8cfb7ddd6ca7b4696c5f59abff1dee6fe141c68",
+      "cat-teaser-small-parts": "a7fda5fdb2da2f15c136ef95a1483e7a09d50552bbf25a508436599c98c499e5",
+      "cat-vet-routine": "00721e953d7a38fb7d91bd472747321d624f642c87d3ae49aedeba66b91770f6",
+      "glenlivet-12-first-bottles": "04161cc6586abf87f4eceb1cb5db7c84861d15b0383ab8265fb9d08263e148fd",
+      "single-malt-label-guide": "ca699503e55465f9fafbba92b9536731cce4fd729a279edd2ad9128209540e47",
+      "sherry-cask-notes": "a7866f2e6d802570113da40aeeb7ff09a06c0bf8c3277efd6c1edc1f2e4ac3a6",
+      "it-data-work-flow": "540d5660c163bb51c50716d22cde94f5425f2a873eeee646a224ee813b359ff4",
+      "starting-it-without-specialty": "2714378819ed3e35427f2ecbfe2282afd1c451f833bd26a0c84ab2c1b255ca52",
+      "ai-data-extraction-checks": "2b51d2a0db97cb1263e0110da208c8faffdcf1d667d78f81d6994a7e9ca2a90a",
+      "paws-green-deli-cat-food": "b5946436384e9d1bddea951b9941f47ce4ec8a153ef23f4e142824d90754d367",
+      "hario-cat-bowl-guide": "73fb0157a69b083b9e924651fa7640e45ad63820476a9114f98313182de77f0c",
+      "mirai-cat-food-types": "d45765ed96d59e7c71528eb4bb3724362857fc2ca8f4f4288f6668a1bf74d5c7",
+      "m-and-cat-knit-bag": "006d0c88600a83b7a60f86c5078d693793219f7a58740d2c883e75292932c3bd",
+      "pet-sougi-110-cat-guide": "64c300ef311b415035b81a857e592e4325593bdc6a7d76e954d7d8caf0eadbdc",
+      "digxipop-cat-figure": "7121d4b8c2599c77e0ba760cb6d6ca51054ce9fa7e41530e0c25c9a467bc488f",
+      "withpety-nekokenshin": "42fa5c4989fdd0b413960d4ec419ad2d99b1b762b35dc58d683be522ef2c86af",
+      "pontely-cat-dna-test": "ebc8486346330217bfa4345f87b293a6347af7ffba023271dc549ed32b8a76d9",
+      "withpety-nekobihada": "efa9bc3eeaee7d3279ca81f7373a7e8440a022c08a123639889aa0326f5f2676",
+      "onekosama-cat-tower": "364374738c4f7f1a96b6b1e6398eac6bb0ba289b988ac6bb10c68e8d3c2ee274",
+      "withpety-nekoryoukan": "38247ced61141e83cbeb0ec730a9b49379bad16e73bfa8a54ce8e7e41bf25828",
+      "catlog-cat-monitor": "423afede787d656d87aa3c6a6053b21729d56f9d944f75a21c8c8a50466cd677",
+      "withpety-nekoissho": "3302b8921431d749ec9a85f69c1eed3035ec7cf8bd0b35a90b5d80ecc23752a2",
+      "pet-paradise-cat-toys": "8ac68b895f5dc6999e43fc359ffdf94bebd521a07fb003d174051f858fd14255",
+      "canagan-dental-cat-food": "5d63e5c5031e8fc6e2fce389425c2d7539fe66e6c0da8d1bd18c92ac5ee28bfc",
+      "canagan-chicken-salmon": "984687f8c22ba8e7da2b79e59d2698e9c4c8b6d05cd492395305ef0146a9f2b8",
+      "mcadams-cat-chicken-turkey": "89f46158222bcad4b28ff8d1fb38ac5f42c7802a2192930245d5dcd3132e07c9",
+      "essential-jaguar-cat-food": "4048c4b0a7cd33a10fe422811d0a35171bc96b0171668929999ea611f8afb3ce",
+      "mognyan-cat-food-guide": "4584932ac03cabc279c8f767864ab54fd2f4f8dddd638dcbbc0eb5107acc09ab",
+      "leo-luna-citta-bed": "32dc5d3e899a4533d8eec69f147e609b78fbed4c36f57c2312f877bd78596d04",
+      "withpety-nekokouken": "1033bc65c188a23fbfc7512e0a0704fb222d06f18a316df2f8729d7e556b0e3e",
+      "withpety-nekosoukai": "7e91af7120bdf808cb1a7e2465545cd12d2700a74680d06d291ae9b1e8b2ff05",
+      "withpety-nekoshuukan": "d8069c94771b1537f455eb644a455971fdc7e9fa321302260f75d219b376d143",
+      "withpety-nekoaigan": "11271f7f33fef38ab613c4c6852589f23052bea02f9c4e192a827bd91fc3fcb5",
+      "withpety-nekojinkatsu": "a03cc701246c15d2e8f490fc3fe137d932ecdd23d820c4130f1a85e9d404a964",
+      "withpety-nekosanpo": "15a3f421c97e237331d3a5c1c959280b35eeacc7ac92af42babab9e385b25184",
+      "aigan-dobutsu-course": "84962b375b17eb3efce4e98bc50c09117562e26605c18e474b56f495fe805680",
+      "acana-orijen-cat-food-guide": "73753e9cb581f2680772cf8a9bdc7ee119ee9bc4448d65b7fcfc4f32e63add0d",
+      "linx-as-store": "a14bdebb597de2f7a79f2751db7591a1601a6b9148f9947aafa5f8f52051f6ec",
+      "cat-carrier-checklist": "8ba0f535a71c76d518bdcdec8426c4f409188fa6885d7470de8e8449ed73fa89",
+      "highball-measure-and-adjust": "a56ac362c1f048ea21d72b4d6d93d6c8db7d8fedc00264b81dc5387c5cb619a6",
+      "csv-import-seven-checks": "76fb4b7e6d39706c66dd2259383ebfa2628be44907402a06c9f5645b7e8ac4b8"
+    }
+  },
+  "publication_results": [
+    {
+      "slug": "cat-carrier-checklist",
+      "operation": "managed-article",
+      "result": {
+        "articles": [
+          {
+            "slug": "cat-carrier-checklist",
+            "id": 33,
+            "status": "publish",
+            "fingerprint": "8ba0f535a71c76d518bdcdec8426c4f409188fa6885d7470de8e8449ed73fa89",
+            "content": "<p class=\"hsh-answer\">約1年前、まんもす用に6,000円くらいのリュック型キャリーを買った。持ち運びやすかったけれど、まんもすを入れると上部がへこむようになった。そこで、10年以上前から持っていた頑丈なキャリーを使い直すことにした。同じリュック型でも、猫を入れたときの形と運びやすさは違った。</p>\n\n<span class=\"hsh-anchor\" id=\"cat-carrier-checklist-detail-2\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"cat-carrier-checklist-0\" aria-hidden=\"true\"></span><h2 id=\"cat-carrier-backpack-experience\">約6,000円のリュックは、まんもすを入れると上部がへこんだ</h2>\n<p>新しい方も、骨組みはしっかりしている印象で、持ち運びもしやすかった。ただ、まんもすを入れて使ううちに、本体の上の方がへこむようになった。まんもすの体重は現在5.5kg。</p>\n<p>肩ベルトと本体がつながる辺りに負荷がかかったのかな、とは思うけど、原因までは分からない。</p>\n<h2 id=\"carrier-old-frame\">取り出したのは、10年以上前のキャリーだった</h2>\n<p>次に使ったのは、新しく買った物ではない。以前、何匹もの猫と暮らしていた頃に購入し、しまってあったキャリーを出してきた。買ったのは10年以上前で、商品名や値段はもう覚えていない。</p>\n<p>こちらも布製のリュック型だけど、上部だけでなく全体に硬い骨組みがある。まんもすを入れてもへこまず、落ち着いて過ごしている。同じ布製、同じリュック型でも、実際に猫を入れたときの違いは大きかった。</p>\n<p>昔は4kgの猫2匹を一緒に入れたこともあり、2匹とも横になれるくらいの広さがあった。ただ、これはうちで使ったときの話。メーカーが定める頭数や耐荷重を示すものではないので、広そうに見えるだけで複数の猫を入れてよいとは判断しないでほしい。</p>\n<h2 id=\"carrier-train-and-wheels\">背負うことも、車輪で引っ張ることもできる</h2>\n<p>古い方は、背負っても運べるし、車輪を使って引っ張ることもできる。購入した頃は電車でも車でも使っていて、電車で移動することも考えて選んだ物だった。自分にとっては、猫を入れたときの安定感と運び方を選べるところが使いやすい。</p>\n<p>一方で、頑丈な分だけ本体は重い。自分には快適でも、持つ人の体力や移動経路によっては負担になると思う。車輪で引けるからといって、持ち上げる場面までなくなるわけではないので、猫と荷物を合わせた重さで考えたい。</p>\n<p>電車で移動していた頃には、猫の入ったキャリーを人に蹴られたこともある。誰もが動物に配慮してくれるとは限らないと感じた経験だ。ただし、この経験だけで、頑丈なキャリーならどんな衝撃にも耐えられると言えるわけではない。</p>\n<h2 id=\"carrier-evacuation-preparation\">避難先での居場所も考えて、餌やシーツを常備</h2>\n<p>普段の移動だけでなく、災害時のことも考えていた。予備の餌やシーツ、タオルなども常備できたので、猫を連れ出すときの備えとしてよかった。体育館のような避難先でも、猫にとっての居場所を用意できるのは大きいと思う。</p>\n<p>このキャリーは広げて大きくするタイプではなく、もともとの大きさのまま使う物。実際の避難ではまだ使っていない。避難所によって動物の受け入れ方や過ごせる場所は異なるので、地域の案内も確かめておきたい。</p>\n\n<p>この経験から、次に選ぶならどこを見るかも整理してみた。形の安定だけでなく、出し入れや手入れ、実際に運ぶ重さも比べたい。</p>\n<h2>1．猫を出し入れしやすいか</h2>\n<p>キャリーには、前の扉から出し入れする物、上が開く物、上下の本体を外せる物がある。大きさが似ていても、猫を入れるときや診察で開けるときの扱い方は違う。</p>\n<p>入口の幅だけでなく、どこまで開くのかを見てみよう。猫が奥にいるときにも開けやすいか、開いた扉を支えておく必要があるか。写真だけでは開けやすさまで分からないので、店頭で実物を見られるなら開閉を試してみよう。</p>\n<p>通院用に買うなら、動物病院で使いやすい形を聞いてみる方法もある。診察の際の出し入れはスタッフの指示に従ってください。出てこない猫を、無理に引っ張り出すことを前提に選ばないようにしたい。</p>\n<span class=\"hsh-anchor\" id=\"cat-carrier-checklist-detail-3\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"cat-carrier-checklist-detail-9\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"cat-carrier-checklist-1\" aria-hidden=\"true\"></span><h2>2．扉や留め具がきちんと閉まるか</h2>\n<p>扉を閉めたら、ロックがかかっているか、隙間が残っていないかを見る。本体を上下につなぐ留め具や、ファスナーも忘れずに。閉める場所がいくつあるのかを先に覚えておくと、一か所だけの閉め忘れにも気付きやすい。</p>\n<p>ひび、変形、欠けた部品があれば、そのまま猫を入れずメーカーへ相談してください。自分で固定具を足して使えると決めず、修理や部品交換ができるかを確認する。組み立てと固定は、その製品の説明書に従います。</p>\n<!--HSH_IMAGE:cat-diagram-->\n<span class=\"hsh-anchor\" id=\"cat-carrier-checklist-detail-0\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"cat-carrier-checklist-detail-4\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"cat-carrier-checklist-detail-7\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"cat-carrier-checklist-2\" aria-hidden=\"true\"></span><h2>3．猫を入れても無理なく運べるか</h2>\n<p>本体が軽いだけでなく、猫を入れたときにも形が保たれるかを確認しよう。猫の体重にキャリー本体の重さも加わるので、自分が運べる総重量かも確認しよう。</p>\n<p>持ち手の幅や形も試してみよう。細い持ち手が手に食い込みそうか、体から離れすぎず持てるか。徒歩で運ぶなら階段や坂道もあるかもしれない。車移動なら、駐車場から受付まで歩くことも忘れずに。</p>\n<table><thead><tr><th>移動方法</th><th>確認するところ</th></tr></thead><tbody><tr><td>徒歩</td><td>猫を含めた総重量、持ち手の幅、階段での運びやすさ</td></tr><tr><td>車</td><td>車内に置ける大きさか、製品と車両に合った固定ができるか</td></tr><tr><td>電車・バスなど</td><td>利用する会社の持込み条件に合うサイズ・形状か</td></tr></tbody></table>\n<p>電車やバスを利用するなら、先にその会社の持ち込み条件を読む。商品に「ペット用」と書いてあっても、利用する路線の規定に合うとは限らない。容器の形、サイズ、重さ、必要な料金を確認してから候補を比べよう。</p>\n<span class=\"hsh-anchor\" id=\"cat-carrier-checklist-detail-5\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"cat-carrier-checklist-3\" aria-hidden=\"true\"></span><h2>4．汚れたときに掃除しやすいか</h2>\n<p>底板やマットを外せるか、隅にたまった汚れまで手が届くか。使っている姿の写真では目立たないけど、掃除のしやすさも見ておきたい。洗える部分と洗い方は、素材の印象で決めず説明書で確認してください。</p>\n<p>タオルなどを敷くと、その分だけ中は狭くなる。厚く重ねすぎて猫が窮屈にならないか、扉や留め具に布を挟まないかも見る。猫を入れる前に一度敷いて、きちんと閉められるか試しておこう。</p>\n<span class=\"hsh-anchor\" id=\"cat-carrier-checklist-detail-6\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"cat-carrier-checklist-4\" aria-hidden=\"true\"></span><h2>5．家のどこに置くか</h2>\n<p>折り畳める物は収納しやすそうだけど、使うときに取り出して組み立てる時間もかかる。どこへしまい、どこで準備するかまで決めておくと、通院の日に探し回らずに済む。取り外した部品も、本体と一緒に保管しておこう。</p>\n<p>部屋に出しておくなら、倒れにくい安定した場所に。扉を開けたまま使ってよいかも説明書を見てください。中に入ってほしくても、猫を押し込むのは避けよう。慣れるまでの時間も、猫によって違う。</p>\n<span class=\"hsh-anchor\" id=\"cat-carrier-checklist-detail-1\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"cat-carrier-checklist-detail-8\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"cat-carrier-checklist-5\" aria-hidden=\"true\"></span><h2>サイズと価格で迷ったときは</h2>\n<h3>猫の体重だけでサイズを決めない</h3>\n<p>耐荷重の表示と、猫が入る広さは両方確認する。重さの条件を満たしていても、体格に対して中が窮屈なことはある。体重だけでサイズを決めず、内寸とメーカーのサイズ選びの案内も合わせて見ておこう。</p>\n<h3>価格だけで判断しない</h3>\n<p>値段で迷ったら、何を改善したくて買うのかを考えてみよう。出し入れなのか、持ちやすさなのか、掃除なのか。欲しい機能が一つはっきりすると、似た形の商品でも違いを見つけやすくなる。</p>\n<span class=\"hsh-anchor\" id=\"cat-carrier-checklist-6\" aria-hidden=\"true\"></span><h2>買い替える前に、今のどこが不便か考えてみよう</h2>\n<p>自分の場合は、新しく買ったリュックがへこんだことで、しまっていた古いキャリーを使い直すことになった。重さはあるけれど、まんもすを入れても形が保たれ、背負う・引くの両方で運べる点が今の自分には合っている。</p>\n<p>今のキャリーに不具合がなく、困ってもいないなら、すぐ買い替えなくてもいい。まず扉、留め具、持ち手を点検してみよう。不具合があるなら修理や交換を考え、使い勝手をよくしたいなら、今のどこが不便なのかを整理すると選びやすい。</p>\n<p class=\"hsh-article-note\">キャリーを選ぶ際は、候補の内寸・耐荷重・説明書を確認してください。長く保管していた物を使い直す場合も、布やベルト、骨組み、留め具に傷みがないか点検してから使いましょう。</p>\n<p>以前に電車で使った経験と、現在の持ち込み条件は分けて考えたい。大きなキャリーや車輪付きの製品が利用できるかは、使う鉄道会社のサイズ・形状・総重量などの規定を確認しよう。猫2匹が横になれる広さがあっても、そのまま電車へ持ち込めるという意味ではない。</p>\n<p>交通機関を利用する前の確認先：<a href=\"https://www.jreast.co.jp/kippu/20.html\" rel=\"noopener\">JR東日本の手回り品の案内</a>。他社を利用する場合は、その会社の案内をご確認ください。</p>\n<section class=\"hsh-practical\" aria-label=\"保存して使える資料\"><span class=\"hsh-anchor\" id=\"cat-carrier-checklist-checklist\" aria-hidden=\"true\"></span><h2>選ぶ前のチェックリスト</h2><ul><li>内寸と耐荷重を猫の体格と照らし合わせる</li><li>扉・留め具・本体に傷みがないか見る</li><li>猫とキャリーを合わせた重さを考える</li><li>洗える部分と乾かし方を調べる</li><li>移動方法と家での置き場所を決める</li></ul><p><a class=\"hsh-download\" href=\"https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/resources/cat-carrier-checklist.txt\" download>確認メモを保存（テキスト）</a></p><p>これから猫を迎える方には、別サイト「ねこのとなり」の<a href=\"https://hirogarushumi.com/neko-guide/articles/first-days/\">迎えた最初の数日の過ごし方</a>も参考になります。</p></section><nav class=\"hsh-next-read\" aria-label=\"関連する読みもの\"><h2>次に読むなら</h2><ul><li><a href=\"https://hirogarushumi.com/before-welcoming-cat/\">迎える前の買い物と部屋の確認</a></li><li><a href=\"https://hirogarushumi.com/cat-vet-routine/\">通院前に確認したいこと</a></li></ul></nav>",
+            "title": "猫用リュックキャリーがへこんだ話｜10年以上前の頑丈な物を使い直した理由",
+            "revision": "official-sources-20261105-v14",
+            "featured_image_id": 46,
+            "url": "https://hirogarushumi.com/cat-carrier-checklist/"
+          },
+          {
+            "slug": "highball-measure-and-adjust",
+            "id": 34,
+            "status": "publish",
+            "fingerprint": "67b96552d5d582fe279091fd38151dcbffc84b21d8509a8f08fa2d641dc3e479",
+            "content": "<p class=\"hsh-answer\">ハイボールが薄いと、ついウイスキーを足したくなる。でも、物足りないのが味なのか、炭酸の刺激なのかで、見直すところは変わる。まずは分量、氷、炭酸水の状態を分けて見て、次の一杯で何を変えるかを決めてみよう。</p>\n<p>分量も氷もグラスも一度に替えてしまうと、おいしくなっても何がよかったのか分からない。まずは注いだ量と作ってからの時間を確かめ、次に作るときには気になる条件を一つだけ変えてみると、違いを比べやすい。</p>\n<p>自分が普段入れるウイスキーは30mlで、炭酸水はできるだけ多め。銘柄を固定しているわけではなく、その日の気分で飲みたいものを選んでいる。グレンリベット12年の花みたいな香りも、グレンファークラス12年のぶどうパンみたいな香りも好きだ。ここからの分量表は、割合の考え方を説明するための計算例です。</p>\n<span class=\"hsh-anchor\" id=\"highball-measure-and-adjust-detail-1\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"highball-measure-and-adjust-detail-2\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"highball-measure-and-adjust-detail-7\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"highball-measure-and-adjust-0\" aria-hidden=\"true\"></span><h2>まず、ウイスキーと炭酸水を何mL入れたか</h2>\n<p>グラスの同じ高さまで注いでも、中に入る液体の量が毎回同じとは限らない。氷が大きくなれば、その分だけ場所を取る。比べたいときは、見た目の位置よりウイスキーと炭酸水を何mL使ったかを残してみよう。</p>\n<p>計算の例なら、ウイスキー20mLに炭酸水80mLで1：4になる。20を1とすると、80はその4倍ということ。液体は合計100mLで、氷そのものの大きさや、後から溶ける水はこの数字に含めていない。</p>\n<p>この1：4は、割合の読み方を説明するための例です。好みやボトルの度数によっても飲みやすい濃さは違うし、氷が溶ければ途中でも変わる。自分が使った分量を比べる目安にしてみよう。</p>\n<span class=\"hsh-anchor\" id=\"highball-measure-and-adjust-detail-3\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"highball-measure-and-adjust-detail-4\" aria-hidden=\"true\"></span><p>度数の計算例なら、40％のウイスキー30mLに炭酸水120mLを加えると、純アルコールは12mL、液体の合計は150mLで約8％。氷が溶ける前の単純計算です。炭酸水を増やしても、使ったウイスキーに含まれるアルコールの量は減りません。</p><span class=\"hsh-anchor\" id=\"highball-measure-and-adjust-1\" aria-hidden=\"true\"></span><h2>冷やし方と作る順番も、そろえておこう</h2>\n<p>用意するのはウイスキー、炭酸水、清潔な氷、グラス、量を測る道具。最初から専用品を全部買わなくてもいい。家にある飲食用の道具で、測りたい少量の目盛りが読めるかを見てみよう。</p>\n<p>炭酸水は冷やしておき、グラスは氷と液体を入れても余裕のある物にする。分量を比べるなら、作る順番もなるべくそろえる。毎回どこか違っていると、味の違いを考える材料が増えてしまうので。</p>\n<ol><li>グラスに清潔な氷を入れる。</li><li>量ったウイスキーを注ぐ。混ぜる場合は、この段階で静かに混ぜる。</li><li>量った炭酸水をゆっくり注ぐ。</li><li>必要なら軽く混ぜる。勢いよく何度もかき混ぜない。</li></ol>\n<figure class=\"wp-block-image size-large\"><a href=\"https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-whisky-diagram-bcd1912421.webp\"><img width=\"1024\" height=\"683\" src=\"https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-whisky-diagram-bcd1912421-1024x683.webp\" class=\"attachment-large size-large\" alt=\"ハイボールは量る、静かに注ぐ、メモする。分量20mLと80mLは比較のための一例。\" loading=\"lazy\" /></a><figcaption>分量を量り、炭酸水を静かに注ぎ、配合をメモします。図の分量は比較のための例です。</figcaption></figure>\n<span class=\"hsh-anchor\" id=\"highball-measure-and-adjust-detail-0\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"highball-measure-and-adjust-2\" aria-hidden=\"true\"></span><h2>味が薄いのか、炭酸が弱いのかを分けて考える</h2>\n<p>作った直後はよかったのに、少し置くと物足りなくなることもある。氷が溶けたり、炭酸の印象が変わったりするためだ。最初から薄かったのか、途中で変わったのかを覚えておくと、次に何を見るかを絞りやすい。</p>\n<table><thead><tr><th>気になること</th><th>確かめたいこと</th></tr></thead><tbody><tr><td>味が薄い</td><td>最初に入れた量、作ってからの時間、氷の溶け方</td></tr><tr><td>炭酸が弱い</td><td>炭酸水を開けてからの時間、冷やし方、混ぜ方</td></tr><tr><td>香りを感じにくい</td><td>飲み始めの温度、グラス、配合</td></tr></tbody></table>\n<p>次に作るときは、分量、氷、炭酸水のどれか一つを見直そう。全部替えると、よかった理由も残念だった理由も分からない。同じ日に何杯も試す必要はなく、別の日に少量で確かめる形で十分です。</p>\n<span class=\"hsh-anchor\" id=\"highball-measure-and-adjust-detail-6\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"highball-measure-and-adjust-3\" aria-hidden=\"true\"></span><h2>メモは「何を変えたか」が分かれば十分</h2>\n<p>メモには銘柄、度数、ウイスキーと炭酸水の量を書く。氷や冷やし方を替えたなら、そのことも一言。最後にどう感じたかを足すと、数字だけの記録より、次に作るときに思い出しやすい。</p>\n<blockquote><p>架空の記録例：「ウイスキー20mL、炭酸水80mL。最初はよかったが、氷が溶けると薄く感じた。次は分量を変えず、飲み始めてからの時間を見てみる」。何を試したかが分かれば、このくらいでも使える。</p></blockquote>\n<p>細かな香りの名前や点数まで書かなくていいと思う。飲みやすい、炭酸が弱い、少し濃かった。その日の自分に分かる言葉で残そう。後から読んで思い出せれば役に立つので、立派な感想文に仕上げなくても大丈夫だ。</p>\n<span class=\"hsh-anchor\" id=\"highball-measure-and-adjust-detail-5\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"highball-measure-and-adjust-detail-8\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"highball-measure-and-adjust-4\" aria-hidden=\"true\"></span><h2>配合やグラスに迷ったときは</h2>\n<h3>配合は好みや銘柄に合わせて調整する</h3>\n<p>同じ比率をずっと守る必要もない。銘柄や好みに合わせて調整してよいし、前の方が好きなら戻せばいい。好みの配合を探すための計量なので、数字に合わせることだけを目的にしないようにしたい。</p>\n<h3>専用グラスを買う前に容量を確認する</h3>\n<p>グラスも、まずは手持ちの物でいい。氷と飲み物を入れる余裕があり、無理なく持てるかを見よう。買い足すなら、容量だけでなく口の形や洗いやすさ、置く場所まで考えると、使う場面を想像しやすい。</p>\n<span class=\"hsh-anchor\" id=\"highball-measure-and-adjust-5\" aria-hidden=\"true\"></span><h2>次の1杯で迷わないよう、分量を残しておく</h2>\n<p>新しい銘柄や道具を買う前に、今の分量を一度残してみよう。注いだ量が分かれば、次の一杯でどこを変えるかも考えやすい。比較のために飲酒量を増やさず、試すのはまた別の日で構いません。</p>\n<p class=\"hsh-article-note\">お酒は20歳になってから。運転する予定があるときや、健康上の理由で飲酒を控える必要があるときは飲まないでください。写真と図は説明のためのイメージです。</p>\n<p>サントリーの作り方では、ウイスキー1に対してソーダ3〜4が一つの目安。グラスを冷やし、ソーダを加えた後は混ぜすぎない方法が紹介されている。この比率は一つの目安なので、好みに合わせて調整していい。まず今の配合を測ってから、どこを変えるか考えよう。</p>\n<p>銘柄の度数や特徴は、手元のラベルやメーカーの公式情報で確認できます。参考：<a href=\"https://www.suntory.co.jp/whisky/beginner/drink/highball.html\" rel=\"noopener\">サントリーのウイスキー情報</a>。</p>\n<section class=\"hsh-practical\" aria-label=\"保存して使える資料\"><span class=\"hsh-anchor\" id=\"highball-measure-and-adjust-checklist\" aria-hidden=\"true\"></span><h2>次の一杯に使う配合メモ</h2><ul><li>銘柄とラベルのアルコール度数</li><li>ウイスキーと炭酸水を入れた量</li><li>氷の量と作ってから飲むまでの時間</li><li>次に変えてみたい条件を1つ</li></ul><p><a class=\"hsh-download\" href=\"https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/resources/highball-note.txt\" download>確認メモを保存（テキスト）</a></p></section><h2 id=\"highball-measure-and-adjust-experience-20261030\">ハーフロックとハイボールは、割る物が違う</h2><p>ハーフロックは一般に、氷を入れたグラスでウイスキーと水を同量程度に合わせる飲み方。炭酸水で割るハイボールとは違う。自分も飲むけど、ここで挙げた一般的な割合が、そのまま毎回の自分の配合だということではない。</p><p>たとえば同じボトルでも、水で割ったときと炭酸水で割ったときでは、炭酸の刺激があるかどうかが違う。濃さを比べたいなら、何を何mL使ったかを残すと考えやすい。薄くしたからアルコールそのものが減るわけではない点は、どちらでも同じだ。</p><nav class=\"hsh-next-read\" aria-label=\"関連する読みもの\"><h2>次に読むなら</h2><ul><li><a href=\"https://hirogarushumi.com/glenlivet-12-first-bottles/\">グレンリベット12年を飲んだ感想</a></li><li><a href=\"https://hirogarushumi.com/single-malt-label-guide/\">ラベルで確認したいこと</a></li></ul></nav>",
+            "title": "ハイボールが薄い？ ウイスキーを足す前に見てみよう",
+            "revision": "official-sources-20261105-v14",
+            "featured_image_id": 69,
+            "url": "https://hirogarushumi.com/highball-measure-and-adjust/"
+          },
+          {
+            "slug": "csv-import-seven-checks",
+            "id": 35,
+            "status": "publish",
+            "fingerprint": "99e2e71964765e6c189aa4243448810e499bd8aaa01287afb3258f1a35bea26e",
+            "content": "<p class=\"hsh-answer\">CSVを開いたとき、番号の先頭の0が消えてしまうことがある。そんな取り込みミスを防ぐには、まず原本を残し、コピーで数行を試しておきたい。この記事では、文字コードや区切り、列の対応などを順に確かめながら、元の値を変えずに取り込む方法を紹介する。</p>\n<p>自分がしているのは、抽出や並べ替えを含むデータ加工の仕事。ChatGPT、Codex、Excel、スプレッドシートを使っていて、AIの抽出は一瞬で済むのでかなり楽だと感じている。ここからは、その仕事の詳細な再現ではなく、CSVを扱うときの一般的な確認点を7つ紹介します。</p>\n<p>以下の表と手順は、説明用の架空データを使った練習例です。実際の顧客情報は含めていません。AIや外部サービスへ仕事の情報を送る場合は、契約や業務のルールを先に確認してください。</p>\n<span class=\"hsh-anchor\" id=\"csv-import-seven-checks-detail-1\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"csv-import-seven-checks-0\" aria-hidden=\"true\"></span><h2>開く前に、元のファイルを残しておこう</h2>\n<p>受け取ったファイルはそのまま保管し、作業にはコピーを使う。編集した物しか残っていないと、おかしな値を見つけても、最初からそうだったのか自分が変えたのか分からなくなる。戻れる場所を、操作する前に作っておこう。</p>\n<p>元ファイルとコピーは、名前や保存先で見分けられるようにする。同じフォルダーに似た名前が並んでいたら、開く前にどれが原本かを確かめよう。保管先は、仕事で使用を許可された場所にしてください。個人用の保存先へ勝手に複製しないことも大事です。</p>\n<figure class=\"wp-block-image size-large\"><a href=\"https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-csv-diagram-1656d0fa64.webp\"><img width=\"1024\" height=\"683\" src=\"https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-csv-diagram-1656d0fa64-1024x683.webp\" class=\"attachment-large size-large\" alt=\"元ファイル保存、コピーで確認、少量テスト、結果・件数を記録する流れと7つの確認項目。\" loading=\"lazy\" /></a><figcaption>元のファイルを残し、コピーを使って内容を確認する手順を示した図です。</figcaption></figure>\n<span class=\"hsh-anchor\" id=\"csv-import-seven-checks-detail-0\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"csv-import-seven-checks-detail-2\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"csv-import-seven-checks-detail-3\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"csv-import-seven-checks-detail-10\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"csv-import-seven-checks-1\" aria-hidden=\"true\"></span><h2>1．文字コードと区切り文字</h2>\n<p>ファイル名が.csvでも、同じ設定ですべて正しく読めるとは限らない。文字コードや区切り文字の指定が違うことがある。日本語が文字化けしていたら、すぐに文字を直して保存せず、まず開くときの指定と取り込み先の仕様を確認しよう。</p>\n<p>開き方の指定だけが違うなら、元ファイルを変えずに読み直せる場合がある。そこで上書きすると、元の文字を失うこともあるので注意したい。コピーで設定を試し、読めた後も日本語や記号が保たれているかを見ておこう。</p>\n<p>たとえば架空の行を <code>001,\"A,B商店\",1200</code> と書いた場合、引用符の中のカンマは名前の一部。区切りとして数えるのは、その外側のカンマです。実際の読み込みでは取り込み先のCSV仕様も確認してください。</p><span class=\"hsh-anchor\" id=\"csv-import-seven-checks-2\" aria-hidden=\"true\"></span><h2>2．どの列をどの項目に入れるか</h2>\n<p>元の表では氏名が1列でも、取り込み先では姓と名が別ということがある。並んでいる順番が似ているからと、そのまま対応させないようにしよう。列の名前だけでなく、入っている値が何を意味するかまで合わせておく必要がある。</p>\n<table><thead><tr><th>受け取った列</th><th>取り込み先の項目</th><th>確認すること</th></tr></thead><tbody><tr><td>顧客番号</td><td>customer_id</td><td>先頭の0を残すため、文字列として扱うか</td></tr><tr><td>登録日</td><td>registered_date</td><td>日付の書き方、時刻の有無</td></tr><tr><td>電話番号</td><td>phone</td><td>先頭の0、ハイフンの扱い</td></tr></tbody></table>\n<p>次の表は説明用の架空例です。実際のシステムが列の位置で判断するのか、見出しの名前で判断するのかは、仕様で確かめてください。位置で決まるなら列の並べ替え、名前で決まるなら表記の違いが問題になることもある。見本と同じ見た目かだけで確認を終えないようにしよう。</p>\n<span class=\"hsh-anchor\" id=\"csv-import-seven-checks-detail-4\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"csv-import-seven-checks-3\" aria-hidden=\"true\"></span><h2>3．先頭の0や長い番号が変わっていないか</h2>\n<p>123個という数と、00123という番号は同じようには扱えない。番号では先頭の0も必要な文字だ。数字だけでできていても、計算するための数値とは限らないので、項目の意味を先に確かめてから読み込み方を選ぼう。</p>\n<p>表計算ソフトで読むなら、番号の列を文字列として扱うなど、そのソフトの取り込み方法を使う。画面の表示に0があるだけで安心せず、保存したCSVや登録後にも残っているか確認しよう。長い番号は、丸めや指数表記への変化にも気を付けたい。</p>\n<span class=\"hsh-anchor\" id=\"csv-import-seven-checks-detail-5\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"csv-import-seven-checks-4\" aria-hidden=\"true\"></span><h2>4．日付の書き方が取り込み先に合っているか</h2>\n<p>2026/10/01と2026-10-01は、人には同じ日だと分かる。でも、システムが両方読めるかは別の話。取り込み先が求める書式を確認してから直そう。自分の見慣れた形へ変えて、それで正しいと決めないようにしたい。</p>\n<p>書式だけでなく、存在する日付かも見る。時刻を扱うなら、どの地域の時間なのかも必要になる。元の値の意味が分からない場合は、無理に変換して進めず確認する。日付らしい文字列へ直っていても、意味まで合っているとは限らない。</p>\n<span class=\"hsh-anchor\" id=\"csv-import-seven-checks-detail-6\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"csv-import-seven-checks-5\" aria-hidden=\"true\"></span><h2>5．空欄を含むデータがどう処理されるか</h2>\n<p>空欄は、まだ分からないのか、該当しないのか、入力し忘れたのか。表を見ただけでは決められないことがある。特に更新用のデータでは、空欄を送ると今ある値を消すのか、何も変えないのかを確認しないと、意図しない更新につながる。</p>\n<p>必須項目が空いていても、通すためだけの仮の値を勝手に入れないでください。提供元へ確認し、保留する必要がある行は取り込み対象から分けておく。空欄をどう扱うかは、そのシステムの仕様とデータの意味の両方から決めよう。</p>\n<span class=\"hsh-anchor\" id=\"csv-import-seven-checks-detail-7\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"csv-import-seven-checks-6\" aria-hidden=\"true\"></span><h2>6．何を重複と判断するか</h2>\n<p>同じ名前が2行あっても、同じ人だとは限らない。反対に、表記が少し違っていても同じ人かもしれない。消す前に、何を手掛かりに同じデータだと判断するのかを決めておこう。見た目だけで重複を削除すると、必要な行までなくしてしまう。</p>\n<p>再度取り込んだときの動作も確認する。新規追加になるのか、既存の値を更新するのか、同じデータとして止まるのか。失敗した分をやり直す際にも、この違いは大事だ。操作前に分かるよう、仕様書や担当者へ確認しておきたい。</p>\n<span class=\"hsh-anchor\" id=\"csv-import-seven-checks-detail-8\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"csv-import-seven-checks-detail-9\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"csv-import-seven-checks-7\" aria-hidden=\"true\"></span><h2>7．取り込み後の件数とエラー</h2>\n<p>完了の表示が出たら、次は結果の内訳を見る。受け取った件数のうち、対象外、保留、成功、エラーは何件か。処理が終わった画面だけでは、必要な行がすべて入ったか分からない。どこへ行ったか説明できない行を残さないようにしよう。</p>\n<p>CSVでは、一つの値の中に改行を含めることがある。そのため、テキストの見た目の行数と、データの件数が一致するとは限らない。引用符で囲まれた値を正しく読む方法で数えよう。見出し行を含めるかどうかも、比較する数字同士でそろえておく。</p>\n<p>試せる環境があれば、許可された少量のデータで先に確認する。失敗後にやり直す場合は、すでに登録できた行もあるかを調べてから。小さな操作でも、本番なら別の処理に影響することがあるので、テストしてよい範囲を先に決めてください。</p>\n<span class=\"hsh-anchor\" id=\"csv-import-seven-checks-detail-13\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"csv-import-seven-checks-8\" aria-hidden=\"true\"></span><h2>ExcelやAIを使うときの注意点</h2>\n<h3>Excelでの表示と保存されたデータの違い</h3>\n<p>Excelで正しく見えていても、保存したファイルが同じとは限らない。表示形式で0を付けているだけの場合や、日付を別の値として保存する場合もある。画面、保存後、取り込み後を比べると、どの段階で変わったかを探しやすい。</p>\n<h3>AIにデータを渡す前の確認</h3>\n<p>AIへ渡してよいか分からない顧客データは、送信しない。手順の相談なら、架空の数行でもできることがある。氏名だけを置き換えても、ほかの列から情報が分かる場合があるので、実データを少し変えただけで安全だとは決めないでください。</p>\n<span class=\"hsh-anchor\" id=\"csv-import-seven-checks-detail-11\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"csv-import-seven-checks-detail-12\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"csv-import-seven-checks-detail-14\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"csv-import-seven-checks-9\" aria-hidden=\"true\"></span><h2>どこまで終わったか、後で分かるように</h2>\n<p>確認が済んだら、使ったファイルと日時、結果を残しておこう。後でエラーが見つかったとき、どこまで終わっていたかを最初から調べずに済む。自分だけが覚えている状態にせず、次に見る人が分かる記録にしたい。</p>\n<p>まずは取り込み先の決まりを読んで、分からない項目を書き出してみよう。全部を自動化する前に、数行を正しく入れられるかを確かめる。欲しい結果がまだ分からないまま速く処理しても、確認する方が追い付かなくなってしまう。</p>\n<p class=\"hsh-article-note\">このページの表とファイルは、説明用に作った架空サンプルです。実際の顧客情報や取引情報は使っていません。図は作業の流れを示すためのものなので、特定のシステムの操作画面としては扱わないでください。</p>\n<p>CSVの引用符や改行について詳しく調べる場合は、<a href=\"https://www.rfc-editor.org/rfc/rfc4180\" rel=\"noopener\">RFC 4180（英語）</a>が参考になります。実際の作業では、取り込み先の仕様を優先してください。</p>\n<section class=\"hsh-practical\" aria-label=\"保存して使える資料\"><span class=\"hsh-anchor\" id=\"csv-import-seven-checks-checklist\" aria-hidden=\"true\"></span><h2>取り込み前の確認メモ</h2><ul><li>元ファイルと作業用コピーの保存先</li><li>文字コードと区切り文字</li><li>列と取り込み先の項目の対応</li><li>先頭の0・長い番号・日付の扱い</li><li>空欄・重複・再実行時の扱い</li><li>取り込み前後とエラーの件数</li></ul><p><a class=\"hsh-download\" href=\"https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/resources/csv-import-checklist.txt\" download>確認メモを保存（テキスト）</a></p><p><a href=\"https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/resources/csv-practice.csv\" download>架空の練習用CSVを保存</a>。先頭の0を保つため、開くときは識別番号の列を文字列として読み込んでください。</p></section><p>Excelで先頭の0を残したい列は、取り込む段階で文字列として扱う。Microsoftの案内でも、CSVをそのまま開く方法と、［データ］から［テキストまたはCSVから］で取り込む方法が分けられている。後から表示形式だけを変えても、読み込み時に消えた0が戻るとは限らない。</p>\n<p class=\"hsh-source-note\">Excelの操作は<a href=\"https://support.microsoft.com/ja-jp/office/%E3%83%86%E3%82%AD%E3%82%B9%E3%83%88-txt-%E3%81%BE%E3%81%9F%E3%81%AF-csv-%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E3%82%A4%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%88%E3%81%BE%E3%81%9F%E3%81%AF%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%88-5250ac4c-663c-47ce-937b-339e391393ba\">Microsoftのテキスト・CSV取り込みの案内</a>で確認。画面名や使える機能はExcelのバージョンによって異なる。</p>\n<nav class=\"hsh-next-read\" aria-label=\"関連する読みもの\"><h2>次に読むなら</h2><ul><li><a href=\"https://hirogarushumi.com/ai-data-extraction-checks/\">AIにデータ抽出を頼んだ後の確認</a></li><li><a href=\"https://hirogarushumi.com/it-data-work-flow/\">自分がしているデータ加工の仕事</a></li></ul></nav>",
+            "title": "CSVを取り込む前に。0や空欄を変えないための7つの確認",
+            "revision": "official-sources-20261105-v14",
+            "featured_image_id": 70,
+            "url": "https://hirogarushumi.com/csv-import-seven-checks/"
+          }
+        ],
+        "target_revision": "official-sources-20261105-v14"
+      }
+    },
+    {
+      "slug": "highball-measure-and-adjust",
+      "operation": "managed-article",
+      "result": {
+        "articles": [
+          {
+            "slug": "cat-carrier-checklist",
+            "id": 33,
+            "status": "publish",
+            "fingerprint": "8ba0f535a71c76d518bdcdec8426c4f409188fa6885d7470de8e8449ed73fa89",
+            "content": "<p class=\"hsh-answer\">約1年前、まんもす用に6,000円くらいのリュック型キャリーを買った。持ち運びやすかったけれど、まんもすを入れると上部がへこむようになった。そこで、10年以上前から持っていた頑丈なキャリーを使い直すことにした。同じリュック型でも、猫を入れたときの形と運びやすさは違った。</p>\n\n<span class=\"hsh-anchor\" id=\"cat-carrier-checklist-detail-2\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"cat-carrier-checklist-0\" aria-hidden=\"true\"></span><h2 id=\"cat-carrier-backpack-experience\">約6,000円のリュックは、まんもすを入れると上部がへこんだ</h2>\n<p>新しい方も、骨組みはしっかりしている印象で、持ち運びもしやすかった。ただ、まんもすを入れて使ううちに、本体の上の方がへこむようになった。まんもすの体重は現在5.5kg。</p>\n<p>肩ベルトと本体がつながる辺りに負荷がかかったのかな、とは思うけど、原因までは分からない。</p>\n<h2 id=\"carrier-old-frame\">取り出したのは、10年以上前のキャリーだった</h2>\n<p>次に使ったのは、新しく買った物ではない。以前、何匹もの猫と暮らしていた頃に購入し、しまってあったキャリーを出してきた。買ったのは10年以上前で、商品名や値段はもう覚えていない。</p>\n<p>こちらも布製のリュック型だけど、上部だけでなく全体に硬い骨組みがある。まんもすを入れてもへこまず、落ち着いて過ごしている。同じ布製、同じリュック型でも、実際に猫を入れたときの違いは大きかった。</p>\n<p>昔は4kgの猫2匹を一緒に入れたこともあり、2匹とも横になれるくらいの広さがあった。ただ、これはうちで使ったときの話。メーカーが定める頭数や耐荷重を示すものではないので、広そうに見えるだけで複数の猫を入れてよいとは判断しないでほしい。</p>\n<h2 id=\"carrier-train-and-wheels\">背負うことも、車輪で引っ張ることもできる</h2>\n<p>古い方は、背負っても運べるし、車輪を使って引っ張ることもできる。購入した頃は電車でも車でも使っていて、電車で移動することも考えて選んだ物だった。自分にとっては、猫を入れたときの安定感と運び方を選べるところが使いやすい。</p>\n<p>一方で、頑丈な分だけ本体は重い。自分には快適でも、持つ人の体力や移動経路によっては負担になると思う。車輪で引けるからといって、持ち上げる場面までなくなるわけではないので、猫と荷物を合わせた重さで考えたい。</p>\n<p>電車で移動していた頃には、猫の入ったキャリーを人に蹴られたこともある。誰もが動物に配慮してくれるとは限らないと感じた経験だ。ただし、この経験だけで、頑丈なキャリーならどんな衝撃にも耐えられると言えるわけではない。</p>\n<h2 id=\"carrier-evacuation-preparation\">避難先での居場所も考えて、餌やシーツを常備</h2>\n<p>普段の移動だけでなく、災害時のことも考えていた。予備の餌やシーツ、タオルなども常備できたので、猫を連れ出すときの備えとしてよかった。体育館のような避難先でも、猫にとっての居場所を用意できるのは大きいと思う。</p>\n<p>このキャリーは広げて大きくするタイプではなく、もともとの大きさのまま使う物。実際の避難ではまだ使っていない。避難所によって動物の受け入れ方や過ごせる場所は異なるので、地域の案内も確かめておきたい。</p>\n\n<p>この経験から、次に選ぶならどこを見るかも整理してみた。形の安定だけでなく、出し入れや手入れ、実際に運ぶ重さも比べたい。</p>\n<h2>1．猫を出し入れしやすいか</h2>\n<p>キャリーには、前の扉から出し入れする物、上が開く物、上下の本体を外せる物がある。大きさが似ていても、猫を入れるときや診察で開けるときの扱い方は違う。</p>\n<p>入口の幅だけでなく、どこまで開くのかを見てみよう。猫が奥にいるときにも開けやすいか、開いた扉を支えておく必要があるか。写真だけでは開けやすさまで分からないので、店頭で実物を見られるなら開閉を試してみよう。</p>\n<p>通院用に買うなら、動物病院で使いやすい形を聞いてみる方法もある。診察の際の出し入れはスタッフの指示に従ってください。出てこない猫を、無理に引っ張り出すことを前提に選ばないようにしたい。</p>\n<span class=\"hsh-anchor\" id=\"cat-carrier-checklist-detail-3\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"cat-carrier-checklist-detail-9\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"cat-carrier-checklist-1\" aria-hidden=\"true\"></span><h2>2．扉や留め具がきちんと閉まるか</h2>\n<p>扉を閉めたら、ロックがかかっているか、隙間が残っていないかを見る。本体を上下につなぐ留め具や、ファスナーも忘れずに。閉める場所がいくつあるのかを先に覚えておくと、一か所だけの閉め忘れにも気付きやすい。</p>\n<p>ひび、変形、欠けた部品があれば、そのまま猫を入れずメーカーへ相談してください。自分で固定具を足して使えると決めず、修理や部品交換ができるかを確認する。組み立てと固定は、その製品の説明書に従います。</p>\n<!--HSH_IMAGE:cat-diagram-->\n<span class=\"hsh-anchor\" id=\"cat-carrier-checklist-detail-0\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"cat-carrier-checklist-detail-4\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"cat-carrier-checklist-detail-7\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"cat-carrier-checklist-2\" aria-hidden=\"true\"></span><h2>3．猫を入れても無理なく運べるか</h2>\n<p>本体が軽いだけでなく、猫を入れたときにも形が保たれるかを確認しよう。猫の体重にキャリー本体の重さも加わるので、自分が運べる総重量かも確認しよう。</p>\n<p>持ち手の幅や形も試してみよう。細い持ち手が手に食い込みそうか、体から離れすぎず持てるか。徒歩で運ぶなら階段や坂道もあるかもしれない。車移動なら、駐車場から受付まで歩くことも忘れずに。</p>\n<table><thead><tr><th>移動方法</th><th>確認するところ</th></tr></thead><tbody><tr><td>徒歩</td><td>猫を含めた総重量、持ち手の幅、階段での運びやすさ</td></tr><tr><td>車</td><td>車内に置ける大きさか、製品と車両に合った固定ができるか</td></tr><tr><td>電車・バスなど</td><td>利用する会社の持込み条件に合うサイズ・形状か</td></tr></tbody></table>\n<p>電車やバスを利用するなら、先にその会社の持ち込み条件を読む。商品に「ペット用」と書いてあっても、利用する路線の規定に合うとは限らない。容器の形、サイズ、重さ、必要な料金を確認してから候補を比べよう。</p>\n<span class=\"hsh-anchor\" id=\"cat-carrier-checklist-detail-5\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"cat-carrier-checklist-3\" aria-hidden=\"true\"></span><h2>4．汚れたときに掃除しやすいか</h2>\n<p>底板やマットを外せるか、隅にたまった汚れまで手が届くか。使っている姿の写真では目立たないけど、掃除のしやすさも見ておきたい。洗える部分と洗い方は、素材の印象で決めず説明書で確認してください。</p>\n<p>タオルなどを敷くと、その分だけ中は狭くなる。厚く重ねすぎて猫が窮屈にならないか、扉や留め具に布を挟まないかも見る。猫を入れる前に一度敷いて、きちんと閉められるか試しておこう。</p>\n<span class=\"hsh-anchor\" id=\"cat-carrier-checklist-detail-6\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"cat-carrier-checklist-4\" aria-hidden=\"true\"></span><h2>5．家のどこに置くか</h2>\n<p>折り畳める物は収納しやすそうだけど、使うときに取り出して組み立てる時間もかかる。どこへしまい、どこで準備するかまで決めておくと、通院の日に探し回らずに済む。取り外した部品も、本体と一緒に保管しておこう。</p>\n<p>部屋に出しておくなら、倒れにくい安定した場所に。扉を開けたまま使ってよいかも説明書を見てください。中に入ってほしくても、猫を押し込むのは避けよう。慣れるまでの時間も、猫によって違う。</p>\n<span class=\"hsh-anchor\" id=\"cat-carrier-checklist-detail-1\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"cat-carrier-checklist-detail-8\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"cat-carrier-checklist-5\" aria-hidden=\"true\"></span><h2>サイズと価格で迷ったときは</h2>\n<h3>猫の体重だけでサイズを決めない</h3>\n<p>耐荷重の表示と、猫が入る広さは両方確認する。重さの条件を満たしていても、体格に対して中が窮屈なことはある。体重だけでサイズを決めず、内寸とメーカーのサイズ選びの案内も合わせて見ておこう。</p>\n<h3>価格だけで判断しない</h3>\n<p>値段で迷ったら、何を改善したくて買うのかを考えてみよう。出し入れなのか、持ちやすさなのか、掃除なのか。欲しい機能が一つはっきりすると、似た形の商品でも違いを見つけやすくなる。</p>\n<span class=\"hsh-anchor\" id=\"cat-carrier-checklist-6\" aria-hidden=\"true\"></span><h2>買い替える前に、今のどこが不便か考えてみよう</h2>\n<p>自分の場合は、新しく買ったリュックがへこんだことで、しまっていた古いキャリーを使い直すことになった。重さはあるけれど、まんもすを入れても形が保たれ、背負う・引くの両方で運べる点が今の自分には合っている。</p>\n<p>今のキャリーに不具合がなく、困ってもいないなら、すぐ買い替えなくてもいい。まず扉、留め具、持ち手を点検してみよう。不具合があるなら修理や交換を考え、使い勝手をよくしたいなら、今のどこが不便なのかを整理すると選びやすい。</p>\n<p class=\"hsh-article-note\">キャリーを選ぶ際は、候補の内寸・耐荷重・説明書を確認してください。長く保管していた物を使い直す場合も、布やベルト、骨組み、留め具に傷みがないか点検してから使いましょう。</p>\n<p>以前に電車で使った経験と、現在の持ち込み条件は分けて考えたい。大きなキャリーや車輪付きの製品が利用できるかは、使う鉄道会社のサイズ・形状・総重量などの規定を確認しよう。猫2匹が横になれる広さがあっても、そのまま電車へ持ち込めるという意味ではない。</p>\n<p>交通機関を利用する前の確認先：<a href=\"https://www.jreast.co.jp/kippu/20.html\" rel=\"noopener\">JR東日本の手回り品の案内</a>。他社を利用する場合は、その会社の案内をご確認ください。</p>\n<section class=\"hsh-practical\" aria-label=\"保存して使える資料\"><span class=\"hsh-anchor\" id=\"cat-carrier-checklist-checklist\" aria-hidden=\"true\"></span><h2>選ぶ前のチェックリスト</h2><ul><li>内寸と耐荷重を猫の体格と照らし合わせる</li><li>扉・留め具・本体に傷みがないか見る</li><li>猫とキャリーを合わせた重さを考える</li><li>洗える部分と乾かし方を調べる</li><li>移動方法と家での置き場所を決める</li></ul><p><a class=\"hsh-download\" href=\"https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/resources/cat-carrier-checklist.txt\" download>確認メモを保存（テキスト）</a></p><p>これから猫を迎える方には、別サイト「ねこのとなり」の<a href=\"https://hirogarushumi.com/neko-guide/articles/first-days/\">迎えた最初の数日の過ごし方</a>も参考になります。</p></section><nav class=\"hsh-next-read\" aria-label=\"関連する読みもの\"><h2>次に読むなら</h2><ul><li><a href=\"https://hirogarushumi.com/before-welcoming-cat/\">迎える前の買い物と部屋の確認</a></li><li><a href=\"https://hirogarushumi.com/cat-vet-routine/\">通院前に確認したいこと</a></li></ul></nav>",
+            "title": "猫用リュックキャリーがへこんだ話｜10年以上前の頑丈な物を使い直した理由",
+            "revision": "official-sources-20261105-v14",
+            "featured_image_id": 46,
+            "url": "https://hirogarushumi.com/cat-carrier-checklist/"
+          },
+          {
+            "slug": "highball-measure-and-adjust",
+            "id": 34,
+            "status": "publish",
+            "fingerprint": "a56ac362c1f048ea21d72b4d6d93d6c8db7d8fedc00264b81dc5387c5cb619a6",
+            "content": "<p class=\"hsh-answer\">ハイボールが薄いと、ついウイスキーを足したくなる。でも、物足りないのが味なのか、炭酸の刺激なのかで、見直すところは変わる。分量や氷、炭酸水の状態を確かめると、次に作るときの調整もしやすくなる。</p>\n<p>分量も氷もグラスも一度に替えてしまうと、おいしくなっても何がよかったのか分からない。まずは注いだ量と作ってからの時間を確かめ、次に作るときには気になる条件を一つだけ変えてみると、違いを比べやすい。</p>\n<p>自分が普段入れるウイスキーは30mlで、炭酸水はできるだけ多め。銘柄を固定しているわけではなく、その日の気分で飲みたいものを選んでいる。グレンリベット12年の花みたいな香りも、グレンファークラス12年のぶどうパンみたいな香りも好きだ。ここからの分量表は、割合の考え方を説明するための計算例です。</p>\n<span class=\"hsh-anchor\" id=\"highball-measure-and-adjust-detail-1\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"highball-measure-and-adjust-detail-2\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"highball-measure-and-adjust-detail-7\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"highball-measure-and-adjust-0\" aria-hidden=\"true\"></span><h2>まず、ウイスキーと炭酸水を何mL入れたか</h2>\n<p>グラスの同じ高さまで注いでも、中に入る液体の量が毎回同じとは限らない。氷が大きくなれば、その分だけ場所を取る。比べたいときは、見た目の位置よりウイスキーと炭酸水を何mL使ったかを残してみよう。</p>\n<p>計算の例なら、ウイスキー20mLに炭酸水80mLで1：4になる。20を1とすると、80はその4倍ということ。液体は合計100mLで、氷そのものの大きさや、後から溶ける水はこの数字に含めていない。</p>\n<p>この1：4は、割合の読み方を説明するための例です。好みやボトルの度数によっても飲みやすい濃さは違うし、氷が溶ければ途中でも変わる。自分が使った分量を比べる目安にしてみよう。</p>\n<span class=\"hsh-anchor\" id=\"highball-measure-and-adjust-detail-3\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"highball-measure-and-adjust-detail-4\" aria-hidden=\"true\"></span><p>度数の計算例なら、40％のウイスキー30mLに炭酸水120mLを加えると、純アルコールは12mL、液体の合計は150mLで約8％。氷が溶ける前の単純計算です。炭酸水を増やしても、使ったウイスキーに含まれるアルコールの量は減りません。</p><span class=\"hsh-anchor\" id=\"highball-measure-and-adjust-1\" aria-hidden=\"true\"></span><h2>冷やし方と作る順番も、そろえておこう</h2>\n<p>用意するのはウイスキー、炭酸水、清潔な氷、グラス、量を測る道具。最初から専用品を全部買わなくてもいい。家にある飲食用の道具で、使いたい量を測れるか確認しよう。</p>\n<p>炭酸水は冷やしておき、グラスは氷と液体を入れても余裕のある物にする。分量を比べるなら、作る順番もなるべくそろえる。作り方まで毎回変わると、何が味に影響したのか分かりにくくなる。</p>\n<ol><li>グラスに清潔な氷を入れる。</li><li>量ったウイスキーを注ぐ。混ぜる場合は、この段階で静かに混ぜる。</li><li>量った炭酸水をゆっくり注ぐ。</li><li>必要なら軽く混ぜる。勢いよく何度もかき混ぜない。</li></ol>\n<figure class=\"wp-block-image size-large\"><a href=\"https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-whisky-diagram-bcd1912421.webp\"><img width=\"1024\" height=\"683\" src=\"https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-whisky-diagram-bcd1912421-1024x683.webp\" class=\"attachment-large size-large\" alt=\"ハイボールは量る、静かに注ぐ、メモする。分量20mLと80mLは比較のための一例。\" loading=\"lazy\" /></a><figcaption>分量を量り、炭酸水を静かに注ぎ、配合をメモします。図の分量は比較のための例です。</figcaption></figure>\n<span class=\"hsh-anchor\" id=\"highball-measure-and-adjust-detail-0\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"highball-measure-and-adjust-2\" aria-hidden=\"true\"></span><h2>味が薄いのか、炭酸が弱いのかを分けて考える</h2>\n<p>作った直後はよかったのに、少し置くと物足りなくなることもある。氷が溶けたり、炭酸の印象が変わったりするためだ。最初から薄かったのか、途中で変わったのかを覚えておくと、次に何を見るかを絞りやすい。</p>\n<table><thead><tr><th>気になること</th><th>確かめたいこと</th></tr></thead><tbody><tr><td>味が薄い</td><td>最初に入れた量、作ってからの時間、氷の溶け方</td></tr><tr><td>炭酸が弱い</td><td>炭酸水を開けてからの時間、冷やし方、混ぜ方</td></tr><tr><td>香りを感じにくい</td><td>飲み始めの温度、グラス、配合</td></tr></tbody></table>\n<p>次に作るときは、分量、氷、炭酸水のどれか一つを見直そう。全部替えると、よかった理由も残念だった理由も分からない。同じ日に何杯も試す必要はなく、別の日に少量で確かめる形で十分です。</p>\n<span class=\"hsh-anchor\" id=\"highball-measure-and-adjust-detail-6\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"highball-measure-and-adjust-3\" aria-hidden=\"true\"></span><h2>メモは「何を変えたか」が分かれば十分</h2>\n<p>メモには銘柄、度数、ウイスキーと炭酸水の量を書く。氷や冷やし方を替えたときは、その内容も一言添える。最後にどう感じたかを足すと、数字だけの記録より、次に作るときに思い出しやすい。</p>\n<blockquote><p>架空の記録例：「ウイスキー20mL、炭酸水80mL。最初はよかったが、氷が溶けると薄く感じた。次は分量を変えず、飲み始めてからの時間を見てみる」。何を試したかが分かれば、このくらいでも使える。</p></blockquote>\n<p>細かな香りの名前や点数まで書かなくていいと思う。飲みやすい、炭酸が弱い、少し濃かった。その日の自分に分かる言葉で残そう。後から読んで思い出せれば役に立つので、立派な感想文に仕上げなくても大丈夫だ。</p>\n<span class=\"hsh-anchor\" id=\"highball-measure-and-adjust-detail-5\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"highball-measure-and-adjust-detail-8\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"highball-measure-and-adjust-4\" aria-hidden=\"true\"></span><h2>配合やグラスに迷ったときは</h2>\n<h3>配合は好みや銘柄に合わせて調整する</h3>\n<p>同じ比率をずっと守る必要もない。銘柄や好みに合わせて調整してよいし、前の方が好きなら戻せばいい。好みの配合を探すための計量なので、数字に合わせることだけを目的にしないようにしたい。</p>\n<h3>専用グラスを買う前に容量を確認する</h3>\n<p>グラスも、まずは手持ちの物でいい。氷と飲み物を入れる余裕があり、無理なく持てるかを見よう。買い足すなら、容量だけでなく口の形や洗いやすさ、置く場所まで考えると、使う場面を想像しやすい。</p>\n<span class=\"hsh-anchor\" id=\"highball-measure-and-adjust-5\" aria-hidden=\"true\"></span><h2>次の1杯で迷わないよう、分量を残しておく</h2>\n<p>新しい銘柄や道具を買う前に、今の分量を一度残してみよう。注いだ量が分かれば、次の一杯でどこを変えるかも考えやすい。比較のために飲酒量を増やさず、試すのはまた別の日で構いません。</p>\n<p class=\"hsh-article-note\">お酒は20歳になってから。運転する予定があるときや、健康上の理由で飲酒を控える必要があるときは飲まないでください。</p>\n<p>サントリーの作り方では、ウイスキー1に対してソーダ3〜4が一つの目安。グラスを冷やし、ソーダを加えた後は混ぜすぎない方法が紹介されている。この比率は一つの目安なので、好みに合わせて調整していい。まず今の配合を測ってから、どこを変えるか考えよう。</p>\n<p>銘柄の度数や特徴は、手元のラベルやメーカーの公式情報で確認できます。参考：<a href=\"https://www.suntory.co.jp/whisky/beginner/drink/highball.html\" rel=\"noopener\">サントリーのウイスキー情報</a>。</p>\n<section class=\"hsh-practical\" aria-label=\"保存して使える資料\"><span class=\"hsh-anchor\" id=\"highball-measure-and-adjust-checklist\" aria-hidden=\"true\"></span><h2>次の一杯に使う配合メモ</h2><ul><li>銘柄とラベルのアルコール度数</li><li>ウイスキーと炭酸水を入れた量</li><li>氷の量と作ってから飲むまでの時間</li><li>次に変えてみたい条件を1つ</li></ul><p><a class=\"hsh-download\" href=\"https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/resources/highball-note.txt\" download>確認メモを保存（テキスト）</a></p></section><h2 id=\"highball-measure-and-adjust-experience-20261030\">ハーフロックとハイボールは、割る物が違う</h2><p>ハーフロックは一般に、氷を入れたグラスでウイスキーと水を同量程度に合わせる飲み方。炭酸水で割るハイボールとは違う。自分もハーフロックで飲むことがある。</p><p>たとえば同じボトルでも、水で割ったときと炭酸水で割ったときでは、炭酸の刺激があるかどうかが違う。濃さを比べたいなら、何を何mL使ったかを残すと考えやすい。薄くしたからアルコールそのものが減るわけではない点は、どちらでも同じだ。</p><nav class=\"hsh-next-read\" aria-label=\"関連する読みもの\"><h2>次に読むなら</h2><ul><li><a href=\"https://hirogarushumi.com/glenlivet-12-first-bottles/\">グレンリベット12年を飲んだ感想</a></li><li><a href=\"https://hirogarushumi.com/single-malt-label-guide/\">ラベルで確認したいこと</a></li></ul></nav>",
+            "title": "ハイボールが薄い？ ウイスキーを足す前に見てみよう",
+            "revision": "official-sources-20261105-v14",
+            "featured_image_id": 69,
+            "url": "https://hirogarushumi.com/highball-measure-and-adjust/"
+          },
+          {
+            "slug": "csv-import-seven-checks",
+            "id": 35,
+            "status": "publish",
+            "fingerprint": "99e2e71964765e6c189aa4243448810e499bd8aaa01287afb3258f1a35bea26e",
+            "content": "<p class=\"hsh-answer\">CSVを開いたとき、番号の先頭の0が消えてしまうことがある。そんな取り込みミスを防ぐには、まず原本を残し、コピーで数行を試しておきたい。この記事では、文字コードや区切り、列の対応などを順に確かめながら、元の値を変えずに取り込む方法を紹介する。</p>\n<p>自分がしているのは、抽出や並べ替えを含むデータ加工の仕事。ChatGPT、Codex、Excel、スプレッドシートを使っていて、AIの抽出は一瞬で済むのでかなり楽だと感じている。ここからは、その仕事の詳細な再現ではなく、CSVを扱うときの一般的な確認点を7つ紹介します。</p>\n<p>以下の表と手順は、説明用の架空データを使った練習例です。実際の顧客情報は含めていません。AIや外部サービスへ仕事の情報を送る場合は、契約や業務のルールを先に確認してください。</p>\n<span class=\"hsh-anchor\" id=\"csv-import-seven-checks-detail-1\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"csv-import-seven-checks-0\" aria-hidden=\"true\"></span><h2>開く前に、元のファイルを残しておこう</h2>\n<p>受け取ったファイルはそのまま保管し、作業にはコピーを使う。編集した物しか残っていないと、おかしな値を見つけても、最初からそうだったのか自分が変えたのか分からなくなる。戻れる場所を、操作する前に作っておこう。</p>\n<p>元ファイルとコピーは、名前や保存先で見分けられるようにする。同じフォルダーに似た名前が並んでいたら、開く前にどれが原本かを確かめよう。保管先は、仕事で使用を許可された場所にしてください。個人用の保存先へ勝手に複製しないことも大事です。</p>\n<figure class=\"wp-block-image size-large\"><a href=\"https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-csv-diagram-1656d0fa64.webp\"><img width=\"1024\" height=\"683\" src=\"https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-csv-diagram-1656d0fa64-1024x683.webp\" class=\"attachment-large size-large\" alt=\"元ファイル保存、コピーで確認、少量テスト、結果・件数を記録する流れと7つの確認項目。\" loading=\"lazy\" /></a><figcaption>元のファイルを残し、コピーを使って内容を確認する手順を示した図です。</figcaption></figure>\n<span class=\"hsh-anchor\" id=\"csv-import-seven-checks-detail-0\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"csv-import-seven-checks-detail-2\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"csv-import-seven-checks-detail-3\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"csv-import-seven-checks-detail-10\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"csv-import-seven-checks-1\" aria-hidden=\"true\"></span><h2>1．文字コードと区切り文字</h2>\n<p>ファイル名が.csvでも、同じ設定ですべて正しく読めるとは限らない。文字コードや区切り文字の指定が違うことがある。日本語が文字化けしていたら、すぐに文字を直して保存せず、まず開くときの指定と取り込み先の仕様を確認しよう。</p>\n<p>開き方の指定だけが違うなら、元ファイルを変えずに読み直せる場合がある。そこで上書きすると、元の文字を失うこともあるので注意したい。コピーで設定を試し、読めた後も日本語や記号が保たれているかを見ておこう。</p>\n<p>たとえば架空の行を <code>001,\"A,B商店\",1200</code> と書いた場合、引用符の中のカンマは名前の一部。区切りとして数えるのは、その外側のカンマです。実際の読み込みでは取り込み先のCSV仕様も確認してください。</p><span class=\"hsh-anchor\" id=\"csv-import-seven-checks-2\" aria-hidden=\"true\"></span><h2>2．どの列をどの項目に入れるか</h2>\n<p>元の表では氏名が1列でも、取り込み先では姓と名が別ということがある。並んでいる順番が似ているからと、そのまま対応させないようにしよう。列の名前だけでなく、入っている値が何を意味するかまで合わせておく必要がある。</p>\n<table><thead><tr><th>受け取った列</th><th>取り込み先の項目</th><th>確認すること</th></tr></thead><tbody><tr><td>顧客番号</td><td>customer_id</td><td>先頭の0を残すため、文字列として扱うか</td></tr><tr><td>登録日</td><td>registered_date</td><td>日付の書き方、時刻の有無</td></tr><tr><td>電話番号</td><td>phone</td><td>先頭の0、ハイフンの扱い</td></tr></tbody></table>\n<p>次の表は説明用の架空例です。実際のシステムが列の位置で判断するのか、見出しの名前で判断するのかは、仕様で確かめてください。位置で決まるなら列の並べ替え、名前で決まるなら表記の違いが問題になることもある。見本と同じ見た目かだけで確認を終えないようにしよう。</p>\n<span class=\"hsh-anchor\" id=\"csv-import-seven-checks-detail-4\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"csv-import-seven-checks-3\" aria-hidden=\"true\"></span><h2>3．先頭の0や長い番号が変わっていないか</h2>\n<p>123個という数と、00123という番号は同じようには扱えない。番号では先頭の0も必要な文字だ。数字だけでできていても、計算するための数値とは限らないので、項目の意味を先に確かめてから読み込み方を選ぼう。</p>\n<p>表計算ソフトで読むなら、番号の列を文字列として扱うなど、そのソフトの取り込み方法を使う。画面の表示に0があるだけで安心せず、保存したCSVや登録後にも残っているか確認しよう。長い番号は、丸めや指数表記への変化にも気を付けたい。</p>\n<span class=\"hsh-anchor\" id=\"csv-import-seven-checks-detail-5\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"csv-import-seven-checks-4\" aria-hidden=\"true\"></span><h2>4．日付の書き方が取り込み先に合っているか</h2>\n<p>2026/10/01と2026-10-01は、人には同じ日だと分かる。でも、システムが両方読めるかは別の話。取り込み先が求める書式を確認してから直そう。自分の見慣れた形へ変えて、それで正しいと決めないようにしたい。</p>\n<p>書式だけでなく、存在する日付かも見る。時刻を扱うなら、どの地域の時間なのかも必要になる。元の値の意味が分からない場合は、無理に変換して進めず確認する。日付らしい文字列へ直っていても、意味まで合っているとは限らない。</p>\n<span class=\"hsh-anchor\" id=\"csv-import-seven-checks-detail-6\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"csv-import-seven-checks-5\" aria-hidden=\"true\"></span><h2>5．空欄を含むデータがどう処理されるか</h2>\n<p>空欄は、まだ分からないのか、該当しないのか、入力し忘れたのか。表を見ただけでは決められないことがある。特に更新用のデータでは、空欄を送ると今ある値を消すのか、何も変えないのかを確認しないと、意図しない更新につながる。</p>\n<p>必須項目が空いていても、通すためだけの仮の値を勝手に入れないでください。提供元へ確認し、保留する必要がある行は取り込み対象から分けておく。空欄をどう扱うかは、そのシステムの仕様とデータの意味の両方から決めよう。</p>\n<span class=\"hsh-anchor\" id=\"csv-import-seven-checks-detail-7\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"csv-import-seven-checks-6\" aria-hidden=\"true\"></span><h2>6．何を重複と判断するか</h2>\n<p>同じ名前が2行あっても、同じ人だとは限らない。反対に、表記が少し違っていても同じ人かもしれない。消す前に、何を手掛かりに同じデータだと判断するのかを決めておこう。見た目だけで重複を削除すると、必要な行までなくしてしまう。</p>\n<p>再度取り込んだときの動作も確認する。新規追加になるのか、既存の値を更新するのか、同じデータとして止まるのか。失敗した分をやり直す際にも、この違いは大事だ。操作前に分かるよう、仕様書や担当者へ確認しておきたい。</p>\n<span class=\"hsh-anchor\" id=\"csv-import-seven-checks-detail-8\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"csv-import-seven-checks-detail-9\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"csv-import-seven-checks-7\" aria-hidden=\"true\"></span><h2>7．取り込み後の件数とエラー</h2>\n<p>完了の表示が出たら、次は結果の内訳を見る。受け取った件数のうち、対象外、保留、成功、エラーは何件か。処理が終わった画面だけでは、必要な行がすべて入ったか分からない。どこへ行ったか説明できない行を残さないようにしよう。</p>\n<p>CSVでは、一つの値の中に改行を含めることがある。そのため、テキストの見た目の行数と、データの件数が一致するとは限らない。引用符で囲まれた値を正しく読む方法で数えよう。見出し行を含めるかどうかも、比較する数字同士でそろえておく。</p>\n<p>試せる環境があれば、許可された少量のデータで先に確認する。失敗後にやり直す場合は、すでに登録できた行もあるかを調べてから。小さな操作でも、本番なら別の処理に影響することがあるので、テストしてよい範囲を先に決めてください。</p>\n<span class=\"hsh-anchor\" id=\"csv-import-seven-checks-detail-13\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"csv-import-seven-checks-8\" aria-hidden=\"true\"></span><h2>ExcelやAIを使うときの注意点</h2>\n<h3>Excelでの表示と保存されたデータの違い</h3>\n<p>Excelで正しく見えていても、保存したファイルが同じとは限らない。表示形式で0を付けているだけの場合や、日付を別の値として保存する場合もある。画面、保存後、取り込み後を比べると、どの段階で変わったかを探しやすい。</p>\n<h3>AIにデータを渡す前の確認</h3>\n<p>AIへ渡してよいか分からない顧客データは、送信しない。手順の相談なら、架空の数行でもできることがある。氏名だけを置き換えても、ほかの列から情報が分かる場合があるので、実データを少し変えただけで安全だとは決めないでください。</p>\n<span class=\"hsh-anchor\" id=\"csv-import-seven-checks-detail-11\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"csv-import-seven-checks-detail-12\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"csv-import-seven-checks-detail-14\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"csv-import-seven-checks-9\" aria-hidden=\"true\"></span><h2>どこまで終わったか、後で分かるように</h2>\n<p>確認が済んだら、使ったファイルと日時、結果を残しておこう。後でエラーが見つかったとき、どこまで終わっていたかを最初から調べずに済む。自分だけが覚えている状態にせず、次に見る人が分かる記録にしたい。</p>\n<p>まずは取り込み先の決まりを読んで、分からない項目を書き出してみよう。全部を自動化する前に、数行を正しく入れられるかを確かめる。欲しい結果がまだ分からないまま速く処理しても、確認する方が追い付かなくなってしまう。</p>\n<p class=\"hsh-article-note\">このページの表とファイルは、説明用に作った架空サンプルです。実際の顧客情報や取引情報は使っていません。図は作業の流れを示すためのものなので、特定のシステムの操作画面としては扱わないでください。</p>\n<p>CSVの引用符や改行について詳しく調べる場合は、<a href=\"https://www.rfc-editor.org/rfc/rfc4180\" rel=\"noopener\">RFC 4180（英語）</a>が参考になります。実際の作業では、取り込み先の仕様を優先してください。</p>\n<section class=\"hsh-practical\" aria-label=\"保存して使える資料\"><span class=\"hsh-anchor\" id=\"csv-import-seven-checks-checklist\" aria-hidden=\"true\"></span><h2>取り込み前の確認メモ</h2><ul><li>元ファイルと作業用コピーの保存先</li><li>文字コードと区切り文字</li><li>列と取り込み先の項目の対応</li><li>先頭の0・長い番号・日付の扱い</li><li>空欄・重複・再実行時の扱い</li><li>取り込み前後とエラーの件数</li></ul><p><a class=\"hsh-download\" href=\"https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/resources/csv-import-checklist.txt\" download>確認メモを保存（テキスト）</a></p><p><a href=\"https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/resources/csv-practice.csv\" download>架空の練習用CSVを保存</a>。先頭の0を保つため、開くときは識別番号の列を文字列として読み込んでください。</p></section><p>Excelで先頭の0を残したい列は、取り込む段階で文字列として扱う。Microsoftの案内でも、CSVをそのまま開く方法と、［データ］から［テキストまたはCSVから］で取り込む方法が分けられている。後から表示形式だけを変えても、読み込み時に消えた0が戻るとは限らない。</p>\n<p class=\"hsh-source-note\">Excelの操作は<a href=\"https://support.microsoft.com/ja-jp/office/%E3%83%86%E3%82%AD%E3%82%B9%E3%83%88-txt-%E3%81%BE%E3%81%9F%E3%81%AF-csv-%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E3%82%A4%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%88%E3%81%BE%E3%81%9F%E3%81%AF%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%88-5250ac4c-663c-47ce-937b-339e391393ba\">Microsoftのテキスト・CSV取り込みの案内</a>で確認。画面名や使える機能はExcelのバージョンによって異なる。</p>\n<nav class=\"hsh-next-read\" aria-label=\"関連する読みもの\"><h2>次に読むなら</h2><ul><li><a href=\"https://hirogarushumi.com/ai-data-extraction-checks/\">AIにデータ抽出を頼んだ後の確認</a></li><li><a href=\"https://hirogarushumi.com/it-data-work-flow/\">自分がしているデータ加工の仕事</a></li></ul></nav>",
+            "title": "CSVを取り込む前に。0や空欄を変えないための7つの確認",
+            "revision": "official-sources-20261105-v14",
+            "featured_image_id": 70,
+            "url": "https://hirogarushumi.com/csv-import-seven-checks/"
+          }
+        ],
+        "target_revision": "official-sources-20261105-v14"
+      }
+    },
+    {
+      "slug": "csv-import-seven-checks",
+      "operation": "managed-article",
+      "result": {
+        "articles": [
+          {
+            "slug": "cat-carrier-checklist",
+            "id": 33,
+            "status": "publish",
+            "fingerprint": "8ba0f535a71c76d518bdcdec8426c4f409188fa6885d7470de8e8449ed73fa89",
+            "content": "<p class=\"hsh-answer\">約1年前、まんもす用に6,000円くらいのリュック型キャリーを買った。持ち運びやすかったけれど、まんもすを入れると上部がへこむようになった。そこで、10年以上前から持っていた頑丈なキャリーを使い直すことにした。同じリュック型でも、猫を入れたときの形と運びやすさは違った。</p>\n\n<span class=\"hsh-anchor\" id=\"cat-carrier-checklist-detail-2\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"cat-carrier-checklist-0\" aria-hidden=\"true\"></span><h2 id=\"cat-carrier-backpack-experience\">約6,000円のリュックは、まんもすを入れると上部がへこんだ</h2>\n<p>新しい方も、骨組みはしっかりしている印象で、持ち運びもしやすかった。ただ、まんもすを入れて使ううちに、本体の上の方がへこむようになった。まんもすの体重は現在5.5kg。</p>\n<p>肩ベルトと本体がつながる辺りに負荷がかかったのかな、とは思うけど、原因までは分からない。</p>\n<h2 id=\"carrier-old-frame\">取り出したのは、10年以上前のキャリーだった</h2>\n<p>次に使ったのは、新しく買った物ではない。以前、何匹もの猫と暮らしていた頃に購入し、しまってあったキャリーを出してきた。買ったのは10年以上前で、商品名や値段はもう覚えていない。</p>\n<p>こちらも布製のリュック型だけど、上部だけでなく全体に硬い骨組みがある。まんもすを入れてもへこまず、落ち着いて過ごしている。同じ布製、同じリュック型でも、実際に猫を入れたときの違いは大きかった。</p>\n<p>昔は4kgの猫2匹を一緒に入れたこともあり、2匹とも横になれるくらいの広さがあった。ただ、これはうちで使ったときの話。メーカーが定める頭数や耐荷重を示すものではないので、広そうに見えるだけで複数の猫を入れてよいとは判断しないでほしい。</p>\n<h2 id=\"carrier-train-and-wheels\">背負うことも、車輪で引っ張ることもできる</h2>\n<p>古い方は、背負っても運べるし、車輪を使って引っ張ることもできる。購入した頃は電車でも車でも使っていて、電車で移動することも考えて選んだ物だった。自分にとっては、猫を入れたときの安定感と運び方を選べるところが使いやすい。</p>\n<p>一方で、頑丈な分だけ本体は重い。自分には快適でも、持つ人の体力や移動経路によっては負担になると思う。車輪で引けるからといって、持ち上げる場面までなくなるわけではないので、猫と荷物を合わせた重さで考えたい。</p>\n<p>電車で移動していた頃には、猫の入ったキャリーを人に蹴られたこともある。誰もが動物に配慮してくれるとは限らないと感じた経験だ。ただし、この経験だけで、頑丈なキャリーならどんな衝撃にも耐えられると言えるわけではない。</p>\n<h2 id=\"carrier-evacuation-preparation\">避難先での居場所も考えて、餌やシーツを常備</h2>\n<p>普段の移動だけでなく、災害時のことも考えていた。予備の餌やシーツ、タオルなども常備できたので、猫を連れ出すときの備えとしてよかった。体育館のような避難先でも、猫にとっての居場所を用意できるのは大きいと思う。</p>\n<p>このキャリーは広げて大きくするタイプではなく、もともとの大きさのまま使う物。実際の避難ではまだ使っていない。避難所によって動物の受け入れ方や過ごせる場所は異なるので、地域の案内も確かめておきたい。</p>\n\n<p>この経験から、次に選ぶならどこを見るかも整理してみた。形の安定だけでなく、出し入れや手入れ、実際に運ぶ重さも比べたい。</p>\n<h2>1．猫を出し入れしやすいか</h2>\n<p>キャリーには、前の扉から出し入れする物、上が開く物、上下の本体を外せる物がある。大きさが似ていても、猫を入れるときや診察で開けるときの扱い方は違う。</p>\n<p>入口の幅だけでなく、どこまで開くのかを見てみよう。猫が奥にいるときにも開けやすいか、開いた扉を支えておく必要があるか。写真だけでは開けやすさまで分からないので、店頭で実物を見られるなら開閉を試してみよう。</p>\n<p>通院用に買うなら、動物病院で使いやすい形を聞いてみる方法もある。診察の際の出し入れはスタッフの指示に従ってください。出てこない猫を、無理に引っ張り出すことを前提に選ばないようにしたい。</p>\n<span class=\"hsh-anchor\" id=\"cat-carrier-checklist-detail-3\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"cat-carrier-checklist-detail-9\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"cat-carrier-checklist-1\" aria-hidden=\"true\"></span><h2>2．扉や留め具がきちんと閉まるか</h2>\n<p>扉を閉めたら、ロックがかかっているか、隙間が残っていないかを見る。本体を上下につなぐ留め具や、ファスナーも忘れずに。閉める場所がいくつあるのかを先に覚えておくと、一か所だけの閉め忘れにも気付きやすい。</p>\n<p>ひび、変形、欠けた部品があれば、そのまま猫を入れずメーカーへ相談してください。自分で固定具を足して使えると決めず、修理や部品交換ができるかを確認する。組み立てと固定は、その製品の説明書に従います。</p>\n<!--HSH_IMAGE:cat-diagram-->\n<span class=\"hsh-anchor\" id=\"cat-carrier-checklist-detail-0\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"cat-carrier-checklist-detail-4\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"cat-carrier-checklist-detail-7\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"cat-carrier-checklist-2\" aria-hidden=\"true\"></span><h2>3．猫を入れても無理なく運べるか</h2>\n<p>本体が軽いだけでなく、猫を入れたときにも形が保たれるかを確認しよう。猫の体重にキャリー本体の重さも加わるので、自分が運べる総重量かも確認しよう。</p>\n<p>持ち手の幅や形も試してみよう。細い持ち手が手に食い込みそうか、体から離れすぎず持てるか。徒歩で運ぶなら階段や坂道もあるかもしれない。車移動なら、駐車場から受付まで歩くことも忘れずに。</p>\n<table><thead><tr><th>移動方法</th><th>確認するところ</th></tr></thead><tbody><tr><td>徒歩</td><td>猫を含めた総重量、持ち手の幅、階段での運びやすさ</td></tr><tr><td>車</td><td>車内に置ける大きさか、製品と車両に合った固定ができるか</td></tr><tr><td>電車・バスなど</td><td>利用する会社の持込み条件に合うサイズ・形状か</td></tr></tbody></table>\n<p>電車やバスを利用するなら、先にその会社の持ち込み条件を読む。商品に「ペット用」と書いてあっても、利用する路線の規定に合うとは限らない。容器の形、サイズ、重さ、必要な料金を確認してから候補を比べよう。</p>\n<span class=\"hsh-anchor\" id=\"cat-carrier-checklist-detail-5\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"cat-carrier-checklist-3\" aria-hidden=\"true\"></span><h2>4．汚れたときに掃除しやすいか</h2>\n<p>底板やマットを外せるか、隅にたまった汚れまで手が届くか。使っている姿の写真では目立たないけど、掃除のしやすさも見ておきたい。洗える部分と洗い方は、素材の印象で決めず説明書で確認してください。</p>\n<p>タオルなどを敷くと、その分だけ中は狭くなる。厚く重ねすぎて猫が窮屈にならないか、扉や留め具に布を挟まないかも見る。猫を入れる前に一度敷いて、きちんと閉められるか試しておこう。</p>\n<span class=\"hsh-anchor\" id=\"cat-carrier-checklist-detail-6\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"cat-carrier-checklist-4\" aria-hidden=\"true\"></span><h2>5．家のどこに置くか</h2>\n<p>折り畳める物は収納しやすそうだけど、使うときに取り出して組み立てる時間もかかる。どこへしまい、どこで準備するかまで決めておくと、通院の日に探し回らずに済む。取り外した部品も、本体と一緒に保管しておこう。</p>\n<p>部屋に出しておくなら、倒れにくい安定した場所に。扉を開けたまま使ってよいかも説明書を見てください。中に入ってほしくても、猫を押し込むのは避けよう。慣れるまでの時間も、猫によって違う。</p>\n<span class=\"hsh-anchor\" id=\"cat-carrier-checklist-detail-1\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"cat-carrier-checklist-detail-8\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"cat-carrier-checklist-5\" aria-hidden=\"true\"></span><h2>サイズと価格で迷ったときは</h2>\n<h3>猫の体重だけでサイズを決めない</h3>\n<p>耐荷重の表示と、猫が入る広さは両方確認する。重さの条件を満たしていても、体格に対して中が窮屈なことはある。体重だけでサイズを決めず、内寸とメーカーのサイズ選びの案内も合わせて見ておこう。</p>\n<h3>価格だけで判断しない</h3>\n<p>値段で迷ったら、何を改善したくて買うのかを考えてみよう。出し入れなのか、持ちやすさなのか、掃除なのか。欲しい機能が一つはっきりすると、似た形の商品でも違いを見つけやすくなる。</p>\n<span class=\"hsh-anchor\" id=\"cat-carrier-checklist-6\" aria-hidden=\"true\"></span><h2>買い替える前に、今のどこが不便か考えてみよう</h2>\n<p>自分の場合は、新しく買ったリュックがへこんだことで、しまっていた古いキャリーを使い直すことになった。重さはあるけれど、まんもすを入れても形が保たれ、背負う・引くの両方で運べる点が今の自分には合っている。</p>\n<p>今のキャリーに不具合がなく、困ってもいないなら、すぐ買い替えなくてもいい。まず扉、留め具、持ち手を点検してみよう。不具合があるなら修理や交換を考え、使い勝手をよくしたいなら、今のどこが不便なのかを整理すると選びやすい。</p>\n<p class=\"hsh-article-note\">キャリーを選ぶ際は、候補の内寸・耐荷重・説明書を確認してください。長く保管していた物を使い直す場合も、布やベルト、骨組み、留め具に傷みがないか点検してから使いましょう。</p>\n<p>以前に電車で使った経験と、現在の持ち込み条件は分けて考えたい。大きなキャリーや車輪付きの製品が利用できるかは、使う鉄道会社のサイズ・形状・総重量などの規定を確認しよう。猫2匹が横になれる広さがあっても、そのまま電車へ持ち込めるという意味ではない。</p>\n<p>交通機関を利用する前の確認先：<a href=\"https://www.jreast.co.jp/kippu/20.html\" rel=\"noopener\">JR東日本の手回り品の案内</a>。他社を利用する場合は、その会社の案内をご確認ください。</p>\n<section class=\"hsh-practical\" aria-label=\"保存して使える資料\"><span class=\"hsh-anchor\" id=\"cat-carrier-checklist-checklist\" aria-hidden=\"true\"></span><h2>選ぶ前のチェックリスト</h2><ul><li>内寸と耐荷重を猫の体格と照らし合わせる</li><li>扉・留め具・本体に傷みがないか見る</li><li>猫とキャリーを合わせた重さを考える</li><li>洗える部分と乾かし方を調べる</li><li>移動方法と家での置き場所を決める</li></ul><p><a class=\"hsh-download\" href=\"https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/resources/cat-carrier-checklist.txt\" download>確認メモを保存（テキスト）</a></p><p>これから猫を迎える方には、別サイト「ねこのとなり」の<a href=\"https://hirogarushumi.com/neko-guide/articles/first-days/\">迎えた最初の数日の過ごし方</a>も参考になります。</p></section><nav class=\"hsh-next-read\" aria-label=\"関連する読みもの\"><h2>次に読むなら</h2><ul><li><a href=\"https://hirogarushumi.com/before-welcoming-cat/\">迎える前の買い物と部屋の確認</a></li><li><a href=\"https://hirogarushumi.com/cat-vet-routine/\">通院前に確認したいこと</a></li></ul></nav>",
+            "title": "猫用リュックキャリーがへこんだ話｜10年以上前の頑丈な物を使い直した理由",
+            "revision": "official-sources-20261105-v14",
+            "featured_image_id": 46,
+            "url": "https://hirogarushumi.com/cat-carrier-checklist/"
+          },
+          {
+            "slug": "highball-measure-and-adjust",
+            "id": 34,
+            "status": "publish",
+            "fingerprint": "a56ac362c1f048ea21d72b4d6d93d6c8db7d8fedc00264b81dc5387c5cb619a6",
+            "content": "<p class=\"hsh-answer\">ハイボールが薄いと、ついウイスキーを足したくなる。でも、物足りないのが味なのか、炭酸の刺激なのかで、見直すところは変わる。分量や氷、炭酸水の状態を確かめると、次に作るときの調整もしやすくなる。</p>\n<p>分量も氷もグラスも一度に替えてしまうと、おいしくなっても何がよかったのか分からない。まずは注いだ量と作ってからの時間を確かめ、次に作るときには気になる条件を一つだけ変えてみると、違いを比べやすい。</p>\n<p>自分が普段入れるウイスキーは30mlで、炭酸水はできるだけ多め。銘柄を固定しているわけではなく、その日の気分で飲みたいものを選んでいる。グレンリベット12年の花みたいな香りも、グレンファークラス12年のぶどうパンみたいな香りも好きだ。ここからの分量表は、割合の考え方を説明するための計算例です。</p>\n<span class=\"hsh-anchor\" id=\"highball-measure-and-adjust-detail-1\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"highball-measure-and-adjust-detail-2\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"highball-measure-and-adjust-detail-7\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"highball-measure-and-adjust-0\" aria-hidden=\"true\"></span><h2>まず、ウイスキーと炭酸水を何mL入れたか</h2>\n<p>グラスの同じ高さまで注いでも、中に入る液体の量が毎回同じとは限らない。氷が大きくなれば、その分だけ場所を取る。比べたいときは、見た目の位置よりウイスキーと炭酸水を何mL使ったかを残してみよう。</p>\n<p>計算の例なら、ウイスキー20mLに炭酸水80mLで1：4になる。20を1とすると、80はその4倍ということ。液体は合計100mLで、氷そのものの大きさや、後から溶ける水はこの数字に含めていない。</p>\n<p>この1：4は、割合の読み方を説明するための例です。好みやボトルの度数によっても飲みやすい濃さは違うし、氷が溶ければ途中でも変わる。自分が使った分量を比べる目安にしてみよう。</p>\n<span class=\"hsh-anchor\" id=\"highball-measure-and-adjust-detail-3\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"highball-measure-and-adjust-detail-4\" aria-hidden=\"true\"></span><p>度数の計算例なら、40％のウイスキー30mLに炭酸水120mLを加えると、純アルコールは12mL、液体の合計は150mLで約8％。氷が溶ける前の単純計算です。炭酸水を増やしても、使ったウイスキーに含まれるアルコールの量は減りません。</p><span class=\"hsh-anchor\" id=\"highball-measure-and-adjust-1\" aria-hidden=\"true\"></span><h2>冷やし方と作る順番も、そろえておこう</h2>\n<p>用意するのはウイスキー、炭酸水、清潔な氷、グラス、量を測る道具。最初から専用品を全部買わなくてもいい。家にある飲食用の道具で、使いたい量を測れるか確認しよう。</p>\n<p>炭酸水は冷やしておき、グラスは氷と液体を入れても余裕のある物にする。分量を比べるなら、作る順番もなるべくそろえる。作り方まで毎回変わると、何が味に影響したのか分かりにくくなる。</p>\n<ol><li>グラスに清潔な氷を入れる。</li><li>量ったウイスキーを注ぐ。混ぜる場合は、この段階で静かに混ぜる。</li><li>量った炭酸水をゆっくり注ぐ。</li><li>必要なら軽く混ぜる。勢いよく何度もかき混ぜない。</li></ol>\n<figure class=\"wp-block-image size-large\"><a href=\"https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-whisky-diagram-bcd1912421.webp\"><img width=\"1024\" height=\"683\" src=\"https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-whisky-diagram-bcd1912421-1024x683.webp\" class=\"attachment-large size-large\" alt=\"ハイボールは量る、静かに注ぐ、メモする。分量20mLと80mLは比較のための一例。\" loading=\"lazy\" /></a><figcaption>分量を量り、炭酸水を静かに注ぎ、配合をメモします。図の分量は比較のための例です。</figcaption></figure>\n<span class=\"hsh-anchor\" id=\"highball-measure-and-adjust-detail-0\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"highball-measure-and-adjust-2\" aria-hidden=\"true\"></span><h2>味が薄いのか、炭酸が弱いのかを分けて考える</h2>\n<p>作った直後はよかったのに、少し置くと物足りなくなることもある。氷が溶けたり、炭酸の印象が変わったりするためだ。最初から薄かったのか、途中で変わったのかを覚えておくと、次に何を見るかを絞りやすい。</p>\n<table><thead><tr><th>気になること</th><th>確かめたいこと</th></tr></thead><tbody><tr><td>味が薄い</td><td>最初に入れた量、作ってからの時間、氷の溶け方</td></tr><tr><td>炭酸が弱い</td><td>炭酸水を開けてからの時間、冷やし方、混ぜ方</td></tr><tr><td>香りを感じにくい</td><td>飲み始めの温度、グラス、配合</td></tr></tbody></table>\n<p>次に作るときは、分量、氷、炭酸水のどれか一つを見直そう。全部替えると、よかった理由も残念だった理由も分からない。同じ日に何杯も試す必要はなく、別の日に少量で確かめる形で十分です。</p>\n<span class=\"hsh-anchor\" id=\"highball-measure-and-adjust-detail-6\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"highball-measure-and-adjust-3\" aria-hidden=\"true\"></span><h2>メモは「何を変えたか」が分かれば十分</h2>\n<p>メモには銘柄、度数、ウイスキーと炭酸水の量を書く。氷や冷やし方を替えたときは、その内容も一言添える。最後にどう感じたかを足すと、数字だけの記録より、次に作るときに思い出しやすい。</p>\n<blockquote><p>架空の記録例：「ウイスキー20mL、炭酸水80mL。最初はよかったが、氷が溶けると薄く感じた。次は分量を変えず、飲み始めてからの時間を見てみる」。何を試したかが分かれば、このくらいでも使える。</p></blockquote>\n<p>細かな香りの名前や点数まで書かなくていいと思う。飲みやすい、炭酸が弱い、少し濃かった。その日の自分に分かる言葉で残そう。後から読んで思い出せれば役に立つので、立派な感想文に仕上げなくても大丈夫だ。</p>\n<span class=\"hsh-anchor\" id=\"highball-measure-and-adjust-detail-5\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"highball-measure-and-adjust-detail-8\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"highball-measure-and-adjust-4\" aria-hidden=\"true\"></span><h2>配合やグラスに迷ったときは</h2>\n<h3>配合は好みや銘柄に合わせて調整する</h3>\n<p>同じ比率をずっと守る必要もない。銘柄や好みに合わせて調整してよいし、前の方が好きなら戻せばいい。好みの配合を探すための計量なので、数字に合わせることだけを目的にしないようにしたい。</p>\n<h3>専用グラスを買う前に容量を確認する</h3>\n<p>グラスも、まずは手持ちの物でいい。氷と飲み物を入れる余裕があり、無理なく持てるかを見よう。買い足すなら、容量だけでなく口の形や洗いやすさ、置く場所まで考えると、使う場面を想像しやすい。</p>\n<span class=\"hsh-anchor\" id=\"highball-measure-and-adjust-5\" aria-hidden=\"true\"></span><h2>次の1杯で迷わないよう、分量を残しておく</h2>\n<p>新しい銘柄や道具を買う前に、今の分量を一度残してみよう。注いだ量が分かれば、次の一杯でどこを変えるかも考えやすい。比較のために飲酒量を増やさず、試すのはまた別の日で構いません。</p>\n<p class=\"hsh-article-note\">お酒は20歳になってから。運転する予定があるときや、健康上の理由で飲酒を控える必要があるときは飲まないでください。</p>\n<p>サントリーの作り方では、ウイスキー1に対してソーダ3〜4が一つの目安。グラスを冷やし、ソーダを加えた後は混ぜすぎない方法が紹介されている。この比率は一つの目安なので、好みに合わせて調整していい。まず今の配合を測ってから、どこを変えるか考えよう。</p>\n<p>銘柄の度数や特徴は、手元のラベルやメーカーの公式情報で確認できます。参考：<a href=\"https://www.suntory.co.jp/whisky/beginner/drink/highball.html\" rel=\"noopener\">サントリーのウイスキー情報</a>。</p>\n<section class=\"hsh-practical\" aria-label=\"保存して使える資料\"><span class=\"hsh-anchor\" id=\"highball-measure-and-adjust-checklist\" aria-hidden=\"true\"></span><h2>次の一杯に使う配合メモ</h2><ul><li>銘柄とラベルのアルコール度数</li><li>ウイスキーと炭酸水を入れた量</li><li>氷の量と作ってから飲むまでの時間</li><li>次に変えてみたい条件を1つ</li></ul><p><a class=\"hsh-download\" href=\"https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/resources/highball-note.txt\" download>確認メモを保存（テキスト）</a></p></section><h2 id=\"highball-measure-and-adjust-experience-20261030\">ハーフロックとハイボールは、割る物が違う</h2><p>ハーフロックは一般に、氷を入れたグラスでウイスキーと水を同量程度に合わせる飲み方。炭酸水で割るハイボールとは違う。自分もハーフロックで飲むことがある。</p><p>たとえば同じボトルでも、水で割ったときと炭酸水で割ったときでは、炭酸の刺激があるかどうかが違う。濃さを比べたいなら、何を何mL使ったかを残すと考えやすい。薄くしたからアルコールそのものが減るわけではない点は、どちらでも同じだ。</p><nav class=\"hsh-next-read\" aria-label=\"関連する読みもの\"><h2>次に読むなら</h2><ul><li><a href=\"https://hirogarushumi.com/glenlivet-12-first-bottles/\">グレンリベット12年を飲んだ感想</a></li><li><a href=\"https://hirogarushumi.com/single-malt-label-guide/\">ラベルで確認したいこと</a></li></ul></nav>",
+            "title": "ハイボールが薄い？ ウイスキーを足す前に見てみよう",
+            "revision": "official-sources-20261105-v14",
+            "featured_image_id": 69,
+            "url": "https://hirogarushumi.com/highball-measure-and-adjust/"
+          },
+          {
+            "slug": "csv-import-seven-checks",
+            "id": 35,
+            "status": "publish",
+            "fingerprint": "76fb4b7e6d39706c66dd2259383ebfa2628be44907402a06c9f5645b7e8ac4b8",
+            "content": "<p class=\"hsh-answer\">CSVを開いたとき、番号の先頭の0が消えてしまうことがある。そんな取り込みミスを防ぐには、まず原本を残し、コピーで数行を試しておきたい。この記事では、文字コードや区切り、列の対応などを順に確かめながら、元の値を変えずに取り込む方法を紹介する。</p>\n<p>取り込む前に確かめたい7つの項目を、架空のデータを使って説明します。</p>\n<p>以下の表と手順は、説明用の架空データを使った練習例です。実際の顧客情報は含めていません。AIや外部サービスへ仕事の情報を送る場合は、契約や業務のルールを先に確認してください。</p>\n<span class=\"hsh-anchor\" id=\"csv-import-seven-checks-detail-1\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"csv-import-seven-checks-0\" aria-hidden=\"true\"></span><h2>開く前に、元のファイルを残しておこう</h2>\n<p>受け取ったファイルはそのまま保管し、作業にはコピーを使う。編集した物しか残っていないと、おかしな値を見つけても、最初からそうだったのか自分が変えたのか分からなくなる。操作する前に原本を残しておけば、誤って変更してもやり直せる。</p>\n<p>元ファイルとコピーは、名前や保存先で見分けられるようにする。同じフォルダーに似た名前が並んでいたら、開く前にどれが原本かを確かめよう。保管先は、仕事で使用を許可された場所にしてください。個人用の保存先へ勝手に複製しないことも大事です。</p>\n<figure class=\"wp-block-image size-large\"><a href=\"https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-csv-diagram-1656d0fa64.webp\"><img width=\"1024\" height=\"683\" src=\"https://hirogarushumi.com/wp-content/uploads/2026/10/hsh-csv-diagram-1656d0fa64-1024x683.webp\" class=\"attachment-large size-large\" alt=\"元ファイル保存、コピーで確認、少量テスト、結果・件数を記録する流れと7つの確認項目。\" loading=\"lazy\" /></a><figcaption>元のファイルを残し、コピーを使って内容を確認する手順を示した図です。</figcaption></figure>\n<span class=\"hsh-anchor\" id=\"csv-import-seven-checks-detail-0\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"csv-import-seven-checks-detail-2\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"csv-import-seven-checks-detail-3\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"csv-import-seven-checks-detail-10\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"csv-import-seven-checks-1\" aria-hidden=\"true\"></span><h2>1．文字コードと区切り文字</h2>\n<p>ファイル名が.csvでも、同じ設定ですべて正しく読めるとは限らない。文字コードや区切り文字の指定が違うことがある。日本語が文字化けしていたら、すぐに文字を直して保存せず、まず開くときの指定と取り込み先の仕様を確認しよう。</p>\n<p>開き方の指定だけが違うなら、元ファイルを変えずに読み直せる場合がある。そこで上書きすると、元の文字を失うこともあるので注意したい。コピーで設定を試し、読めた後も日本語や記号が保たれているかを見ておこう。</p>\n<p>たとえば架空の行を <code>001,\"A,B商店\",1200</code> と書いた場合、引用符の中のカンマは名前の一部。区切りとして数えるのは、その外側のカンマです。実際の読み込みでは取り込み先のCSV仕様も確認してください。</p><span class=\"hsh-anchor\" id=\"csv-import-seven-checks-2\" aria-hidden=\"true\"></span><h2>2．どの列をどの項目に入れるか</h2>\n<p>元の表では氏名が1列でも、取り込み先では姓と名が別ということがある。並んでいる順番が似ているからと、そのまま対応させないようにしよう。列の名前だけでなく、入っている値が何を意味するかまで合わせておく必要がある。</p>\n<table><thead><tr><th>受け取った列</th><th>取り込み先の項目</th><th>確認すること</th></tr></thead><tbody><tr><td>顧客番号</td><td>customer_id</td><td>先頭の0を残すため、文字列として扱うか</td></tr><tr><td>登録日</td><td>registered_date</td><td>日付の書き方、時刻の有無</td></tr><tr><td>電話番号</td><td>phone</td><td>先頭の0、ハイフンの扱い</td></tr></tbody></table>\n<p>上の表は、列の対応を説明するための架空例です。実際のシステムが列の位置で判断するのか、見出しの名前で判断するのかは、仕様で確かめてください。位置で決まるなら列の並べ替え、名前で決まるなら表記の違いが問題になることもある。見本と同じ見た目かだけで確認を終えないようにしよう。</p>\n<span class=\"hsh-anchor\" id=\"csv-import-seven-checks-detail-4\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"csv-import-seven-checks-3\" aria-hidden=\"true\"></span><h2>3．先頭の0や長い番号が変わっていないか</h2>\n<p>123個という数と、00123という番号は同じようには扱えない。番号では先頭の0も必要な文字だ。数字だけでできていても、計算するための数値とは限らないので、項目の意味を先に確かめてから読み込み方を選ぼう。</p>\n<p>表計算ソフトで読むなら、番号の列を文字列として扱うなど、そのソフトの取り込み方法を使う。画面の表示に0があるだけで安心せず、保存したCSVや登録後にも残っているか確認しよう。長い番号は、丸めや指数表記への変化にも気を付けたい。</p>\n<span class=\"hsh-anchor\" id=\"csv-import-seven-checks-detail-5\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"csv-import-seven-checks-4\" aria-hidden=\"true\"></span><h2>4．日付の書き方が取り込み先に合っているか</h2>\n<p>2026/10/01と2026-10-01は、人には同じ日だと分かる。でも、システムが両方読めるかは別の話。取り込み先が求める書式を確認してから直そう。自分の見慣れた形へ変えて、それで正しいと決めないようにしたい。</p>\n<p>書式だけでなく、存在する日付かも見る。時刻を扱うなら、どの地域の時間なのかも必要になる。元の値の意味が分からない場合は、無理に変換して進めず確認する。日付らしい文字列へ直っていても、意味まで合っているとは限らない。</p>\n<span class=\"hsh-anchor\" id=\"csv-import-seven-checks-detail-6\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"csv-import-seven-checks-5\" aria-hidden=\"true\"></span><h2>5．空欄を含むデータがどう処理されるか</h2>\n<p>空欄は、まだ分からないのか、該当しないのか、入力し忘れたのか。表を見ただけでは決められないことがある。特に更新用のデータでは、空欄を送ると今ある値を消すのか、何も変えないのかを確認しないと、意図しない更新につながる。</p>\n<p>必須項目が空いていても、通すためだけの仮の値を勝手に入れないでください。提供元へ確認し、保留する必要がある行は取り込み対象から分けておく。空欄をどう扱うかは、そのシステムの仕様とデータの意味の両方から決めよう。</p>\n<span class=\"hsh-anchor\" id=\"csv-import-seven-checks-detail-7\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"csv-import-seven-checks-6\" aria-hidden=\"true\"></span><h2>6．何を重複と判断するか</h2>\n<p>同じ名前が2行あっても、同じ人だとは限らない。反対に、表記が少し違っていても同じ人かもしれない。消す前に、何を手掛かりに同じデータだと判断するのかを決めておこう。見た目だけで重複を削除すると、必要な行までなくしてしまう。</p>\n<p>再度取り込んだときの動作も確認する。新規追加になるのか、既存の値を更新するのか、同じデータとして止まるのか。失敗した分をやり直す際にも、この違いは大事だ。操作前に分かるよう、仕様書や担当者へ確認しておきたい。</p>\n<span class=\"hsh-anchor\" id=\"csv-import-seven-checks-detail-8\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"csv-import-seven-checks-detail-9\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"csv-import-seven-checks-7\" aria-hidden=\"true\"></span><h2>7．取り込み後の件数とエラー</h2>\n<p>完了の表示が出たら、次は結果の内訳を見る。受け取った件数のうち、対象外、保留、成功、エラーは何件か。処理が終わった画面だけでは、必要な行がすべて入ったか分からない。どこへ行ったか説明できない行を残さないようにしよう。</p>\n<p>CSVでは、一つの値の中に改行を含めることがある。そのため、テキストの見た目の行数と、データの件数が一致するとは限らない。引用符で囲まれた値を正しく読む方法で数えよう。見出し行を含めるかどうかも、比較する数字同士でそろえておく。</p>\n<p>試せる環境があれば、許可された少量のデータで先に確認する。失敗後にやり直す場合は、すでに登録できた行もあるかを調べてから。小さな操作でも、本番なら別の処理に影響することがあるので、テストしてよい範囲を先に決めてください。</p>\n<span class=\"hsh-anchor\" id=\"csv-import-seven-checks-detail-13\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"csv-import-seven-checks-8\" aria-hidden=\"true\"></span><h2>ExcelやAIを使うときの注意点</h2>\n<h3>Excelでの表示と保存されたデータの違い</h3>\n<p>Excelで正しく見えていても、保存したファイルが同じとは限らない。表示形式で0を付けているだけの場合や、日付を別の値として保存する場合もある。画面、保存後、取り込み後を比べると、どの段階で変わったかを探しやすい。</p>\n<h3>AIにデータを渡す前の確認</h3>\n<p>AIへ渡してよいか分からない顧客データは、送信しない。手順の相談なら、架空の数行でもできることがある。氏名だけを置き換えても、ほかの列から情報が分かる場合があるので、実データを少し変えただけで安全だとは決めないでください。</p>\n<span class=\"hsh-anchor\" id=\"csv-import-seven-checks-detail-11\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"csv-import-seven-checks-detail-12\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"csv-import-seven-checks-detail-14\" aria-hidden=\"true\"></span><span class=\"hsh-anchor\" id=\"csv-import-seven-checks-9\" aria-hidden=\"true\"></span><h2>どこまで終わったか、後で分かるように</h2>\n<p>確認が済んだら、使ったファイルと日時、結果を残しておこう。後でエラーが見つかったとき、どこまで終わっていたかを最初から調べずに済む。自分だけが覚えている状態にせず、次に見る人が分かる記録にしたい。</p>\n<p>まずは取り込み先の決まりを読んで、分からない項目を書き出してみよう。全部を自動化する前に、数行を正しく入れられるかを確かめる。速く処理することより、取り込み後のデータが正しいと確認できることを優先しよう。</p>\n<p class=\"hsh-article-note\">表とファイルには架空のデータを使用し、図には作業の流れを示しています。取り込み先によって画面や仕様は異なるため、操作するときはそのシステムの案内を確認してください。</p>\n<p>CSVの引用符や改行について詳しく調べる場合は、<a href=\"https://www.rfc-editor.org/rfc/rfc4180\" rel=\"noopener\">RFC 4180（英語）</a>が参考になります。実際の作業では、取り込み先の仕様を優先してください。</p>\n<section class=\"hsh-practical\" aria-label=\"保存して使える資料\"><span class=\"hsh-anchor\" id=\"csv-import-seven-checks-checklist\" aria-hidden=\"true\"></span><h2>取り込み前の確認メモ</h2><ul><li>元ファイルと作業用コピーの保存先</li><li>文字コードと区切り文字</li><li>列と取り込み先の項目の対応</li><li>先頭の0・長い番号・日付の扱い</li><li>空欄・重複・再実行時の扱い</li><li>取り込み前後とエラーの件数</li></ul><p><a class=\"hsh-download\" href=\"https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/resources/csv-import-checklist.txt\" download>確認メモを保存（テキスト）</a></p><p><a href=\"https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/resources/csv-practice.csv\" download>架空の練習用CSVを保存</a>。先頭の0を保つため、開くときは識別番号の列を文字列として読み込んでください。</p></section><p>Excelで先頭の0を残したい列は、取り込む段階で文字列として扱う。Microsoftの案内でも、CSVをそのまま開く方法と、［データ］から［テキストまたはCSVから］で取り込む方法が分けられている。後から表示形式だけを変えても、読み込み時に消えた0が戻るとは限らない。</p>\n<p class=\"hsh-source-note\">Excelの操作は<a href=\"https://support.microsoft.com/ja-jp/office/%E3%83%86%E3%82%AD%E3%82%B9%E3%83%88-txt-%E3%81%BE%E3%81%9F%E3%81%AF-csv-%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E3%82%A4%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%88%E3%81%BE%E3%81%9F%E3%81%AF%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%88-5250ac4c-663c-47ce-937b-339e391393ba\">Microsoftのテキスト・CSV取り込みの案内</a>で確認。画面名や使える機能はExcelのバージョンによって異なる。</p>\n<nav class=\"hsh-next-read\" aria-label=\"関連する読みもの\"><h2>次に読むなら</h2><ul><li><a href=\"https://hirogarushumi.com/ai-data-extraction-checks/\">AIにデータ抽出を頼んだ後の確認</a></li><li><a href=\"https://hirogarushumi.com/it-data-work-flow/\">自分がしているデータ加工の仕事</a></li></ul></nav>",
+            "title": "CSVを取り込む前に。0や空欄を変えないための7つの確認",
+            "revision": "official-sources-20261105-v14",
+            "featured_image_id": 70,
+            "url": "https://hirogarushumi.com/csv-import-seven-checks/"
+          }
+        ],
+        "target_revision": "official-sources-20261105-v14"
+      }
+    },
+    {
+      "slug": "before-welcoming-cat",
+      "operation": "content-release",
+      "result": {
+        "id": 95,
+        "url": "https://hirogarushumi.com/before-welcoming-cat/",
+        "fingerprint": "76188df3ea043d5e06d40892b3117e886caf80f49f1d12ec02f91a26e10c71fe"
+      }
+    },
+    {
+      "slug": "manmos-cat-life",
+      "operation": "content-release",
+      "result": {
+        "id": 96,
+        "url": "https://hirogarushumi.com/manmos-cat-life/",
+        "fingerprint": "9b28a54228483a6e687093bbf8cfb7ddd6ca7b4696c5f59abff1dee6fe141c68"
+      }
+    },
+    {
+      "slug": "cat-teaser-small-parts",
+      "operation": "content-release",
+      "result": {
+        "id": 97,
+        "url": "https://hirogarushumi.com/cat-teaser-small-parts/",
+        "fingerprint": "a7fda5fdb2da2f15c136ef95a1483e7a09d50552bbf25a508436599c98c499e5"
+      }
+    },
+    {
+      "slug": "cat-vet-routine",
+      "operation": "content-release",
+      "result": {
+        "id": 98,
+        "url": "https://hirogarushumi.com/cat-vet-routine/",
+        "fingerprint": "00721e953d7a38fb7d91bd472747321d624f642c87d3ae49aedeba66b91770f6"
+      }
+    },
+    {
+      "slug": "glenlivet-12-first-bottles",
+      "operation": "content-release",
+      "result": {
+        "id": 99,
+        "url": "https://hirogarushumi.com/glenlivet-12-first-bottles/",
+        "fingerprint": "04161cc6586abf87f4eceb1cb5db7c84861d15b0383ab8265fb9d08263e148fd"
+      }
+    },
+    {
+      "slug": "single-malt-label-guide",
+      "operation": "content-release",
+      "result": {
+        "id": 100,
+        "url": "https://hirogarushumi.com/single-malt-label-guide/",
+        "fingerprint": "ca699503e55465f9fafbba92b9536731cce4fd729a279edd2ad9128209540e47"
+      }
+    },
+    {
+      "slug": "sherry-cask-notes",
+      "operation": "content-release",
+      "result": {
+        "id": 101,
+        "url": "https://hirogarushumi.com/sherry-cask-notes/",
+        "fingerprint": "a7866f2e6d802570113da40aeeb7ff09a06c0bf8c3277efd6c1edc1f2e4ac3a6"
+      }
+    },
+    {
+      "slug": "it-data-work-flow",
+      "operation": "content-release",
+      "result": {
+        "id": 102,
+        "url": "https://hirogarushumi.com/it-data-work-flow/",
+        "fingerprint": "540d5660c163bb51c50716d22cde94f5425f2a873eeee646a224ee813b359ff4"
+      }
+    },
+    {
+      "slug": "starting-it-without-specialty",
+      "operation": "content-release",
+      "result": {
+        "id": 103,
+        "url": "https://hirogarushumi.com/starting-it-without-specialty/",
+        "fingerprint": "2714378819ed3e35427f2ecbfe2282afd1c451f833bd26a0c84ab2c1b255ca52"
+      }
+    },
+    {
+      "slug": "ai-data-extraction-checks",
+      "operation": "content-release",
+      "result": {
+        "id": 104,
+        "url": "https://hirogarushumi.com/ai-data-extraction-checks/",
+        "fingerprint": "2b51d2a0db97cb1263e0110da208c8faffdcf1d667d78f81d6994a7e9ca2a90a"
+      }
+    },
+    {
+      "slug": "paws-green-deli-cat-food",
+      "operation": "content-release",
+      "result": {
+        "id": 216,
+        "url": "https://hirogarushumi.com/paws-green-deli-cat-food/",
+        "fingerprint": "b5946436384e9d1bddea951b9941f47ce4ec8a153ef23f4e142824d90754d367"
+      }
+    },
+    {
+      "slug": "hario-cat-bowl-guide",
+      "operation": "content-release",
+      "result": {
+        "id": 217,
+        "url": "https://hirogarushumi.com/hario-cat-bowl-guide/",
+        "fingerprint": "73fb0157a69b083b9e924651fa7640e45ad63820476a9114f98313182de77f0c"
+      }
+    },
+    {
+      "slug": "mirai-cat-food-types",
+      "operation": "content-release",
+      "result": {
+        "id": 218,
+        "url": "https://hirogarushumi.com/mirai-cat-food-types/",
+        "fingerprint": "d45765ed96d59e7c71528eb4bb3724362857fc2ca8f4f4288f6668a1bf74d5c7"
+      }
+    },
+    {
+      "slug": "m-and-cat-knit-bag",
+      "operation": "content-release",
+      "result": {
+        "id": 219,
+        "url": "https://hirogarushumi.com/m-and-cat-knit-bag/",
+        "fingerprint": "006d0c88600a83b7a60f86c5078d693793219f7a58740d2c883e75292932c3bd"
+      }
+    },
+    {
+      "slug": "pet-sougi-110-cat-guide",
+      "operation": "content-release",
+      "result": {
+        "id": 220,
+        "url": "https://hirogarushumi.com/pet-sougi-110-cat-guide/",
+        "fingerprint": "64c300ef311b415035b81a857e592e4325593bdc6a7d76e954d7d8caf0eadbdc"
+      }
+    },
+    {
+      "slug": "digxipop-cat-figure",
+      "operation": "content-release",
+      "result": {
+        "id": 221,
+        "url": "https://hirogarushumi.com/digxipop-cat-figure/",
+        "fingerprint": "7121d4b8c2599c77e0ba760cb6d6ca51054ce9fa7e41530e0c25c9a467bc488f"
+      }
+    },
+    {
+      "slug": "withpety-nekokenshin",
+      "operation": "content-release",
+      "result": {
+        "id": 222,
+        "url": "https://hirogarushumi.com/withpety-nekokenshin/",
+        "fingerprint": "42fa5c4989fdd0b413960d4ec419ad2d99b1b762b35dc58d683be522ef2c86af"
+      }
+    },
+    {
+      "slug": "pontely-cat-dna-test",
+      "operation": "content-release",
+      "result": {
+        "id": 223,
+        "url": "https://hirogarushumi.com/pontely-cat-dna-test/",
+        "fingerprint": "ebc8486346330217bfa4345f87b293a6347af7ffba023271dc549ed32b8a76d9"
+      }
+    },
+    {
+      "slug": "withpety-nekobihada",
+      "operation": "content-release",
+      "result": {
+        "id": 224,
+        "url": "https://hirogarushumi.com/withpety-nekobihada/",
+        "fingerprint": "efa9bc3eeaee7d3279ca81f7373a7e8440a022c08a123639889aa0326f5f2676"
+      }
+    },
+    {
+      "slug": "onekosama-cat-tower",
+      "operation": "content-release",
+      "result": {
+        "id": 225,
+        "url": "https://hirogarushumi.com/onekosama-cat-tower/",
+        "fingerprint": "364374738c4f7f1a96b6b1e6398eac6bb0ba289b988ac6bb10c68e8d3c2ee274"
+      }
+    },
+    {
+      "slug": "withpety-nekoryoukan",
+      "operation": "content-release",
+      "result": {
+        "id": 226,
+        "url": "https://hirogarushumi.com/withpety-nekoryoukan/",
+        "fingerprint": "38247ced61141e83cbeb0ec730a9b49379bad16e73bfa8a54ce8e7e41bf25828"
+      }
+    },
+    {
+      "slug": "catlog-cat-monitor",
+      "operation": "content-release",
+      "result": {
+        "id": 227,
+        "url": "https://hirogarushumi.com/catlog-cat-monitor/",
+        "fingerprint": "423afede787d656d87aa3c6a6053b21729d56f9d944f75a21c8c8a50466cd677"
+      }
+    },
+    {
+      "slug": "withpety-nekoissho",
+      "operation": "content-release",
+      "result": {
+        "id": 228,
+        "url": "https://hirogarushumi.com/withpety-nekoissho/",
+        "fingerprint": "3302b8921431d749ec9a85f69c1eed3035ec7cf8bd0b35a90b5d80ecc23752a2"
+      }
+    },
+    {
+      "slug": "pet-paradise-cat-toys",
+      "operation": "content-release",
+      "result": {
+        "id": 247,
+        "url": "https://hirogarushumi.com/pet-paradise-cat-toys/",
+        "fingerprint": "8ac68b895f5dc6999e43fc359ffdf94bebd521a07fb003d174051f858fd14255"
+      }
+    },
+    {
+      "slug": "canagan-dental-cat-food",
+      "operation": "content-release",
+      "result": {
+        "id": 248,
+        "url": "https://hirogarushumi.com/canagan-dental-cat-food/",
+        "fingerprint": "5d63e5c5031e8fc6e2fce389425c2d7539fe66e6c0da8d1bd18c92ac5ee28bfc"
+      }
+    },
+    {
+      "slug": "canagan-chicken-salmon",
+      "operation": "content-release",
+      "result": {
+        "id": 249,
+        "url": "https://hirogarushumi.com/canagan-chicken-salmon/",
+        "fingerprint": "984687f8c22ba8e7da2b79e59d2698e9c4c8b6d05cd492395305ef0146a9f2b8"
+      }
+    },
+    {
+      "slug": "mcadams-cat-chicken-turkey",
+      "operation": "content-release",
+      "result": {
+        "id": 250,
+        "url": "https://hirogarushumi.com/mcadams-cat-chicken-turkey/",
+        "fingerprint": "89f46158222bcad4b28ff8d1fb38ac5f42c7802a2192930245d5dcd3132e07c9"
+      }
+    },
+    {
+      "slug": "essential-jaguar-cat-food",
+      "operation": "content-release",
+      "result": {
+        "id": 251,
+        "url": "https://hirogarushumi.com/essential-jaguar-cat-food/",
+        "fingerprint": "4048c4b0a7cd33a10fe422811d0a35171bc96b0171668929999ea611f8afb3ce"
+      }
+    },
+    {
+      "slug": "mognyan-cat-food-guide",
+      "operation": "content-release",
+      "result": {
+        "id": 252,
+        "url": "https://hirogarushumi.com/mognyan-cat-food-guide/",
+        "fingerprint": "4584932ac03cabc279c8f767864ab54fd2f4f8dddd638dcbbc0eb5107acc09ab"
+      }
+    },
+    {
+      "slug": "leo-luna-citta-bed",
+      "operation": "content-release",
+      "result": {
+        "id": 429,
+        "url": "https://hirogarushumi.com/leo-luna-citta-bed/",
+        "fingerprint": "32dc5d3e899a4533d8eec69f147e609b78fbed4c36f57c2312f877bd78596d04"
+      }
+    },
+    {
+      "slug": "withpety-nekokouken",
+      "operation": "content-release",
+      "result": {
+        "id": 430,
+        "url": "https://hirogarushumi.com/withpety-nekokouken/",
+        "fingerprint": "1033bc65c188a23fbfc7512e0a0704fb222d06f18a316df2f8729d7e556b0e3e"
+      }
+    },
+    {
+      "slug": "withpety-nekosoukai",
+      "operation": "content-release",
+      "result": {
+        "id": 431,
+        "url": "https://hirogarushumi.com/withpety-nekosoukai/",
+        "fingerprint": "7e91af7120bdf808cb1a7e2465545cd12d2700a74680d06d291ae9b1e8b2ff05"
+      }
+    },
+    {
+      "slug": "withpety-nekoshuukan",
+      "operation": "content-release",
+      "result": {
+        "id": 432,
+        "url": "https://hirogarushumi.com/withpety-nekoshuukan/",
+        "fingerprint": "d8069c94771b1537f455eb644a455971fdc7e9fa321302260f75d219b376d143"
+      }
+    },
+    {
+      "slug": "withpety-nekoaigan",
+      "operation": "content-release",
+      "result": {
+        "id": 433,
+        "url": "https://hirogarushumi.com/withpety-nekoaigan/",
+        "fingerprint": "11271f7f33fef38ab613c4c6852589f23052bea02f9c4e192a827bd91fc3fcb5"
+      }
+    },
+    {
+      "slug": "withpety-nekojinkatsu",
+      "operation": "content-release",
+      "result": {
+        "id": 434,
+        "url": "https://hirogarushumi.com/withpety-nekojinkatsu/",
+        "fingerprint": "a03cc701246c15d2e8f490fc3fe137d932ecdd23d820c4130f1a85e9d404a964"
+      }
+    },
+    {
+      "slug": "withpety-nekosanpo",
+      "operation": "content-release",
+      "result": {
+        "id": 435,
+        "url": "https://hirogarushumi.com/withpety-nekosanpo/",
+        "fingerprint": "15a3f421c97e237331d3a5c1c959280b35eeacc7ac92af42babab9e385b25184"
+      }
+    },
+    {
+      "slug": "aigan-dobutsu-course",
+      "operation": "content-release",
+      "result": {
+        "id": 436,
+        "url": "https://hirogarushumi.com/aigan-dobutsu-course/",
+        "fingerprint": "84962b375b17eb3efce4e98bc50c09117562e26605c18e474b56f495fe805680"
+      }
+    },
+    {
+      "slug": "acana-orijen-cat-food-guide",
+      "operation": "content-release",
+      "result": {
+        "id": 437,
+        "url": "https://hirogarushumi.com/acana-orijen-cat-food-guide/",
+        "fingerprint": "73753e9cb581f2680772cf8a9bdc7ee119ee9bc4448d65b7fcfc4f32e63add0d"
+      }
+    },
+    {
+      "slug": "linx-as-store",
+      "operation": "content-release",
+      "result": {
+        "id": 438,
+        "url": "https://hirogarushumi.com/linx-as-store/",
+        "fingerprint": "a14bdebb597de2f7a79f2751db7591a1601a6b9148f9947aafa5f8f52051f6ec"
+      }
+    },
+    {
+      "key": "about",
+      "operation": "page",
+      "result": {
+        "id": 29,
+        "status": "publish",
+        "url": "https://hirogarushumi.com/hsh-about/"
+      }
+    },
+    {
+      "key": "hakushu-visit",
+      "operation": "page",
+      "result": {
+        "id": 195,
+        "status": "publish",
+        "url": "https://hirogarushumi.com/hsh-hakushu-visit/"
+      }
+    }
+  ]
+}
