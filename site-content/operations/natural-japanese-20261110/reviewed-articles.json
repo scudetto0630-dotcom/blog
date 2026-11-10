@@ -1,0 +1,1961 @@
+[
+  {
+    "slug": "cat-carrier-checklist",
+    "kind": "starter",
+    "url": "https://hirogarushumi.com/cat-carrier-checklist/",
+    "title_before": "猫用リュックキャリーがへこんだ話｜10年以上前の頑丈な物を使い直した理由",
+    "title_after": "猫用リュックキャリーがへこんだ話｜10年以上前の頑丈な物を使い直した理由",
+    "original_published_at": "2026-10-15T22:05:09",
+    "fingerprint_before": "4e06b3181d64b84028f157ba3f8caf44f4b2eefdf038ab327138bf64f932e789",
+    "content_sha256_before": "ae5e42cc4fda0ebd7aef79a97f44aaa2ad7ad03974d4e1f1b2ad5641c5ae3c2c",
+    "source_sha256_after": "78a3b8565cee43fb490d6678f6014b1beecc766846d6e9d1adf99690d9568244",
+    "facts_before": {
+      "numbers": [
+        "000円",
+        "000円",
+        "10年",
+        "10年",
+        "10年",
+        "10月",
+        "1年",
+        "2026年",
+        "4kg",
+        "5.5kg"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/before-welcoming-cat/",
+        "https://hirogarushumi.com/cat-vet-routine/",
+        "https://hirogarushumi.com/neko-guide/articles/first-days/",
+        "https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/resources/cat-carrier-checklist.txt",
+        "https://www.jreast.co.jp/kippu/20.html"
+      ]
+    },
+    "facts_after": {
+      "numbers": [
+        "000円",
+        "000円",
+        "10年",
+        "10年",
+        "10年",
+        "10月",
+        "1年",
+        "2026年",
+        "4kg",
+        "5.5kg"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/before-welcoming-cat/",
+        "https://hirogarushumi.com/cat-vet-routine/",
+        "https://hirogarushumi.com/neko-guide/articles/first-days/",
+        "https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/resources/cat-carrier-checklist.txt",
+        "https://www.jreast.co.jp/kippu/20.html"
+      ]
+    }
+  },
+  {
+    "slug": "highball-measure-and-adjust",
+    "kind": "starter",
+    "url": "https://hirogarushumi.com/highball-measure-and-adjust/",
+    "title_before": "ハイボールが薄い？ ウイスキーを足す前に見てみよう",
+    "title_after": "ハイボールが薄い？ ウイスキーを足す前に見てみよう",
+    "original_published_at": "2026-10-15T22:05:09",
+    "fingerprint_before": "72cb7ebca6b58d724f0d14bd8efdbfe6ccf597b4025ff54791a1943f22d682a7",
+    "content_sha256_before": "282cf84050191721905152469c9dd3d2eb440508731b41c08f9ab6a235db9dfd",
+    "source_sha256_after": "d2c203e541f6eac8f8013d910c2c6d06a3d451db9977a3e67be0fc2f7895200b",
+    "facts_before": {
+      "numbers": [
+        "12年",
+        "12年",
+        "12年",
+        "20歳",
+        "40％",
+        "8％"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/glenlivet-12-first-bottles/",
+        "https://hirogarushumi.com/single-malt-label-guide/",
+        "https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/resources/highball-note.txt",
+        "https://www.suntory.co.jp/whisky/beginner/drink/highball.html"
+      ]
+    },
+    "facts_after": {
+      "numbers": [
+        "12年",
+        "12年",
+        "12年",
+        "20歳",
+        "40％",
+        "8％"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/glenlivet-12-first-bottles/",
+        "https://hirogarushumi.com/single-malt-label-guide/",
+        "https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/resources/highball-note.txt",
+        "https://www.suntory.co.jp/whisky/beginner/drink/highball.html"
+      ]
+    }
+  },
+  {
+    "slug": "csv-import-seven-checks",
+    "kind": "starter",
+    "url": "https://hirogarushumi.com/csv-import-seven-checks/",
+    "title_before": "CSVを取り込む前に。0や空欄を変えないための7つの確認",
+    "title_after": "CSVを取り込む前に。0や空欄を変えないための7つの確認",
+    "original_published_at": "2026-10-15T22:05:09",
+    "fingerprint_before": "b20bc6ce3e6c40092237300c5fdae035cecbad58148b3ab095a672369a183290",
+    "content_sha256_before": "f2a61c222186eb775bbbea32662b8b79e4e3d5ae106533f7db116e2cafcc9ed4",
+    "source_sha256_after": "cd930a1a3079192fd14b2cb688c45d55fbca1caabe73a05e4f0e473ec29a5a6e",
+    "facts_before": {
+      "numbers": [],
+      "sources": [
+        "https://hirogarushumi.com/ai-data-extraction-checks/",
+        "https://hirogarushumi.com/it-data-work-flow/",
+        "https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/resources/csv-import-checklist.txt",
+        "https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/resources/csv-practice.csv",
+        "https://support.microsoft.com/ja-jp/office/%E3%83%86%E3%82%AD%E3%82%B9%E3%83%88-txt-%E3%81%BE%E3%81%9F%E3%81%AF-csv-%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E3%82%A4%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%88%E3%81%BE%E3%81%9F%E3%81%AF%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%88-5250ac4c-663c-47ce-937b-339e391393ba",
+        "https://www.rfc-editor.org/rfc/rfc4180"
+      ]
+    },
+    "facts_after": {
+      "numbers": [],
+      "sources": [
+        "https://hirogarushumi.com/ai-data-extraction-checks/",
+        "https://hirogarushumi.com/it-data-work-flow/",
+        "https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/resources/csv-import-checklist.txt",
+        "https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/resources/csv-practice.csv",
+        "https://support.microsoft.com/ja-jp/office/%E3%83%86%E3%82%AD%E3%82%B9%E3%83%88-txt-%E3%81%BE%E3%81%9F%E3%81%AF-csv-%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E3%82%A4%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%88%E3%81%BE%E3%81%9F%E3%81%AF%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%88-5250ac4c-663c-47ce-937b-339e391393ba",
+        "https://www.rfc-editor.org/rfc/rfc4180"
+      ]
+    }
+  },
+  {
+    "slug": "before-welcoming-cat",
+    "kind": "expanded",
+    "url": "https://hirogarushumi.com/before-welcoming-cat/",
+    "title_before": "猫を迎える準備、まず何を買う？ 部屋の片付けも忘れずに",
+    "title_after": "猫を迎える準備、まず何を買う？ 部屋の片付けも忘れずに",
+    "original_published_at": "2026-11-03T02:43:36",
+    "fingerprint_before": "8ca56f8aef2d8e01506d899b4b24aa7284143b276b0fe977828db8c06ce792a5",
+    "content_sha256_before": "3aa2ee4a1e413d93ce0985d28b7e208fd77fa7ae1fee78aa3a53490faa7ab4b5",
+    "source_sha256_after": "cbd3e1ad44580194e44036c30fafbd15f49de577c215983bd3ce6400b61038d0",
+    "facts_before": {
+      "numbers": [
+        "2025年",
+        "4月"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/cat-carrier-checklist/",
+        "https://hirogarushumi.com/manmos-cat-life/"
+      ]
+    },
+    "facts_after": {
+      "numbers": [
+        "2025年",
+        "4月"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/cat-carrier-checklist/",
+        "https://hirogarushumi.com/manmos-cat-life/"
+      ]
+    }
+  },
+  {
+    "slug": "manmos-cat-life",
+    "kind": "expanded",
+    "url": "https://hirogarushumi.com/manmos-cat-life/",
+    "title_before": "抱っこは苦手。でも甘えん坊。5歳のまんもすと暮らしています",
+    "title_after": "保護猫まんもすとの出会い｜ひと目で「この子だ」と思って迎えた日",
+    "original_published_at": "2026-11-03T02:43:36",
+    "fingerprint_before": "46d243124746180c03fc9b58a16572ee99d9e1f8075852967648b9f4b6158c71",
+    "content_sha256_before": "6988c5e5b5b12d76addc9c80a13f69ac8b5ac8f23a228d247c731b203cbb6e86",
+    "source_sha256_after": "b693cdcf40b5160ec59bfb7490eb40de8b0018c72a3f0cc14754b58aeef0f799",
+    "facts_before": {
+      "numbers": [
+        "000円",
+        "10月",
+        "2025年",
+        "2026年",
+        "4月",
+        "5.5kg",
+        "5.5kg",
+        "5.5kg",
+        "5歳"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/before-welcoming-cat/",
+        "https://hirogarushumi.com/cat-carrier-checklist/",
+        "https://hirogarushumi.com/cat-teaser-small-parts/"
+      ]
+    },
+    "facts_after": {
+      "numbers": [
+        "000円",
+        "10月",
+        "2025年",
+        "2026年",
+        "4月",
+        "5.5kg",
+        "5.5kg",
+        "5.5kg",
+        "5歳"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/before-welcoming-cat/",
+        "https://hirogarushumi.com/cat-carrier-checklist/",
+        "https://hirogarushumi.com/cat-teaser-small-parts/"
+      ]
+    }
+  },
+  {
+    "slug": "cat-teaser-small-parts",
+    "kind": "expanded",
+    "url": "https://hirogarushumi.com/cat-teaser-small-parts/",
+    "title_before": "100均のねこじゃらしも使う。でも、小さな飾りは気になる",
+    "title_after": "100均のねこじゃらしも使う。でも、小さな飾りは気になる",
+    "original_published_at": "2026-11-03T02:43:37",
+    "fingerprint_before": "2ae9fdb9a9cf5afab8b217d8d45c974903b1457db4bb8902ce14eb4a41b665f2",
+    "content_sha256_before": "3678ebd2308102b93898963574592e45101e9c323f2f57b822b426ec7f3dff2e",
+    "source_sha256_after": "e4ba5d92d78863690bd3c1f59ae9aa6802d71660bab34f49bf2d7e9fa296c959",
+    "facts_before": {
+      "numbers": [],
+      "sources": [
+        "https://hirogarushumi.com/cat-vet-routine/",
+        "https://hirogarushumi.com/manmos-cat-life/"
+      ]
+    },
+    "facts_after": {
+      "numbers": [],
+      "sources": [
+        "https://hirogarushumi.com/cat-vet-routine/",
+        "https://hirogarushumi.com/manmos-cat-life/"
+      ]
+    }
+  },
+  {
+    "slug": "cat-vet-routine",
+    "kind": "expanded",
+    "url": "https://hirogarushumi.com/cat-vet-routine/",
+    "title_before": "猫の通院前に何を用意する？ 持ち物と、伝えたいことの整理",
+    "title_after": "猫の通院前に何を用意する？ 持ち物と、伝えたいことの整理",
+    "original_published_at": "2026-11-03T02:43:38",
+    "fingerprint_before": "df87cd3da4f083e3e18b44787a8ecb59a1dd8feb6501aac2ca134c5b4b559585",
+    "content_sha256_before": "2aae62be88c13112913fc801054b9f57402f8ed798a25e5ae4cb18a6c578fc73",
+    "source_sha256_after": "cc1b93b5ba71e2b90aa141a029ab5b8145872de6c2dbda103a25b1582d1c28fb",
+    "facts_before": {
+      "numbers": [],
+      "sources": [
+        "https://hirogarushumi.com/before-welcoming-cat/",
+        "https://hirogarushumi.com/cat-carrier-checklist/"
+      ]
+    },
+    "facts_after": {
+      "numbers": [],
+      "sources": [
+        "https://hirogarushumi.com/before-welcoming-cat/",
+        "https://hirogarushumi.com/cat-carrier-checklist/"
+      ]
+    }
+  },
+  {
+    "slug": "glenlivet-12-first-bottles",
+    "kind": "expanded",
+    "url": "https://hirogarushumi.com/glenlivet-12-first-bottles/",
+    "title_before": "グレンリベット12年の感想｜グラス付きで買った3本目がうまかった",
+    "title_after": "グレンリベット12年の感想｜グラス付きで買った3本目がうまかった",
+    "original_published_at": "2026-11-03T02:43:38",
+    "fingerprint_before": "9f148e0a4f46994d4ec308fe1446a9927e7acdab67927ec739b3779365fdab81",
+    "content_sha256_before": "2bb298f0fb66c9c2da940d92dfa12e02926ec71bb4da1e0b8a2fd99ac1894e3f",
+    "source_sha256_after": "47f85962f442f50edf85b7fbd1542839fddfd28a5208f69cb16632071cdccb2c",
+    "facts_before": {
+      "numbers": [
+        "12年",
+        "12年",
+        "12年",
+        "12年",
+        "20歳",
+        "2年"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/highball-measure-and-adjust/",
+        "https://hirogarushumi.com/hsh-whisky-notes/#arboralis-taste",
+        "https://hirogarushumi.com/sherry-cask-notes/",
+        "https://hirogarushumi.com/single-malt-label-guide/"
+      ]
+    },
+    "facts_after": {
+      "numbers": [
+        "12年",
+        "12年",
+        "12年",
+        "12年",
+        "20歳",
+        "2年"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/highball-measure-and-adjust/",
+        "https://hirogarushumi.com/hsh-whisky-notes/#arboralis-taste",
+        "https://hirogarushumi.com/sherry-cask-notes/",
+        "https://hirogarushumi.com/single-malt-label-guide/"
+      ]
+    }
+  },
+  {
+    "slug": "single-malt-label-guide",
+    "kind": "expanded",
+    "url": "https://hirogarushumi.com/single-malt-label-guide/",
+    "title_before": "シングルモルトのラベル、最初はどこを見ればいい？",
+    "title_after": "シングルモルトのラベル、最初はどこを見ればいい？",
+    "original_published_at": "2026-11-05T09:42:21",
+    "fingerprint_before": "5550f46342c399bb065c7b31decdf13965b544c22e4abb8f13fc2184b9e6b4ea",
+    "content_sha256_before": "c54023307e850333c7faf4906430aadd30fcceb6eacb1e1acba4c9f1eec37f8c",
+    "source_sha256_after": "e6463e9d022e6f7a84649d6e52b7e11aeb576822720d7ce6a17955e51529c342",
+    "facts_before": {
+      "numbers": [
+        "12年",
+        "12年",
+        "12年",
+        "12年",
+        "12年",
+        "200円",
+        "200円",
+        "20歳",
+        "500円",
+        "500円",
+        "550円",
+        "600円"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/glenlivet-12-first-bottles/",
+        "https://hirogarushumi.com/sherry-cask-notes/",
+        "https://www.suntory.co.jp/whisky/malt/"
+      ]
+    },
+    "facts_after": {
+      "numbers": [
+        "12年",
+        "12年",
+        "12年",
+        "12年",
+        "12年",
+        "200円",
+        "200円",
+        "20歳",
+        "500円",
+        "500円",
+        "550円",
+        "600円"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/glenlivet-12-first-bottles/",
+        "https://hirogarushumi.com/sherry-cask-notes/",
+        "https://www.suntory.co.jp/whisky/malt/"
+      ]
+    }
+  },
+  {
+    "slug": "sherry-cask-notes",
+    "kind": "expanded",
+    "url": "https://hirogarushumi.com/sherry-cask-notes/",
+    "title_before": "グレンファークラス12年の感想｜ぶどうパン好きが何度も買う理由",
+    "title_after": "グレンファークラス12年の感想｜ぶどうパン好きが何度も買う理由",
+    "original_published_at": "2026-11-03T02:43:39",
+    "fingerprint_before": "eddb2c15a6573311933f219158f562be7c4a3cafbc9036eb7d66c757e54d53ce",
+    "content_sha256_before": "a409176cce97f6367cc219eababe904365b94ade41cde3763c729708f510c350",
+    "source_sha256_after": "b7cf29897b1ab163654ecafd09922551b8a55af38fdd5baaeb8323fee84c64c4",
+    "facts_before": {
+      "numbers": [
+        "12年",
+        "12年",
+        "12年",
+        "12年",
+        "12年",
+        "12年",
+        "12年",
+        "12年",
+        "1年",
+        "20歳",
+        "500円"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/glenlivet-12-first-bottles/",
+        "https://hirogarushumi.com/hsh-whisky-notes/#arboralis-taste",
+        "https://hirogarushumi.com/single-malt-label-guide/",
+        "https://www.sherry.wine/sherry-wine/dry-sherry-wines/oloroso",
+        "https://www.sherry.wine/sherry-wine/naturally-sweet-sherry-wine/pedro-ximenez"
+      ]
+    },
+    "facts_after": {
+      "numbers": [
+        "12年",
+        "12年",
+        "12年",
+        "12年",
+        "12年",
+        "12年",
+        "12年",
+        "1年",
+        "20歳",
+        "500円"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/glenlivet-12-first-bottles/",
+        "https://hirogarushumi.com/hsh-whisky-notes/#arboralis-taste",
+        "https://hirogarushumi.com/single-malt-label-guide/",
+        "https://www.sherry.wine/sherry-wine/dry-sherry-wines/oloroso",
+        "https://www.sherry.wine/sherry-wine/naturally-sweet-sherry-wine/pedro-ximenez"
+      ]
+    }
+  },
+  {
+    "slug": "it-data-work-flow",
+    "kind": "expanded",
+    "url": "https://hirogarushumi.com/it-data-work-flow/",
+    "title_before": "AIでデータ抽出が楽に。今しているデータ加工の仕事",
+    "title_after": "AIでデータ抽出が楽に。今しているデータ加工の仕事",
+    "original_published_at": "2026-11-03T02:43:40",
+    "fingerprint_before": "c007174b334ebbb2b213387051dff3a4de8317763b05c04362bf38433ed98a34",
+    "content_sha256_before": "428ca1fd400c2ee9773322fa8de2f3c6026a5702d061e3b5e709f648476e2097",
+    "source_sha256_after": "e8aeefa82154f48b32709bbb58b183b84172caa1c28cb478423dc442316e08a8",
+    "facts_before": {
+      "numbers": [
+        "1年"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/ai-data-extraction-checks/",
+        "https://hirogarushumi.com/starting-it-without-specialty/"
+      ]
+    },
+    "facts_after": {
+      "numbers": [
+        "1年"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/ai-data-extraction-checks/",
+        "https://hirogarushumi.com/starting-it-without-specialty/"
+      ]
+    }
+  },
+  {
+    "slug": "starting-it-without-specialty",
+    "kind": "expanded",
+    "url": "https://hirogarushumi.com/starting-it-without-specialty/",
+    "title_before": "ITに興味を持ってから、今の仕事まで約1年かかった",
+    "title_after": "ITに興味を持ってから、今の仕事まで約1年かかった",
+    "original_published_at": "2026-11-03T02:43:40",
+    "fingerprint_before": "85fa3c5065653c7ba262df563553b4938c843e632e6e19346cf44632f5aa5eb4",
+    "content_sha256_before": "07e716e5e653bccca13c8cebcb023890680b5afa80b3fe6784110244f637ff28",
+    "source_sha256_after": "d9c950c90b22941e98888dcb0cf16054fea0f2a609c79c5b77d45ef3321ff59f",
+    "facts_before": {
+      "numbers": [
+        "1年",
+        "1日"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/ai-data-extraction-checks/",
+        "https://hirogarushumi.com/it-data-work-flow/"
+      ]
+    },
+    "facts_after": {
+      "numbers": [
+        "1年",
+        "1日"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/ai-data-extraction-checks/",
+        "https://hirogarushumi.com/it-data-work-flow/"
+      ]
+    }
+  },
+  {
+    "slug": "ai-data-extraction-checks",
+    "kind": "expanded",
+    "url": "https://hirogarushumi.com/ai-data-extraction-checks/",
+    "title_before": "AIにデータ抽出を頼んだら、できた表のどこを見る？",
+    "title_after": "AIにデータ抽出を頼んだら、できた表のどこを見る？",
+    "original_published_at": "2026-11-03T02:43:41",
+    "fingerprint_before": "1ef79236519c2617dc6645bb1231e07cb69b34fe56abefef74ec11c0b645cc15",
+    "content_sha256_before": "34078543ad61dcb54abfda69fa81f43546531e007218e134c9bc2f79a7fe76b4",
+    "source_sha256_after": "1d61a923eb68eac72932f95df503cb88f5baab24f9853fc907bca9736424287b",
+    "facts_before": {
+      "numbers": [],
+      "sources": [
+        "https://hirogarushumi.com/csv-import-seven-checks/",
+        "https://hirogarushumi.com/it-data-work-flow/",
+        "https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/resources/extraction-expected.csv",
+        "https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/resources/extraction-input.csv",
+        "https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/resources/extraction-request.txt"
+      ]
+    },
+    "facts_after": {
+      "numbers": [],
+      "sources": [
+        "https://hirogarushumi.com/csv-import-seven-checks/",
+        "https://hirogarushumi.com/it-data-work-flow/",
+        "https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/resources/extraction-expected.csv",
+        "https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/resources/extraction-input.csv",
+        "https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/resources/extraction-request.txt"
+      ]
+    }
+  },
+  {
+    "slug": "paws-green-deli-cat-food",
+    "kind": "affiliate",
+    "url": "https://hirogarushumi.com/paws-green-deli-cat-food/",
+    "title_before": "【ご紹介】パウズグリーンデリの猫用フード｜お試しセットの内容と選び方",
+    "title_after": "【ご紹介】パウズグリーンデリの猫用フード｜お試しセットの内容と選び方",
+    "original_published_at": "2026-11-04T01:38:03",
+    "fingerprint_before": "1b6d5ee3078d68873337cef96a4769511d5ee0c991b741cba2ced30b3aafd829",
+    "content_sha256_before": "07df8982a49170211d4c43ed296dab8e8bb16bb6a4d100931cbce37a8e3d7dbc",
+    "source_sha256_after": "9190c74f36a791a8a2d23a64e5ea393d8ac26172d2aabcb06a0e12f3bd29966b",
+    "facts_before": {
+      "numbers": [
+        "11月",
+        "11月",
+        "2026年",
+        "2026年",
+        "2袋",
+        "2袋",
+        "2袋",
+        "30日",
+        "30日",
+        "4日",
+        "4日",
+        "650円",
+        "650円",
+        "6袋",
+        "6袋"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/before-welcoming-cat/",
+        "https://paws-green-deli.com/",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+CPUCZ6+5PNW+BW8O2&a8ejpredirect=https%3A%2F%2Fpaws-green-deli.com%2F"
+      ]
+    },
+    "facts_after": {
+      "numbers": [
+        "11月",
+        "11月",
+        "2026年",
+        "2026年",
+        "2袋",
+        "2袋",
+        "2袋",
+        "30日",
+        "30日",
+        "4日",
+        "4日",
+        "650円",
+        "650円",
+        "6袋",
+        "6袋"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/before-welcoming-cat/",
+        "https://paws-green-deli.com/",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+CPUCZ6+5PNW+BW8O2&a8ejpredirect=https%3A%2F%2Fpaws-green-deli.com%2F"
+      ]
+    }
+  },
+  {
+    "slug": "hario-cat-bowl-guide",
+    "kind": "affiliate",
+    "url": "https://hirogarushumi.com/hario-cat-bowl-guide/",
+    "title_before": "【ご紹介】HARIO「にゃんプレトール」｜猫用食器のサイズとお手入れ",
+    "title_after": "【ご紹介】HARIO「にゃんプレトール」｜猫用食器のサイズとお手入れ",
+    "original_published_at": "2026-11-04T01:38:05",
+    "fingerprint_before": "a39852a5cbdba61da005003671001dba57ba720145533652d8e382818ae31f12",
+    "content_sha256_before": "d48250a79bc70ab12ef81bc0a579d2bd16b4cc8abb75365ee235df55b963f692",
+    "source_sha256_after": "b9dcf9caea355ac933af25177641cf368bb336f7096752777c0be61ff7e17957",
+    "facts_before": {
+      "numbers": [
+        "11月",
+        "2026年",
+        "4日",
+        "870円"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/manmos-cat-life/",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+CP8XDE+4XPI+BW8O2&a8ejpredirect=https%3A%2F%2Fshop.hariocorp.co.jp",
+        "https://shop.hariocorp.co.jp"
+      ]
+    },
+    "facts_after": {
+      "numbers": [
+        "11月",
+        "2026年",
+        "4日",
+        "870円"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/manmos-cat-life/",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+CP8XDE+4XPI+BW8O2&a8ejpredirect=https%3A%2F%2Fshop.hariocorp.co.jp",
+        "https://shop.hariocorp.co.jp"
+      ]
+    }
+  },
+  {
+    "slug": "mirai-cat-food-types",
+    "kind": "affiliate",
+    "url": "https://hirogarushumi.com/mirai-cat-food-types/",
+    "title_before": "【ご紹介】和漢みらいのキャットフード｜3タイプの違いと選ぶときの注意点",
+    "title_after": "【ご紹介】和漢みらいのキャットフード｜3タイプの違いと選ぶときの注意点",
+    "original_published_at": "2026-11-04T01:38:07",
+    "fingerprint_before": "e246ab143aa30b19a29e14bcca121efb9417e46f238314eeaa42f5774c92d48e",
+    "content_sha256_before": "632c0df0c11c06f0c1ff02f6475903604cdd97f6ecb9f8854b9e6eebb2929662",
+    "source_sha256_after": "1b3cb09f744bf317b2a34fb7811fc404ba7f4f4f7388a41e5034b354f44211e5",
+    "facts_before": {
+      "numbers": [
+        "100g",
+        "11月",
+        "2026年",
+        "4日"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/cat-vet-routine/",
+        "https://mirai-cat.com/AF/",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+CMV6YA+3SZE+NSWRM&a8ejpredirect=https%3A%2F%2Fmirai-cat.com%2FAF%2F"
+      ]
+    },
+    "facts_after": {
+      "numbers": [
+        "100g",
+        "11月",
+        "2026年",
+        "4日"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/cat-vet-routine/",
+        "https://mirai-cat.com/AF/",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+CMV6YA+3SZE+NSWRM&a8ejpredirect=https%3A%2F%2Fmirai-cat.com%2FAF%2F"
+      ]
+    }
+  },
+  {
+    "slug": "m-and-cat-knit-bag",
+    "kind": "affiliate",
+    "url": "https://hirogarushumi.com/m-and-cat-knit-bag/",
+    "title_before": "【ご紹介】M&Co.の猫モチーフ雑貨｜ニットバッグとチャーム",
+    "title_after": "【ご紹介】M&Co.の猫モチーフ雑貨｜ニットバッグとチャーム",
+    "original_published_at": "2026-11-04T01:38:09",
+    "fingerprint_before": "fcac7fbce70d97379b66518571e5cfc374f4e0b4a5dcbd0bf5747a1edac1ea10",
+    "content_sha256_before": "9d2bd72f45436a991eefbe2953d822ada91b9940d925fd5b2dff85e895690d4a",
+    "source_sha256_after": "013b661a2c655b6d4600c448bd4c6233e63a8e7447da4b686eb9ea6e8897726d",
+    "facts_before": {
+      "numbers": [
+        "11月",
+        "2026年",
+        "4日",
+        "750円",
+        "750円"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/hsh-gallery/",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+CM9RCI+5WF8+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.m-and.co.jp%2F",
+        "https://www.m-and.co.jp/"
+      ]
+    },
+    "facts_after": {
+      "numbers": [
+        "11月",
+        "2026年",
+        "4日",
+        "750円",
+        "750円"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/hsh-gallery/",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+CM9RCI+5WF8+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.m-and.co.jp%2F",
+        "https://www.m-and.co.jp/"
+      ]
+    }
+  },
+  {
+    "slug": "pet-sougi-110-cat-guide",
+    "kind": "affiliate",
+    "url": "https://hirogarushumi.com/pet-sougi-110-cat-guide/",
+    "title_before": "【ご紹介】ペット葬儀110番｜火葬プランと相談前に確認したいこと",
+    "title_after": "【ご紹介】ペット葬儀110番｜火葬プランと相談前に確認したいこと",
+    "original_published_at": "2026-11-04T01:38:10",
+    "fingerprint_before": "6c8ad3682cd5b129880a316c59ff7ae7785a0e7de754fcf2069614f6a3209501",
+    "content_sha256_before": "bf3c8cd49d266f6a1d570db959f7a863398a894705f59d437125924bf8e4834c",
+    "source_sha256_after": "5617558aa63caf36041037bf42326b6fa44e58c9d2dd2eb8e15ed192a3969c1b",
+    "facts_before": {
+      "numbers": [
+        "11月",
+        "2026年",
+        "4日"
+      ],
+      "sources": [
+        "https://aff.life-110.com/?st_site=pet_sougi&st_aff=a8",
+        "https://hirogarushumi.com/manmos-cat-life/",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+CLOBQQ+39GM+44TXSY&a8ejpredirect=https%3A%2F%2Faff.life-110.com%2F%3Fst_site%3Dpet_sougi%26st_aff%3Da8"
+      ]
+    },
+    "facts_after": {
+      "numbers": [
+        "11月",
+        "2026年",
+        "4日"
+      ],
+      "sources": [
+        "https://aff.life-110.com/?st_site=pet_sougi&st_aff=a8",
+        "https://hirogarushumi.com/manmos-cat-life/",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+CLOBQQ+39GM+44TXSY&a8ejpredirect=https%3A%2F%2Faff.life-110.com%2F%3Fst_site%3Dpet_sougi%26st_aff%3Da8"
+      ]
+    }
+  },
+  {
+    "slug": "digxipop-cat-figure",
+    "kind": "affiliate",
+    "url": "https://hirogarushumi.com/digxipop-cat-figure/",
+    "title_before": "【ご紹介】愛猫の写真をフィギュアに。digxipopの注文方法",
+    "title_after": "【ご紹介】愛猫の写真をフィギュアに。digxipopの注文方法",
+    "original_published_at": "2026-11-04T01:38:11",
+    "fingerprint_before": "94a59ef4eecdd18ef9392a5b7eb47b3ce5191dfced7593831678e5b12843d762",
+    "content_sha256_before": "65bb7e8d8276a2972f07686ebf5c5a26f512e4c7b5bec8315921aadb7c24dbd1",
+    "source_sha256_after": "8fedd83c45836c8267b75bbfbed7f5f36889c70c5400bdaceb191e48be75ed4b",
+    "facts_before": {
+      "numbers": [
+        "11月",
+        "2026年",
+        "4日"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/hsh-gallery/",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+C4ER76+5V36+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.digxipop.com%2Fja-jp",
+        "https://www.digxipop.com/ja-jp"
+      ]
+    },
+    "facts_after": {
+      "numbers": [
+        "11月",
+        "2026年",
+        "4日"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/hsh-gallery/",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+C4ER76+5V36+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.digxipop.com%2Fja-jp",
+        "https://www.digxipop.com/ja-jp"
+      ]
+    }
+  },
+  {
+    "slug": "withpety-nekokenshin",
+    "kind": "affiliate",
+    "url": "https://hirogarushumi.com/withpety-nekokenshin/",
+    "title_before": "【ご紹介】猫用サプリ「毎日健心」｜成分と購入前の確認ポイント",
+    "title_after": "【ご紹介】猫用サプリ「毎日健心」｜成分と購入前の確認ポイント",
+    "original_published_at": "2026-11-04T01:38:13",
+    "fingerprint_before": "877674d878637cc3e2423af180ee11315ad1fa25bd34c316e94652ddcfbbfb95",
+    "content_sha256_before": "54531af92e992898a7c0410b2176d1156cc7bbe40b3b47af274f6ee48b602ab9",
+    "source_sha256_after": "21cb815ef03e035620953465a5b81de3f0e3c245ff6708db308743c9c84d035f",
+    "facts_before": {
+      "numbers": [
+        "11月",
+        "1袋",
+        "2026年",
+        "4日",
+        "60粒",
+        "60粒",
+        "60粒"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/cat-vet-routine/",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+BLYBG2+3J9O+25DPHV&a8ejpredirect=https%3A%2F%2Fwithpety.com%2Fproducts%2Fnekokenshin%2Fa8.html%3Fad_code%3D20800",
+        "https://withpety.com/products/nekokenshin/a8.html?ad_code=20800"
+      ]
+    },
+    "facts_after": {
+      "numbers": [
+        "11月",
+        "1袋",
+        "2026年",
+        "4日",
+        "60粒",
+        "60粒",
+        "60粒"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/cat-vet-routine/",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+BLYBG2+3J9O+25DPHV&a8ejpredirect=https%3A%2F%2Fwithpety.com%2Fproducts%2Fnekokenshin%2Fa8.html%3Fad_code%3D20800",
+        "https://withpety.com/products/nekokenshin/a8.html?ad_code=20800"
+      ]
+    }
+  },
+  {
+    "slug": "pontely-cat-dna-test",
+    "kind": "affiliate",
+    "url": "https://hirogarushumi.com/pontely-cat-dna-test/",
+    "title_before": "【ご紹介】猫の遺伝子検査Pontely｜検査内容とプランの違い",
+    "title_after": "【ご紹介】猫の遺伝子検査Pontely｜検査内容とプランの違い",
+    "original_published_at": "2026-11-04T01:38:14",
+    "fingerprint_before": "eec54c330e2edb0ef85179cad42ee598e285ee3ba8d988c1ce1864e98a10d9ef",
+    "content_sha256_before": "6f4ad01af59dd52cce2b751d4116bf714c32e92041b5beabb43920822103dc64",
+    "source_sha256_after": "fea60321b44814ad59bba96ce85f5253ab96d8ea720b7057aed1ec095ec03071",
+    "facts_before": {
+      "numbers": [
+        "11月",
+        "2026年",
+        "4日",
+        "500円"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/cat-vet-routine/",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+BLCVUA+46DW+HUKPU&a8ejpredirect=https%3A%2F%2Fwww.pontely.com%2Fforowner%2Fcat%3Fref%3Da8",
+        "https://www.pontely.com/forowner/cat?ref=a8"
+      ]
+    },
+    "facts_after": {
+      "numbers": [
+        "11月",
+        "2026年",
+        "4日",
+        "500円"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/cat-vet-routine/",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+BLCVUA+46DW+HUKPU&a8ejpredirect=https%3A%2F%2Fwww.pontely.com%2Fforowner%2Fcat%3Fref%3Da8",
+        "https://www.pontely.com/forowner/cat?ref=a8"
+      ]
+    }
+  },
+  {
+    "slug": "withpety-nekobihada",
+    "kind": "affiliate",
+    "url": "https://hirogarushumi.com/withpety-nekobihada/",
+    "title_before": "【ご紹介】猫用サプリ「毎日美肌」｜PS-B1配合タイプの成分と特徴",
+    "title_after": "【ご紹介】猫用サプリ「毎日美肌」｜PS-B1配合タイプの成分と特徴",
+    "original_published_at": "2026-11-04T01:38:16",
+    "fingerprint_before": "4a61dc4a78c6ab0c3f34cfc1c6e3e8d9e748b00465baa7bc385cc12a77c655a8",
+    "content_sha256_before": "19b84ac24ef3a53f2ba33ebf62adf79db0bf78cc6f622e899862d2a7b4bac29f",
+    "source_sha256_after": "d575a7f1357330013e37894d3e871c49d5eb3dc843e6842071c954bda2407921",
+    "facts_before": {
+      "numbers": [
+        "11月",
+        "1袋",
+        "2026年",
+        "4日",
+        "60粒",
+        "60粒",
+        "60粒"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/manmos-cat-life/",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+BKRG8I+3J9O+2N8PN7&a8ejpredirect=https%3A%2F%2Fwithpety.com%2Fproducts%2Fnekobihada%2Fa8.html%3Fad_code%3D2200",
+        "https://withpety.com/products/nekobihada/a8.html?ad_code=2200"
+      ]
+    },
+    "facts_after": {
+      "numbers": [
+        "11月",
+        "1袋",
+        "2026年",
+        "4日",
+        "60粒",
+        "60粒",
+        "60粒"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/manmos-cat-life/",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+BKRG8I+3J9O+2N8PN7&a8ejpredirect=https%3A%2F%2Fwithpety.com%2Fproducts%2Fnekobihada%2Fa8.html%3Fad_code%3D2200",
+        "https://withpety.com/products/nekobihada/a8.html?ad_code=2200"
+      ]
+    }
+  },
+  {
+    "slug": "onekosama-cat-tower",
+    "kind": "affiliate",
+    "url": "https://hirogarushumi.com/onekosama-cat-tower/",
+    "title_before": "【ご紹介】おねこさまのキャットタワー｜WALK treeとRESIDENCEの違い",
+    "title_after": "【ご紹介】おねこさまのキャットタワー｜WALK treeとRESIDENCEの違い",
+    "original_published_at": "2026-11-04T01:38:17",
+    "fingerprint_before": "e659de2db65c7f3530c1b98263a5e814a1eae83f996f28ca4c032675b49767a5",
+    "content_sha256_before": "9aebe90d521976c16c32e531d5513485f60284b7b54ad15600b19e2f13591049",
+    "source_sha256_after": "1419d9117a73e6c0470242c58fd8b347ca5e2a79865ec01506a2dfa7fcc4a248",
+    "facts_before": {
+      "numbers": [
+        "11月",
+        "2026年",
+        "4日"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/manmos-cat-life/",
+        "https://oneko-sama.com/",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+BIZ5F6+3FF2+NSWRM&a8ejpredirect=https%3A%2F%2Foneko-sama.com%2F"
+      ]
+    },
+    "facts_after": {
+      "numbers": [
+        "11月",
+        "2026年",
+        "4日"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/manmos-cat-life/",
+        "https://oneko-sama.com/",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+BIZ5F6+3FF2+NSWRM&a8ejpredirect=https%3A%2F%2Foneko-sama.com%2F"
+      ]
+    }
+  },
+  {
+    "slug": "withpety-nekoryoukan",
+    "kind": "affiliate",
+    "url": "https://hirogarushumi.com/withpety-nekoryoukan/",
+    "title_before": "【ご紹介】猫用サプリ「毎日良肝」｜成分と購入前の確認ポイント",
+    "title_after": "【ご紹介】猫用サプリ「毎日良肝」｜成分と購入前の確認ポイント",
+    "original_published_at": "2026-11-04T01:38:18",
+    "fingerprint_before": "2b2ec64ba16ef829d0afe7f80a521638144eccd4fc911b9f41e42598fe07ab2e",
+    "content_sha256_before": "b678df001501053be6d56331f62b47d4cd50167be390b1883b0d652324512c9c",
+    "source_sha256_after": "a2fd7b9127488977827bc44b2d24581f10e99280d7bae3e023aac835ddb0228b",
+    "facts_before": {
+      "numbers": [
+        "11月",
+        "1袋",
+        "2026年",
+        "4日",
+        "60粒",
+        "60粒",
+        "60粒"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/cat-vet-routine/",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+B5VM42+3J9O+2Z5DQR&a8ejpredirect=https%3A%2F%2Fwithpety.com%2Fproducts%2Fnekoryoukan%2Fa8.html%3Fad_code%3D2400",
+        "https://withpety.com/products/nekoryoukan/a8.html?ad_code=2400"
+      ]
+    },
+    "facts_after": {
+      "numbers": [
+        "11月",
+        "1袋",
+        "2026年",
+        "4日",
+        "60粒",
+        "60粒",
+        "60粒"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/cat-vet-routine/",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+B5VM42+3J9O+2Z5DQR&a8ejpredirect=https%3A%2F%2Fwithpety.com%2Fproducts%2Fnekoryoukan%2Fa8.html%3Fad_code%3D2400",
+        "https://withpety.com/products/nekoryoukan/a8.html?ad_code=2400"
+      ]
+    }
+  },
+  {
+    "slug": "catlog-cat-monitor",
+    "kind": "affiliate",
+    "url": "https://hirogarushumi.com/catlog-cat-monitor/",
+    "title_before": "【ご紹介】CatlogとCatlog Board｜記録できることと機能の違い",
+    "title_after": "【ご紹介】CatlogとCatlog Board｜記録できることと機能の違い",
+    "original_published_at": "2026-11-04T01:38:20",
+    "fingerprint_before": "4ee1caa8f5930a51a00e1fb0b5909a3c3a7fe6a5dd58711bfe456c71155eeaf1",
+    "content_sha256_before": "71974fcf569ad25ddacc8404591710c118adbc1feb52434ff4b02daff8a95517",
+    "source_sha256_after": "a996f65c15b2dc5180b524e768df398cca5669368353ce15ae2c5bc1ab6b07c6",
+    "facts_before": {
+      "numbers": [
+        "11月",
+        "2026年",
+        "25日",
+        "4日"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/cat-vet-routine/",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+B72HBM+4WPO+BW8O2&a8ejpredirect=https%3A%2F%2Frabo.cat%2Fcatlog%2F",
+        "https://rabo.cat/catlog/"
+      ]
+    },
+    "facts_after": {
+      "numbers": [
+        "11月",
+        "2026年",
+        "25日",
+        "4日"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/cat-vet-routine/",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+B72HBM+4WPO+BW8O2&a8ejpredirect=https%3A%2F%2Frabo.cat%2Fcatlog%2F",
+        "https://rabo.cat/catlog/"
+      ]
+    }
+  },
+  {
+    "slug": "withpety-nekoissho",
+    "kind": "affiliate",
+    "url": "https://hirogarushumi.com/withpety-nekoissho/",
+    "title_before": "【ご紹介】猫用サプリ「毎日一緒」｜DHA・EPA配合タイプの成分と特徴",
+    "title_after": "【ご紹介】猫用サプリ「毎日一緒」｜DHA・EPA配合タイプの成分と特徴",
+    "original_published_at": "2026-11-04T01:38:21",
+    "fingerprint_before": "e13fe3fd8e15b67c7c7dd30f75bea903c6603be323666919c96116f824920efd",
+    "content_sha256_before": "d2e5cb71cd2af3e43f6ad9548ceff1b429862746fc95c1077793c776e5b1b6f4",
+    "source_sha256_after": "03cff171cb2a9961c979424095ef4fcd03a271d249bafdffee341c54644d88f4",
+    "facts_before": {
+      "numbers": [
+        "11月",
+        "1袋",
+        "2026年",
+        "4日",
+        "60粒",
+        "60粒",
+        "60粒"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/manmos-cat-life/",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+B5A6IA+3J9O+1HKL0I&a8ejpredirect=https%3A%2F%2Fwithpety.com%2Fproducts%2Fnekoissho%2Fa8.html%3Fad_code%3D20004",
+        "https://withpety.com/products/nekoissho/a8.html?ad_code=20004"
+      ]
+    },
+    "facts_after": {
+      "numbers": [
+        "11月",
+        "1袋",
+        "2026年",
+        "4日",
+        "60粒",
+        "60粒",
+        "60粒"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/manmos-cat-life/",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+B5A6IA+3J9O+1HKL0I&a8ejpredirect=https%3A%2F%2Fwithpety.com%2Fproducts%2Fnekoissho%2Fa8.html%3Fad_code%3D20004",
+        "https://withpety.com/products/nekoissho/a8.html?ad_code=20004"
+      ]
+    }
+  },
+  {
+    "slug": "pet-paradise-cat-toys",
+    "kind": "affiliate",
+    "url": "https://hirogarushumi.com/pet-paradise-cat-toys/",
+    "title_before": "【ご紹介】ペットパラダイスの猫おもちゃ｜けりぐるみと猫じゃらし",
+    "title_after": "【ご紹介】ペットパラダイスの猫おもちゃ｜けりぐるみと猫じゃらし",
+    "original_published_at": "2026-11-05T00:16:58",
+    "fingerprint_before": "7a058b3e7d7261e6b467982b14fa18cfd264ec6bfbc9bd238a9161cf519f2576",
+    "content_sha256_before": "108725fce9b8711a656bc2975928442c42a7542bf01d6b86f5119a76740004b1",
+    "source_sha256_after": "702574a94745c42a51ee0a36c639a8549828d84b44467fa46ce7622b70342e36",
+    "facts_before": {
+      "numbers": [
+        "11月",
+        "2026年",
+        "4日",
+        "500円",
+        "870円",
+        "870円"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/before-welcoming-cat/",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+C08PYQ+5LCC+BW8O2&a8ejpredirect=https%3A%2F%2Fshop.creativeyoko.co.jp%2F",
+        "https://shop.creativeyoko.co.jp/items?lcc=05"
+      ]
+    },
+    "facts_after": {
+      "numbers": [
+        "11月",
+        "2026年",
+        "4日",
+        "500円",
+        "870円",
+        "870円"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/before-welcoming-cat/",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+C08PYQ+5LCC+BW8O2&a8ejpredirect=https%3A%2F%2Fshop.creativeyoko.co.jp%2F",
+        "https://shop.creativeyoko.co.jp/items?lcc=05"
+      ]
+    }
+  },
+  {
+    "slug": "canagan-dental-cat-food",
+    "kind": "affiliate",
+    "url": "https://hirogarushumi.com/canagan-dental-cat-food/",
+    "title_before": "【ご紹介】カナガンデンタルの猫用フード｜原材料と与える前の注意点",
+    "title_after": "【ご紹介】カナガンデンタルの猫用フード｜原材料と与える前の注意点",
+    "original_published_at": "2026-11-05T00:16:59",
+    "fingerprint_before": "3e79307dbe8bb9ae7b3d8569b24e1353e09c4e8970786d273d21b5228dd06030",
+    "content_sha256_before": "a90b78827e1db2cf2d276b883574f5c0cc8f7e00f9cf81aa63a2c4eef8a994ea",
+    "source_sha256_after": "c39953826f84c24c14b029d6782b06dec74b68bfcf3b036e26d821490906caef",
+    "facts_before": {
+      "numbers": [
+        "1.5kg",
+        "1.5kg",
+        "1.5kg",
+        "1.5kg",
+        "100g",
+        "100g",
+        "100g",
+        "11月",
+        "15.2%",
+        "15.2%",
+        "17.9%",
+        "1袋",
+        "2026年",
+        "32%",
+        "36.8%",
+        "36.8%",
+        "4日",
+        "70g",
+        "70g",
+        "7日",
+        "8.0%",
+        "8.0%"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/canagan-chicken-salmon/",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+BZNACY+3J8+3YVLR6&a8ejpredirect=https%3A%2F%2Fwww.canagancatfood.co.jp%2Fdental%2FCDC20003",
+        "https://www.canagancatfood.co.jp/dental/CDC20003"
+      ]
+    },
+    "facts_after": {
+      "numbers": [
+        "1.5kg",
+        "1.5kg",
+        "1.5kg",
+        "1.5kg",
+        "100g",
+        "100g",
+        "100g",
+        "11月",
+        "15.2%",
+        "15.2%",
+        "17.9%",
+        "1袋",
+        "2026年",
+        "32%",
+        "36.8%",
+        "36.8%",
+        "4日",
+        "70g",
+        "70g",
+        "7日",
+        "8.0%",
+        "8.0%"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/canagan-chicken-salmon/",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+BZNACY+3J8+3YVLR6&a8ejpredirect=https%3A%2F%2Fwww.canagancatfood.co.jp%2Fdental%2FCDC20003",
+        "https://www.canagancatfood.co.jp/dental/CDC20003"
+      ]
+    }
+  },
+  {
+    "slug": "canagan-chicken-salmon",
+    "kind": "affiliate",
+    "url": "https://hirogarushumi.com/canagan-chicken-salmon/",
+    "title_before": "【ご紹介】カナガンの猫用フード｜チキンとサーモンの違い",
+    "title_after": "【ご紹介】カナガンの猫用フード｜チキンとサーモンの違い",
+    "original_published_at": "2026-11-05T00:17:00",
+    "fingerprint_before": "5b20dfe3c764667504cd9a0699c6f58f4aa6fdd254375f045f4ed98c7e1c47e6",
+    "content_sha256_before": "686e2473de09423846b66e85c773ec68af416b71f43468e8d0a942b895c54a9f",
+    "source_sha256_after": "d7ed50a39edade590c74d5fbdc865a74342edaf819254b8408a60a0ebf1e360a",
+    "facts_before": {
+      "numbers": [
+        "1.5kg",
+        "1.5kg",
+        "1.5kg",
+        "1.5kg",
+        "1.5kg",
+        "100g",
+        "100g",
+        "100g",
+        "11月",
+        "16.1%",
+        "16.7%",
+        "18%",
+        "2.4%",
+        "2026年",
+        "25%",
+        "31%",
+        "31%",
+        "34%",
+        "34%",
+        "35.5%",
+        "43.5%",
+        "4日",
+        "5%"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/canagan-dental-cat-food/",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+CBJYGI+3J8+TR8TE&a8ejpredirect=http%3A%2F%2Fwww.canagancatfood.co.jp%2F3201%2F",
+        "https://www.canagancatfood.co.jp/3201/"
+      ]
+    },
+    "facts_after": {
+      "numbers": [
+        "1.5kg",
+        "1.5kg",
+        "1.5kg",
+        "1.5kg",
+        "1.5kg",
+        "100g",
+        "100g",
+        "100g",
+        "11月",
+        "16.1%",
+        "16.7%",
+        "18%",
+        "2.4%",
+        "2026年",
+        "25%",
+        "31%",
+        "31%",
+        "34%",
+        "34%",
+        "35.5%",
+        "43.5%",
+        "4日",
+        "5%"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/canagan-dental-cat-food/",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+CBJYGI+3J8+TR8TE&a8ejpredirect=http%3A%2F%2Fwww.canagancatfood.co.jp%2F3201%2F",
+        "https://www.canagancatfood.co.jp/3201/"
+      ]
+    }
+  },
+  {
+    "slug": "mcadams-cat-chicken-turkey",
+    "kind": "affiliate",
+    "url": "https://hirogarushumi.com/mcadams-cat-chicken-turkey/",
+    "title_before": "【ご紹介】マックアダムズの猫用フード｜原材料とオーブンベイク製法",
+    "title_after": "【ご紹介】マックアダムズの猫用フード｜原材料とオーブンベイク製法",
+    "original_published_at": "2026-11-05T00:17:01",
+    "fingerprint_before": "6571e5f93753cc01174f21d8aeff39fb4a23e8391979a6d08023bb149510c341",
+    "content_sha256_before": "5ff56f3d5e26e751992cc67fa193974a4fd01a40703a67e8dc00772191560d0b",
+    "source_sha256_after": "a510498306494519bda508ef73ab0c756748189f38b04b3da56ba7e5ababb301",
+    "facts_before": {
+      "numbers": [
+        "1.5kg",
+        "1.5kg",
+        "1.5kg",
+        "100g",
+        "100g",
+        "11月",
+        "14%",
+        "2026年",
+        "27%",
+        "27%",
+        "27%",
+        "29.5%",
+        "30%",
+        "30%",
+        "30%",
+        "4日",
+        "50g",
+        "57%",
+        "7日",
+        "8%"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/canagan-chicken-salmon/",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+CAYIUQ+3J8+5MEY8Y&a8ejpredirect=https%3A%2F%2Fwww.mcadamspetfoods.co.jp%2Fcatfood%2FMAC20000",
+        "https://www.mcadamspetfoods.co.jp/catfood/MAC20000"
+      ]
+    },
+    "facts_after": {
+      "numbers": [
+        "1.5kg",
+        "1.5kg",
+        "1.5kg",
+        "100g",
+        "100g",
+        "11月",
+        "14%",
+        "2026年",
+        "27%",
+        "27%",
+        "27%",
+        "29.5%",
+        "30%",
+        "30%",
+        "30%",
+        "4日",
+        "50g",
+        "57%",
+        "7日",
+        "8%"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/canagan-chicken-salmon/",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+CAYIUQ+3J8+5MEY8Y&a8ejpredirect=https%3A%2F%2Fwww.mcadamspetfoods.co.jp%2Fcatfood%2FMAC20000",
+        "https://www.mcadamspetfoods.co.jp/catfood/MAC20000"
+      ]
+    }
+  },
+  {
+    "slug": "essential-jaguar-cat-food",
+    "kind": "affiliate",
+    "url": "https://hirogarushumi.com/essential-jaguar-cat-food/",
+    "title_before": "【ご紹介】ジャガーキャットフード｜原材料・カロリー・粒の特徴",
+    "title_after": "【ご紹介】ジャガーキャットフード｜原材料・カロリー・粒の特徴",
+    "original_published_at": "2026-11-05T00:17:02",
+    "fingerprint_before": "aa3c60b4e4cf0cc0c30e35f25a655898607d5d2cef1c0d18e0198150f961c250",
+    "content_sha256_before": "9fd305625e0d81c88683561ba34249b922a98808d943a2e06c3a034142da57c1",
+    "source_sha256_after": "88d074a59b8b9b3b5b3688bfb113553d738f317716f25e4581288423bc022a70",
+    "facts_before": {
+      "numbers": [
+        "1.5kg",
+        "1.5kg",
+        "1.5kg",
+        "1.5kg",
+        "10%",
+        "100g",
+        "100g",
+        "11月",
+        "11月",
+        "14.88%",
+        "15%",
+        "20%",
+        "2026年",
+        "2026年",
+        "37%",
+        "4日",
+        "4日",
+        "55g",
+        "7日",
+        "7日",
+        "852円",
+        "852円",
+        "852円"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/mcadams-cat-chicken-turkey/",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+BYGF5E+3J8+1BM8YQ&a8ejpredirect=https%3A%2F%2Fwww.essentialfoods.jp%2FESN20000",
+        "https://www.essentialfoods.jp/products/detail/6001"
+      ]
+    },
+    "facts_after": {
+      "numbers": [
+        "1.5kg",
+        "1.5kg",
+        "1.5kg",
+        "1.5kg",
+        "10%",
+        "100g",
+        "100g",
+        "11月",
+        "11月",
+        "14.88%",
+        "15%",
+        "20%",
+        "2026年",
+        "2026年",
+        "37%",
+        "4日",
+        "4日",
+        "55g",
+        "7日",
+        "7日",
+        "852円",
+        "852円",
+        "852円"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/mcadams-cat-chicken-turkey/",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+BYGF5E+3J8+1BM8YQ&a8ejpredirect=https%3A%2F%2Fwww.essentialfoods.jp%2FESN20000",
+        "https://www.essentialfoods.jp/products/detail/6001"
+      ]
+    }
+  },
+  {
+    "slug": "mognyan-cat-food-guide",
+    "kind": "affiliate",
+    "url": "https://hirogarushumi.com/mognyan-cat-food-guide/",
+    "title_before": "【ご紹介】モグニャンのキャットフード｜原材料・粒の大きさ・切り替え方",
+    "title_after": "【ご紹介】モグニャンのキャットフード｜原材料・粒の大きさ・切り替え方",
+    "original_published_at": "2026-11-05T00:17:03",
+    "fingerprint_before": "814a0e982bf742ac0fa4588abe206de6629ad6d79b9917350d8c78779c7ccb9c",
+    "content_sha256_before": "2f6afe10945c17338ed2edf26a8b55df2b96fda5b29dcdaff4471c12cda5e6f1",
+    "source_sha256_after": "49113ab1d2e03592b1a2ecfd3253e16eceb3353b10d9fe7bc127b6672223b849",
+    "facts_before": {
+      "numbers": [
+        "1.5kg",
+        "1.5kg",
+        "1.5kg",
+        "10%",
+        "100%",
+        "100g",
+        "100g",
+        "100g",
+        "10日",
+        "10日",
+        "10日",
+        "10日",
+        "11%",
+        "11月",
+        "1日",
+        "1袋",
+        "2026年",
+        "27%",
+        "4日",
+        "5%",
+        "5日",
+        "60g",
+        "60g",
+        "65%",
+        "65%",
+        "65%",
+        "90%"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/canagan-chicken-salmon/",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+BOXHGY+3J8+1ZFL5U&a8ejpredirect=https%3A%2F%2Fwww.mognyancatfood.co.jp%2FMGN20009%2F",
+        "https://www.mognyancatfood.co.jp/MGN20009/"
+      ]
+    },
+    "facts_after": {
+      "numbers": [
+        "1.5kg",
+        "1.5kg",
+        "1.5kg",
+        "10%",
+        "100%",
+        "100g",
+        "100g",
+        "100g",
+        "10日",
+        "10日",
+        "10日",
+        "10日",
+        "11%",
+        "11月",
+        "1日",
+        "1袋",
+        "2026年",
+        "27%",
+        "4日",
+        "5%",
+        "5日",
+        "60g",
+        "60g",
+        "65%",
+        "65%",
+        "65%",
+        "90%"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/canagan-chicken-salmon/",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+BOXHGY+3J8+1ZFL5U&a8ejpredirect=https%3A%2F%2Fwww.mognyancatfood.co.jp%2FMGN20009%2F",
+        "https://www.mognyancatfood.co.jp/MGN20009/"
+      ]
+    }
+  },
+  {
+    "slug": "leo-luna-citta-bed",
+    "kind": "affiliate",
+    "url": "https://hirogarushumi.com/leo-luna-citta-bed/",
+    "title_before": "【ご紹介】レオエルナの犬猫用ベッド｜シッタコレクションのサイズと洗い方",
+    "title_after": "【ご紹介】レオエルナの犬猫用ベッド｜シッタコレクションのサイズと洗い方",
+    "original_published_at": "2026-11-08T19:51:47",
+    "fingerprint_before": "8f1b6ec89c270f5d3d6ac1b1330bef84464cab7a3be2992653e8b91907297f0e",
+    "content_sha256_before": "42b635877eb139627fd2635a836d3c2ad4185304519f7548819c26b5fa01a526",
+    "source_sha256_after": "23faf57179b430207959c34900a86c12050021d26e51d36e780765d25c77b043",
+    "facts_before": {
+      "numbers": [
+        "100%",
+        "100%",
+        "11月",
+        "2026年",
+        "8日"
+      ],
+      "sources": [
+        "https://alices-dogcat.com/products/leoeluna-dogcatbed-citta",
+        "https://hirogarushumi.com/manmos-cat-life/",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+CJW0XE+4DI0+TR8TE&a8ejpredirect=https%3A%2F%2Falices-dogcat.com%2Fproducts%2Fleoeluna-dogcatbed-citta"
+      ]
+    },
+    "facts_after": {
+      "numbers": [
+        "100%",
+        "100%",
+        "11月",
+        "2026年",
+        "8日"
+      ],
+      "sources": [
+        "https://alices-dogcat.com/products/leoeluna-dogcatbed-citta",
+        "https://hirogarushumi.com/manmos-cat-life/",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+CJW0XE+4DI0+TR8TE&a8ejpredirect=https%3A%2F%2Falices-dogcat.com%2Fproducts%2Fleoeluna-dogcatbed-citta"
+      ]
+    }
+  },
+  {
+    "slug": "withpety-nekokouken",
+    "kind": "affiliate",
+    "url": "https://hirogarushumi.com/withpety-nekokouken/",
+    "title_before": "【ご紹介】毎日口健の犬猫兼用サプリ｜粉末の与え方と口のケア",
+    "title_after": "【ご紹介】毎日口健の犬猫兼用サプリ｜粉末の与え方と口のケア",
+    "original_published_at": "2026-11-08T20:26:44",
+    "fingerprint_before": "0bccec4cfb3b268aecb51490224f7229ecebef637c13159707e61b6e914cf7c3",
+    "content_sha256_before": "4fa1dc49283b602c90bd04b37f6d79f96e7c8b685f7b1337273e989b2ed33805",
+    "source_sha256_after": "225816e1f83b07ec6906464df45b2417b67a93c3f63b900b6dac7061c5d32d67",
+    "facts_before": {
+      "numbers": [
+        "11月",
+        "1袋",
+        "2026年",
+        "24g",
+        "24g",
+        "60日",
+        "8日"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/cat-vet-routine/",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+BZ1UR6+3J9O+2Z7YC2",
+        "https://withpety.com/products/konakouken/"
+      ]
+    },
+    "facts_after": {
+      "numbers": [
+        "11月",
+        "1袋",
+        "2026年",
+        "24g",
+        "24g",
+        "60日",
+        "8日"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/cat-vet-routine/",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+BZ1UR6+3J9O+2Z7YC2",
+        "https://withpety.com/products/konakouken/"
+      ]
+    }
+  },
+  {
+    "slug": "withpety-nekosoukai",
+    "kind": "affiliate",
+    "url": "https://hirogarushumi.com/withpety-nekosoukai/",
+    "title_before": "【ご紹介】猫用・毎日爽快｜植物酵素と乳酸菌の配合、選ぶ前に見ること",
+    "title_after": "【ご紹介】猫用・毎日爽快｜植物酵素と乳酸菌の配合、選ぶ前に見ること",
+    "original_published_at": "2026-11-08T20:26:45",
+    "fingerprint_before": "288288d06d0074bb6606e88c6082ae6856614857bacc54de86d30b57311e407f",
+    "content_sha256_before": "fdf118afd754720d54c595a5d702e67265cb4780879e2ff12973b4aecb7296f7",
+    "source_sha256_after": "24f1cd39f6791b3c0227afc58b49eaff0529027c06f06550ce563cd9db8c5c1e",
+    "facts_before": {
+      "numbers": [
+        "11月",
+        "15g",
+        "15g",
+        "1日",
+        "1袋",
+        "2026年",
+        "60粒",
+        "60粒",
+        "60粒",
+        "60粒",
+        "8日"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/cat-vet-routine/",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+BMJR1U+3J9O+TZTGI",
+        "https://withpety.com/products/nekosoukai/"
+      ]
+    },
+    "facts_after": {
+      "numbers": [
+        "11月",
+        "15g",
+        "15g",
+        "1日",
+        "1袋",
+        "2026年",
+        "60粒",
+        "60粒",
+        "60粒",
+        "60粒",
+        "8日"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/cat-vet-routine/",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+BMJR1U+3J9O+TZTGI",
+        "https://withpety.com/products/nekosoukai/"
+      ]
+    }
+  },
+  {
+    "slug": "withpety-nekoshuukan",
+    "kind": "affiliate",
+    "url": "https://hirogarushumi.com/withpety-nekoshuukan/",
+    "title_before": "【ご紹介】猫用・毎日習慣｜サラシア・イヌリンと、食事管理の考え方",
+    "title_after": "【ご紹介】猫用・毎日習慣｜サラシア・イヌリンと、食事管理の考え方",
+    "original_published_at": "2026-11-08T20:26:46",
+    "fingerprint_before": "8b5348b1679a8df3cdf5321510af557a482fb776135c52c6cee88fa5858dec48",
+    "content_sha256_before": "bdc526370797377fcf4e1f3144e77fafd387440612968598d997d171f8c43ffe",
+    "source_sha256_after": "fbfdd03c8fb1a6a7784ce12b84287cc14e0b2ff697cb4105d117925b32b910c3",
+    "facts_before": {
+      "numbers": [
+        "11月",
+        "2026年",
+        "60粒",
+        "60粒",
+        "8日"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/cat-vet-routine/",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+BK60MQ+3J9O+3B2WPE",
+        "https://withpety.com/search.php?kw=%E6%AF%8E%E6%97%A5%E7%BF%92%E6%85%A3"
+      ]
+    },
+    "facts_after": {
+      "numbers": [
+        "11月",
+        "2026年",
+        "60粒",
+        "60粒",
+        "8日"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/cat-vet-routine/",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+BK60MQ+3J9O+3B2WPE",
+        "https://withpety.com/search.php?kw=%E6%AF%8E%E6%97%A5%E7%BF%92%E6%85%A3"
+      ]
+    }
+  },
+  {
+    "slug": "withpety-nekoaigan",
+    "kind": "affiliate",
+    "url": "https://hirogarushumi.com/withpety-nekoaigan/",
+    "title_before": "【ご紹介】猫用・毎日愛眼｜ブルーベリー・ルテインの配合と選び方",
+    "title_after": "【ご紹介】猫用・毎日愛眼｜ブルーベリー・ルテインの配合と選び方",
+    "original_published_at": "2026-11-08T20:26:47",
+    "fingerprint_before": "3ba41ecf6051768cec033bfd69bfd89c36582a805ccbca769fe075ab561a7a38",
+    "content_sha256_before": "cdda0e63a04cc821db8bbba9c971c3101c26b7aac46908370db8102f4b22d468",
+    "source_sha256_after": "311745715ff6a0b13c50ffbc0a1c517d9fa0b70b4a4e71029cd8145c8630dbd2",
+    "facts_before": {
+      "numbers": [
+        "11月",
+        "15g",
+        "15g",
+        "2026年",
+        "60粒",
+        "60粒",
+        "60粒",
+        "8日"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/cat-vet-routine/",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+B9G7QQ+3J9O+ZQ80I",
+        "https://withpety.com/products/nekoaigan/"
+      ]
+    },
+    "facts_after": {
+      "numbers": [
+        "11月",
+        "15g",
+        "15g",
+        "2026年",
+        "60粒",
+        "60粒",
+        "60粒",
+        "8日"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/cat-vet-routine/",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+B9G7QQ+3J9O+ZQ80I",
+        "https://withpety.com/products/nekoaigan/"
+      ]
+    }
+  },
+  {
+    "slug": "withpety-nekojinkatsu",
+    "kind": "affiliate",
+    "url": "https://hirogarushumi.com/withpety-nekojinkatsu/",
+    "title_before": "【ご紹介】猫用・毎日腎活｜活性炭・ウラジロガシと、薬との併用の注意",
+    "title_after": "【ご紹介】猫用・毎日腎活｜活性炭・ウラジロガシと、薬との併用の注意",
+    "original_published_at": "2026-11-08T20:26:47",
+    "fingerprint_before": "96cbfc308a3a713127450132084141b140c35788bac9d3af78cca97ede40614d",
+    "content_sha256_before": "1bffc4db7b9c6ab1ae31ade0e87e9a2b71b1287b6ee2db48fc8df161ebbd0293",
+    "source_sha256_after": "ae0b64801ec97f15a6a38825a022d30b15cd968bd55730b854fed8f6657d76c4",
+    "facts_before": {
+      "numbers": [
+        "11月",
+        "18g",
+        "18g",
+        "1袋",
+        "2026年",
+        "60粒",
+        "60粒",
+        "60粒",
+        "8日"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/cat-vet-routine/",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+B8US4Y+3J9O+1NL282",
+        "https://withpety.com/products/nekojinkatsu/"
+      ]
+    },
+    "facts_after": {
+      "numbers": [
+        "11月",
+        "18g",
+        "18g",
+        "1袋",
+        "2026年",
+        "60粒",
+        "60粒",
+        "60粒",
+        "8日"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/cat-vet-routine/",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+B8US4Y+3J9O+1NL282",
+        "https://withpety.com/products/nekojinkatsu/"
+      ]
+    }
+  },
+  {
+    "slug": "withpety-nekosanpo",
+    "kind": "affiliate",
+    "url": "https://hirogarushumi.com/withpety-nekosanpo/",
+    "title_before": "【ご紹介】猫用・毎日散歩｜関節向けサプリの配合と暮らしの見直し",
+    "title_after": "【ご紹介】猫用・毎日散歩｜関節向けサプリの配合と暮らしの見直し",
+    "original_published_at": "2026-11-08T20:26:47",
+    "fingerprint_before": "70e446c4fc3d90bdbd7a04f89bfb1b43eb2058b325f2f00caffda826d7b887bc",
+    "content_sha256_before": "679fa3804fc9f3200235ee5774973d353df5d265993e2d7f7716ba131aec23ca",
+    "source_sha256_after": "3f85805fd737952ac7d8915039445a2970c2901478e0eb3483b6788d5c459f35",
+    "facts_before": {
+      "numbers": [
+        "11月",
+        "15g",
+        "15g",
+        "1袋",
+        "2026年",
+        "60粒",
+        "60粒",
+        "8日"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/cat-vet-routine/",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+B6H1PU+3J9O+NTJWY",
+        "https://withpety.com/products/nekosanpo/"
+      ]
+    },
+    "facts_after": {
+      "numbers": [
+        "11月",
+        "15g",
+        "15g",
+        "1袋",
+        "2026年",
+        "60粒",
+        "60粒",
+        "8日"
+      ],
+      "sources": [
+        "https://hirogarushumi.com/cat-vet-routine/",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+B6H1PU+3J9O+NTJWY",
+        "https://withpety.com/products/nekosanpo/"
+      ]
+    }
+  },
+  {
+    "slug": "aigan-dobutsu-course",
+    "kind": "affiliate",
+    "url": "https://hirogarushumi.com/aigan-dobutsu-course/",
+    "title_before": "【ご紹介】愛玩動物飼養管理士｜2級・1級の費用と学習の流れ",
+    "title_after": "【ご紹介】愛玩動物飼養管理士｜2級・1級の費用と学習の流れ",
+    "original_published_at": "2026-11-08T20:53:15",
+    "fingerprint_before": "da9e40d0e10e2c9c881f233a8cf145db7a13cf5ee655a091ae7f3bf37f29cb08",
+    "content_sha256_before": "bebd3f81466ec2ffd0b9a51969d58044330fcd2a905354d0e86e55376474246e",
+    "source_sha256_after": "ce1986e73210dba8ff1d2c86fe4429766123fb00ed3ce737b233ce3a91a6b55b",
+    "facts_before": {
+      "numbers": [
+        "000円",
+        "000円",
+        "000円",
+        "000円",
+        "000円",
+        "000円",
+        "000円",
+        "11月",
+        "11月",
+        "15日",
+        "15日",
+        "15歳",
+        "15歳",
+        "1日",
+        "1日",
+        "1日",
+        "1日",
+        "2026年",
+        "2月",
+        "2月",
+        "4月",
+        "4月",
+        "4月",
+        "6月",
+        "8日",
+        "8月"
+      ],
+      "sources": [
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+C6720I+4EDO+61C2Q",
+        "https://www.jpc.or.jp/kanrishi/",
+        "https://www.jpc.or.jp/kanrishi/faq/",
+        "https://www.jpc.or.jp/kanrishi/flow/"
+      ]
+    },
+    "facts_after": {
+      "numbers": [
+        "000円",
+        "000円",
+        "000円",
+        "000円",
+        "000円",
+        "000円",
+        "000円",
+        "11月",
+        "11月",
+        "15日",
+        "15日",
+        "15歳",
+        "15歳",
+        "1日",
+        "1日",
+        "1日",
+        "1日",
+        "2026年",
+        "2月",
+        "2月",
+        "4月",
+        "4月",
+        "4月",
+        "6月",
+        "8日",
+        "8月"
+      ],
+      "sources": [
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+C6720I+4EDO+61C2Q",
+        "https://www.jpc.or.jp/kanrishi/",
+        "https://www.jpc.or.jp/kanrishi/faq/",
+        "https://www.jpc.or.jp/kanrishi/flow/"
+      ]
+    }
+  },
+  {
+    "slug": "acana-orijen-cat-food-guide",
+    "kind": "affiliate",
+    "url": "https://hirogarushumi.com/acana-orijen-cat-food-guide/",
+    "title_before": "【ご紹介】アカナとオリジンの猫用フード｜レシピと成分表示の見方",
+    "title_after": "【ご紹介】アカナとオリジンの猫用フード｜レシピと成分表示の見方",
+    "original_published_at": "2026-11-08T20:53:31",
+    "fingerprint_before": "f810937137fc34312cda84f6fd02fecd956ebda5fcde7d8a4d3aed88f7504cee",
+    "content_sha256_before": "1a0f063daedabe83976149d06ca7c6baa8f720b05b5344ab63e1301605fd2b91",
+    "source_sha256_after": "172dacfa576be7f88c287e8bd1db336034578ca78a703c75f05f10865fa04494",
+    "facts_before": {
+      "numbers": [
+        "10%",
+        "10%",
+        "10%",
+        "10%",
+        "100g",
+        "11%",
+        "11月",
+        "18%",
+        "1kg",
+        "20%",
+        "20%",
+        "2026年",
+        "3%",
+        "3%",
+        "340g",
+        "37%",
+        "40%",
+        "8%",
+        "8日",
+        "9%",
+        "9%",
+        "9%"
+      ],
+      "sources": [
+        "https://acana.net/",
+        "https://acana.net/collections/cat-foods",
+        "https://acana.net/products/orijen-original-cat",
+        "https://acana.net/products/wild-prairie-cats",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+C3TBLE+5FPU+5YRHE"
+      ]
+    },
+    "facts_after": {
+      "numbers": [
+        "10%",
+        "10%",
+        "10%",
+        "10%",
+        "100g",
+        "11%",
+        "11月",
+        "18%",
+        "1kg",
+        "20%",
+        "20%",
+        "2026年",
+        "3%",
+        "3%",
+        "340g",
+        "37%",
+        "40%",
+        "8%",
+        "8日",
+        "9%",
+        "9%",
+        "9%"
+      ],
+      "sources": [
+        "https://acana.net/",
+        "https://acana.net/collections/cat-foods",
+        "https://acana.net/products/orijen-original-cat",
+        "https://acana.net/products/wild-prairie-cats",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+C3TBLE+5FPU+5YRHE"
+      ]
+    }
+  },
+  {
+    "slug": "linx-as-store",
+    "kind": "affiliate",
+    "url": "https://hirogarushumi.com/linx-as-store/",
+    "title_before": "【ご紹介】リンクサス酒販｜ウイスキー通販で見たい状態と購入条件",
+    "title_after": "【ご紹介】リンクサス酒販｜ウイスキー通販で見たい状態と購入条件",
+    "original_published_at": "2026-11-08T20:53:46",
+    "fingerprint_before": "186faa1d67448aaf3d9516becdc240f6c150cc1249d4becd2a3a11fa63775115",
+    "content_sha256_before": "d7c70c03d5eb9aeeed87927e85bb060554ee04534db17352471b814f2076e6ec",
+    "source_sha256_after": "686b976ff2d6f6cb9b4737ab1e7d9a0eb9db20acce13364d20edeb942149bf83",
+    "facts_before": {
+      "numbers": [
+        "000円",
+        "000円",
+        "11月",
+        "2026年",
+        "20歳",
+        "700ml",
+        "700ml",
+        "7日",
+        "7日",
+        "8日"
+      ],
+      "sources": [
+        "https://linx-as.store/",
+        "https://linx-as.store/collections/whisky",
+        "https://linx-as.store/pages/shippingcarrier",
+        "https://linx-as.store/policies/refund-policy",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+92UZW2+5V1I+NSWRM&a8ejpredirect=https%3A%2F%2Flinx-as.store%2F"
+      ]
+    },
+    "facts_after": {
+      "numbers": [
+        "000円",
+        "000円",
+        "11月",
+        "2026年",
+        "20歳",
+        "700ml",
+        "700ml",
+        "7日",
+        "7日",
+        "8日"
+      ],
+      "sources": [
+        "https://linx-as.store/",
+        "https://linx-as.store/collections/whisky",
+        "https://linx-as.store/pages/shippingcarrier",
+        "https://linx-as.store/policies/refund-policy",
+        "https://px.a8.net/svt/ejp?a8mat=4BGCEZ+92UZW2+5V1I+NSWRM&a8ejpredirect=https%3A%2F%2Flinx-as.store%2F"
+      ]
+    }
+  }
+]
