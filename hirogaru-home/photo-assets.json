@@ -3153,6 +3153,39 @@
       "caption": "グラス付きセットのAI生成イメージ",
       "sha256": "302d81db905337e1b7a28d0e95f4be26672406565b4fa279e77f2785aa9b7268",
       "bytes": 131112
+    },
+    "arboralis-generated": {
+      "file": "arboralis-generated.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "whisky",
+      "alt": "グレングラント アルボラリス カスクストレングスのオレンジ色の箱とボトルのAI生成イメージ",
+      "caption": "アルボラリス カスクストレングスのAI生成イメージ",
+      "sha256": "94847ed3b03521c6ec9b34c33179c6ce9734f99ee9dcae767ece0fd0145f8730",
+      "bytes": 99684
+    },
+    "riku-generated": {
+      "file": "riku-generated.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "whisky",
+      "alt": "キリンウイスキー 陸のボトルを木のテーブルに置いたAI生成イメージ",
+      "caption": "キリンウイスキー 陸のAI生成イメージ",
+      "sha256": "7e1314fab2d3ae03d4f4a491e8daf12888b368826ca9b0471308e08342a5f00a",
+      "bytes": 62462
+    },
+    "jim-beam-generated": {
+      "file": "jim-beam-generated.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "whisky",
+      "alt": "ジムビームのボトルを木のテーブルに置いたAI生成イメージ",
+      "caption": "ジムビームのAI生成イメージ",
+      "sha256": "8aeaaf45116ac318b7a06b45fc80c7c9821726eab2a400469ef815993263117e",
+      "bytes": 81326
     }
   },
   "articles": {

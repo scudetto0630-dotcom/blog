@@ -1,0 +1,744 @@
+[
+  {
+    "id": 1,
+    "task": "同じ感想の繰り返しを整理",
+    "status": "implemented_in_affected_articles; publication_verified",
+    "evidence": [
+      "changed-articles.json",
+      "verification.json"
+    ]
+  },
+  {
+    "id": 2,
+    "task": "分けて考えたいで終わる段落を具体化",
+    "status": "audit_pending; existing_content_retained",
+    "evidence": []
+  },
+  {
+    "id": 3,
+    "task": "確認したいを具体的な操作へ",
+    "status": "audit_pending; existing_content_retained",
+    "evidence": []
+  },
+  {
+    "id": 4,
+    "task": "二重否定を減らす",
+    "status": "audit_pending; existing_content_retained",
+    "evidence": []
+  },
+  {
+    "id": 5,
+    "task": "自分の感想ですの重複を減らす",
+    "status": "implemented_in_affected_articles; publication_verified",
+    "evidence": [
+      "changed-articles.json",
+      "verification.json"
+    ]
+  },
+  {
+    "id": 6,
+    "task": "ただし・一方での連続を整理",
+    "status": "audit_pending; existing_content_retained",
+    "evidence": []
+  },
+  {
+    "id": 7,
+    "task": "読者への呼びかけ過多を整理",
+    "status": "audit_pending; existing_content_retained",
+    "evidence": []
+  },
+  {
+    "id": 8,
+    "task": "商品名の不自然な反復を減らす",
+    "status": "audit_pending; existing_content_retained",
+    "evidence": []
+  },
+  {
+    "id": 9,
+    "task": "物・こと・ところを具体化",
+    "status": "audit_pending; existing_content_retained",
+    "evidence": []
+  },
+  {
+    "id": 10,
+    "task": "指示語の参照先を明確化",
+    "status": "audit_pending; existing_content_retained",
+    "evidence": []
+  },
+  {
+    "id": 11,
+    "task": "本人未確認の心理描写を点検",
+    "status": "implemented_in_affected_articles; publication_verified",
+    "evidence": [
+      "changed-articles.json",
+      "verification.json"
+    ]
+  },
+  {
+    "id": 12,
+    "task": "一般論が長い体験記事を再構成",
+    "status": "audit_pending; existing_content_retained",
+    "evidence": []
+  },
+  {
+    "id": 13,
+    "task": "感想から助言への文体変化を整える",
+    "status": "audit_pending; existing_content_retained",
+    "evidence": []
+  },
+  {
+    "id": 14,
+    "task": "見出しと直後の段落を一致",
+    "status": "audit_pending; existing_content_retained",
+    "evidence": []
+  },
+  {
+    "id": 15,
+    "task": "薄い節を近い節へまとめる",
+    "status": "audit_pending; existing_content_retained",
+    "evidence": []
+  },
+  {
+    "id": 16,
+    "task": "一段落の複数話題を整理",
+    "status": "audit_pending; existing_content_retained",
+    "evidence": []
+  },
+  {
+    "id": 17,
+    "task": "短い段落を流れに沿ってつなぐ",
+    "status": "implemented_in_affected_articles; publication_verified",
+    "evidence": [
+      "changed-articles.json",
+      "verification.json"
+    ]
+  },
+  {
+    "id": 18,
+    "task": "強調の数と位置を整理",
+    "status": "audit_pending; existing_content_retained",
+    "evidence": []
+  },
+  {
+    "id": 19,
+    "task": "結びの導入繰り返しを減らす",
+    "status": "implemented_in_affected_articles; publication_verified",
+    "evidence": [
+      "changed-articles.json",
+      "verification.json"
+    ]
+  },
+  {
+    "id": 20,
+    "task": "本人の口調と説明書調の落差を減らす",
+    "status": "audit_pending; existing_content_retained",
+    "evidence": []
+  },
+  {
+    "id": 21,
+    "task": "迎えた日の移動と帰宅後の様子",
+    "status": "implemented_in_affected_articles; publication_verified",
+    "evidence": [
+      "changed-articles.json",
+      "verification.json"
+    ]
+  },
+  {
+    "id": 22,
+    "task": "家に慣れるまでの経緯",
+    "status": "implemented_in_affected_articles; publication_verified",
+    "evidence": [
+      "changed-articles.json",
+      "verification.json"
+    ]
+  },
+  {
+    "id": 23,
+    "task": "甘えん坊の実際のしぐさ",
+    "status": "implemented_in_affected_articles; publication_verified",
+    "evidence": [
+      "changed-articles.json",
+      "verification.json"
+    ]
+  },
+  {
+    "id": 24,
+    "task": "抱っこ以外に好きな触れ合い",
+    "status": "implemented_in_affected_articles; publication_verified",
+    "evidence": [
+      "changed-articles.json",
+      "verification.json"
+    ]
+  },
+  {
+    "id": 25,
+    "task": "ブラッシング道具と嫌がる場面",
+    "status": "implemented_in_affected_articles; publication_verified",
+    "evidence": [
+      "changed-articles.json",
+      "verification.json"
+    ]
+  },
+  {
+    "id": 26,
+    "task": "紙砂を選んだ経緯",
+    "status": "implemented_in_affected_articles; publication_verified",
+    "evidence": [
+      "changed-articles.json",
+      "verification.json"
+    ]
+  },
+  {
+    "id": 27,
+    "task": "猫砂の商品名",
+    "status": "new_detail_omitted; owner_declined_further_answers_or_evidence_unavailable",
+    "evidence": [
+      "No invented facts; no further questions requested"
+    ]
+  },
+  {
+    "id": 28,
+    "task": "お気に入りの寝床と写真",
+    "status": "audit_pending; existing_content_retained",
+    "evidence": []
+  },
+  {
+    "id": 29,
+    "task": "タワーの使う部分と使わない部分",
+    "status": "audit_pending; existing_content_retained",
+    "evidence": []
+  },
+  {
+    "id": 30,
+    "task": "おもちゃと実際の遊び方",
+    "status": "implemented_in_affected_articles; publication_verified",
+    "evidence": [
+      "changed-articles.json",
+      "verification.json"
+    ]
+  },
+  {
+    "id": 31,
+    "task": "買ったけれど使わなかった猫用品",
+    "status": "implemented_in_affected_articles; publication_verified",
+    "evidence": [
+      "changed-articles.json",
+      "verification.json"
+    ]
+  },
+  {
+    "id": 32,
+    "task": "古いキャリーの外観と内部写真",
+    "status": "new_detail_omitted; owner_declined_further_answers_or_evidence_unavailable",
+    "evidence": [
+      "No invented facts; no further questions requested"
+    ]
+  },
+  {
+    "id": 33,
+    "task": "キャリー本体の実測重量",
+    "status": "new_detail_omitted; owner_declined_further_answers_or_evidence_unavailable",
+    "evidence": [
+      "No invented facts; no further questions requested"
+    ]
+  },
+  {
+    "id": 34,
+    "task": "背負うときと車輪で引くときの違い",
+    "status": "new_detail_omitted; owner_declined_further_answers_or_evidence_unavailable",
+    "evidence": [
+      "No invented facts; no further questions requested"
+    ]
+  },
+  {
+    "id": 35,
+    "task": "通院で実際に持参する物",
+    "status": "implemented_in_affected_articles; publication_verified",
+    "evidence": [
+      "changed-articles.json",
+      "verification.json"
+    ]
+  },
+  {
+    "id": 36,
+    "task": "グレンリベット付属グラスの実物紹介",
+    "status": "implemented_in_affected_articles; publication_verified",
+    "evidence": [
+      "changed-articles.json",
+      "verification.json"
+    ]
+  },
+  {
+    "id": 37,
+    "task": "ウイスキーに興味を持ったきっかけ",
+    "status": "implemented_in_affected_articles; publication_verified",
+    "evidence": [
+      "changed-articles.json",
+      "verification.json"
+    ]
+  },
+  {
+    "id": 38,
+    "task": "最初に買ったウイスキーと感想",
+    "status": "implemented_in_affected_articles; publication_verified",
+    "evidence": [
+      "changed-articles.json",
+      "verification.json"
+    ]
+  },
+  {
+    "id": 39,
+    "task": "2本目からグレンリベットへの経緯",
+    "status": "implemented_in_affected_articles; publication_verified",
+    "evidence": [
+      "changed-articles.json",
+      "verification.json"
+    ]
+  },
+  {
+    "id": 40,
+    "task": "アルボラリスの独立して読める体験談",
+    "status": "implemented_in_affected_articles; publication_verified",
+    "evidence": [
+      "changed-articles.json",
+      "verification.json"
+    ]
+  },
+  {
+    "id": 41,
+    "task": "ジムビームが合わなかった理由",
+    "status": "implemented_in_affected_articles; publication_verified",
+    "evidence": [
+      "changed-articles.json",
+      "verification.json"
+    ]
+  },
+  {
+    "id": 42,
+    "task": "普段のハイボールの銘柄",
+    "status": "implemented_in_affected_articles; publication_verified",
+    "evidence": [
+      "changed-articles.json",
+      "verification.json"
+    ]
+  },
+  {
+    "id": 43,
+    "task": "実際のハイボールの配合",
+    "status": "implemented_in_affected_articles; publication_verified",
+    "evidence": [
+      "changed-articles.json",
+      "verification.json"
+    ]
+  },
+  {
+    "id": 44,
+    "task": "飲み方を選ぶ場面",
+    "status": "implemented_in_affected_articles; publication_verified",
+    "evidence": [
+      "changed-articles.json",
+      "verification.json"
+    ]
+  },
+  {
+    "id": 45,
+    "task": "普段用とご褒美用の選び方",
+    "status": "implemented_in_affected_articles; publication_verified",
+    "evidence": [
+      "changed-articles.json",
+      "verification.json"
+    ]
+  },
+  {
+    "id": 46,
+    "task": "好きな銘柄と重視する理由",
+    "status": "implemented_in_affected_articles; publication_verified",
+    "evidence": [
+      "changed-articles.json",
+      "verification.json"
+    ]
+  },
+  {
+    "id": 47,
+    "task": "次に買いたい銘柄と理由",
+    "status": "implemented_in_affected_articles; publication_verified",
+    "evidence": [
+      "changed-articles.json",
+      "verification.json"
+    ]
+  },
+  {
+    "id": 48,
+    "task": "白州見学で一番印象に残った場面",
+    "status": "new_detail_omitted; owner_declined_further_answers_or_evidence_unavailable",
+    "evidence": [
+      "No invented facts; no further questions requested"
+    ]
+  },
+  {
+    "id": 49,
+    "task": "白州の写真に当日の出来事を添える",
+    "status": "new_detail_omitted; owner_declined_further_answers_or_evidence_unavailable",
+    "evidence": [
+      "No invented facts; no further questions requested"
+    ]
+  },
+  {
+    "id": 50,
+    "task": "白州見学前に知りたかったこと",
+    "status": "implemented_in_affected_articles; publication_verified",
+    "evidence": [
+      "changed-articles.json",
+      "verification.json"
+    ]
+  },
+  {
+    "id": 51,
+    "task": "ITの仕事が決まるまでの出来事",
+    "status": "implemented_in_affected_articles; publication_verified",
+    "evidence": [
+      "changed-articles.json",
+      "verification.json"
+    ]
+  },
+  {
+    "id": 52,
+    "task": "最初の勉強と道具",
+    "status": "new_detail_omitted; owner_declined_further_answers_or_evidence_unavailable",
+    "evidence": [
+      "No invented facts; no further questions requested"
+    ]
+  },
+  {
+    "id": 53,
+    "task": "仕事探しで迷った条件",
+    "status": "new_detail_omitted; owner_declined_further_answers_or_evidence_unavailable",
+    "evidence": [
+      "No invented facts; no further questions requested"
+    ]
+  },
+  {
+    "id": 54,
+    "task": "現在の仕事を選んだ理由",
+    "status": "implemented_in_affected_articles; publication_verified",
+    "evidence": [
+      "changed-articles.json",
+      "verification.json"
+    ]
+  },
+  {
+    "id": 55,
+    "task": "MR時代との違い",
+    "status": "implemented_in_affected_articles; publication_verified",
+    "evidence": [
+      "changed-articles.json",
+      "verification.json"
+    ]
+  },
+  {
+    "id": 56,
+    "task": "ChatGPTとCodexの実際の使い分け",
+    "status": "new_detail_omitted; owner_declined_further_answers_or_evidence_unavailable",
+    "evidence": [
+      "No invented facts; no further questions requested"
+    ]
+  },
+  {
+    "id": 57,
+    "task": "Excelとスプレッドシートの使い分け",
+    "status": "new_detail_omitted; owner_declined_further_answers_or_evidence_unavailable",
+    "evidence": [
+      "No invented facts; no further questions requested"
+    ]
+  },
+  {
+    "id": 58,
+    "task": "AIで作業がどう変わったか",
+    "status": "new_detail_omitted; owner_declined_further_answers_or_evidence_unavailable",
+    "evidence": [
+      "No invented facts; no further questions requested"
+    ]
+  },
+  {
+    "id": 59,
+    "task": "よく使う依頼文を匿名化して紹介",
+    "status": "new_detail_omitted; owner_declined_further_answers_or_evidence_unavailable",
+    "evidence": [
+      "No invented facts; no further questions requested"
+    ]
+  },
+  {
+    "id": 60,
+    "task": "AI出力を修正した実体験",
+    "status": "new_detail_omitted; owner_declined_further_answers_or_evidence_unavailable",
+    "evidence": [
+      "No invented facts; no further questions requested"
+    ]
+  },
+  {
+    "id": 61,
+    "task": "CSV入力と解説の行対応",
+    "status": "audit_pending; existing_content_retained",
+    "evidence": []
+  },
+  {
+    "id": 62,
+    "task": "間違った出力の練習例",
+    "status": "audit_pending; existing_content_retained",
+    "evidence": []
+  },
+  {
+    "id": 63,
+    "task": "Excelの実際の操作画面",
+    "status": "new_detail_omitted; owner_declined_further_answers_or_evidence_unavailable",
+    "evidence": [
+      "No invented facts; no further questions requested"
+    ]
+  },
+  {
+    "id": 64,
+    "task": "操作環境ごとの違いを明示",
+    "status": "new_detail_omitted; owner_declined_further_answers_or_evidence_unavailable",
+    "evidence": [
+      "No invented facts; no further questions requested"
+    ]
+  },
+  {
+    "id": 65,
+    "task": "練習ファイルを開く順番",
+    "status": "audit_pending; existing_content_retained",
+    "evidence": []
+  },
+  {
+    "id": 66,
+    "task": "用語を最初につまずく位置に説明",
+    "status": "audit_pending; existing_content_retained",
+    "evidence": []
+  },
+  {
+    "id": 67,
+    "task": "本文とダウンロード資料の整合",
+    "status": "audit_pending; existing_content_retained",
+    "evidence": []
+  },
+  {
+    "id": 68,
+    "task": "練習完了の確認項目",
+    "status": "audit_pending; existing_content_retained",
+    "evidence": []
+  },
+  {
+    "id": 69,
+    "task": "商品の似た前置きを整理",
+    "status": "audit_pending; existing_content_retained",
+    "evidence": []
+  },
+  {
+    "id": 70,
+    "task": "商品ごとの最も迷う点を深掘り",
+    "status": "audit_pending; existing_content_retained",
+    "evidence": []
+  },
+  {
+    "id": 71,
+    "task": "比較表の条件をそろえる",
+    "status": "audit_pending; existing_content_retained",
+    "evidence": []
+  },
+  {
+    "id": 72,
+    "task": "表の空欄と対象外を区別",
+    "status": "audit_pending; existing_content_retained",
+    "evidence": []
+  },
+  {
+    "id": 73,
+    "task": "送料込み総額の条件",
+    "status": "audit_pending; existing_content_retained",
+    "evidence": []
+  },
+  {
+    "id": 74,
+    "task": "定期購入の初回と継続条件",
+    "status": "audit_pending; existing_content_retained",
+    "evidence": []
+  },
+  {
+    "id": 75,
+    "task": "解約休止の公式案内へ直接リンク",
+    "status": "audit_pending; existing_content_retained",
+    "evidence": []
+  },
+  {
+    "id": 76,
+    "task": "寸法の測定箇所を明示",
+    "status": "audit_pending; existing_content_retained",
+    "evidence": []
+  },
+  {
+    "id": 77,
+    "task": "商品写真と説明を対応",
+    "status": "audit_pending; existing_content_retained",
+    "evidence": []
+  },
+  {
+    "id": 78,
+    "task": "宣伝文句の言い換えを減らす",
+    "status": "audit_pending; existing_content_retained",
+    "evidence": []
+  },
+  {
+    "id": 79,
+    "task": "サプリ共通注意と固有注意の整理",
+    "status": "audit_pending; existing_content_retained",
+    "evidence": []
+  },
+  {
+    "id": 80,
+    "task": "買わずに解決する選択肢",
+    "status": "audit_pending; existing_content_retained",
+    "evidence": []
+  },
+  {
+    "id": 81,
+    "task": "写真の直前に見る理由を置く",
+    "status": "implemented_in_affected_articles; publication_verified",
+    "evidence": [
+      "changed-articles.json",
+      "verification.json"
+    ]
+  },
+  {
+    "id": 82,
+    "task": "写真説明を見れば分かる繰り返しから改善",
+    "status": "audit_pending; existing_content_retained",
+    "evidence": []
+  },
+  {
+    "id": 83,
+    "task": "まんもす写真と話題の対応",
+    "status": "audit_pending; existing_content_retained",
+    "evidence": []
+  },
+  {
+    "id": 84,
+    "task": "縦長写真の連続を調整",
+    "status": "audit_pending; existing_content_retained",
+    "evidence": []
+  },
+  {
+    "id": 85,
+    "task": "商品ラベル拡大時の画質",
+    "status": "audit_pending; existing_content_retained",
+    "evidence": []
+  },
+  {
+    "id": 86,
+    "task": "画像の役割に合う代替テキスト",
+    "status": "implemented_in_affected_articles; publication_verified",
+    "evidence": [
+      "changed-articles.json",
+      "verification.json"
+    ]
+  },
+  {
+    "id": 87,
+    "task": "リンク先で分かる関連記事案内",
+    "status": "audit_pending; existing_content_retained",
+    "evidence": []
+  },
+  {
+    "id": 88,
+    "task": "関連記事案内の重複を整理",
+    "status": "audit_pending; existing_content_retained",
+    "evidence": []
+  },
+  {
+    "id": 89,
+    "task": "長い記事の目的の節への移動",
+    "status": "audit_pending; existing_content_retained",
+    "evidence": []
+  },
+  {
+    "id": 90,
+    "task": "スマホの前後記事タイトル折り返し",
+    "status": "implemented_in_affected_articles; publication_verified",
+    "evidence": [
+      "changed-articles.json",
+      "verification.json"
+    ]
+  },
+  {
+    "id": 91,
+    "task": "保存印刷読書メモの本文圧迫",
+    "status": "existing_features_retained; no_new_preference_assumed",
+    "evidence": []
+  },
+  {
+    "id": 92,
+    "task": "スマホの表の項目と値の対応",
+    "status": "audit_pending; existing_content_retained",
+    "evidence": []
+  },
+  {
+    "id": 93,
+    "task": "リンクとボタンのタップ領域",
+    "status": "audit_pending; existing_content_retained",
+    "evidence": []
+  },
+  {
+    "id": 94,
+    "task": "キーボードで目次写真保存を操作",
+    "status": "audit_pending; existing_content_retained",
+    "evidence": []
+  },
+  {
+    "id": 95,
+    "task": "画像を閉じて読書位置へ戻る",
+    "status": "audit_pending; existing_content_retained",
+    "evidence": []
+  },
+  {
+    "id": 96,
+    "task": "画像容量と画質を改善",
+    "status": "implemented_in_affected_articles; publication_verified",
+    "evidence": [
+      "changed-articles.json",
+      "verification.json"
+    ]
+  },
+  {
+    "id": 97,
+    "task": "タイトル検索説明本文の一致",
+    "status": "implemented_in_affected_articles; publication_verified",
+    "evidence": [
+      "changed-articles.json",
+      "verification.json"
+    ]
+  },
+  {
+    "id": 98,
+    "task": "Search Consoleの実際の検索語を反映",
+    "status": "new_detail_omitted; owner_declined_further_answers_or_evidence_unavailable",
+    "evidence": [
+      "No invented facts; no further questions requested"
+    ]
+  },
+  {
+    "id": 99,
+    "task": "実際の読者の疑問を記事へ",
+    "status": "new_detail_omitted; owner_declined_further_answers_or_evidence_unavailable",
+    "evidence": [
+      "No invented facts; no further questions requested"
+    ]
+  },
+  {
+    "id": 100,
+    "task": "次の本人への質問を記録",
+    "status": "implemented_in_affected_articles; publication_verified",
+    "evidence": [
+      "changed-articles.json",
+      "verification.json"
+    ]
+  }
+]
