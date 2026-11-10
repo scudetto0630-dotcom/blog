@@ -1,0 +1,159 @@
+{
+  "plugin_version": "1.38.8",
+  "deployment": {
+    "commit": "16134c349700d74f8162b0f9272e66870df6f214",
+    "sha256": "5f3900597788b33e14cedda1fe814bb8b0a5b8414a2ff5441f46578af1a272cc",
+    "expected_version": "1.38.7"
+  },
+  "raw": {
+    "article_sources_match": 3,
+    "unrelated_article_fingerprints_unchanged": 39,
+    "pages_changed": 0,
+    "all_publication_dates_urls_media_ids_preserved": true,
+    "home_and_other_owned_pages_unchanged": true,
+    "fingerprints_after": {
+      "before-welcoming-cat": "92cea4ce6c60601447fae12a4ff1413a2b298958f9d14ac190adb9b9f6e86686",
+      "manmos-cat-life": "9cab8763e3cdfea4c0881511c22e065af01d657b0f92bf3dea0baa9e85f9a4e9",
+      "cat-teaser-small-parts": "a75dfab285bb8436683fe95f190762029c494b2fd15c4b3f0f344a0c66d66385",
+      "cat-vet-routine": "04b4a1012e071f70300a8027888a8b5d9e0a25f65dbdc19b0164249ddaeea7cb",
+      "glenlivet-12-first-bottles": "e5c6be62e6527b2427562be2e9715d9c6f66fc241306a0113585da663075919b",
+      "single-malt-label-guide": "385554464a2d707e532c586f8dfa05141f288d97e0252f6cdbdfce659a902cc8",
+      "sherry-cask-notes": "dd5885f6c8f4be19681f984fab6ca7f3289a08b05b41798317c1948c410c1ddd",
+      "it-data-work-flow": "3405ef5a9d1e5b3bec09ae5ad632478bbf5bf0ac6a5db37d67d15c8eb5ff32ae",
+      "starting-it-without-specialty": "9861b31583caf99ab081a76ea1f3c1366d686e9e3b01370a5c2a76044ce8d42e",
+      "ai-data-extraction-checks": "aa68a8bd3df65a8b6d814ca1bbd43bc2add82a24e31dd1254bf906ce140039f9",
+      "paws-green-deli-cat-food": "52eedc38fe088a075d7ec3878882e0101fe6cb24a77ec776526af4c6dc51bad3",
+      "hario-cat-bowl-guide": "8b80e0007d947874da4a6fed1c33045fbda256aacb739b9eec13f6ac9fdd24ca",
+      "mirai-cat-food-types": "cd5e9778dc3acd35300aa792cd721c85d483f6f57e1eb77ba2ae942022ee3fc2",
+      "m-and-cat-knit-bag": "2a0d9573e49516b5e042b41e3a0a7b76ceb96a936d777a9994b6c48ec7839177",
+      "pet-sougi-110-cat-guide": "9512a7cc3481218a55b40c959d022b563e9f3e0aa82398eb9855e269aef7dbe5",
+      "digxipop-cat-figure": "2f2df799b3ecf2e0cfef54e6f07034897c72882328feee66bf7eb146989b9026",
+      "withpety-nekokenshin": "9f0923de60df043e40a9708ef09596b13e3cfdaf8747b2a37d83674777bbf389",
+      "pontely-cat-dna-test": "749bf6fc3b40be21afddb69a448fc39cc778d51bccce4e325e67369e25df2916",
+      "withpety-nekobihada": "75441eb969ba823f0dd633ab5b2c3dda67ab4eae1c7a859203e066183adf6a6b",
+      "onekosama-cat-tower": "abfa76bc5fda97c07d7b0ab891f9811dce12b792a811b1757d89cd6a971ea550",
+      "withpety-nekoryoukan": "1b274599f5a73415af6f5c4ae22043489198950ca56a87402b66777d9f4e289a",
+      "catlog-cat-monitor": "8a3d76609c1a2d409b962294fdd4666532c21ef1ea749dbc583e84945adad9ec",
+      "withpety-nekoissho": "5c44904767235c995b657818af8975cbaf3db666c372bf92fdd3686a7ce06aaa",
+      "pet-paradise-cat-toys": "17e08a4abcda7b003ccee5135b0d0b0587bc6f1ab91565852e8440f51231b6d3",
+      "canagan-dental-cat-food": "364c6df1a3cac9267a56c819728410202def7033822173721281e887296f68a5",
+      "canagan-chicken-salmon": "2d3b050505e335056ae50eb34cf97ed8a25cfd6bc3328f0cc500ac4a00d7090c",
+      "mcadams-cat-chicken-turkey": "f0ff232280fd3888a45fbdd789060a14bad21a60dba51d76e27f41aecc975355",
+      "essential-jaguar-cat-food": "305548accd3e8d002a518c4489aca1e5ab05e77dea4593236adc3e17d74605de",
+      "mognyan-cat-food-guide": "334fa33bbaf18071555ba7cea29269ecfe00ea62a951220912be7dbab87c6f83",
+      "leo-luna-citta-bed": "7974343514524863509aaacd90323bd75a8ff0b972071ce8dcd80753e9d9ab59",
+      "withpety-nekokouken": "f46aac9fb2a9520e43f851286714468e08a19b48989eb0e76aa5cdc52c52d6c0",
+      "withpety-nekosoukai": "9ab357936fa83817a691bceacb719fc6d942350545bbe45b15d048c2d681dbf3",
+      "withpety-nekoshuukan": "8d082b05e767f4557605dd2ab20714f592dc0c172ab44cdab2829699c3be187c",
+      "withpety-nekoaigan": "16a136755e477fabe9a33fedf63f26d5c72f9ddf0931b04681823bf90945233b",
+      "withpety-nekojinkatsu": "4cf917240ddb657a99222e7ef6c3cac5e79431181d95036e9ec4c99b602be915",
+      "withpety-nekosanpo": "d707825369636133ca15a34ebd3a9fe7e061822424ecdbc338d69ebfcc68cdd3",
+      "aigan-dobutsu-course": "8f89dbba190073fc17ba83609ee864fb1b1652b886014aadac7ee2d6e2d63647",
+      "acana-orijen-cat-food-guide": "5065a13c42432fbc682e2a4e323fc74b610b2b3218d179751ad65f16e262261d",
+      "linx-as-store": "824cf0a25bca6593ad027cdeea9a32b51cfb4c4afe6fa6f11be95b42e4ce7762",
+      "cat-carrier-checklist": "de3dd810bcf567c12341b98a91ecc991eb933d6c16ffc07f43f7070edb745510",
+      "highball-measure-and-adjust": "67b96552d5d582fe279091fd38151dcbffc84b21d8509a8f08fa2d641dc3e479",
+      "csv-import-seven-checks": "99e2e71964765e6c189aa4243448810e499bd8aaa01287afb3258f1a35bea26e"
+    }
+  },
+  "browser": {
+    "pages": 4,
+    "viewport_checks": 12,
+    "results": [
+      {
+        "slug": "hsh-whisky-notes",
+        "width": 1440,
+        "http": 200,
+        "overflow": false,
+        "images_decoded": true
+      },
+      {
+        "slug": "hsh-whisky-notes",
+        "width": 390,
+        "http": 200,
+        "overflow": false,
+        "images_decoded": true
+      },
+      {
+        "slug": "hsh-whisky-notes",
+        "width": 320,
+        "http": 200,
+        "overflow": false,
+        "images_decoded": true
+      },
+      {
+        "slug": "glenlivet-12-first-bottles",
+        "width": 1440,
+        "http": 200,
+        "overflow": false,
+        "images_decoded": true
+      },
+      {
+        "slug": "glenlivet-12-first-bottles",
+        "width": 390,
+        "http": 200,
+        "overflow": false,
+        "images_decoded": true
+      },
+      {
+        "slug": "glenlivet-12-first-bottles",
+        "width": 320,
+        "http": 200,
+        "overflow": false,
+        "images_decoded": true
+      },
+      {
+        "slug": "single-malt-label-guide",
+        "width": 1440,
+        "http": 200,
+        "overflow": false,
+        "images_decoded": true
+      },
+      {
+        "slug": "single-malt-label-guide",
+        "width": 390,
+        "http": 200,
+        "overflow": false,
+        "images_decoded": true
+      },
+      {
+        "slug": "single-malt-label-guide",
+        "width": 320,
+        "http": 200,
+        "overflow": false,
+        "images_decoded": true
+      },
+      {
+        "slug": "sherry-cask-notes",
+        "width": 1440,
+        "http": 200,
+        "overflow": false,
+        "images_decoded": true
+      },
+      {
+        "slug": "sherry-cask-notes",
+        "width": 390,
+        "http": 200,
+        "overflow": false,
+        "images_decoded": true
+      },
+      {
+        "slug": "sherry-cask-notes",
+        "width": 320,
+        "http": 200,
+        "overflow": false,
+        "images_decoded": true
+      }
+    ],
+    "js_errors": [],
+    "three_image_hashes_match": true
+  },
+  "python_tests": 63,
+  "php_checks": 1163,
+  "image_identity": "Arboralis Cask Strength matched to owner supplied orange label/carton; standard white-label generation not deployed",
+  "busker_official_name": "バスカー アイリッシュウイスキー",
+  "busker_personal_name": "バスカー緑",
+  "official_product_url": "https://whisk-e.co.jp/products/buskerirish/",
+  "existing_assets_unchanged": 150,
+  "new_images": 3
+}

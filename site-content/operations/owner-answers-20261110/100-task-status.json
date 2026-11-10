@@ -137,7 +137,7 @@
   {
     "id": 21,
     "task": "迎えた日の移動と帰宅後の様子",
-    "status": "implemented_in_affected_articles; publication_verified",
+    "status": "supplied_details_implemented; missing_dimensions_or_travel_details_not_invented; gift_set_uses_disclosed_AI_image",
     "evidence": [
       "changed-articles.json",
       "verification.json"
@@ -262,7 +262,7 @@
   {
     "id": 36,
     "task": "グレンリベット付属グラスの実物紹介",
-    "status": "implemented_in_affected_articles; publication_verified",
+    "status": "supplied_details_implemented; missing_dimensions_or_travel_details_not_invented; gift_set_uses_disclosed_AI_image",
     "evidence": [
       "changed-articles.json",
       "verification.json"
@@ -325,7 +325,7 @@
   {
     "id": 43,
     "task": "実際のハイボールの配合",
-    "status": "implemented_in_affected_articles; publication_verified",
+    "status": "supplied_details_implemented; missing_dimensions_or_travel_details_not_invented; gift_set_uses_disclosed_AI_image",
     "evidence": [
       "changed-articles.json",
       "verification.json"
