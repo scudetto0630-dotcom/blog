@@ -1,0 +1,62 @@
+{
+  "date": "2026-11-10",
+  "url": "https://hirogarushumi.com/sherry-cask-notes/",
+  "title": "グレンファークラス12年の感想｜ぶどうパン好きが何度も買う理由",
+  "version": "1.38.3",
+  "deployment_commit": "273cfe168cc94653a7f2edd02afb77f53888c103",
+  "zip_sha256": "40765566084d49655a4666445fd4f0df4fc045ec1f1233a408ac27e60c0e4d7c",
+  "authenticated_read": "success via tools/wordpress-edit.py status and content-status",
+  "publication_route": "content-release",
+  "prewrite_fingerprint": "739525f6f4a37d1122340175ca940a64b7bf86b62bafb9c0f5dee5bec9713abb",
+  "published_fingerprint": "2ef2937c7598bad24612352e9c19f2a4d8a5be580ad777ddf0ab9f0e635ee442",
+  "published_title_body_excerpt_match_packaged_source": true,
+  "publication_date_before": "2026-11-03T02:43:39",
+  "publication_date_after": "2026-11-03T02:43:39",
+  "images": {
+    "unchanged": true,
+    "primary_images": 3,
+    "http_200_and_sha256_match": 4,
+    "kind": "generated; explicitly identified as illustrative, not purchased-bottle photographs"
+  },
+  "existing_anchors_and_links_preserved": true,
+  "unrelated_article_fingerprints_unchanged": 41,
+  "owned_pages_and_home_settings_unchanged": true,
+  "browser": {
+    "checks": [
+      {
+        "width": 1440,
+        "http_status": 200,
+        "overflow": false,
+        "images_loaded": 3
+      },
+      {
+        "width": 390,
+        "http_status": 200,
+        "overflow": false,
+        "images_loaded": 3
+      },
+      {
+        "width": 320,
+        "http_status": 200,
+        "overflow": false,
+        "images_loaded": 3
+      }
+    ],
+    "js_errors": [],
+    "javascript_disabled_body_and_links": true,
+    "mobile_screenshots_visually_reviewed": true,
+    "forms_submitted": 0,
+    "advertising_links_clicked": 0,
+    "scope": "same-origin public assets fetched through inherited HTTPS proxy; third-party requests blocked during read-only browser verification"
+  },
+  "tests": {
+    "php_shared_and_seo_checks": 1154,
+    "python_editorial_quality": 6,
+    "python_longform": 5,
+    "python_story_application": 6,
+    "article_specific_editorial_flags": [],
+    "strict_textlint_remaining": 9,
+    "strict_textlint_review": "7 subjective or non-definitive phrases retained as owner voice and appropriate uncertainty; 2 proper-name kanji-length flags retained. Rules unchanged."
+  },
+  "http_403_resolution": "Standard /wp-json/wp/v2/posts/101 returned 403; standard WordPress query route /?rest_route=/wp/v2/posts/101 returned 200. Authenticated dedicated editor reads and writes succeeded."
+}
