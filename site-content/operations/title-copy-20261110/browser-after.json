@@ -1,0 +1,176 @@
+{
+  "pages": 8,
+  "viewport_checks": 24,
+  "results": [
+    {
+      "slug": "it-data-work-flow",
+      "width": 1440,
+      "http": 200,
+      "images_preserved": 4,
+      "overflow": false
+    },
+    {
+      "slug": "single-malt-label-guide",
+      "width": 1440,
+      "http": 200,
+      "images_preserved": 4,
+      "overflow": false
+    },
+    {
+      "slug": "it-data-work-flow",
+      "width": 390,
+      "http": 200,
+      "images_preserved": 4,
+      "overflow": false
+    },
+    {
+      "slug": "single-malt-label-guide",
+      "width": 390,
+      "http": 200,
+      "images_preserved": 4,
+      "overflow": false
+    },
+    {
+      "slug": "it-data-work-flow",
+      "width": 320,
+      "http": 200,
+      "images_preserved": 4,
+      "overflow": false
+    },
+    {
+      "slug": "single-malt-label-guide",
+      "width": 320,
+      "http": 200,
+      "images_preserved": 4,
+      "overflow": false
+    },
+    {
+      "slug": "cat-teaser-small-parts",
+      "width": 1440,
+      "http": 200,
+      "images_preserved": 4,
+      "overflow": false
+    },
+    {
+      "slug": "cat-vet-routine",
+      "width": 1440,
+      "http": 200,
+      "images_preserved": 4,
+      "overflow": false
+    },
+    {
+      "slug": "cat-teaser-small-parts",
+      "width": 390,
+      "http": 200,
+      "images_preserved": 4,
+      "overflow": false
+    },
+    {
+      "slug": "cat-vet-routine",
+      "width": 390,
+      "http": 200,
+      "images_preserved": 4,
+      "overflow": false
+    },
+    {
+      "slug": "cat-teaser-small-parts",
+      "width": 320,
+      "http": 200,
+      "images_preserved": 4,
+      "overflow": false
+    },
+    {
+      "slug": "cat-vet-routine",
+      "width": 320,
+      "http": 200,
+      "images_preserved": 4,
+      "overflow": false
+    },
+    {
+      "slug": "home",
+      "width": 1440,
+      "http": 200,
+      "images_preserved": 20,
+      "overflow": false
+    },
+    {
+      "slug": "cats",
+      "width": 1440,
+      "http": 200,
+      "images_preserved": 24,
+      "overflow": false
+    },
+    {
+      "slug": "cats",
+      "width": 390,
+      "http": 200,
+      "images_preserved": 24,
+      "overflow": false
+    },
+    {
+      "slug": "home",
+      "width": 390,
+      "http": 200,
+      "images_preserved": 20,
+      "overflow": false
+    },
+    {
+      "slug": "cats",
+      "width": 320,
+      "http": 200,
+      "images_preserved": 24,
+      "overflow": false
+    },
+    {
+      "slug": "home",
+      "width": 320,
+      "http": 200,
+      "images_preserved": 20,
+      "overflow": false
+    },
+    {
+      "slug": "it",
+      "width": 1440,
+      "http": 200,
+      "images_preserved": 5,
+      "overflow": false
+    },
+    {
+      "slug": "whisky",
+      "width": 1440,
+      "http": 200,
+      "images_preserved": 7,
+      "overflow": false
+    },
+    {
+      "slug": "it",
+      "width": 390,
+      "http": 200,
+      "images_preserved": 5,
+      "overflow": false
+    },
+    {
+      "slug": "whisky",
+      "width": 390,
+      "http": 200,
+      "images_preserved": 7,
+      "overflow": false
+    },
+    {
+      "slug": "it",
+      "width": 320,
+      "http": 200,
+      "images_preserved": 5,
+      "overflow": false
+    },
+    {
+      "slug": "whisky",
+      "width": 320,
+      "http": 200,
+      "images_preserved": 7,
+      "overflow": false
+    }
+  ],
+  "js_errors": [],
+  "third_party_requests": "blocked; no ads clicked or forms submitted"
+}
