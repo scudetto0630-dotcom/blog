@@ -125,7 +125,7 @@ function hsh_reader_search_suggestions($query) {
 }
 function hsh_reader_search_ids($topic=''){
     $ids=array();foreach(hsh_reader_catalog() as $a){if($topic!==''&&$a['topic']!==$topic)continue;$p=get_page_by_path($a['id'],OBJECT,'post');if($p&&$p->post_status==='publish')$ids[]=(int)$p->ID;}
-    foreach(array('hsh-gallery'=>'cats','hsh-whisky-notes'=>'whisky','hsh-hakushu-visit'=>'whisky','hsh-about'=>'','hsh-editorial'=>'') as $slug=>$category){if($topic!==''&&$category!==$topic)continue;$p=get_page_by_path($slug,OBJECT,'page');if($p&&$p->post_status==='publish'&&get_post_meta($p->ID,'_hsh_bridge_owned',true)==='1')$ids[]=(int)$p->ID;}
+    foreach(array('hsh-gallery'=>'cats','hsh-whisky-notes'=>'whisky','hsh-hakushu-visit'=>'whisky','hsh-about'=>'') as $slug=>$category){if($topic!==''&&$category!==$topic)continue;$p=get_page_by_path($slug,OBJECT,'page');if($p&&$p->post_status==='publish'&&get_post_meta($p->ID,'_hsh_bridge_owned',true)==='1')$ids[]=(int)$p->ID;}
     return $ids?array_values(array_unique($ids)):array(0);
 }
 add_action('pre_get_posts',function($q){if(is_admin()||!$q->is_main_query()||!$q->is_search())return;$topic=hsh_search_topic(isset($_GET['hsh_topic'])?wp_unslash($_GET['hsh_topic']):'');$q->set('post_type',array('post','page'));$q->set('post_status','publish');$q->set('category_name','');$q->set('post__in',hsh_reader_search_ids($topic));},20);

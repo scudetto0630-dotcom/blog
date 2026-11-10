@@ -56,7 +56,7 @@ function hsh_growth_updates(){
     $visit=get_page_by_path('hsh-hakushu-visit',OBJECT,'page');if($visit&&$visit->post_status==='publish'&&get_post_meta($visit->ID,'_hsh_bridge_owned',true)==='1')$rows[]=array('post'=>$visit,'date'=>get_post_modified_time('Y-m-d',false,$visit));
     usort($rows,function($a,$b){return strcmp($b['date'],$a['date']);});$out='<section class="hsh-updates"><p>公開中の記事を、WordPressに記録された更新日の新しい順に並べています。</p><ul>';
     foreach($rows as $r)$out.='<li><time datetime="'.esc_attr($r['date']).'">'.esc_html(str_replace('-','/',$r['date'])).'</time> <a href="'.esc_url(get_permalink($r['post'])).'">'.esc_html($r['post']->post_title).'</a></li>';
-    return $out.'</ul><p>内容の訂正に関する方針は、<a href="'.esc_url(home_url('/hsh-editorial/')).'">記事・広告について</a>にまとめています。</p></section>';
+    return $out.'</ul></section>';
 }
 add_shortcode('hsh_manmos_gallery','hsh_growth_gallery');add_shortcode('hsh_whisky_notes','hsh_growth_whisky');add_shortcode('hsh_updates','hsh_growth_updates');
 add_action('wp_enqueue_scripts',function(){wp_enqueue_style('hsh-growth',plugin_dir_url(__FILE__).'assets/growth.css',array('hsh-reading'),'1.38.2');if(hsh_reader_managed())wp_enqueue_script('hsh-growth',plugin_dir_url(__FILE__).'assets/growth.js',array(),'1.38.2',true);},110);

@@ -51,7 +51,7 @@ function hsh_edit_status() {
             if ($page) { $pages[$key] = array('id' => $page->ID, 'status' => $page->post_status, 'title' => $page->post_title, 'content' => $page->post_content, 'fingerprint'=>hsh_page_fingerprint($page), 'url' => get_permalink($page)); }
         }
     }
-    return hsh_edit_response(array('version' => '1.38.12', 'scope' => array('homepage_text_colors', 'bridge_owned_pages', 'publish_three_packaged_posts', 'refresh_three_owned_posts_with_packaged_images', 'update_only_hirogaru_home_from_pinned_repository', 'read_site_audit', 'set_public_google_verification_token', 'refresh_packaged_site_introduction'), 'home_page_id' => (int) get_option('hsh_page_id'), 'home_settings' => get_option('hsh_home_settings', array()), 'pages' => $pages));
+    return hsh_edit_response(array('version' => '1.38.13', 'scope' => array('homepage_text_colors', 'bridge_owned_pages', 'publish_three_packaged_posts', 'refresh_three_owned_posts_with_packaged_images', 'update_only_hirogaru_home_from_pinned_repository', 'read_site_audit', 'set_public_google_verification_token', 'refresh_packaged_site_introduction'), 'home_page_id' => (int) get_option('hsh_page_id'), 'home_settings' => get_option('hsh_home_settings', array()), 'pages' => $pages));
 }
 function hsh_edit_home($request) {
     $data = $request->get_json_params();
@@ -88,7 +88,8 @@ function hsh_edit_page($request) {
     }
     if(array_key_exists('expected',$data)&&$data['expected']!==null&&(!is_string($data['expected'])||!preg_match('/^[a-f0-9]{64}$/D',$data['expected'])))return new WP_Error('hsh_input','確認用の指紋が不正です。',array('status'=>400));
     $status = isset($data['status']) ? $data['status'] : 'draft';
-    if (!is_string($status) || !in_array($status, array('draft', 'publish'), true)) { return new WP_Error('hsh_status', '公開状態が不正です。', array('status' => 400)); }
+    if (!is_string($status) || !in_array($status, array('draft', 'publish', 'trash'), true)) { return new WP_Error('hsh_status', '公開状態が不正です。', array('status' => 400)); }
+    if ($status === 'trash' && ($data['key'] !== 'editorial' || empty($data['expected']))) { return new WP_Error('hsh_trash_scope', '確認済みの記事・広告ページだけ削除できます。', array('status'=>400)); }
     $lock = 'hsh_edit_page_lock';
     if (!add_option($lock, time(), '', false)) { return new WP_Error('hsh_busy', '他の処理が実行中です。', array('status' => 409)); }
     try {
@@ -102,6 +103,12 @@ function hsh_edit_page($request) {
             if (get_page_by_path($slug, OBJECT, 'page')) { return new WP_Error('hsh_conflict', '同名ページが存在します。既存ページは上書きしません。', array('status' => 409)); }
             $post['post_name'] = $slug;
             $post['meta_input'] = array('_hsh_bridge_owned' => '1');
+        }
+        if ($status === 'trash') {
+            if (!$id) { return new WP_Error('hsh_trash_scope', '既存ページが必要です。', array('status'=>409)); }
+            $trashed=wp_trash_post($id);
+            if (!$trashed || is_wp_error($trashed)) { return new WP_Error('hsh_trash_failed', 'ページを削除できませんでした。', array('status'=>500)); }
+            return hsh_edit_response(array('id'=>$id,'status'=>get_post_status($id)));
         }
         $saved = wp_insert_post(wp_slash($post), true);
         if (is_wp_error($saved)) { return $saved; }

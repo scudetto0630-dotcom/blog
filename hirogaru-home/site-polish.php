@@ -49,7 +49,7 @@ add_action('wp_footer', function () {
     if (is_page((int)get_option('hsh_page_id')) || hsh_current_topic() || is_search()) { return; }
     echo '<nav class="hsh-bottom-nav" aria-label="ブログの案内"><a href="' . esc_url(home_url('/')) . '">トップ</a>';
     foreach (hsh_topics() as $slug => $t) { echo '<a href="' . esc_url(hsh_category_url($slug)) . '">' . esc_html($t[0]) . '</a>'; }
-    echo '<a href="' . esc_url(home_url('/hsh-about/')) . '">プロフィール</a><a href="' . esc_url(home_url('/hsh-editorial/')) . '">記事・広告について</a></nav>';
+    echo '<a href="' . esc_url(home_url('/hsh-about/')) . '">プロフィール</a></nav>';
 });
 // Aggregate page requests only: no IP address, cookie, user ID or user agent is saved.
 add_action('template_redirect', function () {
