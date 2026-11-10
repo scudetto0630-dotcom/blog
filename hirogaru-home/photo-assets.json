@@ -3186,6 +3186,17 @@
       "caption": "ジムビームのAI生成イメージ",
       "sha256": "8aeaaf45116ac318b7a06b45fc80c7c9821726eab2a400469ef815993263117e",
       "bytes": 81326
+    },
+    "busker-green-generated": {
+      "file": "busker-green-generated.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "whisky",
+      "alt": "バスカー アイリッシュウイスキーの緑ラベルのボトルを置いたAI生成イメージ",
+      "caption": "バスカー緑のAI生成イメージ",
+      "sha256": "96cb4dfe1ea2cfd4cd6ff034b60d11237b2dc1eba6a1656cf7fa45c6c7601afa",
+      "bytes": 73680
     }
   },
   "articles": {
