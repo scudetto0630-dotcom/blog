@@ -1,0 +1,148 @@
+{
+  "version": "1.38.9",
+  "deployment": {
+    "commit": "f92b110a0b43a09786bd5ec2f3f248b1dd2cfc9e",
+    "sha256": "3ad5e1a3e0ece77741becad908500d8abcfd94f3c66e7f4927e7ec1dd93c2aa9",
+    "expected_version": "1.38.8"
+  },
+  "public_browser": {
+    "viewport_checks": 24,
+    "rows": [
+      {
+        "slug": "",
+        "width": 1440
+      },
+      {
+        "slug": "",
+        "width": 390
+      },
+      {
+        "slug": "",
+        "width": 320
+      },
+      {
+        "slug": "category/cats/",
+        "width": 1440
+      },
+      {
+        "slug": "category/cats/",
+        "width": 390
+      },
+      {
+        "slug": "category/cats/",
+        "width": 320
+      },
+      {
+        "slug": "category/whisky/",
+        "width": 1440
+      },
+      {
+        "slug": "category/whisky/",
+        "width": 390
+      },
+      {
+        "slug": "category/whisky/",
+        "width": 320
+      },
+      {
+        "slug": "?s=CSV",
+        "width": 1440
+      },
+      {
+        "slug": "?s=CSV",
+        "width": 390
+      },
+      {
+        "slug": "?s=CSV",
+        "width": 320
+      },
+      {
+        "slug": "?s=zzxx123xxx",
+        "width": 1440
+      },
+      {
+        "slug": "?s=zzxx123xxx",
+        "width": 390
+      },
+      {
+        "slug": "?s=zzxx123xxx",
+        "width": 320
+      },
+      {
+        "slug": "glenlivet-12-first-bottles/",
+        "width": 1440,
+        "toolbarHeight": 56
+      },
+      {
+        "slug": "glenlivet-12-first-bottles/",
+        "width": 390,
+        "toolbarHeight": 70.46875
+      },
+      {
+        "slug": "glenlivet-12-first-bottles/",
+        "width": 320,
+        "toolbarHeight": 123.65625
+      },
+      {
+        "slug": "hsh-whisky-notes/",
+        "width": 1440
+      },
+      {
+        "slug": "hsh-whisky-notes/",
+        "width": 390
+      },
+      {
+        "slug": "hsh-whisky-notes/",
+        "width": 320
+      },
+      {
+        "slug": "canagan-chicken-salmon/",
+        "width": 1440
+      },
+      {
+        "slug": "canagan-chicken-salmon/",
+        "width": 390
+      },
+      {
+        "slug": "canagan-chicken-salmon/",
+        "width": 320
+      }
+    ],
+    "js_errors": [],
+    "writes": 0,
+    "keyboard_search_photo_save_footer_and_sticky_header": true,
+    "scroll_article_rect_reads": 0,
+    "contact_fields_present": true
+  },
+  "public_bottle_images": {
+    "pages": 1,
+    "viewport_checks": 3,
+    "all_four_image_hashes_match": true
+  },
+  "existing_operations_checks": {
+    "studio": 27,
+    "quality": 16
+  },
+  "no_javascript": {
+    "pages": 8,
+    "body_and_links_available": true,
+    "duplicate_date_notes": 0
+  },
+  "python_tests": 63,
+  "php_checks": 1165,
+  "internal_links_checked": 51,
+  "internal_link_failures": 0,
+  "unchanged_article_fingerprints": 42,
+  "all_owned_pages_unchanged": true,
+  "catalog_source_files_unchanged": true,
+  "existing_assets_unchanged": 153,
+  "existing_photo_files_unchanged": 289,
+  "new_images": 1,
+  "initial_toolbar_height_at_390": 168.46875,
+  "published_toolbar_height_at_390": 70.46875,
+  "limitations": [
+    "Browser network uses the environment proxy; no field LCP or real-user speed claim.",
+    "Contact fields inspected without sending a message.",
+    "No article content or number changes."
+  ]
+}
