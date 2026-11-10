@@ -34,13 +34,16 @@ function hsh_growth_gallery(){
     return $out.'</div><p>写真は管理人から提供したものです。</p><p><a href="'.esc_url(home_url('/manmos-cat-life/')).'">まんもすとの暮らしを読む →</a></p></section>';
 }
 function hsh_growth_tastes(){return array(
-array('name'=>'グレンリベット12年','note'=>'花のような、上品な香り。最初は詳しいことが分からなくても飲みやすかった。','reason'=>'グラスのおまけが付いていた。','slug'=>'glenlivet-12-first-bottles'),
-array('name'=>'グレングラント アルボラリス','note'=>'オレンジジュースのような味を想像していた。実際には甘くなかったけど、飲みやすかった。','reason'=>'YouTubeで飲んでいるのを見て気になった。','slug'=>''),
-array('name'=>'グレンファークラス12年','note'=>'ぶどうパンに顔をうずめたみたいな匂い。レーズンのような香りが好きなんだと思う。','reason'=>'シェリーカスクが好き。','slug'=>'sherry-cask-notes'),
-array('name'=>'ジムビーム','note'=>'自分の口には合わなかった。ジムビームを飲んだときの感想です。','reason'=>'購入した理由は、まだメモに残していない。','slug'=>''));}
+array('name'=>'陸','note'=>'初めて買ったウイスキー。当時はまだウイスキーに慣れていなくて、おいしいと思えず、コーラで割って飲んでいた。','reason'=>'','slug'=>''),
+array('name'=>'バスカー（緑）','note'=>'2本目に買ったバスカーは、おいしいと感じた。炭酸とコーラで交互に割って飲むうちに、ウイスキーの味にも慣れていった。','reason'=>'','slug'=>''),
+array('name'=>'グレンリベット12年','note'=>'3本目に買って、最初はハイボールで飲んだ。飲みやすくて、それまで買ったウイスキーより格段にうまいと感じた。花のような香りも好き。','reason'=>'YouTubeで気になっていたところ、スーパーでグラス付きのセットを見つけた。知っていた金額より少し安く、迷わず購入。','slug'=>'glenlivet-12-first-bottles'),
+array('name'=>'グレングラント アルボラリス','note'=>'甘くて飲みやすかった。オーケーで買ったときは2,200円で、好きなウイスキーの一つ。','reason'=>'YouTubeで飲んでいるのを見て気になった。','slug'=>''),
+array('name'=>'グレンファークラス12年','note'=>'ぶどうパンに顔をうずめたみたいな香りが、とにかく好き。まろやかでうまいけど、ストレートではかすかにアルコールの刺激も感じる。','reason'=>'ぶどうパンが大好きで、YouTubeで聞いた香りの例えにひかれた。特別な日に飲みたくて、何度も買っている。','slug'=>'sherry-cask-notes'),
+array('name'=>'ジムビーム','note'=>'自分には、セメダインのような接着剤を思わせる香りに感じた。アルコールの刺激も強く感じて気分が悪くなり、口に合わなかった。','reason'=>'','slug'=>''));}
 function hsh_growth_whisky(){
-    $out='<section class="hsh-taste-index"><p>飲んだときの印象を、自分の言葉で残しています。詳しい香りの名前は分からなくても、「これは好き」はあるので。</p><p>普段はハイボールかハーフロック。自分が飲んだときの印象を、短くまとめています。</p>';
-    foreach(hsh_growth_tastes() as $r){$arboralis=strpos($r['name'],'アルボラリス')!==false;$out.='<article class="hsh-taste-card"'.($arboralis?' id="arboralis-taste"':'').'><h2>'.esc_html($arboralis?'アルボラリスは甘い？飲んだ感想':$r['name']).'</h2><p>'.esc_html($r['note']).'</p><dl><dt>選んだきっかけ・好み</dt><dd>'.esc_html($r['reason']).'</dd></dl>';if($arboralis)$out.='<p>YouTubeで飲んでいるのを見て、オレンジジュースのような甘さを勝手に想像していた。でも、実際には甘くなかった。それでも飲みやすかったので、好きなウイスキーの一つです。</p><p>自分の印象は「想像ほど甘くなかったけれど、飲みやすかった」。ほかの人の香りの例えを、そのまま自分の味の感想にしなくてもいいんだと思う。</p>';if($r['slug'])$out.='<a href="'.esc_url(home_url('/'.$r['slug'].'/')).'">詳しい感想を読む →</a>';$out.='</article>';}
+    $out='<section class="hsh-taste-index"><p>最初に買ったのは陸、次が緑のバスカー、3本目がグレンリベット12年。飲んでみて好きだったものも、口に合わなかったものも、自分の感想を残しています。</p><p>普段はその日の気分で、飲みたいものを選ぶ。ハイボールはウイスキーを30ml入れて、炭酸はできるだけ多めに。グレンファークラスはストレートかハーフロックで、香りを楽しむのが好きです。</p>';
+    foreach(hsh_growth_tastes() as $r){$arboralis=strpos($r['name'],'アルボラリス')!==false;$out.='<article class="hsh-taste-card"'.($arboralis?' id="arboralis-taste"':'').'><h2>'.esc_html($arboralis?'アルボラリスは甘い？飲んだ感想':$r['name']).'</h2><p>'.esc_html($r['note']).'</p>';if($r['reason']!=='')$out.='<dl><dt>選んだきっかけ・好み</dt><dd>'.esc_html($r['reason']).'</dd></dl>';if($r['slug'])$out.='<a href="'.esc_url(home_url('/'.$r['slug'].'/')).'">詳しい感想を読む →</a>';$out.='</article>';}
+    $out.='<section class="hsh-next-bottle"><h2>次に気になっているのは、オーチャードハウス</h2><p>コンパスボックスのオーチャードハウスは、フルーツ感があると聞いて気になっている。ローソンで売っていた缶ハイボールは飲んでみたけど、あまり口に合わなかった。それでもボトルの方は飲んでみたい。まだ買っていないので、次の楽しみにしています。</p></section>';
     return $out.hsh_whisky_display_gallery().'<p><a href="'.esc_url(home_url('/highball-measure-and-adjust/')).'">ハイボールの分量を調整したいときはこちら</a></p></section>';
 }
 function hsh_whisky_display_gallery(){

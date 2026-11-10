@@ -47,3 +47,18 @@
 /* Theme lightbox controls must not leak into the page when its overlay is closed.
    A theme-opened overlay still uses its own inline display setting. */
 body.hsh-reader-site #baguetteBox-overlay{display:none}
+
+/* Keep adjacent article titles readable on narrow screens. */
+@media(max-width:600px){
+ body.hsh-reader-site #pager-post-navi{display:grid;grid-template-columns:minmax(0,1fr);gap:12px}
+ body.hsh-reader-site #pager-post-navi>a{display:grid;float:none;width:100%;min-width:0;box-sizing:border-box;align-items:center;gap:10px;padding:14px;min-height:64px}
+ body.hsh-reader-site #pager-post-navi>a.prev-post{grid-template-columns:20px minmax(0,1fr)}
+ body.hsh-reader-site #pager-post-navi>a.next-post{grid-template-columns:minmax(0,1fr) 20px}
+ body.hsh-reader-site #pager-post-navi .card-thumb{display:none}
+ body.hsh-reader-site #pager-post-navi .iconfont{position:static;grid-row:1;margin:0;width:auto}
+ body.hsh-reader-site #pager-post-navi .prev-post .iconfont{grid-column:1}
+ body.hsh-reader-site #pager-post-navi .next-post .iconfont{grid-column:2}
+ body.hsh-reader-site #pager-post-navi .prev-post-title,body.hsh-reader-site #pager-post-navi .next-post-title{grid-row:1;float:none;width:auto;min-width:0;margin:0;padding:0;white-space:normal;overflow-wrap:anywhere;font-size:14px;line-height:1.7}
+ body.hsh-reader-site #pager-post-navi .prev-post-title{grid-column:2}
+ body.hsh-reader-site #pager-post-navi .next-post-title{grid-column:1}
+}

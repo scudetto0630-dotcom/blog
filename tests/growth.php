@@ -6,7 +6,7 @@ $new=hsh_growth_metadata($html,$data);
 check(substr_count($new,'property="og:image"')===1&&strpos($new,'theme.jpg')===false,'OGP override removes conflicting theme defaults and updates article schema image');
 check(strpos($new,'noindex,nofollow')!==false&&strpos($new,'rel="canonical" href="https://example.test/a/"')!==false,'metadata update preserves robots and canonical');
 check(strpos($new,'Original body')!==false&&strpos($new,'"name":"Owner"')!==false,'metadata update preserves article body and schema author');
-check(count(hsh_growth_tastes())===4&&strpos(hsh_growth_whisky(),'オレンジジュース')!==false,'taste index uses the four confirmed bottle impressions');
+check(count(hsh_growth_tastes())===6&&strpos(hsh_growth_whisky(),'甘くて飲みやすかった')!==false&&strpos(hsh_growth_whisky(),'甘くなかった')===false,'taste index uses six owner-confirmed impressions and corrected Arboralis taste');
 $gallery=hsh_growth_gallery();check(substr_count($gallery,'<img ')===17&&strpos($gallery,'AI生成')===false,'public gallery uses seventeen available owner photographs');
 check(count(hsh_growth_summaries())===13,'all thirteen articles have distinct related-reading summaries');
 check(hsh_query_csv("Query,Clicks,Impressions,Position\nシェリー樽,3,100,8\n")[0]['query']==='シェリー樽','query CSV accepts owner-provided search data');
