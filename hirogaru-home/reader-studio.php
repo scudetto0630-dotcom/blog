@@ -18,13 +18,13 @@ function hsh_studio_checklist($id,$title,$items){
  foreach($items as $i=>$item)$out.='<label><input type="checkbox" data-sheet-check="'.(int)$i.'"> '.esc_html($item).'</label>';
  return $out.'</fieldset><label>メモ<textarea data-sheet-note maxlength="2000" rows="3" placeholder="気付いたこと、次に確認したいこと"></textarea></label><p data-sheet-status role="status" aria-live="polite"></p><div class="hsh-sheet-actions"><button type="button" data-sheet-print>このシートを印刷</button><button type="button" data-sheet-reset>すべて解除</button></div></section>';
 }
-function hsh_studio_highball(){return '<section class="hsh-highball-tool"><h2>好みの割合で、分量を計算する</h2><p>ウイスキー1に対して、ソーダを何倍にするかで計算します。グラス容量には氷も入るため、飲み物の合計量は別に指定してください。</p><form data-highball><label>ウイスキーの量（ml）<input name="whisky" type="number" min="5" max="100" step="1" value="30" required></label><label>ソーダの倍率<input name="ratio" type="number" min="1" max="10" step="0.5" value="3" required></label><label>グラス容量（ml・任意）<input name="glass" type="number" min="100" max="1000" step="1" placeholder="例：350"></label><button>分量を計算</button></form><p data-highball-result role="status" aria-live="polite">ウイスキー30ml＋ソーダ90ml＝飲み物120ml。氷を入れる余地は別に必要です。</p></section>';}
+function hsh_studio_highball(){return '<section class="hsh-highball-tool"><h2>好みの割合で、分量を計算する</h2><p>ウイスキーの量とソーダの倍率を入力してください。氷は計算に含まれないため、グラスには氷を入れる余裕も必要です。</p><form data-highball><label>ウイスキーの量（ml）<input name="whisky" type="number" min="5" max="100" step="1" value="30" required></label><label>ソーダの倍率<input name="ratio" type="number" min="1" max="10" step="0.5" value="3" required></label><label>グラス容量（ml・任意）<input name="glass" type="number" min="100" max="1000" step="1" placeholder="例：350"></label><button>分量を計算</button></form><p data-highball-result role="status" aria-live="polite">ウイスキー30ml＋ソーダ90ml＝飲み物120ml。氷を入れる余地は別に必要です。</p></section>';}
 function hsh_studio_examples(){
  return '<section class="hsh-data-practice"><h2>架空の表で、データ抽出を試す</h2><p>次の4行は練習用に作った架空データです。顧客や勤務先の実データではありません。「区分が猫、金額が1,000円以上」を条件に抜き出します。</p><h3>処理前</h3><table><thead><tr><th>ID</th><th>区分</th><th>金額（円）</th></tr></thead><tbody><tr><td>0001</td><td>猫</td><td>1200</td></tr><tr><td>0002</td><td>ウイスキー</td><td>4000</td></tr><tr><td>0003</td><td>猫</td><td>800</td></tr><tr><td>0004</td><td>猫</td><td>1500</td></tr></tbody></table><h3>期待する結果</h3><p>ID「0001」「0004」の2件です。合計金額は2,700円。先頭の0を残し、元の表の順番を保ちます。</p><h3>依頼文の例</h3><pre data-copy-example>元データを残したまま、区分が「猫」、金額が1000円以上の行を抽出してください。IDは文字列として先頭の0を保持し、元の並び順を維持してください。抽出件数と金額の合計を示してください。</pre><pre data-copy-example>金額を数値として昇順に並べ替えてください。同額の場合は元の並び順を保ち、IDと金額の対応を変えないでください。</pre><pre data-copy-example>IDの重複を調べ、重複したIDと該当行を別表にまとめてください。元データからは削除しないでください。</pre><h3>Excel・スプレッドシート・CSVの違い</h3><dl><dt>Excel</dt><dd>表計算ソフトです。xlsx形式なら複数のシート、書式、数式などを保存できます。</dd><dt>スプレッドシート</dt><dd>ブラウザーで共同編集できる表計算サービスです。共有範囲と編集権限を確認して使います。</dd><dt>CSV</dt><dd>行と列の値を区切り文字で表すテキスト形式です。書式や複数シートの保存には向きません。取り込み時の文字コードやデータ型に注意が必要です。</dd></dl></section>';
 }
 function hsh_studio_terms($topic,$slug=''){
- if($topic==='cats')$terms=array('総合栄養食'=>'指定された対象や成長段階に合う製品を、表示に従って与えるための栄養区分。個々の商品表示を確認します。','療法食'=>'病気などに応じて栄養成分を調整した食事。自己判断で選ばず獣医師に相談します。','サプリメント'=>'健康維持のために使われる補助的な製品。医薬品と同じ治療効果を意味するものではありません。');
- elseif($topic==='whisky')$terms=array('シングルモルト'=>'ひとつの蒸溜所で造られたモルトウイスキーを指します。','年数表示'=>'混和された原酒のうち最も若い原酒の熟成年数を示します。','ハーフロック'=>'氷を入れたグラスに、ウイスキーと水を同量程度ずつ加える飲み方。');else return '';
+ if($topic==='cats')$terms=array('総合栄養食'=>'主食として必要な栄養を満たすよう調整されたフードです。対象や給与方法は製品の表示で確認してください。','療法食'=>'病気などに応じて栄養成分を調整した食事。自己判断で選ばず獣医師に相談します。','サプリメント'=>'健康維持のために使われる補助的な製品。医薬品と同じ治療効果を意味するものではありません。');
+ elseif($topic==='whisky')$terms=array('シングルモルト'=>'ひとつの蒸溜所で造られたモルトウイスキーを指します。','年数表示'=>'複数の原酒を合わせた場合、最も若い原酒の熟成年数を示します。','ハーフロック'=>'氷を入れたグラスに、ウイスキーと水を同量程度ずつ加える飲み方。');else return '';
  $article=$slug!==''?hsh_studio_catalog($slug):null;if($article){$post=get_page_by_path($slug,OBJECT,'post');$body=wp_strip_all_tags($article['content']??($post->post_content??''));$terms=array_filter($terms,function($description,$term)use($body){return strpos($body,$term)!==false;},ARRAY_FILTER_USE_BOTH);}if(!$terms)return '';
  $out='<details class="hsh-term-notes"><summary>この記事に出てくる言葉</summary><dl>';foreach($terms as $term=>$description)$out.='<dt>'.esc_html($term).'</dt><dd>'.esc_html($description).'</dd>';
  if($topic==='whisky')$out.='<dd>'.hsh_studio_article_link('single-malt-label-guide','ボトルの表示をもう少し詳しく読む','single-malt-label-guide-1').'</dd>';
@@ -32,9 +32,9 @@ function hsh_studio_terms($topic,$slug=''){
 }
 function hsh_studio_source_content(){static $v=null;if($v===null)$v=json_decode(file_get_contents(__DIR__.'/product-reader-notes.json'),true)?:array();return $v;}
 function hsh_studio_product_notes($slug){
- $d=hsh_studio_source_content()[$slug]??null;if(!$d)return '';$out='<section class="hsh-product-notes"><h2>'.esc_html($d['heading']).'</h2><h3>申し込み・購入の流れ</h3><ol>';foreach($d['steps'] as $s)$out.='<li>'.esc_html($s).'</li>';$out.='</ol><h3>よくある疑問</h3>';
+ $d=hsh_studio_source_content()[$slug]??null;if(!$d)return '';$out='<section class="hsh-product-notes"><h2>'.esc_html($d['heading']).'</h2><h3>購入・申し込み前の確認</h3><ol>';foreach($d['steps'] as $s)$out.='<li>'.esc_html($s).'</li>';$out.='</ol><h3>よくある質問</h3>';
  foreach($d['qa'] as $q)$out.='<details><summary>'.esc_html($q[0]).'</summary><p>'.esc_html($q[1]).'</p></details>';
- $a=hsh_studio_catalog($slug);$context='';if($a&&preg_match('~href="(https://px\.a8\.net/[^"]+)"~',$a['content'],$m)){$name=preg_split('/[｜。]/u',preg_replace('/^【ご紹介】/u','',$a['title']))[0];$context='<p class="hsh-affiliate-context"><small>広告</small> <a rel="nofollow sponsored" href="'.esc_url(html_entity_decode($m[1],ENT_QUOTES,'UTF-8')).'">'.esc_html($name).'の公式案内へ →</a></p>';}
+ $a=hsh_studio_catalog($slug);$context='';if($a&&preg_match('~href="(https://px\.a8\.net/[^"]+)"~',$a['content'],$m)){$name=preg_split('/[｜。]/u',preg_replace('/^【ご紹介】/u','',$a['title']))[0];if($slug==='digxipop-cat-figure')$name='digxipop';$context='<p class="hsh-affiliate-context"><small>広告</small> <a rel="nofollow sponsored" href="'.esc_url(html_entity_decode($m[1],ENT_QUOTES,'UTF-8')).'">'.esc_html($name).'の公式案内へ →</a></p>';}
  return $out.$context.'</section>';
 }
 add_filter('the_content',function($c){
@@ -54,7 +54,7 @@ add_filter('the_content',function($c){
  if($slug==='csv-import-seven-checks'){$example=hsh_studio_examples();if(preg_match('~<h3>Excel・スプレッドシート・CSVの違い</h3>(.*?)</section>~s',$example,$formats))$c.='<section class="hsh-data-practice"><h2>Excel・スプレッドシート・CSVの違い</h2>'.$formats[1].'</section>';}
  return $c.hsh_studio_postscript($slug,$a['topic']);
 },29);
-add_action('wp_enqueue_scripts',function(){if(!hsh_reader_scope())return;wp_enqueue_style('hsh-studio',plugin_dir_url(__FILE__).'assets/studio.css',array('hsh-brushup'),'1.38.2');wp_enqueue_script('hsh-studio',plugin_dir_url(__FILE__).'assets/studio.js',array('hsh-brushup'),'1.38.9',true);},140);
+add_action('wp_enqueue_scripts',function(){if(!hsh_reader_scope())return;wp_enqueue_style('hsh-studio',plugin_dir_url(__FILE__).'assets/studio.css',array('hsh-brushup'),'1.38.2');wp_enqueue_script('hsh-studio',plugin_dir_url(__FILE__).'assets/studio.js',array('hsh-brushup'),'1.38.14',true);},140);
 // The native WordPress relevance ordering already prioritizes matching titles.
 add_action('pre_get_posts',function($q){if(!is_admin()&&$q->is_main_query()&&$q->is_search())$q->set('orderby','relevance');},35);
 function hsh_studio_home_products(){
@@ -63,7 +63,7 @@ function hsh_studio_home_products(){
 }
 function hsh_studio_series($slug){
  $groups=array('cats'=>array('manmos-cat-life','before-welcoming-cat','cat-teaser-small-parts','cat-carrier-checklist','cat-vet-routine'),'whisky'=>array('glenlivet-12-first-bottles','sherry-cask-notes','single-malt-label-guide','highball-measure-and-adjust'),'it-freelance'=>array('it-data-work-flow','starting-it-without-specialty','ai-data-extraction-checks','csv-import-seven-checks'));
- foreach($groups as $topic=>$slugs){$i=array_search($slug,$slugs,true);if($i===false)continue;return '<p class="hsh-studio-series">'.esc_html(hsh_topics()[$topic][0]).'の読む順番：'.($i+1).' / '.count($slugs).'　'.(isset($slugs[$i+1])?hsh_studio_article_link($slugs[$i+1],'次の記事へ →'):'<a href="'.esc_url(hsh_category_url($topic)).'">一覧へ →</a>').'</p>';}
+ foreach($groups as $topic=>$slugs){$i=array_search($slug,$slugs,true);if($i===false)continue;return '<p class="hsh-studio-series">'.esc_html(hsh_topics()[$topic][0]).'の記事を読む順番：'.($i+1).' / '.count($slugs).'　'.(isset($slugs[$i+1])?hsh_studio_article_link($slugs[$i+1],'次の記事へ →'):'<a href="'.esc_url(hsh_category_url($topic)).'">一覧へ →</a>').'</p>';}
  return '';
 }
 function hsh_studio_care(){return '<section class="hsh-care-notes"><h3>素材と部品ごとに、手入れの表示を確認</h3><dl><dt>陶器・ガラスの器</dt><dd>欠けやひびを点検し、使用できる洗剤・温度・食器洗浄機への対応は、その商品の説明に従います。</dd><dt>布・ニット・クッション</dt><dd>洗濯表示と取り外せる部品を確認します。水洗いできると決めつけず、指定の乾かし方まで確認します。</dd><dt>木・段ボール・支柱</dt><dd>濡らしてよい範囲や交換方法は素材・製品で異なります。固定部の緩みもメーカーの案内に沿って点検します。</dd><dt>電子機器</dt><dd>水洗いできる部分と電子部品を分けて確認し、電源・充電・清掃方法は取扱説明書に従います。</dd></dl></section>';}

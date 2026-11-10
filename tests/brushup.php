@@ -8,7 +8,7 @@ check(hsh_brushup_type('manmos-cat-life')==='story'&&hsh_brushup_type('cat-carri
 check(hsh_brushup_choice(array('bad'))==='all'&&hsh_brushup_choice('product')==='product','invalid filter falls back without exposing arbitrary queries');
 $shop=hsh_brushup_shopping('mognyan-cat-food-guide');$food=null;foreach(hsh_affiliate_articles() as $row)if($row['slug']==='mognyan-cat-food-guide')$food=$row;check(strpos($shop,'切り替え方')!==false&&strpos($shop,'休止・解約')!==false&&strpos($shop,'<time')===false&&strpos($food['content'],'2026年11月4日確認')!==false,'purchase guidance retains conditions and leaves a single evidence date in the source note');
 check(hsh_brushup_shopping('unknown')==='','non-catalog products cannot acquire invented shopping details');
-$compare=hsh_brushup_comparison('cats');check(substr_count($compare,'<tr>')===5&&strpos($compare,'data-label=')!==false&&strpos($compare,'ランキングではなく')!==false,'food comparison has four sourced products and mobile labels');
+$compare=hsh_brushup_comparison('cats');check(substr_count($compare,'<tr>')===5&&strpos($compare,'data-label=')!==false&&strpos($compare,'原材料や、粒の特徴をまとめています')!==false,'food comparison has four sourced products and mobile labels');
 check(strpos(hsh_brushup_comparison('whisky'),'ぶどうパン')!==false,'whisky comparison preserves owner words');
 check(substr_count(hsh_brushup_photo_stories(),'<article>')===3,'photo stories use existing supplied photographs');
 check(strpos(hsh_brushup_first_steps(),'初めての方へ')!==false,'homepage introduction uses public starter routes');

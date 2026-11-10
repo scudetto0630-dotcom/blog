@@ -2,19 +2,19 @@
 if(!defined('ABSPATH'))exit;
 /** Public additions only use packaged facts and approved packaged photographs. */
 function hsh_growth_summaries(){return array(
-'before-welcoming-cat'=>'迎える前に用意したい物と、部屋を片付けるときの確認項目。',
-'manmos-cat-life'=>'抱っこは苦手なまんもすの、好きな場所や毎日のブラッシングの話。',
-'cat-teaser-small-parts'=>'100均のおもちゃも使う飼い主が、小さな部品や片付けで気にしていること。',
-'cat-vet-routine'=>'診察で伝えたい様子と、出発前にまとめておきたい持ち物。',
-'cat-carrier-checklist'=>'5.5kgの猫でリュック型が変形。買い替え経験と、内寸・構造の確認点。',
-'glenlivet-12-first-bottles'=>'飲みやすさと花のような香りが好き。グラス付きで買ったきっかけも。',
-'single-malt-label-guide'=>'シングルモルト、年数、樽。ボトルの表示を順番に見ていきます。',
-'sherry-cask-notes'=>'グレンファークラス12年の香りの感想。ぶどうパンやレーズンを思い浮かべた話。',
-'highball-measure-and-adjust'=>'薄さと炭酸の弱さを分けて考え、少しずつ好みの配合を探す方法。',
-'it-data-work-flow'=>'抽出や並び替えなど、今の仕事でしているデータ加工とAIの使いどころ。',
-'starting-it-without-specialty'=>'ITに興味を持った理由と、今の仕事にたどり着くまでの約1年。',
-'ai-data-extraction-checks'=>'架空の表で、抽出条件や件数をどう確かめるか試します。',
-'csv-import-seven-checks'=>'元ファイル、文字コード、先頭の0など、取り込み前に確かめたいこと。');}
+'before-welcoming-cat'=>'猫を迎える前に用意する物と、部屋を片付けるときの注意点をまとめています。',
+'manmos-cat-life'=>'まんもすを迎えた経緯や、好きなお世話・おもちゃ、毎日の様子を紹介しています。',
+'cat-teaser-small-parts'=>'100均のおもちゃも使う飼い主が、ねこじゃらしの選び方と片付けるときの注意点をまとめています。',
+'cat-vet-routine'=>'通院の持ち物と、診察で伝えたい猫の様子を整理する方法を紹介しています。',
+'cat-carrier-checklist'=>'5.5kgのまんもすを入れるとリュックキャリーがへこみ、古いキャリーを使い直した経緯を書いています。',
+'glenlivet-12-first-bottles'=>'グラス付きで買ったグレンリベット12年の、飲みやすさと好きな香りについて書いています。',
+'single-malt-label-guide'=>'シングルモルトの意味や年数表示など、ボトルのラベルを読むときのポイントを紹介しています。',
+'sherry-cask-notes'=>'グレンファークラス12年のぶどうパンのような香りと、何度も買う理由を書いています。',
+'highball-measure-and-adjust'=>'ハイボールの味や炭酸が物足りないとき、分量や作り方をどう調整するかを紹介しています。',
+'it-data-work-flow'=>'データ加工の仕事内容と、AIを使って楽になったことを書いています。',
+'starting-it-without-specialty'=>'ITに興味を持ってから、自分に合う仕事に出会うまでの約1年を振り返っています。',
+'ai-data-extraction-checks'=>'架空の表を使って、AIの抽出結果に抜けや誤りがないかを確認する方法を紹介しています。',
+'csv-import-seven-checks'=>'CSVの文字コードや先頭の0、空欄など、取り込む前に確認する項目をまとめています。');}
 function hsh_growth_next($slug){$pairs=array(
 'before-welcoming-cat'=>'manmos-cat-life','manmos-cat-life'=>'cat-carrier-checklist','cat-carrier-checklist'=>'cat-vet-routine','cat-vet-routine'=>'cat-carrier-checklist','cat-teaser-small-parts'=>'manmos-cat-life',
 'glenlivet-12-first-bottles'=>'sherry-cask-notes','sherry-cask-notes'=>'single-malt-label-guide','single-malt-label-guide'=>'glenlivet-12-first-bottles','highball-measure-and-adjust'=>'glenlivet-12-first-bottles',
@@ -29,21 +29,21 @@ function hsh_growth_popular(){
     return $out.'</ul></section>';
 }
 function hsh_growth_gallery(){
-    $out='<section class="hsh-gallery-page"><p>爪とぎの上でくつろいだり、枕を使ったり。うちのまんもすです。</p>'.hsh_reader_gallery_filters().'<div class="hsh-photo-grid">';
+    $out='<section class="hsh-gallery-page"><p>爪とぎの上や枕の上でくつろぐ、まんもすの写真を集めました。</p>'.hsh_reader_gallery_filters().'<div class="hsh-photo-grid">';
     foreach(hsh_photo_manifest()['assets'] as $a)if($a['kind']==='provided'&&$a['subject']==='manmos')$out.='<figure class="hsh-photo"'.(hsh_reader_gallery_matches($a)?'':' hidden').' data-photo-tags="'.esc_attr(implode(' ',$a['tags']??array('relax'))).'">'.hsh_photo_image($a,false,'(max-width:600px) calc(100vw - 44px), 360px').hsh_photo_figcaption(array_merge($a,array('caption'=>$a['alt']))).'</figure>';
-    return $out.'</div><p>写真は管理人から提供したものです。</p><p><a href="'.esc_url(home_url('/manmos-cat-life/')).'">まんもすとの暮らしを読む →</a></p></section>';
+    return $out.'</div><p><a href="'.esc_url(home_url('/manmos-cat-life/')).'">まんもすとの暮らしを読む →</a></p></section>';
 }
 function hsh_growth_tastes(){return array(
 array('name'=>'キリンウイスキー 陸','image'=>'riku-generated','note'=>'初めて買ったウイスキー。当時はまだウイスキーに慣れていなくて、おいしいと思えず、コーラで割って飲んでいた。','reason'=>'','slug'=>''),
 array('name'=>'バスカー アイリッシュウイスキー','image'=>'busker-green-generated','note'=>'2本目に買ったバスカー緑は、おいしいと感じた。炭酸とコーラで交互に割って飲むうちに、ウイスキーの味にも慣れていった。','reason'=>'','slug'=>''),
 array('name'=>'グレンリベット12年','note'=>'3本目に買って、最初はハイボールで飲んだ。飲みやすくて、それまで買ったウイスキーより格段にうまいと感じた。花のような香りも好き。','reason'=>'YouTubeで気になっていたところ、スーパーでグラス付きのセットを見つけた。知っていた金額より少し安く、迷わず購入。','slug'=>'glenlivet-12-first-bottles'),
-array('name'=>'グレングラント アルボラリス カスクストレングス','image'=>'arboralis-generated','note'=>'甘くて飲みやすかった。オーケーで買ったときは2,200円で、好きなウイスキーの一つ。','reason'=>'YouTubeで飲んでいるのを見て気になった。','slug'=>''),
+array('name'=>'グレングラント アルボラリス カスクストレングス','image'=>'arboralis-generated','note'=>'甘くて飲みやすかった。オーケーで買ったときは2,200円で、好きなウイスキーの一つだ。','reason'=>'YouTubeで飲んでいるのを見て気になった。','slug'=>''),
 array('name'=>'グレンファークラス12年','image'=>'article-sherry','note'=>'ぶどうパンに顔をうずめたみたいな香りが、とにかく好き。まろやかでうまいけど、ストレートではかすかにアルコールの刺激も感じる。','reason'=>'ぶどうパンが大好きで、YouTubeで聞いた香りの例えにひかれた。特別な日に飲みたくて、何度も買っている。','slug'=>'sherry-cask-notes'),
-array('name'=>'ジムビーム','image'=>'jim-beam-generated','note'=>'自分には、セメダインのような接着剤を思わせる香りに感じた。アルコールの刺激も強く感じて気分が悪くなり、口に合わなかった。','reason'=>'','slug'=>''));}
+array('name'=>'ジムビーム','image'=>'jim-beam-generated','note'=>'自分には、セメダインのような接着剤の香りに感じられた。アルコールの刺激も強く感じて気分が悪くなり、口に合わなかった。','reason'=>'','slug'=>''));}
 function hsh_growth_whisky(){
-    $out='<section class="hsh-taste-index"><p>最初に買ったのは陸、次がバスカー アイリッシュウイスキー（バスカー緑）、3本目がグレンリベット12年。飲んでみて好きだったものも、口に合わなかったものも、自分の感想を残しています。</p><p>普段はその日の気分で、飲みたいものを選ぶ。ハイボールはウイスキーを30ml入れて、炭酸はできるだけ多めに。グレンファークラスはストレートかハーフロックで、香りを楽しむのが好きです。</p>';
+    $out='<section class="hsh-taste-index"><p>最初に買ったのは陸、次がバスカー アイリッシュウイスキー（バスカー緑）、3本目がグレンリベット12年。飲んでみて好きだったものも、口に合わなかったものも、自分の感想を残している。</p><p>普段はその日の気分で、飲みたいものを選ぶ。ハイボールはウイスキーを30ml入れて、炭酸はできるだけ多めに。グレンファークラスはストレートかハーフロックで、香りを楽しむのが好きだ。</p>';
     foreach(hsh_growth_tastes() as $r){$arboralis=strpos($r['name'],'アルボラリス')!==false;$out.='<article class="hsh-taste-card"'.($arboralis?' id="arboralis-taste"':'').'><h2>'.esc_html($arboralis?'アルボラリスは甘い？カスクストレングスを飲んだ感想':$r['name']).'</h2>';if(!empty($r['image'])){$asset=hsh_photo_manifest()['assets'][$r['image']];$out.='<figure class="hsh-photo hsh-taste-photo">'.hsh_photo_image($asset,false).'</figure>';}$out.='<p>'.esc_html($r['note']).'</p>';if($r['reason']!=='')$out.='<dl><dt>選んだきっかけ・好み</dt><dd>'.esc_html($r['reason']).'</dd></dl>';if($r['name']==='バスカー アイリッシュウイスキー')$out.='<p><a href="https://whisk-e.co.jp/products/buskerirish/">バスカー アイリッシュウイスキーの公式商品案内</a></p>';if($r['slug'])$out.='<a href="'.esc_url(home_url('/'.$r['slug'].'/')).'">詳しい感想を読む →</a>';$out.='</article>';}
-    $out.='<section class="hsh-next-bottle"><h2>次に気になっているのは、オーチャードハウス</h2><p>コンパスボックスのオーチャードハウスは、フルーツ感があると聞いて気になっている。ローソンで売っていた缶ハイボールは飲んでみたけど、あまり口に合わなかった。それでもボトルの方は飲んでみたい。まだ買っていないので、次の楽しみにしています。</p></section>';
+    $out.='<section class="hsh-next-bottle"><h2>次に気になっているのは、オーチャードハウス</h2><p>コンパスボックスのオーチャードハウスは、フルーツ感があると聞いて気になっている。ローソンで売っていた缶ハイボールは飲んでみたけど、あまり口に合わなかった。それでもボトルの方は飲んでみたい。まだ買っていないので、ボトルで飲むのを次の楽しみにしている。</p></section>';
     return $out.hsh_whisky_display_gallery().'<p><a href="'.esc_url(home_url('/highball-measure-and-adjust/')).'">ハイボールの分量を調整したいときはこちら</a></p></section>';
 }
 function hsh_whisky_display_gallery(){

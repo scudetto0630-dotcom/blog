@@ -51,7 +51,7 @@ function hsh_edit_status() {
             if ($page) { $pages[$key] = array('id' => $page->ID, 'status' => $page->post_status, 'title' => $page->post_title, 'content' => $page->post_content, 'fingerprint'=>hsh_page_fingerprint($page), 'url' => get_permalink($page)); }
         }
     }
-    return hsh_edit_response(array('version' => '1.38.13', 'scope' => array('homepage_text_colors', 'bridge_owned_pages', 'publish_three_packaged_posts', 'refresh_three_owned_posts_with_packaged_images', 'update_only_hirogaru_home_from_pinned_repository', 'read_site_audit', 'set_public_google_verification_token', 'refresh_packaged_site_introduction'), 'home_page_id' => (int) get_option('hsh_page_id'), 'home_settings' => get_option('hsh_home_settings', array()), 'pages' => $pages));
+    return hsh_edit_response(array('version' => '1.38.14', 'scope' => array('homepage_text_colors', 'bridge_owned_pages', 'publish_three_packaged_posts', 'refresh_three_owned_posts_with_packaged_images', 'update_only_hirogaru_home_from_pinned_repository', 'read_site_audit', 'set_public_google_verification_token', 'refresh_packaged_site_introduction'), 'home_page_id' => (int) get_option('hsh_page_id'), 'home_settings' => get_option('hsh_home_settings', array()), 'pages' => $pages));
 }
 function hsh_edit_home($request) {
     $data = $request->get_json_params();

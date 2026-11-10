@@ -2,9 +2,9 @@
 if (!defined('ABSPATH')) { exit; }
 function hsh_topic_details() {
     return array(
-        'cats'=>array('うちの猫は、まんもすです','まんもすとの暮らしや、キャリー・おもちゃを選ぶときに気になることを書いています。猫によって好みも違うので、まずは身近な話から。これから迎える方への準備の話もあります。','cat-carrier-checklist','キャリーは、どこを見て選ぶ？','まんもすとの暮らしや、猫を迎える準備の話もどうぞ。'),
-        'whisky'=>array('普段は薄めのハイボールにしています','自分は普段、薄めのハイボールにしています。飲んで感じたことや、ラベルの見方、家で作るときに気になることを書いています。難しい香りの名前より、自分の言葉で。','highball-measure-and-adjust','ハイボールが薄いと感じたら','飲んだ感想や、ラベルで気になる言葉の話も書いています。'),
-        'it-freelance'=>array('ITの仕事って、何をするのか分からなかった','以前はMR、今はフリーランスでデータの抽出や並び替えなどの加工をしています。今の仕事にたどり着くまでの話と、ChatGPTやCodexを使った作業の話です。','csv-import-seven-checks','CSVを取り込む前に見ておきたいこと','未経験で迷ったことや、AIに作業を頼むときの話もどうぞ。'),
+        'cats'=>array('うちの猫は、まんもすです','保護猫まんもすとの日々を、写真と一緒に紹介しています。猫を迎える準備や、キャリー・おもちゃの選び方もまとめています。','cat-carrier-checklist','キャリーは、どこを見て選ぶ？','保護猫まんもすとの日々や、猫を迎える準備、キャリー・おもちゃの選び方を紹介しています。'),
+        'whisky'=>array('普段は薄めのハイボールにしています','グレンリベット12年やグレンファークラス12年など、実際に飲んだウイスキーの感想をまとめています。ハイボールの分量や、ラベルの読み方も紹介しています。','highball-measure-and-adjust','ハイボールが薄いと感じたら','実際に飲んだウイスキーの感想や、ハイボールの作り方を紹介しています。'),
+        'it-freelance'=>array('ITの仕事って、何をするのか分からなかった','以前はMRとして働き、今はフリーランスでデータの抽出や並べ替えをしています。未経験からITの仕事を始めた経緯や、現在の働き方を紹介しています。','csv-import-seven-checks','CSVを取り込む前に見ておきたいこと','未経験からITの仕事を始めた経緯や、今取り組んでいるデータ加工の仕事を紹介しています。'),
     );
 }
 function hsh_current_topic() {
@@ -15,7 +15,7 @@ add_filter('template_include', function ($template) {
     return hsh_current_topic() ? plugin_dir_path(__FILE__) . 'category-template.php' : $template;
 }, 100);
 function hsh_profile_markup() {
-    return '<aside class="hsh-profile" aria-label="書き手について"><img src="' . esc_url(plugin_dir_url(__FILE__) . 'assets/photos/manmos-front.webp') . '" alt="保護猫のまんもす。管理人提供の写真です。" width="160" height="160" loading="lazy"><div><p class="hsh-kicker">書いている人</p><strong>ひろがる趣味暮らし 管理人</strong><p>まんもすと暮らす、ウイスキー好きです。以前はMR、今はフリーランスでデータ加工の仕事をしています。ChatGPTやCodexも使っています。</p><a href="' . esc_url(home_url('/hsh-about/')) . '">もう少し詳しい自己紹介 →</a><br><a href="' . esc_url(home_url('/manmos-cat-life/')) . '">まんもすとの暮らし</a> ／ <a href="' . esc_url(home_url('/it-data-work-flow/')) . '">今している仕事</a><small>写真は、管理人と暮らすまんもすです。</small></div></aside>';
+    return '<aside class="hsh-profile" aria-label="書き手について"><img src="' . esc_url(plugin_dir_url(__FILE__) . 'assets/photos/manmos-front.webp') . '" alt="保護猫のまんもす。管理人提供の写真です。" width="160" height="160" loading="lazy"><div><p class="hsh-kicker">書いている人</p><strong>ひろがる趣味暮らし 管理人</strong><p>まんもすと暮らすウイスキー好きです。以前はMRとして働き、今はフリーランスでデータを扱う仕事をしています。</p><a href="' . esc_url(home_url('/hsh-about/')) . '">もう少し詳しい自己紹介 →</a><br><a href="' . esc_url(home_url('/manmos-cat-life/')) . '">まんもすとの暮らし</a> ／ <a href="' . esc_url(home_url('/it-data-work-flow/')) . '">今している仕事</a><small>写真は、管理人と暮らすまんもすです。</small></div></aside>';
 }
 function hsh_search_markup($id) {
     $value=function_exists('get_search_query')?get_search_query(false):'';

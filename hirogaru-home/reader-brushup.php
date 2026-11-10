@@ -35,14 +35,14 @@ function hsh_brushup_shopping($slug){
     $fit=$is_food?'原材料や粒の特徴、今のごはんからの切り替え方を比べたい方':($is_supplement?'成分と与え方を確認し、必要性を獣医師に相談してから選びたい方':($is_service?'依頼する内容と料金条件を、申し込み前に整理したい方':'サイズや使い方が、自宅の環境や猫の体格に合うか確かめたい方'));
     $checks=$is_food?'対象年齢、総合栄養食などの区分、一日の給与量、保存方法':($is_supplement?'対象動物、成分、給与量、薬との併用についての相談':($is_service?'プランに含まれる範囲、追加料金、依頼後の変更・キャンセル条件':'寸法、設置場所、対応条件、お手入れ方法'));
     $fit=$a['purchase_fit']??$fit;$checks=$a['purchase_checks']??$checks;
-    $condition=$a['purchase_condition']??'表示価格に加えて、送料と支払総額を確認してください。定期購入を選ぶ場合は、次回のお届け日、休止・解約の期限や手続きも確認しておきましょう。';
-    return '<aside class="hsh-buying-note"><h2>選ぶときのポイント</h2><dl><dt>こんな比較をしたい方に</dt><dd>'.esc_html($fit).'</dd><dt>注文前に確認すること</dt><dd>'.esc_html($checks).'</dd><dt>支払い・手続きの条件</dt><dd>'.esc_html($condition).'</dd></dl></aside>';
+    $condition=$a['purchase_condition']??'商品価格と送料を合わせた支払総額を確認してください。定期購入を選ぶ場合は、次回のお届け日、休止・解約の期限や手続きも確認しておきましょう。';
+    return '<aside class="hsh-buying-note"><h2>選ぶときのポイント</h2><dl><dt>こんな方に</dt><dd>'.esc_html($fit).'</dd><dt>注文前に確認すること</dt><dd>'.esc_html($checks).'</dd><dt>支払い・手続きの条件</dt><dd>'.esc_html($condition).'</dd></dl></aside>';
 }
 function hsh_brushup_comparison($topic){
     if($topic==='cats'){$rows=array(array('canagan-chicken-salmon','カナガン','チキンとサーモンを比較','主原料・栄養成分・給与量'),array('mcadams-cat-chicken-turkey','マックアダムズ','チキン＆ターキー、オーブンベイク製法','原材料・粒の特徴'),array('mognyan-cat-food-guide','モグニャン','白身魚を使ったフード','原材料・粒の大きさ・切り替え方'),array('essential-jaguar-cat-food','ジャガー','肉と魚を組み合わせたフード','原材料・カロリー・粒の特徴'));$title='猫用フード、どこを比べる？';$heads=array('商品','記事で紹介している特徴','比べたい項目');}
     elseif($topic==='whisky'){$rows=array(array('glenlivet-12-first-bottles','グレンリベット12年','花のような上品な香り','グラスのおまけがきっかけ'),array('hsh-whisky-notes','アルボラリス カスクストレングス','甘くて飲みやすかった','YouTubeで見て気になった'),array('sherry-cask-notes','グレンファークラス12年','ぶどうパンに顔をうずめたような匂い','シェリーカスクが好き'));$title='飲んだときの印象を比べる';$heads=array('ウイスキー','自分が感じたこと','選んだきっかけ・好み');}
     else return '';
-    $out='<section class="hsh-comparison"><h2>'.esc_html($title).'</h2><p>'.($topic==='cats'?'商品の優劣を決めるランキングではなく、違いを調べるための入口です。':'ここに書いたのは、自分が飲んだときの感想です。感じ方には個人差があります。').'</p><table class="hsh-stack-table"><thead><tr>';foreach($heads as $h)$out.='<th scope="col">'.esc_html($h).'</th>';$out.='</tr></thead><tbody>';
+    $out='<section class="hsh-comparison"><h2>'.esc_html($title).'</h2><p>'.($topic==='cats'?'今のフードと比べたい原材料や、粒の特徴をまとめています。':'それぞれのウイスキーで、自分が気に入った香りや飲みやすさをまとめました。').'</p><table class="hsh-stack-table"><thead><tr>';foreach($heads as $h)$out.='<th scope="col">'.esc_html($h).'</th>';$out.='</tr></thead><tbody>';
     foreach($rows as $r){$p=get_page_by_path($r[0],OBJECT,$r[0]==='hsh-whisky-notes'?'page':'post');if(!$p||$p->post_status!=='publish')continue;$out.='<tr>';for($i=1;$i<4;$i++)$out.='<td data-label="'.esc_attr($heads[$i-1]).'">'.($i===1?'<a href="'.esc_url(get_permalink($p)).'">'.esc_html($r[$i]).' →</a>':esc_html($r[$i])).'</td>';$out.='</tr>';}
     return $out.'</tbody></table></section>';
 }
