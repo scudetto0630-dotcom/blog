@@ -1,0 +1,53 @@
+{
+  "version": "1.38.10",
+  "deployment": {
+    "commit": "b06ab8f43be8217fc35cc5983405bcf32436f6f1",
+    "sha256": "ae5666d9b6270de0ede480cacd32853bdb0bcaa29198dca83fd1e58ff8bf5d21",
+    "expected_version": "1.38.9"
+  },
+  "browser": {
+    "pages": 1,
+    "viewport_checks": 3,
+    "results": [
+      {
+        "slug": "hsh-whisky-notes",
+        "width": 1440,
+        "http": 200,
+        "overflow": false,
+        "images_decoded": true
+      },
+      {
+        "slug": "hsh-whisky-notes",
+        "width": 390,
+        "http": 200,
+        "overflow": false,
+        "images_decoded": true
+      },
+      {
+        "slug": "hsh-whisky-notes",
+        "width": 320,
+        "http": 200,
+        "overflow": false,
+        "images_decoded": true
+      }
+    ],
+    "js_errors": [],
+    "four_image_hashes_match": true
+  },
+  "article_fingerprints_unchanged": 42,
+  "owned_pages_unchanged": true,
+  "php_checks": 1165,
+  "replaced_images": [
+    "busker-green-reference-generated.webp",
+    "riku-reference-generated.webp"
+  ],
+  "verified_visual_details": [
+    "Busker vertical white lettering and horizontal green band",
+    "Riku gold character, ivory cap and broad bottle"
+  ],
+  "verified_viewports": [
+    1440,
+    390,
+    320
+  ]
+}
