@@ -1,0 +1,111 @@
+{
+  "date": "2026-11-10",
+  "version": "1.38.6",
+  "deployment_commit": "43c0b463a0b837944a096533df3ddcfba38a63ee",
+  "zip_sha256": "6c8c8ca91e339e22f95d801c02e70ba13b59091857ca95f44bdbd889abc24a70",
+  "catalog_articles_reviewed": 42,
+  "public_posts_reviewed": 43,
+  "related_owned_pages_reviewed": [
+    "hsh-about",
+    "hsh-hakushu-visit",
+    "hsh-whisky-notes"
+  ],
+  "article_bodies_changed": 5,
+  "owned_page_bodies_changed": 2,
+  "shared_presentation_changed": "remove repeated review dates from all catalog article bodies and repeat confirmation dates from purchase panels",
+  "natural_expressions": [
+    "現在5歳",
+    "現在5.5kg",
+    "25年の春",
+    "25年の夏"
+  ],
+  "precise_source_confirmation_dates": "retained once per relevant article in source note",
+  "enrollment_deadlines_and_age_reference_dates": "unchanged",
+  "raw_verification": {
+    "article_sources_match": 5,
+    "unrelated_article_fingerprints_unchanged": 37,
+    "pages_changed": 2,
+    "all_publication_dates_urls_media_ids_preserved": true,
+    "home_and_other_owned_pages_unchanged": true,
+    "fingerprints_after": {
+      "before-welcoming-cat": "0685f124ea558d90f1d57746832b570ce2d6eb4458d5764a306b18d9511ac8a7",
+      "manmos-cat-life": "3aa7dc51216821a760ccc8c34aff3fe374cadc06a4a5f3b7e7ad76dd15a8342f",
+      "cat-teaser-small-parts": "da4d2a2fe69f430b310378105b7942182161ef2eadea55ac6a4ac205ee67d4ed",
+      "cat-vet-routine": "05ed38474627ae45a53b8ba59120de6d83d3dd469774339d4d6963bf3e0315a1",
+      "glenlivet-12-first-bottles": "80f4fe93ae51653ff0defe10225d6e3baf24d22438d9fc3133b40d3a83c2b295",
+      "single-malt-label-guide": "8c3981d65ca3618ba6f79c7251b631fe609365d010d63c0de550da765bfd80ed",
+      "sherry-cask-notes": "c8e365c4af56a952c6e46560e921b5214e8d7007807e75a04d0a4d1787b980b2",
+      "it-data-work-flow": "9181d42bc0475b1820476a13a4c1e4c824cc6d7156a6d5267c89f62c7efe743d",
+      "starting-it-without-specialty": "0b60eda41c147684bfa443715a4e0538a44a22984152739038b525aec4bbb7f8",
+      "ai-data-extraction-checks": "aa68a8bd3df65a8b6d814ca1bbd43bc2add82a24e31dd1254bf906ce140039f9",
+      "paws-green-deli-cat-food": "52eedc38fe088a075d7ec3878882e0101fe6cb24a77ec776526af4c6dc51bad3",
+      "hario-cat-bowl-guide": "8b80e0007d947874da4a6fed1c33045fbda256aacb739b9eec13f6ac9fdd24ca",
+      "mirai-cat-food-types": "cd5e9778dc3acd35300aa792cd721c85d483f6f57e1eb77ba2ae942022ee3fc2",
+      "m-and-cat-knit-bag": "2a0d9573e49516b5e042b41e3a0a7b76ceb96a936d777a9994b6c48ec7839177",
+      "pet-sougi-110-cat-guide": "9512a7cc3481218a55b40c959d022b563e9f3e0aa82398eb9855e269aef7dbe5",
+      "digxipop-cat-figure": "2f2df799b3ecf2e0cfef54e6f07034897c72882328feee66bf7eb146989b9026",
+      "withpety-nekokenshin": "9f0923de60df043e40a9708ef09596b13e3cfdaf8747b2a37d83674777bbf389",
+      "pontely-cat-dna-test": "749bf6fc3b40be21afddb69a448fc39cc778d51bccce4e325e67369e25df2916",
+      "withpety-nekobihada": "75441eb969ba823f0dd633ab5b2c3dda67ab4eae1c7a859203e066183adf6a6b",
+      "onekosama-cat-tower": "abfa76bc5fda97c07d7b0ab891f9811dce12b792a811b1757d89cd6a971ea550",
+      "withpety-nekoryoukan": "1b274599f5a73415af6f5c4ae22043489198950ca56a87402b66777d9f4e289a",
+      "catlog-cat-monitor": "8a3d76609c1a2d409b962294fdd4666532c21ef1ea749dbc583e84945adad9ec",
+      "withpety-nekoissho": "5c44904767235c995b657818af8975cbaf3db666c372bf92fdd3686a7ce06aaa",
+      "pet-paradise-cat-toys": "17e08a4abcda7b003ccee5135b0d0b0587bc6f1ab91565852e8440f51231b6d3",
+      "canagan-dental-cat-food": "364c6df1a3cac9267a56c819728410202def7033822173721281e887296f68a5",
+      "canagan-chicken-salmon": "2d3b050505e335056ae50eb34cf97ed8a25cfd6bc3328f0cc500ac4a00d7090c",
+      "mcadams-cat-chicken-turkey": "f0ff232280fd3888a45fbdd789060a14bad21a60dba51d76e27f41aecc975355",
+      "essential-jaguar-cat-food": "305548accd3e8d002a518c4489aca1e5ab05e77dea4593236adc3e17d74605de",
+      "mognyan-cat-food-guide": "334fa33bbaf18071555ba7cea29269ecfe00ea62a951220912be7dbab87c6f83",
+      "leo-luna-citta-bed": "7974343514524863509aaacd90323bd75a8ff0b972071ce8dcd80753e9d9ab59",
+      "withpety-nekokouken": "f46aac9fb2a9520e43f851286714468e08a19b48989eb0e76aa5cdc52c52d6c0",
+      "withpety-nekosoukai": "9ab357936fa83817a691bceacb719fc6d942350545bbe45b15d048c2d681dbf3",
+      "withpety-nekoshuukan": "8d082b05e767f4557605dd2ab20714f592dc0c172ab44cdab2829699c3be187c",
+      "withpety-nekoaigan": "16a136755e477fabe9a33fedf63f26d5c72f9ddf0931b04681823bf90945233b",
+      "withpety-nekojinkatsu": "4cf917240ddb657a99222e7ef6c3cac5e79431181d95036e9ec4c99b602be915",
+      "withpety-nekosanpo": "d707825369636133ca15a34ebd3a9fe7e061822424ecdbc338d69ebfcc68cdd3",
+      "aigan-dobutsu-course": "8f89dbba190073fc17ba83609ee864fb1b1652b886014aadac7ee2d6e2d63647",
+      "acana-orijen-cat-food-guide": "5065a13c42432fbc682e2a4e323fc74b610b2b3218d179751ad65f16e262261d",
+      "linx-as-store": "824cf0a25bca6593ad027cdeea9a32b51cfb4c4afe6fa6f11be95b42e4ce7762",
+      "cat-carrier-checklist": "de3dd810bcf567c12341b98a91ecc991eb933d6c16ffc07f43f7070edb745510",
+      "highball-measure-and-adjust": "6c1ab4d83c5b7e91e58931fff10e9a2c29ec4c3b9f8d0f8ff19dd4d07b34000b",
+      "csv-import-seven-checks": "99e2e71964765e6c189aa4243448810e499bd8aaa01287afb3258f1a35bea26e"
+    }
+  },
+  "media_files_in_zip_unchanged": 301,
+  "browser": {
+    "pages": 46,
+    "viewport_checks": 138,
+    "widths": [
+      1440,
+      390,
+      320
+    ],
+    "js_errors": [],
+    "narrative_full_year_month_references": 0,
+    "repeated_body_review_date_notes": 0,
+    "original_header_publication_and_modification_dates_retained_for_all_42_articles": true,
+    "image_url_alt_srcset_dimension_combinations_preserved": true,
+    "scope": "same-origin read-only validation through inherited HTTPS proxy; third-party requests blocked; no advertisements clicked or forms submitted"
+  },
+  "javascript_disabled": {
+    "pages": 8,
+    "body_and_links_available": true,
+    "duplicate_date_notes": 0
+  },
+  "tests": {
+    "python_natural_dates": 3,
+    "python_editorial_quality": 6,
+    "python_longform": 5,
+    "python_story_application": 6,
+    "php_shared_and_seo_checks": 1154,
+    "strict_textlint_affected_article_candidates": 36,
+    "strict_textlint_rules_unchanged": true
+  },
+  "limits": "Precise dates remain in source notes, operational deadline guidance, native publication/modified metadata and private records; narrative dates use owner-preferred language.",
+  "visual_review": {
+    "manmos_spring_and_current_age": "three focused viewport captures confirm normal scrolling and natural phrasing",
+    "profile": "full mobile screenshot reviewed",
+    "hakushu": "summer wording and original photographs reviewed"
+  }
+}
