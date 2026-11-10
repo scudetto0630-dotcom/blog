@@ -1,0 +1,191 @@
+{
+  "date": "2026-11-10",
+  "version": "1.38.5",
+  "deployment_commit": "53929a6054aa0d154c9614d8ba0aa94e1c6ccba4",
+  "zip_sha256": "23490330e4b4678532f652d9bced2b6ca2bf5c8f77edc6b79808520fe6c8bb07",
+  "updated_articles": 42,
+  "updated_urls": [
+    "https://hirogarushumi.com/cat-carrier-checklist/",
+    "https://hirogarushumi.com/highball-measure-and-adjust/",
+    "https://hirogarushumi.com/csv-import-seven-checks/",
+    "https://hirogarushumi.com/before-welcoming-cat/",
+    "https://hirogarushumi.com/manmos-cat-life/",
+    "https://hirogarushumi.com/cat-teaser-small-parts/",
+    "https://hirogarushumi.com/cat-vet-routine/",
+    "https://hirogarushumi.com/glenlivet-12-first-bottles/",
+    "https://hirogarushumi.com/single-malt-label-guide/",
+    "https://hirogarushumi.com/sherry-cask-notes/",
+    "https://hirogarushumi.com/it-data-work-flow/",
+    "https://hirogarushumi.com/starting-it-without-specialty/",
+    "https://hirogarushumi.com/ai-data-extraction-checks/",
+    "https://hirogarushumi.com/paws-green-deli-cat-food/",
+    "https://hirogarushumi.com/hario-cat-bowl-guide/",
+    "https://hirogarushumi.com/mirai-cat-food-types/",
+    "https://hirogarushumi.com/pet-sougi-110-cat-guide/",
+    "https://hirogarushumi.com/digxipop-cat-figure/",
+    "https://hirogarushumi.com/withpety-nekokenshin/",
+    "https://hirogarushumi.com/pontely-cat-dna-test/",
+    "https://hirogarushumi.com/withpety-nekobihada/",
+    "https://hirogarushumi.com/onekosama-cat-tower/",
+    "https://hirogarushumi.com/withpety-nekoryoukan/",
+    "https://hirogarushumi.com/catlog-cat-monitor/",
+    "https://hirogarushumi.com/withpety-nekoissho/",
+    "https://hirogarushumi.com/pet-paradise-cat-toys/",
+    "https://hirogarushumi.com/canagan-dental-cat-food/",
+    "https://hirogarushumi.com/canagan-chicken-salmon/",
+    "https://hirogarushumi.com/mcadams-cat-chicken-turkey/",
+    "https://hirogarushumi.com/essential-jaguar-cat-food/",
+    "https://hirogarushumi.com/mognyan-cat-food-guide/",
+    "https://hirogarushumi.com/leo-luna-citta-bed/",
+    "https://hirogarushumi.com/withpety-nekokouken/",
+    "https://hirogarushumi.com/withpety-nekosoukai/",
+    "https://hirogarushumi.com/withpety-nekoshuukan/",
+    "https://hirogarushumi.com/withpety-nekoaigan/",
+    "https://hirogarushumi.com/withpety-nekojinkatsu/",
+    "https://hirogarushumi.com/withpety-nekosanpo/",
+    "https://hirogarushumi.com/aigan-dobutsu-course/",
+    "https://hirogarushumi.com/acana-orijen-cat-food-guide/",
+    "https://hirogarushumi.com/linx-as-store/",
+    "https://hirogarushumi.com/m-and-cat-knit-bag/"
+  ],
+  "publication_operations": {
+    "managed_article": 3,
+    "content_release": 39
+  },
+  "all_before_raw_fingerprints_verified": true,
+  "all_after_title_body_excerpt_match": true,
+  "all_existing_publication_dates_urls_post_ids_and_featured_media_preserved": true,
+  "public_post_count_before_after": [
+    43,
+    43
+  ],
+  "additional_site_introduction": {
+    "id": 8,
+    "title": "まんもすとの暮らし、ウイスキー、仕事の話を書いています",
+    "url": "https://hirogarushumi.com/%e3%81%b2%e3%82%8d%e3%81%8c%e3%82%8b%e8%b6%a3%e5%91%b3%e6%9a%ae%e3%82%89%e3%81%97%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6/",
+    "reviewed": true,
+    "unchanged": true
+  },
+  "owned_pages_and_home_settings_unchanged": true,
+  "protected_article_markup": [
+    "all original hrefs and anchor IDs",
+    "all tables",
+    "A8 link and tracking-pixel markup",
+    "advertising disclosures",
+    "source notes and original evidence dates"
+  ],
+  "media": {
+    "archive_verification": {
+      "changed_members": [
+        "hirogaru-home/affiliate-articles.json",
+        "hirogaru-home/editing-bridge.php",
+        "hirogaru-home/expanded-articles.json",
+        "hirogaru-home/hirogaru-home.php",
+        "hirogaru-home/starter-articles.json"
+      ],
+      "all_media_files_identical": 301,
+      "archive_members": 391
+    },
+    "public_article_image_attributes_preserved": 170,
+    "image_order_changed": [
+      "before-welcoming-cat"
+    ],
+    "explanation": "before-welcoming-cat navigation scope was corrected; automatic inline-photo placement changed. Same images and captions retained and visually reviewed."
+  },
+  "browser": {
+    "articles": 42,
+    "viewport_checks": 126,
+    "widths": [
+      1440,
+      390,
+      320
+    ],
+    "nojs_checked": 42,
+    "javascript_errors": [],
+    "fetch_errors": [],
+    "representative_mobile_screenshots_visually_reviewed": [
+      "manmos-cat-life",
+      "sherry-cask-notes",
+      "before-welcoming-cat",
+      "hario-cat-bowl-guide"
+    ],
+    "scope": "read-only; same-origin resources fetched through inherited HTTPS proxy, third-party requests blocked; no ad clicks or form submissions"
+  },
+  "tests": {
+    "python": {
+      "editorial_quality": 6,
+      "longform": 5,
+      "story_application": 6,
+      "affiliate_articles": 4,
+      "product_operations": 3
+    },
+    "php_seo_including_shared_checks": 1154,
+    "php_affiliate_including_shared_checks": 1074,
+    "strict_textlint_findings_before": 222,
+    "strict_textlint_findings_after": 212,
+    "strict_textlint_rules_unchanged": true,
+    "strict_textlint_remaining_categories": {
+      "ja-technical-writing/max-kanji-continuous-len": 20,
+      "ja-technical-writing/no-doubled-joshi": 64,
+      "ja-technical-writing/ja-no-mixed-period": 31,
+      "ja-no-orthographic-variants": 24,
+      "ja-technical-writing/arabic-kanji-numbers": 25,
+      "ja-technical-writing/ja-no-redundant-expression": 5,
+      "ja-technical-writing/max-ten": 1,
+      "ja-technical-writing/ja-no-weak-phrase": 39,
+      "ja-technical-writing/no-exclamation-question-mark": 3
+    },
+    "editorial_quality": {
+      "style": 17,
+      "fact": 10
+    },
+    "review_notes": "Retained manufacturer ingredient lists and medically relevant negative limitations. New Manmos keyword 必ず expresses the owner’s decision, not a guarantee. Proper names, owner voice, and label punctuation remain review candidates; no claim of a zero-finding strict lint run."
+  },
+  "manmos_metadata": {
+    "h1_og_twitter_and_structured_headline_match": true
+  },
+  "fingerprints_after": {
+    "cat-carrier-checklist": "ee81b1e8de42ecad0f0e62d1daee55d31b538bf4803b5ed0116f3eb170dd412c",
+    "highball-measure-and-adjust": "6c1ab4d83c5b7e91e58931fff10e9a2c29ec4c3b9f8d0f8ff19dd4d07b34000b",
+    "csv-import-seven-checks": "99e2e71964765e6c189aa4243448810e499bd8aaa01287afb3258f1a35bea26e",
+    "before-welcoming-cat": "5c8f294f2a9df7878302ab0ba39dafb4c0f6afd4ea99033c66565d7538369dba",
+    "manmos-cat-life": "948b9738e7c25b0425ca67bb951914ada4e58d3fe43fb141c33c47d6a8b26d11",
+    "cat-teaser-small-parts": "da4d2a2fe69f430b310378105b7942182161ef2eadea55ac6a4ac205ee67d4ed",
+    "cat-vet-routine": "05ed38474627ae45a53b8ba59120de6d83d3dd469774339d4d6963bf3e0315a1",
+    "glenlivet-12-first-bottles": "80f4fe93ae51653ff0defe10225d6e3baf24d22438d9fc3133b40d3a83c2b295",
+    "single-malt-label-guide": "8c3981d65ca3618ba6f79c7251b631fe609365d010d63c0de550da765bfd80ed",
+    "sherry-cask-notes": "c8e365c4af56a952c6e46560e921b5214e8d7007807e75a04d0a4d1787b980b2",
+    "it-data-work-flow": "9181d42bc0475b1820476a13a4c1e4c824cc6d7156a6d5267c89f62c7efe743d",
+    "starting-it-without-specialty": "0b60eda41c147684bfa443715a4e0538a44a22984152739038b525aec4bbb7f8",
+    "ai-data-extraction-checks": "aa68a8bd3df65a8b6d814ca1bbd43bc2add82a24e31dd1254bf906ce140039f9",
+    "paws-green-deli-cat-food": "765b895dd7243865fd6a9a7754ac774a83353966904b3dfbcaa1ff1aa822d05b",
+    "hario-cat-bowl-guide": "8b80e0007d947874da4a6fed1c33045fbda256aacb739b9eec13f6ac9fdd24ca",
+    "mirai-cat-food-types": "cd5e9778dc3acd35300aa792cd721c85d483f6f57e1eb77ba2ae942022ee3fc2",
+    "m-and-cat-knit-bag": "2a0d9573e49516b5e042b41e3a0a7b76ceb96a936d777a9994b6c48ec7839177",
+    "pet-sougi-110-cat-guide": "9512a7cc3481218a55b40c959d022b563e9f3e0aa82398eb9855e269aef7dbe5",
+    "digxipop-cat-figure": "2f2df799b3ecf2e0cfef54e6f07034897c72882328feee66bf7eb146989b9026",
+    "withpety-nekokenshin": "9f0923de60df043e40a9708ef09596b13e3cfdaf8747b2a37d83674777bbf389",
+    "pontely-cat-dna-test": "749bf6fc3b40be21afddb69a448fc39cc778d51bccce4e325e67369e25df2916",
+    "withpety-nekobihada": "75441eb969ba823f0dd633ab5b2c3dda67ab4eae1c7a859203e066183adf6a6b",
+    "onekosama-cat-tower": "abfa76bc5fda97c07d7b0ab891f9811dce12b792a811b1757d89cd6a971ea550",
+    "withpety-nekoryoukan": "1b274599f5a73415af6f5c4ae22043489198950ca56a87402b66777d9f4e289a",
+    "catlog-cat-monitor": "8a3d76609c1a2d409b962294fdd4666532c21ef1ea749dbc583e84945adad9ec",
+    "withpety-nekoissho": "5c44904767235c995b657818af8975cbaf3db666c372bf92fdd3686a7ce06aaa",
+    "pet-paradise-cat-toys": "17e08a4abcda7b003ccee5135b0d0b0587bc6f1ab91565852e8440f51231b6d3",
+    "canagan-dental-cat-food": "364c6df1a3cac9267a56c819728410202def7033822173721281e887296f68a5",
+    "canagan-chicken-salmon": "2d3b050505e335056ae50eb34cf97ed8a25cfd6bc3328f0cc500ac4a00d7090c",
+    "mcadams-cat-chicken-turkey": "f0ff232280fd3888a45fbdd789060a14bad21a60dba51d76e27f41aecc975355",
+    "essential-jaguar-cat-food": "2c0b12a1e86037e2a335413aec7078da8d9651997b3d8c676c537babfe4e313e",
+    "mognyan-cat-food-guide": "334fa33bbaf18071555ba7cea29269ecfe00ea62a951220912be7dbab87c6f83",
+    "leo-luna-citta-bed": "7974343514524863509aaacd90323bd75a8ff0b972071ce8dcd80753e9d9ab59",
+    "withpety-nekokouken": "f46aac9fb2a9520e43f851286714468e08a19b48989eb0e76aa5cdc52c52d6c0",
+    "withpety-nekosoukai": "9ab357936fa83817a691bceacb719fc6d942350545bbe45b15d048c2d681dbf3",
+    "withpety-nekoshuukan": "8d082b05e767f4557605dd2ab20714f592dc0c172ab44cdab2829699c3be187c",
+    "withpety-nekoaigan": "16a136755e477fabe9a33fedf63f26d5c72f9ddf0931b04681823bf90945233b",
+    "withpety-nekojinkatsu": "4cf917240ddb657a99222e7ef6c3cac5e79431181d95036e9ec4c99b602be915",
+    "withpety-nekosanpo": "d707825369636133ca15a34ebd3a9fe7e061822424ecdbc338d69ebfcc68cdd3",
+    "aigan-dobutsu-course": "8f89dbba190073fc17ba83609ee864fb1b1652b886014aadac7ee2d6e2d63647",
+    "acana-orijen-cat-food-guide": "5065a13c42432fbc682e2a4e323fc74b610b2b3218d179751ad65f16e262261d",
+    "linx-as-store": "824cf0a25bca6593ad027cdeea9a32b51cfb4c4afe6fa6f11be95b42e4ce7762"
+  }
+}
