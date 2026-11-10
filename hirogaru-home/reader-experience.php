@@ -18,7 +18,7 @@ function hsh_reader_catalog() {
     }
     $p = get_page_by_path('hsh-hakushu-visit', OBJECT, 'page');
     if ($p && $p->post_status === 'publish' && get_post_meta($p->ID, '_hsh_bridge_owned', true) === '1') {
-        $rows[] = array('id'=>'hsh-hakushu-visit', 'title'=>$p->post_title, 'url'=>get_permalink($p), 'topic'=>'whisky', 'summary'=>'2025年7月、初めての白州蒸溜所見学と飲み比べの写真。', 'image'=>plugin_dir_url(__FILE__).'assets/photos/hakushu-entrance.webp');
+        $rows[] = array('id'=>'hsh-hakushu-visit', 'title'=>$p->post_title, 'url'=>get_permalink($p), 'topic'=>'whisky', 'summary'=>'25年の夏、初めての白州蒸溜所見学と飲み比べの写真。', 'image'=>plugin_dir_url(__FILE__).'assets/photos/hakushu-entrance.webp');
     }
     $intro=hsh_intro_post();if(!is_wp_error($intro))$rows[]=array('id'=>$intro->post_name,'title'=>$intro->post_title,'url'=>get_permalink($intro),'topic'=>'','summary'=>'まんもす、ウイスキー、仕事。このブログで書いていること。','image'=>'');
     return $rows;

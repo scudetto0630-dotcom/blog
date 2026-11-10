@@ -1,0 +1,58 @@
+{
+  "about": {
+    "id": 29,
+    "status": "publish",
+    "title": "はじめまして。こんな人が書いています",
+    "content": "<figure class=\"wp-block-image\"><img src=\"https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/photos/manmos-front.webp\" width=\"160\" height=\"160\" alt=\"まんもす。管理人提供の写真です。\" loading=\"lazy\"><figcaption>まんもす</figcaption></figure>\n<p>こんにちは。「ひろがる趣味暮らし」の管理人です。猫とウイスキー、それから仕事の話を書いています。</p>\n<p>このブログに書いているのは、自分が好きなことや、仕事で迷ったこと。最初から何でも分かっていたわけじゃないので、そのときに考えたことも残していきたい。気になる記事から読んでもらえたらうれしいです。</p>\n<h2>一緒に暮らしている猫は、まんもすです</h2>\n<p>まんもすは5歳のスコティッシュフォールド。2025年4月に保護猫シェルターから迎えました。見た瞬間に運命を感じたくらい、かわいかった。今は1匹で暮らしていて甘えん坊だけど、抱っこはあまり好きではない。年齢は2026年10月時点です。</p>\n<p>これまで8匹の猫と暮らしてきました。猫の好みは本当にそれぞれ。おもちゃには100均のねこじゃらしも使いますが、小さな部品がすぐ取れそうな物は避けています。</p>\n<p>猫の記事には、まんもすの写真と一緒に、キャリーやおもちゃを選ぶときの話も載せています。健康について迷った場合は、記事だけで判断せず動物病院へ相談してください。</p>\n<h2>ウイスキーは、薄めのハイボールにしています</h2>\n<p>シングルモルトが好きで、中でもシェリーカスクが好みです。グレンリベット12年は3番目に買ったウイスキー。グラス付きでお得だったのが、買ったきっかけでした。</p>\n<p>最初は味の違いなんて、あんまり分からんかった。でも、飲みやすかったのは覚えている。今なら、お花に鼻を近づけたときみたいな上品な香りだと言える。何の花かまでは分からないけど、自分にはその表現が近い。</p>\n<p>普段は薄めのハイボールで、ハーフロックでも飲んでいます。グレンファークラス12年の、ぶどうパンに顔をうずめたみたいな香りも好き。アルボラリスは想像したほど甘くなかったけど、飲みやすかった。そういう自分の感想を書いていきたい。</p>\n<h2>ITの仕事も、最初は何をしたいか分かりませんでした</h2>\n<p>以前はMRとして働いていました。登録販売者の資格も持っています。今はフリーランスで、抽出や並べ替えなどデータを加工する仕事をしています。</p>\n<p>ITの仕事は未経験からでした。最初に困ったのは、勉強する技術を選ぶより前のこと。そもそもどんな分野があって、自分が何をやりたいのか、何が合うのか。その見当を付けるところに時間がかかった。</p>\n<p>使うのはChatGPT、Codex、Excel、スプレッドシート。データ抽出をAIに頼むと一瞬でやってくれるので、本当に楽だと感じています。今の仕事にたどり着くまでは約1年。稼げそうだし将来性もありそう、と思ってITに興味を持ったところからでした。</p>\n<p>仕事の記事では、そんな迷ったことやデータを扱うときの話を書いています。実際の顧客情報は載せず、説明には架空の例を使っています。</p>\n<p>記事や広告については<a href=\"https://hirogarushumi.com/hsh-editorial/\">こちらのページ</a>へ。連絡したいことがあれば、<a href=\"https://hirogarushumi.com/お問い合わせ/\">お問い合わせフォーム</a>からお願いします。</p>",
+    "fingerprint": "9b85cda3da3aec0145dc5e842db883a55f05b840832e8d1982937aa034dcebd5",
+    "url": "https://hirogarushumi.com/hsh-about/"
+  },
+  "editorial": {
+    "id": 30,
+    "status": "publish",
+    "title": "記事・広告について",
+    "content": "<p>このブログの記事をどう作っているか、広告を載せるときにどうお知らせするかをまとめています。</p>\n<h2>体験談と調べた情報は分けて書きます</h2>\n<p>実際に使ったものや経験したことと、公式サイトなどで調べた内容は、区別して書きます。使っていない商品を使用レビューとして紹介したり、飲んでいないウイスキーの感想を作ったりはしません。</p>\n<p>価格や仕様は変わることがあります。購入や申込みの際は、リンク先の公式情報もご確認ください。比較記事では、何を比べたのかが分かるようにします。</p>\n<h2>広告・アフィリエイトについて</h2>\n<p>広告やアフィリエイトリンクを載せる記事には、広告・PRであることを明記します。記事内のリンクから購入や申込みをすると、管理人が紹介料を受け取ることがあります。</p>\n<p>商品提供や有償の依頼を受けた場合も、その記事に記載します。</p>\n<h2>AIの使い方について</h2>\n<p>資料の整理、文章の下書き、サイトの制作などにAIを使っています。ただし、AIが作った体験談を自分の経験として載せることはしません。AIの回答をそのまま事実として掲載せず、根拠を確認してから記事に使います。</p>\n<h2>仕事の記事に出てくるデータについて</h2>\n<p>顧客の実データや業務上の秘密は載せません。説明に使うデータは架空のサンプルであることを明記します。</p>\n<h2>アクセスの集計について</h2>\n<p>サイト改善のため、記事ごと・日ごとに、サーバーまで届いたアクセスの件数を集計しています。この集計には、IPアドレス、個人を識別するCookie、ユーザーIDを保存しません。</p>\n<p>キャッシュから表示されたアクセスなどは含まれないため、正確な閲覧数や訪問者数ではありません。サーバー自体のアクセスログとは別の集計です。</p>\n<h2>記事を見直すときの方針</h2>\n<p>記事は、知りたいことが分かる内容になっているかを読み直し、足りない説明や分かりにくい言い回しを直していきます。本文を変更したときに更新日を付け、日付だけを新しくすることはしません。価格や仕様、交通機関の条件は、利用する前に公式の最新案内をご確認ください。</p>\n<p>検索状況の確認にはSearch Consoleの集計を使います。管理人がページ別のCSVを管理画面へ取り込んだ場合も、自動取得やリアルタイムの計測とは区別します。検索表示や順位を推測で補いません。</p>\n<h2>間違いに気づいたら</h2>\n<p>記事の間違いやリンク切れを見つけた場合は、<a href=\"https://hirogarushumi.com/お問い合わせ/\">お問い合わせフォーム</a>から、どのページの、どの部分かを教えてもらえると助かります。</p>\n<p><a href=\"https://hirogarushumi.com/hsh-about/\">管理人のプロフィール</a> ／ <a href=\"https://hirogarushumi.com/プライバシーポリシー/\">プライバシーポリシー</a></p>\n<h2>訂正・補足の記録</h2>\n<p>2026年10月30日：カテゴリーと書き手の紹介文を、実際に行っている「データの抽出・並び替えなどの加工」に合わせて修正しました。</p>\n<p>最近の記事の更新は、<a href=\"https://hirogarushumi.com/hsh-updates/\">最近の更新</a>から確認できます。</p>\n<h2>記事の保存と、続きから読む機能</h2>\n<p>保存した記事と読んでいた位置は、この端末のブラウザーに記録します。別の端末との同期や、サーバーへの送信は行いません。</p>\n<p>「保存した記事」の画面から、保存一覧と読んだ位置をそれぞれ消せます。ブラウザーのサイトデータを削除した場合も記録は消えます。読んだ位置の記録は90日を目安に整理します。</p>\n<h2>A8.netの商品・サービス紹介</h2>\n<p>広告を含む記事には、そのことが分かる表示を入れます。商品・サービスの仕様や条件は公式情報を確認し、実際の体験に基づく感想とは分けて紹介します。使用した出来事や効果を作ることはしません。</p>\n<p>A8.netの広告リンクや計測画像には、広告の成果を計測する仕組みがあります。広告配信事業者や販売先によるCookie等の取り扱い、購入・申し込み条件は、それぞれの案内をご確認ください。</p>\n<p>記事の表紙には、まんもすの写真をもとにした合成画像も使います。本文の商品画像とは役割を分け、出典と加工の記録を管理します。価格・仕様・購入条件は変更されるため、注文前には販売先の最新の案内をご確認ください。</p>",
+    "fingerprint": "212abdc49e45cf43f16edd97b0083b79a32535cd49f7576daf62e6a00828b3f0",
+    "url": "https://hirogarushumi.com/hsh-editorial/"
+  },
+  "gallery": {
+    "id": 188,
+    "status": "publish",
+    "title": "まんもすの写真",
+    "content": "[hsh_manmos_gallery]",
+    "fingerprint": "fcd94cf5a6b097b7c60ba47f14c8959a177fe85db0d2c18af322aee70d4e0b36",
+    "url": "https://hirogarushumi.com/hsh-gallery/"
+  },
+  "whisky-notes": {
+    "id": 189,
+    "status": "publish",
+    "title": "飲んだウイスキーのメモ",
+    "content": "[hsh_whisky_notes]",
+    "fingerprint": "2c81646a6121590a8b09662ff78e3e5ab90a15c6ceb158ce18fd1bdfb155bc47",
+    "url": "https://hirogarushumi.com/hsh-whisky-notes/"
+  },
+  "updates": {
+    "id": 190,
+    "status": "publish",
+    "title": "最近の更新",
+    "content": "[hsh_updates]",
+    "fingerprint": "98f7c7ab2d2c37399c9ada262ece6246dc545f321f1f2e081fdfb676060b5738",
+    "url": "https://hirogarushumi.com/hsh-updates/"
+  },
+  "hakushu-visit": {
+    "id": 195,
+    "status": "publish",
+    "title": "白州蒸溜所見学の感想｜初めて訪れた2025年7月の写真と飲み比べ",
+    "content": "<p class=\"hsh-answer\">白州蒸溜所へ初めて見学に行ったのは2025年7月。館内の展示を見たり、ウイスキーを飲み比べたりするのが楽しかった。この記事では、そのとき自分で撮った写真と感想をまとめ、これから行く人向けに現在の公式案内への入口も紹介します。</p><h2 id=\"hakushu-first-visit\">初めて白州蒸溜所を見学した感想</h2><p>それまで蒸溜所を見学したことがなく、白州が初めてだった。見学に加えて、飲み比べも楽しかったのが印象に残っている。銘柄ごとの詳しい味の記録というより、当日見た展示やグラスを写真で振り返る記事です。</p><p>入口には、白州の大きな看板。ここから先の写真は、見学に行ったときに自分で撮ったものです。</p><figure class=\"hsh-photo hsh-visit-photo\"><img src=\"https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/photos/hakushu-entrance.webp\" width=\"1477\" height=\"1108\" alt=\"白州蒸溜所の看板と建物の入口\" loading=\"lazy\"><figcaption>初めて見学した白州蒸溜所（2025年7月）</figcaption></figure><h2 id=\"hakushu-exhibits\">館内の展示を写真で振り返る</h2><p>白州のボトルがずらっと並んだ展示。ラベルも少しずつ違っていて、写真にすると一度に見渡せる。</p><figure class=\"hsh-photo hsh-visit-photo\"><img src=\"https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/photos/hakushu-history.webp\" width=\"1477\" height=\"1108\" alt=\"白州のボトルを並べた館内展示\" loading=\"lazy\"><figcaption>白州のボトルが並ぶ展示（2025年7月）</figcaption></figure><p>館内には、大きな蒸溜器の展示もあった。</p><figure class=\"hsh-photo hsh-visit-photo\"><img src=\"https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/photos/hakushu-still.webp\" width=\"1477\" height=\"1108\" alt=\"館内に展示されている銅色の蒸溜器\" loading=\"lazy\"><figcaption>館内の蒸溜器の展示（2025年7月）</figcaption></figure><h2 id=\"hakushu-tasting\">飲み比べと、白州のグラスの写真</h2><p>見学に加えて、飲み比べも楽しかった。テーブルの写真には、グラスと小さなお菓子が並んでいます。</p><figure class=\"hsh-photo hsh-visit-photo\"><img src=\"https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/photos/hakushu-tasting-table.webp\" width=\"1477\" height=\"1108\" alt=\"グラスと小さなお菓子が並ぶ白州のテイスティングのテーブル\" loading=\"lazy\"><figcaption>グラスとお菓子が並んだテーブル（2025年7月）</figcaption></figure><p>屋外の席で、グラスを手に持って撮った1枚。奥にはテーブルと椅子が並んでいます。</p><figure class=\"hsh-photo hsh-visit-photo\"><img src=\"https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/photos/hakushu-tasting-glass.webp\" width=\"1477\" height=\"1108\" alt=\"屋外の席で手に持ったテイスティンググラス\" loading=\"lazy\"><figcaption>手に持ったテイスティンググラス（2025年7月）</figcaption></figure><p>白州のロゴが入ったハイボールのグラスも。普段は自分も、ハイボールで飲むことが多い。</p><figure class=\"hsh-photo hsh-visit-photo\"><img src=\"https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/photos/hakushu-highball.webp\" width=\"1108\" height=\"1477\" alt=\"白州のロゴが入ったハイボールのグラス\" loading=\"lazy\"><figcaption>白州のグラスでハイボール（2025年7月）</figcaption></figure><p class=\"hsh-review-note\">写真は2025年7月に撮影しました。展示や提供メニューは訪問当時のものです。</p><p><a href=\"https://hirogarushumi.com/hsh-whisky-notes/\">飲んだウイスキーの感想と、ボトルの展示写真を見る →</a></p><h2 id=\"hakushu-plan-visit\">これから白州蒸溜所へ行くなら、公式案内で確認すること</h2><p>ここまでの体験と写真は2025年7月のもの。これからの見学プランや予約・入場条件は、<a href=\"https://www.suntory.co.jp/factory/hakushu/\">サントリー白州蒸溜所の公式サイト</a>にある「見学ツアー／入場 詳細・予約」で確認してください。当時の内容と現在のプランを同じものとして扱わず、希望する日の案内を読むのが確実です。</p><table><thead><tr><th>確認したいこと</th><th>公式で見るところ</th></tr></thead><tbody><tr><td>見学・入場の方法</td><td>見学ツアー／入場 詳細・予約</td></tr><tr><td>営業日と営業時間</td><td>施設基本情報・大切なおしらせ</td></tr><tr><td>行き方・交通案内</td><td><a href=\"https://www.suntory.co.jp/factory/hakushu/access/\">アクセス／交通案内</a></td></tr></tbody></table><p>白州蒸溜所の所在地は、山梨県北杜市白州町鳥原2913-1。2026年11月6日に確認した公式ページには、営業時間9:30〜16:30、最終入場16:00と掲載されています。臨時休業などの可能性もあるため、訪問前には最新の営業案内を確認してください。</p><h2 id=\"hakushu-more-whisky\">見学の後は、飲んだウイスキーの感想も</h2><p>普段は薄めのハイボールかハーフロックで飲んでいる。<a href=\"https://hirogarushumi.com/glenlivet-12-first-bottles/\">グレンリベット12年の花のような香り</a>や、<a href=\"https://hirogarushumi.com/sherry-cask-notes/\">グレンファークラス12年のぶどうパンのような香り</a>が好き。<a href=\"https://hirogarushumi.com/hsh-whisky-notes/#arboralis-taste\">アルボラリスで想像した甘さとの違い</a>も書いています。</p>",
+    "fingerprint": "a6e0356f6112e722765d13319c70101401c082957906a2896e5840759b88c3f6",
+    "url": "https://hirogarushumi.com/hsh-hakushu-visit/"
+  },
+  "reading-list": {
+    "id": 200,
+    "status": "publish",
+    "title": "保存した記事",
+    "content": "[hsh_reading_list]",
+    "fingerprint": "021d330b5960300224960469e83efba1619f79948cea2b5f969f3677156f4ff3",
+    "url": "https://hirogarushumi.com/hsh-reading-list/"
+  }
+}

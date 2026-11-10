@@ -143,7 +143,7 @@ add_filter('the_content',function($content){
         $topic=hsh_catalog_topic($p->post_name);
         if(!isset(hsh_topics()[$topic]))return $content.hsh_report_markup($p);
         $content='<div class="hsh-article-visual">'.hsh_card_cover($p).'</div>'.$content;
-        $content.='<p class="hsh-review-note">本文の見直し：<time datetime="'.esc_attr(get_post_meta($p->ID,'_hsh_content_reviewed',true)?:get_post_modified_time('Y-m-d',false,$p)).'">'.esc_html(str_replace('-','/',get_post_meta($p->ID,'_hsh_content_reviewed',true)?:get_post_modified_time('Y-m-d',false,$p))).'</time></p><p><a href="'.esc_url(hsh_category_url($topic)).'">'.esc_html(hsh_topics()[$topic][0]).'の記事一覧へ →</a></p>'.hsh_related_markup($topic,$p->ID).hsh_profile_markup();
+        $content.='<p><a href="'.esc_url(hsh_category_url($topic)).'">'.esc_html(hsh_topics()[$topic][0]).'の記事一覧へ →</a></p>'.hsh_related_markup($topic,$p->ID).hsh_profile_markup();
     }
     return $content.'<div class="hsh-article-tools"><button type="button" class="hsh-print">この記事を印刷する</button><a href="#">ページの先頭へ ↑</a></div>'.hsh_report_markup($p);
 },25);

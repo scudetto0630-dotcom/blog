@@ -52,7 +52,7 @@ function hsh_blog_extra_head($head,$url,$description,$title) {
     return $out;
 }
 function hsh_article_review_note($slug) {
-    foreach(hsh_article_map() as $a){if($a['slug']===$slug){return '<p class="hsh-review-note">本文の見直し：<time datetime="'.esc_attr($a['updated_at']).'">'.esc_html(str_replace('-','/',$a['updated_at'])).'</time> · 体験談と調べた情報を分けて掲載しています。</p>';}}
+    // Publication and modification dates are already shown in the article header.
     return '';
 }
 function hsh_select_related($articles,$current_id,$limit=2) {
