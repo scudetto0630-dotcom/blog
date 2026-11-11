@@ -5,8 +5,8 @@ function hsh_studio_catalog($slug){foreach(hsh_catalog() as $a)if($a['slug']===$
 function hsh_studio_card_meta($post){return '<span class="hsh-read-time">約'.hsh_studio_minutes($post->post_content).'分で読めます</span>';}
 function hsh_studio_article_link($slug,$label='',$anchor=''){$p=get_page_by_path($slug,OBJECT,'post');if(!$p||$p->post_status!=='publish')return '';return '<a href="'.esc_url(get_permalink($p).($anchor?'#'.$anchor:'')).'">'.esc_html($label?:get_the_title($p)).'</a>';}
 function hsh_studio_featured(){
- $out='<section class="hsh-featured"><p class="hsh-eyebrow">STORIES</p><h2>じっくり読む、暮らしの話</h2><div class="hsh-featured-grid">';
- foreach(array('manmos-cat-life','glenlivet-12-first-bottles','it-data-work-flow') as $slug){$p=get_page_by_path($slug,OBJECT,'post');if($p&&$p->post_status==='publish')$out.='<article>'.hsh_studio_article_link($slug).'<p>'.esc_html(hsh_growth_summaries()[$slug]??'').'</p></article>';}
+ $out='<section id="hsh-featured" class="hsh-featured" data-hsh-reveal><div class="hsh-featured-heading"><div><p class="hsh-eyebrow">STORIES</p><h2>じっくり読む、暮らしの話</h2></div><span class="hsh-editorial-note">猫と、お酒と、仕事。</span></div><div class="hsh-featured-grid">';
+ foreach(array('manmos-cat-life','glenlivet-12-first-bottles','it-data-work-flow') as $slug){$p=get_page_by_path($slug,OBJECT,'post');if(!$p||$p->post_status!=='publish')continue;$photo=hsh_photo_for_slug($slug);$image=$photo?hsh_photo_image($photo,false,'(max-width:760px) 100vw, 65vw'):'';$topic=hsh_catalog_topic($slug);$out.='<article><a class="hsh-featured-card" href="'.esc_url(get_permalink($p)).'"><span class="hsh-featured-image">'.$image.'</span><div class="hsh-featured-caption"><small>'.esc_html(hsh_topics()[$topic][0]??'').'</small><h3>'.esc_html(get_the_title($p)).'</h3><span class="hsh-featured-arrow" aria-hidden="true">↗</span></div></a><p>'.esc_html(hsh_growth_summaries()[$slug]??'').'</p></article>';}
  return $out.'</div></section>';
 }
 function hsh_studio_postscript($slug,$topic){

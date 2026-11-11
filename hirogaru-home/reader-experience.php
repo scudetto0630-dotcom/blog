@@ -75,7 +75,7 @@ add_action('wp_enqueue_scripts', function() {
     wp_enqueue_style('hsh-home', plugin_dir_url(__FILE__).'assets/home.css', array(), '1.38.2');
     wp_enqueue_style('hsh-reader', plugin_dir_url(__FILE__).'assets/reader.css', array('hsh-growth'), '1.38.2');
     wp_enqueue_script('hsh-reader', plugin_dir_url(__FILE__).'assets/reader.js', array(), '1.38.9', true);
-    wp_enqueue_style('hsh-palette', plugin_dir_url(__FILE__).'assets/palette.css', array('hsh-reader'), '1.38.2');
+
 }, 120);
 function hsh_reader_bootstrap(){return '<script>document.documentElement.classList.add("hsh-reader-js");</script>';}
 add_action('wp_head',function(){if(hsh_reader_scope())echo hsh_reader_bootstrap();},0);
@@ -162,3 +162,6 @@ function hsh_reader_responsive_html($html){
     $base=plugin_dir_url(__FILE__).'assets/photos/';$lookup=array();foreach(hsh_photo_manifest()['assets'] as $a)if(!empty($a['variants']))$lookup[$base.$a['file']]=$a;
     return preg_replace_callback('~<img\b[^>]*>~i',function($m)use($lookup,$base){$tag=$m[0];if(preg_match('/\bsrcset\s*=/i',$tag)||!preg_match('~\bsrc\s*=\s*([\x22\x27])(.*?)\1~i',$tag,$match))return $tag;$url=html_entity_decode($match[2],ENT_QUOTES,'UTF-8');if(!isset($lookup[$url]))return $tag;$a=$lookup[$url];$srcset=array();foreach($a['variants'] as $v)if(preg_match('/^[a-z0-9-]+\.webp$/D',$v['file']))$srcset[]=$base.$v['file'].' '.(int)$v['width'].'w';$srcset[]=$url.' '.(int)$a['width'].'w';return preg_replace('~/?>$~','',$tag).' srcset="'.esc_attr(implode(', ',$srcset)).'" sizes="(max-width:760px) calc(100vw - 44px), 740px">';},$html);
 }
+
+// Final visual layer follows the functional reading and accessibility styles.
+add_action('wp_enqueue_scripts',function(){if(hsh_reader_scope())wp_enqueue_style('hsh-palette',plugin_dir_url(__FILE__).'assets/palette.css',array('hsh-quality'),'1.39.0');},190);
