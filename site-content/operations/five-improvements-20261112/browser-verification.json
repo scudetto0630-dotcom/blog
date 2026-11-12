@@ -1,0 +1,104 @@
+{
+  "viewport_checks": 24,
+  "results": [
+    {
+      "slug": "home",
+      "width": 1440
+    },
+    {
+      "slug": "home",
+      "width": 390
+    },
+    {
+      "slug": "home",
+      "width": 320
+    },
+    {
+      "slug": "highball-measure-and-adjust",
+      "width": 1440
+    },
+    {
+      "slug": "highball-measure-and-adjust",
+      "width": 390
+    },
+    {
+      "slug": "highball-measure-and-adjust",
+      "width": 320
+    },
+    {
+      "slug": "ai-data-extraction-checks",
+      "width": 1440
+    },
+    {
+      "slug": "ai-data-extraction-checks",
+      "width": 390
+    },
+    {
+      "slug": "ai-data-extraction-checks",
+      "width": 320
+    },
+    {
+      "slug": "cat-carrier-checklist",
+      "width": 1440
+    },
+    {
+      "slug": "cat-carrier-checklist",
+      "width": 390
+    },
+    {
+      "slug": "cat-carrier-checklist",
+      "width": 320
+    },
+    {
+      "slug": "cat-vet-routine",
+      "width": 1440
+    },
+    {
+      "slug": "cat-vet-routine",
+      "width": 390
+    },
+    {
+      "slug": "cat-vet-routine",
+      "width": 320
+    },
+    {
+      "slug": "single-malt-label-guide",
+      "width": 1440
+    },
+    {
+      "slug": "single-malt-label-guide",
+      "width": 390
+    },
+    {
+      "slug": "single-malt-label-guide",
+      "width": 320
+    },
+    {
+      "slug": "csv-import-seven-checks",
+      "width": 1440
+    },
+    {
+      "slug": "csv-import-seven-checks",
+      "width": 390
+    },
+    {
+      "slug": "csv-import-seven-checks",
+      "width": 320
+    },
+    {
+      "slug": "mognyan-cat-food-guide",
+      "width": 1440
+    },
+    {
+      "slug": "mognyan-cat-food-guide",
+      "width": 390
+    },
+    {
+      "slug": "mognyan-cat-food-guide",
+      "width": 320
+    }
+  ],
+  "no_js_checks": 2,
+  "js_errors": [],
+  "writes": 0
+}

@@ -1,0 +1,12 @@
+{
+  "home_initial_decoded_response_bytes_before": 696108,
+  "home_initial_decoded_response_bytes_after": 540724,
+  "home_reduction_bytes": 155384,
+  "home_reduction_percent": 22.32,
+  "scope": "390px/DPR1 validation browser; requests relayed through the same HTTP fetcher; not field Core Web Vitals or a ranking measure",
+  "limits": [
+    "Response body bytes in the validation browser, not compressed wire bytes.",
+    "Single relayed lab runs, not user field data.",
+    "Home LCP decreased in this run; article and gallery timings varied and no sitewide speed improvement is established."
+  ]
+}

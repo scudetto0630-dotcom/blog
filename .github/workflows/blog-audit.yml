@@ -92,6 +92,7 @@ jobs:
       - run: tools/browser-audit/node_modules/.bin/playwright install --with-deps chromium
       - name: Build isolated reader fixtures
         run: |
+          php tests/five-improvements.php > five-improvements-php.txt
           php tests/quality.php > quality-php.txt
           python tools/build-quality-preview.py quality-php.txt --output /tmp/quality-preview
       - name: Check saved records, import, notes, print and no-JS reading
@@ -110,5 +111,7 @@ jobs:
         if: always()
         with:
           name: browser-layout
-          path: browser-audit/
+          path: |
+            browser-audit/
+            five-improvements-php.txt
           retention-days: 30
