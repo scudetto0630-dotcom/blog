@@ -47,7 +47,11 @@ def audit():
         ids=set(re.findall(r'ca-pub-\d{16}',body));publishers.update(ids)
         loaded=any('pagead2.googlesyndication.com/pagead/js/adsbygoogle.js' in x for x in page.scripts)
         if loaded: script_pages.append(path)
+        if sum('pagead2.googlesyndication.com/pagead/js/adsbygoogle.js' in x for x in page.scripts)>1:
+            failures.append({'path':path,'problem':'duplicate_adsense_script'})
         rows.append({'path':path,'http':status,'adsense_script':loaded,'form_present':page.forms>0})
+    if publishers and (ads_status!=200 or any(x[3:] not in ads_ids for x in publishers)):
+        failures.append({'path':'/ads.txt','problem':'active_publisher_missing_from_ads_txt'})
     return {'checked_at':datetime.now(timezone.utc).isoformat(),'checks':rows,'technical_failures':failures,
             'adsense':{'publisher_ids_detected':sorted(publishers),'script_pages':script_pages,
                        'ads_txt_http':ads_status,'ads_txt_google_ids':sorted(set(ads_ids)),

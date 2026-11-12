@@ -106,3 +106,35 @@ function hsh_document_head() {
         echo hsh_blog_extra_head($head,$url,$description,$title);
     }
 }
+
+// Public publisher identifier supplied by the owner in the AdSense setup screen.
+function hsh_adsense_publisher() { return 'ca-pub-1945643191231022'; }
+function hsh_adsense_head_markup() {
+    return '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' . esc_attr(hsh_adsense_publisher()) . '" crossorigin="anonymous"></script>' . "\n";
+}
+add_action('wp_head', function () {
+    if (is_admin() || is_feed() || is_preview() || is_404() || is_search() || is_page('hsh-reading-list')) { return; }
+    echo hsh_adsense_head_markup();
+}, 20);
+function hsh_adsense_ads_txt() {
+    return 'google.com, ' . substr(hsh_adsense_publisher(), 3) . ', DIRECT, f08c47fec0942fa0' . "\n";
+}
+// Serve the root text file before WordPress classifies the virtual path as a 404.
+add_action('parse_request', function ($wp) {
+    if ($wp->request !== 'ads.txt') { return; }
+    status_header(200);
+    header('Content-Type: text/plain; charset=utf-8');
+    header('X-Content-Type-Options: nosniff');
+    echo hsh_adsense_ads_txt();
+    exit;
+}, 0);
+function hsh_adsense_privacy_notice() {
+    return '<section class="hsh-adsense-privacy"><h2>Googleの広告サービスについて</h2><p>Googleなどの広告配信事業者は、Cookieを使い、当サイトや他のサイトへのアクセス情報に基づいて広告を表示することがあります。パーソナライズされた広告は、<a href="https://www.google.com/settings/ads">Googleの広告設定</a>で変更できます。</p><p>Googleによる情報の利用については、<a href="https://policies.google.com/technologies/partner-sites?hl=ja">Googleのサービスを使用するサイトやアプリから収集した情報の利用</a>をご確認ください。</p></section>';
+}
+add_filter('the_content', function ($content) {
+    $post = get_post();
+    if ($post && in_the_loop() && is_main_query() && rawurldecode($post->post_name) === 'プライバシーポリシー') {
+        $content .= hsh_adsense_privacy_notice();
+    }
+    return $content;
+}, 32);
