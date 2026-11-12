@@ -1,12 +1,15 @@
 <?php
 if(!defined('ABSPATH'))exit;
 /** Packaged additions only. No arbitrary publishing endpoint. */
-function hsh_expanded_articles(){
-    $items=json_decode(file_get_contents(__DIR__.'/expanded-articles.json'),true);
-    return is_array($items)?$items:array();
+function hsh_expanded_articles() {
+    static $items=null;
+    if($items===null){$decoded=json_decode(file_get_contents(__DIR__.'/expanded-articles.json'),true);$items=is_array($decoded)?$decoded:array();}
+    return $items;
 }
-function hsh_affiliate_articles(){
-    $items=json_decode(file_get_contents(__DIR__.'/affiliate-articles.json'),true);return is_array($items)?$items:array();
+function hsh_affiliate_articles() {
+    static $items=null;
+    if($items===null){$decoded=json_decode(file_get_contents(__DIR__.'/affiliate-articles.json'),true);$items=is_array($decoded)?$decoded:array();}
+    return $items;
 }
 function hsh_release_items(){return array_merge(hsh_expanded_articles(),hsh_affiliate_articles());}
 function hsh_catalog(){return array_merge(hsh_article_map(),hsh_release_items());}

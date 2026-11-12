@@ -1,15 +1,18 @@
 {
   "cat-carrier-checklist": {
     "role": "道具の選び方",
-    "related_label": "選ぶ前に読む"
+    "related_label": "選ぶ前に読む",
+    "search_description": "5.5kgのまんもすを入れると、約6,000円で買ったリュックキャリーがへこんだ。10年以上前の骨組み入りキャリーを使い直した理由と、運ぶ前に見たいサイズや重さを紹介します。"
   },
   "highball-measure-and-adjust": {
     "role": "飲み方・表示の解説",
-    "related_label": "飲み方を調べる"
+    "related_label": "飲み方を調べる",
+    "search_description": "ハイボールが薄いときは、ウイスキーの量だけでなく、氷の溶け方や炭酸水も確認。味の薄さと炭酸の弱さを分けて考え、好みの割合でウイスキーとソーダの分量を計算できます。"
   },
   "csv-import-seven-checks": {
     "role": "データの確認方法",
-    "related_label": "手順を試す"
+    "related_label": "手順を試す",
+    "search_description": "CSVの文字化け、先頭の0、日付、空欄、重複など、取り込む前に見る7項目を紹介。原本を残し、取り込み先の仕様と照らして、値や件数が変わっていないか確かめます。"
   },
   "before-welcoming-cat": {
     "role": "道具の選び方",
@@ -25,7 +28,8 @@
   },
   "cat-vet-routine": {
     "role": "通院の準備",
-    "related_label": "通院の準備をする"
+    "related_label": "通院の準備をする",
+    "search_description": "猫の通院に何を持っていく？ 通院手帳、タオル、ペットシーツなどの準備と、診察で伝えたい食事・排泄・様子の変化をまとめました。持ち物と伝えることを確認メモに残せます。"
   },
   "glenlivet-12-first-bottles": {
     "role": "飲んだ感想",
@@ -33,7 +37,8 @@
   },
   "single-malt-label-guide": {
     "role": "飲み方・表示の解説",
-    "related_label": "ラベルの見方を知る"
+    "related_label": "ラベルの見方を知る",
+    "search_description": "ウイスキーのラベルは商品名・年数・容量・度数を確認。シングルモルトとシングルカスクの違い、年数表示の意味、容量をそろえた値段の比べ方を、初めて選ぶ人向けにまとめました。"
   },
   "sherry-cask-notes": {
     "role": "飲んだ感想",
@@ -49,7 +54,8 @@
   },
   "ai-data-extraction-checks": {
     "role": "データの確認方法",
-    "related_label": "手順を試す"
+    "related_label": "手順を試す",
+    "search_description": "AIで抽出した表のどこを見る？ 架空の4行から2件を取り出す例で、ID・件数・合計2,700円を確かめます。依頼文と期待する結果を並べて、抜けや取り違えの見つけ方を紹介します。"
   },
   "paws-green-deli-cat-food": {
     "role": "商品・サービスの案内（未使用）",

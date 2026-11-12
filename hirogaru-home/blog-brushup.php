@@ -25,8 +25,9 @@ add_filter('template_include',function($template){
 },999);
 
 function hsh_article_map() {
-    $items=json_decode(file_get_contents(__DIR__.'/article-map.json'),true);
-    return is_array($items)?$items:array();
+    static $items=null;
+    if($items===null){$decoded=json_decode(file_get_contents(__DIR__.'/article-map.json'),true);$items=is_array($decoded)?$decoded:array();}
+    return $items;
 }
 function hsh_topic_reading_route($topic) {
     $routes=array(

@@ -14,13 +14,13 @@ function hsh_studio_postscript($slug,$topic){
  return $out.'</div></nav>';
 }
 function hsh_studio_checklist($id,$title,$items){
- $out='<section class="hsh-note-sheet" data-sheet="'.esc_attr($id).'"><h2>'.esc_html($title).'</h2><p class="hsh-device-note">チェックとメモはこの端末のブラウザー内に保存します。個人情報は書き込まないでください。</p><fieldset><legend>確認すること</legend>';
+ $out='<section class="hsh-note-sheet" id="hsh-sheet-'.esc_attr($id).'" data-sheet="'.esc_attr($id).'"><h2>'.esc_html($title).'</h2><p class="hsh-device-note">チェックとメモはこの端末のブラウザー内に保存します。個人情報は書き込まないでください。</p><fieldset><legend>確認すること</legend>';
  foreach($items as $i=>$item)$out.='<label><input type="checkbox" data-sheet-check="'.(int)$i.'"> '.esc_html($item).'</label>';
  return $out.'</fieldset><label>メモ<textarea data-sheet-note maxlength="2000" rows="3" placeholder="気付いたこと、次に確認したいこと"></textarea></label><p data-sheet-status role="status" aria-live="polite"></p><div class="hsh-sheet-actions"><button type="button" data-sheet-print>このシートを印刷</button><button type="button" data-sheet-reset>すべて解除</button></div></section>';
 }
-function hsh_studio_highball(){return '<section class="hsh-highball-tool"><h2>好みの割合で、分量を計算する</h2><p>ウイスキーの量とソーダの倍率を入力してください。氷は計算に含まれないため、グラスには氷を入れる余裕も必要です。</p><form data-highball><label>ウイスキーの量（ml）<input name="whisky" type="number" min="5" max="100" step="1" value="30" required></label><label>ソーダの倍率<input name="ratio" type="number" min="1" max="10" step="0.5" value="3" required></label><label>グラス容量（ml・任意）<input name="glass" type="number" min="100" max="1000" step="1" placeholder="例：350"></label><button>分量を計算</button></form><p data-highball-result role="status" aria-live="polite">ウイスキー30ml＋ソーダ90ml＝飲み物120ml。氷を入れる余裕も必要です。</p></section>';}
+function hsh_studio_highball(){return '<section class="hsh-highball-tool" id="hsh-highball-calculator"><h2>好みの割合で、分量を計算する</h2><p>ウイスキーの量と、ソーダを何倍入れるかを入力してください。3倍なら、ウイスキー30mlにソーダ90mlで1:3の割合です。氷は計算に含まれないため、グラスには氷を入れる余裕も必要です。</p><form data-highball><label>ウイスキーの量（ml）<input name="whisky" type="number" min="5" max="100" step="1" value="30" required></label><label>ソーダの量（ウイスキーの何倍か）<input name="ratio" type="number" min="1" max="10" step="0.5" value="3" required></label><label>グラス容量（ml・任意）<input name="glass" type="number" min="100" max="1000" step="1" placeholder="例：350"></label><button>分量を計算</button></form><p data-highball-result role="status" aria-live="polite">ウイスキー30ml＋ソーダ90ml＝飲み物120ml。氷を入れる余裕も必要です。</p></section>';}
 function hsh_studio_examples(){
- return '<section class="hsh-data-practice"><h2>架空の表で、データ抽出を試す</h2><p>次の4行は練習用に作った架空データです。顧客や勤務先の実データではありません。「区分が猫、金額が1,000円以上」を条件に抜き出します。</p><h3>処理前</h3><table><thead><tr><th>ID</th><th>区分</th><th>金額（円）</th></tr></thead><tbody><tr><td>0001</td><td>猫</td><td>1200</td></tr><tr><td>0002</td><td>ウイスキー</td><td>4000</td></tr><tr><td>0003</td><td>猫</td><td>800</td></tr><tr><td>0004</td><td>猫</td><td>1500</td></tr></tbody></table><h3>期待する結果</h3><p>ID「0001」「0004」の2件です。合計金額は2,700円。先頭の0を残し、元の表の順番を保ちます。</p><h3>依頼文の例</h3><pre data-copy-example>元データを残したまま、区分が「猫」、金額が1000円以上の行を抽出してください。IDは文字列として先頭の0を保持し、元の並び順を維持してください。抽出件数と金額の合計を示してください。</pre><pre data-copy-example>金額を数値として昇順に並べ替えてください。同額の場合は元の並び順を保ち、IDと金額の対応を変えないでください。</pre><pre data-copy-example>IDの重複を調べ、重複したIDと該当行を別表にまとめてください。元データからは削除しないでください。</pre><h3>Excel・スプレッドシート・CSVの違い</h3><dl><dt>Excel</dt><dd>表計算ソフトです。xlsx形式なら複数のシート、書式、数式などを保存できます。</dd><dt>スプレッドシート</dt><dd>ブラウザーで共同編集できる表計算サービスです。共有範囲と編集権限を確認して使います。</dd><dt>CSV</dt><dd>行と列の値を区切り文字で表すテキスト形式です。書式や複数シートの保存には向きません。取り込み時の文字コードやデータ型に注意が必要です。</dd></dl></section>';
+ return '<section class="hsh-data-practice" id="hsh-extraction-example"><h2>架空の表で、データ抽出を試す</h2><p>次の4行は練習用に作った架空データです。顧客や勤務先の実データではありません。「区分が猫、金額が1,000円以上」を条件に抜き出します。</p><h3>処理前</h3><table><thead><tr><th>ID</th><th>区分</th><th>金額（円）</th></tr></thead><tbody><tr><td>0001</td><td>猫</td><td>1200</td></tr><tr><td>0002</td><td>ウイスキー</td><td>4000</td></tr><tr><td>0003</td><td>猫</td><td>800</td></tr><tr><td>0004</td><td>猫</td><td>1500</td></tr></tbody></table><h3>期待する結果</h3><p>ID「0001」「0004」の2件です。合計金額は2,700円。先頭の0を残し、元の表の順番を保ちます。</p><p>件数と合計が合っていても、別の行に入れ替わっている可能性はあります。IDと元の値も比べて、条件に合う2件を取り出せているか確かめましょう。</p><h3>依頼文の例</h3><pre data-copy-example>元データを残したまま、区分が「猫」、金額が1000円以上の行を抽出してください。IDは文字列として先頭の0を保持し、元の並び順を維持してください。抽出件数と金額の合計を示してください。</pre><pre data-copy-example>金額を数値として昇順に並べ替えてください。同額の場合は元の並び順を保ち、IDと金額の対応を変えないでください。</pre><pre data-copy-example>IDの重複を調べ、重複したIDと該当行を別表にまとめてください。元データからは削除しないでください。</pre><h3>Excel・スプレッドシート・CSVの違い</h3><dl><dt>Excel</dt><dd>表計算ソフトです。xlsx形式なら複数のシート、書式、数式などを保存できます。</dd><dt>スプレッドシート</dt><dd>ブラウザーで共同編集できる表計算サービスです。共有範囲と編集権限を確認して使います。</dd><dt>CSV</dt><dd>行と列の値を区切り文字で表すテキスト形式です。書式や複数シートの保存には向きません。取り込み時の文字コードやデータ型に注意が必要です。</dd></dl></section>';
 }
 function hsh_studio_terms($topic,$slug=''){
  if($topic==='cats')$terms=array('総合栄養食'=>'主食として必要な栄養を満たすよう調整されたフードです。対象や給与方法は製品の表示で確認してください。','療法食'=>'病気などに応じて栄養成分を調整した食事。自己判断で選ばず獣医師に相談します。','サプリメント'=>'健康維持のために使われる補助的な製品。医薬品と同じ治療効果を意味するものではありません。');
@@ -81,3 +81,20 @@ function hsh_studio_dates($p){
  if($modified&&$modified!==$published)$out.='<span>更新：<time data-date-kind="modified" datetime="'.esc_attr($modified).'">'.esc_html(get_post_modified_time('Y.m.d',false,$p)).'</time></span>';
  return $out.'</p>';
 }
+
+function hsh_studio_tool_shortcut($slug) {
+    $tools=array(
+        'highball-measure-and-adjust'=>array('hsh-highball-calculator','好みの割合で分量を計算する'),
+        'ai-data-extraction-checks'=>array('hsh-extraction-example','架空の表で抽出結果を比べる'),
+        'cat-carrier-checklist'=>array('hsh-sheet-carrier-measure','キャリーの確認メモを使う'),
+        'cat-vet-routine'=>array('hsh-sheet-vet-note','診察で伝えたいことをメモする'),
+    );
+    if(!isset($tools[$slug]))return '';
+    return '<p class="hsh-tool-shortcut"><a href="#'.esc_attr($tools[$slug][0]).'">'.esc_html($tools[$slug][1]).' <span aria-hidden="true">↓</span></a></p>';
+}
+add_filter('the_content',function($content){
+    if(!is_singular('post')||!in_the_loop()||!is_main_query())return $content;
+    $post=get_post();if(!$post||!hsh_owned_blog_post($post)||strpos($content,'hsh-tool-shortcut')!==false)return $content;
+    $link=hsh_studio_tool_shortcut($post->post_name);if($link==='')return $content;
+    return preg_replace('~</p>~i','</p>'.$link,$content,1);
+},8);

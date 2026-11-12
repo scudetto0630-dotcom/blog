@@ -8,10 +8,11 @@
  const slides=[...root.querySelectorAll('[data-hsh-slide]')],links=[...root.querySelectorAll('[data-hsh-slide-link]')],dots=[...root.querySelectorAll('[data-hsh-slide-to]')];
  const status=root.querySelector('[data-hsh-slide-status]'),motion=matchMedia('(prefers-reduced-motion: reduce)');
  if(slides.length<2)return;
- let current=0,timer=0,paused=motion.matches,hovered=false,focused=false,onScreen=true,start=null,suppressClick=false;
- const clear=()=>{clearTimeout(timer);timer=0;};
- const schedule=()=>{clear();if(!paused&&(!hovered&&!focused)&&onScreen&&!document.hidden)timer=setTimeout(()=>show((current+1)%slides.length,false),7000);};
- const show=(index,manual)=>{current=(index+slides.length)%slides.length;slides.forEach((slide,i)=>{slide.classList.toggle('is-active',i===current);slide.setAttribute('aria-hidden',String(i!==current));links[i].hidden=i!==current;dots[i].setAttribute('aria-pressed',String(i===current));});if(manual){paused=true;status.textContent=links[current].textContent.trim()+'の写真を表示しています。';}schedule();};
+ let current=0,timer=0,primeTimer=0,paused=motion.matches,hovered=false,focused=false,onScreen=true,start=null,suppressClick=false;
+ const loadSlide=i=>{const img=slides[i]?.querySelector('img[data-hsh-src]');if(!img)return;img.loading='eager';if(img.dataset.hshSrcset){img.srcset=img.dataset.hshSrcset;delete img.dataset.hshSrcset;}img.src=img.dataset.hshSrc;delete img.dataset.hshSrc;};
+ const clear=()=>{clearTimeout(timer);clearTimeout(primeTimer);timer=0;};
+ const schedule=()=>{clear();if(!paused&&(!hovered&&!focused)&&onScreen&&!document.hidden){primeTimer=setTimeout(()=>loadSlide((current+1)%slides.length),3000);timer=setTimeout(()=>show((current+1)%slides.length,false),7000);}};
+ const show=(index,manual)=>{current=(index+slides.length)%slides.length;loadSlide(current);slides.forEach((slide,i)=>{slide.classList.toggle('is-active',i===current);slide.setAttribute('aria-hidden',String(i!==current));links[i].hidden=i!==current;dots[i].setAttribute('aria-pressed',String(i===current));});if(manual){paused=true;status.textContent=links[current].textContent.trim()+'の写真を表示しています。';}schedule();};
  root.querySelector('[data-hsh-slider-controls]').hidden=false;
  root.querySelector('[data-hsh-prev]').addEventListener('click',()=>show(current-1,true));
  root.querySelector('[data-hsh-next]').addEventListener('click',()=>show(current+1,true));

@@ -55,3 +55,17 @@ add_filter('the_content',function($content){
     foreach(array('manmos-back','manmos-stretch') as $key){$gallery.='<figure class="hsh-photo">'.hsh_photo_image($assets[$key]).hsh_photo_figcaption($assets[$key]).'</figure>';}
     return $content.$gallery.'</div></section>';
 },23);
+
+/** The first hero photo is immediate; other photos wait until they are needed. */
+function hsh_photo_slide_image($asset,$first=false) {
+    $image=hsh_photo_image($asset,$first,'100vw');
+    if($first||$image==='')return $image;
+    $image=str_replace(array(' srcset=',' src='),array(' data-hsh-srcset=',' data-hsh-src='),$image);
+    return str_replace('<img','<img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="',$image);
+}
+add_action('wp_head',function(){
+    if(!is_front_page())return;
+    $asset=hsh_photo_manifest()['assets']['manmos-rest']??null;
+    if(!$asset)return;
+    echo '<link rel="preload" as="image" href="'.esc_url(plugin_dir_url(__FILE__).'assets/photos/'.$asset['file']).'" fetchpriority="high">' . "\n";
+},1);
