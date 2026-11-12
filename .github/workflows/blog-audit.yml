@@ -26,6 +26,9 @@ jobs:
         run: python tools/blog-audit.py --output blog-audit.json
       - name: Check complete reader navigation and structured data
         run: python tools/audit-reader.py > reader-audit.json
+      - name: Check advertising setup and essential public pages
+        if: always()
+        run: python tools/revenue-readiness.py --output revenue-readiness.json
       - name: Check official product source URLs
         if: always()
         run: python tools/audit-product-sources.py --output product-source-audit.json
@@ -38,6 +41,7 @@ jobs:
             reader-audit.json
             product-source-audit.json
             editorial-quality.json
+            revenue-readiness.json
           retention-days: 30
 
   japanese-copy:

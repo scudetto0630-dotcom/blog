@@ -1,0 +1,60 @@
+{
+  "checked_at": "2026-11-12T03:30:29.763400+00:00",
+  "checks": [
+    {
+      "path": "/",
+      "http": 200,
+      "adsense_script": false,
+      "form_present": true
+    },
+    {
+      "path": "/hsh-about/",
+      "http": 200,
+      "adsense_script": false,
+      "form_present": true
+    },
+    {
+      "path": "/お問い合わせ/",
+      "http": 200,
+      "adsense_script": false,
+      "form_present": true
+    },
+    {
+      "path": "/プライバシーポリシー/",
+      "http": 200,
+      "adsense_script": false,
+      "form_present": true
+    },
+    {
+      "path": "/robots.txt",
+      "http": 200,
+      "adsense_script": false,
+      "form_present": false
+    },
+    {
+      "path": "/wp-sitemap.xml",
+      "http": 200,
+      "adsense_script": false,
+      "form_present": false
+    },
+    {
+      "path": "/ads.txt",
+      "http": 404,
+      "adsense_script": false,
+      "form_present": true
+    }
+  ],
+  "technical_failures": [],
+  "adsense": {
+    "publisher_ids_detected": [],
+    "script_pages": [],
+    "ads_txt_http": 404,
+    "ads_txt_google_ids": [],
+    "account_and_site_approval": "not_verifiable_from_public_html"
+  },
+  "limits": [
+    "Technical checks do not establish policy compliance, approval, traffic or revenue.",
+    "An absent ads.txt or ad script is expected before setup; no identifiers are invented.",
+    "Contact form delivery, Google account and Search Console are not tested."
+  ]
+}

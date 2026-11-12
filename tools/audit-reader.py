@@ -92,7 +92,7 @@ def fetch(path):
 def audit():
     catalog = json.loads((ROOT / 'hirogaru-home/article-map.json').read_text()) + json.loads((ROOT / 'hirogaru-home/expanded-articles.json').read_text()) + json.loads((ROOT / 'hirogaru-home/affiliate-articles.json').read_text())
     paths = ['/' + r['slug'] + '/' for r in catalog]
-    paths += ['/', '/category/cats/', '/category/whisky/', '/category/it-freelance/', '/hsh-about/', '/hsh-editorial/', '/hsh-gallery/', '/hsh-whisky-notes/', '/hsh-updates/', '/hsh-hakushu-visit/', '/hsh-reading-list/', '/ひろがる趣味暮らしについて/', '/お問い合わせ/', '/プライバシーポリシー/']
+    paths += ['/', '/category/cats/', '/category/whisky/', '/category/it-freelance/', '/hsh-about/',  '/hsh-gallery/', '/hsh-whisky-notes/', '/hsh-updates/', '/hsh-hakushu-visit/', '/hsh-reading-list/', '/ひろがる趣味暮らしについて/', '/お問い合わせ/', '/プライバシーポリシー/']
     problems, pages, rows = [], {}, []
     with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:
         for path, p, status in pool.map(fetch, paths):

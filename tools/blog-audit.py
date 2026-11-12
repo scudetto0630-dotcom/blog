@@ -33,10 +33,11 @@ def fetch(url):
     request=urllib.request.Request(url,headers={'User-Agent':'HirogaruSiteAudit/1.0 (public site maintenance; bot)','Cache-Control':'no-cache'})
     try:
         with urllib.request.urlopen(request,timeout=30) as r: return r.status,r.read().decode('utf-8','replace')
+    except urllib.error.HTTPError as e: return e.code,e.read().decode('utf-8','replace')
     except (urllib.error.URLError,TimeoutError) as e: return 0,str(e)
 
 def audit(base):
-    paths=['/','/category/cats/','/category/whisky/','/category/it-freelance/','/cat-carrier-checklist/','/highball-measure-and-adjust/','/csv-import-seven-checks/','/hsh-about/','/hsh-editorial/','/wp-sitemap.xml','/robots.txt']
+    paths=['/','/category/cats/','/category/whisky/','/category/it-freelance/','/cat-carrier-checklist/','/highball-measure-and-adjust/','/csv-import-seven-checks/','/hsh-about/','/wp-sitemap.xml','/robots.txt']
     rows=[]; extra=set(); origin=urllib.parse.urlsplit(base).netloc
     for path in paths:
         url=base.rstrip('/')+path; status,body=fetch(url); errors=[]; warnings=[]
@@ -52,6 +53,9 @@ def audit(base):
                 if parsed.netloc==origin and not parsed.query and parsed.path and not any(x in parsed.path for x in ('wp-admin','wp-login','feed','wp-content','wp-json')):
                     extra.add(urllib.parse.urlunsplit((parsed.scheme,parsed.netloc,parsed.path,'','')))
         rows.append({'url':url,'status':status,'errors':errors,'warnings':warnings})
+    retired=base.rstrip('/')+'/hsh-editorial/'
+    status,_=fetch(retired)
+    rows.append({'url':retired,'status':status,'expected_status':404,'errors':[] if status==404 else ['Retired page should return HTTP 404'],'warnings':[]})
     known={r['url'] for r in rows}; todo=sorted(extra-known)[:40]
     with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
         for url,(status,_) in zip(todo,pool.map(fetch,todo)):
