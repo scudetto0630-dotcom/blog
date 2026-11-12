@@ -1,0 +1,23 @@
+<?php
+require __DIR__.'/adsense.php';
+$base=home_url('/');
+$one='<nav class="hsh-next-read"><h2>あわせて読みたい記事</h2><ul><li><a href="'.$base.'ai-data-extraction-checks/">抽出を確認</a></li><li><a href="'.$base.'it-data-work-flow/">仕事の話</a></li></ul></nav>';
+$two='<aside class="hsh-context-link"><p>手順を試す</p><a href="'.$base.'ai-data-extraction-checks/">同じ抽出記事</a></aside>';
+$three='<section class="hsh-related"><h2>関連記事</h2><ul><li><a href="'.$base.'it-data-work-flow/">同じ仕事の話</a></li><li><a href="'.$base.'csv-import-seven-checks/">CSV</a></li></ul></section>';
+$body='<p>本文と5.5kgをそのまま残す。</p><figure><img src="cat.webp" alt="猫"></figure><a href="https://px.a8.net/svt/ejp?a8mat=fixture">公式案内</a><img src="https://www11.a8.net/0.gif?a8mat=fixture" width="1" height="1">';
+$profile='<aside class="hsh-profile"><p>書いている人</p></aside>';
+$out=hsh_growth_compact_followups($body.$one.$two.$three.$profile);
+check(substr_count($out,'class="hsh-related hsh-followups"')===1,'three recommendation blocks become one');
+check(substr_count($out,'href="'.$base.'ai-data-extraction-checks/"')===1&&substr_count($out,'href="'.$base.'it-data-work-flow/"')===1,'repeated targets appear once');
+check(strpos($out,'href="'.$base.'csv-import-seven-checks/"')!==false,'distinct existing destination is preserved');
+check(strpos($out,$body)===0&&substr($out,-strlen($profile))===$profile,'article text, photographs, affiliate URL, tracking pixel and profile remain byte-identical');
+check(hsh_growth_compact_followups($out)===$out,'consolidation is idempotent');
+check(hsh_growth_compact_followups($one)===$one,'a single existing recommendation is unchanged');
+$external='<aside class="hsh-context-link"><a href="https://px.a8.net/svt/ejp?a8mat=fixture">広告</a></aside>';
+check(strpos(hsh_growth_compact_followups($one.$two.$external),$external)!==false,'external advertising block is never merged or rewritten');
+$rich='<section class="hsh-related"><h2>写真</h2><img src="cat.webp"><a href="'.$base.'manmos-cat-life/">猫</a></section>';
+check(strpos(hsh_growth_compact_followups($one.$two.$rich),$rich)!==false,'photographic recommendation remains intact');
+$named='<nav class="hsh-next-read" id="existing-link"><a href="'.$base.'manmos-cat-life/">猫</a></nav>';
+check(strpos(hsh_growth_compact_followups($one.$two.$named),$named)!==false,'existing public anchors remain intact');
+check(strpos($out,'hsh-followups')<strpos($out,'hsh-profile'),'reading recommendations remain before the author profile');
+echo "All follow-up consolidation checks passed. Total: $tests\n";

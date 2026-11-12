@@ -89,3 +89,47 @@ function hsh_growth_rendered($html){
     if(!$a)return $html;$image=plugin_dir_url(__FILE__).'assets/photos/'.$a['file'];
     return hsh_growth_metadata($html,array('description'=>$description,'og:type'=>$type,'og:title'=>$title,'og:description'=>$description,'og:url'=>$url,'og:image'=>$image,'og:image:secure_url'=>$image,'og:image:type'=>'image/webp','og:image:width'=>(string)$a['width'],'og:image:height'=>(string)$a['height'],'og:image:alt'=>$a['alt'],'twitter:card'=>'summary_large_image','twitter:image'=>$image,'twitter:image:alt'=>$a['alt'],'twitter:title'=>$title,'twitter:description'=>$description));
 }
+
+/** Consolidate existing recommendation blocks; never rewrite the article itself. */
+function hsh_growth_compact_followups($content) {
+    $pattern='~<(nav|section|aside)\b[^>]*\bclass="(?:[^"]*\s)?(?:hsh-next-read|hsh-related|hsh-context-link|hsh-product-related)(?:\s[^"]*)?"[^>]*>.*?</\1>~si';
+    $origin=parse_url(home_url('/'),PHP_URL_HOST);
+    $blocks=array();$links=array();
+    preg_match_all($pattern,$content,$matches,PREG_SET_ORDER);
+    foreach($matches as $match){
+        $block=$match[0];
+        // Only merge the known text-only link blocks, preserving richer content intact.
+        if(preg_match('~<(?:img|figure|table|form|blockquote|script)\b|\bid\s*=~i',$block))continue;
+        preg_match_all('~<a\b[^>]*href="([^"]+)"[^>]*>(.*?)</a>~si',$block,$anchors,PREG_SET_ORDER);
+        if(!$anchors)continue;
+        $accepted=array();
+        foreach($anchors as $a){
+            $url=html_entity_decode($a[1],ENT_QUOTES,'UTF-8');
+            if(parse_url($url,PHP_URL_HOST)!==$origin||!in_array(parse_url($url,PHP_URL_SCHEME),array('http','https'),true)){$accepted=array();break;}
+            $accepted[$url]=trim(wp_strip_all_tags($a[2]));
+        }
+        if(!$accepted)continue;
+        $blocks[]=$block;
+        foreach($accepted as $url=>$label)if(!isset($links[$url]))$links[$url]=$label;
+    }
+    if(count($blocks)<2)return $content;
+    $out='<nav class="hsh-related hsh-followups" aria-label="あわせて読みたい記事"><h2>あわせて読みたい記事</h2><ul>';
+    foreach($links as $url=>$label){
+        $slug=rawurldecode(basename(rtrim((string)parse_url($url,PHP_URL_PATH),'/')));
+        $post=get_page_by_path($slug,OBJECT,'post');
+        if($post&&$post->post_status==='publish')$label=get_the_title($post);
+        $out.='<li><a href="'.esc_url($url).'">'.esc_html($label).' <span aria-hidden="true">→</span></a></li>';
+    }
+    $out.='</ul></nav>';
+    // Keep the first block's position, ahead of the profile and article tools.
+    $first=true;
+    return preg_replace_callback($pattern,function($m)use($blocks,$out,&$first){
+        if(!in_array($m[0],$blocks,true))return $m[0];
+        if($first){$first=false;return $out;}
+        return '';
+    },$content);
+}
+add_filter('the_content',function($content){
+    if(!is_singular('post')||!in_the_loop()||!is_main_query()||!hsh_owned_blog_post(get_post()))return $content;
+    return hsh_growth_compact_followups($content);
+},29);
