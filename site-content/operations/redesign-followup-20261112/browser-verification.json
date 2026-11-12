@@ -1,0 +1,180 @@
+{
+  "local": false,
+  "viewport_checks": 27,
+  "results": [
+    {
+      "slug": "",
+      "width": 1440,
+      "http": 200,
+      "overflow": false
+    },
+    {
+      "slug": "",
+      "width": 390,
+      "http": 200,
+      "overflow": false
+    },
+    {
+      "slug": "",
+      "width": 320,
+      "http": 200,
+      "overflow": false
+    },
+    {
+      "slug": "category/cats/",
+      "width": 1440,
+      "http": 200,
+      "overflow": false
+    },
+    {
+      "slug": "category/cats/",
+      "width": 390,
+      "http": 200,
+      "overflow": false
+    },
+    {
+      "slug": "category/cats/",
+      "width": 320,
+      "http": 200,
+      "overflow": false
+    },
+    {
+      "slug": "category/whisky/",
+      "width": 1440,
+      "http": 200,
+      "overflow": false
+    },
+    {
+      "slug": "category/whisky/",
+      "width": 390,
+      "http": 200,
+      "overflow": false
+    },
+    {
+      "slug": "category/whisky/",
+      "width": 320,
+      "http": 200,
+      "overflow": false
+    },
+    {
+      "slug": "category/it-freelance/",
+      "width": 1440,
+      "http": 200,
+      "overflow": false
+    },
+    {
+      "slug": "category/it-freelance/",
+      "width": 390,
+      "http": 200,
+      "overflow": false
+    },
+    {
+      "slug": "category/it-freelance/",
+      "width": 320,
+      "http": 200,
+      "overflow": false
+    },
+    {
+      "slug": "manmos-cat-life/",
+      "width": 1440,
+      "http": 200,
+      "overflow": false
+    },
+    {
+      "slug": "manmos-cat-life/",
+      "width": 390,
+      "http": 200,
+      "overflow": false
+    },
+    {
+      "slug": "manmos-cat-life/",
+      "width": 320,
+      "http": 200,
+      "overflow": false
+    },
+    {
+      "slug": "glenlivet-12-first-bottles/",
+      "width": 1440,
+      "http": 200,
+      "overflow": false
+    },
+    {
+      "slug": "glenlivet-12-first-bottles/",
+      "width": 390,
+      "http": 200,
+      "overflow": false
+    },
+    {
+      "slug": "glenlivet-12-first-bottles/",
+      "width": 320,
+      "http": 200,
+      "overflow": false
+    },
+    {
+      "slug": "it-data-work-flow/",
+      "width": 1440,
+      "http": 200,
+      "overflow": false
+    },
+    {
+      "slug": "it-data-work-flow/",
+      "width": 390,
+      "http": 200,
+      "overflow": false
+    },
+    {
+      "slug": "it-data-work-flow/",
+      "width": 320,
+      "http": 200,
+      "overflow": false
+    },
+    {
+      "slug": "hsh-about/",
+      "width": 1440,
+      "http": 200,
+      "overflow": false
+    },
+    {
+      "slug": "hsh-about/",
+      "width": 390,
+      "http": 200,
+      "overflow": false
+    },
+    {
+      "slug": "hsh-about/",
+      "width": 320,
+      "http": 200,
+      "overflow": false
+    },
+    {
+      "slug": "hsh-reading-list/",
+      "width": 1440,
+      "http": 200,
+      "overflow": false
+    },
+    {
+      "slug": "hsh-reading-list/",
+      "width": 390,
+      "http": 200,
+      "overflow": false
+    },
+    {
+      "slug": "hsh-reading-list/",
+      "width": 320,
+      "http": 200,
+      "overflow": false
+    }
+  ],
+  "carousel": [
+    "automatic rotation",
+    "next/previous",
+    "keyboard",
+    "touch",
+    "manual navigation stops rotation",
+    "reduced motion",
+    "no-JS fallback",
+    "native touch and vertical scrolling"
+  ],
+  "js_errors": [],
+  "writes": 0
+}
