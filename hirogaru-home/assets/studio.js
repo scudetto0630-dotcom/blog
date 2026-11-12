@@ -85,4 +85,16 @@ for(const section of document.querySelectorAll('.hsh-comparison')){const table=s
 for(const form of document.querySelectorAll('.wpcf7-form,.hsh-report-form')){let dirty=false;form.addEventListener('input',()=>{dirty=true;});form.addEventListener('wpcf7mailsent',()=>{dirty=false;});form.addEventListener('reset',()=>{dirty=false;});form.addEventListener('hsh:sent',()=>{dirty=false;});form.addEventListener('invalid',e=>{e.target.setAttribute('aria-invalid','true');},true);addEventListener('beforeunload',e=>{if(dirty){e.preventDefault();e.returnValue='';}});}
 addEventListener('storage',e=>{if(!e.key||[prefsKey,historyKey,doneKey].includes(e.key)){prefs=api.read(prefsKey,{});if(!prefs||typeof prefs!=='object'||Array.isArray(prefs))prefs={};size.value=['large','larger'].includes(prefs.size)?prefs.size:'normal';applySize();historyToggle.checked=prefs.history!==false;resumeToggle.checked=prefs.resume!==false;renderRecent();document.querySelectorAll('[data-hsh-done]').forEach(b=>{const active=records(doneKey).includes(data.current);b.setAttribute('aria-pressed',String(active));b.textContent=active?'読了済み':'読了にする';});api.renderSaved();}});
 const toolbar=document.querySelector('.hsh-reader-tools');if(toolbar){const more=el('details',undefined,'hsh-reading-options');more.append(el('summary','読むためのツール'));for(const node of [...toolbar.children])if(node.matches('.hsh-reader-settings,.hsh-in-article-find,[data-hsh-done]'))more.append(node);if(more.children.length>1)toolbar.append(more);}
+// Compare unit prices locally; no form data leaves this browser.
+for(const form of document.querySelectorAll('[data-bottle-price]')){form.hidden=false;form.addEventListener('submit',e=>{
+ e.preventDefault();if(!form.reportValidity())return;
+ const values=['a_price','a_volume','b_price','b_volume'].map(k=>Number(form.elements[k].value));
+ if(values.some(v=>!Number.isFinite(v)||v<=0))return;
+ const [ap,av,bp,bv]=values,round=v=>Math.round((v+Number.EPSILON)*100)/100,a=round(ap/av*100),b=round(bp/bv*100),diff=round(Math.abs(a-b)),fmt=v=>new Intl.NumberFormat('ja-JP',{maximumFractionDigits:2}).format(v);
+ const end=diff===0?'100ml当たりの表示額は同じです。':'100ml当たりは'+(a<b?'A':'B')+'が'+fmt(diff)+'円安くなります。';
+ form.parentElement.querySelector('[data-bottle-result]').textContent='A：100ml当たり'+fmt(a)+'円。B：100ml当たり'+fmt(b)+'円。'+end;
+});
+}
+function printNotes(){for(const sheet of document.querySelectorAll('[data-sheet]')){let mirror=sheet.querySelector('.hsh-print-note');if(!mirror){mirror=el('p',undefined,'hsh-print-note');sheet.querySelector('textarea')?.after(mirror);}mirror.textContent=sheet.querySelector('textarea')?.value||'（メモなし）';}}
+addEventListener('beforeprint',printNotes);
 })();

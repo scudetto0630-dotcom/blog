@@ -1,0 +1,487 @@
+[
+  {
+    "id": 1,
+    "task": "既存記事の疑問と答えを一覧化",
+    "status": "今回実施・検証対象",
+    "details": "42記事の読者・疑問・導入・末尾・見出しを一覧化。",
+    "evidence": [
+      "CONTENT-DECISIONS.md",
+      "article-planning.json"
+    ]
+  },
+  {
+    "id": 2,
+    "task": "記事ごとの役割を明確化",
+    "status": "今回実施・検証対象",
+    "details": "体験談・解説・別商品の役割を保持。",
+    "evidence": [
+      "CONTENT-DECISIONS.md",
+      "article-planning.json"
+    ]
+  },
+  {
+    "id": 3,
+    "task": "統合する価値を判断",
+    "status": "判断済み・統合しない",
+    "details": "類似候補9組は別商品。統合しないと判断。",
+    "evidence": [
+      "CONTENT-DECISIONS.md",
+      "article-planning.json"
+    ]
+  },
+  {
+    "id": 4,
+    "task": "混在する話題の構成確認",
+    "status": "構成点検済み",
+    "details": "新しい短い近況は既存の記事へ置く。",
+    "evidence": [
+      "CONTENT-DECISIONS.md",
+      "article-planning.json"
+    ]
+  },
+  {
+    "id": 5,
+    "task": "公開検索結果と回答を照合",
+    "status": "今回実施・検証対象",
+    "details": "7候補語を公開検索。検索順位や検索数の実測ではない。",
+    "evidence": [
+      "CONTENT-DECISIONS.md",
+      "article-planning.json"
+    ]
+  },
+  {
+    "id": 6,
+    "task": "一次情報で補える違いを確認",
+    "status": "今回実施・検証対象",
+    "details": "本人のキャリー変形・香りの表現・入力式の比較道具を優先。",
+    "evidence": [
+      "CONTENT-DECISIONS.md",
+      "article-planning.json"
+    ]
+  },
+  {
+    "id": 7,
+    "task": "正式名・略称・言い換えを確認",
+    "status": "既存確認",
+    "details": "正式なバスカー名と本人の呼び方など既存表記を維持。",
+    "evidence": [
+      "CONTENT-DECISIONS.md",
+      "article-planning.json"
+    ]
+  },
+  {
+    "id": 8,
+    "task": "既存記事間の文脈リンク",
+    "status": "今回実施・検証対象",
+    "details": "写真3章・価格比較・最初の3本の章リンクを追加。",
+    "evidence": [
+      "CONTENT-DECISIONS.md",
+      "article-planning.json"
+    ]
+  },
+  {
+    "id": 9,
+    "task": "リンクの表示名を具体化",
+    "status": "既存確認",
+    "details": "既存の現在タイトルを使う関連記事を再確認。",
+    "evidence": [
+      "CONTENT-DECISIONS.md",
+      "article-planning.json"
+    ]
+  },
+  {
+    "id": 10,
+    "task": "カテゴリから目的別に誘導",
+    "status": "今回実施・検証対象",
+    "details": "ウイスキーカテゴリから単価比較へ直接移動。",
+    "evidence": [
+      "CONTENT-DECISIONS.md",
+      "article-planning.json"
+    ]
+  },
+  {
+    "id": 11,
+    "task": "未使用の本人回答を確認",
+    "status": "今回実施・検証対象",
+    "details": "よだれかけ・フロムの新回答を反映。既存回答は役割別に照合。",
+    "evidence": [
+      "CONTENT-DECISIONS.md",
+      "article-planning.json"
+    ]
+  },
+  {
+    "id": 12,
+    "task": "購入理由・結果・現在を照合",
+    "status": "今回実施・検証対象",
+    "details": "確認できた事実だけ反映。未回答の味は保留。",
+    "evidence": [
+      "CONTENT-DECISIONS.md",
+      "article-planning.json"
+    ]
+  },
+  {
+    "id": 13,
+    "task": "使わなかった物の判断材料",
+    "status": "既存確認",
+    "details": "冷感ハウス・クッションの未使用という事実を保持。",
+    "evidence": [
+      "CONTENT-DECISIONS.md",
+      "article-planning.json"
+    ]
+  },
+  {
+    "id": 14,
+    "task": "猫用品が合った理由を整理",
+    "status": "既存確認",
+    "details": "紙砂・羽じゃらし・キャリーの条件を個体の体験として保持。",
+    "evidence": [
+      "CONTENT-DECISIONS.md",
+      "article-planning.json"
+    ]
+  },
+  {
+    "id": 15,
+    "task": "迎える順番に記事を接続",
+    "status": "既存確認",
+    "details": "準備・まんもす・道具の既存導線を確認。",
+    "evidence": [
+      "CONTENT-DECISIONS.md",
+      "article-planning.json"
+    ]
+  },
+  {
+    "id": 16,
+    "task": "購入順と好みの変化",
+    "status": "今回実施・検証対象",
+    "details": "最初の陸・バスカー・リベットを章リンクで追える。",
+    "evidence": [
+      "CONTENT-DECISIONS.md",
+      "article-planning.json"
+    ]
+  },
+  {
+    "id": 17,
+    "task": "銘柄の感想を読み比べる",
+    "status": "既存確認",
+    "details": "既存銘柄比較を維持。フロムの味は作らない。",
+    "evidence": [
+      "CONTENT-DECISIONS.md",
+      "article-planning.json"
+    ]
+  },
+  {
+    "id": 18,
+    "task": "仕事の前後の変化",
+    "status": "既存確認",
+    "details": "MRから現在の仕事まで、本人回答の範囲で照合。",
+    "evidence": [
+      "CONTENT-DECISIONS.md",
+      "article-planning.json"
+    ]
+  },
+  {
+    "id": 19,
+    "task": "体験と一般論の区別",
+    "status": "既存確認",
+    "details": "新しい手順を架空例と明記し、実務経験にしない。",
+    "evidence": [
+      "CONTENT-DECISIONS.md",
+      "article-planning.json"
+    ]
+  },
+  {
+    "id": 20,
+    "task": "終わりで疑問に回答",
+    "status": "点検済み",
+    "details": "体験の結論と一般的な確認を分けて既存末尾を点検。",
+    "evidence": [
+      "CONTENT-DECISIONS.md",
+      "article-planning.json"
+    ]
+  },
+  {
+    "id": 21,
+    "task": "新記事の疑問を選定",
+    "status": "企画・判断済み",
+    "details": "12候補を追記・維持・保留へ分類。",
+    "evidence": [
+      "CONTENT-DECISIONS.md",
+      "article-planning.json"
+    ]
+  },
+  {
+    "id": 22,
+    "task": "公式資料から比較テーマ",
+    "status": "点検済み",
+    "details": "29商品の比較項目と公式リンクを既存点検記録で照合。",
+    "evidence": [
+      "CONTENT-DECISIONS.md",
+      "article-planning.json"
+    ]
+  },
+  {
+    "id": 23,
+    "task": "ウイスキー用語の不足確認",
+    "status": "既存確認",
+    "details": "シングルモルト・シングルカスク等を既存のラベル記事で確認。",
+    "evidence": [
+      "CONTENT-DECISIONS.md",
+      "article-planning.json"
+    ]
+  },
+  {
+    "id": 24,
+    "task": "データ加工の失敗を架空例で説明",
+    "status": "今回実施・検証対象",
+    "details": "CSVの先頭0が消えた3ケースを追加。",
+    "evidence": [
+      "CONTENT-DECISIONS.md",
+      "article-planning.json"
+    ]
+  },
+  {
+    "id": 25,
+    "task": "うまくいかない場合の説明",
+    "status": "今回実施・検証対象",
+    "details": "元ファイルに残る場合・消えた場合・桁数不明を分ける。",
+    "evidence": [
+      "CONTENT-DECISIONS.md",
+      "article-planning.json"
+    ]
+  },
+  {
+    "id": 26,
+    "task": "よくある誤解に具体例",
+    "status": "今回実施・検証対象",
+    "details": "表示形式と保存値の違いを図・事例で説明。",
+    "evidence": [
+      "CONTENT-DECISIONS.md",
+      "article-planning.json"
+    ]
+  },
+  {
+    "id": 27,
+    "task": "比較条件を統一",
+    "status": "既存確認",
+    "details": "計算機は銘柄・年数・度数・税込/送料条件をそろえる。",
+    "evidence": [
+      "CONTENT-DECISIONS.md",
+      "article-planning.json"
+    ]
+  },
+  {
+    "id": 28,
+    "task": "季節前の更新予定",
+    "status": "計画済み・未来の実施は未完了",
+    "details": "年末移動・春前の点検日を計画。未来の更新済みとは扱わない。",
+    "evidence": [
+      "CONTENT-DECISIONS.md",
+      "article-planning.json"
+    ]
+  },
+  {
+    "id": 29,
+    "task": "追記で済むか判断",
+    "status": "判断済み",
+    "details": "薄い新記事は作らず既存記事へ集約する判断。",
+    "evidence": [
+      "CONTENT-DECISIONS.md",
+      "article-planning.json"
+    ]
+  },
+  {
+    "id": 30,
+    "task": "下書きの事実・出典等点検",
+    "status": "今回実施・検証対象",
+    "details": "新しい本文・計算・写真文脈を下書きとテストで点検。",
+    "evidence": [
+      "CONTENT-DECISIONS.md",
+      "article-planning.json"
+    ]
+  },
+  {
+    "id": 31,
+    "task": "未使用の提供写真を確認",
+    "status": "写真点検済み",
+    "details": "本人提供28点、猫17点は既存ギャラリー対象。未使用と誤認しない。",
+    "evidence": [
+      "CONTENT-DECISIONS.md",
+      "article-planning.json"
+    ]
+  },
+  {
+    "id": 32,
+    "task": "写真を見る意味を補う",
+    "status": "既存確認",
+    "details": "既存の提供写真の文脈を保持。よだれかけ現物を写すと偽らない。",
+    "evidence": [
+      "CONTENT-DECISIONS.md",
+      "article-planning.json"
+    ]
+  },
+  {
+    "id": 33,
+    "task": "代替テキストを確認",
+    "status": "写真点検済み",
+    "details": "提供写真28点の非空の説明と公開表示を点検。",
+    "evidence": [
+      "CONTENT-DECISIONS.md",
+      "article-planning.json"
+    ]
+  },
+  {
+    "id": 34,
+    "task": "写真から体験記事へ誘導",
+    "status": "今回実施・検証対象",
+    "details": "写真の枕・爪とぎ・ブラッシングから該当章へ3リンク。",
+    "evidence": [
+      "CONTENT-DECISIONS.md",
+      "article-planning.json"
+    ]
+  },
+  {
+    "id": 35,
+    "task": "手順を図で説明",
+    "status": "今回実施・検証対象",
+    "details": "CSVの確認順をHTMLの4段階の図にした。",
+    "evidence": [
+      "CONTENT-DECISIONS.md",
+      "article-planning.json"
+    ]
+  },
+  {
+    "id": 36,
+    "task": "比較表のスマホ表示",
+    "status": "今回実施・検証対象",
+    "details": "320px/390pxで新しい表・計算機を点検。",
+    "evidence": [
+      "README.md"
+    ]
+  },
+  {
+    "id": 37,
+    "task": "100ml当たりの価格計算機",
+    "status": "今回実施・検証対象",
+    "details": "A/Bの総額と容量を入力して比較する道具を実装。",
+    "evidence": [
+      "README.md"
+    ]
+  },
+  {
+    "id": 38,
+    "task": "確認メモの印刷改善",
+    "status": "今回実施・検証対象",
+    "details": "長いメモを印刷用テキストへ複製。個人情報を送信しない。",
+    "evidence": [
+      "README.md"
+    ]
+  },
+  {
+    "id": 39,
+    "task": "計算の境界値検証",
+    "status": "今回実施・検証対象",
+    "details": "単価・同額・ゼロ・負値・上限・氷余白等を検証。",
+    "evidence": [
+      "README.md"
+    ]
+  },
+  {
+    "id": 40,
+    "task": "JavaScriptなしの説明",
+    "status": "今回実施・検証対象",
+    "details": "数式・事例・本文とアンカーはJSなしでも表示。",
+    "evidence": [
+      "README.md"
+    ]
+  },
+  {
+    "id": 41,
+    "task": "公式変更の定期検知",
+    "status": "今回実施・検証対象",
+    "details": "最終確認した公式ページ控えとの差分を毎日の点検へ設定。",
+    "evidence": [
+      "README.md"
+    ]
+  },
+  {
+    "id": 42,
+    "task": "記事ごとの確認期限",
+    "status": "今回実施・検証対象",
+    "details": "42記事のreview_due_atと時期別の作業表を出力。",
+    "evidence": [
+      "README.md"
+    ]
+  },
+  {
+    "id": 43,
+    "task": "転送先と別商品の確認",
+    "status": "今回実施・検証対象",
+    "details": "転送先の変化を検知。A8やHTTPへの自動転送は追わない。",
+    "evidence": [
+      "README.md"
+    ]
+  },
+  {
+    "id": 44,
+    "task": "主要スマホ操作の自動テスト",
+    "status": "今回実施・検証対象",
+    "details": "過去CIの折りたたみUIと旧文言のテストを修正。",
+    "evidence": [
+      "README.md"
+    ]
+  },
+  {
+    "id": 45,
+    "task": "更新前後の保持確認標準化",
+    "status": "今回実施・検証対象",
+    "details": "元本文・指紋・写真・広告・公開日を退避照合する既存手順を適用。",
+    "evidence": [
+      "README.md"
+    ]
+  },
+  {
+    "id": 46,
+    "task": "短い運用レポート",
+    "status": "今回実施・検証対象",
+    "details": "点検結果をまとめるMarkdownレポートを実装。",
+    "evidence": [
+      "README.md"
+    ]
+  },
+  {
+    "id": 47,
+    "task": "検索データの自動取得",
+    "status": "接続待ち",
+    "details": "読み取り専用コード・依存関係・安全保存・手順を用意。本人のGoogle設定待ち。",
+    "evidence": [
+      "README.md"
+    ]
+  },
+  {
+    "id": 48,
+    "task": "同条件のCTR候補抽出",
+    "status": "実データ待ち",
+    "details": "同じページ/語/端末/国・28日×2・表示数条件の解析を実装。実データなし。",
+    "evidence": [
+      "README.md"
+    ]
+  },
+  {
+    "id": 49,
+    "task": "同じ検索語の複数記事確認",
+    "status": "実データ待ち",
+    "details": "同じ語の複数ページを確認候補にする解析を実装。実データなし。",
+    "evidence": [
+      "README.md"
+    ]
+  },
+  {
+    "id": 50,
+    "task": "実績を比較して展開",
+    "status": "実績待ち",
+    "details": "比較用の仕組みは用意。実際の改善効果・展開判断はデータ蓄積後。",
+    "evidence": [
+      "README.md"
+    ]
+  }
+]

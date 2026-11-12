@@ -4,3 +4,7 @@ __pycache__/
 .env.*
 /tools/proofreading/node_modules/
 /site-content/proofreading/*/*.html
+
+/work/
+
+/.private/

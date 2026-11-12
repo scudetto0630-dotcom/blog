@@ -21,6 +21,7 @@ jobs:
           python -m unittest discover -s tests -p test_search_period_review.py
           python -m unittest discover -s tests -p test_story_application.py
           python -m unittest discover -s tests -p test_product_operations.py
+          python -m unittest discover -s tests -p test_fifty_growth_operations.py
           python tools/editorial-quality.py --output editorial-quality.json
       - name: Check public pages and internal links
         run: python tools/blog-audit.py --output blog-audit.json
@@ -31,7 +32,13 @@ jobs:
         run: python tools/revenue-readiness.py --output revenue-readiness.json
       - name: Check official product source URLs
         if: always()
-        run: python tools/audit-product-sources.py --output product-source-audit.json
+        run: python tools/audit-product-sources.py --output product-source-audit.json --previous site-content/operations/five-improvements-20261112/product-sources.json
+      - name: Build article-review queue and operational summary
+        if: always()
+        run: |
+          python tools/growth-planning-report.py --output growth-planning.json --markdown growth-planning.md
+          python tools/operations-summary.py --folder . --output operations-summary.md
+          cat operations-summary.md >> "$GITHUB_STEP_SUMMARY"
       - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         if: always()
         with:
@@ -42,6 +49,9 @@ jobs:
             product-source-audit.json
             editorial-quality.json
             revenue-readiness.json
+            growth-planning.json
+            growth-planning.md
+            operations-summary.md
           retention-days: 30
 
   japanese-copy:
@@ -92,7 +102,7 @@ jobs:
       - run: tools/browser-audit/node_modules/.bin/playwright install --with-deps chromium
       - name: Build isolated reader fixtures
         run: |
-          php tests/five-improvements.php > five-improvements-php.txt
+          php tests/fifty-growth.php > five-improvements-php.txt
           php tests/quality.php > quality-php.txt
           python tools/build-quality-preview.py quality-php.txt --output /tmp/quality-preview
       - name: Check saved records, import, notes, print and no-JS reading

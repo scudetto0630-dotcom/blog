@@ -70,7 +70,7 @@ add_action('wp_enqueue_scripts',function(){if(!hsh_reader_scope())return;wp_enqu
 function hsh_brushup_photo_stories(){
     $m=hsh_photo_manifest();$items=array(array('manmos-zip-pillow','枕の上でひと休み','まんもすは枕の上でのんびり。ふわふわの毛と、くつろいだ姿を写真に残しました。'),array('manmos-zip-scratcher','爪とぎの上が落ち着く場所','爪とぎの上もお気に入り。遊ぶためだけでなく、ひと休みする場所にもなっています。'),array('manmos-front','抱っこは苦手。でも甘えん坊','まんもすは抱っこがあまり好きではありません。甘えん坊でも、好きな距離感はまんもす次第。毎日のブラッシングをしながら、一緒に暮らしています。'));
     $out='<section class="hsh-photo-stories"><h2>写真でつづる、まんもすの毎日</h2>';
-    foreach($items as $r){$a=$m['assets'][$r[0]]??null;if(!$a)continue;$out.='<article><h3>'.esc_html($r[1]).'</h3><figure class="hsh-inline-photo">'.hsh_photo_image($a,false).hsh_photo_figcaption($a).'</figure><p>'.esc_html($r[2]).'</p></article>';}
+    foreach($items as $r){$a=$m['assets'][$r[0]]??null;if(!$a)continue;$out.='<article><h3>'.esc_html($r[1]).'</h3><figure class="hsh-inline-photo">'.hsh_photo_image($a,false).hsh_photo_figcaption($a).'</figure><p>'.esc_html($r[2]).'</p><p><a href="'.esc_url(home_url('/manmos-cat-life/#'.array('manmos-zip-pillow'=>'manmos-first-days','manmos-zip-scratcher'=>'manmos-cat-life-detail-0','manmos-front'=>'manmos-cat-life-detail-5')[$r[0]])).'">'.esc_html(array('manmos-zip-pillow'=>'翌日には枕の上へ来た話','manmos-zip-scratcher'=>'お気に入りの居場所の話','manmos-front'=>'ブラッシングの話')[$r[0]]).'を読む →</a></p></article>';}
     return $out.'<p><a href="'.esc_url(home_url('/manmos-cat-life/')).'">まんもすとの暮らしを、もう少し詳しく →</a></p></section>';
 }
 add_filter('the_content',function($content){$p=get_post();if($p&&$p->post_status==='publish'&&in_the_loop()&&is_main_query()&&$p->post_name==='hsh-gallery'&&get_post_meta($p->ID,'_hsh_bridge_owned',true)==='1')$content.=hsh_brushup_photo_stories();return $content;},28);

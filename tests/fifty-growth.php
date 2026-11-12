@@ -1,0 +1,27 @@
+<?php
+require __DIR__.'/five-improvements.php';
+$manmos=null;$csv=null;
+foreach(hsh_expanded_articles() as $r)if($r['slug']==='manmos-cat-life')$manmos=$r['content'];
+foreach(hsh_starter_articles() as $r)if($r['slug']==='csv-import-seven-checks')$csv=$r['content'];
+$m=hsh_studio_story_additions($manmos,'manmos-cat-life');
+check(substr_count($m,'id="manmos-bib"')===1&&strpos($m,'ひらがなのワッペン')!==false&&strpos($m,'嫌がるので、あまり着けていない')!==false,'confirmed bib facts render once without inventing tolerance');
+check(hsh_studio_story_additions($m,'manmos-cat-life')===$m,'bib addition is idempotent');
+preg_match_all('~<img\b[^>]*>~',$manmos,$before);preg_match_all('~<img\b[^>]*>~',$m,$after);
+check($before===$after,'owner addition preserves existing image tags');
+check(strpos($m,'id="manmos-bib"')<strpos($m,'id="manmos-cat-life-1"'),'old toy anchor stays with its original section');
+$c=hsh_studio_story_additions($csv,'csv-import-seven-checks');
+check(substr_count($c,'id="hsh-csv-leading-zero"')===1&&strpos($c,'バックアップや提供元')!==false,'CSV recovery explains source verification instead of guessing lost digits');
+check(hsh_studio_story_additions($c,'csv-import-seven-checks')===$c,'CSV addition is idempotent');
+check(strpos($c,'hsh-csv-leading-zero')<strpos($c,'csv-import-seven-checks-detail-5'),'original date anchors stay after the added zero-recovery example');
+$t=null;foreach(hsh_growth_tastes() as $r)if($r['name']==='フロム・ザ・バレル')$t=$r;
+check($t&&strpos($t['note'],'3,900円')!==false&&strpos($t['note'],'こぼれる')!==false,'From the Barrel note preserves confirmed purchase price and pouring experience');
+check(strpos($t['note'],'香り')===false&&strpos($t['note'],'飲みやす')===false,'no unreported taste is invented');
+$tool=hsh_studio_bottle_price();
+check(substr_count($tool,'<fieldset>')===2&&strpos($tool,'data-bottle-price')!==false&&strpos($tool,'min="0.01"')!==false,'unit-price comparison has two independent positive-price inputs');
+check(strpos($tool,'4,200円')!==false&&strpos($tool,'計算用の例')!==false&&strpos($tool,'<noscript>')!==false,'unit-price tool includes a labelled worked example and no-JS formula');
+check(strpos(hsh_studio_tool_shortcut('single-malt-label-guide'),'#hsh-bottle-price')!==false,'label guide links directly to comparison tool');
+check(strpos(hsh_brushup_photo_stories(),'#manmos-first-days')!==false&&strpos(hsh_brushup_photo_stories(),'#manmos-cat-life-detail-0')!==false&&strpos(hsh_brushup_photo_stories(),'#manmos-cat-life-detail-5')!==false,'all three photo stories connect to their real story sections');
+$official='<a href="https://www.pontely.com/forowner/cat?ref=a8">公式</a><a href="https://px.a8.net/svt/ejp?a8mat=test">広告</a>';
+$fixed=hsh_studio_current_source_links($official);
+check(strpos($fixed,'forowner/%E7%8C%AB')!==false&&strpos($fixed,'https://px.a8.net/svt/ejp?a8mat=test')!==false,'current HTTPS official source replaces only the old reference and preserves A8');
+echo "All fifty-growth checks passed. Total: $tests\n";

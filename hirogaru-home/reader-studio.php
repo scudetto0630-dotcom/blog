@@ -49,12 +49,13 @@ add_filter('the_content',function($c){
  if($slug==='cat-vet-routine')$c.=hsh_studio_checklist('vet-note','診察で伝えたいこと',array('気になる様子がいつから始まったか','食事・水・排泄の変化','現在のフード・薬・サプリの名前','撮影した写真や動画を見せられるようにする'));
  if(in_array($slug,array('mognyan-cat-food-guide','canagan-chicken-salmon','paws-green-deli-cat-food'),true))$c.=hsh_studio_checklist('food-note','ごはんの切り替え記録',array('開始日と、これまでのフードを記録する','与えた種類・量・食べ残しを記録する','便や体調で気付いたことを記録する','不調があれば変更を進めず獣医師に相談する'));
  if($slug==='highball-measure-and-adjust')$c.=hsh_studio_highball();
+ if($slug==='single-malt-label-guide')$c.=hsh_studio_bottle_price();
  if(in_array($slug,array('glenlivet-12-first-bottles','sherry-cask-notes','highball-measure-and-adjust'),true))$c.=hsh_studio_checklist('tasting-'.$slug,'自分の好みを残すメモ',array('銘柄と飲んだ日','飲み方と、自分で用意した分量','香りで思い浮かんだもの','飲みやすさと、次に変えてみたいこと'));
  if($slug==='ai-data-extraction-checks')$c.=hsh_studio_examples();
  if($slug==='csv-import-seven-checks'){$example=hsh_studio_examples();if(preg_match('~<h3>Excel・スプレッドシート・CSVの違い</h3>(.*?)</section>~s',$example,$formats))$c.='<section class="hsh-data-practice"><h2>Excel・スプレッドシート・CSVの違い</h2>'.$formats[1].'</section>';}
  return $c.hsh_studio_postscript($slug,$a['topic']);
 },29);
-add_action('wp_enqueue_scripts',function(){if(!hsh_reader_scope())return;wp_enqueue_style('hsh-studio',plugin_dir_url(__FILE__).'assets/studio.css',array('hsh-brushup'),'1.38.2');wp_enqueue_script('hsh-studio',plugin_dir_url(__FILE__).'assets/studio.js',array('hsh-brushup'),'1.38.14',true);},140);
+add_action('wp_enqueue_scripts',function(){if(!hsh_reader_scope())return;wp_enqueue_style('hsh-studio',plugin_dir_url(__FILE__).'assets/studio.css',array('hsh-brushup'),'1.42.0');wp_enqueue_script('hsh-studio',plugin_dir_url(__FILE__).'assets/studio.js',array('hsh-brushup'),'1.42.0',true);},140);
 // The native WordPress relevance ordering already prioritizes matching titles.
 add_action('pre_get_posts',function($q){if(!is_admin()&&$q->is_main_query()&&$q->is_search())$q->set('orderby','relevance');},35);
 function hsh_studio_home_products(){
@@ -70,6 +71,7 @@ function hsh_studio_care(){return '<section class="hsh-care-notes"><h3>素材と
 add_filter('the_content',function($c){if(!in_the_loop()||!is_main_query())return $c;$p=get_post();if(!$p||!hsh_owned_blog_post($p))return $c;$c=hsh_studio_dates($p).hsh_studio_series($p->post_name).$c;if(in_array($p->post_name,array('hario-cat-bowl-guide','onekosama-cat-tower','catlog-cat-monitor','m-and-cat-knit-bag'),true))$c.=hsh_studio_care();return $c;},30);
 function hsh_studio_rendered($html){
  if(strpos($html,'hsh-reader-site')===false||strpos($html,'</head>')===false)return $html;
+ $html=hsh_studio_current_source_links($html);
  $paged=function_exists('get_query_var')?max(1,(int)get_query_var('paged')):1;if($paged>1&&hsh_current_topic())$html=preg_replace_callback('~<title>(.*?)</title>~s',function($m)use($paged){return '<title>'.$m[1].'（'.$paged.'ページ目）</title>';},$html,1);
  $legacy=json_decode(file_get_contents(__DIR__.'/legacy-title-labels.json'),true)?:array();$map=array();foreach($legacy as $r)$map[$r['before']]=$r['after'];
  return preg_replace_callback('~(<a\b[^>]*href=[\x22\x27]'.preg_quote(home_url('/'),'~').'[^\x22\x27]*[\x22\x27][^>]*>)([^<]+)(</a>)~u',function($m)use($map){$label=html_entity_decode($m[2],ENT_QUOTES,'UTF-8');return isset($map[$label])?$m[1].esc_html($map[$label]).$m[3]:$m[0];},$html);
@@ -84,6 +86,7 @@ function hsh_studio_dates($p){
 
 function hsh_studio_tool_shortcut($slug) {
     $tools=array(
+        'single-malt-label-guide'=>array('hsh-bottle-price','容量の違うボトルの単価を比べる'),
         'highball-measure-and-adjust'=>array('hsh-highball-calculator','好みの割合で分量を計算する'),
         'ai-data-extraction-checks'=>array('hsh-extraction-example','架空の表で抽出結果を比べる'),
         'cat-carrier-checklist'=>array('hsh-sheet-carrier-measure','キャリーの確認メモを使う'),
@@ -98,3 +101,37 @@ add_filter('the_content',function($content){
     $link=hsh_studio_tool_shortcut($post->post_name);if($link==='')return $content;
     return preg_replace('~</p>~i','</p>'.$link,$content,1);
 },8);
+
+function hsh_studio_bottle_price() {
+    $out='<section class="hsh-highball-tool hsh-bottle-price" id="hsh-bottle-price"><h2>容量の違うボトル、単価を比べてみる</h2><p>同じ銘柄・年数・度数の商品で、税込価格と送料の条件をそろえて比べてください。100ml当たりの金額を計算し、小数第2位まで表示します。</p><form data-bottle-price hidden>';
+    foreach(array('a'=>'A','b'=>'B') as $key=>$label){
+        $out.='<fieldset><legend>ボトル'.$label.'</legend><label>'.$label.'の支払総額（円）<input name="'.$key.'_price" type="number" min="0.01" max="10000000" step="0.01" required inputmode="decimal"></label><label>'.$label.'の容量（ml）<input name="'.$key.'_volume" type="number" min="1" max="100000" step="1" required inputmode="numeric"></label></fieldset>';
+    }
+    return $out.'<button type="submit">100ml当たりの金額を比べる</button></form><p data-bottle-result role="status" aria-live="polite">計算例：700mlで4,200円なら100ml当たり600円、1,000mlで5,500円なら550円。ここで使った価格は計算用の例です。</p><noscript><p>計算式は「支払総額÷容量（ml）×100」です。電卓でも同じように比べられます。</p></noscript></section>';
+}
+function hsh_studio_csv_recovery() {
+    return '<section class="hsh-data-practice" id="hsh-csv-leading-zero"><h2>先頭の0が消えたら、元のファイルから確認する</h2><p>「00123」が「123」になっていたら、まずは上書き前のファイルを残そう。元のCSVをテキストとして開き、値が残っているかを確認する。値が残っていれば、そのファイルを使い、番号の列を文字列として取り込み直す。</p><ol class="hsh-data-flow"><li>元のCSVを残す</li><li>テキストで値を確認</li><li>番号の列を文字列で取り込む</li><li>保存したCSVと取り込み結果を照合</li></ol><table><thead><tr><th>見つかった状態</th><th>次にすること</th></tr></thead><tbody><tr><td>元のCSVには00123が残っている</td><td>元ファイルから、番号の列を文字列として取り込み直す</td></tr><tr><td>上書きしたCSVも123になっている</td><td>バックアップや提供元のデータと照合する</td></tr><tr><td>元の番号の桁数が分からない</td><td>番号の仕様や提供元を確認してから補正方法を決める</td></tr></tbody></table><p>表示形式で0を付ける方法は、見た目を整えるためのもの。別のシステムに渡すCSVでは、保存された値にも0が残っているか確かめよう。<a href="https://support.microsoft.com/ja-jp/excel/keeping-leading-zeros-and-large-numbers">Microsoftの先頭のゼロと大きい数値の案内</a>でも、文字列として扱う方法や表示形式の違いを確認できる。</p></section>';
+}
+function hsh_studio_story_additions($content,$slug) {
+    if($slug==='manmos-cat-life'&&strpos($content,'manmos-bib')===false){
+        $bib='<h2 id="manmos-bib">100均のガーゼで、名前入りのよだれかけを作った</h2><p>まんもすによだれかけを作ってあげた。100均で布ガーゼと、アイロンで貼り付けるひらがなのワッペンを買い、「まんもす」と名前を付けた。</p><p>ただ、嫌がるので、あまり着けていない。よだれは取れるから、いいかなと思っている。</p>';
+        $needle='<span id="manmos-cat-life-1" class="hsh-anchor" aria-hidden="true"></span>';
+        if(strpos($content,$needle)!==false)$content=str_replace($needle,$bib.$needle,$content);
+    }
+    if($slug==='csv-import-seven-checks'&&strpos($content,'hsh-csv-leading-zero')===false){
+        $needle='<span class="hsh-anchor" id="csv-import-seven-checks-detail-5" aria-hidden="true"></span>';
+        if(strpos($content,$needle)!==false)$content=str_replace($needle,hsh_studio_csv_recovery().$needle,$content);
+        else $content.=hsh_studio_csv_recovery();
+    }
+    return $content;
+}
+add_filter('the_content',function($content){
+    if(!is_singular('post')||!in_the_loop()||!is_main_query())return $content;
+    $p=get_post();return $p&&hsh_owned_blog_post($p)?hsh_studio_story_additions($content,$p->post_name):$content;
+},9);
+
+function hsh_studio_current_source_links($html) {
+    $old='https://www.pontely.com/forowner/cat?ref=a8';
+    $new='https://www.pontely.com/forowner/%E7%8C%AB%E3%81%AE%E9%81%BA%E4%BC%9D%E5%AD%90%E6%A4%9C%E6%9F%BB';
+    return str_replace('href="'.esc_url($old).'"','href="'.esc_url($new).'"',$html);
+}

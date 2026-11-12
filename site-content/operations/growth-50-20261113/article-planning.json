@@ -1,0 +1,1408 @@
+{
+  "checked_on": "2026-11-13",
+  "article_count": 42,
+  "articles": [
+    {
+      "slug": "cat-carrier-checklist",
+      "title": "猫用リュックキャリーがへこんだ話｜10年以上前の頑丈な物を使い直した理由",
+      "topic": "cats",
+      "reader": "大きめの猫のキャリーを買い替える飼い主",
+      "question": "約6,000円の新しいリュックがへこみ、10年以上前の頑丈なキャリーを使い直した理由と不満は？",
+      "question_basis": "editorial_definition_not_search_volume",
+      "role": "experience",
+      "headings": [
+        "約6,000円のリュックは、まんもすを入れると上部がへこんだ",
+        "取り出したのは、10年以上前のキャリーだった",
+        "背負うことも、車輪で引っ張ることもできる",
+        "避難先での居場所も考えて、餌やシーツを常備",
+        "1．猫を出し入れしやすいか",
+        "2．扉や留め具がきちんと閉まるか",
+        "3．猫を入れても無理なく運べるか",
+        "4．汚れたときに掃除しやすいか",
+        "5．家のどこに置くか",
+        "サイズと価格で迷ったときは",
+        "猫の体重だけでサイズを決めない",
+        "価格だけで判断しない",
+        "買い替える前に、今のどこが不便か考えてみよう",
+        "選ぶ前のチェックリスト",
+        "次に読むなら"
+      ],
+      "opening": "約1年前、まんもす用に6,000円くらいのリュック型キャリーを買った。持ち運びやすかったけれど、まんもすを入れると上部がへこむようになった。そこで、10年以上前から持っていた頑丈なキャリーを使い直すことにした。同じリュック型でも、猫を入れたときの形と運びやすさは違った。",
+      "ending": "これから猫を迎える方には、別サイト「ねこのとなり」の 迎えた最初の数日の過ごし方 も参考になります。",
+      "external_sources": [
+        "https://www.jreast.co.jp/kippu/20.html"
+      ],
+      "review_due_at": "2027-01-24",
+      "review_due": false,
+      "decision": "maintain_distinct_question; verify_before_merging"
+    },
+    {
+      "slug": "highball-measure-and-adjust",
+      "title": "ハイボールが薄い？ ウイスキーを足す前に見てみよう",
+      "topic": "whisky",
+      "reader": "家で作るハイボールが薄いと感じる人",
+      "question": "ウイスキーを足す前に、配合や氷のどこを見直せばよいか？",
+      "question_basis": "editorial_definition_not_search_volume",
+      "role": "guide",
+      "headings": [
+        "まず、ウイスキーと炭酸水を何mL入れたか",
+        "冷やし方と作る順番も、そろえておこう",
+        "味が薄いのか、炭酸が弱いのかを分けて考える",
+        "メモは「何を変えたか」が分かれば十分",
+        "配合やグラスに迷ったときは",
+        "配合は好みや銘柄に合わせて調整する",
+        "専用グラスを買う前に容量を確認する",
+        "次の1杯で迷わないよう、分量を残しておく",
+        "次の一杯に使う配合メモ",
+        "ハーフロックとハイボールは、割る物が違う",
+        "次に読むなら"
+      ],
+      "opening": "ハイボールが薄いと、ついウイスキーを足したくなる。でも、物足りないのが味なのか、炭酸の刺激なのかで、見直すところは変わる。分量や氷、炭酸水の状態を確かめると、次に作るときの調整もしやすくなる。",
+      "ending": "ハイボールの炭酸の刺激が気になるときは、水で割る飲み方も候補になる。濃さを比べたいなら、ウイスキーと割り材をそれぞれ何mL使ったか残しておこう。",
+      "external_sources": [
+        "https://www.suntory.co.jp/whisky/beginner/drink/highball.html"
+      ],
+      "review_due_at": "2027-01-24",
+      "review_due": false,
+      "decision": "maintain_distinct_question; verify_before_merging"
+    },
+    {
+      "slug": "csv-import-seven-checks",
+      "title": "CSVを取り込む前に。0や空欄を変えないための7つの確認",
+      "topic": "it-freelance",
+      "reader": "CSVを表計算に取り込む人",
+      "question": "先頭の0や日付、空欄を変えずに取り込むには何を確認するか？",
+      "question_basis": "editorial_definition_not_search_volume",
+      "role": "guide",
+      "headings": [
+        "開く前に、元のファイルを残しておこう",
+        "1．文字コードと区切り文字",
+        "2．どの列をどの項目に入れるか",
+        "3．先頭の0や長い番号が変わっていないか",
+        "4．日付の書き方が取り込み先に合っているか",
+        "5．空欄を含むデータがどう処理されるか",
+        "6．何を重複と判断するか",
+        "7．取り込み後の件数とエラー",
+        "ExcelやAIを使うときの注意点",
+        "Excelでの表示と保存されたデータの違い",
+        "AIにデータを渡す前の確認",
+        "どこまで終わったか、後で分かるように",
+        "取り込み前の確認メモ",
+        "次に読むなら"
+      ],
+      "opening": "CSVを開いたとき、番号の先頭の0が消えてしまうことがある。そんな取り込みミスを防ぐには、まず原本を残し、コピーで数行を試しておきたい。この記事では、文字コードや区切り、列の対応などを順に確かめながら、元の値を変えずに取り込む方法を紹介する。",
+      "ending": "Excelの操作は Microsoftのテキスト・CSV取り込みの案内 で確認。画面名や使える機能はExcelのバージョンによって異なる。",
+      "external_sources": [
+        "https://support.microsoft.com/ja-jp/office/%E3%83%86%E3%82%AD%E3%82%B9%E3%83%88-txt-%E3%81%BE%E3%81%9F%E3%81%AF-csv-%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E3%82%A4%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%88%E3%81%BE%E3%81%9F%E3%81%AF%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%88-5250ac4c-663c-47ce-937b-339e391393ba",
+        "https://www.rfc-editor.org/rfc/rfc4180"
+      ],
+      "review_due_at": "2027-01-24",
+      "review_due": false,
+      "decision": "maintain_distinct_question; verify_before_merging"
+    },
+    {
+      "slug": "before-welcoming-cat",
+      "title": "猫を迎える準備、まず何を買う？ 部屋の片付けも忘れずに",
+      "topic": "cats",
+      "reader": "初めて猫を迎える人",
+      "question": "迎える前に何を用意し、保護主へ何を聞いておくか？",
+      "question_basis": "editorial_definition_not_search_volume",
+      "role": "guide",
+      "headings": [
+        "大きなタワーを用意しても、使う場所は猫次第",
+        "最初の買い物は、今のお世話を聞いてから",
+        "まずそろえるのは、毎日使う物",
+        "部屋は、立ったまま見ただけでは分からない",
+        "買ったら、一度置いてみよう",
+        "病院と、困ったときの相談先も決めておく",
+        "初日から仲良くなろうと頑張りすぎない",
+        "あわせて読みたい記事"
+      ],
+      "opening": "猫用品をそろえても、全部気に入ってくれるとは限らない。まんもすは紙砂が好きだし、大きなタワーを用意しても上までは登らなかった。迎える前の買い物は、まず保護主さんに今のごはんやトイレの習慣を聞くところから始めたい。",
+      "ending": "気になる変化があれば保護主さんや動物病院へ相談する。必要な物と相談先をそろえておけば、迎えた後に困ったときも対応しやすい。",
+      "external_sources": [],
+      "review_due_at": "2027-01-24",
+      "review_due": false,
+      "decision": "maintain_distinct_question; verify_before_merging"
+    },
+    {
+      "slug": "manmos-cat-life",
+      "title": "保護猫まんもすとの出会い｜ひと目で「この子だ」と思って迎えた日",
+      "topic": "cats",
+      "reader": "このブログとまんもすを初めて知る人",
+      "question": "カカオの保護をきっかけに、本人はどうしてまんもすを迎え、今どんな暮らしをしているか？",
+      "question_basis": "editorial_definition_not_search_volume",
+      "role": "experience",
+      "headings": [
+        "室外機の裏で鳴いていた子猫、カカオ",
+        "大きなまんもすを見て、ひと目で「この子だ」",
+        "最初はキョドっていたけど、翌日には枕の上へ",
+        "今は甘えん坊。でも抱っこは苦手",
+        "「ちゃぁぁぁ」と鳴いて、袖にフミフミ",
+        "おもちゃは、猫によって本当に好みが違う",
+        "顔のアップと全身では、けっこう印象が違う",
+        "猫と暮らすのは、まんもすが初めてではない",
+        "冷感ハウスには、一度も入らなかった",
+        "猫砂は、処理が楽な紙砂が合っていた",
+        "5.5kgという数字だけで、体型は判断できない",
+        "ファーミネーターは、抜け毛がよく取れる",
+        "今は、以前から持っていた頑丈なキャリーを使う",
+        "あわせて読みたい記事"
+      ],
+      "opening": "まんもすを迎えた日は、誰かを引き取って帰ると決めてシェルターへ向かった。「この子だ」と思える猫に、きっと会える気がしていたから。そうして出会ったのが、めちゃくちゃ大きなまんもすだった。猫を迎えようと決めるまでには、その1か月前に保護した子猫、カカオのことがあった。",
+      "ending": "まずはまんもすの顔と名前を覚えてもらえたらうれしい。枕の上や爪とぎでくつろぐ姿も、写真と一緒に少しずつ残していきたい。",
+      "external_sources": [],
+      "review_due_at": "2027-01-24",
+      "review_due": false,
+      "decision": "maintain_distinct_question; verify_before_merging"
+    },
+    {
+      "slug": "cat-teaser-small-parts",
+      "title": "100均のねこじゃらしを愛用してるけど、一つだけ注意点が！",
+      "topic": "cats",
+      "reader": "猫じゃらしを選び管理する飼い主",
+      "question": "安価なおもちゃも使う中で、小さな部品や傷みをどう点検するか？",
+      "question_basis": "editorial_definition_not_search_volume",
+      "role": "experience-and-guide",
+      "headings": [
+        "飾りを見るときは、その付け根も見る",
+        "包装の外から分からないところもある",
+        "新品の形を覚えておくと、後で気付きやすい",
+        "遊ばない日まで、無理に追わせなくていい",
+        "片付ける場所まで決めておこう",
+        "片付けて、次に遊ぶときにまた出す",
+        "部品が見当たらないときは",
+        "あわせて読みたい記事"
+      ],
+      "opening": "まんもすが好きなのは、100均の羽付きねこじゃらし。安い物でもよく遊んでくれる。ただ、小さな飾りが取れて飲み込んでしまいそうな物は避けている。買う前に先端やつなぎ目を見て、遊んだ後にも傷んでいないか確かめよう。",
+      "ending": "おもちゃ選びで気になるのは、遊んでくれるかどうか。でも、その前に作りを見て、遊んだ後に片付ける。高い物でも安い物でも、そこは同じように気を付けたいと思っている。",
+      "external_sources": [],
+      "review_due_at": "2027-01-24",
+      "review_due": false,
+      "decision": "maintain_distinct_question; verify_before_merging"
+    },
+    {
+      "slug": "cat-vet-routine",
+      "title": "猫の通院前に何を用意する？ 持ち物と、これだけは伝えたいこと",
+      "topic": "cats",
+      "reader": "猫の通院前の飼い主",
+      "question": "持ち物と獣医師に伝える情報をどう整理するか？",
+      "question_basis": "editorial_definition_not_search_volume",
+      "role": "guide",
+      "headings": [
+        "食事や薬を変える前に、病院の案内を確認",
+        "メモは、いつからどう違うかが分かればいい",
+        "家での様子は、動画が役に立つことも",
+        "薬は「白い錠剤」より、名前の分かる物を",
+        "キャリーは、猫を入れる前に点検",
+        "家に帰ったら、次の予定を残しておく",
+        "普段のまんもすを、言葉で伝えられるように",
+        "あわせて読みたい記事"
+      ],
+      "opening": "まんもすの通院には通院手帳を持っていき、キャリーにはタオルとペットシーツを敷いている。診察では「いつから、普段と何が違うか」を伝えたい。必要な持ち物や当日の食事・薬の扱いは、病院の案内に合わせて準備しよう。",
+      "ending": "まんもすは甘えているときによだれが出ることもある。いつもより急に増えたり、食べ方や元気も違ったりするなら、その変化を病院へ伝えたい。",
+      "external_sources": [],
+      "review_due_at": "2027-01-24",
+      "review_due": false,
+      "decision": "maintain_distinct_question; verify_before_merging"
+    },
+    {
+      "slug": "glenlivet-12-first-bottles",
+      "title": "グレンリベット12年の感想｜グラス付きで買った3本目がうまかった",
+      "topic": "whisky",
+      "reader": "グレンリベット12年の個人の感想を知りたい人",
+      "question": "グラス付きで選んだ3本目のグレンリベット12年を、本人はどう感じたか？",
+      "question_basis": "editorial_definition_not_search_volume",
+      "role": "experience",
+      "headings": [
+        "ウイスキーに興味が出て、3本目に選んだ",
+        "グラス付きで、思っていた金額より少し安かった",
+        "第一印象は「飲みやすい！」だった",
+        "香りの例えが、そのまま味になると思っていた（笑）",
+        "今は花のような香りも好き。普段は薄めで楽しむ",
+        "ほかに飲んだウイスキーはどうだった？",
+        "グラス付きで買って、飲んでも好きになった",
+        "この記事について",
+        "あわせて読みたい記事"
+      ],
+      "opening": "グレンリベット12年は、ウイスキーに興味が出てから3本目に買ったウイスキー。スーパーでグラス付きのものが少し安く売られていて、迷わず購入した。飲んだときの第一印象は「飲みやすい！」。香りの説明をそのまま味だと思っていた勘違いもあったけど、そのときまでに買ったウイスキーの中では、格段にうまいと感じた1本だった。",
+      "ending": "お酒は20歳になってから。運転する予定があるときや、健康上の理由で飲酒を控える必要があるときは飲まないでください。",
+      "external_sources": [],
+      "review_due_at": "2027-01-24",
+      "review_due": false,
+      "decision": "maintain_distinct_question; verify_before_merging"
+    },
+    {
+      "slug": "single-malt-label-guide",
+      "title": "初めてのウイスキー、ラベルはどこ見る？",
+      "topic": "whisky",
+      "reader": "シングルモルト選びを始めた人",
+      "question": "年数・容量・度数など、ラベルのどこから読むか？",
+      "question_basis": "editorial_definition_not_search_volume",
+      "role": "guide",
+      "headings": [
+        "同じブランドでも、中身まで同じとは限らない",
+        "「シングル」は、樽が1つという意味ではない",
+        "年数は、おいしさの点数ではない",
+        "値札を比べるなら、容量も一緒に",
+        "グラス付きは気になる。自分もそれで買った",
+        "飲んだ感想は、短くても自分の言葉で",
+        "次に買う1本は、表示と自分の好みで選ぶ",
+        "同じ「飲みやすい」でも、好きなところは違う",
+        "あわせて読みたい記事"
+      ],
+      "opening": "初めてウイスキーを選ぶなら、まずはラベルの商品名・年数・容量・アルコール度数を見てみよう。似たボトルでも、容量や度数が違えば別の商品。表示をそろえて比べると、値段やレビューを取り違えずに読める。",
+      "ending": "シングルモルトの意味は、サントリーの シングルモルトガイド でも確認できる。単一の蒸溜所でつくられたモルトウイスキーを指す言葉で、味の甘さや飲みやすさを決める表示ではない。",
+      "external_sources": [
+        "https://www.suntory.co.jp/whisky/malt/"
+      ],
+      "review_due_at": "2027-01-24",
+      "review_due": false,
+      "decision": "maintain_distinct_question; verify_before_merging"
+    },
+    {
+      "slug": "sherry-cask-notes",
+      "title": "グレンファークラス12年の感想｜ぶどうパン好きが何度も買う理由",
+      "topic": "whisky",
+      "reader": "グレンファークラス12年の個人の感想を知りたい人",
+      "question": "ぶどうパン好きの本人が、値段を高いと感じてもグレンファークラス12年を何度も買うのはなぜか？",
+      "question_basis": "editorial_definition_not_search_volume",
+      "role": "experience",
+      "headings": [
+        "きっかけはYouTubeで聞いた「ぶどうパンみたいな香り」",
+        "注いだときから「めっちゃぶどうパン」",
+        "味はまろやかでうまい。刺激はかすかにある",
+        "普段はストレートかハーフロックで飲む",
+        "ウイスキーが苦手な人にも合うかも、とは思う",
+        "高いと思っても、何度も買ってしまう理由",
+        "ぶどうパン好きの、自分へのご褒美",
+        "あわせて読みたい記事"
+      ],
+      "opening": "グレンファークラス12年を何度も買っている。一番好きなのは、ぶどうパンのような香りだ。ぶどうパンが大好きな自分には、グラスへ注ぐ段階から「めっちゃぶどうパン」と感じるこの香りがたまらない。値段は高いと思うけど、特別な日に自分へのご褒美として選んでいる。",
+      "ending": "シェリーの用語を調べるなら、シェリー原産地呼称統制委員会の 「Oloroso」 、 「Pedro Ximénez」 の説明も参考になります。この記事の「ぶどうパン」は自分の香りの感想で、原材料や樽の種類・割合を示すものではありません。",
+      "external_sources": [
+        "https://www.sherry.wine/sherry-wine/dry-sherry-wines/oloroso",
+        "https://www.sherry.wine/sherry-wine/naturally-sweet-sherry-wine/pedro-ximenez"
+      ],
+      "review_due_at": "2027-01-24",
+      "review_due": false,
+      "decision": "maintain_distinct_question; verify_before_merging"
+    },
+    {
+      "slug": "it-data-work-flow",
+      "title": "AIでデータ抽出が楽に。今現在のデータ加工のお仕事",
+      "topic": "it-freelance",
+      "reader": "AIを使うデータ加工の仕事に関心がある人",
+      "question": "本人は今のデータ抽出・並べ替えでどのようにAIを使っているか？",
+      "question_basis": "editorial_definition_not_search_volume",
+      "role": "experience",
+      "headings": [
+        "自分がAIで楽になったのは、データ抽出",
+        "抽出と並べ替えは、やっていることが違う",
+        "架空の依頼で、加工後の形を考えてみる",
+        "列の名前が似ていても、中身は確かめる",
+        "数行の完成見本があると、話が具体的になる",
+        "試す場所と、操作していい範囲を決める",
+        "「成功しました」が出ても、まだ見るところがある",
+        "最初から全部分かって始めたわけではない",
+        "あわせて読みたい記事"
+      ],
+      "opening": "今はフリーランスで、データを抽出したり並べ替えたりする仕事をしている。ChatGPTやCodexに抽出を任せることもあって、作業はかなり楽になった。",
+      "ending": "知らないって損だと思う。道具の違いや何ができるのかを調べてみて、本当によかった。最初から分かっていたわけではないけど、今は抽出や並べ替えのように、実際の作業と結び付けて考えられるようになった。",
+      "external_sources": [],
+      "review_due_at": "2027-01-24",
+      "review_due": false,
+      "decision": "maintain_distinct_question; verify_before_merging"
+    },
+    {
+      "slug": "starting-it-without-specialty",
+      "title": "ITに興味を持ってから、自分に合う仕事に出会うまで約1年",
+      "topic": "it-freelance",
+      "reader": "未経験からITの仕事を考える人",
+      "question": "本人は興味を持ってから今の仕事までどう進んだか？",
+      "question_basis": "editorial_definition_not_search_volume",
+      "role": "experience",
+      "headings": [
+        "知らない仕事は、名前を聞いても想像しにくい",
+        "今の仕事は、データを加工すること",
+        "今から探すなら、1日の流れを聞いてみる",
+        "面白そうかどうかは、小さく試すと分かりやすい",
+        "勉強する物は、今やりたい作業から考える",
+        "AIには、用語の説明より作業例を聞いてみる",
+        "知人の紹介で、自分の経験が合う仕事に出会った",
+        "最初に迷っていたことも、書いておきたい",
+        "あわせて読みたい記事"
+      ],
+      "opening": "ITの仕事はかっこよくて、給料もよさそう。そんな理由で興味を持ったけれど、最初はどんな分野があるのかも、自分が何をしたいのかも分からなかった。何の言語を勉強するかを決める以前に、自分がどんな仕事をしたいのかで迷い、知人の紹介で自分の経験が合う仕事に出会うまで、なんだかんだ1年近くかかった。",
+      "ending": "ただ、何をやりたいか決まっていないなら、そこを考えるところからでいいと思う。自分も、やりたい仕事が最初から決まっていたわけではない。まずは一つ、毎日の作業を想像できる仕事を見つける。作業の内容が見えれば、勉強したいことも少しずつ絞っていける。",
+      "external_sources": [],
+      "review_due_at": "2027-01-24",
+      "review_due": false,
+      "decision": "maintain_distinct_question; verify_before_merging"
+    },
+    {
+      "slug": "ai-data-extraction-checks",
+      "title": "AIにデータ抽出を頼んだら、できた表のどこを見る？",
+      "topic": "it-freelance",
+      "reader": "AIに表やデータ抽出を頼む人",
+      "question": "返された表のどこを元データと照合すればよいか？",
+      "question_basis": "editorial_definition_not_search_volume",
+      "role": "guide",
+      "headings": [
+        "「必要なデータだけ」は、人によって違う",
+        "変えてほしくない値も、先に伝える",
+        "まずは架空の4行で試してみよう",
+        "「完了」を探したのに「未完了」まで入ってしまう？",
+        "件数が合っていても、まだ安心はできない",
+        "間違いを伝えるなら、その1行を見せる",
+        "正解例までAI任せにはしない",
+        "指示と出力を、一組にして残しておく",
+        "架空の4行で、依頼と出力を比べてみる",
+        "あわせて読みたい記事"
+      ],
+      "opening": "AIが出した表は、件数が合っていても中身まで正しいとは限らない。残ったIDを見て、必要な行が抜けていないか、空欄や先頭の0が変わっていないかを確かめよう。ここでは架空の4行を使い、依頼文と正解例を見比べながら確認する。",
+      "ending": "最初から完璧な依頼文を作ろうとするより、まず架空の数行で試す。どこが違ったかを見て、条件を直し、もう一度比べる。小さいうちなら、自分でも結果を追いやすい。",
+      "external_sources": [],
+      "review_due_at": "2027-01-24",
+      "review_due": false,
+      "decision": "maintain_distinct_question; verify_before_merging"
+    },
+    {
+      "slug": "paws-green-deli-cat-food",
+      "title": "【ご紹介】パウズグリーンデリの猫用フード｜お試しセットの内容と選び方",
+      "topic": "cats",
+      "reader": "猫用お試しフードを検討する飼い主",
+      "question": "セットの内容は何で、主食とトッピングをどう区別するか？",
+      "question_basis": "editorial_definition_not_search_volume",
+      "role": "product",
+      "headings": [
+        "グルメデリは「いつものごはんに足す物」",
+        "主食を探しているなら、メインディッシュを見る",
+        "猫用のお試しは、3種類が2袋ずつ",
+        "返金保証は、対象商品と連絡期限をセットで読む",
+        "買う前は、この4点を確認する"
+      ],
+      "opening": "この記事には広告が含まれます。",
+      "ending": "あわせて読む： 猫を迎える前に用意したい物",
+      "external_sources": [
+        "https://paws-green-deli.com/"
+      ],
+      "review_due_at": "2026-12-04",
+      "review_due": false,
+      "decision": "maintain_distinct_question; verify_before_merging"
+    },
+    {
+      "slug": "hario-cat-bowl-guide",
+      "title": "【ご紹介】HARIO「にゃんプレトール」｜猫用食器のサイズとお手入れ",
+      "topic": "cats",
+      "reader": "猫用食器を比較する飼い主",
+      "question": "にゃんプレトールの寸法と手入れで何を確認するか？",
+      "question_basis": "editorial_definition_not_search_volume",
+      "role": "product",
+      "headings": [
+        "最初に測っておくのは、今使っている食器",
+        "猫の食べ方から、変えたいところを考える",
+        "洗うときと、片付けるときの扱いも見る",
+        "HARIO PETで猫用品を探せる",
+        "猫草のリフィルは、食器と分けて選ぶ",
+        "送料より、毎日使いやすいことを優先する"
+      ],
+      "opening": "この記事には広告が含まれます。",
+      "ending": "あわせて読む： うちのまんもすとの暮らし",
+      "external_sources": [
+        "https://shop.hariocorp.co.jp"
+      ],
+      "review_due_at": "2026-12-04",
+      "review_due": false,
+      "decision": "maintain_distinct_question; verify_before_merging"
+    },
+    {
+      "slug": "mirai-cat-food-types",
+      "title": "【ご紹介】和漢みらいのキャットフード｜3タイプの違いと選ぶときの注意点",
+      "topic": "cats",
+      "reader": "和漢みらいの猫用フードを検討する飼い主",
+      "question": "3タイプはどう違い、療法食と総合栄養食をどう分けるか？",
+      "question_basis": "editorial_definition_not_search_volume",
+      "role": "product",
+      "headings": [
+        "公式ページに並ぶ3つのタイプ",
+        "低たんぱくは、数字と一緒に見る",
+        "高エナジーも、食べる量まで含めて考える",
+        "原材料変更のお知らせも見ておく",
+        "相談するときは、今の食事も一緒に伝える"
+      ],
+      "opening": "この記事には広告が含まれます。",
+      "ending": "あわせて読む： 通院前にまとめておきたいこと",
+      "external_sources": [
+        "https://mirai-cat.com/AF/"
+      ],
+      "review_due_at": "2026-12-04",
+      "review_due": false,
+      "decision": "maintain_distinct_question; verify_before_merging"
+    },
+    {
+      "slug": "m-and-cat-knit-bag",
+      "title": "【ご紹介】M&Co.の猫モチーフ雑貨｜ニットバッグとチャーム",
+      "topic": "cats",
+      "reader": "猫モチーフ雑貨を探す人",
+      "question": "M&Co.のバッグとチャームは何が違い、購入前に何を見るか？",
+      "question_basis": "editorial_definition_not_search_volume",
+      "role": "product",
+      "headings": [
+        "ニットバッグを中心に、持ち物を選べるショップ",
+        "猫のチャームも掲載されている",
+        "バッグは、今の荷物を並べてから大きさを見る",
+        "手で持つか、肩に掛けるかも大事",
+        "手入れと返品の条件まで読んでおく"
+      ],
+      "opening": "この記事には広告が含まれます。",
+      "ending": "あわせて読む： まんもすの写真",
+      "external_sources": [
+        "https://www.m-and.co.jp/"
+      ],
+      "review_due_at": "2026-12-04",
+      "review_due": false,
+      "decision": "maintain_distinct_question; verify_before_merging"
+    },
+    {
+      "slug": "pet-sougi-110-cat-guide",
+      "title": "【ご紹介】ペット葬儀110番｜火葬プランと相談前に確認したいこと",
+      "topic": "cats",
+      "reader": "猫の葬儀について相談先を探す飼い主",
+      "question": "相談前に火葬方法・立ち会い・返骨・費用の何を整理するか？",
+      "question_basis": "editorial_definition_not_search_volume",
+      "role": "product",
+      "headings": [
+        "最初に、相談窓口と依頼先を確認する",
+        "希望する見送り方を、言葉にしておく",
+        "返骨は、申し込み前に確かめる",
+        "見積もりは、追加料金まで含めて読む",
+        "分からないまま、依頼を確定しなくていい"
+      ],
+      "opening": "この記事には広告が含まれます。",
+      "ending": "あわせて読む： 管理人と暮らすまんもすについて",
+      "external_sources": [
+        "https://aff.life-110.com/?st_site=pet_sougi&st_aff=a8"
+      ],
+      "review_due_at": "2026-12-04",
+      "review_due": false,
+      "decision": "maintain_distinct_question; verify_before_merging"
+    },
+    {
+      "slug": "digxipop-cat-figure",
+      "title": "【ご紹介】愛猫の写真をフィギュアに。digxipopの注文方法",
+      "topic": "cats",
+      "reader": "愛猫のフィギュアを作りたい人",
+      "question": "写真の用意からプレビューと注文までどう進むか？",
+      "question_basis": "editorial_definition_not_search_volume",
+      "role": "product",
+      "headings": [
+        "写真を送って、まずプレビューを見る",
+        "全身と模様が分かる写真を選ぶ",
+        "プレビューでは、顔・模様・姿勢を分けて見る",
+        "注文後に、3Dアーティストがモデルを調整する",
+        "贈り物なら、発送までの日数に配送の時間も加えよう",
+        "写真を送る前に、背景も見直す"
+      ],
+      "opening": "この記事には広告が含まれます。",
+      "ending": "あわせて読む： まんもすの写真をまとめて見る",
+      "external_sources": [
+        "https://www.digxipop.com/ja-jp"
+      ],
+      "review_due_at": "2026-12-04",
+      "review_due": false,
+      "decision": "maintain_distinct_question; verify_before_merging"
+    },
+    {
+      "slug": "withpety-nekokenshin",
+      "title": "【ご紹介】猫用「毎日健心」はどんなサプリ？ 成分と与え方",
+      "topic": "cats",
+      "reader": "毎日健心の猫用タイプを調べる飼い主",
+      "question": "どんな成分のサプリで、与える前に何を確認するか？",
+      "question_basis": "editorial_definition_not_search_volume",
+      "role": "product",
+      "headings": [
+        "コエンザイムQ10などを配合した猫用サプリ",
+        "錠剤の大きさと、一日の量を確認する",
+        "今の薬・フード・サプリを一緒に見直す",
+        "続ける費用は、給与量と注文条件から計算する",
+        "使う前に、今の治療との併用を相談する"
+      ],
+      "opening": "この記事には広告が含まれます。",
+      "ending": "あわせて読む： 診察で伝えたい猫の様子",
+      "external_sources": [
+        "https://withpety.com/products/nekokenshin/a8.html?ad_code=20800"
+      ],
+      "review_due_at": "2026-12-04",
+      "review_due": false,
+      "decision": "maintain_distinct_question; verify_before_merging"
+    },
+    {
+      "slug": "pontely-cat-dna-test",
+      "title": "【ご紹介】猫の遺伝子検査Pontely｜検査内容とプランの違い",
+      "topic": "cats",
+      "reader": "猫の遺伝子検査を検討する飼い主",
+      "question": "検査プランと採取方法はどう違い、何が分かる範囲か？",
+      "question_basis": "editorial_definition_not_search_volume",
+      "role": "product",
+      "headings": [
+        "3つのプランは、検査する項目数が違う",
+        "キットを受け取り、頬の内側から採取する",
+        "結果は会員ページと検査結果証で確認する",
+        "追加検査と料金も、申し込み前に確認する",
+        "検査結果は、今の診察を置き換える物ではない"
+      ],
+      "opening": "この記事には広告が含まれます。",
+      "ending": "あわせて読む： 診察で伝えたい猫の様子",
+      "external_sources": [
+        "https://www.pontely.com/forowner/%E7%8C%AB%E3%81%AE%E9%81%BA%E4%BC%9D%E5%AD%90%E6%A4%9C%E6%9F%BB"
+      ],
+      "review_due_at": "2026-12-04",
+      "review_due": false,
+      "decision": "maintain_distinct_question; verify_before_merging"
+    },
+    {
+      "slug": "withpety-nekobihada",
+      "title": "【ご紹介】猫用サプリ「毎日美肌」｜PS-B1配合タイプの成分と特徴",
+      "topic": "cats",
+      "reader": "毎日美肌のPS-B1タイプを調べる飼い主",
+      "question": "対象の配合・形状は何で、別タイプとどう区別するか？",
+      "question_basis": "editorial_definition_not_search_volume",
+      "role": "product",
+      "headings": [
+        "毛の見た目と、皮膚の様子を分けて見る",
+        "PS-B1とローヤルゼリーなどを配合",
+        "カツオ味の錠剤、一袋60粒入り",
+        "記録には、変えた食事や手入れも添える",
+        "成分と、続ける条件の両方で検討する"
+      ],
+      "opening": "この記事には広告が含まれます。",
+      "ending": "あわせて読む： 毎日ブラッシングしているまんもすの話",
+      "external_sources": [
+        "https://withpety.com/products/nekobihada/a8.html?ad_code=2200"
+      ],
+      "review_due_at": "2026-12-04",
+      "review_due": false,
+      "decision": "maintain_distinct_question; verify_before_merging"
+    },
+    {
+      "slug": "onekosama-cat-tower",
+      "title": "【ご紹介】おねこさまのキャットタワー｜置き場所と上り下りのしやすさで選ぶ",
+      "topic": "cats",
+      "reader": "キャットタワーと設置場所を検討する飼い主",
+      "question": "WALK treeとRESIDENCEを比較するとき、何を測り確認するか？",
+      "question_basis": "editorial_definition_not_search_volume",
+      "role": "product",
+      "headings": [
+        "据え置きと突っ張り、設置方法から絞る",
+        "まんもすは、タワーの高さを全部使わなかった",
+        "登るルートと、降りるルートを見る",
+        "体重だけでなく、寝床の寸法も確認する",
+        "交換パーツは、対応するシリーズを合わせる",
+        "掃除や組み立てに必要な広さも確かめる"
+      ],
+      "opening": "この記事には広告が含まれます。",
+      "ending": "あわせて読む： まんもすの好きな居場所",
+      "external_sources": [
+        "https://oneko-sama.com/"
+      ],
+      "review_due_at": "2026-12-04",
+      "review_due": false,
+      "decision": "maintain_distinct_question; verify_before_merging"
+    },
+    {
+      "slug": "withpety-nekoryoukan",
+      "title": "【ご紹介】猫用「毎日良肝」の成分と与え方｜薬や食事との併用は？",
+      "topic": "cats",
+      "reader": "毎日良肝の猫用タイプを調べる飼い主",
+      "question": "肝臓を意識したサプリの掲載成分と購入条件は何か？",
+      "question_basis": "editorial_definition_not_search_volume",
+      "role": "product",
+      "headings": [
+        "肝臓エキスとプラセンタなどを配合",
+        "検査の結果と、今の薬や食事を基準にする",
+        "ほかのサプリも一緒に伝える",
+        "一袋60粒でも、何日分かは給与量で変わる",
+        "購入条件を読み、必要かどうかから決める"
+      ],
+      "opening": "この記事には広告が含まれます。",
+      "ending": "あわせて読む： 通院前にまとめたい情報",
+      "external_sources": [
+        "https://withpety.com/products/nekoryoukan/a8.html?ad_code=2400"
+      ],
+      "review_due_at": "2026-12-04",
+      "review_due": false,
+      "decision": "maintain_distinct_question; verify_before_merging"
+    },
+    {
+      "slug": "catlog-cat-monitor",
+      "title": "【ご紹介】CatlogとCatlog Board｜記録できることと機能の違い",
+      "topic": "cats",
+      "reader": "猫の行動記録機器を比較する飼い主",
+      "question": "CatlogとCatlog Boardで記録できることはどう違うか？",
+      "question_basis": "editorial_definition_not_search_volume",
+      "role": "product",
+      "headings": [
+        "首輪型のCatlogは、毎日の行動を記録する",
+        "Catlog Boardは、今のトイレの下に置く",
+        "多頭飼いでは、猫ごとの識別方法も確認する",
+        "月額利用料は、猫の数で確認する",
+        "自宅のWi-Fiと、装着・設置の条件を見る",
+        "GPSや診断機器とは役割が違う"
+      ],
+      "opening": "この記事には広告が含まれます。",
+      "ending": "あわせて読む： 病院で伝える日常の様子",
+      "external_sources": [
+        "https://rabo.cat/catlog/"
+      ],
+      "review_due_at": "2026-12-04",
+      "review_due": false,
+      "decision": "maintain_distinct_question; verify_before_merging"
+    },
+    {
+      "slug": "withpety-nekoissho",
+      "title": "【ご紹介】猫用サプリ「毎日一緒」｜DHA・EPA配合タイプの成分と特徴",
+      "topic": "cats",
+      "reader": "シニア猫向け毎日一緒を調べる飼い主",
+      "question": "DHA・EPA配合タイプの成分と与え方で何を見るか？",
+      "question_basis": "editorial_definition_not_search_volume",
+      "role": "product",
+      "headings": [
+        "行動の変化を、年齢だけのせいにしない",
+        "DHAやEPAなどを配合した猫用サプリ",
+        "今のフードやサプリと、成分を見比べる",
+        "一袋60粒。与える量と方法を確認しておく",
+        "家の中で過ごしやすいかも、一緒に見る"
+      ],
+      "opening": "この記事には広告が含まれます。",
+      "ending": "あわせて読む： まんもすとの日々の暮らし",
+      "external_sources": [
+        "https://withpety.com/products/nekoissho/a8.html?ad_code=20004"
+      ],
+      "review_due_at": "2026-12-04",
+      "review_due": false,
+      "decision": "maintain_distinct_question; verify_before_merging"
+    },
+    {
+      "slug": "pet-paradise-cat-toys",
+      "title": "【ご紹介】ペットパラダイスの猫おもちゃ｜けりぐるみと猫じゃらし",
+      "topic": "cats",
+      "reader": "猫の遊びに合うおもちゃを探す飼い主",
+      "question": "けりぐるみと猫じゃらしをどのような遊びで選ぶか？",
+      "question_basis": "editorial_definition_not_search_volume",
+      "role": "product",
+      "headings": [
+        "抱えて蹴るか、動く物を追うか",
+        "洋ナシは、カサカサ音のするけりぐるみ",
+        "かもめの猫じゃらしは、一緒に遊ぶ時間に",
+        "遊び終わったら、出しっぱなしにしない",
+        "まずは、遊び方の違う物を一つずつ"
+      ],
+      "opening": "この記事には広告が含まれます。",
+      "ending": "あわせて読む： 猫を迎える前に用意したい物",
+      "external_sources": [
+        "https://shop.creativeyoko.co.jp/items?lcc=05"
+      ],
+      "review_due_at": "2026-12-04",
+      "review_due": false,
+      "decision": "maintain_distinct_question; verify_before_merging"
+    },
+    {
+      "slug": "canagan-dental-cat-food",
+      "title": "【ご紹介】カナガンデンタルの猫用フード｜原材料と与える前の注意点",
+      "topic": "cats",
+      "reader": "カナガンデンタルの猫用タイプを検討する飼い主",
+      "question": "原材料と給与量をどう読み、口のケアと食事をどう分けるか？",
+      "question_basis": "editorial_definition_not_search_volume",
+      "role": "product",
+      "headings": [
+        "主原料はターキー。1袋は1.5kg",
+        "海藻由来のプロデンを配合している",
+        "甲状腺の病気・妊娠中・授乳中は注意",
+        "カロリーは100gあたり407kcal",
+        "切り替えは少しずつ。普通のカナガンとも比べよう"
+      ],
+      "opening": "この記事には広告が含まれます。",
+      "ending": "あわせて読む： カナガンのチキンとサーモンの違い",
+      "external_sources": [
+        "https://www.canagancatfood.co.jp/dental/CDC20003"
+      ],
+      "review_due_at": "2026-12-04",
+      "review_due": false,
+      "decision": "maintain_distinct_question; verify_before_merging"
+    },
+    {
+      "slug": "canagan-chicken-salmon",
+      "title": "【ご紹介】カナガンの猫用フード｜チキンとサーモンの違い",
+      "topic": "cats",
+      "reader": "カナガンの2種類を比較する飼い主",
+      "question": "チキンとサーモンは原材料・成分・カロリーがどう違うか？",
+      "question_basis": "editorial_definition_not_search_volume",
+      "role": "product",
+      "headings": [
+        "どちらも1.5kg。中身は同じではない",
+        "チキンは、乾燥チキンとチキン生肉が中心",
+        "サーモンには、ニシン・白身魚・マスも入る",
+        "グレインフリーでも、炭水化物は含まれる",
+        "価格は、単品と定期で条件をそろえる"
+      ],
+      "opening": "この記事には広告が含まれます。",
+      "ending": "あわせて読む： カナガンデンタルの原材料と注意点",
+      "external_sources": [
+        "https://www.canagancatfood.co.jp/3201/"
+      ],
+      "review_due_at": "2026-12-04",
+      "review_due": false,
+      "decision": "maintain_distinct_question; verify_before_merging"
+    },
+    {
+      "slug": "mcadams-cat-chicken-turkey",
+      "title": "【ご紹介】マックアダムズの猫用フード｜原材料とオーブンベイク製法",
+      "topic": "cats",
+      "reader": "マックアダムズの猫用フードを検討する飼い主",
+      "question": "チキンとターキーの配合、製法と給与の注意点は何か？",
+      "question_basis": "editorial_definition_not_search_volume",
+      "role": "product",
+      "headings": [
+        "オーブンで焼き上げる、ビスケット状の粒",
+        "チキン30%、ターキー27%のレシピ",
+        "成分表示は、今のフードと並べると分かりやすい",
+        "返金保証は、申し込み条件まで読む",
+        "切り替えを急がず、開封後の扱いまで考える"
+      ],
+      "opening": "この記事には広告が含まれます。",
+      "ending": "あわせて読む： カナガンのチキンとサーモンを比較",
+      "external_sources": [
+        "https://www.mcadamspetfoods.co.jp/catfood/MAC20000"
+      ],
+      "review_due_at": "2026-12-04",
+      "review_due": false,
+      "decision": "maintain_distinct_question; verify_before_merging"
+    },
+    {
+      "slug": "essential-jaguar-cat-food",
+      "title": "【ご紹介】ジャガーキャットフード｜原材料・カロリー・粒の特徴",
+      "topic": "cats",
+      "reader": "ジャガーキャットフードを検討する飼い主",
+      "question": "原材料・カロリー・粒を比較するとき何を確認するか？",
+      "question_basis": "editorial_definition_not_search_volume",
+      "role": "product",
+      "headings": [
+        "猫用は、対象年齢から絞れる",
+        "ジャガーは、肉と魚を組み合わせたフード",
+        "リング形の粒は、直径約11mm",
+        "成分とカロリーを、給与量と一緒に読む",
+        "通常価格は5,852円。定期は合計額で割引が変わる"
+      ],
+      "opening": "この記事には広告が含まれます。",
+      "ending": "あわせて読む： マックアダムズの原材料と製法",
+      "external_sources": [
+        "https://www.essentialfoods.jp/products/detail/6001"
+      ],
+      "review_due_at": "2026-12-04",
+      "review_due": false,
+      "decision": "maintain_distinct_question; verify_before_merging"
+    },
+    {
+      "slug": "mognyan-cat-food-guide",
+      "title": "【ご紹介】モグニャンのキャットフード｜原材料・粒の大きさ・切り替え方",
+      "topic": "cats",
+      "reader": "モグニャンへの切り替えを考える飼い主",
+      "question": "白身魚を使う配合や粒、切り替え方で何を確認するか？",
+      "question_basis": "editorial_definition_not_search_volume",
+      "role": "product",
+      "headings": [
+        "白身魚65%のレシピ。1袋は1.5kg",
+        "粒は俵形。直径6mm、長さ8mmが目安",
+        "100gあたり379kcal。グラム数だけで替えない",
+        "切り替えは、少なくとも10日ほどかける案内",
+        "開封後の保存と、定期コースの量も確認する"
+      ],
+      "opening": "この記事には広告が含まれます。",
+      "ending": "あわせて読む： カナガンのチキンとサーモンの違い",
+      "external_sources": [
+        "https://www.mognyancatfood.co.jp/MGN20009/"
+      ],
+      "review_due_at": "2026-12-04",
+      "review_due": false,
+      "decision": "maintain_distinct_question; verify_before_merging"
+    },
+    {
+      "slug": "leo-luna-citta-bed",
+      "title": "【ご紹介】レオエルナの犬猫用ベッド｜シッタコレクションのサイズと洗い方",
+      "topic": "cats",
+      "reader": "猫用ベッドのサイズと洗い方を比べる飼い主",
+      "question": "レオエルナのシッタは、猫の寝方と自宅の洗濯環境に合うか？",
+      "question_basis": "editorial_definition_not_search_volume",
+      "role": "product",
+      "headings": [
+        "シッタは、無地の生地を使った犬猫用ベッド",
+        "サイズ表は、猫が寝られる内側の広さと分けて読む",
+        "洗濯機で洗える。ただし、入る大きさと干す場所が必要",
+        "クッションの厚みだけでなく、猫の寝方にも合わせる",
+        "注文前に、サイズ・洗濯・届く時期を並べてみる"
+      ],
+      "opening": "この記事には広告が含まれます。",
+      "ending": "あわせて読む： まんもすの好きな居場所と暮らし",
+      "external_sources": [
+        "https://alices-dogcat.com/products/leoeluna-dogcatbed-citta"
+      ],
+      "review_due_at": "2026-12-08",
+      "review_due": false,
+      "decision": "maintain_distinct_question; verify_before_merging"
+    },
+    {
+      "slug": "withpety-nekokouken",
+      "title": "【ご紹介】毎日口健の犬猫兼用サプリ｜粉末の与え方と口のケア",
+      "topic": "cats",
+      "reader": "毎日口健の購入を検討する猫の飼い主",
+      "question": "毎日口健の犬猫兼用サプリ｜粉末の与え方と口のケアで何を比べ、何を先に相談するか？",
+      "question_basis": "editorial_definition_not_search_volume",
+      "role": "product",
+      "headings": [
+        "毎日口健は、ミルク味の粉末タイプ",
+        "ラクトフェリンとKT-11だけでなく、原材料全体を見る",
+        "粉を混ぜるなら、食べた量まで見届けたい",
+        "歯磨きと受診を、サプリに置き換えない",
+        "袋数を増やす前に、保管と購入条件を確認する"
+      ],
+      "opening": "この記事には広告が含まれます。",
+      "ending": "あわせて読む： 猫の通院に持っていく物と、診察で伝えたい様子",
+      "external_sources": [
+        "https://withpety.com/products/konakouken/"
+      ],
+      "review_due_at": "2026-12-08",
+      "review_due": false,
+      "decision": "maintain_distinct_question; verify_before_merging"
+    },
+    {
+      "slug": "withpety-nekosoukai",
+      "title": "【ご紹介】猫用「毎日爽快」の成分と与え方｜植物酵素・乳酸菌を配合",
+      "topic": "cats",
+      "reader": "毎日爽快の購入を検討する猫の飼い主",
+      "question": "猫用・毎日爽快｜植物酵素と乳酸菌の配合、選ぶ前に見ることで何を比べ、何を先に相談するか？",
+      "question_basis": "editorial_definition_not_search_volume",
+      "role": "product",
+      "headings": [
+        "猫用は、カツオ味の錠剤60粒入り",
+        "植物酵素と乳酸菌以外には、何が入っている？",
+        "追加する前に、今のごはんと便を見直す",
+        "カツオ味でも、無理なく続けられるとは限らない",
+        "開封後の保存方法と、次回以降の価格も確かめよう"
+      ],
+      "opening": "この記事には広告が含まれます。",
+      "ending": "あわせて読む： 猫の通院に持っていく物と、診察で伝えたい様子",
+      "external_sources": [
+        "https://withpety.com/products/nekosoukai/"
+      ],
+      "review_due_at": "2026-12-08",
+      "review_due": false,
+      "decision": "maintain_distinct_question; verify_before_merging"
+    },
+    {
+      "slug": "withpety-nekoshuukan",
+      "title": "【ご紹介】猫用・毎日習慣｜サラシア・イヌリンと、食事管理の考え方",
+      "topic": "cats",
+      "reader": "毎日習慣の購入を検討する猫の飼い主",
+      "question": "猫用・毎日習慣｜サラシア・イヌリンと、食事管理の考え方で何を比べ、何を先に相談するか？",
+      "question_basis": "editorial_definition_not_search_volume",
+      "role": "product",
+      "headings": [
+        "猫用の錠剤と、犬猫兼用の粉末を見分ける",
+        "サラシアとイヌリン以外の配合も見ておく",
+        "体重が気になるときは、ごはんとおやつを一緒に数える",
+        "血糖値の話は、見た目や体重だけで決められない",
+        "初回価格よりも、使う目的と継続条件を先に決める"
+      ],
+      "opening": "この記事には広告が含まれます。",
+      "ending": "あわせて読む： 猫の通院に持っていく物と、診察で伝えたい様子",
+      "external_sources": [
+        "https://withpety.com/search.php?kw=%E6%AF%8E%E6%97%A5%E7%BF%92%E6%85%A3"
+      ],
+      "review_due_at": "2026-12-08",
+      "review_due": false,
+      "decision": "maintain_distinct_question; verify_before_merging"
+    },
+    {
+      "slug": "withpety-nekoaigan",
+      "title": "【ご紹介】猫用・毎日愛眼｜ブルーベリー・ルテインの配合と選び方",
+      "topic": "cats",
+      "reader": "毎日愛眼の購入を検討する猫の飼い主",
+      "question": "猫用・毎日愛眼｜ブルーベリー・ルテインの配合と選び方で何を比べ、何を先に相談するか？",
+      "question_basis": "editorial_definition_not_search_volume",
+      "role": "product",
+      "headings": [
+        "猫用・毎日愛眼は、カツオ味の錠剤",
+        "ブルーベリーとルテイン以外の成分も確認する",
+        "目の変化は、いつから・左右どちらかも伝えたい",
+        "与えやすさは、味だけでは判断できない",
+        "続ける条件まで含めて候補を比べる"
+      ],
+      "opening": "この記事には広告が含まれます。",
+      "ending": "あわせて読む： 猫の通院に持っていく物と、診察で伝えたい様子",
+      "external_sources": [
+        "https://withpety.com/products/nekoaigan/"
+      ],
+      "review_due_at": "2026-12-08",
+      "review_due": false,
+      "decision": "maintain_distinct_question; verify_before_merging"
+    },
+    {
+      "slug": "withpety-nekojinkatsu",
+      "title": "【ご紹介】猫用・毎日腎活｜活性炭・ウラジロガシと、薬との併用の注意",
+      "topic": "cats",
+      "reader": "毎日腎活の購入を検討する猫の飼い主",
+      "question": "猫用・毎日腎活｜活性炭・ウラジロガシと、薬との併用の注意で何を比べ、何を先に相談するか？",
+      "question_basis": "editorial_definition_not_search_volume",
+      "role": "product",
+      "headings": [
+        "毎日腎活と毎日良肝は、名前も用途も違う",
+        "活性炭を含むので、薬との併用を先に相談する",
+        "活性炭とウラジロガシ以外の配合も読む",
+        "療法食を食べているなら、追加する物も一緒に伝える",
+        "買い方より先に、使える条件を確かめる"
+      ],
+      "opening": "この記事には広告が含まれます。",
+      "ending": "あわせて読む： 猫の通院に持っていく物と、診察で伝えたい様子",
+      "external_sources": [
+        "https://withpety.com/products/nekojinkatsu/"
+      ],
+      "review_due_at": "2026-12-08",
+      "review_due": false,
+      "decision": "maintain_distinct_question; verify_before_merging"
+    },
+    {
+      "slug": "withpety-nekosanpo",
+      "title": "【ご紹介】猫用・毎日散歩｜関節向けサプリの配合と暮らしの見直し",
+      "topic": "cats",
+      "reader": "毎日散歩の購入を検討する猫の飼い主",
+      "question": "猫用・毎日散歩｜関節向けサプリの配合と暮らしの見直しで何を比べ、何を先に相談するか？",
+      "question_basis": "editorial_definition_not_search_volume",
+      "role": "product",
+      "headings": [
+        "猫用はカツオ味、犬用や粉末とは分けて選ぶ",
+        "グルコサミン以外にも、複数の成分を組み合わせている",
+        "動きの変化は、前と何が違うのかを見ておく",
+        "床が滑らないか、水やトイレへ行きやすいかも見よう",
+        "続けられる形と、次回以降の条件を比べる"
+      ],
+      "opening": "この記事には広告が含まれます。",
+      "ending": "あわせて読む： 猫の通院に持っていく物と、診察で伝えたい様子",
+      "external_sources": [
+        "https://withpety.com/products/nekosanpo/"
+      ],
+      "review_due_at": "2026-12-08",
+      "review_due": false,
+      "decision": "maintain_distinct_question; verify_before_merging"
+    },
+    {
+      "slug": "aigan-dobutsu-course",
+      "title": "【ご紹介】愛玩動物飼養管理士｜2級・1級の費用と学習の流れ",
+      "topic": "cats",
+      "reader": "動物の飼養管理を体系的に学び、半年程度の学習予定を組める方",
+      "question": "資格を取るには、どの費用と学習・試験の日程が必要か？",
+      "question_basis": "editorial_definition_not_search_volume",
+      "role": "product",
+      "headings": [
+        "猫との暮らしから、動物の福祉や法律まで学ぶ",
+        "初めてなら2級から。1級には認定登録の条件がある",
+        "通信教育でも、スクーリングと課題には期限がある",
+        "試験は会場で受け、合格後に認定登録する",
+        "申し込む前に、募集時期と学ぶ目的を合わせる"
+      ],
+      "opening": "この記事には広告が含まれます。",
+      "ending": "出典： 公式案内 、 学習の流れ 、 受講FAQ （2026年11月8日確認）。申込・購入時には最新の公式案内をご確認ください。",
+      "external_sources": [
+        "https://www.jpc.or.jp/kanrishi/",
+        "https://www.jpc.or.jp/kanrishi/faq/",
+        "https://www.jpc.or.jp/kanrishi/flow/"
+      ],
+      "review_due_at": "2026-12-08",
+      "review_due": false,
+      "decision": "maintain_distinct_question; verify_before_merging"
+    },
+    {
+      "slug": "acana-orijen-cat-food-guide",
+      "title": "【ご紹介】アカナとオリジンの猫用フード｜レシピと成分表示の見方",
+      "topic": "cats",
+      "reader": "猫用の具体的なレシピを選び、今の食事との原材料・成分の違いを比べたい方",
+      "question": "猫用2レシピの原材料・成分・カロリーはどう違い、どこを比べるか？",
+      "question_basis": "editorial_definition_not_search_volume",
+      "role": "product",
+      "headings": [
+        "まずはブランド名から、具体的なレシピ名へ絞る",
+        "鶏肉だけの配合ではない。魚や卵も原材料に入る",
+        "2商品の成分を、同じ単位で並べてみる",
+        "袋を替えるときは、今の給与量をそのまま当てはめない",
+        "容量と保存まで含めると、選ぶ袋が見えてくる"
+      ],
+      "opening": "この記事には広告が含まれます。",
+      "ending": "出典： 公式案内 、 猫用フード一覧 、 ワイルドプレイリーの商品表示 、 オリジナルキャットの商品表示 （2026年11月8日確認）。申込・購入時には最新の公式案内をご確認ください。",
+      "external_sources": [
+        "https://acana.net/",
+        "https://acana.net/collections/cat-foods",
+        "https://acana.net/products/orijen-original-cat",
+        "https://acana.net/products/wild-prairie-cats"
+      ],
+      "review_due_at": "2026-12-08",
+      "review_due": false,
+      "decision": "maintain_distinct_question; verify_before_merging"
+    },
+    {
+      "slug": "linx-as-store",
+      "title": "【ご紹介】リンクサス酒販｜ウイスキーの状態と送料、返品条件をチェック",
+      "topic": "whisky",
+      "reader": "ウイスキーの銘柄だけでなく、ボトルや箱の状態と購入条件を比べたい20歳以上の方",
+      "question": "ウイスキーの状態と配送・返品条件をどう比較して買うか？",
+      "question_basis": "editorial_definition_not_search_volume",
+      "role": "product",
+      "headings": [
+        "ウイスキーの銘柄に加えて、一本ごとの説明を読む",
+        "写真では、年数・容量・箱の有無まで見比べる",
+        "販売価格は、メーカーの希望小売価格と分けて考える",
+        "送料は一律1,000円。発送日と到着日は分けて見る",
+        "届いたら状態を確かめ、問題があれば7日以内に連絡する"
+      ],
+      "opening": "この記事には広告が含まれます。",
+      "ending": "出典： 公式案内 、 ウイスキー一覧 、 配送案内 、 返品案内 （2026年11月8日確認）。申込・購入時には最新の公式案内をご確認ください。",
+      "external_sources": [
+        "https://linx-as.store/",
+        "https://linx-as.store/collections/whisky",
+        "https://linx-as.store/pages/shippingcarrier",
+        "https://linx-as.store/policies/refund-policy"
+      ],
+      "review_due_at": "2026-12-08",
+      "review_due": false,
+      "decision": "maintain_distinct_question; verify_before_merging"
+    }
+  ],
+  "overlap_review_candidates": [
+    {
+      "a": "withpety-nekokenshin",
+      "b": "withpety-nekoryoukan",
+      "shared_text_jaccard": 0.2,
+      "decision": "review_only; distinct_products_and_questions_are_not_duplicates"
+    },
+    {
+      "a": "withpety-nekobihada",
+      "b": "withpety-nekoryoukan",
+      "shared_text_jaccard": 0.169,
+      "decision": "review_only; distinct_products_and_questions_are_not_duplicates"
+    },
+    {
+      "a": "withpety-nekoryoukan",
+      "b": "withpety-nekoissho",
+      "shared_text_jaccard": 0.166,
+      "decision": "review_only; distinct_products_and_questions_are_not_duplicates"
+    },
+    {
+      "a": "withpety-nekobihada",
+      "b": "withpety-nekoissho",
+      "shared_text_jaccard": 0.162,
+      "decision": "review_only; distinct_products_and_questions_are_not_duplicates"
+    },
+    {
+      "a": "withpety-nekokenshin",
+      "b": "withpety-nekoissho",
+      "shared_text_jaccard": 0.161,
+      "decision": "review_only; distinct_products_and_questions_are_not_duplicates"
+    },
+    {
+      "a": "withpety-nekosoukai",
+      "b": "withpety-nekoaigan",
+      "shared_text_jaccard": 0.155,
+      "decision": "review_only; distinct_products_and_questions_are_not_duplicates"
+    },
+    {
+      "a": "withpety-nekokenshin",
+      "b": "withpety-nekobihada",
+      "shared_text_jaccard": 0.151,
+      "decision": "review_only; distinct_products_and_questions_are_not_duplicates"
+    },
+    {
+      "a": "withpety-nekosoukai",
+      "b": "withpety-nekojinkatsu",
+      "shared_text_jaccard": 0.151,
+      "decision": "review_only; distinct_products_and_questions_are_not_duplicates"
+    },
+    {
+      "a": "withpety-nekoaigan",
+      "b": "withpety-nekosanpo",
+      "shared_text_jaccard": 0.15,
+      "decision": "review_only; distinct_products_and_questions_are_not_duplicates"
+    }
+  ],
+  "owner_photos": [
+    {
+      "key": "manmos-portrait",
+      "file": "manmos-portrait.webp",
+      "alt": "まんもすの顔のアップ",
+      "subject": "manmos",
+      "referenced_in_php": true,
+      "cat_gallery_eligible": true,
+      "decision": "existing_owner_photo; preserve_context_and_do_not_imply_a_bib_or_new_purchase"
+    },
+    {
+      "key": "manmos-back",
+      "file": "manmos-back.webp",
+      "alt": "茶色の長い毛をしたまんもすの後ろ姿",
+      "subject": "manmos",
+      "referenced_in_php": true,
+      "cat_gallery_eligible": true,
+      "decision": "existing_owner_photo; preserve_context_and_do_not_imply_a_bib_or_new_purchase"
+    },
+    {
+      "key": "manmos-stretch",
+      "file": "manmos-stretch.webp",
+      "alt": "布団の上で体を伸ばしているまんもす",
+      "subject": "manmos",
+      "referenced_in_php": true,
+      "cat_gallery_eligible": true,
+      "decision": "existing_owner_photo; preserve_context_and_do_not_imply_a_bib_or_new_purchase"
+    },
+    {
+      "key": "manmos-tower",
+      "file": "manmos-tower.webp",
+      "alt": "キャットタワーの上にいるまんもす",
+      "subject": "manmos",
+      "referenced_in_php": true,
+      "cat_gallery_eligible": true,
+      "decision": "existing_owner_photo; preserve_context_and_do_not_imply_a_bib_or_new_purchase"
+    },
+    {
+      "key": "manmos-front",
+      "file": "manmos-front.webp",
+      "alt": "正面から撮影したまんもすの顔",
+      "subject": "manmos",
+      "referenced_in_php": true,
+      "cat_gallery_eligible": true,
+      "decision": "existing_owner_photo; preserve_context_and_do_not_imply_a_bib_or_new_purchase"
+    },
+    {
+      "key": "manmos-lying",
+      "file": "manmos-lying.webp",
+      "alt": "横になって顔をこちらへ向けるまんもす",
+      "subject": "manmos",
+      "referenced_in_php": false,
+      "cat_gallery_eligible": true,
+      "decision": "existing_owner_photo; preserve_context_and_do_not_imply_a_bib_or_new_purchase"
+    },
+    {
+      "key": "manmos-sitting",
+      "file": "manmos-sitting.webp",
+      "alt": "後ろ脚を前へ伸ばして座っているまんもす",
+      "subject": "manmos",
+      "referenced_in_php": false,
+      "cat_gallery_eligible": true,
+      "decision": "existing_owner_photo; preserve_context_and_do_not_imply_a_bib_or_new_purchase"
+    },
+    {
+      "key": "manmos-window",
+      "file": "manmos-window.webp",
+      "alt": "窓のそばで顔をこちらへ向けるまんもす",
+      "subject": "manmos",
+      "referenced_in_php": false,
+      "cat_gallery_eligible": true,
+      "decision": "existing_owner_photo; preserve_context_and_do_not_imply_a_bib_or_new_purchase"
+    },
+    {
+      "key": "hakushu-highball",
+      "file": "hakushu-highball.webp",
+      "alt": "白州のロゴが入ったハイボールのグラス",
+      "subject": "whisky",
+      "referenced_in_php": false,
+      "cat_gallery_eligible": false,
+      "decision": "existing_owner_photo; preserve_context_and_do_not_imply_a_bib_or_new_purchase"
+    },
+    {
+      "key": "hakushu-entrance",
+      "file": "hakushu-entrance.webp",
+      "alt": "白州蒸溜所の看板と建物の入口",
+      "subject": "whisky",
+      "referenced_in_php": true,
+      "cat_gallery_eligible": false,
+      "decision": "existing_owner_photo; preserve_context_and_do_not_imply_a_bib_or_new_purchase"
+    },
+    {
+      "key": "hakushu-history",
+      "file": "hakushu-history.webp",
+      "alt": "白州のボトルを並べた館内展示",
+      "subject": "whisky",
+      "referenced_in_php": false,
+      "cat_gallery_eligible": false,
+      "decision": "existing_owner_photo; preserve_context_and_do_not_imply_a_bib_or_new_purchase"
+    },
+    {
+      "key": "hakushu-still",
+      "file": "hakushu-still.webp",
+      "alt": "館内に展示されている銅色の蒸溜器",
+      "subject": "whisky",
+      "referenced_in_php": false,
+      "cat_gallery_eligible": false,
+      "decision": "existing_owner_photo; preserve_context_and_do_not_imply_a_bib_or_new_purchase"
+    },
+    {
+      "key": "whisky-scotch-display",
+      "file": "whisky-scotch-display.webp",
+      "alt": "スコッチウイスキーのボトルを並べた展示ケース",
+      "subject": "whisky",
+      "referenced_in_php": false,
+      "cat_gallery_eligible": false,
+      "decision": "existing_owner_photo; preserve_context_and_do_not_imply_a_bib_or_new_purchase"
+    },
+    {
+      "key": "whisky-irish-display",
+      "file": "whisky-irish-display.webp",
+      "alt": "Irish Whiskyと書かれたボトルの展示ケース",
+      "subject": "whisky",
+      "referenced_in_php": false,
+      "cat_gallery_eligible": false,
+      "decision": "existing_owner_photo; preserve_context_and_do_not_imply_a_bib_or_new_purchase"
+    },
+    {
+      "key": "whisky-japanese-display",
+      "file": "whisky-japanese-display.webp",
+      "alt": "Japanese Whiskyと書かれたボトルの展示ケース",
+      "subject": "whisky",
+      "referenced_in_php": true,
+      "cat_gallery_eligible": false,
+      "decision": "existing_owner_photo; preserve_context_and_do_not_imply_a_bib_or_new_purchase"
+    },
+    {
+      "key": "whisky-american-display",
+      "file": "whisky-american-display.webp",
+      "alt": "American Whiskyと書かれたボトルの展示ケース",
+      "subject": "whisky",
+      "referenced_in_php": false,
+      "cat_gallery_eligible": false,
+      "decision": "existing_owner_photo; preserve_context_and_do_not_imply_a_bib_or_new_purchase"
+    },
+    {
+      "key": "whisky-world-display",
+      "file": "whisky-world-display.webp",
+      "alt": "ボトルの形やラベルが異なる小瓶を並べた展示ケース",
+      "subject": "whisky",
+      "referenced_in_php": false,
+      "cat_gallery_eligible": false,
+      "decision": "existing_owner_photo; preserve_context_and_do_not_imply_a_bib_or_new_purchase"
+    },
+    {
+      "key": "hakushu-tasting-table",
+      "file": "hakushu-tasting-table.webp",
+      "alt": "グラスと小さなお菓子が並ぶ白州のテイスティングのテーブル",
+      "subject": "whisky",
+      "referenced_in_php": false,
+      "cat_gallery_eligible": false,
+      "decision": "existing_owner_photo; preserve_context_and_do_not_imply_a_bib_or_new_purchase"
+    },
+    {
+      "key": "hakushu-tasting-glass",
+      "file": "hakushu-tasting-glass.webp",
+      "alt": "屋外の席で手に持ったテイスティンググラス",
+      "subject": "whisky",
+      "referenced_in_php": false,
+      "cat_gallery_eligible": false,
+      "decision": "existing_owner_photo; preserve_context_and_do_not_imply_a_bib_or_new_purchase"
+    },
+    {
+      "key": "manmos-zip-back",
+      "file": "manmos-zip-back.webp",
+      "alt": "爪とぎの上で背中を向けて座るまんもす",
+      "subject": "manmos",
+      "referenced_in_php": false,
+      "cat_gallery_eligible": true,
+      "decision": "existing_owner_photo; preserve_context_and_do_not_imply_a_bib_or_new_purchase"
+    },
+    {
+      "key": "manmos-zip-bed",
+      "file": "manmos-zip-bed.webp",
+      "alt": "ベッドの上で体を休めるまんもす",
+      "subject": "manmos",
+      "referenced_in_php": false,
+      "cat_gallery_eligible": true,
+      "decision": "existing_owner_photo; preserve_context_and_do_not_imply_a_bib_or_new_purchase"
+    },
+    {
+      "key": "manmos-zip-window",
+      "file": "manmos-zip-window.webp",
+      "alt": "窓辺で前足をしまって座るまんもす",
+      "subject": "manmos",
+      "referenced_in_php": false,
+      "cat_gallery_eligible": true,
+      "decision": "existing_owner_photo; preserve_context_and_do_not_imply_a_bib_or_new_purchase"
+    },
+    {
+      "key": "manmos-zip-sitting",
+      "file": "manmos-zip-sitting.webp",
+      "alt": "部屋の中でこちらを振り返るまんもす",
+      "subject": "manmos",
+      "referenced_in_php": false,
+      "cat_gallery_eligible": true,
+      "decision": "existing_owner_photo; preserve_context_and_do_not_imply_a_bib_or_new_purchase"
+    },
+    {
+      "key": "manmos-zip-paw",
+      "file": "manmos-zip-paw.webp",
+      "alt": "足を上げて肉球が見えるまんもす",
+      "subject": "manmos",
+      "referenced_in_php": false,
+      "cat_gallery_eligible": true,
+      "decision": "existing_owner_photo; preserve_context_and_do_not_imply_a_bib_or_new_purchase"
+    },
+    {
+      "key": "manmos-zip-groom",
+      "file": "manmos-zip-groom.webp",
+      "alt": "前足を顔の近くに上げているまんもす",
+      "subject": "manmos",
+      "referenced_in_php": false,
+      "cat_gallery_eligible": true,
+      "decision": "existing_owner_photo; preserve_context_and_do_not_imply_a_bib_or_new_purchase"
+    },
+    {
+      "key": "manmos-zip-scratcher",
+      "file": "manmos-zip-scratcher.webp",
+      "alt": "段ボールの爪とぎの上に座るまんもす",
+      "subject": "manmos",
+      "referenced_in_php": true,
+      "cat_gallery_eligible": true,
+      "decision": "existing_owner_photo; preserve_context_and_do_not_imply_a_bib_or_new_purchase"
+    },
+    {
+      "key": "manmos-zip-pillow",
+      "file": "manmos-zip-pillow.webp",
+      "alt": "枕に上半身を乗せて寝そべるまんもす",
+      "subject": "manmos",
+      "referenced_in_php": true,
+      "cat_gallery_eligible": true,
+      "decision": "existing_owner_photo; preserve_context_and_do_not_imply_a_bib_or_new_purchase"
+    },
+    {
+      "key": "manmos-zip-stretch",
+      "file": "manmos-zip-stretch.webp",
+      "alt": "床の上でおなかを上にして寝そべるまんもす",
+      "subject": "manmos",
+      "referenced_in_php": false,
+      "cat_gallery_eligible": true,
+      "decision": "existing_owner_photo; preserve_context_and_do_not_imply_a_bib_or_new_purchase"
+    }
+  ],
+  "seasonal_review": [
+    {
+      "when": "2026-12-01",
+      "topic": "年末の移動前にキャリーと交通機関の規定を点検",
+      "url": "/cat-carrier-checklist/",
+      "status": "planned; no travel experience invented"
+    },
+    {
+      "when": "2027-04-01",
+      "topic": "冷感用品を使わなかった本人の話と室内環境の記事候補を点検",
+      "url": "/manmos-cat-life/#manmos-unused-cooling",
+      "status": "planned; no medical recommendations inferred"
+    }
+  ],
+  "limits": [
+    "Similarity is a review cue, not a merge decision.",
+    "Questions are editorial definitions, not measured demand.",
+    "A PHP reference scan is not proof an owner photo is unused; the live gallery is also considered."
+  ]
+}

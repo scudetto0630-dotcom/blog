@@ -32,14 +32,14 @@ function hsh_article_map() {
 function hsh_topic_reading_route($topic) {
     $routes=array(
         'cats'=>array('サイズを確認する'=>'cat-carrier-checklist-5','運び方を考える'=>'cat-carrier-checklist-2','確認メモを保存する'=>'cat-carrier-checklist-checklist'),
-        'whisky'=>array('分量を確認する'=>'highball-measure-and-adjust-0','味と炭酸の違いを調べる'=>'highball-measure-and-adjust-2','配合メモを保存する'=>'highball-measure-and-adjust-checklist'),
+        'whisky'=>array('分量を確認する'=>'highball-measure-and-adjust-0','味と炭酸の違いを調べる'=>'highball-measure-and-adjust-2','配合メモを保存する'=>'highball-measure-and-adjust-checklist','容量違いの値段を比べる'=>'hsh-bottle-price'),
         'it-freelance'=>array('元ファイルを残す'=>'csv-import-seven-checks-0','先頭の0を確認する'=>'csv-import-seven-checks-3','作業前の確認メモ'=>'csv-import-seven-checks-checklist'),
     );
     if(!isset($routes[$topic]))return '';
     $details=hsh_topic_details();$post=get_page_by_path($details[$topic][2],OBJECT,'post');
     if(!$post||$post->post_status!=='publish')return '';
     $out='<nav class="hsh-reading-route" aria-label="知りたい内容から読む"><h2>知りたい内容から読む</h2><ul>';
-    foreach($routes[$topic] as $label=>$anchor){$out.='<li><a href="'.esc_url(get_permalink($post).'#'.$anchor).'">'.esc_html($label).' <span aria-hidden="true">→</span></a></li>';}
+    foreach($routes[$topic] as $label=>$anchor){$target=$anchor==='hsh-bottle-price'?get_page_by_path('single-malt-label-guide',OBJECT,'post'):$post;if(!$target||$target->post_status!=='publish')continue;$out.='<li><a href="'.esc_url(get_permalink($target).'#'.$anchor).'">'.esc_html($label).' <span aria-hidden="true">→</span></a></li>';}
     return $out.'</ul></nav>';
 }
 function hsh_blog_extra_head($head,$url,$description,$title) {

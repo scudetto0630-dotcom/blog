@@ -19,7 +19,7 @@ class ProductOperations(unittest.TestCase):
    def __enter__(self):return self
    def __exit__(self,*args):pass
    def read(self,*args):return ('<title>猫用フード</title><main>在庫切れ'+('商品の案内です。'*100)+'</main><script>販売終了</script>').encode()
-  with patch('urllib.request.urlopen',return_value=Response()):r=audit.check({'slug':'test','source_url':'https://example.com/product'})
+  with patch('urllib.request.OpenerDirector.open',return_value=Response()):r=audit.check({'slug':'test','source_url':'https://example.com/product'})
   self.assertEqual(r['result'],'retrieved');self.assertEqual(r['availability_review_signals'],['在庫切れ']);self.assertEqual(len(r['sampled_text_sha256']),64)
  def test_advertiser_sources_reject_tracking_urls(self):
   for url in ['https://px.a8.net/svt/test','http://example.com']:
