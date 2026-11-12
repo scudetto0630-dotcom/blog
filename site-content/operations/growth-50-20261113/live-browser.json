@@ -1,0 +1,104 @@
+{
+  "viewport_checks": 24,
+  "checks": [
+    {
+      "slug": "manmos-cat-life",
+      "width": 1440
+    },
+    {
+      "slug": "manmos-cat-life",
+      "width": 390
+    },
+    {
+      "slug": "manmos-cat-life",
+      "width": 320
+    },
+    {
+      "slug": "hsh-whisky-notes",
+      "width": 1440
+    },
+    {
+      "slug": "hsh-whisky-notes",
+      "width": 390
+    },
+    {
+      "slug": "hsh-whisky-notes",
+      "width": 320
+    },
+    {
+      "slug": "single-malt-label-guide",
+      "width": 1440
+    },
+    {
+      "slug": "single-malt-label-guide",
+      "width": 390
+    },
+    {
+      "slug": "single-malt-label-guide",
+      "width": 320
+    },
+    {
+      "slug": "csv-import-seven-checks",
+      "width": 1440
+    },
+    {
+      "slug": "csv-import-seven-checks",
+      "width": 390
+    },
+    {
+      "slug": "csv-import-seven-checks",
+      "width": 320
+    },
+    {
+      "slug": "hsh-gallery",
+      "width": 1440
+    },
+    {
+      "slug": "hsh-gallery",
+      "width": 390
+    },
+    {
+      "slug": "hsh-gallery",
+      "width": 320
+    },
+    {
+      "slug": "category/whisky",
+      "width": 1440
+    },
+    {
+      "slug": "category/whisky",
+      "width": 390
+    },
+    {
+      "slug": "category/whisky",
+      "width": 320
+    },
+    {
+      "slug": "pontely-cat-dna-test",
+      "width": 1440
+    },
+    {
+      "slug": "pontely-cat-dna-test",
+      "width": 390
+    },
+    {
+      "slug": "pontely-cat-dna-test",
+      "width": 320
+    },
+    {
+      "slug": "cat-vet-routine",
+      "width": 1440
+    },
+    {
+      "slug": "cat-vet-routine",
+      "width": 390
+    },
+    {
+      "slug": "cat-vet-routine",
+      "width": 320
+    }
+  ],
+  "no_js_checks": 1,
+  "js_errors": [],
+  "writes": 0
+}

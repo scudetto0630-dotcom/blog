@@ -2,7 +2,7 @@
   {
     "id": 1,
     "task": "既存記事の疑問と答えを一覧化",
-    "status": "今回実施・検証対象",
+    "status": "実施・検証済み",
     "details": "42記事の読者・疑問・導入・末尾・見出しを一覧化。",
     "evidence": [
       "CONTENT-DECISIONS.md",
@@ -12,7 +12,7 @@
   {
     "id": 2,
     "task": "記事ごとの役割を明確化",
-    "status": "今回実施・検証対象",
+    "status": "実施・検証済み",
     "details": "体験談・解説・別商品の役割を保持。",
     "evidence": [
       "CONTENT-DECISIONS.md",
@@ -42,7 +42,7 @@
   {
     "id": 5,
     "task": "公開検索結果と回答を照合",
-    "status": "今回実施・検証対象",
+    "status": "実施・検証済み",
     "details": "7候補語を公開検索。検索順位や検索数の実測ではない。",
     "evidence": [
       "CONTENT-DECISIONS.md",
@@ -52,7 +52,7 @@
   {
     "id": 6,
     "task": "一次情報で補える違いを確認",
-    "status": "今回実施・検証対象",
+    "status": "実施・検証済み",
     "details": "本人のキャリー変形・香りの表現・入力式の比較道具を優先。",
     "evidence": [
       "CONTENT-DECISIONS.md",
@@ -72,7 +72,7 @@
   {
     "id": 8,
     "task": "既存記事間の文脈リンク",
-    "status": "今回実施・検証対象",
+    "status": "実施・検証済み",
     "details": "写真3章・価格比較・最初の3本の章リンクを追加。",
     "evidence": [
       "CONTENT-DECISIONS.md",
@@ -92,7 +92,7 @@
   {
     "id": 10,
     "task": "カテゴリから目的別に誘導",
-    "status": "今回実施・検証対象",
+    "status": "実施・検証済み",
     "details": "ウイスキーカテゴリから単価比較へ直接移動。",
     "evidence": [
       "CONTENT-DECISIONS.md",
@@ -102,7 +102,7 @@
   {
     "id": 11,
     "task": "未使用の本人回答を確認",
-    "status": "今回実施・検証対象",
+    "status": "実施・検証済み",
     "details": "よだれかけ・フロムの新回答を反映。既存回答は役割別に照合。",
     "evidence": [
       "CONTENT-DECISIONS.md",
@@ -112,7 +112,7 @@
   {
     "id": 12,
     "task": "購入理由・結果・現在を照合",
-    "status": "今回実施・検証対象",
+    "status": "実施・検証済み",
     "details": "確認できた事実だけ反映。未回答の味は保留。",
     "evidence": [
       "CONTENT-DECISIONS.md",
@@ -152,7 +152,7 @@
   {
     "id": 16,
     "task": "購入順と好みの変化",
-    "status": "今回実施・検証対象",
+    "status": "実施・検証済み",
     "details": "最初の陸・バスカー・リベットを章リンクで追える。",
     "evidence": [
       "CONTENT-DECISIONS.md",
@@ -232,7 +232,7 @@
   {
     "id": 24,
     "task": "データ加工の失敗を架空例で説明",
-    "status": "今回実施・検証対象",
+    "status": "実施・検証済み",
     "details": "CSVの先頭0が消えた3ケースを追加。",
     "evidence": [
       "CONTENT-DECISIONS.md",
@@ -242,7 +242,7 @@
   {
     "id": 25,
     "task": "うまくいかない場合の説明",
-    "status": "今回実施・検証対象",
+    "status": "実施・検証済み",
     "details": "元ファイルに残る場合・消えた場合・桁数不明を分ける。",
     "evidence": [
       "CONTENT-DECISIONS.md",
@@ -252,7 +252,7 @@
   {
     "id": 26,
     "task": "よくある誤解に具体例",
-    "status": "今回実施・検証対象",
+    "status": "実施・検証済み",
     "details": "表示形式と保存値の違いを図・事例で説明。",
     "evidence": [
       "CONTENT-DECISIONS.md",
@@ -292,7 +292,7 @@
   {
     "id": 30,
     "task": "下書きの事実・出典等点検",
-    "status": "今回実施・検証対象",
+    "status": "実施・検証済み",
     "details": "新しい本文・計算・写真文脈を下書きとテストで点検。",
     "evidence": [
       "CONTENT-DECISIONS.md",
@@ -332,7 +332,7 @@
   {
     "id": 34,
     "task": "写真から体験記事へ誘導",
-    "status": "今回実施・検証対象",
+    "status": "実施・検証済み",
     "details": "写真の枕・爪とぎ・ブラッシングから該当章へ3リンク。",
     "evidence": [
       "CONTENT-DECISIONS.md",
@@ -342,7 +342,7 @@
   {
     "id": 35,
     "task": "手順を図で説明",
-    "status": "今回実施・検証対象",
+    "status": "実施・検証済み",
     "details": "CSVの確認順をHTMLの4段階の図にした。",
     "evidence": [
       "CONTENT-DECISIONS.md",
@@ -352,7 +352,7 @@
   {
     "id": 36,
     "task": "比較表のスマホ表示",
-    "status": "今回実施・検証対象",
+    "status": "実施・検証済み",
     "details": "320px/390pxで新しい表・計算機を点検。",
     "evidence": [
       "README.md"
@@ -361,7 +361,7 @@
   {
     "id": 37,
     "task": "100ml当たりの価格計算機",
-    "status": "今回実施・検証対象",
+    "status": "実施・検証済み",
     "details": "A/Bの総額と容量を入力して比較する道具を実装。",
     "evidence": [
       "README.md"
@@ -370,7 +370,7 @@
   {
     "id": 38,
     "task": "確認メモの印刷改善",
-    "status": "今回実施・検証対象",
+    "status": "実施・検証済み",
     "details": "長いメモを印刷用テキストへ複製。個人情報を送信しない。",
     "evidence": [
       "README.md"
@@ -379,7 +379,7 @@
   {
     "id": 39,
     "task": "計算の境界値検証",
-    "status": "今回実施・検証対象",
+    "status": "実施・検証済み",
     "details": "単価・同額・ゼロ・負値・上限・氷余白等を検証。",
     "evidence": [
       "README.md"
@@ -388,7 +388,7 @@
   {
     "id": 40,
     "task": "JavaScriptなしの説明",
-    "status": "今回実施・検証対象",
+    "status": "実施・検証済み",
     "details": "数式・事例・本文とアンカーはJSなしでも表示。",
     "evidence": [
       "README.md"
@@ -397,7 +397,7 @@
   {
     "id": 41,
     "task": "公式変更の定期検知",
-    "status": "今回実施・検証対象",
+    "status": "実施・検証済み",
     "details": "最終確認した公式ページ控えとの差分を毎日の点検へ設定。",
     "evidence": [
       "README.md"
@@ -406,7 +406,7 @@
   {
     "id": 42,
     "task": "記事ごとの確認期限",
-    "status": "今回実施・検証対象",
+    "status": "実施・検証済み",
     "details": "42記事のreview_due_atと時期別の作業表を出力。",
     "evidence": [
       "README.md"
@@ -415,7 +415,7 @@
   {
     "id": 43,
     "task": "転送先と別商品の確認",
-    "status": "今回実施・検証対象",
+    "status": "実施・検証済み",
     "details": "転送先の変化を検知。A8やHTTPへの自動転送は追わない。",
     "evidence": [
       "README.md"
@@ -424,7 +424,7 @@
   {
     "id": 44,
     "task": "主要スマホ操作の自動テスト",
-    "status": "今回実施・検証対象",
+    "status": "実施・検証済み",
     "details": "過去CIの折りたたみUIと旧文言のテストを修正。",
     "evidence": [
       "README.md"
@@ -433,7 +433,7 @@
   {
     "id": 45,
     "task": "更新前後の保持確認標準化",
-    "status": "今回実施・検証対象",
+    "status": "実施・検証済み",
     "details": "元本文・指紋・写真・広告・公開日を退避照合する既存手順を適用。",
     "evidence": [
       "README.md"
@@ -442,7 +442,7 @@
   {
     "id": 46,
     "task": "短い運用レポート",
-    "status": "今回実施・検証対象",
+    "status": "実施・検証済み",
     "details": "点検結果をまとめるMarkdownレポートを実装。",
     "evidence": [
       "README.md"
