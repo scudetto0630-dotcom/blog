@@ -1,0 +1,91 @@
+{
+  "viewport_checks": 14,
+  "results": [
+    {
+      "slug": "single-malt-label-guide",
+      "width": 1440,
+      "followup_groups": 1,
+      "destinations": 3
+    },
+    {
+      "slug": "single-malt-label-guide",
+      "width": 390,
+      "followup_groups": 1,
+      "destinations": 3
+    },
+    {
+      "slug": "highball-measure-and-adjust",
+      "width": 1440,
+      "followup_groups": 1,
+      "destinations": 3
+    },
+    {
+      "slug": "highball-measure-and-adjust",
+      "width": 390,
+      "followup_groups": 1,
+      "destinations": 3
+    },
+    {
+      "slug": "before-welcoming-cat",
+      "width": 1440,
+      "followup_groups": 1,
+      "destinations": 4
+    },
+    {
+      "slug": "before-welcoming-cat",
+      "width": 390,
+      "followup_groups": 1,
+      "destinations": 4
+    },
+    {
+      "slug": "csv-import-seven-checks",
+      "width": 1440,
+      "followup_groups": 1,
+      "destinations": 2
+    },
+    {
+      "slug": "csv-import-seven-checks",
+      "width": 390,
+      "followup_groups": 1,
+      "destinations": 2
+    },
+    {
+      "slug": "sherry-cask-notes",
+      "width": 1440,
+      "followup_groups": 1,
+      "destinations": 3
+    },
+    {
+      "slug": "sherry-cask-notes",
+      "width": 390,
+      "followup_groups": 1,
+      "destinations": 3
+    },
+    {
+      "slug": "manmos-cat-life",
+      "width": 1440,
+      "followup_groups": 1,
+      "destinations": 5
+    },
+    {
+      "slug": "manmos-cat-life",
+      "width": 390,
+      "followup_groups": 1,
+      "destinations": 5
+    },
+    {
+      "slug": "mognyan-cat-food-guide",
+      "width": 1440,
+      "followup_groups": 1,
+      "destinations": 4
+    },
+    {
+      "slug": "mognyan-cat-food-guide",
+      "width": 390,
+      "followup_groups": 1,
+      "destinations": 4
+    }
+  ],
+  "js_errors": [],
+  "writes": 0
+}
