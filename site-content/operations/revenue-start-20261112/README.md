@@ -25,6 +25,6 @@ https://adsense.google.com/start/ から本人のGoogleアカウントで申し�
 
 - 資格要件 https://support.google.com/adsense/answer/9724?hl=ja
 - サイトの接続 https://support.google.com/adsense/answer/7584263?hl=ja
-- アカウント作成 https://support.google.com/adsense/answer/12169212?hl=ja
+- サイトの追加 https://support.google.com/adsense/answer/12169212?hl=ja
 
 技術点検に合格しても、AdSenseの審査通過やポリシー適合全般を証明するものではない。問い合わせフォームのメール配送も未検証。
