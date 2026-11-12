@@ -1,0 +1,92 @@
+{
+  "viewport_checks": 14,
+  "results": [
+    {
+      "path": "/",
+      "width": 1440,
+      "http": 200,
+      "scripts": 1
+    },
+    {
+      "path": "/",
+      "width": 390,
+      "http": 200,
+      "scripts": 1
+    },
+    {
+      "path": "/sherry-cask-notes/",
+      "width": 1440,
+      "http": 200,
+      "scripts": 1
+    },
+    {
+      "path": "/sherry-cask-notes/",
+      "width": 390,
+      "http": 200,
+      "scripts": 1
+    },
+    {
+      "path": "/category/cats/",
+      "width": 1440,
+      "http": 200,
+      "scripts": 1
+    },
+    {
+      "path": "/category/cats/",
+      "width": 390,
+      "http": 200,
+      "scripts": 1
+    },
+    {
+      "path": "/プライバシーポリシー/",
+      "width": 1440,
+      "http": 200,
+      "scripts": 1
+    },
+    {
+      "path": "/プライバシーポリシー/",
+      "width": 390,
+      "http": 200,
+      "scripts": 1
+    },
+    {
+      "path": "/hsh-reading-list/",
+      "width": 1440,
+      "http": 200,
+      "scripts": 0
+    },
+    {
+      "path": "/hsh-reading-list/",
+      "width": 390,
+      "http": 200,
+      "scripts": 0
+    },
+    {
+      "path": "/?s=CSV",
+      "width": 1440,
+      "http": 200,
+      "scripts": 0
+    },
+    {
+      "path": "/?s=CSV",
+      "width": 390,
+      "http": 200,
+      "scripts": 0
+    },
+    {
+      "path": "/hsh-editorial/",
+      "width": 1440,
+      "http": 404,
+      "scripts": 0
+    },
+    {
+      "path": "/hsh-editorial/",
+      "width": 390,
+      "http": 404,
+      "scripts": 0
+    }
+  ],
+  "js_errors": [],
+  "writes": 0,
+  "third_party_requests_blocked": 8
+}
