@@ -4,7 +4,7 @@ $profiles=array();foreach(hsh_catalog() as $a){$d=hsh_whisky_profile($a['slug'])
     check(count($d['scores'])===6&&count($d['reasons'])===6,'six evidence-labelled axes for '.$slug);
     foreach($d['scores'] as $n)check(is_int($n)&&$n>=0&&$n<=10,'bounded editorial estimate '.$slug);
     foreach(array('種類','熟成樽','熟成年数') as $k)check(!empty($d['fields'][$k]),'product category/cask/age field '.$slug.' '.$k);
-    foreach($d['prices'] as $p)check($p['volume']===(int)preg_replace('~.*・([0-9]+)ml.*~u','$1',$d['fields']['度数・標準容量'])&&$p['amount']>0,'price is for the exact standard bottle '.$slug);
+    foreach($d['prices'] as $p)check($p['volume']===(int)preg_replace('~.*・([0-9]+)ml.*~u','$1',$d['fields']['アルコール度数・容量'])&&$p['amount']>0,'price is for the exact standard bottle '.$slug);
     $original=hsh_studio_story_additions($a['content'],$slug);$html=hsh_whisky_enriched($original,$slug);
     check(substr_count($html,'data-hsh-whisky-profile=')===1&&substr_count($html,'<svg ')===1&&substr_count($html,'<meter ')===6,'one readable six-axis profile '.$slug);
     check(hsh_whisky_enriched($html,$slug)===$html,'enrichment cannot duplicate '.$slug);
@@ -24,9 +24,11 @@ foreach($profiles as $slug=>$d){
     check(strpos($d['preview'],'香りと味の特徴')!==false&&strpos($d['preview'],'香りと味、どんな方向？')===false,'plain flavour heading '.$slug);
     check(strpos($d['preview'],'なるほど気になる造り')===false&&strpos($d['preview'],'価格の入りやすさ')===false,'awkward generated copy removed '.$slug);
 }
+foreach($profiles as $slug=>$d){check(strpos($d['preview'],'通常版')===false&&strpos($d['preview'],'トフィー')===false,'unnecessary edition names and unexplained confectionery removed '.$slug);check(strpos($d['preview'],'アルコール度数')!==false,'strength is explicitly labelled '.$slug);}
+check(strpos($profiles['glen-grant-arboralis-review']['intro'][0],'アルコール度数は40%')!==false,'Arboralis introduction spells out the strength');
 check(count($profiles)===7,'all seven owner-tasted bottles have their own researched profile');
 check(strpos($profiles['busker-irish-whiskey-review']['fields']['種類'],'ブレンデッド')!==false,'green Busker is not its single malt sibling');
-check(strpos($profiles['glen-grant-arboralis-review']['fields']['熟成樽'],'オロロソ')!==false&&strpos($profiles['glen-grant-arboralis-review']['fields']['度数・標準容量'],'40%')!==false,'Arboralis uses the confirmed normal variant');
+check(strpos($profiles['glen-grant-arboralis-review']['fields']['熟成樽'],'オロロソ')!==false&&strpos($profiles['glen-grant-arboralis-review']['fields']['アルコール度数・容量'],'40%')!==false,'Arboralis uses the confirmed normal variant');
 check(strpos($profiles['jim-beam-first-impression']['fields']['熟成樽'],'新樽')!==false,'bourbon uses new charred oak');
 check(strpos($profiles['kirin-riku-review']['fields']['熟成樽'],'確認できず')!==false&&strpos($profiles['nikka-from-the-barrel-review']['fields']['熟成樽'],'確認できず')!==false,'unpublished cask detail is not invented');
 check(hsh_whisky_enriched('<p>Unrelated</p>','manmos-cat-life')==='<p>Unrelated</p>','other topics are not enriched');
