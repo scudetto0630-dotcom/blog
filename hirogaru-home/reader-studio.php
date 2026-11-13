@@ -157,6 +157,10 @@ function hsh_whisky_paragraphs($rows){$out='';foreach($rows as $row)$out.='<p>'.
 function hsh_whisky_radar($d,$slug){
     $labels=array('煙たさ（ピート）','フルーティーさ','甘み','スパイシーさ','コク','余韻');
     $short=array('煙たさ','フルーツ感','甘み','スパイシーさ','コク','余韻');$uid='hsh-radar-'.$slug;
+    // Display order: fruit at the top, peat smoke at the bottom; keep stored scores tied to their original axes.
+    $order=array(1,2,4,0,3,5);
+    $labels=array_map(function($i)use($labels){return $labels[$i];},$order);$short=array_map(function($i)use($short){return $short[$i];},$order);
+    foreach(array('scores','reasons') as $key){$original=$d[$key];$d[$key]=array_map(function($i)use($original){return $original[$i];},$order);}
     $point=function($i,$radius){$a=deg2rad(-90+60*$i);return array(210+cos($a)*$radius,180+sin($a)*$radius);};
     $coords=function($radius)use($point){$out=array();for($i=0;$i<6;$i++){$p=$point($i,$radius);$out[]=round($p[0],2).','.round($p[1],2);}return implode(' ',$out);};
     $out='<figure class="hsh-whisky-radar"><div class="hsh-radar-heading"><span>FLAVOUR PROFILE</span><strong>香りと味のバランス</strong></div><svg viewBox="0 0 420 370" role="img" aria-labelledby="'.esc_attr($uid).'-title '.esc_attr($uid).'-desc"><title id="'.esc_attr($uid).'-title">'.esc_html($d['name']).'の香味の目安</title><desc id="'.esc_attr($uid).'-desc">公式の香味説明と本文の感想を参考にした編集上の推定。0から10。';
@@ -164,12 +168,17 @@ function hsh_whisky_radar($d,$slug){
     for($r=20;$r<=100;$r+=20)$out.='<polygon class="hsh-radar-grid" points="'.$coords($r).'"/>';
     $values=array();for($i=0;$i<6;$i++){$edge=$point($i,100);$p=$point($i,10*max(0,min(10,(int)$d['scores'][$i])));$values[]=round($p[0],2).','.round($p[1],2);$out.='<line class="hsh-radar-axis" x1="210" y1="180" x2="'.round($edge[0],2).'" y2="'.round($edge[1],2).'"/>';}
     $out.='<polygon class="hsh-radar-shape" points="'.implode(' ',$values).'"/>';
-    foreach($labels as $i=>$label){$p=$point($i,10*(int)$d['scores'][$i]);$t=$point($i,145);$anchor=($i===0||$i===3)?'middle':($i<3?'start':'end');$out.='<circle cx="'.round($p[0],2).'" cy="'.round($p[1],2).'" r="4"><title>'.esc_html($label).' '.(int)$d['scores'][$i].'/10（編集上の推定）</title></circle><text x="'.round($t[0],2).'" y="'.round($t[1]+4,2).'" text-anchor="'.$anchor.'">'.esc_html($short[$i]).'<tspan class="hsh-radar-label-value" x="'.round($t[0],2).'" dy="21">'.(int)$d['scores'][$i].'<tspan class="hsh-radar-label-max"> / 10</tspan></tspan></text>';}
+    foreach($labels as $i=>$label){$p=$point($i,10*(int)$d['scores'][$i]);$t=$point($i,145);$anchor=($i===0||$i===3)?'middle':($i<3?'start':'end');$out.='<circle cx="'.round($p[0],2).'" cy="'.round($p[1],2).'" r="4"><title>'.esc_html($label).' '.(int)$d['scores'][$i].'/10（編集上の推定）</title></circle><text data-flavour-axis="'.esc_attr($label).'" x="'.round($t[0],2).'" y="'.round($t[1]+4,2).'" text-anchor="'.$anchor.'">'.esc_html($short[$i]).'<tspan class="hsh-radar-label-value" x="'.round($t[0],2).'" dy="21">'.(int)$d['scores'][$i].'<tspan class="hsh-radar-label-max"> / 10</tspan></tspan></text>';}
     $out.='<text class="hsh-radar-scale" x="217" y="81">10</text><text class="hsh-radar-scale" x="217" y="131">5</text><text class="hsh-radar-scale" x="217" y="177">0</text></svg></figure><dl class="hsh-whisky-scores">';
     foreach($labels as $i=>$label)$out.='<div><dt>'.esc_html($label).'</dt><dd><span class="hsh-score-value">'.(int)$d['scores'][$i].'<small>/10</small></span><meter min="0" max="10" value="'.(int)$d['scores'][$i].'">'.(int)$d['scores'][$i].'/10</meter></dd></div>';
     $out.='</dl><details class="hsh-whisky-method"><summary>このチャートについて</summary><p>公式の香味説明と本文の感想をもとにした推定値です。0は控えめ、10は強め。実測値や口コミの平均、筆者が採点した数値ではありません。各項目の理由は下にまとめています。</p><dl>';
     foreach($labels as $i=>$label)$out.='<dt>'.esc_html($label).'</dt><dd>'.esc_html($d['reasons'][$i]).'</dd>';
     return $out.'</dl></details>';
+}
+/** Spell out product categories in public whisky copy without changing saved posts. */
+function hsh_whisky_product_terms($html){
+    $html=str_replace(array('シングルモルト・スコッチウイスキー','ブレンデッド・アイリッシュウイスキー','シングルモルトスコッチウイスキー','ブレンデット'),array('シングルモルトウイスキー（スコッチ）','ブレンデッドウイスキー（アイリッシュ）','シングルモルトウイスキー（スコッチ）','ブレンデッド'),$html);
+    return preg_replace(array('/シングルモルト(?!ウイスキー)/u','/ブレンデッド(?!ウイスキー)/u'),array('シングルモルトウイスキー','ブレンデッドウイスキー'),$html);
 }
 function hsh_whisky_enriched($content,$slug){
     $d=hsh_whisky_profile($slug);if(!$d||strpos($content,'data-hsh-whisky-profile')!==false)return $content;
@@ -184,5 +193,10 @@ function hsh_whisky_enriched($content,$slug){
     $more.='</ul></details></section>';
     // Keep the existing closing navigation, author anchors, photos and saved paragraphs intact.
     $pos=strpos($content,'<nav class="hsh-next-read"');if($pos!==false)$content=substr($content,0,$pos).$more.substr($content,$pos);else $content.=$more;
-    return $intro.$content;
+    return hsh_whisky_product_terms($intro.$content);
 }
+// Apply the same full category names to later-added glossary and related sections.
+add_filter('the_content',function($content){
+    if(!is_singular('post')||!in_the_loop()||!is_main_query())return $content;
+    $p=get_post();return $p&&hsh_owned_blog_post($p)&&hsh_whisky_profile($p->post_name)?hsh_whisky_product_terms($content):$content;
+},31);

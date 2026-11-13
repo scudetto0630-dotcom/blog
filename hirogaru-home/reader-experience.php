@@ -170,4 +170,4 @@ function hsh_reader_responsive_html($html){
 }
 
 // Final visual layer follows the functional reading and accessibility styles.
-add_action('wp_enqueue_scripts',function(){if(hsh_reader_scope())wp_enqueue_style('hsh-palette',plugin_dir_url(__FILE__).'assets/palette.css',array('hsh-quality'),'1.45.0');},190);
+add_action('wp_enqueue_scripts',function(){if(hsh_reader_scope())wp_enqueue_style('hsh-palette',plugin_dir_url(__FILE__).'assets/palette.css',array('hsh-quality'),'1.45.1');},190);

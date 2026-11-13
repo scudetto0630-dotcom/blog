@@ -13,6 +13,13 @@ $profiles=array();foreach(hsh_catalog() as $a){$d=hsh_whisky_profile($a['slug'])
     $profiles[$slug]['preview']=$html;
 }
 foreach($profiles as $slug=>$d){check(strpos($d['preview'],'スパイシーさ')!==false&&strpos($d['preview'],'<dt>樽の香ばしさ</dt>')===false,'revised flavour axis '.$slug);check(strpos($d['preview'],'香味の方向を比べるための目安')===false,'removed unwanted caption '.$slug);}
+foreach($profiles as $slug=>$d){
+    $chart=hsh_whisky_radar($d,$slug);preg_match_all('~<text data-flavour-axis="([^"]+)" x="([^"]+)" y="([^"]+)"~',$chart,$axes,PREG_SET_ORDER);
+    check(count($axes)===6&&$axes[0][1]==='フルーティーさ'&&$axes[3][1]==='煙たさ（ピート）'&&(float)$axes[0][3]<(float)$axes[3][3],'fruit top and smoke bottom '.$slug);
+    preg_match_all('~<meter[^>]+value="([0-9]+)"~',$chart,$meters);$expected=array();foreach(array(1,2,4,0,3,5) as $i)$expected[]=(string)$d['scores'][$i];check($meters[1]===$expected,'axis values remain attached to the correct flavour '.$slug);
+    check(!preg_match('/シングルモルト(?!ウイスキー)|ブレンデッ[ドト](?!ウイスキー)/u',wp_strip_all_tags($d['preview'])),'full whisky category names '.$slug);
+}
+check(hsh_whisky_product_terms('シングルモルトウイスキー、ブレンデッドウイスキー')==='シングルモルトウイスキー、ブレンデッドウイスキー','full category names are never duplicated');
 check(count($profiles)===7,'all seven owner-tasted bottles have their own researched profile');
 check(strpos($profiles['busker-irish-whiskey-review']['fields']['種類'],'ブレンデッド')!==false,'green Busker is not its single malt sibling');
 check(strpos($profiles['glen-grant-arboralis-review']['fields']['熟成樽'],'オロロソ')!==false&&strpos($profiles['glen-grant-arboralis-review']['fields']['度数・標準容量'],'40%')!==false,'Arboralis uses the confirmed normal variant');
