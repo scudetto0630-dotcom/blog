@@ -20,6 +20,10 @@ foreach($profiles as $slug=>$d){
     check(!preg_match('/シングルモルト(?!ウイスキー)|ブレンデッ[ドト](?!ウイスキー)/u',wp_strip_all_tags($d['preview'])),'full whisky category names '.$slug);
 }
 check(hsh_whisky_product_terms('シングルモルトウイスキー、ブレンデッドウイスキー')==='シングルモルトウイスキー、ブレンデッドウイスキー','full category names are never duplicated');
+foreach($profiles as $slug=>$d){
+    check(strpos($d['preview'],'香りと味の特徴')!==false&&strpos($d['preview'],'香りと味、どんな方向？')===false,'plain flavour heading '.$slug);
+    check(strpos($d['preview'],'なるほど気になる造り')===false&&strpos($d['preview'],'価格の入りやすさ')===false,'awkward generated copy removed '.$slug);
+}
 check(count($profiles)===7,'all seven owner-tasted bottles have their own researched profile');
 check(strpos($profiles['busker-irish-whiskey-review']['fields']['種類'],'ブレンデッド')!==false,'green Busker is not its single malt sibling');
 check(strpos($profiles['glen-grant-arboralis-review']['fields']['熟成樽'],'オロロソ')!==false&&strpos($profiles['glen-grant-arboralis-review']['fields']['度数・標準容量'],'40%')!==false,'Arboralis uses the confirmed normal variant');
