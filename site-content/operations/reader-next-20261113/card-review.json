@@ -1,0 +1,296 @@
+[
+  {
+    "slug": "linx-as-store",
+    "title": "【ご紹介】リンクサス酒販｜ウイスキーの状態と送料、返品条件をチェック",
+    "cover": "official-recovered-linx-1",
+    "alt": "リンクサス酒販の掲載例：白州NV700mlと箱の正面",
+    "decision": "keep_existing_title_and_image; descriptions improved where specific reader benefit was unclear"
+  },
+  {
+    "slug": "acana-orijen-cat-food-guide",
+    "title": "【ご紹介】アカナとオリジンの猫用フード｜レシピと成分表示の見方",
+    "cover": "official-recovered-acana-1",
+    "alt": "ワイルドプレイリーキャットレシピのパッケージ例（340g）",
+    "decision": "keep_existing_title_and_image; descriptions improved where specific reader benefit was unclear"
+  },
+  {
+    "slug": "aigan-dobutsu-course",
+    "title": "【ご紹介】愛玩動物飼養管理士｜2級・1級の費用と学習の流れ",
+    "cover": "official-recovered-course-1",
+    "alt": "日本愛玩動物協会の資格案内に掲載されたイメージ",
+    "decision": "keep_existing_title_and_image; descriptions improved where specific reader benefit was unclear"
+  },
+  {
+    "slug": "withpety-nekosanpo",
+    "title": "【ご紹介】猫用・毎日散歩｜関節向けサプリの配合と暮らしの見直し",
+    "cover": "official-ad-20261108-nekosanpo-1",
+    "alt": "猫用・毎日散歩のパッケージ写真",
+    "decision": "keep_existing_title_and_image; descriptions improved where specific reader benefit was unclear"
+  },
+  {
+    "slug": "withpety-nekojinkatsu",
+    "title": "【ご紹介】猫用・毎日腎活｜活性炭・ウラジロガシと、薬との併用の注意",
+    "cover": "official-ad-20261108-nekojinkatsu-1",
+    "alt": "猫用・毎日腎活のパッケージ写真",
+    "decision": "keep_existing_title_and_image; descriptions improved where specific reader benefit was unclear"
+  },
+  {
+    "slug": "withpety-nekoaigan",
+    "title": "【ご紹介】猫用・毎日愛眼｜ブルーベリー・ルテインの配合と選び方",
+    "cover": "official-ad-20261108-nekoaigan-1",
+    "alt": "猫用・毎日愛眼のパッケージ写真",
+    "decision": "keep_existing_title_and_image; descriptions improved where specific reader benefit was unclear"
+  },
+  {
+    "slug": "withpety-nekoshuukan",
+    "title": "【ご紹介】猫用・毎日習慣｜サラシア・イヌリンと、食事管理の考え方",
+    "cover": "official-ad-20261108-nekoshuukan-1",
+    "alt": "猫用・毎日習慣のパッケージ写真",
+    "decision": "keep_existing_title_and_image; descriptions improved where specific reader benefit was unclear"
+  },
+  {
+    "slug": "withpety-nekosoukai",
+    "title": "【ご紹介】猫用「毎日爽快」の成分と与え方｜植物酵素・乳酸菌を配合",
+    "cover": "official-ad-20261108-nekosoukai-1",
+    "alt": "猫用・毎日爽快のパッケージ写真",
+    "decision": "keep_existing_title_and_image; descriptions improved where specific reader benefit was unclear"
+  },
+  {
+    "slug": "withpety-nekokouken",
+    "title": "【ご紹介】毎日口健の犬猫兼用サプリ｜粉末の与え方と口のケア",
+    "cover": "official-ad-20261108-konakouken-1",
+    "alt": "犬猫兼用・毎日口健のパッケージ写真",
+    "decision": "keep_existing_title_and_image; descriptions improved where specific reader benefit was unclear"
+  },
+  {
+    "slug": "leo-luna-citta-bed",
+    "title": "【ご紹介】レオエルナの犬猫用ベッド｜シッタコレクションのサイズと洗い方",
+    "cover": "official-a8-20261108-bed-2",
+    "alt": "レオエルナのシッタコレクション、無地の色違いの公式商品写真",
+    "decision": "keep_existing_title_and_image; descriptions improved where specific reader benefit was unclear"
+  },
+  {
+    "slug": "single-malt-label-guide",
+    "title": "初めてのウイスキー、ラベルはどこ見る？",
+    "cover": "article-labels",
+    "alt": "木のテーブルに並ぶ、白いラベルのボトルとウイスキーグラス",
+    "decision": "keep_existing_title_and_image; descriptions improved where specific reader benefit was unclear"
+  },
+  {
+    "slug": "mognyan-cat-food-guide",
+    "title": "【ご紹介】モグニャンのキャットフード｜原材料・粒の大きさ・切り替え方",
+    "cover": "a8-collage-17",
+    "alt": "まんもすの写真をもとにしたコラージュ表紙",
+    "decision": "keep_existing_title_and_image; descriptions improved where specific reader benefit was unclear"
+  },
+  {
+    "slug": "essential-jaguar-cat-food",
+    "title": "【ご紹介】ジャガーキャットフード｜原材料・カロリー・粒の特徴",
+    "cover": "a8-collage-16",
+    "alt": "まんもすの写真をもとにしたコラージュ表紙",
+    "decision": "keep_existing_title_and_image; descriptions improved where specific reader benefit was unclear"
+  },
+  {
+    "slug": "mcadams-cat-chicken-turkey",
+    "title": "【ご紹介】マックアダムズの猫用フード｜原材料とオーブンベイク製法",
+    "cover": "a8-collage-15",
+    "alt": "まんもすの写真をもとにしたコラージュ表紙",
+    "decision": "keep_existing_title_and_image; descriptions improved where specific reader benefit was unclear"
+  },
+  {
+    "slug": "canagan-chicken-salmon",
+    "title": "【ご紹介】カナガンの猫用フード｜チキンとサーモンの違い",
+    "cover": "a8-collage-14",
+    "alt": "まんもすの写真をもとにしたコラージュ表紙",
+    "decision": "keep_existing_title_and_image; descriptions improved where specific reader benefit was unclear"
+  },
+  {
+    "slug": "canagan-dental-cat-food",
+    "title": "【ご紹介】カナガンデンタルの猫用フード｜原材料と与える前の注意点",
+    "cover": "a8-collage-13",
+    "alt": "まんもすの写真をもとにしたコラージュ表紙",
+    "decision": "keep_existing_title_and_image; descriptions improved where specific reader benefit was unclear"
+  },
+  {
+    "slug": "pet-paradise-cat-toys",
+    "title": "【ご紹介】ペットパラダイスの猫おもちゃ｜けりぐるみと猫じゃらし",
+    "cover": "a8-collage-12",
+    "alt": "まんもすの写真をもとにしたコラージュ表紙",
+    "decision": "keep_existing_title_and_image; descriptions improved where specific reader benefit was unclear"
+  },
+  {
+    "slug": "withpety-nekoissho",
+    "title": "【ご紹介】猫用サプリ「毎日一緒」｜DHA・EPA配合タイプの成分と特徴",
+    "cover": "a8-collage-24",
+    "alt": "まんもすの写真を使った合成表紙",
+    "decision": "keep_existing_title_and_image; descriptions improved where specific reader benefit was unclear"
+  },
+  {
+    "slug": "catlog-cat-monitor",
+    "title": "【ご紹介】CatlogとCatlog Board｜記録できることと機能の違い",
+    "cover": "a8-collage-23",
+    "alt": "まんもすの写真を使った合成表紙",
+    "decision": "keep_existing_title_and_image; descriptions improved where specific reader benefit was unclear"
+  },
+  {
+    "slug": "withpety-nekoryoukan",
+    "title": "【ご紹介】猫用「毎日良肝」の成分と与え方｜薬や食事との併用は？",
+    "cover": "a8-collage-22",
+    "alt": "まんもすの写真を使った合成表紙",
+    "decision": "keep_existing_title_and_image; descriptions improved where specific reader benefit was unclear"
+  },
+  {
+    "slug": "onekosama-cat-tower",
+    "title": "【ご紹介】おねこさまのキャットタワー｜置き場所と上り下りのしやすさで選ぶ",
+    "cover": "a8-collage-21",
+    "alt": "まんもすの写真を使った合成表紙",
+    "decision": "keep_existing_title_and_image; descriptions improved where specific reader benefit was unclear"
+  },
+  {
+    "slug": "withpety-nekobihada",
+    "title": "【ご紹介】猫用サプリ「毎日美肌」｜PS-B1配合タイプの成分と特徴",
+    "cover": "a8-collage-20",
+    "alt": "まんもすの写真を使った合成表紙",
+    "decision": "keep_existing_title_and_image; descriptions improved where specific reader benefit was unclear"
+  },
+  {
+    "slug": "pontely-cat-dna-test",
+    "title": "【ご紹介】猫の遺伝子検査Pontely｜検査内容とプランの違い",
+    "cover": "a8-collage-19",
+    "alt": "まんもすの写真を使った合成表紙",
+    "decision": "keep_existing_title_and_image; descriptions improved where specific reader benefit was unclear"
+  },
+  {
+    "slug": "withpety-nekokenshin",
+    "title": "【ご紹介】猫用「毎日健心」はどんなサプリ？ 成分と与え方",
+    "cover": "a8-collage-18",
+    "alt": "まんもすの写真を使った合成表紙",
+    "decision": "keep_existing_title_and_image; descriptions improved where specific reader benefit was unclear"
+  },
+  {
+    "slug": "digxipop-cat-figure",
+    "title": "【ご紹介】愛猫の写真をフィギュアに。digxipopの注文方法",
+    "cover": "a8-collage-10",
+    "alt": "まんもすの写真を使った合成表紙",
+    "decision": "keep_existing_title_and_image; descriptions improved where specific reader benefit was unclear"
+  },
+  {
+    "slug": "pet-sougi-110-cat-guide",
+    "title": "【ご紹介】ペット葬儀110番｜火葬プランと相談前に確認したいこと",
+    "cover": "a8-collage-07",
+    "alt": "まんもすの写真を使った合成表紙",
+    "decision": "keep_existing_title_and_image; descriptions improved where specific reader benefit was unclear"
+  },
+  {
+    "slug": "m-and-cat-knit-bag",
+    "title": "【ご紹介】M&Co.の猫モチーフ雑貨｜ニットバッグとチャーム",
+    "cover": "a8-collage-06",
+    "alt": "まんもすの写真を使った合成表紙",
+    "decision": "keep_existing_title_and_image; descriptions improved where specific reader benefit was unclear"
+  },
+  {
+    "slug": "mirai-cat-food-types",
+    "title": "【ご紹介】和漢みらいのキャットフード｜3タイプの違いと選ぶときの注意点",
+    "cover": "a8-collage-05",
+    "alt": "まんもすの写真を使った合成表紙",
+    "decision": "keep_existing_title_and_image; descriptions improved where specific reader benefit was unclear"
+  },
+  {
+    "slug": "hario-cat-bowl-guide",
+    "title": "【ご紹介】HARIO「にゃんプレトール」｜猫用食器のサイズとお手入れ",
+    "cover": "a8-collage-02",
+    "alt": "まんもすの写真を使った合成表紙",
+    "decision": "keep_existing_title_and_image; descriptions improved where specific reader benefit was unclear"
+  },
+  {
+    "slug": "paws-green-deli-cat-food",
+    "title": "【ご紹介】パウズグリーンデリの猫用フード｜お試しセットの内容と選び方",
+    "cover": "a8-collage-01",
+    "alt": "まんもすの写真を使った合成表紙",
+    "decision": "keep_existing_title_and_image; descriptions improved where specific reader benefit was unclear"
+  },
+  {
+    "slug": "ai-data-extraction-checks",
+    "title": "AIにデータ抽出を頼んだら、できた表のどこを見る？",
+    "cover": "article-checking",
+    "alt": "2枚の数値表を並べ、鉛筆で違いを確認する手元",
+    "decision": "keep_existing_title_and_image; descriptions improved where specific reader benefit was unclear"
+  },
+  {
+    "slug": "starting-it-without-specialty",
+    "title": "ITに興味を持ってから、自分に合う仕事に出会うまで約1年",
+    "cover": "article-beginner",
+    "alt": "ノートとペン、ノートパソコンを置いた窓際の机",
+    "decision": "keep_existing_title_and_image; descriptions improved where specific reader benefit was unclear"
+  },
+  {
+    "slug": "it-data-work-flow",
+    "title": "AIでデータ抽出が楽に。今現在のデータ加工のお仕事",
+    "cover": "article-workflow",
+    "alt": "表を表示したノートパソコンと、USBメモリーを持つ手元",
+    "decision": "keep_existing_title_and_image; descriptions improved where specific reader benefit was unclear"
+  },
+  {
+    "slug": "sherry-cask-notes",
+    "title": "グレンファークラス12年の感想｜ぶどうパン好きが何度も買う理由",
+    "cover": "article-sherry",
+    "alt": "グレンファークラス12年のボトルと青い筒箱",
+    "decision": "keep_existing_title_and_image; descriptions improved where specific reader benefit was unclear"
+  },
+  {
+    "slug": "glenlivet-12-first-bottles",
+    "title": "グレンリベット12年の感想｜グラス付きで買った3本目がうまかった",
+    "cover": "glenlivet",
+    "alt": "グレンリベット12年のボトルとハイボール",
+    "decision": "keep_existing_title_and_image; descriptions improved where specific reader benefit was unclear"
+  },
+  {
+    "slug": "cat-vet-routine",
+    "title": "猫の通院前に何を用意する？ 持ち物と、これだけは伝えたいこと",
+    "cover": "article-vet",
+    "alt": "キャリーの横にいる猫と、タオル・手帳",
+    "decision": "keep_existing_title_and_image; descriptions improved where specific reader benefit was unclear"
+  },
+  {
+    "slug": "cat-teaser-small-parts",
+    "title": "100均のねこじゃらしを愛用してるけど、一つだけ注意点が！",
+    "cover": "manmos-toy",
+    "alt": "棒から下がるピンクの布を見つめる長毛の猫",
+    "decision": "keep_existing_title_and_image; descriptions improved where specific reader benefit was unclear"
+  },
+  {
+    "slug": "manmos-cat-life",
+    "title": "保護猫まんもすとの出会い｜ひと目で「この子だ」と思って迎えた日",
+    "cover": "manmos-zip-pillow",
+    "alt": "枕に上半身を乗せて寝そべるまんもす",
+    "decision": "keep_existing_title_and_image; descriptions improved where specific reader benefit was unclear"
+  },
+  {
+    "slug": "before-welcoming-cat",
+    "title": "猫を迎える準備、まず何を買う？ 部屋の片付けも忘れずに",
+    "cover": "manmos-zip-sitting",
+    "alt": "部屋の中でこちらを振り返るまんもす",
+    "decision": "keep_existing_title_and_image; descriptions improved where specific reader benefit was unclear"
+  },
+  {
+    "slug": "csv-import-seven-checks",
+    "title": "CSVを取り込む前に。0や空欄を変えないための7つの確認",
+    "cover": "article-csv",
+    "alt": "先頭に0が付く番号を表示した表と、手元の電卓・ノート",
+    "decision": "keep_existing_title_and_image; descriptions improved where specific reader benefit was unclear"
+  },
+  {
+    "slug": "highball-measure-and-adjust",
+    "title": "ハイボールが薄い？ ウイスキーを足す前に見てみよう",
+    "cover": "highball",
+    "alt": "木のテーブルに置いた薄い琥珀色のハイボール",
+    "decision": "keep_existing_title_and_image; descriptions improved where specific reader benefit was unclear"
+  },
+  {
+    "slug": "cat-carrier-checklist",
+    "title": "猫用リュックキャリーがへこんだ話｜10年以上前の頑丈な物を使い直した理由",
+    "cover": "article-carrier",
+    "alt": "扉を開けたキャリーのそばにいるまんもす",
+    "decision": "keep_existing_title_and_image; descriptions improved where specific reader benefit was unclear"
+  }
+]

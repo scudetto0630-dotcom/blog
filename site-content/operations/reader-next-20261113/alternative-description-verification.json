@@ -1,0 +1,37 @@
+[
+  {
+    "slug": "single-malt-label-guide",
+    "http": 200,
+    "alternative_description_verified": true
+  },
+  {
+    "slug": "ai-data-extraction-checks",
+    "http": 200,
+    "alternative_description_verified": true
+  },
+  {
+    "slug": "starting-it-without-specialty",
+    "http": 200,
+    "alternative_description_verified": true
+  },
+  {
+    "slug": "it-data-work-flow",
+    "http": 200,
+    "alternative_description_verified": true
+  },
+  {
+    "slug": "cat-vet-routine",
+    "http": 200,
+    "alternative_description_verified": true
+  },
+  {
+    "slug": "csv-import-seven-checks",
+    "http": 200,
+    "alternative_description_verified": true
+  },
+  {
+    "slug": "cat-teaser-small-parts",
+    "http": 200,
+    "alternative_description_verified": true
+  }
+]

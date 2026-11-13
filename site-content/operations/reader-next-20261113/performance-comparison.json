@@ -1,0 +1,33 @@
+{
+  "scope": "390px/DPR1 validation browser; requests relayed through the same HTTP fetcher; not field Core Web Vitals or a ranking measure",
+  "single_sample_not_field_cwv": true,
+  "results": [
+    {
+      "page": "home",
+      "before_bytes": 659777,
+      "after_bytes": 622120,
+      "reduction_bytes": 37657,
+      "reduction_percent": 5.71,
+      "before_lcp_ms": 3852,
+      "after_lcp_ms": 7740
+    },
+    {
+      "page": "glenlivet-12-first-bottles",
+      "before_bytes": 1028678,
+      "after_bytes": 988731,
+      "reduction_bytes": 39947,
+      "reduction_percent": 3.88,
+      "before_lcp_ms": 3764,
+      "after_lcp_ms": 3700
+    },
+    {
+      "page": "hsh-gallery",
+      "before_bytes": 1104920,
+      "after_bytes": 1064256,
+      "reduction_bytes": 40664,
+      "reduction_percent": 3.68,
+      "before_lcp_ms": 5080,
+      "after_lcp_ms": 4832
+    }
+  ]
+}
