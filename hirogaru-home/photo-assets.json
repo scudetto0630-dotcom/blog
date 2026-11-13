@@ -119,7 +119,7 @@
       "sha256": "5d18ef9b4d1e759c6d59edb8eabfdf33bcafdef14257d21241eb5444d36148e8",
       "bytes": 118604,
       "subject": "manmos",
-      "alt": "まんもすの写真を参考に、布のねこじゃらしを見る姿を作成した",
+      "alt": "棒から下がるピンクの布を見つめる長毛の猫",
       "caption": "提供写真を参考にしたAI生成画像です。",
       "dhash": "010be3e3e1c2d0d6"
     },
@@ -275,7 +275,7 @@
       "height": 800,
       "kind": "generated",
       "subject": "manmos",
-      "alt": "通院の準備をイメージした、キャリーとまんもすの",
+      "alt": "キャリーの横にいる猫と、タオル・手帳",
       "caption": "提供写真を参考にしたAI生成画像です。",
       "sha256": "3be998584f4e897c1b53ab0e1ad2449acf8594071ffcad9b72c5d9a96846b597",
       "bytes": 133206,
@@ -296,7 +296,7 @@
       "height": 800,
       "kind": "generated",
       "subject": "whisky",
-      "alt": "ボトルのラベルを見る場面をイメージした",
+      "alt": "木のテーブルに並ぶ、白いラベルのボトルとウイスキーグラス",
       "caption": "AI生成のイメージです。",
       "sha256": "2d04fbcd8a8d2f77bac46ac0576b1f5051725278017f299b2e9106432d8071d1",
       "bytes": 86454,
@@ -328,7 +328,7 @@
       "height": 800,
       "kind": "generated",
       "subject": "work",
-      "alt": "データを受け取り取り込む作業をイメージした",
+      "alt": "表を表示したノートパソコンと、USBメモリーを持つ手元",
       "caption": "AI生成のイメージです。",
       "sha256": "60d9153402964c120c540377ff39589067587a36c4167d85e244807732331433",
       "bytes": 83986,
@@ -340,7 +340,7 @@
       "height": 800,
       "kind": "generated",
       "subject": "work",
-      "alt": "やりたい仕事を書き出す机をイメージした",
+      "alt": "ノートとペン、ノートパソコンを置いた窓際の机",
       "caption": "AI生成のイメージです。",
       "sha256": "aa378786089c0da544c0d242c80bca3607c6007a9ac4ebe8b3bc259732d0f075",
       "bytes": 79436,
@@ -352,7 +352,7 @@
       "height": 800,
       "kind": "generated",
       "subject": "work",
-      "alt": "元データと抽出結果を照らし合わせる",
+      "alt": "2枚の数値表を並べ、鉛筆で違いを確認する手元",
       "caption": "AI生成のイメージです。",
       "sha256": "1a678571c50ebf10359ebe67b09ba095651b9bc83e50e2d8968f715c0840b2a2",
       "bytes": 85822,
@@ -364,7 +364,7 @@
       "height": 800,
       "kind": "generated",
       "subject": "work",
-      "alt": "表の数値を確認する作業をイメージした",
+      "alt": "先頭に0が付く番号を表示した表と、手元の電卓・ノート",
       "caption": "AI生成のイメージです。",
       "sha256": "f91c4eacafe260f22163e1ad8a61c557253e02bb47718a7bc7ed0855f44f015a",
       "bytes": 97832,
@@ -1045,6 +1045,11 @@
       "rights": "permission",
       "metadata_removed": true,
       "variants": {
+        "240": {
+          "file": "manmos-zip-window-240.webp",
+          "width": 240,
+          "height": 320
+        },
         "480": {
           "file": "manmos-zip-window-480.webp",
           "width": 480,
@@ -1058,11 +1063,6 @@
           "height": 1200,
           "bytes": 131300,
           "sha256": "867af6539b3d0ffc0ebed4999211097ed8523d0f107b63407daaf2805639b081"
-        },
-        "240": {
-          "file": "manmos-zip-window-240.webp",
-          "width": 240,
-          "height": 320
         }
       },
       "tags": [
