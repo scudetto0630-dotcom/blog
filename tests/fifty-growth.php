@@ -14,8 +14,8 @@ check(substr_count($c,'id="hsh-csv-leading-zero"')===1&&strpos($c,'バックア�
 check(hsh_studio_story_additions($c,'csv-import-seven-checks')===$c,'CSV addition is idempotent');
 check(strpos($c,'hsh-csv-leading-zero')<strpos($c,'csv-import-seven-checks-detail-5'),'original date anchors stay after the added zero-recovery example');
 $t=null;foreach(hsh_growth_tastes() as $r)if($r['name']==='フロム・ザ・バレル')$t=$r;
-check($t&&strpos($t['note'],'3,900円')!==false&&strpos($t['note'],'こぼれる')!==false,'From the Barrel note preserves confirmed purchase price and pouring experience');
-check(strpos($t['note'],'香り')===false&&strpos($t['note'],'飲みやす')===false,'no unreported taste is invented');
+check($t&&strpos($t['note'],'3,900円')!==false&&strpos(implode(' ',$t['details']),'こぼれる')!==false,'From the Barrel note preserves confirmed purchase price and pouring experience');
+check(strpos($t['note'],'ストレート')!==false&&strpos(implode(' ',$t['details']),'ハイボール')!==false&&strpos(implode(' ',$t['details']),'かすかにメロンっぽい香り')!==false,'confirmed straight and highball impressions retain the faint-melon qualifier');
 $tool=hsh_studio_bottle_price();
 check(substr_count($tool,'<fieldset>')===2&&strpos($tool,'data-bottle-price')!==false&&strpos($tool,'min="0.01"')!==false,'unit-price comparison has two independent positive-price inputs');
 check(strpos($tool,'4,200円')!==false&&strpos($tool,'計算用の例')!==false&&strpos($tool,'<noscript>')!==false,'unit-price tool includes a labelled worked example and no-JS formula');
