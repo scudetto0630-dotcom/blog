@@ -1,0 +1,25 @@
+{
+  "arboralis-generated": {
+    "file": "arboralis-generated.webp",
+    "width": 1200,
+    "height": 800,
+    "kind": "generated",
+    "subject": "whisky",
+    "alt": "グレングラント アルボラリス カスクストレングスのオレンジ色の箱とボトルの",
+    "caption": "アルボラリス カスクストレングスのAI生成イメージ",
+    "sha256": "94847ed3b03521c6ec9b34c33179c6ce9734f99ee9dcae767ece0fd0145f8730",
+    "bytes": 99684
+  },
+  "detail-topic-whisky": {
+    "file": "detail-topic-whisky.webp",
+    "width": 1200,
+    "height": 800,
+    "kind": "generated",
+    "subject": "whisky",
+    "alt": "自宅で楽しむウイスキー",
+    "caption": "AI生成のイメージです。",
+    "sha256": "162065ed4d8575970c2f9bc545f5d7a40aef15c65141a7d7330a63e2c9278bb1",
+    "bytes": 81450,
+    "dhash": "94d8b333328ecc29"
+  }
+}
