@@ -9,7 +9,7 @@ class LongformTests(unittest.TestCase):
         cls.bundle=json.loads((ROOT/'hirogaru-home/expanded-articles.json').read_text())
         cls.old=json.loads((ROOT/'site-content/backups/before-longform-20261026/starter-live.json').read_text())['articles']
         cls.previous=json.loads((ROOT/'site-content/backups/before-longform-20261026/expanded-articles.json').read_text())+cls.old
-        cls.separated={'glen-grant-arboralis-review','nikka-from-the-barrel-review','jim-beam-first-impression'}
+        cls.separated={'glen-grant-arboralis-review','nikka-from-the-barrel-review','jim-beam-first-impression','kirin-riku-review','busker-irish-whiskey-review'}
         cls.new_reviews=[a for a in cls.bundle if a['slug'] in cls.separated]
         cls.current=[a for a in cls.bundle if a['slug'] not in cls.separated]+[json.loads((ROOT/'site-content/articles/longform'/f"{a['slug']}.json").read_text()) for a in cls.old]
         cls.photos=json.loads((ROOT/'hirogaru-home/photo-assets.json').read_text())
@@ -46,7 +46,7 @@ class LongformTests(unittest.TestCase):
         self.assertEqual(len(used),len(set(used)))
         for key in used:self.assertIn(key,self.photos['assets'])
     def test_separated_reviews_use_confirmed_facts_without_filler(self):
-        self.assertEqual(len(self.new_reviews),3)
+        self.assertEqual(len(self.new_reviews),5)
         for a in self.new_reviews:
             self.assertGreaterEqual(text_count(a['content']),300)
             self.assertGreaterEqual(a['content'].count('<h2'),3)

@@ -3,7 +3,7 @@ if(!defined('ABSPATH'))exit;
 /** Reader improvements; all product facts come from the packaged, sourced articles. */
 function hsh_brushup_type($slug){
     foreach(hsh_affiliate_articles() as $a)if($a['slug']===$slug)return 'product';
-    return in_array($slug,array('cat-carrier-checklist','manmos-cat-life','glenlivet-12-first-bottles','sherry-cask-notes','it-data-work-flow','starting-it-without-specialty','hsh-hakushu-visit','glen-grant-arboralis-review','nikka-from-the-barrel-review','jim-beam-first-impression'),true)?'story':'guide';
+    return in_array($slug,array('cat-carrier-checklist','manmos-cat-life','glenlivet-12-first-bottles','sherry-cask-notes','it-data-work-flow','starting-it-without-specialty','hsh-hakushu-visit','glen-grant-arboralis-review','nikka-from-the-barrel-review','jim-beam-first-impression','kirin-riku-review','busker-irish-whiskey-review'),true)?'story':'guide';
 }
 function hsh_brushup_types(){return array('all'=>'すべて','story'=>'体験談','guide'=>'選び方・手順','product'=>'商品紹介');}
 function hsh_brushup_choice($value){return is_string($value)&&isset(hsh_brushup_types()[$value])?$value:'all';}

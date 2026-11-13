@@ -223,5 +223,15 @@
     "role": "本人の体験談",
     "reader": "ジムビームの香りや刺激について個人の感想を知りたい人",
     "question": "グラスセットで買ったジムビームが自分に合わなかったのはなぜか"
+  },
+  "kirin-riku-review": {
+    "reader": "最初のウイスキーとして陸を検討している人",
+    "question": "陸の造りはどんなものか、初めて飲んだ本人はどう感じたか？",
+    "role": "experience"
+  },
+  "busker-irish-whiskey-review": {
+    "reader": "緑ラベルのバスカーを検討している人",
+    "question": "3種類の樽と原酒の違いは何か、2本目に飲んだ本人の感想は？",
+    "role": "experience"
   }
 }

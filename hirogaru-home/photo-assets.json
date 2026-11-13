@@ -3217,7 +3217,9 @@
     "ai-data-extraction-checks": "article-checking",
     "glen-grant-arboralis-review": "arboralis-generated",
     "nikka-from-the-barrel-review": "from-the-barrel-generated",
-    "jim-beam-first-impression": "jim-beam-generated"
+    "jim-beam-first-impression": "jim-beam-generated",
+    "kirin-riku-review": "riku-generated",
+    "busker-irish-whiskey-review": "busker-green-generated"
   },
   "inline": {
     "before-welcoming-cat": [

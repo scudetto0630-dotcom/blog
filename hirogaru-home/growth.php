@@ -2,6 +2,8 @@
 if(!defined('ABSPATH'))exit;
 /** Public additions only use packaged facts and approved packaged photographs. */
 function hsh_growth_summaries(){return array(
+'kirin-riku-review'=>'初めて買った陸は、当時は苦手でコーラ割りに。原料・造りと、ウイスキーに慣れる前の感想。',
+'busker-irish-whiskey-review'=>'2本目のバスカー緑で、おいしいと思えた。炭酸とコーラで飲んだ頃の話と、3種類の樽の特徴。',
 'glen-grant-arboralis-review'=>'4本目のジムビームが苦手だったので、5本目は慎重に。紹介で聞いたフルーツの例えを、どう受け止めて選んだか。',
 'nikka-from-the-barrel-review'=>'力強さと甘み、ハイボールにしたときの香り。こぼれやすくても好きな、フロム・ザ・バレルの感想。',
 'jim-beam-first-impression'=>'グラスセットで買った4本目は、自分には苦手だった。ジムビームを飲んだ感想と、5本目を慎重に選んだ理由。',
@@ -19,6 +21,7 @@ function hsh_growth_summaries(){return array(
 'ai-data-extraction-checks'=>'件数と合計が合っていても、行が違うかもしれない。架空の表と抽出結果を並べ、ID・件数・合計を確かめる練習。',
 'csv-import-seven-checks'=>'CSVを開いたら文字化けしたり、先頭の0が消えたり。元ファイルを残して見る7項目と、0が消えたときの切り分け方。');}
 function hsh_growth_next($slug){$pairs=array(
+'kirin-riku-review'=>'busker-irish-whiskey-review','busker-irish-whiskey-review'=>'glenlivet-12-first-bottles',
 'glen-grant-arboralis-review'=>'jim-beam-first-impression','jim-beam-first-impression'=>'glen-grant-arboralis-review','nikka-from-the-barrel-review'=>'highball-measure-and-adjust',
 'before-welcoming-cat'=>'manmos-cat-life','manmos-cat-life'=>'cat-carrier-checklist','cat-carrier-checklist'=>'cat-vet-routine','cat-vet-routine'=>'cat-carrier-checklist','cat-teaser-small-parts'=>'manmos-cat-life',
 'glenlivet-12-first-bottles'=>'sherry-cask-notes','sherry-cask-notes'=>'single-malt-label-guide','single-malt-label-guide'=>'glenlivet-12-first-bottles','highball-measure-and-adjust'=>'glenlivet-12-first-bottles',
@@ -38,8 +41,8 @@ function hsh_growth_gallery(){
     return $out.'</div><p><a href="'.esc_url(home_url('/manmos-cat-life/')).'">まんもすとの暮らしを読む →</a></p></section>';
 }
 function hsh_growth_tastes(){return array(
-array('name'=>'キリンウイスキー 陸','image'=>'riku-generated','note'=>'初めて買ったウイスキー。当時はまだウイスキーに慣れていなくて、おいしいと思えず、コーラで割って飲んでいた。','reason'=>'','slug'=>''),
-array('name'=>'バスカー アイリッシュウイスキー','image'=>'busker-green-generated','note'=>'2本目に買ったバスカー緑は、おいしいと感じた。炭酸とコーラで交互に割って飲むうちに、ウイスキーの味にも慣れていった。','reason'=>'','slug'=>''),
+array('name'=>'キリンウイスキー 陸','image'=>'riku-generated','note'=>'初めて買ったウイスキー。当時はまだウイスキーに慣れていなくて、おいしいと思えず、コーラで割って飲んでいた。','reason'=>'','slug'=>'kirin-riku-review'),
+array('name'=>'バスカー アイリッシュウイスキー','image'=>'busker-green-generated','note'=>'2本目に買ったバスカー緑は、おいしいと感じた。炭酸とコーラで交互に割って飲むうちに、ウイスキーの味にも慣れていった。','reason'=>'','slug'=>'busker-irish-whiskey-review'),
 array('name'=>'グレンリベット12年','note'=>'3本目に買って、最初はハイボールで飲んだ。飲みやすくて、それまで買ったウイスキーより格段にうまいと感じた。花のような香りも好き。','reason'=>'YouTubeで気になっていたところ、スーパーでグラス付きのセットを見つけた。知っていた金額より少し安く、迷わず購入。','slug'=>'glenlivet-12-first-bottles'),
 array('name'=>'ジムビーム','image'=>'jim-beam-generated','note'=>'グラスセットで買った4本目。自分にはかなり苦手で、次の1本を慎重に選ぶきっかけになった。','reason'=>'','slug'=>'jim-beam-first-impression'),
 array('name'=>'グレングラント アルボラリス','image'=>'arboralis-generated','note'=>'5本目に選んだアルボラリスは、甘くて飲みやすかった。ジムビームが苦手だった後、慎重に選んだ理由を書いている。','reason'=>'','slug'=>'glen-grant-arboralis-review'),

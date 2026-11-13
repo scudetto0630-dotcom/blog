@@ -141,7 +141,7 @@ function hsh_studio_story_additions($content,$slug) {
 }
 add_filter('the_content',function($content){
     if(!is_singular('post')||!in_the_loop()||!is_main_query())return $content;
-    $p=get_post();return $p&&hsh_owned_blog_post($p)?hsh_studio_story_additions($content,$p->post_name):$content;
+    $p=get_post();return $p&&hsh_owned_blog_post($p)?hsh_whisky_enriched(hsh_studio_story_additions($content,$p->post_name),$p->post_name):$content;
 },9);
 
 function hsh_studio_current_source_links($html) {
@@ -149,4 +149,40 @@ function hsh_studio_current_source_links($html) {
     $new='https://www.pontely.com/forowner/%E7%8C%AB%E3%81%AE%E9%81%BA%E4%BC%9D%E5%AD%90%E6%A4%9C%E6%9F%BB';
     $html=str_replace('href="'.esc_url($old).'"','href="'.esc_url($new).'"',$html);
     return str_replace(array('https://hirogarushumi.com/hsh-whisky-notes/#arboralis-taste','アルボラリス カスクストレングス'),array('https://hirogarushumi.com/glen-grant-arboralis-review/','アルボラリス'),$html);
+}
+
+/** Researched product context; personal tasting paragraphs stay in the saved post. */
+function hsh_whisky_profile($slug){return hsh_reader_roles()[$slug]['whisky']??null;}
+function hsh_whisky_paragraphs($rows){$out='';foreach($rows as $row)$out.='<p>'.esc_html($row).'</p>';return $out;}
+function hsh_whisky_radar($d,$slug){
+    $labels=array('煙たさ（ピート）','フルーティーさ','甘み','樽の香ばしさ','コク','余韻');
+    $short=array('煙たさ','フルーツ感','甘み','樽の香ばしさ','コク','余韻');$uid='hsh-radar-'.$slug;
+    $point=function($i,$radius){$a=deg2rad(-90+60*$i);return array(190+cos($a)*$radius,165+sin($a)*$radius);};
+    $coords=function($radius)use($point){$out=array();for($i=0;$i<6;$i++){$p=$point($i,$radius);$out[]=round($p[0],2).','.round($p[1],2);}return implode(' ',$out);};
+    $out='<figure class="hsh-whisky-radar"><svg viewBox="0 0 380 330" role="img" aria-labelledby="'.esc_attr($uid).'-title '.esc_attr($uid).'-desc"><title id="'.esc_attr($uid).'-title">'.esc_html($d['name']).'の香味の目安</title><desc id="'.esc_attr($uid).'-desc">公式の香味説明と本文の感想を参考にした編集上の推定。0から10。';
+    foreach($labels as $i=>$label)$out.=esc_html($label).' '.(int)$d['scores'][$i].'。';$out.='数値が高いほど、その特徴が強い想定です。品質の順位ではありません。</desc>';
+    for($r=20;$r<=100;$r+=20)$out.='<polygon class="hsh-radar-grid" points="'.$coords($r).'"/>';
+    $values=array();for($i=0;$i<6;$i++){$edge=$point($i,100);$p=$point($i,10*max(0,min(10,(int)$d['scores'][$i])));$values[]=round($p[0],2).','.round($p[1],2);$out.='<line class="hsh-radar-axis" x1="190" y1="165" x2="'.round($edge[0],2).'" y2="'.round($edge[1],2).'"/>';}
+    $out.='<polygon class="hsh-radar-shape" points="'.implode(' ',$values).'"/>';
+    foreach($labels as $i=>$label){$p=$point($i,10*(int)$d['scores'][$i]);$t=$point($i,132);$anchor=($i===0||$i===3)?'middle':($i<3?'start':'end');$out.='<circle cx="'.round($p[0],2).'" cy="'.round($p[1],2).'" r="4"><title>'.esc_html($label).' '.(int)$d['scores'][$i].'/10（編集上の推定）</title></circle><text x="'.round($t[0],2).'" y="'.round($t[1]+4,2).'" text-anchor="'.$anchor.'">'.esc_html($short[$i]).'</text>';}
+    $out.='<text class="hsh-radar-scale" x="197" y="66">10</text><text class="hsh-radar-scale" x="197" y="162">0</text></svg><figcaption>香味の方向を比べるための目安</figcaption></figure><dl class="hsh-whisky-scores">';
+    foreach($labels as $i=>$label)$out.='<div><dt>'.esc_html($label).'</dt><dd><span class="hsh-score-value">'.(int)$d['scores'][$i].'<small>/10</small></span><meter min="0" max="10" value="'.(int)$d['scores'][$i].'">'.(int)$d['scores'][$i].'/10</meter></dd></div>';
+    $out.='</dl><details class="hsh-whisky-method"><summary>チャートの読み方と、数値の理由</summary><p>0は弱め、10は強め。公式の香味説明と本文の感想を参考に、編集上の目安として推定した値です。実測値や口コミの平均、筆者が採点した数値ではありません。大きな六角形ほどおいしい、という意味でもありません。特に煙たさや余韻は情報が限られるため、形は大まかな参考にしてください。</p><dl>';
+    foreach($labels as $i=>$label)$out.='<dt>'.esc_html($label).'</dt><dd>'.esc_html($d['reasons'][$i]).'</dd>';
+    return $out.'</dl></details>';
+}
+function hsh_whisky_enriched($content,$slug){
+    $d=hsh_whisky_profile($slug);if(!$d||strpos($content,'data-hsh-whisky-profile')!==false)return $content;
+    $intro='<section class="hsh-whisky-overview" data-hsh-whisky-profile="'.esc_attr($slug).'"><p class="hsh-eyebrow">WHISKY PROFILE</p><h2 id="'.$slug.'-profile">'.esc_html($d['name']).'って、どんなウイスキー？</h2>'.hsh_whisky_paragraphs($d['intro']).'<dl class="hsh-whisky-specs">';
+    foreach($d['fields'] as $label=>$value)$intro.='<div><dt>'.esc_html($label).'</dt><dd>'.esc_html($value).'</dd></div>';
+    $intro.='</dl><h3>歴史と造りを少しだけ</h3>'.hsh_whisky_paragraphs($d['history']).'</section><h2 id="'.$slug.'-my-impression">実際に飲んだ感想</h2>';
+    $more='<section class="hsh-whisky-perspective"><h2 id="'.$slug.'-character">香りと味、どんな方向？</h2><p>'.esc_html($d['notes']).'</p>'.hsh_whisky_radar($d,$slug).'<h2 id="'.$slug.'-price">今買うなら、いくらくらい？</h2><p>確認した通販の販売例です。商品代は税込、送料は別。品切れや取り寄せの場合もあるので、注文時の価格・在庫・送料は販売店のページで見てください。</p><div class="hsh-whisky-offers">';
+    foreach($d['prices'] as $price)$more.='<a href="'.esc_url($price['url']).'"><span>'.esc_html($price['shop']).'</span><strong>'.number_format((int)$price['amount']).'<small>円</small></strong><span>'.(int)$price['volume'].'ml・税込 <b aria-hidden="true">↗</b></span></a>';
+    $more.='</div><p>'.esc_html($d['price_note']).'</p><h2 id="'.$slug.'-verdict">選ぶなら、こんな人に</h2><p>'.esc_html($d['assessment']).'</p><p>'.esc_html($d['recommendation']).'</p><details class="hsh-whisky-sources"><summary>商品情報・価格の出典</summary><p>商品情報と掲載価格の確認日：<time datetime="'.esc_attr($d['checked']).'">'.esc_html($d['checked']).'</time>。価格は各店の掲載例で、市場全体の最安値ではありません。味の例えにはメーカーの説明と、自分の感想をそれぞれ記しています。</p><ul>';
+    foreach($d['sources'] as $source)$more.='<li><a href="'.esc_url($source[1]).'">'.esc_html($source[0]).'</a></li>';
+    foreach($d['prices'] as $price)$more.='<li><a href="'.esc_url($price['url']).'">'.esc_html($price['shop']).'：'.(int)$price['volume'].'mlの掲載価格</a></li>';
+    $more.='</ul></details></section>';
+    // Keep the existing closing navigation, author anchors, photos and saved paragraphs intact.
+    $pos=strpos($content,'<nav class="hsh-next-read"');if($pos!==false)$content=substr($content,0,$pos).$more.substr($content,$pos);else $content.=$more;
+    return $intro.$content;
 }
