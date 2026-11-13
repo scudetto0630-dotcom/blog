@@ -1,6 +1,12 @@
 <?php
 if (!defined('ABSPATH')) exit;
 
+function hsh_reader_card_summary($post){
+    if(!$post)return '';
+    $summary=hsh_growth_summaries()[$post->post_name]??$post->post_excerpt;
+    return trim(wp_strip_all_tags($summary));
+}
+
 /** All public reader data is derived from already published, managed content. */
 function hsh_reader_catalog() {
     $rows = array();
@@ -164,4 +170,4 @@ function hsh_reader_responsive_html($html){
 }
 
 // Final visual layer follows the functional reading and accessibility styles.
-add_action('wp_enqueue_scripts',function(){if(hsh_reader_scope())wp_enqueue_style('hsh-palette',plugin_dir_url(__FILE__).'assets/palette.css',array('hsh-quality'),'1.40.0');},190);
+add_action('wp_enqueue_scripts',function(){if(hsh_reader_scope())wp_enqueue_style('hsh-palette',plugin_dir_url(__FILE__).'assets/palette.css',array('hsh-quality'),'1.43.0');},190);

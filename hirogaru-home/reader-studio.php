@@ -10,7 +10,7 @@ function hsh_studio_featured(){
  return $out.'</div></section>';
 }
 function hsh_studio_postscript($slug,$topic){
- $out='<nav class="hsh-after-reading" aria-label="読んだ後のおすすめ"><h2>次は、どの話を読もう？</h2><div><a href="'.esc_url(hsh_category_url($topic)).'">同じ分野の記事を読む →</a>';foreach(hsh_topics() as $k=>$t)if($k!==$topic)$out.='<a href="'.esc_url(hsh_category_url($k)).'">'.esc_html($t[0]).'へ →</a>';
+ $out='<nav class="hsh-after-reading" aria-label="読んだ後のおすすめ"><h2>ほかの記事を探す</h2><div><a href="'.esc_url(hsh_category_url($topic)).'">同じ分野の記事を読む →</a>';foreach(hsh_topics() as $k=>$t)if($k!==$topic)$out.='<a href="'.esc_url(hsh_category_url($k)).'">'.esc_html($t[0]).'へ →</a>';
  return $out.'</div></nav>';
 }
 function hsh_studio_checklist($id,$title,$items){
@@ -53,14 +53,14 @@ add_filter('the_content',function($c){
  if(in_array($slug,array('glenlivet-12-first-bottles','sherry-cask-notes','highball-measure-and-adjust'),true))$c.=hsh_studio_checklist('tasting-'.$slug,'自分の好みを残すメモ',array('銘柄と飲んだ日','飲み方と、自分で用意した分量','香りで思い浮かんだもの','飲みやすさと、次に変えてみたいこと'));
  if($slug==='ai-data-extraction-checks')$c.=hsh_studio_examples();
  if($slug==='csv-import-seven-checks'){$example=hsh_studio_examples();if(preg_match('~<h3>Excel・スプレッドシート・CSVの違い</h3>(.*?)</section>~s',$example,$formats))$c.='<section class="hsh-data-practice"><h2>Excel・スプレッドシート・CSVの違い</h2>'.$formats[1].'</section>';}
- return $c.hsh_studio_postscript($slug,$a['topic']);
+ return $c.hsh_adsense_prepared_slot().hsh_studio_postscript($slug,$a['topic']);
 },29);
 add_action('wp_enqueue_scripts',function(){if(!hsh_reader_scope())return;wp_enqueue_style('hsh-studio',plugin_dir_url(__FILE__).'assets/studio.css',array('hsh-brushup'),'1.42.0');wp_enqueue_script('hsh-studio',plugin_dir_url(__FILE__).'assets/studio.js',array('hsh-brushup'),'1.42.0',true);},140);
 // The native WordPress relevance ordering already prioritizes matching titles.
 add_action('pre_get_posts',function($q){if(!is_admin()&&$q->is_main_query()&&$q->is_search())$q->set('orderby','relevance');},35);
 function hsh_studio_home_products(){
  $out='<section class="hsh-articles hsh-home-products"><div class="hsh-article-heading"><div><p class="hsh-eyebrow">PRODUCTS & SERVICES</p><h2>猫との暮らしの商品紹介</h2></div><a href="'.esc_url(hsh_category_url('cats').'?hsh_kind=product').'">商品紹介をすべて見る →</a></div><div class="hsh-post-grid">';$n=0;
- foreach(hsh_posts('cats',50) as $p){if(hsh_brushup_type($p->post_name)!=='product')continue;$out.='<article><a href="'.esc_url(get_permalink($p)).'">'.hsh_card_cover($p).'<time datetime="'.esc_attr(get_the_date('c',$p)).'">'.esc_html(get_the_date('Y.m.d',$p)).'</time><h3>'.esc_html(get_the_title($p)).'</h3><p>'.esc_html($p->post_excerpt).'</p><span class="hsh-read-more">記事を読む →</span></a></article>';if(++$n===3)break;}return $out.'</div></section>';
+ foreach(hsh_posts('cats',50) as $p){if(hsh_brushup_type($p->post_name)!=='product')continue;$out.='<article><a href="'.esc_url(get_permalink($p)).'">'.hsh_card_cover($p).'<time datetime="'.esc_attr(get_the_date('c',$p)).'">'.esc_html(get_the_date('Y.m.d',$p)).'</time><h3>'.esc_html(get_the_title($p)).'</h3><p>'.esc_html(hsh_reader_card_summary($p)).'</p><span class="hsh-read-more">記事を読む →</span></a></article>';if(++$n===3)break;}return $out.'</div></section>';
 }
 function hsh_studio_series($slug){
  $groups=array('cats'=>array('manmos-cat-life','before-welcoming-cat','cat-teaser-small-parts','cat-carrier-checklist','cat-vet-routine'),'whisky'=>array('glenlivet-12-first-bottles','sherry-cask-notes','single-malt-label-guide','highball-measure-and-adjust'),'it-freelance'=>array('it-data-work-flow','starting-it-without-specialty','ai-data-extraction-checks','csv-import-seven-checks'));

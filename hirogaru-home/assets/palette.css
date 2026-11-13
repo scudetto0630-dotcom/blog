@@ -1422,3 +1422,10 @@ body.hsh-reader-site,body.hsh-home,body.hsh-category {
 .hsh-front .hsh-popular li:before { content:counter(popular,decimal-leading-zero);color:#9c561d;font-size:13px;font-weight:700; }
 .hsh-front .hsh-popular li a { font-size:15px;line-height:1.8;text-decoration:none; }
 @media(max-width:760px) { .hsh-front .hsh-popular ul { grid-template-columns:1fr;gap:0; } }
+
+/* A clear next read; the approved layout and palette stay in place. */
+.hsh-followups .hsh-followup-primary p{margin:.55rem 0 1rem;font-size:.95em;line-height:1.8;font-weight:400}
+.hsh-display-ad{position:static;clear:both;max-width:100%;margin:3rem 0;padding:1rem 0;overflow:hidden;border-block:1px solid var(--hsh-reader-line)}
+.hsh-ad-label{display:block;margin-bottom:1rem;text-align:center;font-size:.75rem;color:#626866}
+.hsh-display-ad .adsbygoogle{min-height:280px;max-width:100%}
+@media print{.hsh-display-ad{display:none!important}}

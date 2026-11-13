@@ -3,18 +3,18 @@ if(!defined('ABSPATH'))exit;
 /** Public additions only use packaged facts and approved packaged photographs. */
 function hsh_growth_summaries(){return array(
 'before-welcoming-cat'=>'猫を迎える前に用意する物と、部屋を片付けるときの注意点をまとめています。',
-'manmos-cat-life'=>'まんもすとの出会いや、甘えるときの様子、好きなおもちゃを写真と一緒に紹介しています。',
+'manmos-cat-life'=>'迎えた翌日には枕の上へ。甘えるときの声や好きなおもちゃ、紙砂を選んだ理由など、まんもすとの暮らしを写真と一緒に。',
 'cat-teaser-small-parts'=>'100均の羽付きねこじゃらしを愛用中。小さな部品の外れやすさと、遊んだ後の片付けについて書いています。',
 'cat-vet-routine'=>'通院の持ち物と、診察で伝えたい猫の様子を紹介しています。',
 'cat-carrier-checklist'=>'5.5kgのまんもすを入れるとリュックキャリーがへこみ、古いキャリーを使い直した経緯を書いています。',
-'glenlivet-12-first-bottles'=>'グラス付きで買ったグレンリベット12年の、飲みやすさと好きな香りについて書いています。',
-'single-malt-label-guide'=>'初めてウイスキーを選ぶときに見たい商品名・年数・容量・度数と、値段の比べ方を紹介しています。',
-'sherry-cask-notes'=>'グレンファークラス12年のぶどうパンのような香りと、何度も買う理由を書いています。',
-'highball-measure-and-adjust'=>'ハイボールの味や炭酸が物足りないとき、分量や作り方をどう調整するかを紹介しています。',
-'it-data-work-flow'=>'データ加工の仕事内容と、AIを使って楽になったことを書いています。',
+'glenlivet-12-first-bottles'=>'3本目に買ったウイスキーは、スーパーで見つけたグラス付きのグレンリベット12年。飲みやすさと、花のような香りが好きになった。',
+'single-malt-label-guide'=>'ラベルのどこを見る？ 商品名・年数・容量・度数の読み方と、容量が違う2本を100ml当たりの値段で比べる方法。',
+'sherry-cask-notes'=>'ぶどうパンが大好きで、香りの例えにひかれて購入。グレンファークラス12年をストレートとハーフロックで飲んだ感想と、何度も買う理由。',
+'highball-measure-and-adjust'=>'ハイボールの味が薄い？ それとも炭酸が弱い？ 分量・氷・注ぎ方を順に見直し、計算機で好みの割合も試せます。',
+'it-data-work-flow'=>'今現在のデータ加工のお仕事。抽出や並べ替えにAIを使って楽になったことと、自分で確かめるところ。',
 'starting-it-without-specialty'=>'ITに興味を持ってから、自分に合う仕事に出会うまでの約1年を振り返っています。',
-'ai-data-extraction-checks'=>'架空の表を使って、AIの抽出結果に抜けや誤りがないかを確認する方法を紹介しています。',
-'csv-import-seven-checks'=>'CSVの文字コードや先頭の0、空欄など、取り込む前に確認する項目をまとめています。');}
+'ai-data-extraction-checks'=>'件数と合計が合っていても、行が違うかもしれない。架空の表と抽出結果を並べ、ID・件数・合計を確かめる練習。',
+'csv-import-seven-checks'=>'CSVを開いたら文字化けしたり、先頭の0が消えたり。元ファイルを残して見る7項目と、0が消えたときの切り分け方。');}
 function hsh_growth_next($slug){$pairs=array(
 'before-welcoming-cat'=>'manmos-cat-life','manmos-cat-life'=>'cat-carrier-checklist','cat-carrier-checklist'=>'cat-vet-routine','cat-vet-routine'=>'cat-carrier-checklist','cat-teaser-small-parts'=>'manmos-cat-life',
 'glenlivet-12-first-bottles'=>'sherry-cask-notes','sherry-cask-notes'=>'single-malt-label-guide','single-malt-label-guide'=>'glenlivet-12-first-bottles','highball-measure-and-adjust'=>'glenlivet-12-first-bottles',
@@ -114,12 +114,16 @@ function hsh_growth_compact_followups($content) {
         foreach($accepted as $url=>$label)if(!isset($links[$url]))$links[$url]=$label;
     }
     if(count($blocks)<2)return $content;
+    $current=get_post(get_queried_object_id());$next=$current?hsh_growth_next($current->post_name):'';
+    if($next){$target=get_page_by_path($next,OBJECT,'post');if($target&&$target->post_status==='publish'){$url=get_permalink($target);$links=array($url=>get_the_title($target))+$links;}}
     $out='<nav class="hsh-related hsh-followups" aria-label="あわせて読みたい記事"><h2>あわせて読みたい記事</h2><ul>';
+    $primary=true;
     foreach($links as $url=>$label){
         $slug=rawurldecode(basename(rtrim((string)parse_url($url,PHP_URL_PATH),'/')));
         $post=get_page_by_path($slug,OBJECT,'post');
         if($post&&$post->post_status==='publish')$label=get_the_title($post);
-        $out.='<li><a href="'.esc_url($url).'">'.esc_html($label).' <span aria-hidden="true">→</span></a></li>';
+        $summary=$primary?(hsh_growth_summaries()[$slug]??''):'';
+        $out.='<li'.($primary?' class="hsh-followup-primary"':'').'><a href="'.esc_url($url).'">'.esc_html($label).' <span aria-hidden="true">→</span></a>'.($summary!==''?'<p>'.esc_html($summary).'</p>':'').'</li>';$primary=false;
     }
     $out.='</ul></nav>';
     // Keep the first block's position, ahead of the profile and article tools.

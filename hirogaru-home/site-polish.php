@@ -138,3 +138,24 @@ add_filter('the_content', function ($content) {
     }
     return $content;
 }, 32);
+
+/** Contact Form 7 is needed on contact pages, not on every managed article. */
+function hsh_reader_needs_contact_assets($slug,$content){
+    return rawurldecode($slug)==='お問い合わせ'||strpos($content,'[contact-form-7')!==false||strpos($content,'wp:contact-form-7/')!==false;
+}
+add_action('wp_enqueue_scripts',function(){
+    if(!hsh_reader_scope())return;
+    $p=get_post(get_queried_object_id());
+    if($p&&hsh_reader_needs_contact_assets($p->post_name,$p->post_content))return;
+    wp_dequeue_style('contact-form-7');wp_dequeue_script('contact-form-7');wp_dequeue_script('swv');
+},200);
+
+/** Inert until approval and an actual AdSense slot ID are configured. */
+function hsh_adsense_slot_markup($slot){
+    if(!is_string($slot)||!preg_match('/^[0-9]{10}$/D',$slot))return '';
+    return '<aside class="hsh-display-ad" aria-label="広告"><span class="hsh-ad-label">広告</span><ins class="adsbygoogle" style="display:block" data-ad-client="'.esc_attr(hsh_adsense_publisher()).'" data-ad-slot="'.esc_attr($slot).'" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(window.adsbygoogle=window.adsbygoogle||[]).push({});</script></aside>';
+}
+function hsh_adsense_prepared_slot(){
+    if(!get_option('hsh_adsense_manual_enabled',false))return '';
+    return hsh_adsense_slot_markup(get_option('hsh_adsense_article_slot',''));
+}

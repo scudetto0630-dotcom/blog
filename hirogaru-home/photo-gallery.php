@@ -69,3 +69,17 @@ add_action('wp_head',function(){
     if(!$asset)return;
     echo '<link rel="preload" as="image" href="'.esc_url(plugin_dir_url(__FILE__).'assets/photos/'.$asset['file']).'" fetchpriority="high">' . "\n";
 },1);
+
+/** Discover the article's existing lead photo before render-blocking styles finish. */
+function hsh_photo_article_preload($asset){
+    $img=hsh_photo_image($asset,true);if(!$img)return '';
+    preg_match('~ src="([^"]+)"~',$img,$src);$attrs='';
+    if(preg_match('~ srcset="([^"]+)"~',$img,$m))$attrs.=' imagesrcset="'.$m[1].'"';
+    if(preg_match('~ sizes="([^"]+)"~',$img,$m))$attrs.=' imagesizes="'.$m[1].'"';
+    return '<link rel="preload" as="image" href="'.$src[1].'"'.$attrs.' fetchpriority="high">';
+}
+add_action('wp_head',function(){
+    if(!is_singular('post')||!hsh_reader_managed())return;
+    $p=get_post();$asset=$p?hsh_photo_for_slug($p->post_name):null;
+    if($asset)echo hsh_photo_article_preload($asset);
+},2);
