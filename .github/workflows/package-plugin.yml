@@ -19,12 +19,14 @@ jobs:
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - name: Build bounded archive from reviewed files
-        run: python3 tools/package-blog-plugin.py
+        run: |
+          python3 tools/package-blog-plugin.py
+          sha256sum hirogaru-home.zip > hirogaru-home.zip.sha256
       - name: Record archive without publishing WordPress
         run: |
-          if git diff --quiet -- hirogaru-home.zip; then exit 0; fi
+          if git diff --quiet -- hirogaru-home.zip && test -f hirogaru-home.zip.sha256 && git ls-files --error-unmatch hirogaru-home.zip.sha256 >/dev/null 2>&1 && git diff --quiet -- hirogaru-home.zip.sha256; then exit 0; fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add hirogaru-home.zip
+          git add hirogaru-home.zip hirogaru-home.zip.sha256
           git commit -m 'Package reviewed WordPress plugin archive'
           git push origin HEAD:main
