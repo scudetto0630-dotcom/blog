@@ -3,7 +3,7 @@ if(!defined('ABSPATH'))exit;
 /** Reader improvements; all product facts come from the packaged, sourced articles. */
 function hsh_brushup_type($slug){
     foreach(hsh_affiliate_articles() as $a)if($a['slug']===$slug)return 'product';
-    return in_array($slug,array('cat-carrier-checklist','manmos-cat-life','glenlivet-12-first-bottles','sherry-cask-notes','it-data-work-flow','starting-it-without-specialty','hsh-hakushu-visit'),true)?'story':'guide';
+    return in_array($slug,array('cat-carrier-checklist','manmos-cat-life','glenlivet-12-first-bottles','sherry-cask-notes','it-data-work-flow','starting-it-without-specialty','hsh-hakushu-visit','glen-grant-arboralis-review','nikka-from-the-barrel-review','jim-beam-first-impression'),true)?'story':'guide';
 }
 function hsh_brushup_types(){return array('all'=>'すべて','story'=>'体験談','guide'=>'選び方・手順','product'=>'商品紹介');}
 function hsh_brushup_choice($value){return is_string($value)&&isset(hsh_brushup_types()[$value])?$value:'all';}
@@ -40,7 +40,7 @@ function hsh_brushup_shopping($slug){
 }
 function hsh_brushup_comparison($topic){
     if($topic==='cats'){$rows=array(array('canagan-chicken-salmon','カナガン','チキンとサーモンを比較','主原料・栄養成分・給与量'),array('mcadams-cat-chicken-turkey','マックアダムズ','チキン＆ターキー、オーブンベイク製法','原材料・粒の特徴'),array('mognyan-cat-food-guide','モグニャン','白身魚を使ったフード','原材料・粒の大きさ・切り替え方'),array('essential-jaguar-cat-food','ジャガー','肉と魚を組み合わせたフード','原材料・カロリー・粒の特徴'));$title='猫用フード、どこを比べる？';$heads=array('商品','記事で紹介している特徴','比べたい項目');}
-    elseif($topic==='whisky'){$rows=array(array('glenlivet-12-first-bottles','グレンリベット12年','花のような上品な香り','グラスのおまけがきっかけ'),array('hsh-whisky-notes','アルボラリス カスクストレングス','甘くて飲みやすかった','YouTubeで見て気になった'),array('sherry-cask-notes','グレンファークラス12年','ぶどうパンに顔をうずめたような匂い','シェリーカスクが好き'));$title='飲んだときの印象を比べる';$heads=array('ウイスキー','自分が感じたこと','選んだきっかけ・好み');}
+    elseif($topic==='whisky'){$rows=array(array('glenlivet-12-first-bottles','グレンリベット12年','花のような上品な香り','グラスのおまけがきっかけ'),array('glen-grant-arboralis-review','アルボラリス','甘くて飲みやすかった','YouTubeで見て気になった'),array('sherry-cask-notes','グレンファークラス12年','ぶどうパンに顔をうずめたような匂い','シェリーカスクが好き'));$title='飲んだときの印象を比べる';$heads=array('ウイスキー','自分が感じたこと','選んだきっかけ・好み');}
     else return '';
     $out='<section class="hsh-comparison"><h2>'.esc_html($title).'</h2><p>'.($topic==='cats'?'今のフードと比べたい原材料や、粒の特徴をまとめています。':'それぞれのウイスキーで、自分が気に入った香りや飲みやすさをまとめました。').'</p><table class="hsh-stack-table"><thead><tr>';foreach($heads as $h)$out.='<th scope="col">'.esc_html($h).'</th>';$out.='</tr></thead><tbody>';
     foreach($rows as $r){$p=get_page_by_path($r[0],OBJECT,$r[0]==='hsh-whisky-notes'?'page':'post');if(!$p||$p->post_status!=='publish')continue;$out.='<tr>';for($i=1;$i<4;$i++)$out.='<td data-label="'.esc_attr($heads[$i-1]).'">'.($i===1?'<a href="'.esc_url(get_permalink($p)).'">'.esc_html($r[$i]).' →</a>':esc_html($r[$i])).'</td>';$out.='</tr>';}
@@ -62,7 +62,6 @@ add_filter('the_content',function($content){
         $content=preg_replace_callback('~(<aside class="hsh-affiliate-cta"[^>]*>.*?<a\b[^>]*>)(.*?)(</a>)~s',function($m)use($slug,$label){return hsh_brushup_shopping($slug).$m[1].esc_html($label).$m[3];},$content,1);
         $content.=($slug==='canagan-chicken-salmon'?hsh_brushup_comparison('cats'):'').hsh_brushup_related($slug);
     }
-    if($p->post_name==='sherry-cask-notes'&&hsh_owned_blog_post($p))$content.=hsh_brushup_comparison('whisky');
     if($p->post_name==='hsh-hakushu-visit'&&get_post_meta($p->ID,'_hsh_bridge_owned',true)==='1')$content='<nav class="hsh-visit-summary" aria-label="見学の思い出"><h2>25年の夏、初めての蒸溜所見学</h2><p>白州の看板、館内に並ぶボトル、そして飲み比べ。初めての見学で撮った写真を順に振り返ります。飲み比べも楽しかった。</p><ol><li>白州の入口へ</li><li>館内のウイスキー展示を見る</li><li>グラスと一緒に、楽しかった飲み比べを振り返る</li></ol></nav>'.$content;
     return $content;
 },27);

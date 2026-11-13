@@ -108,5 +108,17 @@
   "withpety-nekoissho": {
     "role": "商品・サービスの案内（未使用）",
     "related_label": "仕様と選び方を読む"
+  },
+  "glen-grant-arboralis-review": {
+    "role": "飲んだ感想",
+    "related_label": "この銘柄の感想を読む"
+  },
+  "nikka-from-the-barrel-review": {
+    "role": "飲んだ感想",
+    "related_label": "この銘柄の感想を読む"
+  },
+  "jim-beam-first-impression": {
+    "role": "飲んだ感想",
+    "related_label": "この銘柄の感想を読む"
   }
 }

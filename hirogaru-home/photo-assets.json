@@ -634,18 +634,6 @@
       "bytes": 61774,
       "dhash": "1b191c4660c0f0f0"
     },
-    "detail-topic-whisky": {
-      "file": "detail-topic-whisky.webp",
-      "width": 1200,
-      "height": 800,
-      "kind": "generated",
-      "subject": "whisky",
-      "alt": "自宅で楽しむウイスキー",
-      "caption": "AI生成のイメージです。",
-      "sha256": "162065ed4d8575970c2f9bc545f5d7a40aef15c65141a7d7330a63e2c9278bb1",
-      "bytes": 81450,
-      "dhash": "94d8b333328ecc29"
-    },
     "detail-topic-work": {
       "file": "detail-topic-work.webp",
       "width": 1200,
@@ -1045,11 +1033,6 @@
       "rights": "permission",
       "metadata_removed": true,
       "variants": {
-        "240": {
-          "file": "manmos-zip-window-240.webp",
-          "width": 240,
-          "height": 320
-        },
         "480": {
           "file": "manmos-zip-window-480.webp",
           "width": 480,
@@ -1063,6 +1046,11 @@
           "height": 1200,
           "bytes": 131300,
           "sha256": "867af6539b3d0ffc0ebed4999211097ed8523d0f107b63407daaf2805639b081"
+        },
+        "240": {
+          "file": "manmos-zip-window-240.webp",
+          "width": 240,
+          "height": 320
         }
       },
       "tags": [
@@ -3154,15 +3142,17 @@
       "bytes": 131112
     },
     "arboralis-generated": {
-      "file": "arboralis-generated.webp",
+      "file": "arboralis-standard.webp",
       "width": 1200,
       "height": 800,
       "kind": "generated",
       "subject": "whisky",
-      "alt": "グレングラント アルボラリス カスクストレングスのオレンジ色の箱とボトルの",
-      "caption": "アルボラリス カスクストレングスのAI生成イメージ",
-      "sha256": "94847ed3b03521c6ec9b34c33179c6ce9734f99ee9dcae767ece0fd0145f8730",
-      "bytes": 99684
+      "alt": "通常版グレングラント アルボラリスのボトル",
+      "caption": "AI生成イメージ。本人提示の商品参照画像を使用。",
+      "sha256": "afb2d71e60f79181d0155619e9a5499cf45e889dc0937726f083d29342dcb2d6",
+      "bytes": 63510,
+      "source_generated_png_sha256": "1c526f2dad3e5c6cfb38e251405a17dca931ce54f53e8f551fdfb3ba4e1e93e9",
+      "reference": "owner supplied product reference; not a photograph of the purchased bottle"
     },
     "riku-generated": {
       "file": "riku-reference-generated.webp",
@@ -3196,6 +3186,19 @@
       "caption": "バスカー緑のAI生成イメージ",
       "sha256": "6dffbc191c5f0cd2f059cdb08261c9ef4aed1c128f5502853222e8870b883de6",
       "bytes": 76320
+    },
+    "from-the-barrel-generated": {
+      "file": "from-the-barrel-generated.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "whisky",
+      "alt": "フロム・ザ・バレルの四角いボトルと銀色のキャップ",
+      "caption": "AI生成イメージ。本人提示の商品参照画像を使用。",
+      "sha256": "5cc28b8f48b00367c57b058b0bd32a81d3c749a0829241744aa7305ef1f8d16b",
+      "bytes": 57786,
+      "source_generated_png_sha256": "a06e3f0675bc0643530fd6ea6f479784e4cc26691781d8ff4bd7fe8537a553aa",
+      "reference": "owner supplied product reference; not a photograph of the purchased bottle"
     }
   },
   "articles": {
@@ -3211,7 +3214,10 @@
     "csv-import-seven-checks": "article-csv",
     "it-data-work-flow": "article-workflow",
     "starting-it-without-specialty": "article-beginner",
-    "ai-data-extraction-checks": "article-checking"
+    "ai-data-extraction-checks": "article-checking",
+    "glen-grant-arboralis-review": "arboralis-generated",
+    "nikka-from-the-barrel-review": "from-the-barrel-generated",
+    "jim-beam-first-impression": "jim-beam-generated"
   },
   "inline": {
     "before-welcoming-cat": [

@@ -7,7 +7,7 @@ function wp_get_attachment_image_url($id,$size){return 'https://example.test/med
 function wp_unslash($v){return $v;}
 function check_admin_referer($v){return true;}
 $snapshot=hsh_planner_snapshot();
-check(count($snapshot['articles'])===13,'planner lists the 13 owned articles');
+check(count($snapshot['articles'])===16,'planner lists sixteen owned original articles');
 check(count($snapshot['photos'])===154,'planner includes base assets, composite covers and official product images');
 $GLOBALS['test_extra_posts']=array((object)array('ID'=>1200,'post_type'=>'post','post_name'=>'new-owner-draft','post_title'=>'New owner draft','post_status'=>'draft','post_content'=>'<p>Draft</p>','post_category'=>array(3)));
 $new_snapshot=hsh_planner_snapshot();check(isset($new_snapshot['articles']['post:1200'])&&$new_snapshot['articles']['post:1200']['stage']==='writing','new normal WordPress draft appears without changing the packaged catalog');

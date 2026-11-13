@@ -4,6 +4,9 @@ from pathlib import Path
 import zipfile
 ROOT=Path(__file__).resolve().parents[1];target=ROOT/'hirogaru-home.zip'
 with zipfile.ZipFile(target) as z:names=z.namelist()
+# Retired, unreferenced generated category background; archived in repository history.
+retired={'hirogaru-home/assets/photos/detail-topic-whisky.webp','hirogaru-home/assets/photos/arboralis-generated.webp'}
+names=[n for n in names if n not in retired]
 for file in ['reader-quality.php','assets/quality.js','assets/quality.css']:
  name='hirogaru-home/'+file
  if name not in names:names.append(name)
