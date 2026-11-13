@@ -1,0 +1,14 @@
+[
+  {
+    "slug": "manmos-cat-life",
+    "http": 200,
+    "image_tags_multiset_preserved": true,
+    "title_and_anchor_ids_preserved": true
+  },
+  {
+    "slug": "sherry-cask-notes",
+    "http": 200,
+    "image_tags_multiset_preserved": true,
+    "title_and_anchor_ids_preserved": true
+  }
+]

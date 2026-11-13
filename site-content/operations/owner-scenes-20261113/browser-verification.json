@@ -1,0 +1,30 @@
+{
+  "cases": [
+    {
+      "slug": "manmos-cat-life",
+      "width": 1440
+    },
+    {
+      "slug": "manmos-cat-life",
+      "width": 390
+    },
+    {
+      "slug": "manmos-cat-life",
+      "width": 320
+    },
+    {
+      "slug": "sherry-cask-notes",
+      "width": 1440
+    },
+    {
+      "slug": "sherry-cask-notes",
+      "width": 390
+    },
+    {
+      "slug": "sherry-cask-notes",
+      "width": 320
+    }
+  ],
+  "errors": [],
+  "writes": 0
+}
