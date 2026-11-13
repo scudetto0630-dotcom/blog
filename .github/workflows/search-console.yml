@@ -1,0 +1,51 @@
+name: Search Console read-only collection
+on:
+  schedule:
+    - cron: '30 21 * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  collect:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Check credential registration
+        id: credential
+        env:
+          GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
+        run: |
+          if [ -z "$GSC_SERVICE_ACCOUNT_JSON" ]; then
+            echo 'ready=false' >> "$GITHUB_OUTPUT"
+            echo 'Search Console: credential not registered; no connection attempted.' >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo 'ready=true' >> "$GITHUB_OUTPUT"
+          fi
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        if: steps.credential.outputs.ready == 'true'
+        with:
+          python-version: '3.12'
+      - name: Install read-only client
+        if: steps.credential.outputs.ready == 'true'
+        run: python -m pip install -r tools/requirements-search.txt
+      - name: Collect finalized search data
+        if: steps.credential.outputs.ready == 'true'
+        env:
+          GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
+        run: python tools/search-console-sync.py
+      - name: Report connection status without private queries
+        if: steps.credential.outputs.ready == 'true'
+        run: |
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          data=json.loads(Path('.private/search-console/latest.json').read_text())
+          with open(os.environ['GITHUB_STEP_SUMMARY'],'a') as out:
+              out.write('Search Console: authenticated read completed.\n\n')
+              out.write('Finalized data available: '+str(data['state']=='collected')+'\n\n')
+              out.write('Search queries and raw metrics are not published or uploaded.\n')
+          PY
+      - name: Remove temporary search data
+        if: always()
+        run: rm -rf .private/search-console
