@@ -155,19 +155,19 @@ function hsh_studio_current_source_links($html) {
 function hsh_whisky_profile($slug){return hsh_reader_roles()[$slug]['whisky']??null;}
 function hsh_whisky_paragraphs($rows){$out='';foreach($rows as $row)$out.='<p>'.esc_html($row).'</p>';return $out;}
 function hsh_whisky_radar($d,$slug){
-    $labels=array('煙たさ（ピート）','フルーティーさ','甘み','樽の香ばしさ','コク','余韻');
-    $short=array('煙たさ','フルーツ感','甘み','樽の香ばしさ','コク','余韻');$uid='hsh-radar-'.$slug;
-    $point=function($i,$radius){$a=deg2rad(-90+60*$i);return array(190+cos($a)*$radius,165+sin($a)*$radius);};
+    $labels=array('煙たさ（ピート）','フルーティーさ','甘み','スパイシーさ','コク','余韻');
+    $short=array('煙たさ','フルーツ感','甘み','スパイシーさ','コク','余韻');$uid='hsh-radar-'.$slug;
+    $point=function($i,$radius){$a=deg2rad(-90+60*$i);return array(210+cos($a)*$radius,180+sin($a)*$radius);};
     $coords=function($radius)use($point){$out=array();for($i=0;$i<6;$i++){$p=$point($i,$radius);$out[]=round($p[0],2).','.round($p[1],2);}return implode(' ',$out);};
-    $out='<figure class="hsh-whisky-radar"><svg viewBox="0 0 380 330" role="img" aria-labelledby="'.esc_attr($uid).'-title '.esc_attr($uid).'-desc"><title id="'.esc_attr($uid).'-title">'.esc_html($d['name']).'の香味の目安</title><desc id="'.esc_attr($uid).'-desc">公式の香味説明と本文の感想を参考にした編集上の推定。0から10。';
+    $out='<figure class="hsh-whisky-radar"><div class="hsh-radar-heading"><span>FLAVOUR PROFILE</span><strong>香りと味のバランス</strong></div><svg viewBox="0 0 420 370" role="img" aria-labelledby="'.esc_attr($uid).'-title '.esc_attr($uid).'-desc"><title id="'.esc_attr($uid).'-title">'.esc_html($d['name']).'の香味の目安</title><desc id="'.esc_attr($uid).'-desc">公式の香味説明と本文の感想を参考にした編集上の推定。0から10。';
     foreach($labels as $i=>$label)$out.=esc_html($label).' '.(int)$d['scores'][$i].'。';$out.='数値が高いほど、その特徴が強い想定です。品質の順位ではありません。</desc>';
     for($r=20;$r<=100;$r+=20)$out.='<polygon class="hsh-radar-grid" points="'.$coords($r).'"/>';
-    $values=array();for($i=0;$i<6;$i++){$edge=$point($i,100);$p=$point($i,10*max(0,min(10,(int)$d['scores'][$i])));$values[]=round($p[0],2).','.round($p[1],2);$out.='<line class="hsh-radar-axis" x1="190" y1="165" x2="'.round($edge[0],2).'" y2="'.round($edge[1],2).'"/>';}
+    $values=array();for($i=0;$i<6;$i++){$edge=$point($i,100);$p=$point($i,10*max(0,min(10,(int)$d['scores'][$i])));$values[]=round($p[0],2).','.round($p[1],2);$out.='<line class="hsh-radar-axis" x1="210" y1="180" x2="'.round($edge[0],2).'" y2="'.round($edge[1],2).'"/>';}
     $out.='<polygon class="hsh-radar-shape" points="'.implode(' ',$values).'"/>';
-    foreach($labels as $i=>$label){$p=$point($i,10*(int)$d['scores'][$i]);$t=$point($i,132);$anchor=($i===0||$i===3)?'middle':($i<3?'start':'end');$out.='<circle cx="'.round($p[0],2).'" cy="'.round($p[1],2).'" r="4"><title>'.esc_html($label).' '.(int)$d['scores'][$i].'/10（編集上の推定）</title></circle><text x="'.round($t[0],2).'" y="'.round($t[1]+4,2).'" text-anchor="'.$anchor.'">'.esc_html($short[$i]).'</text>';}
-    $out.='<text class="hsh-radar-scale" x="197" y="66">10</text><text class="hsh-radar-scale" x="197" y="162">0</text></svg><figcaption>香味の方向を比べるための目安</figcaption></figure><dl class="hsh-whisky-scores">';
+    foreach($labels as $i=>$label){$p=$point($i,10*(int)$d['scores'][$i]);$t=$point($i,145);$anchor=($i===0||$i===3)?'middle':($i<3?'start':'end');$out.='<circle cx="'.round($p[0],2).'" cy="'.round($p[1],2).'" r="4"><title>'.esc_html($label).' '.(int)$d['scores'][$i].'/10（編集上の推定）</title></circle><text x="'.round($t[0],2).'" y="'.round($t[1]+4,2).'" text-anchor="'.$anchor.'">'.esc_html($short[$i]).'<tspan class="hsh-radar-label-value" x="'.round($t[0],2).'" dy="21">'.(int)$d['scores'][$i].'<tspan class="hsh-radar-label-max"> / 10</tspan></tspan></text>';}
+    $out.='<text class="hsh-radar-scale" x="217" y="81">10</text><text class="hsh-radar-scale" x="217" y="131">5</text><text class="hsh-radar-scale" x="217" y="177">0</text></svg></figure><dl class="hsh-whisky-scores">';
     foreach($labels as $i=>$label)$out.='<div><dt>'.esc_html($label).'</dt><dd><span class="hsh-score-value">'.(int)$d['scores'][$i].'<small>/10</small></span><meter min="0" max="10" value="'.(int)$d['scores'][$i].'">'.(int)$d['scores'][$i].'/10</meter></dd></div>';
-    $out.='</dl><details class="hsh-whisky-method"><summary>チャートの読み方と、数値の理由</summary><p>0は弱め、10は強め。公式の香味説明と本文の感想を参考に、編集上の目安として推定した値です。実測値や口コミの平均、筆者が採点した数値ではありません。大きな六角形ほどおいしい、という意味でもありません。特に煙たさや余韻は情報が限られるため、形は大まかな参考にしてください。</p><dl>';
+    $out.='</dl><details class="hsh-whisky-method"><summary>このチャートについて</summary><p>公式の香味説明と本文の感想をもとにした推定値です。0は控えめ、10は強め。実測値や口コミの平均、筆者が採点した数値ではありません。各項目の理由は下にまとめています。</p><dl>';
     foreach($labels as $i=>$label)$out.='<dt>'.esc_html($label).'</dt><dd>'.esc_html($d['reasons'][$i]).'</dd>';
     return $out.'</dl></details>';
 }
