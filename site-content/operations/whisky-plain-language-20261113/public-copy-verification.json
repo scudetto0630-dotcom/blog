@@ -1,0 +1,86 @@
+[
+  {
+    "slug": "glenlivet-12-first-bottles",
+    "mobile_user_agent": false,
+    "http": 200,
+    "old_wording_absent": true
+  },
+  {
+    "slug": "glenlivet-12-first-bottles",
+    "mobile_user_agent": true,
+    "http": 200,
+    "old_wording_absent": true
+  },
+  {
+    "slug": "sherry-cask-notes",
+    "mobile_user_agent": false,
+    "http": 200,
+    "old_wording_absent": true
+  },
+  {
+    "slug": "sherry-cask-notes",
+    "mobile_user_agent": true,
+    "http": 200,
+    "old_wording_absent": true
+  },
+  {
+    "slug": "glen-grant-arboralis-review",
+    "mobile_user_agent": false,
+    "http": 200,
+    "old_wording_absent": true
+  },
+  {
+    "slug": "glen-grant-arboralis-review",
+    "mobile_user_agent": true,
+    "http": 200,
+    "old_wording_absent": true
+  },
+  {
+    "slug": "nikka-from-the-barrel-review",
+    "mobile_user_agent": false,
+    "http": 200,
+    "old_wording_absent": true
+  },
+  {
+    "slug": "nikka-from-the-barrel-review",
+    "mobile_user_agent": true,
+    "http": 200,
+    "old_wording_absent": true
+  },
+  {
+    "slug": "jim-beam-first-impression",
+    "mobile_user_agent": false,
+    "http": 200,
+    "old_wording_absent": true
+  },
+  {
+    "slug": "jim-beam-first-impression",
+    "mobile_user_agent": true,
+    "http": 200,
+    "old_wording_absent": true
+  },
+  {
+    "slug": "kirin-riku-review",
+    "mobile_user_agent": false,
+    "http": 200,
+    "old_wording_absent": true
+  },
+  {
+    "slug": "kirin-riku-review",
+    "mobile_user_agent": true,
+    "http": 200,
+    "old_wording_absent": true
+  },
+  {
+    "slug": "busker-irish-whiskey-review",
+    "mobile_user_agent": false,
+    "http": 200,
+    "old_wording_absent": true
+  },
+  {
+    "slug": "busker-irish-whiskey-review",
+    "mobile_user_agent": true,
+    "http": 200,
+    "old_wording_absent": true
+  }
+]
