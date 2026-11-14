@@ -183,12 +183,14 @@
     }
   },
   "it-data-work-flow": {
-    "role": "仕事の体験談",
-    "related_label": "実際の仕事を知る"
+    "role": "働き方の体験談",
+    "related_label": "働き方を考える",
+    "search_description": "正社員での転職、生活の変化で選んだ派遣、知人から紹介された個人事業主。今の働き方が合う理由と、それでも不安になる瞬間を、自分の経緯から書いています。"
   },
   "starting-it-without-specialty": {
-    "role": "仕事の体験談",
-    "related_label": "実際の仕事を知る"
+    "role": "働き方の体験談",
+    "related_label": "働き方を考える",
+    "search_description": "ITに興味はあっても、何をしたいか分からなかった約1年。知人の紹介で出会った仕事を振り返り、職種だけでなく働く条件や過去の経験から考える方法を書きました。"
   },
   "ai-data-extraction-checks": {
     "role": "データの確認方法",
@@ -622,5 +624,30 @@
       "checked": "2026-11-13",
       "content_updated_at": "2026-11-13T08:04:21Z"
     }
+  },
+  "employee-vs-self-employed": {
+    "role": "働き方の比較・解説",
+    "related_label": "働き方を考える",
+    "search_description": "給与と報酬、休暇、時間の自由、保険や年金、事務の負担を比較。正社員にも個人事業主にもよさがある立場で、自分に合う働き方を考えます。"
+  },
+  "freelance-and-sole-proprietor": {
+    "role": "働き方の比較・解説",
+    "related_label": "働き方を考える",
+    "search_description": "似た意味で使われるフリーランスと個人事業主。個人・法人、雇用・業務委託の違いを、公的な案内と自分の経緯を交えて説明します。"
+  },
+  "freelance-sales-and-take-home": {
+    "role": "働き方の比較・解説",
+    "related_label": "働き方を考える",
+    "search_description": "売上40万円の架空例で、費用を引いた後にも考えたい税金・社会保険・入金時期を紹介。給与との比較と、経費が無料ではない理由も説明します。"
+  },
+  "changing-job-or-working-style": {
+    "role": "働き方の比較・解説",
+    "related_label": "働き方を考える",
+    "search_description": "仕事内容、職場、雇用形態のどこを変えたいか。正社員・派遣・個人事業主を経験した立場で、残したい条件と相談先の選び方を考えます。"
+  },
+  "freelance-contract-before-start": {
+    "role": "働き方の比較・解説",
+    "related_label": "働き方を考える",
+    "search_description": "業務委託を始める前に、報酬、支払期日、担当範囲、変更や終了、情報の扱いを確認。フリーランス法の公式案内と相談先も紹介します。"
   }
 }

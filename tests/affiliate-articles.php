@@ -2,7 +2,7 @@
 require __DIR__.'/reader.php';
 $added=hsh_affiliate_articles();
 check(count($added)===29&&count(array_unique(array_column($added,'slug')))===29,'twenty-nine separately scoped affiliate articles');
-check(count(hsh_expanded_articles())===15&&count(hsh_article_map())===3,'starter catalog stays intact and expanded catalog includes seven owner-tasted whisky reviews');
+check(count(hsh_expanded_articles())===20&&count(hsh_article_map())===3,'starter catalog stays intact and expanded catalog includes seven owner-tasted whisky reviews');
 $manifest=hsh_photo_manifest();check(count(array_unique($manifest['affiliate_articles']))===29,'new articles use twenty-nine distinct cover choices');
 check(strpos($manifest['assets']['official-a8-20-1']['source_url'],'img202112lp/pc_top.jpg')!==false&&strpos($manifest['assets']['official-a8-20-1']['alt'],'PS-B1')!==false,'Bihada picture matches PS-B1 affiliate variant rather than collagen package');
 $existing=array();foreach(hsh_expanded_articles() as $a){$p=get_page_by_path($a['slug']);$existing[$a['slug']]=$p?hsh_article_fingerprint($p):null;}

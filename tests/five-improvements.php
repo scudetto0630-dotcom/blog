@@ -12,6 +12,6 @@ check(strpos(hsh_studio_highball(),'id="hsh-highball-calculator"')!==false&&strp
 check(strpos(hsh_studio_examples(),'id="hsh-extraction-example"')!==false&&strpos(hsh_studio_examples(),'件数と合計が合っていても')!==false,'worked example explains why matching IDs also matter');
 check(strpos(hsh_studio_checklist('vet-note','Test',array('item')),'id="hsh-sheet-vet-note"')!==false,'checklist exposes its stable shortcut target');
 $descriptions=array();foreach(hsh_reader_roles() as $slug=>$role)if(isset($role['search_description'])){$descriptions[]=$role['search_description'];check(mb_strlen($role['search_description'],'UTF-8')>=60&&mb_strlen($role['search_description'],'UTF-8')<=150,'description is a concise article-specific sentence '.$slug);}
-check(count($descriptions)===6&&count(array_unique($descriptions))===6,'all six revised descriptions are distinct');
+check(count($descriptions)===13&&count(array_unique($descriptions))===13,'all thirteen revised descriptions are distinct');
 $items=hsh_affiliate_articles();$items[0]['title']='Local mutation';check(hsh_affiliate_articles()[0]['title']!=='Local mutation','cached article data is not mutated by a caller');
 echo "All five-improvement checks passed. Total: $tests\n";

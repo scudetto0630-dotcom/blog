@@ -55,7 +55,7 @@ add_action('pre_get_posts',function($q){
     $q->set('post_type','post');if($topic)$q->set('category_name',$topic);
 });
 function hsh_start_routes($topic=null){
-    $routes=array('cats'=>array('manmos-cat-life','before-welcoming-cat','cat-teaser-small-parts','cat-carrier-checklist','cat-vet-routine'),'whisky'=>array('glenlivet-12-first-bottles','sherry-cask-notes','single-malt-label-guide','highball-measure-and-adjust'),'it-freelance'=>array('it-data-work-flow','starting-it-without-specialty','ai-data-extraction-checks','csv-import-seven-checks'));
+    $routes=array('cats'=>array('manmos-cat-life','before-welcoming-cat','cat-teaser-small-parts','cat-carrier-checklist','cat-vet-routine'),'whisky'=>array('glenlivet-12-first-bottles','sherry-cask-notes','single-malt-label-guide','highball-measure-and-adjust'),'it-freelance'=>array('it-data-work-flow','employee-vs-self-employed','freelance-and-sole-proprietor','freelance-sales-and-take-home','changing-job-or-working-style','freelance-contract-before-start','starting-it-without-specialty','ai-data-extraction-checks','csv-import-seven-checks'));
     $out='<nav class="hsh-start-routes" aria-label="初めての方向けの読む順番"><h2>どこから読めばいい？</h2>';
     foreach($routes as $key=>$slugs){if($topic&&$topic!==$key)continue;$out.='<section><h3>'.esc_html(hsh_topics()[$key][0]).'</h3><ol>';
         foreach($slugs as $slug){$p=get_page_by_path($slug,OBJECT,'post');if($p&&$p->post_status==='publish')$out.='<li><a href="'.esc_url(get_permalink($p)).'">'.esc_html(get_the_title($p)).'</a><small>'.esc_html(hsh_growth_summaries()[$slug]??'').'</small></li>';}

@@ -1,0 +1,38 @@
+{
+  "existing": [
+    "it-data-work-flow",
+    "starting-it-without-specialty",
+    "ai-data-extraction-checks",
+    "csv-import-seven-checks"
+  ],
+  "new": [
+    "employee-vs-self-employed",
+    "freelance-and-sole-proprietor",
+    "freelance-sales-and-take-home",
+    "changing-job-or-working-style",
+    "freelance-contract-before-start"
+  ],
+  "source_urls": {
+    "law": "https://www.jftc.go.jp/fllaw_limited/fllaw_qa.html",
+    "mhlw": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyoukintou/zaitaku/index_00002.html",
+    "contract": "https://www.jftc.go.jp/freelancelaw_2026/",
+    "income": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1350.htm",
+    "expense": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2210.htm",
+    "salary": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1410.htm",
+    "pension": "https://www.nenkin.go.jp/service/kokunen/kanyu/20140710-03.html",
+    "health": "https://www.kyoukaikenpo.or.jp/benefit/voluntary_continuation/",
+    "leave": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/faq/kijyunhou_6_00001.html",
+    "career": "https://www.mhlw.go.jp/roudou-navi/jobseeker/07.html",
+    "corporate": "https://j-net21.smrj.go.jp/startup/manual/list6/6-3-2.html"
+  },
+  "axis": "正社員が一番だと思っていた自分が、今は個人事業主を選んでいる",
+  "owner_facts_added": [
+    "正社員で転職を重ね、働くことへの違和感と将来への不安を感じた",
+    "生活の変化で派遣社員へ。スキルややりたいことへ時間も使ったが、計画的な独立物語に美化しない",
+    "年齢、周囲の派遣社員が自分より若いこと、やりたいことがうまくいかないことに悩んだ",
+    "知人が個人事業主を紹介。今の仕事も知人の紹介",
+    "サービス残業や人間関係の負担を長年我慢しなくてよいと感じ、現在の働き方が合う",
+    "正社員でも安定が保証されるわけではないと判断したが、安定や制度を見て一瞬不安になることもある"
+  ],
+  "no_new_affiliate_links": true
+}

@@ -11,7 +11,8 @@ class LongformTests(unittest.TestCase):
         cls.previous=json.loads((ROOT/'site-content/backups/before-longform-20261026/expanded-articles.json').read_text())+cls.old
         cls.separated={'glen-grant-arboralis-review','nikka-from-the-barrel-review','jim-beam-first-impression','kirin-riku-review','busker-irish-whiskey-review'}
         cls.new_reviews=[a for a in cls.bundle if a['slug'] in cls.separated]
-        cls.current=[a for a in cls.bundle if a['slug'] not in cls.separated]+[json.loads((ROOT/'site-content/articles/longform'/f"{a['slug']}.json").read_text()) for a in cls.old]
+        cls.workstyle=set(['employee-vs-self-employed', 'freelance-and-sole-proprietor', 'freelance-sales-and-take-home', 'changing-job-or-working-style', 'freelance-contract-before-start'])
+        cls.current=[a for a in cls.bundle if a['slug'] not in cls.separated|cls.workstyle]+[json.loads((ROOT/'site-content/articles/longform'/f"{a['slug']}.json").read_text()) for a in cls.old]
         cls.photos=json.loads((ROOT/'hirogaru-home/photo-assets.json').read_text())
     def test_every_article_retains_substantial_useful_explanations(self):
         self.assertEqual(len(self.current),13)
@@ -54,6 +55,16 @@ class LongformTests(unittest.TestCase):
         arbo=next(a for a in self.new_reviews if a['slug']=='glen-grant-arboralis-review')
         self.assertIn('5本目',arbo['content']);self.assertIn('2,200円',arbo['content'])
         self.assertNotIn('カスクストレングス',arbo['title']+arbo['content'])
+    def test_new_workstyle_guides_have_sources_and_substance(self):
+        articles=[a for a in self.bundle if a['slug'] in self.workstyle]
+        self.assertEqual(len(articles),5)
+        for a in articles:
+            with self.subTest(slug=a['slug']):
+                self.assertGreaterEqual(text_count(a['content']),1500)
+                self.assertGreaterEqual(a['content'].count('<h2'),7)
+                self.assertGreaterEqual(len(a['source_urls']),2)
+                self.assertIn('https://hirogarushumi.com/',a['content'])
+                self.assertNotRegex(a['content'],r'TODO|HSH_IMAGE:')
     def test_three_distinct_category_photos(self):
         t=self.photos['topics'];self.assertEqual(set(t),{'cats','whisky','it-freelance'})
         self.assertEqual(len(set(t.values())),3)

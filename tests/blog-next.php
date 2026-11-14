@@ -14,7 +14,7 @@ check(hsh_search_alias('ねこじゃらし 猫じゃらし ネコじゃらし')=
 check(hsh_search_topic('cats')==='cats'&&hsh_search_topic('wp-admin')===''&&hsh_search_topic(array('cats'))==='','search category accepts only scalar approved slugs');
 check(hsh_release_article(new Request(array('slug'=>'bad','expected'=>null)))->code==='hsh_scope','publisher rejects unknown article');
 check(hsh_release_article(new Request(array('slug'=>'before-welcoming-cat','expected'=>null,'content'=>'injected')))->code==='hsh_input','publisher rejects arbitrary body data');
-$items=hsh_expanded_articles();check(count($items)===15&&count(array_unique(array_column($items,'slug')))===15,'fifteen distinct packaged articles including seven whisky reviews');
+$items=hsh_expanded_articles();check(count($items)===20&&count(array_unique(array_column($items,'slug')))===20,'twenty distinct packaged articles including five workstyle guides');
 foreach($items as $a)check(strpos($a['content'],'4匹')===false&&stripos($a['content'],'bpaas')===false,'corrected cat chronology and preferred work wording: '.$a['slug']);
 $GLOBALS['test_publishers']=array(3);$options['hsh_page_id']=900;$records[900]['post_author']=3;
 $before=count($records);$missing_category='cats';$r=hsh_release_article(new Request(array('slug'=>$items[0]['slug'],'expected'=>null)));check($r->code==='hsh_category'&&count($records)===$before,'missing category produces no partial article');unset($missing_category);

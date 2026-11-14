@@ -56,8 +56,8 @@ class SearchOperations(unittest.TestCase):
             with self.assertRaises(ValueError):gsc.metrics({'keys':['x'],'clicks':value,'impressions':2,'ctr':.1,'position':1},['query'])
 class EditorialOperations(unittest.TestCase):
     def test_inventory_has_all_articles_and_real_owner_photos(self):
-        r=planning.report(datetime.date(2026,11,13));self.assertEqual(r['article_count'],47)
-        self.assertEqual(len({x['slug'] for x in r['articles']}),47)
+        r=planning.report(datetime.date(2026,11,13));self.assertEqual(r['article_count'],52)
+        self.assertEqual(len({x['slug'] for x in r['articles']}),52)
         self.assertNotIn('manmos-rest',{x['key'] for x in r['owner_photos']})
         self.assertTrue(all('not_search_volume' in x['question_basis'] for x in r['articles']))
     def test_missing_audits_do_not_become_success(self):

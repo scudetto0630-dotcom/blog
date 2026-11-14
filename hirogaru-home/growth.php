@@ -16,16 +16,21 @@ function hsh_growth_summaries(){return array(
 'single-malt-label-guide'=>'ラベルのどこを見る？ 商品名・年数・容量・度数の読み方と、容量が違う2本を100ml当たりの値段で比べる方法。',
 'sherry-cask-notes'=>'ぶどうパンが大好きで、香りの例えにひかれて購入。グレンファークラス12年をストレートとハーフロックで飲んだ感想と、何度も買う理由。',
 'highball-measure-and-adjust'=>'ハイボールの味が薄い？ それとも炭酸が弱い？ 分量・氷・注ぎ方を順に見直し、計算機で好みの割合も試せます。',
-'it-data-work-flow'=>'今現在のデータ加工のお仕事。抽出や並べ替えにAIを使って楽になったことと、自分で確かめるところ。',
-'starting-it-without-specialty'=>'ITに興味を持ってから、自分に合う仕事に出会うまでの約1年を振り返っています。',
-'ai-data-extraction-checks'=>'件数と合計が合っていても、行が違うかもしれない。架空の表と抽出結果を並べ、ID・件数・合計を確かめる練習。',
+'it-data-work-flow'=>'正社員での転職、生活の変化で選んだ派遣、知人から紹介された個人事業主。今の働き方が合う理由と、それでも不安になる瞬間を、自分の経緯から書いています。',
+'starting-it-without-specialty'=>'ITに興味はあっても、何をしたいか分からなかった約1年。知人の紹介で出会った仕事を振り返り、職種だけでなく働く条件や過去の経験から考える方法を書きました。',
+'ai-data-extraction-checks'=>'AIの抽出結果に抜けや誤りがないか、架空の4行を使って確かめます。依頼文と正解例を比べ、IDや空欄を確認する練習ができます。',
+'employee-vs-self-employed'=>'給与と報酬、休暇、時間の自由、保険や年金、事務の負担を比較。正社員にも個人事業主にもよさがある立場で、自分に合う働き方を考えます。',
+'freelance-and-sole-proprietor'=>'似た意味で使われるフリーランスと個人事業主。個人・法人、雇用・業務委託の違いを、公的な案内と自分の経緯を交えて説明します。',
+'freelance-sales-and-take-home'=>'売上40万円の架空例で、費用を引いた後にも考えたい税金・社会保険・入金時期を紹介。給与との比較と、経費が無料ではない理由も説明します。',
+'changing-job-or-working-style'=>'仕事内容、職場、雇用形態のどこを変えたいか。正社員・派遣・個人事業主を経験した立場で、残したい条件と相談先を考えます。',
+'freelance-contract-before-start'=>'業務委託を始める前に、報酬、支払期日、担当範囲、変更や終了、情報の扱いを確認。フリーランス法の公式案内と相談先も紹介します。',
 'csv-import-seven-checks'=>'CSVを開いたら文字化けしたり、先頭の0が消えたり。元ファイルを残して見る7項目と、0が消えたときの切り分け方。');}
 function hsh_growth_next($slug){$pairs=array(
 'kirin-riku-review'=>'busker-irish-whiskey-review','busker-irish-whiskey-review'=>'glenlivet-12-first-bottles',
 'glen-grant-arboralis-review'=>'jim-beam-first-impression','jim-beam-first-impression'=>'glen-grant-arboralis-review','nikka-from-the-barrel-review'=>'highball-measure-and-adjust',
 'before-welcoming-cat'=>'manmos-cat-life','manmos-cat-life'=>'cat-carrier-checklist','cat-carrier-checklist'=>'cat-vet-routine','cat-vet-routine'=>'cat-carrier-checklist','cat-teaser-small-parts'=>'manmos-cat-life',
 'glenlivet-12-first-bottles'=>'sherry-cask-notes','sherry-cask-notes'=>'single-malt-label-guide','single-malt-label-guide'=>'glenlivet-12-first-bottles','highball-measure-and-adjust'=>'glenlivet-12-first-bottles',
-'starting-it-without-specialty'=>'it-data-work-flow','it-data-work-flow'=>'ai-data-extraction-checks','ai-data-extraction-checks'=>'csv-import-seven-checks','csv-import-seven-checks'=>'ai-data-extraction-checks');return $pairs[$slug]??'';}
+'starting-it-without-specialty'=>'changing-job-or-working-style','it-data-work-flow'=>'employee-vs-self-employed','ai-data-extraction-checks'=>'csv-import-seven-checks','csv-import-seven-checks'=>'ai-data-extraction-checks','employee-vs-self-employed'=>'freelance-sales-and-take-home','freelance-and-sole-proprietor'=>'employee-vs-self-employed','freelance-sales-and-take-home'=>'freelance-contract-before-start','changing-job-or-working-style'=>'employee-vs-self-employed','freelance-contract-before-start'=>'freelance-and-sole-proprietor');return $pairs[$slug]??'';}
 function hsh_growth_nav(){return '<nav class="hsh-explore-nav" aria-label="写真と記事を探す"><a href="'.esc_url(home_url('/hsh-gallery/')).'">まんもすの写真</a><a href="'.esc_url(home_url('/hsh-whisky-notes/')).'">飲んだウイスキーのメモ</a><a href="'.esc_url(home_url('/hsh-updates/')).'">最近の更新</a></nav>';}
 add_action('init',function(){add_option('hsh_all_articles_counted_since',wp_date('Y_m_d'),'',false);});
 function hsh_growth_popular(){

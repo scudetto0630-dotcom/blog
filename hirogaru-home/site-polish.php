@@ -4,7 +4,7 @@ function hsh_topic_details() {
     return array(
         'cats'=>array('うちの猫は、まんもすです','保護猫まんもすとの日々を、写真と一緒に紹介しています。猫を迎える準備や、キャリー・おもちゃの選び方もまとめています。','cat-carrier-checklist','キャリーは、どこを見て選ぶ？','保護猫まんもすとの日々や、猫を迎える準備、キャリー・おもちゃの選び方を紹介しています。'),
         'whisky'=>array('普段は薄めのハイボールにしています','グレンリベット12年やグレンファークラス12年など、実際に飲んだウイスキーの感想をまとめています。ハイボールの分量や、ラベルの読み方も紹介しています。','highball-measure-and-adjust','ハイボールが薄いと感じたら','実際に飲んだウイスキーの感想や、ハイボールの作り方を紹介しています。'),
-        'it-freelance'=>array('ITの仕事って、何をするのか分からなかった','以前はMRとして働き、今はフリーランスでデータの抽出や並べ替えをしています。未経験からITの仕事を始めた経緯や、現在の働き方を紹介しています。','csv-import-seven-checks','CSVを取り込む前に見ておきたいこと','未経験からITの仕事を始めた経緯や、今現在のデータ加工のお仕事を紹介しています。'),
+        'it-freelance'=>array('正社員が一番だと思っていたけれど','正社員から派遣社員を経て、今は個人事業主。どちらが上という話ではなく、自分に合う働き方を探してきた話です。お金や休み、契約の違いも調べています。','employee-vs-self-employed','正社員と個人事業主、何が違う？','正社員と個人事業主の違いや、自分に合う働き方を考える記事をまとめています。'),
     );
 }
 function hsh_current_topic() {
@@ -15,7 +15,7 @@ add_filter('template_include', function ($template) {
     return hsh_current_topic() ? plugin_dir_path(__FILE__) . 'category-template.php' : $template;
 }, 100);
 function hsh_profile_markup() {
-    return '<aside class="hsh-profile" aria-label="書き手について"><img src="' . esc_url(plugin_dir_url(__FILE__) . 'assets/photos/manmos-front.webp') . '" alt="保護猫のまんもす。管理人提供の写真です。" width="160" height="160" loading="lazy"><div><p class="hsh-kicker">書いている人</p><strong>ひろがる趣味暮らし 管理人</strong><p>まんもすと暮らすウイスキー好きです。以前はMRとして働き、今はフリーランスでデータを扱う仕事をしています。</p><a href="' . esc_url(home_url('/hsh-about/')) . '">もう少し詳しい自己紹介 →</a><br><a href="' . esc_url(home_url('/manmos-cat-life/')) . '">まんもすとの暮らし</a> ／ <a href="' . esc_url(home_url('/it-data-work-flow/')) . '">今している仕事</a><small>写真は、管理人と暮らすまんもすです。</small></div></aside>';
+    return '<aside class="hsh-profile" aria-label="書き手について"><img src="' . esc_url(plugin_dir_url(__FILE__) . 'assets/photos/manmos-front.webp') . '" alt="保護猫のまんもす。管理人提供の写真です。" width="160" height="160" loading="lazy"><div><p class="hsh-kicker">書いている人</p><strong>ひろがる趣味暮らし 管理人</strong><p>まんもすと暮らすウイスキー好きです。以前はMRとして働き、今はフリーランスでデータを扱う仕事をしています。</p><a href="' . esc_url(home_url('/hsh-about/')) . '">もう少し詳しい自己紹介 →</a><br><a href="' . esc_url(home_url('/manmos-cat-life/')) . '">まんもすとの暮らし</a> ／ <a href="' . esc_url(home_url('/it-data-work-flow/')) . '">今の働き方</a><small>写真は、管理人と暮らすまんもすです。</small></div></aside>';
 }
 function hsh_search_markup($id) {
     $value=function_exists('get_search_query')?get_search_query(false):'';
@@ -26,7 +26,7 @@ function hsh_search_markup($id) {
     return '<form class="hsh-search" role="search" method="get" action="'.esc_url(home_url('/')).'"><label for="'.esc_attr($id).'">ブログ内を検索</label><div><input id="'.esc_attr($id).'" name="s" type="search" value="'.esc_attr($value).'" maxlength="100" placeholder="キャリー、ハイボール、CSVなど"><select name="hsh_topic" aria-label="検索するカテゴリー">'.$options.'</select><button type="submit">検索</button></div></form>';
 }
 add_action('wp_enqueue_scripts', function () {
-    wp_enqueue_style('hsh-reading', plugin_dir_url(__FILE__) . 'assets/reading.css', array(), '1.38.2');
+    wp_enqueue_style('hsh-reading', plugin_dir_url(__FILE__) . 'assets/reading.css', array(), '1.47.0');
     if ((int)get_option('hsh_page_id') && is_page((int)get_option('hsh_page_id'))) {
         foreach (array('cocoon-style','cocoon-keyframes','font-awesome-style','icomoon-style','baguettebox-style','cocoon-child-style','cocoon-child-keyframes','contact-form-7') as $handle) { wp_dequeue_style($handle); }
     }

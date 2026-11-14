@@ -10,8 +10,8 @@ class StoryApplication(unittest.TestCase):
   h=self.headings('paws-green-deli-cat-food');self.assertLess(next(i for i,x in enumerate(h) if 'いつものごはんに足す物' in x),next(i for i,x in enumerate(h) if '3種類が2袋ずつ' in x))
  def test_bowl_choice_starts_from_existing_bowl(self):
   self.assertIn('今使っている食器',self.headings('hario-cat-bowl-guide')[0])
- def test_personal_work_precedes_general_example(self):
-  h=self.headings('it-data-work-flow');self.assertLess(h.index('自分がAIで楽になったのは、データ抽出'),h.index('架空の依頼で、加工後の形を考えてみる'))
+ def test_workstyle_story_preserves_owner_chronology(self):
+  h=self.headings('it-data-work-flow');self.assertLess(h.index('正社員なら安心だと思っていた'),h.index('派遣に変えた理由は、生活の変化だった'));self.assertLess(h.index('派遣に変えた理由は、生活の変化だった'),h.index('知人から、個人事業主という働き方を紹介された'))
  def test_official_tower_image_has_product_context(self):
   h=self.headings('onekosama-cat-tower');self.assertIn('設置方法',h[0]);self.assertIn('まんもす',h[1])
  def test_ad_cta_stays_after_all_article_sections(self):

@@ -12,3 +12,5 @@
 
 /* These three articles use the curated same-topic route above the author box. */
 body.postid-33 .related-entries,body.postid-34 .related-entries,body.postid-35 .related-entries{display:none}
+
+.hsh-table-wrap{max-width:100%;overflow-x:auto}.hsh-table-wrap table{width:100%;table-layout:fixed}.hsh-table-wrap th,.hsh-table-wrap td{overflow-wrap:anywhere}

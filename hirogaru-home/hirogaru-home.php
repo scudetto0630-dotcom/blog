@@ -2,7 +2,7 @@
 /**
  * Plugin Name: ひろがる趣味暮らし トップページ
  * Description: 猫・ウイスキー・ITとフリーランスのトップページ。管理画面から適用・復元できます。
- * Version: 1.46.1
+ * Version: 1.47.0
  * Requires at least: 6.0
  * Requires PHP: 7.4
  */
@@ -11,7 +11,7 @@ function hsh_topics() {
     return array(
         'cats' => array('猫との暮らし', '保護猫まんもすとの日々や、猫を迎える準備、キャリー・おもちゃの選び方を紹介しています。', 'CAT LIFE', '01'),
         'whisky' => array('ウイスキー', '実際に飲んだウイスキーの感想や、ハイボールの作り方を紹介しています。', 'WHISKY', '02'),
-        'it-freelance' => array('ITの仕事と働き方', '未経験からITの仕事を始めた経緯や、今現在のデータ加工のお仕事を紹介しています。', 'WORK', '03'),
+        'it-freelance' => array('ITの仕事と働き方', '正社員、派遣社員を経て、今は個人事業主。自分に合う働き方を考えながら、お金や契約、仕事の選び方について書いています。', 'WORK', '03'),
     );
 }
 add_action('admin_menu', function () {

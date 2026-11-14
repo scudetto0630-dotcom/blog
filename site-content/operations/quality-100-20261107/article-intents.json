@@ -50,13 +50,13 @@
     "role": "experience"
   },
   "it-data-work-flow": {
-    "reader": "AIを使うデータ加工の仕事に関心がある人",
-    "question": "本人は今のデータ抽出・並べ替えでどのようにAIを使っているか？",
+    "reader": "正社員の安定を大切にしながら、自分に合う働き方を考えている人",
+    "question": "正社員を重視していた自分が、なぜ今は個人事業主を選ぶのか",
     "role": "experience"
   },
   "starting-it-without-specialty": {
-    "reader": "未経験からITの仕事を考える人",
-    "question": "本人は興味を持ってから今の仕事までどう進んだか？",
+    "reader": "正社員の安定を大切にしながら、自分に合う働き方を考えている人",
+    "question": "未経験から仕事を調べるとき、技術以外に何を見ればよいか",
     "role": "experience"
   },
   "ai-data-extraction-checks": {
@@ -233,5 +233,30 @@
     "reader": "緑ラベルのバスカーを検討している人",
     "question": "3種類の樽と原酒の違いは何か、2本目に飲んだ本人の感想は？",
     "role": "experience"
+  },
+  "employee-vs-self-employed": {
+    "reader": "正社員の安定を大切にしながら、自分に合う働き方を考えている人",
+    "question": "正社員と個人事業主は何が違い、自分に合う条件をどう考えるか",
+    "role": "guide"
+  },
+  "freelance-and-sole-proprietor": {
+    "reader": "正社員の安定を大切にしながら、自分に合う働き方を考えている人",
+    "question": "フリーランスと個人事業主、派遣は同じ立場なのか",
+    "role": "guide"
+  },
+  "freelance-sales-and-take-home": {
+    "reader": "正社員の安定を大切にしながら、自分に合う働き方を考えている人",
+    "question": "売上と給与のどの数字を比べれば、生活への影響が分かるか",
+    "role": "guide"
+  },
+  "changing-job-or-working-style": {
+    "reader": "正社員の安定を大切にしながら、自分に合う働き方を考えている人",
+    "question": "今の働き方が合わないとき、転職と独立をどう考えるか",
+    "role": "guide"
+  },
+  "freelance-contract-before-start": {
+    "reader": "正社員の安定を大切にしながら、自分に合う働き方を考えている人",
+    "question": "業務委託の仕事を始める前に、どの条件を読む必要があるか",
+    "role": "guide"
   }
 }

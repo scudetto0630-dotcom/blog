@@ -6,7 +6,7 @@
 <main id="hsh-main" class="hsh-main">
 <section class="hsh-hero hsh-cinematic" data-hsh-slider aria-label="猫・ウイスキー・仕事の写真" aria-roledescription="カルーセル">
 <div class="hsh-hero-media">
-<?php $hsh_slides=array(array('manmos-rest','まんもすとの暮らし','manmos-cat-life'),array('whisky-japanese-display','飲んだウイスキーのメモ','hsh-whisky-notes'),array('article-workflow','今現在のデータ加工のお仕事','it-data-work-flow')); foreach($hsh_slides as $hsh_slide_index=>$hsh_slide): ?>
+<?php $hsh_slides=array(array('manmos-rest','まんもすとの暮らし','manmos-cat-life'),array('whisky-japanese-display','飲んだウイスキーのメモ','hsh-whisky-notes'),array('article-workflow','正社員から個人事業主へ','it-data-work-flow')); foreach($hsh_slides as $hsh_slide_index=>$hsh_slide): ?>
 <figure class="hsh-hero-slide<?php echo $hsh_slide_index===0?' is-active':''; ?>" id="hsh-hero-slide-<?php echo (int)$hsh_slide_index; ?>" role="group" aria-roledescription="スライド" aria-label="<?php echo (int)($hsh_slide_index+1).' / '.count($hsh_slides); ?>" data-hsh-slide aria-hidden="<?php echo $hsh_slide_index===0?'false':'true'; ?>"><?php echo hsh_photo_slide_image(hsh_photo_manifest()['assets'][$hsh_slide[0]],$hsh_slide_index===0); ?></figure>
 <?php endforeach; ?>
 </div><div class="hsh-hero-shade" aria-hidden="true"></div>

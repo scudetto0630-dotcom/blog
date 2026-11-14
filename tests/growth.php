@@ -10,7 +10,7 @@ check(count(hsh_growth_tastes())===7&&strpos(hsh_growth_whisky(),'甘くて飲�
 check(substr_count(hsh_growth_whisky(),'hsh-taste-photo')===6&&strpos(hsh_growth_whisky(),'バスカー アイリッシュウイスキー')!==false&&strpos(hsh_growth_whisky(),'バスカー緑')!==false,'six matching bottle images and formal Busker name accompany personal notes');
 check(strpos(hsh_growth_whisky(),'AI生成')===false,'public whisky notes omit generation labels');
 $gallery=hsh_growth_gallery();check(substr_count($gallery,'<img ')===17&&strpos($gallery,'AI生成')===false,'public gallery uses seventeen available owner photographs');
-check(count(hsh_growth_summaries())===18,'all eighteen articles have distinct related-reading summaries');
+check(count(hsh_growth_summaries())===23,'all twenty-three original articles have distinct related-reading summaries');
 check(hsh_query_csv("Query,Clicks,Impressions,Position\nシェリー樽,3,100,8\n")[0]['query']==='シェリー樽','query CSV accepts owner-provided search data');
 check(is_wp_error(hsh_query_csv("Page,Clicks,Impressions,Position\nhttps://example.test/,3,100,8\n")),'page metrics cannot be misread as query metrics');
 check(is_wp_error(hsh_query_csv("Query,Clicks,Impressions,Position\nbad,100,2,8\n")),'impossible click counts are rejected');
