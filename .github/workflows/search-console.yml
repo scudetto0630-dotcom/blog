@@ -1,10 +1,18 @@
 name: Search Console read-only collection
 on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/search-console.yml'
+      - 'tools/search-console-sync.py'
   schedule:
     - cron: '30 21 * * *'
   workflow_dispatch:
 permissions:
   contents: read
+concurrency:
+  group: search-console-private-collection
+  cancel-in-progress: false
 jobs:
   collect:
     runs-on: ubuntu-24.04
@@ -33,7 +41,7 @@ jobs:
         if: steps.credential.outputs.ready == 'true'
         env:
           GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
-        run: python tools/search-console-sync.py
+        run: python tools/search-console-sync.py --publish-private
       - name: Report connection status without private queries
         if: steps.credential.outputs.ready == 'true'
         run: |
@@ -44,6 +52,7 @@ jobs:
           with open(os.environ['GITHUB_STEP_SUMMARY'],'a') as out:
               out.write('Search Console: authenticated read completed.\n\n')
               out.write('Finalized data available: '+str(data['state']=='collected')+'\n\n')
+              out.write('Report delivered to private blog storage.\n\n')
               out.write('Search queries and raw metrics are not published or uploaded.\n')
           PY
       - name: Remove temporary search data
