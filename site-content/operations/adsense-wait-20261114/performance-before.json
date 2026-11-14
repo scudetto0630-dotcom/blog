@@ -1,0 +1,32 @@
+{
+  "scope": "390px/DPR1 validation browser; requests relayed through the same HTTP fetcher; not field Core Web Vitals or a ranking measure",
+  "rows": [
+    {
+      "slug": "home",
+      "cls": 0.000974043364151403,
+      "lcp": 3656,
+      "overflow": false,
+      "hero": null,
+      "bytes_loaded": 628532,
+      "elapsed_ms": 4263
+    },
+    {
+      "slug": "glenlivet-12-first-bottles",
+      "cls": 0.00725743949016569,
+      "lcp": 3920,
+      "overflow": false,
+      "hero": "https://hirogarushumi.com/wp-content/plugins/hirogaru-home/assets/photos/glenlivet-480.webp",
+      "bytes_loaded": 1010700,
+      "elapsed_ms": 4605
+    },
+    {
+      "slug": "hsh-gallery",
+      "cls": 0.000974043364151403,
+      "lcp": 4628,
+      "overflow": false,
+      "hero": null,
+      "bytes_loaded": 1071512,
+      "elapsed_ms": 5057
+    }
+  ]
+}

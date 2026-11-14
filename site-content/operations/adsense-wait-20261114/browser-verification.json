@@ -1,0 +1,91 @@
+{
+  "cases": [
+    {
+      "slug": "home",
+      "width": 1440
+    },
+    {
+      "slug": "home",
+      "width": 390
+    },
+    {
+      "slug": "home",
+      "width": 320
+    },
+    {
+      "slug": "glenlivet-12-first-bottles/",
+      "width": 1440
+    },
+    {
+      "slug": "glenlivet-12-first-bottles/",
+      "width": 390
+    },
+    {
+      "slug": "glenlivet-12-first-bottles/",
+      "width": 320
+    },
+    {
+      "slug": "kirin-riku-review/",
+      "width": 1440
+    },
+    {
+      "slug": "kirin-riku-review/",
+      "width": 390
+    },
+    {
+      "slug": "kirin-riku-review/",
+      "width": 320
+    },
+    {
+      "slug": "busker-irish-whiskey-review/",
+      "width": 1440
+    },
+    {
+      "slug": "busker-irish-whiskey-review/",
+      "width": 390
+    },
+    {
+      "slug": "busker-irish-whiskey-review/",
+      "width": 320
+    },
+    {
+      "slug": "hsh-gallery/",
+      "width": 1440
+    },
+    {
+      "slug": "hsh-gallery/",
+      "width": 390
+    },
+    {
+      "slug": "hsh-gallery/",
+      "width": 320
+    },
+    {
+      "slug": "category/whisky/",
+      "width": 1440
+    },
+    {
+      "slug": "category/whisky/",
+      "width": 390
+    },
+    {
+      "slug": "category/whisky/",
+      "width": 320
+    },
+    {
+      "slug": "%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B/",
+      "width": 1440
+    },
+    {
+      "slug": "%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B/",
+      "width": 390
+    },
+    {
+      "slug": "%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B/",
+      "width": 320
+    }
+  ],
+  "errors": [],
+  "writes": 0,
+  "theme_screenshot_requests": 0
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "case": "anonymous-get",
+    "http": 401
+  },
+  {
+    "case": "anonymous-post",
+    "http": 401
+  },
+  {
+    "case": "unsigned-jwt",
+    "http": 401
+  }
+]

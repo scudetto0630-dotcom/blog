@@ -1,6 +1,16 @@
 # Search Consoleの接続準備
 
-現状：本人はGoogle Cloud未利用。アカウント作成・本人の権限設定はログイン中の本人が操作する。こちらはサイト専用・読み取り専用の取得コードと私有レポート保存先まで準備済み。まだ実接続・自動取得は開始していない。
+現在の状態（2026-11-14）：接続済み。本人がGSC_SERVICE_ACCOUNT_JSONをGitHub ActionsのRepository secretへ登録し、Google認証・確定データ取得・WordPressへの非公開保存まで成功した。毎日6:30 JSTのスケジュールで動く（GitHub側の実行待ちで遅れることがある）。鍵を環境blogへ登録し直す必要はない。
+
+Codexからの確認・取得：
+
+    mkdir -p .private/search-console
+    python3 tools/wordpress-edit.py search-report > .private/search-console/from-blog.json
+    chmod 600 .private/search-console/from-blog.json
+
+これは既存のHSH_EDIT_TOKENで非公開の取得結果を読む操作。検索語や実績の生データを公開リポジトリ・公開artifactへ保存しない。接続状況はreader-statusのsearch_consoleと、Search Console read-only collectionの実行結果でも確認できる。ローカル環境にGSC_SERVICE_ACCOUNT_JSONがないことだけで「未接続」と判断しない。
+
+以下は初回設定・鍵を作り直す場合の手順の記録。すでに完了している操作を本人へ繰り返し依頼しない。
 
 ## 最初に行うこと
 
@@ -27,7 +37,7 @@
 
     .private/search-venv/bin/python tools/search-console-sync.py
 
-出力は .private/search-console/latest.json。所有者だけが読めるモードで保存し、Git・公開ページ・公開Actions artifactへ検索語の生データを入れない。現在は資格情報がなく、状態は未接続。定期実行は接続検証後に設定する。
+出力は .private/search-console/latest.json。所有者だけが読めるモードで保存し、Git・公開ページ・公開Actions artifactへ検索語の生データを入れない。このローカルクライアントの資格情報確認は、GitHub Actionsでの接続状態とは別。現在はActionsからの非公開配信が動いている。
 
 ## 得られる分析と限界
 
@@ -43,13 +53,13 @@
 
 ## 追記：GitHub Actionsでの接続経路
 
-本人から、プロジェクトhirogaru-search、API有効化、サービスアカウント blog-search-reader@hirogaru-search.iam.gserviceaccount.com の作成とSearch Consoleへの制限付き追加が完了したと回答あり。API接続そのものは未検証。
+本人から、プロジェクトhirogaru-search、API有効化、サービスアカウント blog-search-reader@hirogaru-search.iam.gserviceaccount.com の作成とSearch Consoleへの制限付き追加が完了したと回答あり。当時はAPI接続が未検証だったが、2026-11-14に認証・取得・非公開保存まで確認済み。
 
 環境blogではJSONのローカル署名に使える秘密情報の登録方法を確認できていないため、GitHub ActionsのRepository secretを使う接続経路を追加した。
 
 1. Google Cloudのサービスアカウント詳細→鍵→鍵を追加→新しい鍵を作成→JSONで端末へダウンロードする。チャットやGitには送らない。
 2. https://github.com/scudetto0630-dotcom/blog/settings/secrets/actions/new で、名前 GSC_SERVICE_ACCOUNT_JSON、Secret欄には端末で開いたJSONファイルの全文を入れ、保存する。
 3. Actions→Search Console read-only collection→Run workflowで初回の認証付き読み取りを確認する。毎日6:30 JSTにも動く。秘密情報が未登録なら接続せずにスキップする。
-4. 公開ログと要約には認証結果と確定データの有無だけを出す。秘密鍵、検索語、指標の生データは出力しない。生データのartifactは作成せず、一時ファイルを終了時に削除する。この段階は接続の検証と定期取得の経路であり、Codexによる生データの継続分析・保管経路は別途用意する必要がある。
+4. 公開ログと要約には認証結果と確定データの有無だけを出す。秘密鍵、検索語、指標の生データは出力しない。生データのartifactは作成せず、一時ファイルを終了時に削除する。この初期方式は、現在はWordPressへの署名付き非公開保存に置き換わっている。最新の取得経路は冒頭の接続済み手順を使う。
 
 この方式ではGoogleの署名処理はGitHub runner内で行われ、環境blogへ秘密鍵を登録しない。鍵が失われた場合はGoogle Cloud側で対象の鍵を削除して失効させる。
