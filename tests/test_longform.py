@@ -63,6 +63,8 @@ class LongformTests(unittest.TestCase):
                 self.assertGreaterEqual(text_count(a['content']),1500)
                 self.assertGreaterEqual(a['content'].count('<h2'),7)
                 self.assertGreaterEqual(len(a['source_urls']),2)
+                self.assertIn(a['slug'],self.photos['articles'])
+                self.assertEqual(a['content'].count('hsh-inline-photo'),2)
                 self.assertIn('https://hirogarushumi.com/',a['content'])
                 self.assertNotRegex(a['content'],r'TODO|HSH_IMAGE:')
     def test_three_distinct_category_photos(self):
