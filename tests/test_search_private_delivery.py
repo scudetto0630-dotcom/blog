@@ -21,4 +21,16 @@ class PrivateDelivery(unittest.TestCase):
   with self.assertRaises(ValueError):g.publish_private_report(self.info,{},send=lambda req:{'stored':False},sign=lambda *a:'token')
  def test_overlarge_report_is_not_sent(self):
   with self.assertRaises(ValueError):g.publish_private_report(self.info,{'data':'x'*(4*1024*1024)},send=lambda req:self.fail('Must not send'))
+class Inspection(unittest.TestCase):
+ def test_only_this_blog_can_be_inspected(self):
+  with self.assertRaises(ValueError):g.inspection_request('fake','https://other.test/')
+ def test_permission_failure_is_recorded_and_not_retried(self):
+  from urllib.error import HTTPError
+  calls=[]
+  def forbidden(token,url):calls.append(url);raise HTTPError(url,403,'forbidden',{},None)
+  result=g.inspect_urls('fake',forbidden)
+  self.assertEqual(len(calls),1);self.assertEqual(result[0]['http'],403);self.assertTrue(all(x['state']=='not_attempted' for x in result[1:]))
+ def test_no_live_index_request_is_made(self):
+  result=g.inspect_urls('fake',lambda token,url:{'inspectionResult':{'indexStatusResult':{'verdict':'PASS','coverageState':'Submitted and indexed'}}})
+  self.assertEqual(len(result),len(g.INSPECTION_URLS));self.assertTrue(all(x['index_status']['verdict']=='PASS' for x in result))
 if __name__=='__main__':unittest.main()

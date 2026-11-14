@@ -98,6 +98,36 @@ def save_private(path,data):
         os.replace(tmp,path)
     finally:
         if os.path.exists(tmp):os.unlink(tmp)
+INSPECTION_ENDPOINT='https://searchconsole.googleapis.com/v1/urlInspection/index:inspect'
+INSPECTION_URLS=[SITE]+[SITE+s+'/' for s in ['cat-carrier-checklist','manmos-cat-life','it-data-work-flow','sherry-cask-notes','glenlivet-12-first-bottles','glen-grant-arboralis-review','nikka-from-the-barrel-review','jim-beam-first-impression','kirin-riku-review','busker-irish-whiskey-review']]
+def inspection_request(token,url):
+    if url not in INSPECTION_URLS:raise ValueError('Inspection URL is outside this blog')
+    body={'inspectionUrl':url,'siteUrl':SITE,'languageCode':'ja-JP'}
+    req=Request(INSPECTION_ENDPOINT,data=json.dumps(body).encode(),headers={'Authorization':'Bearer '+token,'Content-Type':'application/json'},method='POST')
+    with build_opener(NoRedirect()).open(req,timeout=30) as response:return json.load(response)
+def inspect_urls(token,call=inspection_request):
+    rows=[];blocked=None
+    for url in INSPECTION_URLS:
+        if blocked:
+            rows.append({'url':url,'state':'not_attempted','reason':blocked});continue
+        try:
+            result=call(token,url);status=result.get('inspectionResult',{}).get('indexStatusResult',{})
+            if not isinstance(status,dict):raise ValueError('Invalid inspection result')
+            allowed=['verdict','coverageState','robotsTxtState','indexingState','lastCrawlTime','pageFetchState','googleCanonical','userCanonical','sitemap','referringUrls','crawledAs']
+            rows.append({'url':url,'http':200,'index_status':{k:status[k] for k in allowed if k in status}})
+        except HTTPError as e:
+            rows.append({'url':url,'http':e.code,'state':'inspection_unavailable'})
+            if e.code in [401,403,429]:blocked='HTTP '+str(e.code)
+        except Exception:
+            rows.append({'url':url,'state':'inspection_unavailable','reason':'response_or_network'});blocked='response_or_network'
+    return rows
+def sitemap_status(token):
+    req=Request('https://www.googleapis.com/webmasters/v3/sites/'+quote(SITE,safe='')+'/sitemaps',headers={'Authorization':'Bearer '+token})
+    try:
+        with build_opener(NoRedirect()).open(req,timeout=30) as response:result=json.load(response)
+        return {'http':200,'entries':[{k:row[k] for k in ['path','lastSubmitted','isPending','lastDownloaded','warnings','errors','contents'] if k in row} for row in result.get('sitemap',[])]}
+    except HTTPError as e:return {'http':e.code,'state':'unavailable'}
+    except Exception:return {'state':'unavailable','reason':'response_or_network'}
 BLOG_REPORT_URL='https://hirogarushumi.com/?rest_route=/hirogaru/v1/search-report'
 BLOG_AUDIENCE='https://hirogarushumi.com/hirogaru-search-console'
 SERVICE_EMAIL='blog-search-reader@hirogaru-search.iam.gserviceaccount.com'
@@ -122,13 +152,15 @@ def publish_private_report(info,data,send=None,sign=None):
     if not isinstance(result,dict) or result.get('stored') is not True:raise ValueError('Private report was not accepted')
     return True
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--status',action='store_true');p.add_argument('--publish-private',action='store_true');p.add_argument('--output',type=Path,default=ROOT/'.private/search-console/latest.json');a=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('--status',action='store_true');p.add_argument('--publish-private',action='store_true');p.add_argument('--inspect',action='store_true');p.add_argument('--output',type=Path,default=ROOT/'.private/search-console/latest.json');a=p.parse_args()
     try:
         info=credential_info()
         if a.status:
             print(json.dumps({'configured':info is not None,'connection_verified':False,'network_attempted':False}));return 0
         if info is None:print('Search Console credentials are not configured. No API request was sent.');return 2
-        data=collect(access_token(info));data['collected_at']=int(time.time());save_private(a.output,data)
+        token=access_token(info);data=collect(token)
+        if a.inspect:data['url_inspections']=inspect_urls(token);data['sitemaps']=sitemap_status(token)
+        data['collected_at']=int(time.time());save_private(a.output,data)
         if a.publish_private:publish_private_report(info,data);print('Private report delivered to the blog. No queries or credentials printed.')
         else:print('Private Search Console report saved. No queries or credentials printed.')
         return 0

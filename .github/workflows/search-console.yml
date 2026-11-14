@@ -41,7 +41,7 @@ jobs:
         if: steps.credential.outputs.ready == 'true'
         env:
           GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
-        run: python tools/search-console-sync.py --publish-private
+        run: python tools/search-console-sync.py --publish-private --inspect
       - name: Report connection status without private queries
         if: steps.credential.outputs.ready == 'true'
         run: |
