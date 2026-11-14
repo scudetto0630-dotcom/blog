@@ -1,0 +1,39 @@
+{
+  "checked_at_utc": "2026-11-14T15:24:56.192990+00:00",
+  "scope": "Only the five newly added IT/workstyle article bodies and headings",
+  "urls": [
+    "https://hirogarushumi.com/changing-job-or-working-style/",
+    "https://hirogarushumi.com/employee-vs-self-employed/",
+    "https://hirogarushumi.com/freelance-and-sole-proprietor/",
+    "https://hirogarushumi.com/freelance-contract-before-start/",
+    "https://hirogarushumi.com/freelance-sales-and-take-home/"
+  ],
+  "plugin": {
+    "version": "1.48.1",
+    "source_commit": "0aa6f829c3ce7b0327a18624880d90dce755b794",
+    "package_commit": "e4294c659a0aeedbcf764a251573ea6a06c769ee",
+    "sha256": "46d4cefd519fe14a143a7f71d0d26fc4a68521e0deb795525814221e7165fe4d"
+  },
+  "checks": {
+    "revised_articles": 5,
+    "existing_titles_and_excerpts_retained": true,
+    "existing_tables_and_ten_body_figures_retained": true,
+    "all_fifteen_photographs_loaded": true,
+    "public_revised_introductions_visible": 5,
+    "post_ids_dates_thumbnail_ids_preserved": 53,
+    "other_posts_unchanged": 48,
+    "pages_unchanged": 9,
+    "python_tests": 91,
+    "php_checks": 1560,
+    "browser_combinations": 24,
+    "viewport_widths": [
+      320,
+      390,
+      1440
+    ],
+    "horizontal_overflow": false,
+    "javascript_errors": 0,
+    "javascript_disabled_article_present": true,
+    "raw_body_fingerprints_match_after_wp_image_attribute_sanitization": true
+  }
+}
