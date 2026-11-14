@@ -3199,6 +3199,321 @@
       "bytes": 57786,
       "source_generated_png_sha256": "a06e3f0675bc0643530fd6ea6f479784e4cc26691781d8ff4bd7fe8537a553aa",
       "reference": "owner supplied product reference; not a photograph of the purchased bottle"
+    },
+    "workstyle-employee-cover": {
+      "file": "workstyle-employee-cover.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "work",
+      "alt": "ノートパソコンと手帳を並べた、明るい木の机",
+      "caption": "AI生成のイメージです。",
+      "sha256": "0adc5797d2f3df86bc1153d1ad8474e2cb35a9582905f6f6ac998943da5e8a7b",
+      "bytes": 100622,
+      "dhash": "67f3d3c7a694b5f5",
+      "variants": [
+        {
+          "file": "workstyle-employee-cover-600.webp",
+          "width": 600,
+          "height": 400,
+          "sha256": "5d640848a16cf4ca6a890d4dad443af63a7f1bae54dc85c3ad476a663d633fb1",
+          "bytes": 25296
+        }
+      ]
+    },
+    "workstyle-employee-leave": {
+      "file": "workstyle-employee-leave.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "work",
+      "alt": "予定を書き込む手帳と卓上カレンダー",
+      "caption": "AI生成のイメージです。",
+      "sha256": "c990332ff84d511e57c5d64a8cc75969b094a019d43fcf3bd3461c7acf184954",
+      "bytes": 94400,
+      "dhash": "faf8e0e868584a5e",
+      "variants": [
+        {
+          "file": "workstyle-employee-leave-600.webp",
+          "width": 600,
+          "height": 400,
+          "sha256": "48df8cd76cc7c2bc3b245df31579b8c150d2d334af7aac8dfbfaca7ac45afad0",
+          "bytes": 27030
+        }
+      ]
+    },
+    "workstyle-employee-admin": {
+      "file": "workstyle-employee-admin.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "work",
+      "alt": "書類をまとめるファイルとノートパソコン",
+      "caption": "AI生成のイメージです。",
+      "sha256": "152f23546ac1c45670b502028e2b5b4bef7f0dbae5f3e1ed4338e4c0585082e4",
+      "bytes": 74744,
+      "dhash": "a1d0988bcd862084",
+      "variants": [
+        {
+          "file": "workstyle-employee-admin-600.webp",
+          "width": 600,
+          "height": 400,
+          "sha256": "35c88d9ad8f60814c635c18a6d547c12c84163170aaaa08ff8ad73eb48d220b4",
+          "bytes": 26406
+        }
+      ]
+    },
+    "workstyle-definitions-cover": {
+      "file": "workstyle-definitions-cover.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "work",
+      "alt": "色の違うファイルとノートパソコンを並べた机",
+      "caption": "AI生成のイメージです。",
+      "sha256": "c77de7fe4d5204d11de10a4f97db63c8e750bfb4465c4f106137cf6219cc4197",
+      "bytes": 107940,
+      "dhash": "e66e7cfede1bbdbd",
+      "variants": [
+        {
+          "file": "workstyle-definitions-cover-600.webp",
+          "width": 600,
+          "height": 400,
+          "sha256": "059eb900303719f80f229329ff018d594fb1ac203f52010dec073f709ea2a979",
+          "bytes": 30138
+        }
+      ]
+    },
+    "workstyle-definitions-contract": {
+      "file": "workstyle-definitions-contract.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "work",
+      "alt": "書類を入れた封筒とクリップ、ペン",
+      "caption": "AI生成のイメージです。",
+      "sha256": "c9828e6f0ed57168a78fb8fb173c5f735fde982e1db7de7a3d190e3ed37879a9",
+      "bytes": 98238,
+      "dhash": "1b86891023c60695",
+      "variants": [
+        {
+          "file": "workstyle-definitions-contract-600.webp",
+          "width": 600,
+          "height": 400,
+          "sha256": "b2c273de7832a316bff3b16cdcbbe2354a0fb9049c616638548d3576b0e65ae0",
+          "bytes": 26120
+        }
+      ]
+    },
+    "workstyle-definitions-choose": {
+      "file": "workstyle-definitions-choose.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "work",
+      "alt": "仕事用のバッグと、窓辺の机や椅子",
+      "caption": "AI生成のイメージです。",
+      "sha256": "9e5f6497b0f5cb5976473f78ec63e6d1d88f74ef0dddffcd7735c1f0b5e6d272",
+      "bytes": 91040,
+      "dhash": "707892f8eaa2b272",
+      "variants": [
+        {
+          "file": "workstyle-definitions-choose-600.webp",
+          "width": 600,
+          "height": 400,
+          "sha256": "f622804e726ca06cd8f5220c6de3a95760768879a30ec7d5415a7de0030ba8c9",
+          "bytes": 29836
+        }
+      ]
+    },
+    "workstyle-money-cover": {
+      "file": "workstyle-money-cover.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "work",
+      "alt": "電卓と領収書、収支を書き留めるノート",
+      "caption": "AI生成のイメージです。",
+      "sha256": "2cf3e7f129c70c5c93b0c5cad4f10728072e6a8cc823e41bc3c1731dbb84f604",
+      "bytes": 100948,
+      "dhash": "3ccc60a4e470b0c1",
+      "variants": [
+        {
+          "file": "workstyle-money-cover-600.webp",
+          "width": 600,
+          "height": 400,
+          "sha256": "3972ee2a4dc5dfac934bef6ea3bf7285fc80e094257d33fe5bb16a989551c064",
+          "bytes": 29790
+        }
+      ]
+    },
+    "workstyle-money-expenses": {
+      "file": "workstyle-money-expenses.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "work",
+      "alt": "領収書の束と電卓を置いた机",
+      "caption": "AI生成のイメージです。",
+      "sha256": "398bc3ba1d25b29e70bebb56e9c93f8d9d9807f727365f9e206379a7018d8295",
+      "bytes": 71580,
+      "dhash": "0610064c83f9bcb8",
+      "variants": [
+        {
+          "file": "workstyle-money-expenses-600.webp",
+          "width": 600,
+          "height": 400,
+          "sha256": "6272d1691c23566f831c9b64d7933d5b80c148dfe459f1a3d0207bd6d1292abc",
+          "bytes": 22392
+        }
+      ]
+    },
+    "workstyle-money-timing": {
+      "file": "workstyle-money-timing.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "work",
+      "alt": "付箋を付けた卓上カレンダーと手帳",
+      "caption": "AI生成のイメージです。",
+      "sha256": "c771e7c77d2106e4bb2ad3feb7d57979622deeff9cb1fc7a8764c5772debc56d",
+      "bytes": 82448,
+      "dhash": "c090446c40c2de0e",
+      "variants": [
+        {
+          "file": "workstyle-money-timing-600.webp",
+          "width": 600,
+          "height": 400,
+          "sha256": "83909a41a1c9b56af8183e7fefaf835d0e4df22dbc4d713c7aea18bf6358b0ed",
+          "bytes": 24324
+        }
+      ]
+    },
+    "workstyle-choice-cover": {
+      "file": "workstyle-choice-cover.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "work",
+      "alt": "窓際の机に広げたノートとノートパソコン",
+      "caption": "AI生成のイメージです。",
+      "sha256": "1f33f5c5f80edd7bbf9b83e643868ec4b85b8c7a4749e0c2de695243bb4d580e",
+      "bytes": 88448,
+      "dhash": "01a4edf9b9b37373",
+      "variants": [
+        {
+          "file": "workstyle-choice-cover-600.webp",
+          "width": 600,
+          "height": 400,
+          "sha256": "92eea96547cec54378bf923b9b794a1217633ddce44d1a4a864c4973ab5c0d70",
+          "bytes": 29354
+        }
+      ]
+    },
+    "workstyle-choice-conditions": {
+      "file": "workstyle-choice-conditions.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "work",
+      "alt": "条件を書き出すためのカードとノート",
+      "caption": "AI生成のイメージです。",
+      "sha256": "b84aa1ec4ca78e4a6802b20cec29f2216d9c92f4711c445cb88c5a327a25b5f8",
+      "bytes": 159560,
+      "dhash": "e1c6e4e473e2e4cc",
+      "variants": [
+        {
+          "file": "workstyle-choice-conditions-600.webp",
+          "width": 600,
+          "height": 400,
+          "sha256": "664c4da895e65de9735bcfd38d8e14bde5870d27c526291f493752f7cfdc7a95",
+          "bytes": 26670
+        }
+      ]
+    },
+    "workstyle-choice-pause": {
+      "file": "workstyle-choice-pause.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "work",
+      "alt": "ノートパソコンを閉じた、窓辺の仕事机",
+      "caption": "AI生成のイメージです。",
+      "sha256": "64f522ea9aad08498fbc4b3b27fa157b7c069b51137653b51c8de9f904732682",
+      "bytes": 77236,
+      "dhash": "896905c8a1a16060",
+      "variants": [
+        {
+          "file": "workstyle-choice-pause-600.webp",
+          "width": 600,
+          "height": 400,
+          "sha256": "8448ec711700293bb1321efd1be8eac280bb153012997b06940d9bebf9747bfc",
+          "bytes": 23914
+        }
+      ]
+    },
+    "workstyle-contract-cover": {
+      "file": "workstyle-contract-cover.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "work",
+      "alt": "書類とペンを置いた木の机",
+      "caption": "AI生成のイメージです。",
+      "sha256": "0833d63e6229db505ab2c237620017e08a7eddc605a62b4d9fdd3959be4b0c74",
+      "bytes": 72982,
+      "dhash": "38f8c4727de2f37b",
+      "variants": [
+        {
+          "file": "workstyle-contract-cover-600.webp",
+          "width": 600,
+          "height": 400,
+          "sha256": "0269e4012fcf12dd0baab3551e51a60e9c565af11d59849503a6e5d2dcb4ae0e",
+          "bytes": 23504
+        }
+      ]
+    },
+    "workstyle-contract-scope": {
+      "file": "workstyle-contract-scope.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "work",
+      "alt": "クリップボードと、項目に付ける付箋",
+      "caption": "AI生成のイメージです。",
+      "sha256": "cedc669e5c62992d1a4a372dc12080417f0ce27e6b01663059db4abdd5ac056d",
+      "bytes": 51552,
+      "dhash": "c948494363629594",
+      "variants": [
+        {
+          "file": "workstyle-contract-scope-600.webp",
+          "width": 600,
+          "height": 400,
+          "sha256": "b3f8cb2aa40ae56759bea6720ddf41e5283e62b3061bcdb557cc6a4ff04ede34",
+          "bytes": 15220
+        }
+      ]
+    },
+    "workstyle-contract-finish": {
+      "file": "workstyle-contract-finish.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "work",
+      "alt": "書類と二つのグラスを置いた打ち合わせ用のテーブル",
+      "caption": "AI生成のイメージです。",
+      "sha256": "1fd6630b6d3fb0649fc894207074324da6c1460a3137f3e1b9a7563eb158a100",
+      "bytes": 71596,
+      "dhash": "f7759cec69450f0f",
+      "variants": [
+        {
+          "file": "workstyle-contract-finish-600.webp",
+          "width": 600,
+          "height": 400,
+          "sha256": "c785e2b292546f9ec0a883c1d061ccb999869b599802bb187df2a1e203edc393",
+          "bytes": 21196
+        }
+      ]
     }
   },
   "articles": {
@@ -3219,7 +3534,12 @@
     "nikka-from-the-barrel-review": "from-the-barrel-generated",
     "jim-beam-first-impression": "jim-beam-generated",
     "kirin-riku-review": "riku-generated",
-    "busker-irish-whiskey-review": "busker-green-generated"
+    "busker-irish-whiskey-review": "busker-green-generated",
+    "employee-vs-self-employed": "workstyle-employee-cover",
+    "freelance-and-sole-proprietor": "workstyle-definitions-cover",
+    "freelance-sales-and-take-home": "workstyle-money-cover",
+    "changing-job-or-working-style": "workstyle-choice-cover",
+    "freelance-contract-before-start": "workstyle-contract-cover"
   },
   "inline": {
     "before-welcoming-cat": [
@@ -3273,6 +3593,26 @@
     "manmos-cat-life": [
       "manmos-zip-bed",
       "manmos-zip-stretch"
+    ],
+    "employee-vs-self-employed": [
+      "workstyle-employee-leave",
+      "workstyle-employee-admin"
+    ],
+    "freelance-and-sole-proprietor": [
+      "workstyle-definitions-contract",
+      "workstyle-definitions-choose"
+    ],
+    "freelance-sales-and-take-home": [
+      "workstyle-money-expenses",
+      "workstyle-money-timing"
+    ],
+    "changing-job-or-working-style": [
+      "workstyle-choice-conditions",
+      "workstyle-choice-pause"
+    ],
+    "freelance-contract-before-start": [
+      "workstyle-contract-scope",
+      "workstyle-contract-finish"
     ]
   },
   "topics": {
