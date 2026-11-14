@@ -1,0 +1,1561 @@
+{
+  "schema_version": 1,
+  "researched_on": "2026-11-14",
+  "timezone": "Asia/Tokyo",
+  "axis": "正社員が一番だと思っていた自分が、今は個人事業主を選んでいる",
+  "policy_file": "../../WORKSTYLE-EDITORIAL.md",
+  "scope": "公開ページからの標本調査。全記事・全事業の悉皆調査ではない。",
+  "evidence_labels": {
+    "observation": "公開ページ・リンク・料金表示・実画面で確認した事実。支払いの成立や効果は示さない。",
+    "self_report": "本人が公表した経歴・実績・収益。独立監査ではない。",
+    "analysis": "複数ページからの編集上の解釈。実際の制作工程・読者属性の実測ではない。",
+    "application": "本人のブログに取り入れる提案。未実装。",
+    "unknown": "根拠がないため未確認。ゼロや停止とは扱わない。"
+  },
+  "sources": [
+    {
+      "id": "T01",
+      "person": "tottoko",
+      "kind": "home",
+      "title": "とっとこランサーのブログ",
+      "url": "https://tottokolancer.jp/",
+      "checked_on": "2026-11-14",
+      "access": "web_read",
+      "scope": "トップの掲載記事・ナビゲーション",
+      "published": null,
+      "updated": null,
+      "observation": "職歴を示す説明、カテゴリ、記事抜粋、公開日と更新日の併記。先頭記事は2020年公開、2024年更新。",
+      "latest_listed_modification": "2024-04-04"
+    },
+    {
+      "id": "T02",
+      "person": "tottoko",
+      "kind": "profile",
+      "title": "運営者プロフィール",
+      "url": "https://tottokolancer.jp/tottokolancer_profile",
+      "checked_on": "2026-11-14",
+      "access": "web_read",
+      "scope": "プロフィール本文・経歴・外部参照先",
+      "published": null,
+      "updated": null,
+      "observation": "本人による転職・副業・独立・法人化、執筆・メディア・広告運用・講師等の経歴。プロフィールの基準は2021年5月。現在の売上とは扱わない。"
+    },
+    {
+      "id": "T03",
+      "person": "tottoko",
+      "kind": "article",
+      "title": "兼業ライターから専業になってわかった、それぞれのメリット・デメリット。",
+      "url": "https://tottokolancer.jp/archives/1064312488.html",
+      "checked_on": "2026-11-14",
+      "access": "web_read",
+      "scope": "導入・比較の各節・結び",
+      "published": "2017-02-11",
+      "updated": "2020-06-21",
+      "observation": "短い近況から比較へ入り、項目列挙の後に自分への影響を説明する。自由と不安を同じ記事に残す。"
+    },
+    {
+      "id": "T04",
+      "person": "tottoko",
+      "kind": "article",
+      "title": "「フリーランス＝幸せ」ではないが、幸せへの選択肢かもしれない。",
+      "url": "https://tottokolancer.jp/archives/1069209670.html",
+      "checked_on": "2026-11-14",
+      "access": "web_read",
+      "scope": "本文の導入から結び・著者欄",
+      "published": "2017-12-15",
+      "updated": "2020-06-21",
+      "observation": "自分の満足と、全員に適するかを分ける価値観の記事。本文末はSNSフォロー。"
+    },
+    {
+      "id": "T05",
+      "person": "tottoko",
+      "kind": "article",
+      "title": "転職の落とし穴や注意点、解決方法を徹底アドバイス",
+      "url": "https://tottokolancer.jp/archives/1070005899.html",
+      "checked_on": "2026-11-14",
+      "access": "web_read",
+      "scope": "導入・注意点・サービス比較と広告リンク",
+      "published": "2020-03-20",
+      "updated": "2024-03-10",
+      "observation": "相談の悩みから実用解説へ。冒頭・後半に転職エージェントの広告リンク、対象地域等の表、広告表示がある。本文には2022年や5月という古い・季節的な説明も残る。"
+    },
+    {
+      "id": "T06",
+      "person": "tottoko",
+      "kind": "article",
+      "title": "落ちこぼれ高卒の私が、社長になることを決断した日。",
+      "url": "https://tottokolancer.jp/archives/1073916803.html",
+      "checked_on": "2026-11-14",
+      "access": "web_read",
+      "scope": "回想・働き方を変える節・結び",
+      "published": "2019-02-09",
+      "updated": "2020-06-21",
+      "observation": "収入を増やす過程の後に、忙しさ・不安から選び直す話が続く。成功額だけを結論にしていない。"
+    },
+    {
+      "id": "T07",
+      "person": "tottoko",
+      "kind": "article",
+      "title": "中古でシルビア買うならチェック必須！よくある故障ベスト7",
+      "url": "https://tottokolancer.jp/archives/s15silviakoshou.html",
+      "checked_on": "2026-11-14",
+      "access": "web_read",
+      "scope": "対象条件・写真配置・故障例・結び",
+      "published": "2020-04-11",
+      "updated": "2024-04-04",
+      "observation": "対象車両の条件と修理写真を示す趣味記事。故障の説明から、購入に向く条件へ結ぶ。"
+    },
+    {
+      "id": "T08",
+      "person": "tottoko",
+      "kind": "profile",
+      "title": "とっとこランサー note",
+      "url": "https://note.com/tottokolancer",
+      "checked_on": "2026-11-14",
+      "access": "web_read",
+      "scope": "公開プロフィール。記事一覧は不完全",
+      "published": null,
+      "updated": null,
+      "observation": "本人の外部プロフィール。取得したページでは記事一覧が欠け、最新活動日は確定できない。"
+    },
+    {
+      "id": "I01",
+      "person": "inoue",
+      "kind": "home",
+      "title": "独立を楽しくするブログ",
+      "url": "https://yoichi-inoue.com/",
+      "checked_on": "2026-11-14",
+      "access": "web_read",
+      "scope": "トップの記事日付・分類・メニュー",
+      "published": null,
+      "updated": null,
+      "observation": "仕事のスタンス・時間・お金など細かなテーマ別記事と、相談・動画・セミナー等のメニュー。11月13日までの連続した新着を確認。",
+      "latest_listed_publication": "2026-11-13"
+    },
+    {
+      "id": "I02",
+      "person": "inoue",
+      "kind": "profile",
+      "title": "井ノ上陽一のプロフィール",
+      "url": "https://yoichi-inoue.com/profile/",
+      "checked_on": "2026-11-14",
+      "access": "web_read",
+      "scope": "冒頭の経歴と提供サービス。長い全経歴の悉皆確認ではない",
+      "published": null,
+      "updated": null,
+      "observation": "税理士、コンサル、写真、出版等の仕事とサービスが同じ人物の軸で結ばれる。本人の経歴・著書・提供サービスを確認。"
+    },
+    {
+      "id": "I03",
+      "person": "inoue",
+      "kind": "article",
+      "title": "隣の起業はかっこよく見える。起業の前に気が済むまで動いてみよう",
+      "url": "https://yoichi-inoue.com/隣の起業はかっこよく見える。起業の前に気が済/",
+      "checked_on": "2026-11-14",
+      "access": "web_read",
+      "scope": "記事本文・転送先",
+      "published": "2014-09-21",
+      "updated": null,
+      "observation": "独立の両面から、会社に残ったまま試すことと転職にも進む。以前のex-it-blog.comの同記事が新ドメインへ転送された。"
+    },
+    {
+      "id": "I04",
+      "person": "inoue",
+      "kind": "article",
+      "title": "その仕事の嫌いな部分を削ぎ落とそう",
+      "url": "https://yoichi-inoue.com/cut-dislikes/",
+      "checked_on": "2026-11-14",
+      "access": "web_read",
+      "scope": "導入・具体例・結び・案内の配置",
+      "published": "2026-11-08",
+      "updated": null,
+      "observation": "日常の道具の不便から、仕事の受け方・量・運営方針へ広げる。本文途中と末尾に自分のサービス案内。"
+    },
+    {
+      "id": "I05",
+      "person": "inoue",
+      "kind": "article",
+      "title": "自由な独立後に、「変えられないもの」というスパイス",
+      "url": "https://yoichi-inoue.com/cannot-change/",
+      "checked_on": "2026-11-14",
+      "access": "web_read",
+      "scope": "導入から結び・編集後記の入口",
+      "published": "2026-10-21",
+      "updated": null,
+      "observation": "交通予約の具体例を受けて、自由な働き方にも締め切りを設ける話へ進む。末尾に短い日常記録。"
+    },
+    {
+      "id": "I06",
+      "person": "inoue",
+      "kind": "article",
+      "title": "独立19年目。この1年でやった営業",
+      "url": "https://yoichi-inoue.com/the-last-year-sales/",
+      "checked_on": "2026-11-14",
+      "access": "web_read",
+      "scope": "営業一覧・効率化の説明・サービスリンク",
+      "published": "2026-07-21",
+      "updated": null,
+      "observation": "本人が発信・書籍・相談等を営業として振り返る。空振りもあると書き、ブログの効果を受注だけに限定しない。"
+    },
+    {
+      "id": "I07",
+      "person": "inoue",
+      "kind": "sales",
+      "title": "個別コンサルティング",
+      "url": "https://yoichi-inoue.com/personal-consulting/",
+      "checked_on": "2026-11-14",
+      "access": "web_read",
+      "scope": "サービスの対象・料金・条件・申込リンク",
+      "published": null,
+      "updated": null,
+      "observation": "対象者、時間別料金、受けられる内容・範囲、申込方法を公開。40分33,000円、90分55,000円などの表示。成約額ではなく提示料金。"
+    },
+    {
+      "id": "I08",
+      "person": "inoue",
+      "kind": "sales",
+      "title": "動画・音声オンラインショップ",
+      "url": "https://www.timeconsulting.co.jp/",
+      "checked_on": "2026-11-14",
+      "access": "web_read",
+      "scope": "商品一覧・価格・カート・運営リンク",
+      "published": null,
+      "updated": null,
+      "observation": "商品別の価格、分類、カート、支払案内がある。有料教材販売の導線を確認。販売本数や売上は不明。"
+    },
+    {
+      "id": "I09",
+      "person": "inoue",
+      "kind": "disclosure",
+      "title": "EX-ITについて",
+      "url": "https://yoichi-inoue.com/ex-it/",
+      "checked_on": "2026-11-14",
+      "access": "web_read",
+      "scope": "説明・購読方法・広告に関する記載",
+      "published": null,
+      "updated": null,
+      "observation": "Google AdSense、Amazon、A8への参加を本人が明記。現存する宣言であり、今日の広告配信・入金を示す証拠ではない。"
+    },
+    {
+      "id": "I10",
+      "person": "inoue",
+      "kind": "channel",
+      "title": "週刊ひとりしごと道",
+      "url": "https://note.com/yoichiinoue/m/m72966633150e",
+      "checked_on": "2026-11-14",
+      "access": "web_read",
+      "scope": "公開のマガジン説明・号一覧",
+      "published": null,
+      "updated": "2026-11-10",
+      "observation": "営業・効率化・お金の週刊コンテンツ。11月10日号までの一覧を確認。有料の現行契約条件はこの取得では確定せず。"
+    },
+    {
+      "id": "H01",
+      "person": "hase",
+      "kind": "home",
+      "title": "インターネットの備忘録",
+      "url": "https://hase0831.hatenablog.jp/",
+      "checked_on": "2026-11-14",
+      "access": "web_read",
+      "scope": "トップの記事本文・日付・更新なし広告",
+      "published": null,
+      "updated": null,
+      "observation": "日記・仕事・暮らしが並ぶ。トップ先頭は2026年4月2日。90日以上更新のないブログへの広告との表示がある。",
+      "latest_listed_publication": "2026-04-02"
+    },
+    {
+      "id": "H02",
+      "person": "hase",
+      "kind": "article",
+      "title": "あたらしく社会人になるひとへ 2026",
+      "url": "https://hase0831.hatenablog.jp/entry/20260402",
+      "checked_on": "2026-11-14",
+      "access": "web_read",
+      "scope": "本文全体・プロフィールと回遊欄",
+      "published": "2026-04-02",
+      "updated": null,
+      "observation": "以前の記事に触れてから、仕事量と自分のペースについて助言する短い文章。サービス申込みへの強制的な接続はない。"
+    },
+    {
+      "id": "H03",
+      "person": "hase",
+      "kind": "article",
+      "title": "戦略的がむしゃらに挑戦しよう",
+      "url": "https://hase0831.hatenablog.jp/entry/202512040900",
+      "checked_on": "2026-11-14",
+      "access": "web_read",
+      "scope": "本文・関連する過去記事へのつながり",
+      "published": "2025-12-04",
+      "updated": null,
+      "observation": "他者の記事を入口に、過去の働き方の利益と損失を振り返り、努力の区切りについて考える。関連する過去記事へリンク。"
+    },
+    {
+      "id": "H04",
+      "person": "hase",
+      "kind": "article",
+      "title": "50歳を前に、スキルの天井が見えた",
+      "url": "https://hase0831.hatenablog.jp/entry/2025/11/10/121041",
+      "checked_on": "2026-11-14",
+      "access": "web_read",
+      "scope": "本文全体・末尾",
+      "published": "2025-11-10",
+      "updated": null,
+      "observation": "以前に有効だった働き方が、暮らしの変化で合わなくなる話。未解決の揺れを残して結ぶ。"
+    },
+    {
+      "id": "H05",
+      "person": "hase",
+      "kind": "article",
+      "title": "逃げろ、そして生き延びろ",
+      "url": "https://hase0831.hatenablog.jp/entry/20121002",
+      "checked_on": "2026-11-14",
+      "access": "web_read",
+      "scope": "本文・結び・続きへのリンク",
+      "published": "2012-10-02",
+      "updated": null,
+      "observation": "他者の体験に反応し、自身の経験・振り返りから読者へ呼びかける。後続記事へのリンクがある。"
+    },
+    {
+      "id": "H06",
+      "person": "hase",
+      "kind": "contribution",
+      "title": "自由を求めてフリーランスになり、会社員としてふたたび組織で働くまで",
+      "url": "https://meetscareer.tenshoku.mynavi.jp/entry/20210415-hase0831",
+      "checked_on": "2026-11-14",
+      "access": "web_read",
+      "scope": "著者表示・本文の各節・末尾の関連記事",
+      "published": "2021-04-15",
+      "updated": null,
+      "observation": "はせおやさい署名のマイナビ媒体への寄稿。独立・組織への復帰・読者の考え方の順。本人ブログ内のアフィリエイト記事とは区別。"
+    },
+    {
+      "id": "H07",
+      "person": "hase",
+      "kind": "article",
+      "title": "ブログを書き続けていたら、夢が叶った話",
+      "url": "https://hase0831.hatenablog.jp/entry/2016/04/15/010801",
+      "checked_on": "2026-11-14",
+      "access": "web_read",
+      "scope": "仕事を得た説明・書籍案内・活動の振り返り",
+      "published": "2016-04-15",
+      "updated": null,
+      "observation": "本人がブログをきっかけに書く仕事を得たと説明。寄稿・電子書籍の仕事歴を示す。"
+    },
+    {
+      "id": "H08",
+      "person": "hase",
+      "kind": "sponsored_article",
+      "title": "四十にして惑いまくりの日々を綴る日記、始めます",
+      "url": "https://hase0831.hatenablog.jp/entry/20230601-15",
+      "checked_on": "2026-11-14",
+      "access": "web_read",
+      "scope": "広告表示と無料公開部分のみ。課金・購入は行わず",
+      "published": "2023-06-29",
+      "updated": null,
+      "observation": "はてな×codoc連携の依頼記事と明記。無料の導入・日記の一部の後にcodoc購入への境界がある。有料部分は読んでいない。"
+    },
+    {
+      "id": "H09",
+      "person": "hase",
+      "kind": "contribution",
+      "title": "身辺雑記を書き続けてきた理由――ブログとわたし",
+      "url": "https://blog.hatenablog.com/entry/2020/07/02/170000",
+      "checked_on": "2026-11-14",
+      "access": "web_read",
+      "scope": "署名・公開本文の前半と構成",
+      "published": "2020-07-02",
+      "updated": null,
+      "observation": "はてなの媒体に本人が寄稿した文章。日記を書く動機と他者の生活を読む価値がテーマ。"
+    },
+    {
+      "id": "H10",
+      "person": "hase",
+      "kind": "channel",
+      "title": "はせおやさい note",
+      "url": "https://note.com/hase0831",
+      "checked_on": "2026-11-14",
+      "access": "web_read",
+      "scope": "プロフィール・公開記事一覧",
+      "published": null,
+      "updated": null,
+      "observation": "本人ブログとXへのリンク、日常の文章やマガジンの一覧がある。相対日付・取得差があり絶対的な最新活動日は確定しない。"
+    },
+    {
+      "id": "H11",
+      "person": "hase",
+      "kind": "archive",
+      "title": "2023年の記事一覧",
+      "url": "https://hase0831.hatenablog.jp/archive/2023",
+      "checked_on": "2026-11-14",
+      "access": "web_read",
+      "scope": "年別一覧と抜粋のみ",
+      "published": null,
+      "updated": null,
+      "observation": "仕事・暮らし・依頼記事が混在。ビックカメラ提供の表示がある記事も一覧に存在。該当記事本文未読なので報酬は断定しない。"
+    },
+    {
+      "id": "D01",
+      "person": "hitode",
+      "kind": "home",
+      "title": "今日はヒトデ祭りだぞ！",
+      "url": "https://www.hitode-festival.com/",
+      "checked_on": "2026-11-14",
+      "access": "web_read",
+      "scope": "トップの掲載項目・日付・ナビゲーション",
+      "published": null,
+      "updated": null,
+      "observation": "最新記事、仕事、お金、趣味等で記事を分ける。先頭の新着は2026年5月29日。",
+      "latest_listed_publication": "2026-05-29"
+    },
+    {
+      "id": "D02",
+      "person": "hitode",
+      "kind": "profile",
+      "title": "このブログと「☆←ヒトデ」の自己紹介",
+      "url": "https://www.hitode-festival.com/?page_id=6502",
+      "checked_on": "2026-11-14",
+      "access": "web_read",
+      "scope": "プロフィール冒頭・他媒体へのリンク",
+      "published": null,
+      "updated": null,
+      "observation": "雑記ブログ側にもプロフィールと他の活動への案内がある。解説サイト側のプロフィールと併せて人物と媒体を分けて確認。"
+    },
+    {
+      "id": "D03",
+      "person": "hitode",
+      "kind": "article",
+      "title": "仕事を辞めてフリーランスになってから1年が経ったよ！",
+      "url": "https://www.hitode-festival.com/?p=6673",
+      "checked_on": "2026-11-14",
+      "access": "web_read",
+      "scope": "導入・相性の説明・暮らし・結び",
+      "published": "2018-08-14",
+      "updated": "2020-09-03",
+      "observation": "感情を強く出し、会社との相性、独立後の暮らしや収入を語る。独立1年後という時点を切った記事。"
+    },
+    {
+      "id": "D04",
+      "person": "hitode",
+      "kind": "article",
+      "title": "ブログで仕事辞めて4年が経ったので振り返ってみる",
+      "url": "https://www.hitode-festival.com/?p=14038",
+      "checked_on": "2026-11-14",
+      "access": "web_read",
+      "scope": "本文の各節・結び",
+      "published": "2021-07-14",
+      "updated": null,
+      "observation": "退職当時の気持ちから、準備・試行錯誤・将来へ進む。1年後の話と同じ経歴を違う時点で捉え直す。"
+    },
+    {
+      "id": "D05",
+      "person": "hitode",
+      "kind": "article",
+      "title": "独立するまでに踏んだ4つのステップ",
+      "url": "https://www.hitode-festival.com/?p=59",
+      "checked_on": "2026-11-14",
+      "access": "web_read",
+      "scope": "導入・時間を作る節・行動の説明",
+      "published": "2018-03-04",
+      "updated": null,
+      "observation": "本人の行動を複数の段階に分け、読者に実行内容を説明する。強い会社批判や断言もあり、そのまま採用しない。"
+    },
+    {
+      "id": "D06",
+      "person": "hitode",
+      "kind": "article",
+      "title": "ヒトデの2025年を振り返る！！！",
+      "url": "https://www.hitode-festival.com/?p=16098",
+      "checked_on": "2026-11-14",
+      "access": "web_read",
+      "scope": "導入・コーチング・出版・発信事業の各節",
+      "published": "2025-12-28",
+      "updated": null,
+      "observation": "本人がアフィリエイト、コーチング、創作、ABC等の活動を説明。2025年の本人申告であり2026年の確定収益ではない。"
+    },
+    {
+      "id": "D07",
+      "person": "hitode",
+      "kind": "article",
+      "title": "ペットロスの本を全国に届けるための告知",
+      "url": "https://www.hitode-festival.com/?p=16240",
+      "checked_on": "2026-11-14",
+      "access": "web_read",
+      "scope": "制作意図・プロジェクトの支援案内",
+      "published": "2026-05-29",
+      "updated": null,
+      "observation": "制作の理由と経緯から、本を届けるプロジェクトへの支援を求める。クラウドファンディングは利益や継続収益と同一ではない。"
+    },
+    {
+      "id": "D08",
+      "person": "hitode",
+      "kind": "guide_home",
+      "title": "hitodeblog：ブログの始め方",
+      "url": "https://hitodeblog.com/",
+      "checked_on": "2026-11-14",
+      "access": "web_read",
+      "scope": "トップの導入・目次・サービス選択の節・PC/スマホ実画面",
+      "published": null,
+      "updated": "2026-10",
+      "observation": "雑記とは別の初心者向け解説サイト。学ぶ順序を示す入口、関連手順、書籍・LINE等へのリンクがある。"
+    },
+    {
+      "id": "D09",
+      "person": "hitode",
+      "kind": "profile",
+      "title": "hitodeblog側のプロフィール",
+      "url": "https://hitodeblog.com/about-hitode",
+      "checked_on": "2026-11-14",
+      "access": "web_read",
+      "scope": "プロフィール・経歴・書籍と外部活動へのリンク",
+      "published": null,
+      "updated": null,
+      "observation": "会社員から独立、法人化、複数サイト、出版・コーチング等を本人が記載。累計額・最高額は本人申告の事業全体の参考情報。"
+    },
+    {
+      "id": "D10",
+      "person": "hitode",
+      "kind": "sales",
+      "title": "ABCオンライン",
+      "url": "https://abc-space.jp/abconline",
+      "checked_on": "2026-11-14",
+      "access": "web_read",
+      "scope": "公開販売ページ・料金・募集状態・FAQ",
+      "published": null,
+      "updated": null,
+      "observation": "月額2,480円の表示、提供内容、参加条件、FAQと待機LINE。取得時は募集停止の案内。稼働会員数や配分・利益は不明。"
+    },
+    {
+      "id": "D11",
+      "person": "hitode",
+      "kind": "affiliate_guide",
+      "title": "WordPressブログの始め方",
+      "url": "https://hitodeblog.com/wordpress-start",
+      "checked_on": "2026-11-14",
+      "access": "web_read",
+      "scope": "導入・全体手順・広告への入口のみ",
+      "published": null,
+      "updated": null,
+      "observation": "PR表示、手順・画像・動画、サーバー案内とクーポン。最新表示は2026年11月13日。長大な全本文の読了とは扱わない。",
+      "displayed_date": "2026-11-13",
+      "date_semantics": "記事上の表示日。元の公開日・実際の全改稿日時は未確認。"
+    }
+  ],
+  "profiles": [
+    {
+      "id": "tottoko",
+      "name": "とっとこランサー",
+      "site": "とっとこランサーのブログ",
+      "url": "https://tottokolancer.jp/",
+      "reference_role": "体験を比較記事・転職広告へつなぐ構成",
+      "activity_status": "トップでは長期間、新規投稿が少ない。本人の活動終了は確認できない。",
+      "latest_observed": {
+        "publication": "2020-04-11",
+        "modification": "2024-04-04",
+        "basis": [
+          "T01",
+          "T07"
+        ],
+        "note": "トップ先頭で確認した記事。全媒体の最新日を保証しない。"
+      },
+      "sections": [
+        {
+          "title": "人物とブログの役割",
+          "text": "本人の職歴と試行錯誤が、助言を読む理由になっている。現在参照できるプロフィールは2021年時点の会社経営者としての説明。今日も個人の専業ライターであると紹介するのは不正確。職業名より、どの経験を根拠に書くかを見る。",
+          "source_ids": [
+            "T02",
+            "T08"
+          ],
+          "kind": "analysis"
+        },
+        {
+          "title": "想定する読者と約束",
+          "text": "転職や副業に不安があり、経験者の話を聞きたい人が入口。理念を示すプロフィール、仕事系カテゴリ、趣味の実体験記事が併存する。職業の説明だけでなく、選択に悩んだ過程が記事になる設計と読める。これは分析であり読者属性の実測ではない。",
+          "source_ids": [
+            "T01",
+            "T02",
+            "T07"
+          ],
+          "kind": "analysis"
+        },
+        {
+          "title": "テーマの作り方",
+          "text": "比較、価値観、経歴の回想、実用品の注意点を別記事にしている。一つの経歴から複数の問いを立てられる点が使える。同じ自己紹介を量産するより、前提となる価値観、経験後の違い、選ぶ条件を分ける。実際の企画会議や検索調査の手順は不明。",
+          "source_ids": [
+            "T03",
+            "T04",
+            "T06"
+          ],
+          "kind": "analysis"
+        },
+        {
+          "title": "導入の作り方",
+          "text": "比較記事は日常の一言から入り、独立前の不安を経て本題へ進む。転職記事は読者の困りごとを先に示す。体験談と実用記事で入口が違うため、全記事に長い自分語りを付ける必要はない。",
+          "source_ids": [
+            "T03",
+            "T05"
+          ],
+          "kind": "analysis"
+        },
+        {
+          "title": "本文の順番と厚み",
+          "text": "比較項目を出した後、本人にはどんな意味があったかを書く。制度の一般論と経験者の感想が一つになるよう注意は必要だが、項目名だけの薄い比較から抜け出す参考になる。自分の記事では「違い→生活への影響→自分が選ぶ理由」を一組にする。",
+          "source_ids": [
+            "T03"
+          ],
+          "kind": "analysis"
+        },
+        {
+          "title": "話し方とユーモア",
+          "text": "丁寧な説明の中に率直な感想や弱さを出す。車の記事では具体的な困りごとが軽い笑いにもなる。本人の事実がある場面でだけ軽く崩すのが合う。顔文字や一文ごとの改行を機械的に増やすと、あなたが嫌う細切れの文章になる。",
+          "source_ids": [
+            "T03",
+            "T06",
+            "T07"
+          ],
+          "kind": "analysis"
+        },
+        {
+          "title": "証拠の置き方",
+          "text": "車の記事では対象の条件や写真が説明を支える。一方、職歴や収益の数字は本人の公表であり、第三者監査された実績とは限らない。見せ方の参考と、主張の正しさの検証を別にする。あなたの収入・労働時間を空想で埋める根拠にはならない。",
+          "source_ids": [
+            "T02",
+            "T07"
+          ],
+          "kind": "analysis"
+        },
+        {
+          "title": "情報の見せ方・回遊",
+          "text": "トップは記事一覧と抜粋、カテゴリ、プロフィールで入口を作る。記事末には著者欄・関連記事・SNS案内が見える。仕事と趣味が同居しても、書いている人がつながりになる。実画面を取得できず、列数・配色・スマホ追従の評価は保留。",
+          "source_ids": [
+            "T01",
+            "T03",
+            "T07"
+          ],
+          "kind": "analysis"
+        },
+        {
+          "title": "収益へつなぐ記事",
+          "text": "転職の困りごとを説明する記事の中に、サービスを比べて外部へ進む経路がある。広告リンクとPR表示は確認できた。ただし冒頭の季節的な訴求や登録を急がせる表現は、あなたの落ち着いた比較方針と合わない部分がある。",
+          "source_ids": [
+            "T05"
+          ],
+          "kind": "analysis"
+        },
+        {
+          "title": "ブログ以外の仕事との関係",
+          "text": "プロフィールには執筆、編集、SNS、広告、講師などがある。ブログの広告収入と、受託仕事・会社全体の売上は別物。古い月商の数字から、現在のブログ収益や転職案件の成約数を計算できない。",
+          "source_ids": [
+            "T02"
+          ],
+          "kind": "analysis"
+        },
+        {
+          "title": "強みと弱点",
+          "text": "体験の裏付けがある比較と、仕事の選択を扱う立場が強い。一方、古い本文の年次・料金・法制度は再確認が必要。更新日が比較的新しくても本文全体が最新とは限らない、という教材にもなる。",
+          "source_ids": [
+            "T03",
+            "T05"
+          ],
+          "kind": "analysis"
+        },
+        {
+          "title": "こちらのブログに移す方法",
+          "text": "主な模範は「両方を経験した人の比較→向く条件→必要な人にだけ案内」。会社員が一番と思っていた過去は共感の入口にし、独立の経緯は比較テーマごとに少しずつ出す。大きな売上を権威として押し出す人物像まで移さない。",
+          "source_ids": [
+            "T03",
+            "T04",
+            "T05"
+          ],
+          "kind": "application"
+        }
+      ],
+      "adopt": [
+        "一般的な長所・短所に、本人への影響を添える",
+        "経歴の全体像はプロフィールに置き、記事では必要な場面だけ使う",
+        "転職したい読者向けの記事から、条件が分かる紹介へつなぐ"
+      ],
+      "avoid": [
+        "過去の法制度・求人条件・季節的な煽りの転用",
+        "本人の高収益を自分の実績や読者の期待値にする",
+        "ブログ更新の少なさから本人の引退を推測する"
+      ],
+      "revenue": [
+        {
+          "type": "転職サービスのアフィリエイト",
+          "evidence": "PR表示とafb系の外部リンクを確認。存在確認であり成約や入金の証明ではない。",
+          "source_ids": [
+            "T05"
+          ],
+          "evidence_level": "観察",
+          "owner_workload": "記事作成と定期的な条件更新が必要",
+          "actual_revenue_amount": null
+        },
+        {
+          "type": "執筆・編集・メディア・広告運用等",
+          "evidence": "本人が仕事領域として公表。現時点の受注・報酬額は確認できない。",
+          "source_ids": [
+            "T02"
+          ],
+          "evidence_level": "本人申告",
+          "owner_workload": "受託や運用の実作業が発生",
+          "actual_revenue_amount": null
+        },
+        {
+          "type": "講師・セミナー",
+          "evidence": "本人の経歴に共同運営・講義実績。現在の募集や収入は不明。",
+          "source_ids": [
+            "T02"
+          ],
+          "evidence_level": "本人申告",
+          "owner_workload": "登壇・運営が必要",
+          "actual_revenue_amount": null
+        }
+      ],
+      "unknown": [
+        "現在のブログ月収・利益・成約率",
+        "会社全体の売上とブログ単体の内訳",
+        "新規投稿が少ない理由",
+        "現在のサービス利用・広告契約・受注状況",
+        "PC・スマホの実画面とCSSの寸法"
+      ],
+      "article_cases": [
+        {
+          "source_id": "T03",
+          "focus": "比較を自分の生活へ戻す",
+          "opening": "独立前に不安だったことを示し、二つの働き方を経験した立場で比較する。",
+          "progression": [
+            "兼業の利点と負担",
+            "専業の利点と負担",
+            "不安も残る本人の選択"
+          ],
+          "why_it_works": "列挙だけでなく、本人には何が大きかったかが続く。読み手は同じ項目でも人によって重みが違うと考えられる。",
+          "ending_and_links": "結びは自分の選択を述べ、読者にも選ぶ余地を残す。SNSへの案内が見える。",
+          "application": "全記事を広告記事にせず、比較の理解を深める役割にできる。自分の収入・勤務条件は未確認なら入れない。",
+          "classification": "完成記事からの分析・応用案"
+        },
+        {
+          "source_id": "T04",
+          "focus": "自分の満足と他人への勧めを分ける",
+          "opening": "独立後に、働き方そのものへの見方が変わったことを話題にする。",
+          "progression": [
+            "本人はいま満足している",
+            "同じ形が全員の満足とは限らない",
+            "暮らしの望みに合う選択として考える"
+          ],
+          "why_it_works": "自分の選択を否定しなくても、万人に推す結論を避けられる。今回の固定軸に特に近い。",
+          "ending_and_links": "フォローへの案内はあるが、本文の結論自体を転職登録へ置き換えていない。",
+          "application": "今も会社員のよさが分かるという立場を書くときに使う。本人の幸せの定義まで参考著者から借りない。",
+          "classification": "完成記事からの分析・応用案"
+        },
+        {
+          "source_id": "T05",
+          "focus": "役立つ説明からサービスへ進める記事",
+          "opening": "読者の悩みと本人の経験を先に置き、記事で扱う事項を予告する。",
+          "progression": [
+            "注意点や退職にまつわる説明",
+            "本人の経験を挟む",
+            "サービスの比較と申込みリンク"
+          ],
+          "why_it_works": "読者の困りごとが具体的なので、比較する理由が分かる。ただし強い断言や登録を急がせる箇所もある。",
+          "ending_and_links": "冒頭と後半に広告リンク・PR表示。地域などの条件表から各サービスへ進める。成約は不明。",
+          "application": "広告の前に判断材料を用意する点を使う。古い年次・失業給付等の説明・季節の推奨文は現行情報で作り直す。",
+          "classification": "完成記事からの分析・応用案"
+        },
+        {
+          "source_id": "T07",
+          "focus": "趣味の実体験で信用を作る記事",
+          "opening": "対象と条件を具体化し、実際の写真と経験から注意点を示す。",
+          "progression": [
+            "本人の対象車両",
+            "問題の種類ごとの説明と写真",
+            "購入前に考える条件"
+          ],
+          "why_it_works": "写真が説明の証拠になり、単なるおすすめではなく、買う前に知るべき負担が見える。",
+          "ending_and_links": "最後は向く条件と楽しさを両方残す。働き方広告へ無関係につないではいない。",
+          "application": "猫・ウイスキーの記事にも共通する、実物と感想を結ぶ方法。仕事でも公開できる材料の範囲で具体性を作る。",
+          "classification": "完成記事からの分析・応用案"
+        }
+      ]
+    },
+    {
+      "id": "inoue",
+      "name": "井ノ上陽一",
+      "site": "独立を楽しくするブログ",
+      "url": "https://yoichi-inoue.com/",
+      "reference_role": "働き方を細かな問いに分ける企画と継続発信",
+      "activity_status": "2026年11月の連続したブログ更新と、近日のサービス案内を確認。",
+      "latest_observed": {
+        "publication": "2026-11-13",
+        "modification": null,
+        "basis": [
+          "I01"
+        ],
+        "note": "調査時にトップで確認した新着。旧ドメインから移転あり。"
+      },
+      "sections": [
+        {
+          "title": "人物とブログの役割",
+          "text": "資格・相談・出版・写真など複数の仕事を持つ人の発信拠点。プロフィールとサービスページが近く、考え方を読むことが、依頼先の理解にもなる。純粋な広告収入だけで成り立つブログとして扱うのは違う。",
+          "source_ids": [
+            "I01",
+            "I02",
+            "I07"
+          ],
+          "kind": "analysis"
+        },
+        {
+          "title": "想定する読者と約束",
+          "text": "すでに独立している人や独立を考える人が、仕事の進め方・時間・お金を考える入口。あなたの中心読者は独立前の迷いも含むため、専門家の断言をそのまま借りず、もう一歩手前の疑問へ翻訳する必要がある。",
+          "source_ids": [
+            "I01",
+            "I02",
+            "I07"
+          ],
+          "kind": "analysis"
+        },
+        {
+          "title": "テーマの作り方",
+          "text": "時間、営業、好き嫌い、自由など、抽象的な大テーマを一つの日常の疑問に落とす。同じ「個人事業主のメリット」を繰り返さず、決める負担、断ること、働く時間のような具体的な問いに分けられる。検索需要を実測した結果とは別の企画上の参考。",
+          "source_ids": [
+            "I04",
+            "I05",
+            "I06"
+          ],
+          "kind": "analysis"
+        },
+        {
+          "title": "導入と具体例",
+          "text": "道具や移動の出来事を示してから、その事例が働き方の何に通じるか説明する。いきなり一般論だけで始めないため、抽象的な話でも読む足場がある。あなたの記事にも本人が語った事実だけを入口に置く。例のために架空の日常を作らない。",
+          "source_ids": [
+            "I04",
+            "I05"
+          ],
+          "kind": "analysis"
+        },
+        {
+          "title": "本文の展開",
+          "text": "一つの小さな問題を別の仕事や習慣へ広げ、最後に自分の方針へ戻す構成が見える。いくつもの具体例は同じ主張を試す役割を持つ。見出しの数や文字数より、例が問いに答えているかを参考にする。",
+          "source_ids": [
+            "I04",
+            "I05"
+          ],
+          "kind": "analysis"
+        },
+        {
+          "title": "語り口と判断",
+          "text": "自分の好き嫌いをはっきり書くので、相性のある読者が見つけやすい。その強さは専門性と長い経験にも支えられている。あなたの本人回答にない嫌いな業務・断った経験・顧客像を付け足して、同じ断定の強さを再現しない。",
+          "source_ids": [
+            "I02",
+            "I04"
+          ],
+          "kind": "analysis"
+        },
+        {
+          "title": "両方を見る姿勢",
+          "text": "古い起業の記事でも、独立の両面と、職場を変える選択を扱う。あなたが保存した軸に近いのは、独立を上位互換にしない点。税理士という職種に特有の考えも含むため、全職種へ広げない。",
+          "source_ids": [
+            "I03"
+          ],
+          "kind": "analysis"
+        },
+        {
+          "title": "見せ方・写真・回遊",
+          "text": "公開抽出では、記事一覧、細かなカテゴリ、プロフィール、サービスメニュー、記事内と末尾の案内、編集後記が確認できる。写真には本文との関係や撮影情報もある。色・幅・余白は実画面未確認。本文途中の多い案内まで、そのまま自サイトへ採用する必要はない。",
+          "source_ids": [
+            "I01",
+            "I04",
+            "I05"
+          ],
+          "kind": "analysis"
+        },
+        {
+          "title": "有料サービスへのつなぎ方",
+          "text": "相談ページは対象・内容・時間・料金・申込みを具体化する。無料記事で考え方に触れ、個別に聞きたい人が相談へ進める構成と解釈できる。相談の成約率や、その前に読まれた記事は外部から分からない。",
+          "source_ids": [
+            "I07"
+          ],
+          "kind": "analysis"
+        },
+        {
+          "title": "売上の分散と媒体の分担",
+          "text": "有料教材のショップ、相談、出版等が公開され、ブログ外へ売上を受け取る窓口が分かれる。noteは週刊の発信窓口も持つ。ただしnoteの存在だけで有料購読による現在の収入を確定しない。広告参加の宣言も別ページに存在する。",
+          "source_ids": [
+            "I02",
+            "I08",
+            "I09",
+            "I10"
+          ],
+          "kind": "analysis"
+        },
+        {
+          "title": "運営の仕組みとして学ぶこと",
+          "text": "過去1年の営業の振り返りは、発信と仕事が相互に材料を生む様子を示す。一人で継続する発信の参考にはなるが、本人が毎日どの順番で調査・執筆・校正するかは不明。更新量を、AIで増やせばよいという根拠にはしない。",
+          "source_ids": [
+            "I06"
+          ],
+          "kind": "analysis"
+        },
+        {
+          "title": "こちらのブログに移す方法",
+          "text": "使うのは「働き方の一面を一記事にする」企画力。自分の仕事を新たに請けたり講座を売ったりする収益モデルは、作業を増やしたくない本人の希望と合わない。記事の役割分担を参考にして、現時点では広告・紹介へ応用する。",
+          "source_ids": [
+            "I04",
+            "I05",
+            "I07",
+            "I08"
+          ],
+          "kind": "application"
+        }
+      ],
+      "adopt": [
+        "一記事に一つの具体的な問いを立てる",
+        "時間・お金・責任・好みで働き方を掘る",
+        "有料の案内では誰向けかと条件を先に示す"
+      ],
+      "avoid": [
+        "毎日更新という量だけの模倣",
+        "税理士の専門家としての立場を借りる",
+        "本文の途中へ多数の案内を挟むことの一律導入",
+        "本人の希望に反する相談業・講師業の追加"
+      ],
+      "revenue": [
+        {
+          "type": "個別コンサルティング",
+          "evidence": "公開の料金表と申込リンクがある。40分33,000円、90分55,000円等は提示額。",
+          "source_ids": [
+            "I07"
+          ],
+          "evidence_level": "観察",
+          "owner_workload": "本人による面談時間が必要",
+          "actual_revenue_amount": null
+        },
+        {
+          "type": "動画・音声教材",
+          "evidence": "商品、価格、カートを備えたショップを確認。",
+          "source_ids": [
+            "I08"
+          ],
+          "evidence_level": "観察",
+          "owner_workload": "制作と更新が必要。売上・利益は不明",
+          "actual_revenue_amount": null
+        },
+        {
+          "type": "セミナー・税務・写真・出版等",
+          "evidence": "提供サービスと仕事の案内を本人が公開。受注件数は不明。",
+          "source_ids": [
+            "I01",
+            "I02"
+          ],
+          "evidence_level": "本人申告・案内",
+          "owner_workload": "専門業務・登壇・制作が必要",
+          "actual_revenue_amount": null
+        },
+        {
+          "type": "AdSense・Amazon・A8",
+          "evidence": "ブログの説明ページで参加を明記。現在の配信や収益額は未確認。",
+          "source_ids": [
+            "I09"
+          ],
+          "evidence_level": "本人申告",
+          "owner_workload": "掲載と記事の維持。現在の実収入は不明",
+          "actual_revenue_amount": null
+        },
+        {
+          "type": "noteの週刊コンテンツ",
+          "evidence": "マガジンと新着号を確認。有料条件と入金はこの調査で確定できない。",
+          "source_ids": [
+            "I10"
+          ],
+          "evidence_level": "公開窓口のみ確認",
+          "owner_workload": "継続執筆が必要",
+          "actual_revenue_amount": null
+        }
+      ],
+      "unknown": [
+        "収益の現在額と事業別比率",
+        "記事から相談までの実際の経路・成約率",
+        "現在の広告配信量とAdSense入金",
+        "noteの現在の課金条件",
+        "PC・スマホの配色・寸法・実表示"
+      ],
+      "article_cases": [
+        {
+          "source_id": "I03",
+          "focus": "独立と転職を同じ選択の中で扱う",
+          "opening": "独立が魅力的に見える感覚を入口に、利点だけでは決められないと進める。",
+          "progression": [
+            "独立の利点と難点",
+            "会社を辞める前にできること",
+            "職場を変えることと働き方を変えること"
+          ],
+          "why_it_works": "独立を昇格のように扱わず、何が合わないかを見る比較がある。職種特有の考えと一般論を分けて読む。",
+          "ending_and_links": "本人の考えを示しながら別の道も残す。本文に参考になる選び方がある。",
+          "application": "会社員を否定しない土台に使える。独立前の本人の試行錯誤は、実際の回答を得てから入れる。",
+          "classification": "完成記事からの分析・応用案"
+        },
+        {
+          "source_id": "I04",
+          "focus": "小さな不便から働き方の方針へ",
+          "opening": "仕事で使う道具の具体的な不便を示す。",
+          "progression": [
+            "好きな仕事にも嫌な部分はある",
+            "自分が行った対処の例",
+            "仕事の受け方や運営方針へ広げる"
+          ],
+          "why_it_works": "抽象論を小さな事例で理解させてから、別の場面にも通じる考えへ進める。",
+          "ending_and_links": "本文中と末尾に、相談や教材などの案内がある。読了・クリックの実測は不明。",
+          "application": "本人に聞いた小さな変化がある場合に使う。説明の途中へ多数の広告を入れる配置はそのまま採用しない。",
+          "classification": "完成記事からの分析・応用案"
+        },
+        {
+          "source_id": "I05",
+          "focus": "自由の利点と負担を一つの話で見せる",
+          "opening": "予約変更のしやすさという日常の具体例から始める。",
+          "progression": [
+            "変更できる便利さ",
+            "変更できないことの楽さ",
+            "独立後に自分で区切りを作る話"
+          ],
+          "why_it_works": "同じ自由が、助けにも負担にもなると分かる。一つの比較軸に両面があるため、表の賛否だけより掘り下がる。",
+          "ending_and_links": "本文の後に関連サービス案内と日常の短い記録がある。",
+          "application": "自由度の点数を勝手に付けるより、何を自分で決めるのかを書く。本人の勤務条件を確認してから体験へつなぐ。",
+          "classification": "完成記事からの分析・応用案"
+        },
+        {
+          "source_id": "I06",
+          "focus": "運営そのものを振り返る記事",
+          "opening": "この1年の営業を考える問いから入る。",
+          "progression": [
+            "実際に続けた活動を示す",
+            "仕事自体も次の機会になると考える",
+            "営業だけの成果ではない価値へ戻す"
+          ],
+          "why_it_works": "うまくいった結果だけでなく、空振りを含む活動を述べる。全ての発信が受注したとは書いていない。",
+          "ending_and_links": "教材や相談の案内がある。ブログが依頼先を知る窓口としても機能する構成。",
+          "application": "ブログ運営の振り返りには使えるが、本人に同じ発信量や新しい受託仕事を求める型にはしない。",
+          "classification": "完成記事からの分析・応用案"
+        }
+      ]
+    },
+    {
+      "id": "hase",
+      "name": "はせおやさい",
+      "site": "インターネットの備忘録",
+      "url": "https://hase0831.hatenablog.jp/",
+      "reference_role": "気持ちの変化と、どちらの働き方も尊重する文章",
+      "activity_status": "ブログ先頭は2026年4月。更新間隔は長いが、noteなど別の発信窓口も存在。活動終了と断定しない。",
+      "latest_observed": {
+        "publication": "2026-04-02",
+        "modification": null,
+        "basis": [
+          "H01",
+          "H02"
+        ],
+        "note": "ブログの先頭で確認。noteは相対日付が混じり、全媒体の最新日は確定しない。"
+      },
+      "sections": [
+        {
+          "title": "人物とブログの役割",
+          "text": "会社員として暮らしながら書く人の個人ブログ。仕事だけに閉じず、家庭・読書・日常の変化が文章の背景にある。前に紹介した独立から会社員へ戻る文章は、本人ブログの記事ではなくマイナビ媒体への寄稿。媒体の所属を混ぜない。",
+          "source_ids": [
+            "H01",
+            "H06",
+            "H10"
+          ],
+          "kind": "analysis"
+        },
+        {
+          "title": "読者との距離",
+          "text": "完成した成功法則より、経験して迷い、考え直す人の文章として読める。読者に同じ人生を選ばせるより、自分の選び方を考える余地がある。想定読者の分析であり、実際の読者の年齢・職業を調査したわけではない。",
+          "source_ids": [
+            "H02",
+            "H04",
+            "H06"
+          ],
+          "kind": "analysis"
+        },
+        {
+          "title": "テーマの見つけ方",
+          "text": "読んだ文章への引っかかり、過去の自分、暮らしの変化が入口になる。技術や仕事内容を細かく明かさなくても、一つの見方が変わった理由を掘れば記事になる。本人の業務内容を伏せたい今回の希望に合う。",
+          "source_ids": [
+            "H03",
+            "H04"
+          ],
+          "kind": "analysis"
+        },
+        {
+          "title": "導入から結びまで",
+          "text": "きっかけ→過去の考え→今の違和感→気づいたこと、という流れが見える。すぐに万能な結論を作らず、途中の考えも説明する。一方、手順記事や広告比較で同じ長い内省を続けると目的が見えなくなるので、ジャンルに応じて使う。",
+          "source_ids": [
+            "H03",
+            "H04"
+          ],
+          "kind": "analysis"
+        },
+        {
+          "title": "経歴を小出しにする方法",
+          "text": "過去記事へのリンクが、そのときの自分と現在を結ぶ。昔の出来事を毎回全部書き直さず、その記事で必要な意味を加えられる。あなたの場合も、安定を重視していた頃の一場面と、今の一つの変化から始めるのがよい。",
+          "source_ids": [
+            "H03",
+            "H05"
+          ],
+          "kind": "analysis"
+        },
+        {
+          "title": "文章と感情の扱い",
+          "text": "仕事で得たものと失ったもの、以前の方法と今の限界を併記する。共感を得るために、相手や昔の自分を単純に悪者にしない書き方が学べる。強い体験の文章は、本人が経験したことが前提。あなたの退職理由や心身の不調に置き換えない。",
+          "source_ids": [
+            "H04",
+            "H05"
+          ],
+          "kind": "analysis"
+        },
+        {
+          "title": "働き方を比較する姿勢",
+          "text": "寄稿では、独立してから気づいた組織の助けと、自分に合う環境を述べる。結論はあなたと逆でも、判断の過程は参考になる。本人の結論を逆向きに書き換えて自分の話にするのではなく、比べる観点を得る。",
+          "source_ids": [
+            "H06"
+          ],
+          "kind": "analysis"
+        },
+        {
+          "title": "記事の見せ方と回遊",
+          "text": "公開抽出では、本文、プロフィール、過去記事、カテゴリ、読者登録、外部活動への案内がある。大量の比較表やランキングが中心ではない。ただし現行の列構成・フォント・色は画面未取得で不明。はてなが表示する更新なし広告を、本人の広告収入と扱わない。",
+          "source_ids": [
+            "H01",
+            "H02",
+            "H08"
+          ],
+          "kind": "analysis"
+        },
+        {
+          "title": "直接の収益化と外部への広がり",
+          "text": "本人が書く仕事を得た経緯を公表しており、ブログが執筆の実績にもなる。電子書籍や外部への寄稿に加え、codocの有料記事への入口も確認。全てをアフィリエイトで稼ぐモデルとまとめるのは不正確。",
+          "source_ids": [
+            "H07",
+            "H08",
+            "H09"
+          ],
+          "kind": "analysis"
+        },
+        {
+          "title": "有料部分へのつなぎ方",
+          "text": "codocの記事は、誰のどんな日常を読むか、なぜ公開するかを説明し、無料部分から続きへ進む。無料の導入は内容を予告する役割を持つ。ただし依頼記事でもあり、購入者数・売上・報酬の有無と額は確認できない。",
+          "source_ids": [
+            "H08"
+          ],
+          "kind": "analysis"
+        },
+        {
+          "title": "古さや未解決の話との付き合い",
+          "text": "過去の文章を後から参照できる強さがある反面、十年以上前の体験を今の一般的な労働環境と混同しない。書き手の立場も時間とともに変わる。記事単位でいつ、どの立場の話かを内側で管理する必要がある。",
+          "source_ids": [
+            "H03",
+            "H05",
+            "H07"
+          ],
+          "kind": "analysis"
+        },
+        {
+          "title": "こちらのブログに移す方法",
+          "text": "最も役立つのは「昔はこう思った、経験してここが変わった」を読ませる部分。仕事内容の開示を増やす必要はない。読者の不安に寄り添う文章と、制度やサービスの事実を伝える説明をつなぎ、全記事を重い告白や有料日記に寄せない。",
+          "source_ids": [
+            "H02",
+            "H04",
+            "H06"
+          ],
+          "kind": "application"
+        }
+      ],
+      "adopt": [
+        "過去と現在の考えの違いを理由とともに書く",
+        "仕事のよさと難しさを同じ人物の視点で残す",
+        "経歴は過去記事へつなぎ、必要な場面を少しずつ出す"
+      ],
+      "avoid": [
+        "本人の病歴・家庭・葛藤の流用",
+        "はてなの広告を運営者の収益と即断する",
+        "寄稿先の記事を本人のブログ広告記事と混ぜる",
+        "今回の読者の目的と違う長い内省や有料日記の一律導入"
+      ],
+      "revenue": [
+        {
+          "type": "外部媒体への寄稿・執筆",
+          "evidence": "本人がブログ経由で書く仕事を得たと説明。現在の報酬・受注は不明。",
+          "source_ids": [
+            "H07"
+          ],
+          "evidence_level": "本人申告",
+          "owner_workload": "執筆の実作業が増える",
+          "actual_revenue_amount": null
+        },
+        {
+          "type": "書籍・電子書籍",
+          "evidence": "本人の著書案内と執筆歴を確認。印税契約・現在の売上は不明。",
+          "source_ids": [
+            "H07"
+          ],
+          "evidence_level": "著書・販売への案内",
+          "owner_workload": "制作が必要。読者購入と本人の受取額は別",
+          "actual_revenue_amount": null
+        },
+        {
+          "type": "codocによる有料記事",
+          "evidence": "無料公開部の末尾に購入の境界を確認。有料内容は未読。",
+          "source_ids": [
+            "H08"
+          ],
+          "evidence_level": "観察",
+          "owner_workload": "継続的な体験記録・執筆が必要",
+          "actual_revenue_amount": null
+        },
+        {
+          "type": "依頼を受けたプロモーション記事",
+          "evidence": "依頼元と企画の広告表示を確認。報酬や金銭授受は非公開。",
+          "source_ids": [
+            "H08"
+          ],
+          "evidence_level": "観察",
+          "owner_workload": "依頼ごとの制作が必要",
+          "actual_revenue_amount": null
+        }
+      ],
+      "unknown": [
+        "広告・有料記事・印税・寄稿それぞれの実収入",
+        "codocの購入者数・現在の価格と購読条件",
+        "本人が受け取る広告分配の有無",
+        "他媒体を含めた最新の活動日",
+        "PC・スマホの実画面・色・寸法"
+      ],
+      "article_cases": [
+        {
+          "source_id": "H02",
+          "focus": "短い助言にも、時間の積み重ねを持たせる",
+          "opening": "過去の記事を参照して、環境の変化に触れる。",
+          "progression": [
+            "昔と違う働く環境",
+            "自分のペースを知る話",
+            "長く働く読者への短い言葉"
+          ],
+          "why_it_works": "新しい読者にも分かる内容の中で、長く考えてきた人だと伝わる。過去の経験を丸ごと再掲しない。",
+          "ending_and_links": "特定サービスへ登録させる結びではない。読者登録などのブログ標準の案内がある。",
+          "application": "本人の固定軸を毎回長く説明しなくても、過去記事へのつながりで人物像を育てられる。",
+          "classification": "完成記事からの分析・応用案"
+        },
+        {
+          "source_id": "H04",
+          "focus": "成功法則が変わる過程を読む記事",
+          "opening": "別の記事を読んだことから、最近の自分の悩みに進む。",
+          "progression": [
+            "以前に力を入れたこと",
+            "暮らしが変わり同じ方法が使えないこと",
+            "今の自分が試そうとしている考え"
+          ],
+          "why_it_works": "きれいに解決した話でなくても、理由と変化があれば読める。仕事内容の詳細より選び方と気持ちに焦点がある。",
+          "ending_and_links": "万能な成功法則を売る結びではなく、考えている現在の状態を残す。",
+          "application": "安定に対する考えの変化にも応用できる。まだ本人が語っていない悩みを、読者受けのために増やさない。",
+          "classification": "完成記事からの分析・応用案"
+        },
+        {
+          "source_id": "H06",
+          "focus": "自分と逆の選択にも理由を残す",
+          "opening": "複数の働き方を経験した立場から、組織で働く魅力を話す。",
+          "progression": [
+            "独立した理由",
+            "経験して気づいた自分の特性",
+            "読者が自分の望みを考える方法"
+          ],
+          "why_it_works": "結論は会社員への復帰だが、独立も否定しない。判断の過程を読む価値がある。",
+          "ending_and_links": "マイナビ媒体の寄稿で、末尾に関連解説へ進むリンク。本人ブログの広告収益とは別。",
+          "application": "あなたの結論を逆にする必要はない。同じように自分の条件を説明し、読者の結論は読者へ残す。",
+          "classification": "完成記事からの分析・応用案"
+        },
+        {
+          "source_id": "H08",
+          "focus": "誰の日常を読むのかを伝える有料記事",
+          "opening": "依頼記事であることと、日記を始める理由を示す。",
+          "progression": [
+            "自分の年代や立場",
+            "どんなことを記録したいか",
+            "無料の一部を示し購入の境界へ"
+          ],
+          "why_it_works": "有料だから有益なノウハウだけにするのではなく、人物への関心で読まれる内容を説明している。",
+          "ending_and_links": "codocの購入境界を確認。有料本文、価格の現行条件、売上は未確認。",
+          "application": "無料部分で内容が分かる設計は学べる。ただし今のブログを有料日記へ変える方針ではない。",
+          "classification": "完成記事からの分析・応用案"
+        }
+      ]
+    },
+    {
+      "id": "hitode",
+      "name": "ヒトデ",
+      "site": "今日はヒトデ祭りだぞ！／hitodeblog",
+      "url": "https://www.hitode-festival.com/",
+      "reference_role": "親しみのある体験談と、解説・申込みページの役割分担",
+      "activity_status": "雑記ブログには2026年の記事がある。解説サイトには11月13日の更新表示もあり、活動停止ではない。",
+      "latest_observed": {
+        "publication": "2026-05-29",
+        "modification": "2026-11-13",
+        "basis": [
+          "D01",
+          "D07",
+          "D11"
+        ],
+        "note": "新規記事は雑記側、更新表示は別の解説サイト側。混ぜてブログ全体の新着日としない。"
+      },
+      "sections": [
+        {
+          "title": "一人で複数の場所を運営",
+          "text": "雑記ブログは本人を知る場所、hitodeblogは初心者が具体的に学ぶ場所、ABCは継続的な支援の場所として読める。四人のうち一人だが、分析する媒体は一つではない。全部を雑記ブログ単体の売上として捉えると誤る。",
+          "source_ids": [
+            "D01",
+            "D08",
+            "D09",
+            "D10"
+          ],
+          "kind": "analysis"
+        },
+        {
+          "title": "読者ごとの入口",
+          "text": "雑記には仕事・趣味・暮らしなどの入口がある。解説サイトには知りたいことや段階ごとの案内がある。人物への関心と、今すぐ方法を知りたい目的を、同じ導入だけで満たそうとしていない点が参考になる。",
+          "source_ids": [
+            "D01",
+            "D08"
+          ],
+          "kind": "analysis"
+        },
+        {
+          "title": "体験記事の導入",
+          "text": "感情や率直な本音で入り、読者が聞きたいことへ進む。退職後の年数を区切った記事は、一度の出来事を後から違う問いで振り返っている。毎回同じ退職話を再掲することとは違う。",
+          "source_ids": [
+            "D03",
+            "D04"
+          ],
+          "kind": "analysis"
+        },
+        {
+          "title": "笑いの作り方",
+          "text": "自分の行動や大げさな自己評価にツッコミを入れて、説明の緊張を緩める。強い言葉や叫びの量だけを真似ると、あなたの話より演出が先に立つ。実際に語った気持ちや少し抜けた行動があるところだけ軽く崩す。",
+          "source_ids": [
+            "D03",
+            "D06"
+          ],
+          "kind": "analysis"
+        },
+        {
+          "title": "本音と一般化の境目",
+          "text": "本人は会社との相性を強く語るが、会社員にも向き不向きがあると書く。あなたの方針では会社批判を弱め、安定を重視した過去を残す。自由な勤務時間や収入が全員に実現するかのような説明も持ち込まない。",
+          "source_ids": [
+            "D03",
+            "D04"
+          ],
+          "kind": "analysis"
+        },
+        {
+          "title": "厚い実用記事の作り方",
+          "text": "解説サイトは、全体の流れ、具体的な手順、画像、動画、関連記事を組み合わせる。長さだけでなく、読み手が止まるところに別の説明がある点が参考になる。ただし調査した長大な開設記事は導入・手順の入口までで、全編の正確性を検証したわけではない。",
+          "source_ids": [
+            "D08",
+            "D11"
+          ],
+          "kind": "analysis"
+        },
+        {
+          "title": "実画面で確認できたデザイン",
+          "text": "hitodeblogのトップは生成り色の背景と暖色のカード、同じキャラクターでまとまる。PCは本文とプロフィールの2列、スマホは入口カードが2列で本文は1列。画面幅1440pxと390pxで横はみ出しはなかった。これは解説サイトの観察で、雑記側のデザインとは分ける。",
+          "source_ids": [
+            "D08"
+          ],
+          "kind": "observation"
+        },
+        {
+          "title": "実測できた文字と技術",
+          "text": "取得した解説トップの段落はPC17px・行高33.15px、スマホ15.5px・行高27.125px。背景はrgb(247,242,232)。CSSパスにはWordPressテーマjinrがある。これは観測したページ・幅での値で、全記事の統一仕様や最適値ではない。",
+          "source_ids": [
+            "D08"
+          ],
+          "kind": "observation"
+        },
+        {
+          "title": "広告につなぐ方法",
+          "text": "サーバー開設の解説記事にPR表示、料金・クーポン、手順への入口がある。方法を説明するページの中で、その実行に必要なサービスへ進む設計。実際に購入・登録があったか、クリック率がどの程度かは外部から分からない。",
+          "source_ids": [
+            "D11"
+          ],
+          "kind": "analysis"
+        },
+        {
+          "title": "複数の収益源",
+          "text": "本人の年次振り返りでは、アフィリエイト、コーチング、創作・出版、ABC等を扱う。ABCの販売ページには料金と募集停止の案内がある。過去の最大月収・累計収益を、今の特定ブログの毎月の利益に読み替えない。支援金も利益とは別。",
+          "source_ids": [
+            "D06",
+            "D07",
+            "D09",
+            "D10"
+          ],
+          "kind": "analysis"
+        },
+        {
+          "title": "更新頻度と事業の変化",
+          "text": "本人は2025年の振り返りで、発信事業の維持と別の活動について語っている。新規記事の頻度が低くても、既存の解説を更新する運営がある。量を増やすだけでなく、読者が使う手順を現状に合わせることが学べる。",
+          "source_ids": [
+            "D06",
+            "D11"
+          ],
+          "kind": "analysis"
+        },
+        {
+          "title": "こちらのブログに移す方法",
+          "text": "同じWordPressサイトの中でも、体験、比較、サービス案内の役割を分ければよい。新しいサイトやLINE運営をすぐ増やす必要はない。現行デザインを保ちつつ、読者が次に知りたい記事へ進めるカードと、実体験に基づく軽い笑いを取り入れる。",
+          "source_ids": [
+            "D01",
+            "D08",
+            "D11"
+          ],
+          "kind": "application"
+        }
+      ],
+      "adopt": [
+        "体験談と比較・手順記事の入口を分ける",
+        "自分への軽いツッコミで読みやすくする",
+        "読者が今いる段階に応じて次の記事を示す",
+        "サービスを使う場面を説明してから紹介する"
+      ],
+      "avoid": [
+        "強い会社批判や叫びの大量再現",
+        "複数事業の収入を一つのブログの利益と扱う",
+        "クラファン支援金を通常の利益と扱う",
+        "すぐに別サイト・LINE・有料コミュニティを増やす"
+      ],
+      "revenue": [
+        {
+          "type": "ブログのアフィリエイト",
+          "evidence": "広告を含む解説記事と、本人の年次振り返りに収益源としての説明。今のサイト別金額は不明。",
+          "source_ids": [
+            "D06",
+            "D11"
+          ],
+          "evidence_level": "本人申告・観察",
+          "owner_workload": "記事の維持と条件更新が必要",
+          "actual_revenue_amount": null
+        },
+        {
+          "type": "ABCオンライン",
+          "evidence": "月額2,480円の表示と待機登録を確認。取得時は募集停止。会費総額や本人配分は不明。",
+          "source_ids": [
+            "D10"
+          ],
+          "evidence_level": "観察",
+          "owner_workload": "講座・対応・コミュニティ運営が必要",
+          "actual_revenue_amount": null
+        },
+        {
+          "type": "コーチング",
+          "evidence": "2025年の本人による有料提供と活動の振り返り。現行の受注・料金は未確認。",
+          "source_ids": [
+            "D06"
+          ],
+          "evidence_level": "本人申告",
+          "owner_workload": "本人の面談が必要",
+          "actual_revenue_amount": null
+        },
+        {
+          "type": "出版・創作",
+          "evidence": "著書、購入先、制作活動を公開。印税・契約・現在の利益は不明。",
+          "source_ids": [
+            "D06",
+            "D07",
+            "D09"
+          ],
+          "evidence_level": "本人申告・案内",
+          "owner_workload": "企画と制作が必要",
+          "actual_revenue_amount": null
+        },
+        {
+          "type": "書籍などの商品紹介リンク",
+          "evidence": "プロフィール等にAmazon・楽天・もしも系の購入リンクがある。成約・入金は不明。",
+          "source_ids": [
+            "D09"
+          ],
+          "evidence_level": "観察",
+          "owner_workload": "関連記事を維持する作業が必要",
+          "actual_revenue_amount": null
+        }
+      ],
+      "unknown": [
+        "現在のサイト別売上・経費・利益",
+        "広告ごとの成約率・流入元",
+        "有料コミュニティの現役会員数・利益配分",
+        "コーチングや創作の現在額",
+        "雑記ブログ側のPC・スマホ実画面"
+      ],
+      "article_cases": [
+        {
+          "source_id": "D03",
+          "focus": "本音と相性で読ませる振り返り",
+          "opening": "退職して一定の時間が経ったことから、率直な感情を出す。",
+          "progression": [
+            "会社と自分の相性",
+            "独立後の暮らしと収入",
+            "今の働き方が合う理由とこれから"
+          ],
+          "why_it_works": "強い感情を読ませる一方、すべての人が同じではないと述べる。具体的な生活の話が結論を支える。",
+          "ending_and_links": "関連する過去記事・他の活動へのリンクがある。体験談全体を一つの登録ボタンに置き換えていない。",
+          "application": "読みやすい本音を使う。会社が嫌いという著者の感情を、安定を重視していた本人に移さない。",
+          "classification": "完成記事からの分析・応用案"
+        },
+        {
+          "source_id": "D04",
+          "focus": "同じ転機を違う時点で捉え直す",
+          "opening": "当時の決断を思い返し、その後どうかという読者の疑問へ進む。",
+          "progression": [
+            "辞めてよかったか",
+            "準備や試したこと",
+            "今後何を大切にするか"
+          ],
+          "why_it_works": "前の記事に続く時間の変化が新しい内容になる。経歴が同じでも、問いと答えが更新される。",
+          "ending_and_links": "過去記事へのカードと、本人が今後どうするかという結び。実際の回遊率は不明。",
+          "application": "小出しの経歴は前回のあらすじで水増しせず、今はどう考えるかを追加する。",
+          "classification": "完成記事からの分析・応用案"
+        },
+        {
+          "source_id": "D06",
+          "focus": "活動の全体像から収益の窓口を知る",
+          "opening": "年末の振り返りを、軽い自分へのツッコミを交えて始める。",
+          "progression": [
+            "コーチングの活動",
+            "創作・出版の活動",
+            "ブログや他の事業の振り返り"
+          ],
+          "why_it_works": "人物への関心がある読者に、複数の活動をまとめて見せる。直接サービスへの関心を持つ入口にもなる。",
+          "ending_and_links": "書籍の購入先や活動への案内がある。本人の2025年の説明から現在の収入内訳は確定しない。",
+          "application": "ある程度の記事と経験がたまったときに、働き方の振り返りを作る参考。事業や実績を無理に増やさない。",
+          "classification": "完成記事からの分析・応用案"
+        },
+        {
+          "source_id": "D11",
+          "focus": "読者の行動を支える実用記事",
+          "opening": "読者ができることと、全体の手順を早めに示す。",
+          "progression": [
+            "必要な作業の全体像",
+            "画像・動画による補助",
+            "必要なサービスと手順への案内"
+          ],
+          "why_it_works": "読者が次に何をするか分かるよう、説明方法を複数用意する。調査範囲は長大な本文の入口まで。",
+          "ending_and_links": "PR表示・サーバーの料金案内・クーポンを確認。本文末尾全体と申込み完了は未検証。",
+          "application": "転職サービスでも、登録後に何が起きるかを具体化する発想を使う。ただし公式の現行情報を別途確認する。",
+          "classification": "完成記事からの分析・応用案"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "検索・読み取りツールによる公開本文の確認。外部アクセスのクロール時点に差があり、最新日を全媒体で保証しない。",
+    "とっとこ、井ノ上、はせ、ヒトデ雑記のブラウザー接続は環境側のトンネル制限で失敗。配色・寸法・スマホ動作は未検証。",
+    "hitodeblogのみPC1440px・スマホ390pxのブラウザー画面・CSSを確認。証明書検証を除外した公開読み取りで、独立した証明書監査ではない。",
+    "会員限定本文、課金・購入・申込、広告リンク先への追跡アクセスは行っていない。",
+    "収益の現行内訳、成約率、読者属性、実際の制作工程、著者の活動終了は確定できない。",
+    "外部記事本文・写真は公開資料に転載しない。短いタイトル、URL、自分の観察・分析を保存する。"
+  ],
+  "public_site_changed": false
+}

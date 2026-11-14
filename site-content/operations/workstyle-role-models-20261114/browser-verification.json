@@ -1,0 +1,108 @@
+{
+  "checked_on": "2026-11-14",
+  "competitor_browser_attempts": [
+    {
+      "site": "tottoko",
+      "requested_url": "https://tottokolancer.jp/",
+      "viewport_width": 1440,
+      "error": "Page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://tottokolancer.jp/"
+    },
+    {
+      "site": "tottoko",
+      "requested_url": "https://tottokolancer.jp/",
+      "viewport_width": 390,
+      "error": "Page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://tottokolancer.jp/"
+    },
+    {
+      "site": "inoue",
+      "requested_url": "https://yoichi-inoue.com/",
+      "viewport_width": 1440,
+      "error": "Page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://yoichi-inoue.com/"
+    },
+    {
+      "site": "inoue",
+      "requested_url": "https://yoichi-inoue.com/",
+      "viewport_width": 390,
+      "error": "Page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://yoichi-inoue.com/"
+    },
+    {
+      "site": "hase",
+      "requested_url": "https://hase0831.hatenablog.jp/",
+      "viewport_width": 1440,
+      "error": "Page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://hase0831.hatenablog.jp/"
+    },
+    {
+      "site": "hase",
+      "requested_url": "https://hase0831.hatenablog.jp/",
+      "viewport_width": 390,
+      "error": "Page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://hase0831.hatenablog.jp/"
+    },
+    {
+      "site": "hitode",
+      "requested_url": "https://www.hitode-festival.com/",
+      "viewport_width": 1440,
+      "error": "Page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://www.hitode-festival.com/"
+    },
+    {
+      "site": "hitode",
+      "requested_url": "https://www.hitode-festival.com/",
+      "viewport_width": 390,
+      "error": "Page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://www.hitode-festival.com/"
+    }
+  ],
+  "hitodeblog_verified": [
+    {
+      "site": "hitodeblog",
+      "requested_url": "https://hitodeblog.com/",
+      "viewport_width": 1440,
+      "http_status": 200,
+      "final_url": "https://hitodeblog.com/",
+      "title": "【ブログの始め方】初心者でも出来る方法をプロが丁寧に徹底解説！｜hitodeblog（ヒトデブログ）",
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440,
+        "bodyBackground": "rgb(247, 242, 232)",
+        "fontFamily": "\"Hiragino Sans\", \"Hiragino Kaku Gothic ProN\", メイリオ, Meiryo, sans-serif, \"Noto Sans Emoji\", \"Noto Sans\", \"Noto Sans CJK JP\"",
+        "paragraph": {
+          "fontSize": "17px",
+          "lineHeight": "33.15px"
+        },
+        "styles": [
+          "https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.css?ver=1.29.0",
+          "https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css?ver=1.29.0",
+          "https://hitodeblog.com/wp-content/themes/jinr/style.css?ver=7.1.4",
+          "https://hitodeblog.com/wp-content/themes/jinr/style-footer.css?ver=7.1.4"
+        ]
+      }
+    },
+    {
+      "site": "hitodeblog",
+      "requested_url": "https://hitodeblog.com/",
+      "viewport_width": 390,
+      "http_status": 200,
+      "final_url": "https://hitodeblog.com/",
+      "title": "【ブログの始め方】初心者でも出来る方法をプロが丁寧に徹底解説！｜hitodeblog（ヒトデブログ）",
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390,
+        "bodyBackground": "rgb(247, 242, 232)",
+        "fontFamily": "\"Hiragino Sans\", \"Hiragino Kaku Gothic ProN\", メイリオ, Meiryo, sans-serif, \"Noto Sans Emoji\", \"Noto Sans\", \"Noto Sans CJK JP\"",
+        "paragraph": {
+          "fontSize": "15.5px",
+          "lineHeight": "27.125px"
+        },
+        "styles": [
+          "https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.css?ver=1.29.0",
+          "https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css?ver=1.29.0",
+          "https://hitodeblog.com/wp-content/themes/jinr/style.css?ver=7.1.4",
+          "https://hitodeblog.com/wp-content/themes/jinr/style-footer.css?ver=7.1.4"
+        ]
+      }
+    }
+  ],
+  "limitations": [
+    "4ブログの接続エラーは環境側のトンネル制限。閉鎖やサイト自身のHTTP403とは扱わない。",
+    "hitodeblogは公開ページで証明書エラーを除外して観察。証明書の安全性を検証したという意味ではない。",
+    "撮影した外部画面は私有領域だけに保持。実測は調査したトップと2幅のみ。"
+  ]
+}

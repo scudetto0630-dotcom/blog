@@ -1,5 +1,7 @@
 # Articles and Japanese copy
 
+For work-style, career and IT articles, first read `site-content/WORKSTYLE-EDITORIAL.md`. Preserve the owner's explicit axis: 「正社員が一番だと思っていた自分が、今は個人事業主を選んでいる」. Respect both employment and self-employment; disclose the owner's history gradually, prioritize working styles over private job details, and never invent reasons, finances or service-use experience. Refer to the four saved role models through the linked research dossier, not by copying their distinctive voices.
+
 Also read `site-content/operations/ahiruneko-review-20261107/校正基準.md`, based on ten separately author-verified Ahiruneko articles. Use general writing techniques, not a reproduction of an individual voice.
 
 When writing or proofreading this blog, read `site-content/operations/quality-100-20261107/編集基準.md` and `site-content/operations/writing-reference-20261107/文章の基準.md`.

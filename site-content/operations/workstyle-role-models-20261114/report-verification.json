@@ -1,0 +1,35 @@
+{
+  "checked_on": "2026-11-14",
+  "artifact": "report.html",
+  "local_links_missing": [],
+  "browser_checks": [
+    {
+      "width": 320,
+      "profiles": 4,
+      "sources": 40,
+      "filter_checks": "pass",
+      "horizontal_overflow": false,
+      "javascript_errors": []
+    },
+    {
+      "width": 390,
+      "profiles": 4,
+      "sources": 40,
+      "filter_checks": "pass",
+      "horizontal_overflow": false,
+      "javascript_errors": []
+    },
+    {
+      "width": 1440,
+      "profiles": 4,
+      "sources": 40,
+      "filter_checks": "pass",
+      "horizontal_overflow": false,
+      "javascript_errors": []
+    },
+    {
+      "javascript_disabled": "all profiles and 40 sources readable"
+    }
+  ],
+  "public_site_changed": false
+}
