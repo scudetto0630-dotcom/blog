@@ -209,3 +209,22 @@ add_filter('the_content',function($content){
     if(!is_singular('post')||!in_the_loop()||!is_main_query())return $content;
     $p=get_post();return $p&&hsh_owned_blog_post($p)&&hsh_whisky_profile($p->post_name)?hsh_whisky_product_terms($content):$content;
 },31);
+
+/** A verified content revision affects crawlers, not the saved publication date. */
+function hsh_studio_revision_date($source,$native,$now=null){
+    $now=$now??time();
+    if(!is_string($source)||!preg_match('/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:Z|[+-]\d{2}:\d{2})$/D',$source))return '';
+    $date=strtotime($source);if($date===false||$date>$now)return '';
+    $stored=is_string($native)&&$native!==''?strtotime($native.' UTC'):false;
+    if($stored!==false&&$stored<=$now)$date=max($date,$stored);
+    return gmdate('c',$date);
+}
+function hsh_studio_article_modified($post){
+    if(!$post)return '';$d=hsh_whisky_profile($post->post_name??'');if(!$d)return '';
+    return hsh_studio_revision_date($d['content_updated_at']??'', $post->post_modified_gmt??($post->post_date_gmt??''));
+}
+add_filter('wp_sitemaps_posts_entry',function($entry,$post,$type){
+    if($type!=='post'||!hsh_owned_blog_post($post))return $entry;
+    $date=hsh_studio_article_modified($post);if($date!=='')$entry['lastmod']=$date;
+    return $entry;
+},20,3);

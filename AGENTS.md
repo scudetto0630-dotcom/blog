@@ -15,3 +15,5 @@ For managed starter posts, apply paragraph corrections to the current published 
 Readability is not a quota of short sentences. Connect reasons, actions and results naturally, and group paragraphs by topic. Do not insert summary boxes or unrelated article cards between an introduction and its continuation. Avoid both sentence-by-sentence fragmentation and indiscriminate merging across headings, photos or safety notices.
 
 Also apply the general techniques documented in `site-content/operations/ahiruneko-additional-20-20261107/REPORT.md`: one concrete article question, evidence before judgment, and an ending that answers the opening. Match the progression to the genre; do not manufacture a product trial or personal reaction. Preserve photo context when reordering sections.
+
+For render-time article profiles, record the actual content revision in `content_updated_at` and verify sitemap `lastmod`, Article `dateModified`, and `article:modified_time`. Use the real content revision time, not a deployment or visit time. Preserve the stored post and original publication date; do not freshen dates on unchanged articles.

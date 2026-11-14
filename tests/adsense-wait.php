@@ -30,4 +30,11 @@ $read=hsh_gsc_private_report(new Request());check($read->headers['Cache-Control'
 check(hsh_edit_permission(new Request())->code==='hsh_auth','report GET uses the same editor authentication gate');
 check(hsh_gsc_ingest_permission(new GscRequest(array(),''))->code==='hsh_gsc_authorization','anonymous ingestion is rejected before fetching certificates');
 $connection=hsh_gsc_connection_status();check($connection['connected']===true&&strpos(json_encode($connection),'private search')===false,'connection status is current and never includes private queries');
+$clock=strtotime('2026-11-14T00:00:00Z');
+check(hsh_studio_revision_date('2026-11-13T08:04:21Z','2026-11-10 14:56:41',$clock)==='2026-11-13T08:04:21+00:00','actual source revision supersedes an older stored modification date');
+check(hsh_studio_revision_date('2026-11-13T08:04:21Z','2026-11-13 10:00:00',$clock)==='2026-11-13T10:00:00+00:00','newer native modification date is preserved');
+check(hsh_studio_revision_date('tomorrow','',$clock)===''&&hsh_studio_revision_date('2026-11-15T00:00:00Z','',$clock)==='','missing and future revisions cannot fabricate a fresh date');
+$schema='<head><script type="application/ld+json">{"@type":"Article","datePublished":"2026-11-03","dateModified":"2026-11-10"}</script></head><body>same</body>';
+$fixed=hsh_growth_metadata($schema,array('og:image'=>'https://example.test/a.webp','og:image:width'=>'800','og:image:height'=>'600','description'=>'same'),'2026-11-13T08:04:21+00:00');
+check(strpos($fixed,'"datePublished":"2026-11-03"')!==false&&strpos($fixed,'"dateModified":"2026-11-13T08:04:21+00:00"')!==false,'schema has the actual revision and original publication date');
 echo "All AdSense-wait checks passed. Total: $tests\n";
