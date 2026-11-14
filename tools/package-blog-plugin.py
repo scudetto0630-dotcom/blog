@@ -19,7 +19,7 @@ for asset in manifest['assets'].values():
  for image in [asset]+variants:
   name='hirogaru-home/assets/photos/'+image['file']
   if name not in names:names.append(name)
-if len(names)>400:raise SystemExit('Too many files for scoped updater')
+if len(names)>500:raise SystemExit('Too many files for scoped updater')
 for name in names:
  if not name.startswith('hirogaru-home/') or '..' in Path(name).parts:raise SystemExit('Invalid member')
  if not (ROOT/name).is_file():raise SystemExit('Missing member: '+name)

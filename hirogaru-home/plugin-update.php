@@ -9,7 +9,7 @@ function hsh_update_spec($data) {
 }
 function hsh_update_download_limit(){return 20 * 1024 * 1024;}
 function hsh_update_archive($zip) {
-    if ($zip->numFiles < 1 || $zip->numFiles > 400) { return false; }
+    if ($zip->numFiles < 1 || $zip->numFiles > 500) { return false; }
     $total = 0; $main = false; $seen = array();
     for ($i = 0; $i < $zip->numFiles; $i++) {
         $stat = $zip->statIndex($i);
