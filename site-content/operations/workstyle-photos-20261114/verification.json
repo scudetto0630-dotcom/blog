@@ -1,0 +1,55 @@
+{
+  "checked_at_utc": "2026-11-14T15:07:13.022579+00:00",
+  "urls": [
+    "https://hirogarushumi.com/employee-vs-self-employed/",
+    "https://hirogarushumi.com/freelance-and-sole-proprietor/",
+    "https://hirogarushumi.com/freelance-sales-and-take-home/",
+    "https://hirogarushumi.com/changing-job-or-working-style/",
+    "https://hirogarushumi.com/freelance-contract-before-start/"
+  ],
+  "plugin": {
+    "version": "1.48.0",
+    "source_commit": "ca7ad693d990bfb220bc442fa5ff2793e8ec0125",
+    "package_commit": "49a1d23cea52728cf4fe50dd0eb80ebdedc19c91",
+    "sha256": "b788f30344279c0f8d1bfa9a536fb293500ee86b461a4d0cdc3de3657ec82d6b",
+    "archive_members": 430,
+    "bootstrap_commit": "4d93f74c8037c3c54459b23f2206dc97a3240f9b"
+  },
+  "changes": {
+    "articles": 5,
+    "new_photographs": 15,
+    "covers": 5,
+    "body_photographs": 10,
+    "mobile_variants": 15,
+    "prose_replacements": 87
+  },
+  "checks": {
+    "python_tests": 91,
+    "php_checks": 1560,
+    "browser_combinations": 24,
+    "viewport_widths": [
+      320,
+      390,
+      1440
+    ],
+    "javascript_disabled_article": true,
+    "all_three_photographs_loaded_per_article": true,
+    "mobile_600px_variants_loaded": true,
+    "horizontal_overflow": false,
+    "page_errors": 0,
+    "existing_post_ids_dates_thumbnail_ids_preserved": 53,
+    "other_posts_unchanged": 48,
+    "pages_unchanged": 9,
+    "previous_photo_assets_preserved": 154,
+    "raw_body_fingerprints_match_after_wp_sanitization": true
+  },
+  "storage_normalization": {
+    "bare_ampersands": "HTML entities",
+    "image_attributes_removed_by_wordpress": [
+      "srcset",
+      "sizes",
+      "decoding"
+    ],
+    "rendered_responsive_attributes": "Restored by the existing responsive HTML filter and checked in the browser"
+  }
+}
