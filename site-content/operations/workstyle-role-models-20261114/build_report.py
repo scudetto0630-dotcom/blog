@@ -127,10 +127,10 @@ def main():
         (BASE / (p['id'] + '.md')).write_text(person_markdown(p))
     keys = ['id', 'person', 'kind', 'title', 'url', 'checked_on', 'access', 'scope', 'published', 'updated', 'displayed_date', 'date_semantics', 'latest_listed_publication', 'latest_listed_modification', 'observation']
     with (BASE / 'sources.csv').open('w', encoding='utf-8-sig', newline='') as f:
-        writer = csv.DictWriter(f, fieldnames=keys); writer.writeheader(); writer.writerows(DATA['sources'])
+        writer = csv.DictWriter(f, fieldnames=keys, lineterminator='\n'); writer.writeheader(); writer.writerows(DATA['sources'])
     with (BASE / 'revenue.csv').open('w', encoding='utf-8-sig', newline='') as f:
         keys = ['person', 'type', 'evidence_level', 'evidence', 'source_ids', 'owner_workload', 'actual_revenue_amount']
-        writer = csv.DictWriter(f, fieldnames=keys); writer.writeheader()
+        writer = csv.DictWriter(f, fieldnames=keys, lineterminator='\n'); writer.writeheader()
         for p in DATA['profiles']:
             for r in p['revenue']:
                 row = dict(r, person=p['name'], source_ids=';'.join(r['source_ids'])); writer.writerow(row)
