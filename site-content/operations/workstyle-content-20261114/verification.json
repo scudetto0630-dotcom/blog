@@ -1,0 +1,42 @@
+{
+  "new_urls": [
+    "https://hirogarushumi.com/employee-vs-self-employed/",
+    "https://hirogarushumi.com/freelance-and-sole-proprietor/",
+    "https://hirogarushumi.com/freelance-sales-and-take-home/",
+    "https://hirogarushumi.com/changing-job-or-working-style/",
+    "https://hirogarushumi.com/freelance-contract-before-start/"
+  ],
+  "revised_urls": [
+    "https://hirogarushumi.com/it-data-work-flow/",
+    "https://hirogarushumi.com/starting-it-without-specialty/",
+    "https://hirogarushumi.com/ai-data-extraction-checks/",
+    "https://hirogarushumi.com/csv-import-seven-checks/"
+  ],
+  "checks": {
+    "new_posts": 5,
+    "revised_posts": 4,
+    "existing_ids_dates_covers_preserved": 48,
+    "unrelated_posts_preserved": 44,
+    "pages_preserved": 9,
+    "csv_figures_preserved": true,
+    "python_tests": 91,
+    "php_checks": 1515,
+    "browser_combinations": 33,
+    "viewport_widths": [
+      320,
+      390,
+      1440
+    ],
+    "page_errors": 0,
+    "horizontal_overflow": false,
+    "all_article_images_loaded": true
+  },
+  "plugin": {
+    "version": "1.47.1",
+    "source_commit": "73623d21cfc20e487b234379c5e22cfe4501a418",
+    "heading_correction_commit": "c69f6d6bac9d8fd23ad62f884ea0f7848e2852e0",
+    "package_commit": "1e88ec14239bd0f7b93a80c32b954a4264d4a26c",
+    "sha256": "54570581ab9065c5bd3eccf834c786a38027b6c3d70326e7e80c172dd6cf55c4"
+  },
+  "checked_at_utc": "2026-11-14T14:19:31.758560+00:00"
+}
