@@ -82,6 +82,7 @@ add_action('wp_footer',function(){echo hsh_growth_nav();},25);
 /** Replace theme defaults once, without adding conflicting OGP or schema nodes. */
 function hsh_growth_metadata($html,$data){
     if(!$data||strpos($html,'</head>')===false)return $html;
+    if(!empty($data['og:image']))$data['thumbnail']=$data['og:image'];
     $head=substr($html,0,strpos($html,'</head>'));$tail=substr($html,strpos($html,'</head>'));$seen=array();
     $head=preg_replace_callback('~<meta\b[^>]*>~i',function($m)use($data,&$seen){if(!preg_match('~\b(?:name|property)\s*=\s*([\x22\x27])(.*?)\1~i',$m[0],$key))return $m[0];$k=strtolower($key[2]);if(!isset($data[$k]))return $m[0];if(isset($seen[$k]))return '';$seen[$k]=true;return '<meta '.(strpos($k,'og:')===0?'property':'name').'="'.esc_attr($k).'" content="'.esc_attr($data[$k]).'">';},$head);
     foreach($data as $k=>$value)if(!isset($seen[$k]))$head.='<meta '.(strpos($k,'og:')===0?'property':'name').'="'.esc_attr($k).'" content="'.esc_attr($value).'">'."\n";

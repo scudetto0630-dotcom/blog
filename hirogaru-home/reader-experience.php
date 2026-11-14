@@ -14,7 +14,7 @@ function hsh_reader_catalog() {
         $p = get_page_by_path($a['slug'], OBJECT, 'post');
         if (!$p || $p->post_status !== 'publish') continue;
         $photo = hsh_photo_for_slug($a['slug']);
-        $rows[] = array('id'=>$a['slug'], 'title'=>$p->post_title, 'url'=>get_permalink($p), 'topic'=>$a['topic'], 'summary'=>hsh_growth_summaries()[$a['slug']]??$p->post_excerpt,'minutes'=>function_exists('hsh_studio_minutes')?hsh_studio_minutes($p->post_content):1, 'image'=>$photo?plugin_dir_url(__FILE__).'assets/photos/'.$photo['file']:'');
+        $rows[] = array('id'=>$a['slug'], 'title'=>$p->post_title, 'url'=>get_permalink($p), 'topic'=>$a['topic'], 'summary'=>hsh_growth_summaries()[$a['slug']]??$p->post_excerpt,'minutes'=>function_exists('hsh_studio_post_minutes')?hsh_studio_post_minutes($p):1, 'image'=>$photo?plugin_dir_url(__FILE__).'assets/photos/'.$photo['file']:'');
     }
     $known=array_column($rows,'id');
     foreach(get_posts(array('post_type'=>'post','post_status'=>'publish','numberposts'=>500,'orderby'=>'date','order'=>'DESC')) as $p){
@@ -171,3 +171,16 @@ function hsh_reader_responsive_html($html){
 
 // Final visual layer follows the functional reading and accessibility styles.
 add_action('wp_enqueue_scripts',function(){if(hsh_reader_scope())wp_enqueue_style('hsh-palette',plugin_dir_url(__FILE__).'assets/palette.css',array('hsh-quality'),'1.45.1');},190);
+
+/** Hidden theme placeholders need no eager network request; real article photos stay intact. */
+function hsh_reader_defer_theme_placeholders($html){
+    return preg_replace_callback('~<img\b[^>]*>~i',function($m){
+        if(!preg_match('~\bsrc\s*=\s*([\x22\x27])(.*?)\1~is',$m[0],$src))return $m[0];
+        $url=html_entity_decode($src[2],ENT_QUOTES,'UTF-8');$host=parse_url($url,PHP_URL_HOST);
+        if($host&&$host!==parse_url(home_url('/'),PHP_URL_HOST))return $m[0];
+        $path=parse_url($url,PHP_URL_PATH);
+        if(!is_string($path)||!preg_match('~^/wp-content/themes/cocoon-master/(?:screenshot\.jpg|images/(?:no-amp-logo|no-image(?:-[0-9]+)?)\.png)$~D',$path))return $m[0];
+        if(preg_match('~\bloading\s*=~i',$m[0]))return preg_replace('~\bloading\s*=\s*([\x22\x27]).*?\1~i','loading="lazy"',$m[0]);
+        return preg_replace('~\s*/?>$~',' loading="lazy"$0',$m[0]);
+    },$html);
+}

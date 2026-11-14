@@ -15,7 +15,8 @@ function hsh_local_footer_assets($html) {
     },$html);
     $html=function_exists('hsh_growth_rendered')?hsh_growth_rendered($html):$html;
     $html=function_exists('hsh_reader_rendered')?hsh_reader_rendered($html):$html;
-    return function_exists('hsh_studio_rendered')?hsh_studio_rendered($html):$html;
+    $html=function_exists('hsh_studio_rendered')?hsh_studio_rendered($html):$html;
+    return function_exists('hsh_reader_defer_theme_placeholders')&&strpos($html,'hsh-reader-site')!==false?hsh_reader_defer_theme_placeholders($html):$html;
 }
 // Cocoon prints this legacy tag after wp_footer, so filter the rendered HTML.
 // WordPress flushes the buffer on shutdown; feeds, REST and admin do not use templates.

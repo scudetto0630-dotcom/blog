@@ -46,7 +46,7 @@ function hsh_reader_search_growth($current,$history){
 
 function hsh_reader_audit_status() {
     $pages=get_option('hsh_gsc_pages',null);$queries=get_option('hsh_gsc_queries',null);$checkpoints=get_option('hsh_reader_checkpoints',array());
-    return hsh_edit_response(array('version'=>'1.38.2','published_catalog_count'=>count(hsh_reader_catalog()),'redirects'=>get_option('hsh_reader_redirects',array()),'checkpoints'=>array_map(function($r){return array('at'=>$r['at'],'label'=>$r['label'],'version'=>$r['version']);},is_array($checkpoints)?$checkpoints:array()),'search_metrics'=>array('pages'=>$pages,'queries'=>$queries),'search_pages_imported'=>is_array($pages),'search_queries_imported'=>is_array($queries),'query_scope'=>get_option('hsh_reader_query_scope',''),'metric_history_count'=>count((array)get_option('hsh_reader_metric_history',array()))));
+    return hsh_edit_response(array('version'=>'1.38.2','published_catalog_count'=>count(hsh_reader_catalog()),'search_console'=>function_exists('hsh_gsc_connection_status')?hsh_gsc_connection_status():array('connected'=>false),'redirects'=>get_option('hsh_reader_redirects',array()),'checkpoints'=>array_map(function($r){return array('at'=>$r['at'],'label'=>$r['label'],'version'=>$r['version']);},is_array($checkpoints)?$checkpoints:array()),'search_metrics'=>array('pages'=>$pages,'queries'=>$queries),'search_pages_imported'=>is_array($pages),'search_queries_imported'=>is_array($queries),'query_scope'=>get_option('hsh_reader_query_scope',''),'metric_history_count'=>count((array)get_option('hsh_reader_metric_history',array()))));
 }
 add_action('rest_api_init',function() {
     register_rest_route('hirogaru/v1','/reader-audit',array(

@@ -91,3 +91,79 @@ function hsh_planner_overview($snapshot){
     echo '<div class="hsh-plan-shortcuts"><button type="button" class="button" data-plan-preset="all">すべて</button><button type="button" class="button" data-plan-preset="photo_waiting">写真の準備メモあり</button><button type="button" class="button" data-plan-preset="needs_experience">体験を未確認</button><button type="button" class="button" data-plan-preset="due_soon">見直し日が近い</button><label>カテゴリー <select id="hsh-plan-topic"><option value="">すべて</option>';foreach(hsh_planner_labels()['topic'] as $k=>$v)echo '<option value="'.esc_attr($k).'">'.esc_html($v).'</option>';echo '</select></label><label>記事の準備 <select id="hsh-plan-stage"><option value="">すべて</option>';foreach(hsh_planner_labels()['stage'] as $k=>$v)echo '<option value="'.esc_attr($k).'">'.esc_html($v).'</option>';echo '</select></label></div>';
     echo '<details class="hsh-plan-import"><summary>保存した管理表の控えを読み込む</summary><p>このサイトから保存したJSONを選んで内容を確認します。同じ項目は控えの値に戻り、控えにない現在の項目は残ります。記事本文や画像ファイルは復元しません。</p><input type="file" id="hsh-plan-import-file" accept=".json,application/json"><p id="hsh-plan-import-preview" role="status"></p><form method="post" id="hsh-plan-import-form" hidden>';wp_nonce_field('hsh_editorial_planner');echo '<input type="hidden" name="expected_store" value="'.esc_attr($snapshot['store_fingerprint']).'"><textarea name="backup_json" hidden></textarea><button class="button hsh-plan-import-confirm" name="hsh_plan_action" value="import">確認した控えの内容を反映する</button></form></details>';
 }
+/** Private Search Console hand-off; the Google key never leaves the Actions runner. */
+function hsh_gsc_service_email(){return 'blog-search-reader@hirogaru-search.iam.gserviceaccount.com';}
+function hsh_gsc_audience(){return 'https://hirogarushumi.com/hirogaru-search-console';}
+function hsh_gsc_error($code,$status=400){return new WP_Error('hsh_gsc_'.$code,'Search Console report validation failed: '.$code,array('status'=>$status));}
+function hsh_gsc_decode($part){
+    if(!is_string($part)||!preg_match('/^[A-Za-z0-9_-]+$/D',$part))return false;
+    return base64_decode(strtr($part,'-_','+/').str_repeat('=',(4-strlen($part)%4)%4),true);
+}
+function hsh_gsc_google_certs(){
+    $cached=get_transient('hsh_gsc_google_certs');if(is_array($cached)&&$cached)return $cached;
+    $url='https://www.googleapis.com/robot/v1/metadata/x509/'.rawurlencode(hsh_gsc_service_email());
+    $r=wp_remote_get($url,array('timeout'=>12,'redirection'=>0,'sslverify'=>true,'limit_response_size'=>150000));
+    if(is_wp_error($r)||wp_remote_retrieve_response_code($r)!==200)return hsh_gsc_error('certificate_service',503);
+    $certs=json_decode(wp_remote_retrieve_body($r),true);
+    if(!is_array($certs)||!$certs||count($certs)>30)return hsh_gsc_error('certificate_response',503);
+    foreach($certs as $kid=>$cert)if(!is_string($kid)||!is_string($cert)||strlen($cert)>12000||strpos($cert,'-----BEGIN CERTIFICATE-----')!==0)return hsh_gsc_error('certificate_response',503);
+    set_transient('hsh_gsc_google_certs',$certs,300);return $certs;
+}
+function hsh_gsc_authenticate($token,$body,$certs,$now,$verify=null){
+    if(!is_string($token)||strlen($token)>10000||!is_string($body)||strlen($body)>4*1024*1024)return hsh_gsc_error('token',401);
+    $parts=explode('.',$token);if(count($parts)!==3)return hsh_gsc_error('token',401);
+    $h=json_decode(hsh_gsc_decode($parts[0])?:'',true);$c=json_decode(hsh_gsc_decode($parts[1])?:'',true);$sig=hsh_gsc_decode($parts[2]);
+    if(!is_array($h)||!is_array($c)||!is_string($sig)||!$sig||array_diff(array_keys($h),array('alg','typ','kid'))||($h['alg']??'')!=='RS256'||($h['typ']??'')!=='JWT'||!is_string($h['kid']??null)||!preg_match('/^[A-Za-z0-9_-]{1,200}$/D',$h['kid']))return hsh_gsc_error('token',401);
+    if(($c['iss']??'')!==hsh_gsc_service_email()||($c['aud']??'')!==hsh_gsc_audience()||!is_int($c['iat']??null)||!is_int($c['exp']??null)||$c['iat']>$now+60||$c['iat']<$now-300||$c['exp']<=$now||$c['exp']<=$c['iat']||$c['exp']>$c['iat']+300||!is_string($c['jti']??null)||!preg_match('/^[A-Za-z0-9-]{16,100}$/D',$c['jti'])||!is_string($c['sha256']??null)||!hash_equals(hash('sha256',$body),$c['sha256']))return hsh_gsc_error('claims',401);
+    if(!is_array($certs)||!isset($certs[$h['kid']]))return hsh_gsc_error('key',401);
+    if($verify===null){if(!function_exists('openssl_verify'))return hsh_gsc_error('crypto_unavailable',503);$verify=function($data,$signature,$cert){return openssl_verify($data,$signature,$cert,OPENSSL_ALGO_SHA256)===1;};}
+    if(!$verify($parts[0].'.'.$parts[1],$sig,$certs[$h['kid']]))return hsh_gsc_error('signature',401);
+    return $c;
+}
+function hsh_gsc_ingest_permission($request){
+    if(!is_ssl())return hsh_gsc_error('https',403);$h=$request->get_header('authorization');$body=$request->get_body();
+    if(!is_string($h)||!preg_match('/^Bearer ([A-Za-z0-9_.-]+)$/D',$h,$m)||strlen($h)>10007||strlen($body)>4*1024*1024)return hsh_gsc_error('authorization',401);
+    $certs=hsh_gsc_google_certs();if(is_wp_error($certs))return $certs;
+    $r=hsh_gsc_authenticate($m[1],$body,$certs,time());return is_wp_error($r)?$r:true;
+}
+function hsh_gsc_valid_report($d,$now){
+    if(!is_array($d)||($d['site']??'')!=='https://hirogarushumi.com/'||!in_array($d['state']??'',array('collected','no_finalized_data'),true)||!is_int($d['collected_at']??null)||$d['collected_at']>$now+60||$d['collected_at']<$now-3600)return hsh_gsc_error('report_scope');
+    if(($d['state']==='collected')&&(($d['scope']??'')!=='https://www.googleapis.com/auth/webmasters.readonly'||($d['data_state']??'')!=='final'||($d['dimensions']??null)!==array('page','query','device','country')))return hsh_gsc_error('report_scope');
+    if(!isset($d['daily'])||!is_array($d['daily'])||($d['state']==='collected'&&!$d['daily']))return hsh_gsc_error('daily_rows');
+    foreach(array('daily','current_rows','previous_rows') as $key){
+        $rows=$d[$key]??array();if(!is_array($rows)||count($rows)>50000)return hsh_gsc_error('row_limit');
+        foreach($rows as $row){
+            if(!is_array($row))return hsh_gsc_error('metrics');
+            foreach(array('clicks','impressions','ctr','position') as $n)if(!isset($row[$n])||(!is_int($row[$n])&&!is_float($row[$n]))||!is_finite((float)$row[$n]))return hsh_gsc_error('metrics');
+            if($row['clicks']<0||$row['clicks']>$row['impressions']||$row['ctr']<0||$row['ctr']>1||$row['position']<0)return hsh_gsc_error('metrics');
+            if($key==='daily'){
+                if(!is_string($row['date']??null)||!preg_match('/^(\d{4})-(\d{2})-(\d{2})$/D',$row['date'],$m)||!checkdate((int)$m[2],(int)$m[3],(int)$m[1]))return hsh_gsc_error('date');
+            }else{
+                if(!is_string($row['page']??null)||strpos($row['page'],'https://hirogarushumi.com/')!==0||strlen($row['page'])>4096||!is_string($row['query']??null)||strlen($row['query'])>4096||!in_array($row['device']??'',array('MOBILE','DESKTOP','TABLET'),true)||!is_string($row['country']??null)||!preg_match('/^[a-z]{3}$/D',$row['country']))return hsh_gsc_error('row_scope');
+            }
+        }
+    }
+    if($d['state']==='no_finalized_data'&&(!empty($d['daily'])||!empty($d['current_rows'])||!empty($d['previous_rows'])))return hsh_gsc_error('empty_state');
+    return $d;
+}
+function hsh_gsc_receive($request){
+    $raw=$request->get_body();if(strlen($raw)>4*1024*1024)return hsh_gsc_error('body_limit',413);
+    $d=hsh_gsc_valid_report($request->get_json_params(),time());if(is_wp_error($d))return $d;
+    $hash=hash('sha256',$raw);$old=get_option('hsh_gsc_private_report',array());
+    if(($old['sha256']??'')===$hash)return hsh_edit_response(array('stored'=>true,'duplicate'=>true));
+    if(($old['report']['collected_at']??0)>$d['collected_at'])return hsh_gsc_error('older_report',409);
+    $value=array('received_at'=>time(),'sha256'=>$hash,'report'=>$d);
+    if(!update_option('hsh_gsc_private_report',$value,false))return hsh_gsc_error('save',500);
+    return hsh_edit_response(array('stored'=>true,'state'=>$d['state']));
+}
+function hsh_gsc_private_report($request){
+    $v=get_option('hsh_gsc_private_report',null);return hsh_edit_response(array('connected'=>is_array($v),'received_at'=>$v['received_at']??null,'report'=>$v['report']??null));
+}
+add_action('rest_api_init',function(){register_rest_route('hirogaru/v1','/search-report',array(
+    array('methods'=>'GET','permission_callback'=>'hsh_edit_permission','callback'=>'hsh_gsc_private_report'),
+    array('methods'=>'POST','permission_callback'=>'hsh_gsc_ingest_permission','callback'=>'hsh_gsc_receive')
+));});
+function hsh_gsc_connection_status(){
+    $v=get_option('hsh_gsc_private_report',array());$d=$v['report']??array();$dates=array_column($d['daily']??array(),'date');sort($dates);
+    return array('connected'=>isset($v['received_at'])&&$v['received_at']>=time()-2*DAY_IN_SECONDS,'last_successful_import_at'=>$v['received_at']??null,'state'=>$d['state']??'not_connected','latest_data_date'=>$dates?end($dates):null);
+}

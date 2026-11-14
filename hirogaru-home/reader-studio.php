@@ -1,8 +1,17 @@
 <?php
 if(!defined('ABSPATH'))exit;
 function hsh_studio_minutes($text){return max(1,(int)ceil(mb_strlen(wp_strip_all_tags($text),'UTF-8')/600));}
+/** Estimate the primary published text, including the researched whisky additions. */
+function hsh_studio_post_minutes($post){
+    if(!$post)return 1;$text=$post->post_content??'';$slug=$post->post_name??'';
+    if(!hsh_whisky_profile($slug))return hsh_studio_minutes($text);
+    static $cache=array();$key=$slug.':'.sha1($text);if(isset($cache[$key]))return $cache[$key];
+    $text=hsh_whisky_enriched(hsh_studio_story_additions($text,$slug),$slug);
+    $text=preg_replace('~<(details|nav|aside|svg)\b[^>]*>.*?</\1>~is','',$text);
+    return $cache[$key]=hsh_studio_minutes($text);
+}
 function hsh_studio_catalog($slug){foreach(hsh_catalog() as $a)if($a['slug']===$slug)return $a;return null;}
-function hsh_studio_card_meta($post){return '<span class="hsh-read-time">約'.hsh_studio_minutes($post->post_content).'分で読めます</span>';}
+function hsh_studio_card_meta($post){return '<span class="hsh-read-time">約'.hsh_studio_post_minutes($post).'分で読めます</span>';}
 function hsh_studio_article_link($slug,$label='',$anchor=''){$p=get_page_by_path($slug,OBJECT,'post');if(!$p||$p->post_status!=='publish')return '';return '<a href="'.esc_url(get_permalink($p).($anchor?'#'.$anchor:'')).'">'.esc_html($label?:get_the_title($p)).'</a>';}
 function hsh_studio_featured(){
  $out='<section id="hsh-featured" class="hsh-featured" data-hsh-reveal><div class="hsh-featured-heading"><div><p class="hsh-eyebrow">STORIES</p><h2>じっくり読む暮らしの話</h2></div><span class="hsh-editorial-note">猫とお酒と仕事</span></div><div class="hsh-featured-grid">';

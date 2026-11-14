@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Private, read-only Search Console collection. Never submits index or site changes."""
-import argparse,datetime,json,os,tempfile
+import argparse,datetime,json,os,tempfile,hashlib,time,uuid,re
 from pathlib import Path
 from urllib.parse import quote
 from urllib.request import Request,build_opener,HTTPRedirectHandler
@@ -98,15 +98,47 @@ def save_private(path,data):
         os.replace(tmp,path)
     finally:
         if os.path.exists(tmp):os.unlink(tmp)
+BLOG_REPORT_URL='https://hirogarushumi.com/?rest_route=/hirogaru/v1/search-report'
+BLOG_AUDIENCE='https://hirogarushumi.com/hirogaru-search-console'
+SERVICE_EMAIL='blog-search-reader@hirogaru-search.iam.gserviceaccount.com'
+def signed_report_token(info,body,now=None,sign=None):
+    if info.get('client_email')!=SERVICE_EMAIL or not isinstance(info.get('private_key_id'),str) or not info['private_key_id']:
+        raise ValueError('Report sender does not match the configured reader')
+    now=int(time.time()) if now is None else now
+    claims={'iss':SERVICE_EMAIL,'aud':BLOG_AUDIENCE,'iat':now,'exp':now+300,'jti':uuid.uuid4().hex,'sha256':hashlib.sha256(body).hexdigest()}
+    if sign is not None:return sign(info,claims)
+    from google.auth import crypt,jwt
+    signer=crypt.RSASigner.from_service_account_info(info)
+    token=jwt.encode(signer,claims,key_id=info['private_key_id'])
+    return token.decode() if isinstance(token,bytes) else token
+def publish_private_report(info,data,send=None,sign=None):
+    body=json.dumps(data,ensure_ascii=False,separators=(',',':'),allow_nan=False).encode('utf-8')
+    if len(body)>4*1024*1024:raise ValueError('Report is too large for private delivery')
+    token=signed_report_token(info,body,sign=sign)
+    request=Request(BLOG_REPORT_URL,data=body,method='POST',headers={'Authorization':'Bearer '+token,'Content-Type':'application/json','Cache-Control':'no-store'})
+    if send is None:
+        with build_opener(NoRedirect()).open(request,timeout=60) as response:result=json.load(response)
+    else:result=send(request)
+    if not isinstance(result,dict) or result.get('stored') is not True:raise ValueError('Private report was not accepted')
+    return True
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--status',action='store_true');p.add_argument('--output',type=Path,default=ROOT/'.private/search-console/latest.json');a=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('--status',action='store_true');p.add_argument('--publish-private',action='store_true');p.add_argument('--output',type=Path,default=ROOT/'.private/search-console/latest.json');a=p.parse_args()
     try:
         info=credential_info()
         if a.status:
             print(json.dumps({'configured':info is not None,'connection_verified':False,'network_attempted':False}));return 0
         if info is None:print('Search Console credentials are not configured. No API request was sent.');return 2
-        data=collect(access_token(info));save_private(a.output,data);print('Private Search Console report saved. No queries or credentials printed.');return 0
-    except HTTPError as e:print('Search Console or authorization returned HTTP '+str(e.code)+'. No automatic retry.');return 1
+        data=collect(access_token(info));data['collected_at']=int(time.time());save_private(a.output,data)
+        if a.publish_private:publish_private_report(info,data);print('Private report delivered to the blog. No queries or credentials printed.')
+        else:print('Private Search Console report saved. No queries or credentials printed.')
+        return 0
+    except HTTPError as e:
+        detail=''
+        try:
+            code=json.load(e).get('code','')
+            if isinstance(code,str) and re.fullmatch(r'hsh_gsc_[a-z_]+',code):detail=' ('+code+')'
+        except Exception:pass
+        print('Search Console or authorization returned HTTP '+str(e.code)+detail+'. No automatic retry.');return 1
     except ImportError:print('Install tools/requirements-search.txt in a private virtual environment.');return 1
     except Exception:print('Search Console setup, response or private output could not be validated. No credentials printed.');return 1
 if __name__=='__main__':raise SystemExit(main())
