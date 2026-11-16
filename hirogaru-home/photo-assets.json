@@ -341,7 +341,16 @@
       "caption": "AI生成のイメージです。",
       "sha256": "60d9153402964c120c540377ff39589067587a36c4167d85e244807732331433",
       "bytes": 83986,
-      "dhash": "171206c4c8327246"
+      "dhash": "171206c4c8327246",
+      "variants": [
+        {
+          "file": "article-workflow-600.webp",
+          "width": 600,
+          "height": 400,
+          "sha256": "882f11a05e437e09b317fdf57e328c0a6dfcdf68a9ebd0bcacc35ed319b638ac",
+          "bytes": 29562
+        }
+      ]
     },
     "article-beginner": {
       "file": "article-beginner.webp",
@@ -653,7 +662,16 @@
       "caption": "AI生成のイメージです。",
       "sha256": "7f03fdcfe0e49ae65a3e1d87edd8fd64b94b1d4b66b32264ee90d37c165291ba",
       "bytes": 100488,
-      "dhash": "2d89d3e36e8783c3"
+      "dhash": "2d89d3e36e8783c3",
+      "variants": [
+        {
+          "file": "detail-topic-work-600.webp",
+          "width": 600,
+          "height": 400,
+          "sha256": "9a79cbad3e75cdbf5a152cb4515aa19480c3050162138299da3382f7011ecedb",
+          "bytes": 35480
+        }
+      ]
     },
     "manmos-window": {
       "file": "manmos-window.webp",
