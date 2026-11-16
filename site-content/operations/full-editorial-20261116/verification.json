@@ -1,0 +1,47 @@
+{
+  "version": "1.49.0",
+  "existing_posts_reviewed": 53,
+  "public_posts_after": 56,
+  "public_pages_reviewed": 9,
+  "original_post_ids_dates_links_native_thumbnails_retained": 53,
+  "packaged_articles_published_or_revised": 44,
+  "new_guides": [
+    "freelance-contract-renewal-end",
+    "freelance-days-off",
+    "freelance-health-insurance"
+  ],
+  "source_matches_stored_bodies": 52,
+  "affiliate_link_and_image_integrity": "passed",
+  "unaffected_pages_unchanged": 7,
+  "python_tests": 92,
+  "php_checks": 1601,
+  "photo_assets": 178,
+  "new_primary_photos": 9,
+  "new_responsive_variants": 9,
+  "browser_page_viewport_combinations": 45,
+  "browser_widths": [
+    320,
+    390,
+    1440
+  ],
+  "javascript_disabled": "3 new guides readable",
+  "package": {
+    "commit": "aed5b17a989753db02cd69a07f3065db8da44696",
+    "sha256": "dd2cd25c921d49c82aa7f356629ba83146e79bf91e8906c97f8f9441df0a858f",
+    "expected_version": "1.48.2"
+  },
+  "package_files": 448,
+  "package_bytes": 20461190,
+  "source_commit": "157cc94ddf6dea10901db401d073d8790762fd19",
+  "packaging_workflow": 43819271108,
+  "existing_articles_changed": 44,
+  "new_posts": 3,
+  "homepage_and_about_updated": true,
+  "editorial_flag_review": {
+    "error_count": 0,
+    "fact_flags": 4,
+    "fact_flag_decisions": "本人の決意、効果の保証を否定する文、任意継続保険料の例外に関する文。根拠のない効果の断定ではない。",
+    "style_flags": 24,
+    "style_flag_decisions": "原材料や比較項目の列挙を含む。指示語の対象と段落の接続を読み、読点を機械的に句点へ置き換えない。"
+  }
+}
