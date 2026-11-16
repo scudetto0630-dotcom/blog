@@ -3514,6 +3514,195 @@
           "bytes": 21196
         }
       ]
+    },
+    "workstyle-20261116-leave-cover": {
+      "file": "workstyle-20261116-leave-cover.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "work",
+      "alt": "窓辺の机に置いた手帳と閉じたノートパソコン",
+      "caption": "AI生成のイメージです。",
+      "sha256": "6af4634161376bea3cdaf4b7b22d6ce8662724f607c04bd4856f0aeea40b463f",
+      "bytes": 86534,
+      "dhash": "db0f1b3bc7cfa8a7",
+      "variants": [
+        {
+          "file": "workstyle-20261116-leave-cover-600.webp",
+          "width": 600,
+          "height": 400,
+          "sha256": "580d9f248e99d97ec0ff50d2f66c71aab33b2fae9ec870a00d721396a6124ff6",
+          "bytes": 33980
+        }
+      ]
+    },
+    "workstyle-20261116-leave-schedule": {
+      "file": "workstyle-20261116-leave-schedule.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "work",
+      "alt": "日程を考えるための手帳と卓上カレンダー",
+      "caption": "AI生成のイメージです。",
+      "sha256": "63b6fe2ba4ab61bcfbd8c086f450550e2cc72a2427c4c680aefc927e2f711abf",
+      "bytes": 72948,
+      "dhash": "63650f2e2f6f7c23",
+      "variants": [
+        {
+          "file": "workstyle-20261116-leave-schedule-600.webp",
+          "width": 600,
+          "height": 400,
+          "sha256": "b52f9956d64b975adacc6e2d47e126464f28a0698dcfcbaf17936a0ff60eb723",
+          "bytes": 24402
+        }
+      ]
+    },
+    "workstyle-20261116-leave-boundary": {
+      "file": "workstyle-20261116-leave-boundary.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "work",
+      "alt": "閉じたノートパソコンとソファのある明るい部屋",
+      "caption": "AI生成のイメージです。",
+      "sha256": "f74e9174274d2b10243e09f96ae8401a1d74e27cb6d9ec3e6b2cc9e6e85273a9",
+      "bytes": 65506,
+      "dhash": "b2b2922246436460",
+      "variants": [
+        {
+          "file": "workstyle-20261116-leave-boundary-600.webp",
+          "width": 600,
+          "height": 400,
+          "sha256": "4c7582d2f2bf2a62691591ec5fbeaddca2d7ba9e417cf46d5a638c0b3bc11cc9",
+          "bytes": 28338
+        }
+      ]
+    },
+    "workstyle-20261116-health-cover": {
+      "file": "workstyle-20261116-health-cover.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "work",
+      "alt": "書類用のフォルダーと電卓を置いた机",
+      "caption": "AI生成のイメージです。",
+      "sha256": "64400608b60bb30ca747460da5262f2416c85f778f04baab8a249b91ed252eec",
+      "bytes": 67208,
+      "dhash": "8d1b5dcc86cffd7b",
+      "variants": [
+        {
+          "file": "workstyle-20261116-health-cover-600.webp",
+          "width": 600,
+          "height": 400,
+          "sha256": "75239b57d47b978555923bd06733984fa72a1e8f49aa8749068c5494f4f9a0ae",
+          "bytes": 26484
+        }
+      ]
+    },
+    "workstyle-20261116-health-compare": {
+      "file": "workstyle-20261116-health-compare.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "work",
+      "alt": "色の違う3冊のフォルダーとメモ帳",
+      "caption": "AI生成のイメージです。",
+      "sha256": "997377f96a5f8d998b24676895945ee3fe2942ed1f2aed1996ff42c372d83de2",
+      "bytes": 65830,
+      "dhash": "8acf75747474f4c3",
+      "variants": [
+        {
+          "file": "workstyle-20261116-health-compare-600.webp",
+          "width": 600,
+          "height": 400,
+          "sha256": "18de75b5ae1fd1d2f0fc0cc0a073bb3ed6a20ddf51c92d7f82e5ba708a8bd8ba",
+          "bytes": 21464
+        }
+      ]
+    },
+    "workstyle-20261116-health-deadline": {
+      "file": "workstyle-20261116-health-deadline.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "work",
+      "alt": "卓上カレンダーのそばに置いた封筒とペン",
+      "caption": "AI生成のイメージです。",
+      "sha256": "a16031d56221557cf7d1a34bf8981325d29d17786fa54c884a2ef4360a13aad9",
+      "bytes": 72250,
+      "dhash": "1b0c1d1d3030595b",
+      "variants": [
+        {
+          "file": "workstyle-20261116-health-deadline-600.webp",
+          "width": 600,
+          "height": 400,
+          "sha256": "686241260dea6265f6971219304a82122018a81bafd1b1eb3c3dac6f3628c67c",
+          "bytes": 27962
+        }
+      ]
+    },
+    "workstyle-20261116-end-cover": {
+      "file": "workstyle-20261116-end-cover.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "work",
+      "alt": "書類とノートパソコンを片付けた窓辺の机",
+      "caption": "AI生成のイメージです。",
+      "sha256": "725f5779519bd26b72bcfa22b4cfd6962541cadb4a3feb826fa5411244d4d6db",
+      "bytes": 57380,
+      "dhash": "99999918880d38e0",
+      "variants": [
+        {
+          "file": "workstyle-20261116-end-cover-600.webp",
+          "width": 600,
+          "height": 400,
+          "sha256": "b7740f0a1b8dae86db9d3358a355477a4a2873ffacbe8d3556e88ebaa69c229e",
+          "bytes": 24928
+        }
+      ]
+    },
+    "workstyle-20261116-end-record": {
+      "file": "workstyle-20261116-end-record.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "work",
+      "alt": "封筒と付箋の付いたノート",
+      "caption": "AI生成のイメージです。",
+      "sha256": "8f089a8bdc754141fcf24d2f75b1ed0a4aede8753ca94003824f5f17084a5d7d",
+      "bytes": 58978,
+      "dhash": "0f2eaf1f2f263c73",
+      "variants": [
+        {
+          "file": "workstyle-20261116-end-record-600.webp",
+          "width": 600,
+          "height": 400,
+          "sha256": "8104e9ae15c5279f17734b8003d7b96dd18c8e9a0fcd4b9e7ed8e12b76084b7f",
+          "bytes": 21582
+        }
+      ]
+    },
+    "workstyle-20261116-end-next": {
+      "file": "workstyle-20261116-end-next.webp",
+      "width": 1200,
+      "height": 800,
+      "kind": "generated",
+      "subject": "work",
+      "alt": "日差しの入る机に開いた次の予定用のノート",
+      "caption": "AI生成のイメージです。",
+      "sha256": "d671286ba9338ce10b1a36c5b89ebd3ab1fd2ed8665aaccc3908183edf04445b",
+      "bytes": 87402,
+      "dhash": "26a723091d5bc7c7",
+      "variants": [
+        {
+          "file": "workstyle-20261116-end-next-600.webp",
+          "width": 600,
+          "height": 400,
+          "sha256": "90ef181460cfbd0806908fd7920649ae7fa92b53f958b5ee146cad9143e01647",
+          "bytes": 33884
+        }
+      ]
     }
   },
   "articles": {
@@ -3539,7 +3728,10 @@
     "freelance-and-sole-proprietor": "workstyle-definitions-cover",
     "freelance-sales-and-take-home": "workstyle-money-cover",
     "changing-job-or-working-style": "workstyle-choice-cover",
-    "freelance-contract-before-start": "workstyle-contract-cover"
+    "freelance-contract-before-start": "workstyle-contract-cover",
+    "freelance-days-off": "workstyle-20261116-leave-cover",
+    "freelance-health-insurance": "workstyle-20261116-health-cover",
+    "freelance-contract-renewal-end": "workstyle-20261116-end-cover"
   },
   "inline": {
     "before-welcoming-cat": [
@@ -3613,6 +3805,18 @@
     "freelance-contract-before-start": [
       "workstyle-contract-scope",
       "workstyle-contract-finish"
+    ],
+    "freelance-days-off": [
+      "workstyle-20261116-leave-schedule",
+      "workstyle-20261116-leave-boundary"
+    ],
+    "freelance-health-insurance": [
+      "workstyle-20261116-health-compare",
+      "workstyle-20261116-health-deadline"
+    ],
+    "freelance-contract-renewal-end": [
+      "workstyle-20261116-end-record",
+      "workstyle-20261116-end-next"
     ]
   },
   "topics": {

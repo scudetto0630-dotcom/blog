@@ -12,7 +12,8 @@ class LongformTests(unittest.TestCase):
         cls.separated={'glen-grant-arboralis-review','nikka-from-the-barrel-review','jim-beam-first-impression','kirin-riku-review','busker-irish-whiskey-review'}
         cls.new_reviews=[a for a in cls.bundle if a['slug'] in cls.separated]
         cls.workstyle=set(['employee-vs-self-employed', 'freelance-and-sole-proprietor', 'freelance-sales-and-take-home', 'changing-job-or-working-style', 'freelance-contract-before-start'])
-        cls.current=[a for a in cls.bundle if a['slug'] not in cls.separated|cls.workstyle]+[json.loads((ROOT/'site-content/articles/longform'/f"{a['slug']}.json").read_text()) for a in cls.old]
+        cls.followups={'freelance-days-off','freelance-health-insurance','freelance-contract-renewal-end'}
+        cls.current=[a for a in cls.bundle if a['slug'] not in cls.separated|cls.workstyle|cls.followups]+[json.loads((ROOT/'site-content/articles/longform'/f"{a['slug']}.json").read_text()) for a in cls.old]
         cls.photos=json.loads((ROOT/'hirogaru-home/photo-assets.json').read_text())
     def test_every_article_retains_substantial_useful_explanations(self):
         self.assertEqual(len(self.current),13)
@@ -67,6 +68,19 @@ class LongformTests(unittest.TestCase):
                 self.assertEqual(a['content'].count('hsh-inline-photo'),2)
                 self.assertIn('https://hirogarushumi.com/',a['content'])
                 self.assertNotRegex(a['content'],r'TODO|HSH_IMAGE:')
+    def test_three_followups_answer_distinct_questions_with_photos_and_sources(self):
+        guides=[a for a in self.bundle if a['slug'] in self.followups]
+        self.assertEqual(len(guides),3)
+        for a in guides:
+            self.assertGreaterEqual(text_count(a['content']),1800)
+            self.assertEqual(a['content'].count('hsh-inline-photo'),2)
+            self.assertGreaterEqual(len(a['source_urls']),2)
+            self.assertGreaterEqual(a['content'].count('<h2'),8)
+            self.assertNotIn('AI生成',a['content'])
+        insurance=next(a['content'] for a in guides if a['slug']=='freelance-health-insurance')
+        self.assertIn('20日以内',insurance);self.assertIn('必着',insurance)
+        end=next(a['content'] for a in guides if a['slug']=='freelance-contract-renewal-end')
+        self.assertIn('6か月以上',end);self.assertIn('例外',end)
     def test_three_distinct_category_photos(self):
         t=self.photos['topics'];self.assertEqual(set(t),{'cats','whisky','it-freelance'})
         self.assertEqual(len(set(t.values())),3)

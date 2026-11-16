@@ -14,7 +14,7 @@ check(hsh_search_alias('ねこじゃらし 猫じゃらし ネコじゃらし')=
 check(hsh_search_topic('cats')==='cats'&&hsh_search_topic('wp-admin')===''&&hsh_search_topic(array('cats'))==='','search category accepts only scalar approved slugs');
 check(hsh_release_article(new Request(array('slug'=>'bad','expected'=>null)))->code==='hsh_scope','publisher rejects unknown article');
 check(hsh_release_article(new Request(array('slug'=>'before-welcoming-cat','expected'=>null,'content'=>'injected')))->code==='hsh_input','publisher rejects arbitrary body data');
-$items=hsh_expanded_articles();check(count($items)===20&&count(array_unique(array_column($items,'slug')))===20,'twenty distinct packaged articles including five workstyle guides');
+$items=hsh_expanded_articles();check(count($items)===23&&count(array_unique(array_column($items,'slug')))===23,'twenty-three distinct packaged articles including eight workstyle guides');
 foreach($items as $a)check(strpos($a['content'],'4匹')===false&&stripos($a['content'],'bpaas')===false,'corrected cat chronology and preferred work wording: '.$a['slug']);
 $GLOBALS['test_publishers']=array(3);$options['hsh_page_id']=900;$records[900]['post_author']=3;
 $before=count($records);$missing_category='cats';$r=hsh_release_article(new Request(array('slug'=>$items[0]['slug'],'expected'=>null)));check($r->code==='hsh_category'&&count($records)===$before,'missing category produces no partial article');unset($missing_category);
@@ -53,8 +53,8 @@ check(strpos($dashboard,'関連記事を保存')!==false&&strpos($dashboard,'fix
 check(strpos($dashboard,'1つ前の保存内容へ戻す')!==false||strpos($dashboard,'保存履歴')!==false,'dashboard exposes snapshot history and restore controls');
 $GLOBALS['test_admin_cap']=false;
 $photos=hsh_photo_manifest();
-check(count($photos['assets'])===169&&count($photos['articles'])===23,'base assets, nineteen composite covers and reviewed product images preserve original article map');
-check(count(array_unique($photos['articles']))===23,'every article has its own cover');
+check(count($photos['assets'])===178&&count($photos['articles'])===26,'base assets, nineteen composite covers and reviewed product images preserve original article map');
+check(count(array_unique($photos['articles']))===26,'every article has its own cover');
 $used=array_values($photos['articles']);foreach($photos['inline'] as $keys)foreach($keys as $key){check(isset($photos['assets'][$key]),'inline asset exists '.$key);$used[]=$key;}
 check(count(array_unique($used))===count($used),'no image is shared between article covers and inline scenes');
 foreach($photos['articles'] as $slug=>$cover){check($slug==='manmos-cat-life'||(in_array($slug,array('glen-grant-arboralis-review','nikka-from-the-barrel-review','jim-beam-first-impression','kirin-riku-review','busker-irish-whiskey-review'),true)?$photos['assets'][$cover]['subject']==='whisky':count($photos['inline'][$slug]??array())>=2),'bottle reviews use their matching single bottle cover; existing body photos stay intact '.$slug);}
