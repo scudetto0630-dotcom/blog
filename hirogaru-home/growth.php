@@ -75,7 +75,7 @@ function hsh_growth_updates(){
     return $out.'</ul></section>';
 }
 add_shortcode('hsh_manmos_gallery','hsh_growth_gallery');add_shortcode('hsh_whisky_notes','hsh_growth_whisky');add_shortcode('hsh_updates','hsh_growth_updates');
-add_action('wp_enqueue_scripts',function(){wp_enqueue_style('hsh-growth',plugin_dir_url(__FILE__).'assets/growth.css',array('hsh-reading'),'1.38.2');if(hsh_reader_managed()||is_front_page())wp_enqueue_script('hsh-growth',plugin_dir_url(__FILE__).'assets/growth.js',array(),'1.41.0',true);},110);
+add_action('wp_enqueue_scripts',function(){wp_enqueue_style('hsh-growth',plugin_dir_url(__FILE__).'assets/growth.css',array('hsh-reading'),'1.50.0');if(hsh_reader_managed()||is_front_page())wp_enqueue_script('hsh-growth',plugin_dir_url(__FILE__).'assets/growth.js',array(),'1.41.0',true);},110);
 add_filter('the_content',function($content){
     if(!is_singular('post')||!in_the_loop()||!is_main_query())return $content;$p=get_post();if(!hsh_owned_blog_post($p))return $content;
     $slug=hsh_growth_next($p->post_name);$next=$slug?get_page_by_path($slug,OBJECT,'post'):null;$summaries=hsh_growth_summaries();
@@ -130,6 +130,12 @@ function hsh_growth_compact_followups($content) {
         if(!$accepted)continue;
         $blocks[]=$block;
         foreach($accepted as $url=>$label)if(!isset($links[$url]))$links[$url]=$label;
+    }
+    $current=get_post(get_queried_object_id());
+    $workstyle=$current?hsh_workstyle_followup_markup($current->post_name):'';
+    if($workstyle!==''){
+        if(!$blocks)return $content.$workstyle;
+        $first=true;return preg_replace_callback($pattern,function($m)use($blocks,$workstyle,&$first){if(!in_array($m[0],$blocks,true))return $m[0];if($first){$first=false;return $workstyle;}return '';},$content);
     }
     if(count($blocks)<2)return $content;
     $current=get_post(get_queried_object_id());$next=$current?hsh_growth_next($current->post_name):'';

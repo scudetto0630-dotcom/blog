@@ -109,7 +109,16 @@
       "subject": "manmos",
       "alt": "まんもすの写真を参考に、ソファでくつろぐ姿を作成した",
       "caption": "提供写真を参考にしたAI生成画像です。",
-      "dhash": "4536bcb0b2b2e2c2"
+      "dhash": "4536bcb0b2b2e2c2",
+      "variants": [
+        {
+          "file": "manmos-rest-600.webp",
+          "width": 600,
+          "height": 400,
+          "sha256": "bda0394bc2b0e9adf9293d12ab19be5852ec8162412253898ca8927eb9c02a41",
+          "bytes": 30942
+        }
+      ]
     },
     "manmos-toy": {
       "file": "manmos-toy.webp",

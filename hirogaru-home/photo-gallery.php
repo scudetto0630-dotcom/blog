@@ -67,7 +67,7 @@ add_action('wp_head',function(){
     if(!is_front_page())return;
     $asset=hsh_photo_manifest()['assets']['manmos-rest']??null;
     if(!$asset)return;
-    echo '<link rel="preload" as="image" href="'.esc_url(plugin_dir_url(__FILE__).'assets/photos/'.$asset['file']).'" fetchpriority="high">' . "\n";
+    echo str_replace('imagesizes="(max-width:760px) calc(100vw - 44px), 740px"','imagesizes="100vw"',hsh_photo_article_preload($asset)) . "\n";
 },1);
 
 /** Discover the article's existing lead photo before render-blocking styles finish. */

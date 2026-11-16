@@ -11,7 +11,7 @@ class StoryApplication(unittest.TestCase):
  def test_bowl_choice_starts_from_existing_bowl(self):
   self.assertIn('今使っている食器',self.headings('hario-cat-bowl-guide')[0])
  def test_workstyle_story_preserves_owner_chronology(self):
-  h=self.headings('it-data-work-flow');self.assertLess(h.index('正社員なら安心だと思っていた'),h.index('派遣に変えた理由は、生活の変化だった'));self.assertLess(h.index('派遣に変えた理由は、生活の変化だった'),h.index('知人から、個人事業主という働き方を紹介された'))
+  h=self.headings('it-data-work-flow');self.assertLess(h.index('家族も周りも会社員。それが普通だと思っていた'),h.index('30歳目前で、やりたいことを優先して派遣社員へ'));self.assertLess(h.index('30歳目前で、やりたいことを優先して派遣社員へ'),h.index('知人から、個人事業主という働き方を紹介された'))
  def test_official_tower_image_has_product_context(self):
   h=self.headings('onekosama-cat-tower');self.assertIn('設置方法',h[0]);self.assertIn('まんもす',h[1])
  def test_ad_cta_stays_after_all_article_sections(self):

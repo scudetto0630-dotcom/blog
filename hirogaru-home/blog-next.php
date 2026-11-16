@@ -67,7 +67,41 @@ add_action('pre_get_posts',function($q){
     $topic=hsh_search_topic(isset($_GET['hsh_topic'])?wp_unslash($_GET['hsh_topic']):'');
     $q->set('post_type','post');if($topic)$q->set('category_name',$topic);
 });
+function hsh_workstyle_article_link($slug){$p=get_page_by_path($slug,OBJECT,'post');return (!$p||$p->post_status!=='publish')?'':'<a href="'.esc_url(get_permalink($p)).'">'.esc_html(get_the_title($p)).'</a>';}
+function hsh_workstyle_groups(){return array(
+ 'choice'=>array('転職か独立か迷っている','会社を変えたいのか、働き方を変えたいのか。残したい条件から考えてみよう。',array('changing-job-or-working-style','employee-vs-self-employed','freelance-and-sole-proprietor','starting-it-without-specialty')),
+ 'money'=>array('お金や休みが気になる','売上から使えるお金はどのくらい？ 休みや健康保険も、暮らしと合わせて比べたい。',array('freelance-sales-and-take-home','freelance-days-off','freelance-health-insurance')),
+ 'contract'=>array('仕事を受ける前に知りたい','報酬だけでなく、担当する範囲と支払日、契約が終わるときのことまで。',array('freelance-contract-before-start','freelance-contract-renewal-end'))
+);}
+function hsh_workstyle_entry(){
+ $out='<nav class="hsh-workstyle-entry" id="hsh-workstyle-entry" aria-label="働き方の疑問から記事を選ぶ"><p class="hsh-eyebrow">WORK STYLE</p><h2>今、気になっていることから</h2><div class="hsh-workstyle-paths">';
+ foreach(hsh_workstyle_groups() as $key=>$group){$items='';foreach($group[2] as $slug){$link=hsh_workstyle_article_link($slug);if($link!=='')$items.='<li>'.$link.'</li>';}if($items==='')continue;$out.='<section id="hsh-workstyle-'.$key.'"><h3>'.esc_html($group[0]).'</h3><p>'.esc_html($group[1]).'</p><ul>'.$items.'</ul></section>';}
+ $out.='</div><details class="hsh-workstyle-data"><summary>データの扱い方を調べたい方はこちら</summary><ul>';
+ foreach(array('ai-data-extraction-checks','csv-import-seven-checks') as $slug){$link=hsh_workstyle_article_link($slug);if($link!=='')$out.='<li>'.$link.'</li>';}
+ return $out.'</ul></details></nav>';
+}
+function hsh_workstyle_followups($slug){
+ $map=array(
+ 'it-data-work-flow'=>array('changing-job-or-working-style'=>'自分も働き方に迷っているなら','employee-vs-self-employed'=>'正社員との違いが気になったら'),
+ 'employee-vs-self-employed'=>array('freelance-sales-and-take-home'=>'まずお金を比べるなら','freelance-days-off'=>'休みの違いを詳しく読むなら'),
+ 'freelance-and-sole-proprietor'=>array('employee-vs-self-employed'=>'暮らしに関わる違いを比べるなら','freelance-contract-before-start'=>'個人で仕事を受けるなら'),
+ 'freelance-sales-and-take-home'=>array('freelance-health-insurance'=>'保険料も含めて考えるなら','freelance-contract-before-start'=>'報酬の条件を確かめるなら'),
+ 'changing-job-or-working-style'=>array('it-data-work-flow'=>'自分が個人事業主を選んだ経緯','employee-vs-self-employed'=>'働く条件を具体的に比べるなら'),
+ 'freelance-contract-before-start'=>array('freelance-contract-renewal-end'=>'契約が終わるときも知りたいなら','freelance-sales-and-take-home'=>'報酬と手元のお金を比べるなら'),
+ 'freelance-days-off'=>array('employee-vs-self-employed'=>'休み以外の条件も比べるなら','freelance-sales-and-take-home'=>'休む期間のお金も考えるなら'),
+ 'freelance-health-insurance'=>array('freelance-sales-and-take-home'=>'毎月使えるお金を考えるなら','employee-vs-self-employed'=>'働き方の違いをまとめて読むなら'),
+ 'freelance-contract-renewal-end'=>array('freelance-contract-before-start'=>'次の契約を始める前に','freelance-sales-and-take-home'=>'最後の入金と生活費を考えるなら'),
+ 'starting-it-without-specialty'=>array('changing-job-or-working-style'=>'仕事内容以外も変えたいなら','it-data-work-flow'=>'今の働き方にたどり着くまで'),
+ 'ai-data-extraction-checks'=>array('csv-import-seven-checks'=>'抽出したデータを取り込むなら','freelance-contract-before-start'=>'仕事でAIを使う条件を知りたいなら'),
+ 'csv-import-seven-checks'=>array('ai-data-extraction-checks'=>'AIの抽出結果も確かめるなら','freelance-contract-before-start'=>'作業の担当範囲を決めるなら')
+ );return $map[$slug]??array();
+}
+function hsh_workstyle_followup_markup($slug){
+ $items='';foreach(hsh_workstyle_followups($slug) as $next=>$reason){$link=hsh_workstyle_article_link($next);if($link==='')continue;$items.='<li><span class="hsh-followup-reason">'.esc_html($reason).'</span>'.$link.'</li>';}
+ return $items===''?'':'<nav class="hsh-related hsh-followups hsh-workstyle-followups" aria-label="この記事の続きに読みたい記事"><h2>このあと読むなら</h2><ul>'.$items.'</ul><a class="hsh-workstyle-all" href="'.esc_url(hsh_category_url('it-freelance').'#hsh-workstyle-entry').'">働き方の記事を選ぶ →</a></nav>';
+}
 function hsh_start_routes($topic=null){
+    if($topic==='it-freelance')return hsh_workstyle_entry();
     $routes=array('cats'=>array('manmos-cat-life','before-welcoming-cat','cat-teaser-small-parts','cat-carrier-checklist','cat-vet-routine'),'whisky'=>array('glenlivet-12-first-bottles','sherry-cask-notes','single-malt-label-guide','highball-measure-and-adjust'),'it-freelance'=>array('it-data-work-flow','employee-vs-self-employed','freelance-and-sole-proprietor','freelance-sales-and-take-home','changing-job-or-working-style','freelance-contract-before-start','starting-it-without-specialty','ai-data-extraction-checks','csv-import-seven-checks'));
     $out='<nav class="hsh-start-routes" aria-label="初めての方向けの読む順番"><h2>どこから読めばいい？</h2>';
     foreach($routes as $key=>$slugs){if($topic&&$topic!==$key)continue;$out.='<section><h3>'.esc_html(hsh_topics()[$key][0]).'</h3><ol>';
@@ -124,7 +158,8 @@ function hsh_restore_probe(){
 add_action('rest_api_init',function(){register_rest_route('hirogaru/v1','/restore-probe',array('methods'=>'POST','permission_callback'=>'hsh_edit_permission','callback'=>function($r){if($r->get_json_params()!==array())return new WP_Error('hsh_input','空の入力だけ受け付けます。',array('status'=>400));return hsh_restore_probe();}));});
 
 function hsh_related_curated($topic,$id){
-    $selected=get_post_meta($id,'_hsh_related_ids',true);$posts=array();
+    $selected=get_post_meta($id,'_hsh_related_ids',true);$posts=array();$current=get_post($id);
+    if($topic==='it-freelance'&&$current)foreach(hsh_workstyle_followups($current->post_name) as $slug=>$reason){$p=get_page_by_path($slug,OBJECT,'post');if($p&&$p->post_status==='publish')$posts[]=$p;}
     if(is_array($selected))foreach($selected as $related){$p=get_post((int)$related);if($p&&$p->post_status==='publish'&&$p->ID!==$id&&has_category($topic,$p))$posts[]=$p;}
     return hsh_select_related(array_merge($posts,hsh_posts($topic,8)),$id);
 }

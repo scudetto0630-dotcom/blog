@@ -27,7 +27,7 @@ function hsh_search_markup($id) {
 }
 add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style('hsh-reading', plugin_dir_url(__FILE__) . 'assets/reading.css', array(), '1.47.0');
-    if ((int)get_option('hsh_page_id') && is_page((int)get_option('hsh_page_id'))) {
+    if (hsh_current_topic() || ((int)get_option('hsh_page_id') && is_page((int)get_option('hsh_page_id')))) {
         foreach (array('cocoon-style','cocoon-keyframes','font-awesome-style','icomoon-style','baguettebox-style','cocoon-child-style','cocoon-child-keyframes','contact-form-7') as $handle) { wp_dequeue_style($handle); }
     }
 }, 100);

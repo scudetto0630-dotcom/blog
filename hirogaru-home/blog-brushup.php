@@ -37,7 +37,7 @@ function hsh_topic_reading_route($topic) {
         'it-freelance'=>array('元ファイルを残す'=>'csv-import-seven-checks-0','先頭の0を確認する'=>'csv-import-seven-checks-3','作業前の確認メモ'=>'csv-import-seven-checks-checklist'),
     );
     if(!isset($routes[$topic]))return '';
-    $details=hsh_topic_details();$post=get_page_by_path($details[$topic][2],OBJECT,'post');
+    $details=hsh_topic_details();$post=get_page_by_path($topic==='it-freelance'?'csv-import-seven-checks':$details[$topic][2],OBJECT,'post');
     if(!$post||$post->post_status!=='publish')return '';
     $out='<nav class="hsh-reading-route" aria-label="知りたい内容から読む"><h2>知りたい内容から読む</h2><ul>';
     foreach($routes[$topic] as $label=>$anchor){$target=$anchor==='hsh-bottle-price'?get_page_by_path('single-malt-label-guide',OBJECT,'post'):$post;if(!$target||$target->post_status!=='publish')continue;$out.='<li><a href="'.esc_url(get_permalink($target).'#'.$anchor).'">'.esc_html($label).' <span aria-hidden="true">→</span></a></li>';}

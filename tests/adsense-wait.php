@@ -37,4 +37,12 @@ check(hsh_studio_revision_date('tomorrow','',$clock)===''&&hsh_studio_revision_d
 $schema='<head><script type="application/ld+json">{"@type":"Article","datePublished":"2026-11-03","dateModified":"2026-11-10"}</script></head><body>same</body>';
 $fixed=hsh_growth_metadata($schema,array('og:image'=>'https://example.test/a.webp','og:image:width'=>'800','og:image:height'=>'600','description'=>'same'),'2026-11-13T08:04:21+00:00');
 check(strpos($fixed,'"datePublished":"2026-11-03"')!==false&&strpos($fixed,'"dateModified":"2026-11-13T08:04:21+00:00"')!==false,'schema has the actual revision and original publication date');
+$hub=hsh_start_routes('it-freelance');
+check(strpos($hub,'id="hsh-workstyle-entry"')!==false&&substr_count($hub,'class="hsh-workstyle-paths"')===1,'workstyle category has one stable question-based entry');
+foreach(array('choice','money','contract') as $key)check(strpos($hub,'id="hsh-workstyle-'.$key.'"')!==false,'workstyle question group has a stable target '.$key);
+foreach(array('freelance-days-off','freelance-health-insurance','freelance-contract-renewal-end') as $slug)check(strpos($hub,esc_url(get_permalink(get_page_by_path($slug,OBJECT,'post'))))!==false,'recent practical guide is reachable from workstyle hub '.$slug);
+check(hsh_workstyle_followup_markup('unrelated-slug')==='','workstyle followups do not leak onto unrelated posts');
+$next=hsh_workstyle_followup_markup('freelance-sales-and-take-home');check(strpos($next,esc_url(get_permalink(get_page_by_path('freelance-health-insurance',OBJECT,'post'))))!==false&&strpos($next,'保険料も含めて')!==false&&substr_count($next,'hsh-followup-reason')===2,'followups explain two relevant next questions');
+$route=hsh_topic_reading_route('it-freelance');check(strpos($route,esc_url(get_permalink(get_page_by_path('csv-import-seven-checks',OBJECT,'post')).'#csv-import-seven-checks-0'))!==false&&strpos($route,'employee-vs-self-employed/#csv')===false,'data checklist anchors point to the actual CSV article');
+$hero=hsh_photo_manifest()['assets']['manmos-rest'];$heroPreload=hsh_photo_article_preload($hero);check(strpos($heroPreload,'manmos-rest-600.webp 600w')!==false&&strpos(hsh_photo_slide_image($hero,true),'manmos-rest-600.webp 600w')!==false,'hero and preload share responsive candidates');
 echo "All AdSense-wait checks passed. Total: $tests\n";
