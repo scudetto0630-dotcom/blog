@@ -19,6 +19,19 @@ function hsh_owned_blog_post($post){
 }
 function hsh_release_status(){
     $rows=array();foreach(hsh_release_items() as $a){$p=get_page_by_path($a['slug'],OBJECT,'post');$owned=$p&&get_post_meta($p->ID,'_hsh_bundle_owned',true)===$a['slug'];$rows[]=array('slug'=>$a['slug'],'id'=>$owned?$p->ID:null,'status'=>$owned?$p->post_status:($p?'conflict':'missing'),'fingerprint'=>$owned?hsh_article_fingerprint($p):null,'url'=>$owned?get_permalink($p):null);}
+    // Only return raw bodies for this bundle's owned, already-public posts.
+    // Drafts, unrelated posts and conflicting slugs never expose their content.
+    foreach($rows as &$row){
+        if($row['status']!=='publish'||!$row['id'])continue;
+        $post=get_post($row['id']);
+        if(!$post||!hsh_owned_blog_post($post)||$post->post_status!=='publish')continue;
+        $row['title']=(string)$post->post_title;
+        $row['content']=(string)$post->post_content;
+        $row['excerpt']=(string)($post->post_excerpt??'');
+        $row['featured_image_id']=(int)get_post_thumbnail_id($post->ID);
+        $row['published_at']=(string)($post->post_date??'');
+        $row['published_at_gmt']=(string)($post->post_date_gmt??'');
+    }unset($row);
     return hsh_edit_response(array('articles'=>$rows));
 }
 function hsh_release_article($request){

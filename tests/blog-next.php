@@ -19,6 +19,9 @@ foreach($items as $a)check(strpos($a['content'],'4匹')===false&&stripos($a['con
 $GLOBALS['test_publishers']=array(3);$options['hsh_page_id']=900;$records[900]['post_author']=3;
 $before=count($records);$missing_category='cats';$r=hsh_release_article(new Request(array('slug'=>$items[0]['slug'],'expected'=>null)));check($r->code==='hsh_category'&&count($records)===$before,'missing category produces no partial article');unset($missing_category);
 foreach($items as $a){$r=hsh_release_article(new Request(array('slug'=>$a['slug'],'expected'=>null)));check($r instanceof WP_REST_Response&&get_post($r->data['id'])->post_status==='publish','packaged publication: '.$a['slug']);}
+$public_snapshot=hsh_release_status()->data['articles'];
+check(isset($public_snapshot[0]['title'],$public_snapshot[0]['content'],$public_snapshot[0]['excerpt'])&&$public_snapshot[0]['content']===$items[0]['content'],'authenticated snapshot includes the current owned public body');
+$public_id=$public_snapshot[0]['id'];$records[$public_id]['post_status']='draft';$draft_snapshot=hsh_release_status()->data['articles'];check(!array_key_exists('content',$draft_snapshot[0]),'raw body is withheld when the owned post is no longer public');$records[$public_id]['post_status']='publish';
 $before=count($records);$r=hsh_release_article(new Request(array('slug'=>$items[0]['slug'],'expected'=>null)));check($r->code==='hsh_conflict'&&count($records)===$before,'retry does not duplicate or overwrite an existing article');
 $p=get_page_by_path($items[0]['slug']);$id=$p->ID;$original=$p->post_content;
 hsh_remember_blog_post($p);wp_update_post(array('ID'=>$id,'post_content'=>'changed','post_title'=>'Changed title','post_excerpt'=>'changed'));
