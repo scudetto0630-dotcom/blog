@@ -1,0 +1,79 @@
+{
+  "version": "1.50.1",
+  "source_commit": "93cfdda9bae229fb5c02d06ebae379d782645332",
+  "package": {
+    "commit": "d22eddd2a565ea507d2553875d1a56ee1b4badea",
+    "sha256": "9f0621796b827afcfae95591ee3a2e67c20074acadfe12693bf71bdbef511f9f",
+    "expected_version": "1.50.0"
+  },
+  "package_files": 451,
+  "package_bytes": 20560444,
+  "existing_public_posts": 56,
+  "preserved_ids_titles_publication_dates_urls_native_thumbnails": 56,
+  "revised_bodies": [
+    "it-data-work-flow",
+    "changing-job-or-working-style",
+    "aigan-dobutsu-course"
+  ],
+  "workstyle_followup_articles": 12,
+  "hub_groups": 3,
+  "browser_checks": 32,
+  "widths": [
+    320,
+    390,
+    1440
+  ],
+  "no_javascript_checked": true,
+  "reader_pages_checked": 68,
+  "internal_links_checked": 3804,
+  "reader_problems": 0,
+  "orphaned": 0,
+  "python_tests": 92,
+  "php_checks": 1612,
+  "search_report": "private; connected; actual workflow succeeded; insufficient history for CTR-driven title changes",
+  "mobile_image_variants": [
+    {
+      "asset": "manmos-rest",
+      "original_bytes": 115430,
+      "mobile_bytes": 30942
+    },
+    {
+      "asset": "detail-topic-work",
+      "original_bytes": 100488,
+      "mobile_bytes": 35480
+    },
+    {
+      "asset": "article-workflow",
+      "original_bytes": 83986,
+      "mobile_bytes": 29562
+    }
+  ],
+  "laboratory_measurement": {
+    "conditions": "390px, empty cache, CPU x4, download 180000 bytes/s, latency 100ms; third-party advertising/analytics blocked in both runs",
+    "samples_per_page_per_revision": 1,
+    "pages": [
+      {
+        "page": "home",
+        "before_resource_bytes": 359210,
+        "after_resource_bytes": 340833,
+        "before_lcp_ms": 2940,
+        "after_lcp_ms": 2432
+      },
+      {
+        "page": "category/it-freelance/",
+        "before_resource_bytes": 170525,
+        "after_resource_bytes": 109228,
+        "before_lcp_ms": 1896,
+        "after_lcp_ms": 1660
+      },
+      {
+        "page": "freelance-health-insurance/",
+        "before_resource_bytes": 332839,
+        "after_resource_bytes": 333308,
+        "before_lcp_ms": 2276,
+        "after_lcp_ms": 2500
+      }
+    ],
+    "limit": "Laboratory samples are not real-user Core Web Vitals or proof of SEO/traffic improvement. Lazy image loading can change which below-fold requests finish within the measurement window."
+  }
+}
