@@ -12,7 +12,7 @@ function hsh_affiliate_articles() {
     return $items;
 }
 function hsh_release_items(){return array_merge(hsh_expanded_articles(),hsh_affiliate_articles());}
-function hsh_catalog(){return array_merge(hsh_article_map(),hsh_release_items());}
+function hsh_catalog(){$merged=function_exists('hsh_consolidations')?hsh_consolidations():array();return array_values(array_filter(array_merge(hsh_article_map(),hsh_release_items()),function($a)use($merged){return !isset($merged[$a['slug']]);}));}
 function hsh_catalog_topic($slug){if(!is_string($slug))return '';foreach(hsh_catalog() as $a)if($a['slug']===$slug&&isset(hsh_topics()[$a['topic']]))return $a['topic'];return '';}
 function hsh_owned_blog_post($post){
     return $post&&$post->post_type==='post'&&(get_post_meta($post->ID,'_hsh_starter_owned',true)===$post->post_name||get_post_meta($post->ID,'_hsh_bundle_owned',true)===$post->post_name);
@@ -39,6 +39,7 @@ function hsh_release_article($request){
     if(!is_array($d)||array_diff(array_keys($d),array('slug','expected'))||!isset($d['slug'])||!is_string($d['slug'])||!array_key_exists('expected',$d)||($d['expected']!==null&&(!is_string($d['expected'])||!preg_match('/^[a-f0-9]{64}$/D',$d['expected']))))return new WP_Error('hsh_input','記事と確認用の指紋を指定してください。',array('status'=>400));
     $a=null;foreach(hsh_release_items() as $row)if($row['slug']===$d['slug'])$a=$row;
     if(!$a)return new WP_Error('hsh_scope','同梱記事以外は公開できません。',array('status'=>403));
+    if(function_exists('hsh_consolidations')&&isset(hsh_consolidations()[$a['slug']]))return new WP_Error('hsh_merged','この記事は比較記事へ統合されています。',array('status'=>409));
     if(!add_option('hsh_bundle_lock',time(),'',false))return new WP_Error('hsh_busy','他の記事を処理中です。',array('status'=>409));
     try{
         $p=get_page_by_path($a['slug'],OBJECT,'post');$home=get_post((int)get_option('hsh_page_id'));$author=$home?(int)$home->post_author:0;

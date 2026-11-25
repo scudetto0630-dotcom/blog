@@ -1,0 +1,15 @@
+{
+  "target": "withpety-nekokenshin",
+  "marker": "withpety-comparison-20261125",
+  "sources": {
+    "withpety-nekobihada": "supplement-nekobihada",
+    "withpety-nekoryoukan": "supplement-nekoryoukan",
+    "withpety-nekoissho": "supplement-nekoissho",
+    "withpety-nekokouken": "supplement-nekokouken",
+    "withpety-nekosoukai": "supplement-nekosoukai",
+    "withpety-nekoshuukan": "supplement-nekoshuukan",
+    "withpety-nekoaigan": "supplement-nekoaigan",
+    "withpety-nekojinkatsu": "supplement-nekojinkatsu",
+    "withpety-nekosanpo": "supplement-nekosanpo"
+  }
+}

@@ -8,8 +8,10 @@ const memory={};let storageAvailable=true;
 const read=(key,fallback)=>{if(!storageAvailable&&key in memory)return memory[key];try{const value=localStorage.getItem(key);return value===null?fallback:JSON.parse(value);}catch{storageAvailable=false;return memory[key]??fallback;}};
 const write=(key,value)=>{memory[key]=value;try{localStorage.setItem(key,JSON.stringify(value));window.dispatchEvent(new CustomEvent('hsh:record',{detail:{key}}));return true;}catch{storageAvailable=false;return false;}};
 const keySaved='hsh-saved-articles-v1',keyPlaces='hsh-reading-places-v1';
-function saved(){const a=read(keySaved,[]);return Array.isArray(a)?[...new Set(a.filter(id=>typeof id==='string'&&catalog.has(id)))].slice(0,100):[];}
-function persistSaved(list){const raw=read(keySaved,[]),unknown=Array.isArray(raw)?raw.filter(id=>typeof id==='string'&&/^[a-z0-9-]{1,100}$/.test(id)&&!catalog.has(id)):[];return write(keySaved,[...new Set([...list.filter(id=>catalog.has(id)),...unknown])].slice(0,100));}
+const merged=data.mergedArticles||{};
+const currentId=id=>typeof id==='string'&&Object.hasOwn(merged,id)&&catalog.has(merged[id])?merged[id]:id;
+function saved(){const a=read(keySaved,[]);return Array.isArray(a)?[...new Set(a.map(currentId).filter(id=>typeof id==='string'&&catalog.has(id)))].slice(0,100):[];}
+function persistSaved(list){const raw=read(keySaved,[]),unknown=Array.isArray(raw)?raw.filter(id=>typeof id==='string'&&/^[a-z0-9-]{1,100}$/.test(id)&&!catalog.has(currentId(id))):[];return write(keySaved,[...new Set([...list.map(currentId).filter(id=>catalog.has(id)),...unknown])].slice(0,100));}
 function announce(message){const s=document.querySelector('.hsh-reader-status');if(s)s.textContent=message;}
 function syncBookmark(){document.querySelectorAll('[data-hsh-bookmark]').forEach(button=>{if(!catalog.has(data.current)){button.hidden=true;return;}const active=saved().includes(data.current);button.hidden=false;button.setAttribute('aria-pressed',String(active));button.textContent=active?'保存済み':'この記事を保存';button.title='この端末のブラウザーに保存します';});}
 document.querySelectorAll('[data-hsh-bookmark]').forEach(button=>button.addEventListener('click',()=>{if(!catalog.has(data.current))return;let list=saved();const remove=list.includes(data.current);list=remove?list.filter(id=>id!==data.current):[data.current,...list].slice(0,100);const ok=persistSaved(list);syncBookmark();announce(ok?(remove?'保存した記事から外しました。':'この端末に保存しました。'): 'ブラウザーに保存できません。この画面を閉じるまでの保存になります。');}));syncBookmark();

@@ -5,7 +5,8 @@ from html.parser import HTMLParser
 import json
 from pathlib import Path
 from urllib.parse import urlsplit, urljoin, unquote, quote
-from urllib.request import Request, urlopen
+from urllib.request import Request, urlopen, build_opener, HTTPRedirectHandler
+from urllib.error import HTTPError
 
 BASE = 'https://hirogarushumi.com'
 ROOT = Path(__file__).resolve().parents[1]
@@ -91,6 +92,8 @@ def fetch(path):
 
 def audit():
     catalog = json.loads((ROOT / 'hirogaru-home/article-map.json').read_text()) + json.loads((ROOT / 'hirogaru-home/expanded-articles.json').read_text()) + json.loads((ROOT / 'hirogaru-home/affiliate-articles.json').read_text())
+    plan = json.loads((ROOT / 'hirogaru-home/article-consolidations.json').read_text())
+    catalog = [a for a in catalog if a['slug'] not in plan['sources']]
     paths = ['/' + r['slug'] + '/' for r in catalog]
     paths += ['/', '/category/cats/', '/category/whisky/', '/category/it-freelance/', '/hsh-about/',  '/hsh-gallery/', '/hsh-whisky-notes/', '/hsh-updates/', '/hsh-hakushu-visit/', '/hsh-reading-list/', '/ひろがる趣味暮らしについて/', '/お問い合わせ/', '/プライバシーポリシー/']
     problems, pages, rows = [], {}, []
@@ -141,7 +144,21 @@ def audit():
     orphaned = [p for p in paths if p != '/' and not inbound[p]]
     for path in orphaned:
         problems.append({'path': path, 'problem': 'no incoming managed-page link'})
-    return {'scope': 'own public pages, local JSON-LD field checks; not Google Rich Results or Search Console index validation', 'pages': rows, 'internal_links_checked': checked, 'orphaned': orphaned, 'problems': problems}
+    class NoRedirect(HTTPRedirectHandler):
+        def redirect_request(self, *args): return None
+    redirects = []
+    for slug, anchor in plan['sources'].items():
+        expected = BASE + '/' + plan['target'] + '/#' + anchor
+        status, location = None, None
+        try:
+            with build_opener(NoRedirect()).open(BASE + '/' + slug + '/', timeout=40) as r:
+                status = r.status
+        except HTTPError as e:
+            status, location = e.code, e.headers.get('Location')
+        redirects.append({'path': '/' + slug + '/', 'status': status, 'location': location})
+        if status != 301 or location != expected or anchor not in pages['/' + plan['target'] + '/'].ids:
+            problems.append({'path': '/' + slug + '/', 'problem': 'consolidation redirect or target section mismatch'})
+    return {'scope': 'own public pages, local JSON-LD field checks; not Google Rich Results or Search Console index validation', 'pages': rows, 'redirects': redirects, 'internal_links_checked': checked, 'orphaned': orphaned, 'problems': problems}
 
 
 if __name__ == '__main__':

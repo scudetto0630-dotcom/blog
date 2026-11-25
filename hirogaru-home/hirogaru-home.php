@@ -2,7 +2,7 @@
 /**
  * Plugin Name: ひろがる趣味暮らし トップページ
  * Description: 猫・ウイスキー・ITとフリーランスのトップページ。管理画面から適用・復元できます。
- * Version: 1.50.1
+ * Version: 1.51.0
  * Requires at least: 6.0
  * Requires PHP: 7.4
  */
@@ -127,6 +127,7 @@ require_once plugin_dir_path(__FILE__) . 'cat-guide-preview.php';
 require_once plugin_dir_path(__FILE__) . 'freelance-site.php';
 
 require_once plugin_dir_path(__FILE__) . 'blog-next.php';
+require_once plugin_dir_path(__FILE__) . 'article-consolidation.php';
 
 require_once plugin_dir_path(__FILE__) . 'photo-gallery.php';
 

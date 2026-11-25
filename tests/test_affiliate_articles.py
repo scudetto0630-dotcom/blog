@@ -18,9 +18,14 @@ class AffiliateTests(unittest.TestCase):
   for a in self.articles:
    with self.subTest(a=a['slug']):
     r=self.by[a['affiliate_id']];p=Links();p.feed(a['content']);ad=[x for x in p.anchors if 'px.a8.net' in x.get('href','')]
-    self.assertEqual(len(ad),1);self.assertEqual(ad[0]['href'],r['affiliate_url']);self.assertTrue({'nofollow','sponsored'}<=set(ad[0]['rel'].split()))
-    original=Links();original.feed(r['source_code']);expected=[i['src'] for i in original.images]
-    self.assertEqual([i['src'] for i in p.images],expected)
+    ids=a.get('consolidated_affiliate_ids',[a['affiliate_id']]);expected_links=[self.by[i]['affiliate_url'] for i in ids]
+    self.assertEqual([x['href'] for x in ad],expected_links)
+    for link in ad:self.assertTrue({'nofollow','sponsored'}<=set(link['rel'].split()))
+    expected=[]
+    for identifier in ids:
+     original=Links();original.feed(self.by[identifier]['source_code']);expected.extend(i['src'] for i in original.images)
+    # Official comparison photos are separate from the unchanged tracking pixels.
+    self.assertEqual([i['src'] for i in p.images if '.a8.net/' in i.get('src','')],expected)
  def test_substance_structure_and_nonfabrication(self):
   for a in self.articles:
    with self.subTest(a=a['slug']):

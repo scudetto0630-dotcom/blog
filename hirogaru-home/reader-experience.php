@@ -18,7 +18,7 @@ function hsh_reader_catalog() {
     }
     $known=array_column($rows,'id');
     foreach(get_posts(array('post_type'=>'post','post_status'=>'publish','numberposts'=>500,'orderby'=>'date','order'=>'DESC')) as $p){
-        if($p->post_status!=='publish'||(int)$p->ID===8||in_array($p->post_name,$known,true))continue;
+        if($p->post_status!=='publish'||(int)$p->ID===8||in_array($p->post_name,$known,true)||(function_exists('hsh_consolidations')&&isset(hsh_consolidations()[$p->post_name])))continue;
         $topic='';foreach(array_keys(hsh_topics()) as $key)if(has_category($key,$p)){$topic=$key;break;}if(!$topic)continue;
         $rows[]=array('id'=>$p->post_name,'title'=>$p->post_title,'url'=>get_permalink($p),'topic'=>$topic,'summary'=>mb_substr(wp_strip_all_tags($p->post_excerpt??''),0,100,'UTF-8'),'image'=>'');
     }
@@ -80,7 +80,7 @@ add_action('wp_enqueue_scripts', function() {
     if (!hsh_reader_scope()) return;
     wp_enqueue_style('hsh-home', plugin_dir_url(__FILE__).'assets/home.css', array(), '1.38.2');
     wp_enqueue_style('hsh-reader', plugin_dir_url(__FILE__).'assets/reader.css', array('hsh-growth'), '1.38.2');
-    wp_enqueue_script('hsh-reader', plugin_dir_url(__FILE__).'assets/reader.js', array(), '1.38.9', true);
+    wp_enqueue_script('hsh-reader', plugin_dir_url(__FILE__).'assets/reader.js', array(), '1.51.0', true);
 
 }, 120);
 function hsh_reader_bootstrap(){return '<script>document.documentElement.classList.add("hsh-reader-js");</script>';}
@@ -95,6 +95,7 @@ add_action('wp_footer', function() {
     if (!hsh_reader_scope()) return;
     $p = hsh_reader_managed() ? get_post(get_queried_object_id()) : null;
     $data = array('articles'=>hsh_reader_catalog(), 'current'=>$p?$p->post_name:null, 'savedUrl'=>home_url('/hsh-reading-list/'));
+    $data['mergedArticles']=function_exists('hsh_consolidations')?array_fill_keys(array_keys(hsh_consolidations()),hsh_consolidation_plan()['target']):array();
     echo '<script id="hsh-reader-data" type="application/json">'.wp_json_encode($data, JSON_HEX_TAG|JSON_HEX_AMP|JSON_HEX_APOS|JSON_HEX_QUOT).'</script>';
 }, 19);
 add_filter('the_content', function($content) {
