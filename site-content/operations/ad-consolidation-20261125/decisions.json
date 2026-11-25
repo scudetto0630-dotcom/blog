@@ -1,0 +1,144 @@
+{
+  "reviewed_on": "2026-11-25",
+  "scope": "remaining 20 public advertising articles after prior supplement consolidation",
+  "articles": [
+    {
+      "slug": "paws-green-deli-cat-food",
+      "title": "【ご紹介】パウズグリーンデリの猫用フード｜お試しセットの内容と選び方",
+      "decision": "continue",
+      "review": "retains a distinct product question; first-hand use is not implied"
+    },
+    {
+      "slug": "hario-cat-bowl-guide",
+      "title": "【ご紹介】HARIO「にゃんプレトール」｜猫用食器のサイズとお手入れ",
+      "decision": "continue",
+      "review": "retains a distinct product question; first-hand use is not implied"
+    },
+    {
+      "slug": "mirai-cat-food-types",
+      "title": "【ご紹介】和漢みらいのキャットフード｜3タイプの違いと選ぶときの注意点",
+      "decision": "continue",
+      "review": "retains a distinct product question; first-hand use is not implied"
+    },
+    {
+      "slug": "m-and-cat-knit-bag",
+      "title": "【ご紹介】M&Co.の猫モチーフ雑貨｜ニットバッグとチャーム",
+      "decision": "withdrawn",
+      "reason": "具体的な商品比較や利用経験がなく、一般的な購入案内が中心",
+      "old_url_status": 410,
+      "original_body": "preserved as WordPress draft"
+    },
+    {
+      "slug": "pet-sougi-110-cat-guide",
+      "title": "【ご紹介】ペット葬儀110番｜火葬プランと相談前に確認したいこと",
+      "decision": "withdrawn",
+      "reason": "窓口の一般的な案内が中心で、利用経験や比較材料が不足",
+      "old_url_status": 410,
+      "original_body": "preserved as WordPress draft"
+    },
+    {
+      "slug": "digxipop-cat-figure",
+      "title": "【ご紹介】digxipopのペットフィギュア｜愛猫の写真で注文する流れ",
+      "decision": "withdrawn",
+      "reason": "制作結果や利用経験がなく、注文方法の紹介が中心",
+      "old_url_status": 410,
+      "original_body": "preserved as WordPress draft"
+    },
+    {
+      "slug": "withpety-nekokenshin",
+      "title": "【ご紹介】猫用サプリ10商品の違い｜ウィズペティの成分・形状を比較",
+      "decision": "continue",
+      "review": "retains a distinct product question; first-hand use is not implied"
+    },
+    {
+      "slug": "pontely-cat-dna-test",
+      "title": "【ご紹介】猫の遺伝子検査Pontely｜検査内容とプランの違い",
+      "decision": "continue",
+      "review": "retains a distinct product question; first-hand use is not implied"
+    },
+    {
+      "slug": "onekosama-cat-tower",
+      "title": "【ご紹介】おねこさまのキャットタワー｜置き場所と上り下りのしやすさで選ぶ",
+      "decision": "continue",
+      "review": "retains a distinct product question; first-hand use is not implied"
+    },
+    {
+      "slug": "catlog-cat-monitor",
+      "title": "【ご紹介】CatlogとCatlog Board｜記録できることと機能の違い",
+      "decision": "continue",
+      "review": "retains a distinct product question; first-hand use is not implied"
+    },
+    {
+      "slug": "pet-paradise-cat-toys",
+      "title": "【ご紹介】ペットパラダイスの猫おもちゃ｜けりぐるみと猫じゃらし",
+      "decision": "continue",
+      "review": "retains a distinct product question; first-hand use is not implied"
+    },
+    {
+      "slug": "canagan-dental-cat-food",
+      "title": "【ご紹介】カナガンデンタルの猫用フード｜原材料と与える前の注意点",
+      "decision": "consolidated",
+      "target": "canagan-chicken-salmon",
+      "old_url_status": 301,
+      "original_body": "preserved unchanged"
+    },
+    {
+      "slug": "canagan-chicken-salmon",
+      "title": "【ご紹介】猫用ドライフード8商品の違い｜原材料・成分・カロリーを比較",
+      "decision": "continue",
+      "review": "retains a distinct product question; first-hand use is not implied"
+    },
+    {
+      "slug": "mcadams-cat-chicken-turkey",
+      "title": "【ご紹介】マックアダムズの猫用フード｜原材料とオーブンベイク製法",
+      "decision": "consolidated",
+      "target": "canagan-chicken-salmon",
+      "old_url_status": 301,
+      "original_body": "preserved unchanged"
+    },
+    {
+      "slug": "essential-jaguar-cat-food",
+      "title": "【ご紹介】ジャガーキャットフード｜原材料・カロリー・粒の特徴",
+      "decision": "consolidated",
+      "target": "canagan-chicken-salmon",
+      "old_url_status": 301,
+      "original_body": "preserved unchanged"
+    },
+    {
+      "slug": "mognyan-cat-food-guide",
+      "title": "【ご紹介】モグニャンのキャットフード｜原材料・粒の大きさ・切り替え方",
+      "decision": "consolidated",
+      "target": "canagan-chicken-salmon",
+      "old_url_status": 301,
+      "original_body": "preserved unchanged"
+    },
+    {
+      "slug": "leo-luna-citta-bed",
+      "title": "【ご紹介】レオエルナの犬猫用ベッド｜シッタコレクションのサイズと洗い方",
+      "decision": "continue",
+      "review": "retains a distinct product question; first-hand use is not implied"
+    },
+    {
+      "slug": "aigan-dobutsu-course",
+      "title": "【ご紹介】愛玩動物飼養管理士｜2級・1級の費用と学習の流れ",
+      "decision": "continue",
+      "review": "retains a distinct product question; first-hand use is not implied"
+    },
+    {
+      "slug": "acana-orijen-cat-food-guide",
+      "title": "【ご紹介】アカナとオリジンの猫用フード｜レシピと成分表示の見方",
+      "decision": "consolidated",
+      "target": "canagan-chicken-salmon",
+      "old_url_status": 301,
+      "original_body": "preserved unchanged"
+    },
+    {
+      "slug": "linx-as-store",
+      "title": "【ご紹介】リンクサス酒販｜ウイスキーの状態と送料、返品条件をチェック",
+      "decision": "withdrawn",
+      "reason": "店舗固有の検討材料が少なく、一般的な注文案内が中心",
+      "old_url_status": 410,
+      "original_body": "preserved as WordPress draft"
+    }
+  ]
+}
