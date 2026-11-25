@@ -1,23 +1,23 @@
 <?php
 if(!defined('ABSPATH'))exit;
 /** Permanent editorial merges. Original posts/history remain recoverable, never deleted. */
-function hsh_consolidation_plan(){
-    static $plan=null;if($plan===null)$plan=json_decode(file_get_contents(__DIR__.'/article-consolidations.json'),true);return $plan;
+function hsh_consolidation_plans(){
+    static $plans=null;if($plans===null){$data=json_decode(file_get_contents(__DIR__.'/article-consolidations.json'),true);$plans=array(array('target'=>$data['target'],'marker'=>$data['marker'],'sources'=>$data['sources']));foreach($data['groups']??array() as $plan)$plans[]=$plan;}return $plans;
 }
-function hsh_consolidations(){
-    $saved=get_option('hsh_supplement_consolidation',array());
-    if(is_array($saved)&&!empty($saved['target'])){
-        $plan=hsh_consolidation_plan();
-        if(($saved['target']??'')!==$plan['target'])return array();
-        $p=get_page_by_path($plan['target'],OBJECT,'post');
-        if(!$p||$p->post_status!=='publish'||get_post_meta($p->ID,'_hsh_bundle_owned',true)!==$plan['target'])return array();
-        foreach(array_merge(array($plan['marker']),array_values($plan['sources'])) as $anchor)if(strpos($p->post_content,'id="'.$anchor.'"')===false)return array();
-        return array_filter($plan['sources'],function($anchor,$slug){$source=get_page_by_path($slug,OBJECT,'post');return $source&&$source->post_status==='publish'&&get_post_meta($source->ID,'_hsh_bundle_owned',true)===$slug;},ARRAY_FILTER_USE_BOTH);
-    }
-    return array();
+function hsh_consolidation_plan($target=null){foreach(hsh_consolidation_plans() as $plan)if($target===null||$plan['target']===$target)return $plan;return null;}
+function hsh_consolidation_option($plan){return $plan['target']===hsh_consolidation_plan()['target']?'hsh_supplement_consolidation':'hsh_consolidation_'.$plan['target'];}
+function hsh_consolidation_records(){
+    $records=array();foreach(hsh_consolidation_plans() as $plan){
+        $saved=get_option(hsh_consolidation_option($plan),array());if(!is_array($saved)||($saved['target']??'')!==$plan['target'])continue;
+        $p=get_page_by_path($plan['target'],OBJECT,'post');if(!$p||$p->post_status!=='publish'||get_post_meta($p->ID,'_hsh_bundle_owned',true)!==$plan['target'])continue;
+        $complete=true;foreach(array_merge(array($plan['marker']),array_values($plan['sources'])) as $anchor)if(strpos($p->post_content,'id="'.$anchor.'"')===false)$complete=false;if(!$complete)continue;
+        foreach($plan['sources'] as $slug=>$anchor){$source=get_page_by_path($slug,OBJECT,'post');if($source&&$source->post_status==='publish'&&get_post_meta($source->ID,'_hsh_bundle_owned',true)===$slug)$records[$slug]=array('target'=>$plan['target'],'anchor'=>$anchor);}
+    }return $records;
 }
+function hsh_consolidations(){$out=array();foreach(hsh_consolidation_records() as $slug=>$record)$out[$slug]=$record['anchor'];return $out;}
+function hsh_consolidation_targets(){$out=array();foreach(hsh_consolidation_records() as $slug=>$record)$out[$slug]=$record['target'];return $out;}
 function hsh_apply_consolidation($request){
-    $d=$request->get_json_params();$plan=hsh_consolidation_plan();$slugs=array_merge(array($plan['target']),array_keys($plan['sources']));
+    $d=$request->get_json_params();$plan=is_array($d)&&is_string($d['target']??null)?hsh_consolidation_plan($d['target']):null;if(!$plan)return new WP_Error('hsh_input','指定された統合先は対象外です。',array('status'=>400));$slugs=array_merge(array($plan['target']),array_keys($plan['sources']));
     if(!is_array($d)||array_diff(array_keys($d),array('target','expected'))||($d['target']??null)!==$plan['target']||!isset($d['expected'])||!is_array($d['expected'])||count($d['expected'])!==count($slugs)||array_diff(array_keys($d['expected']),$slugs))return new WP_Error('hsh_input','統合先と全記事の指紋を指定してください。',array('status'=>400));
     if(!add_option('hsh_bundle_lock',time(),'',false))return new WP_Error('hsh_busy','他の記事を処理中です。',array('status'=>409));
     try{
@@ -26,8 +26,8 @@ function hsh_apply_consolidation($request){
             if(!is_string($fp)||!preg_match('/^[a-f0-9]{64}$/D',$fp)||!$p||$p->post_status!=='publish'||get_post_meta($p->ID,'_hsh_bundle_owned',true)!==$slug||!hash_equals(hsh_article_fingerprint($p),$fp))return new WP_Error('hsh_conflict','記事が変更されています。再確認してください。',array('status'=>409));
             if($slug===$plan['target'])foreach(array_merge(array($plan['marker']),array_values($plan['sources'])) as $anchor)if(strpos($p->post_content,'id="'.$anchor.'"')===false)return new WP_Error('hsh_target','比較記事の公開と見出しを確認してください。',array('status'=>409));
         }
-        update_option('hsh_supplement_consolidation',array('target'=>$plan['target'],'at'=>time(),'fingerprints'=>$d['expected']),false);
-        if(count(hsh_consolidations())!==9)return new WP_Error('hsh_store','統合状態を保存できませんでした。',array('status'=>500));
+        update_option(hsh_consolidation_option($plan),array('target'=>$plan['target'],'at'=>time(),'fingerprints'=>$d['expected']),false);
+        if(count(array_intersect_key(hsh_consolidations(),$plan['sources']))!==count($plan['sources']))return new WP_Error('hsh_store','統合状態を保存できませんでした。',array('status'=>500));
         return hsh_edit_response(array('target'=>home_url('/'.$plan['target'].'/'),'redirected'=>array_keys($plan['sources']),'original_posts_preserved'=>true));
     }finally{delete_option('hsh_bundle_lock');}
 }
@@ -48,14 +48,14 @@ function hsh_consolidation_destination($url){
     $base=wp_parse_url(home_url('/'));if(isset($parts['host'])&&(strtolower($parts['host'])!==strtolower($base['host'])||isset($parts['port'])))return '';
     if(isset($parts['scheme'])&&!in_array($parts['scheme'],array('https','http'),true))return '';
     $path=$parts['path']??'';$basepath=rtrim($base['path']??'','/');
-    foreach(hsh_consolidations() as $slug=>$anchor)if($path===$basepath.'/'.$slug.'/'||$path===$basepath.'/'.$slug)return home_url('/'.hsh_consolidation_plan()['target'].'/').'#'.$anchor;
+    foreach(hsh_consolidation_records() as $slug=>$record)if($path===$basepath.'/'.$slug.'/'||$path===$basepath.'/'.$slug)return home_url('/'.$record['target'].'/').'#'.$record['anchor'];
     return '';
 }
 add_action('template_redirect',function(){
     if(is_admin()||!in_array($_SERVER['REQUEST_METHOD']??'GET',array('GET','HEAD'),true))return;
     $path=wp_parse_url($_SERVER['REQUEST_URI']??'',PHP_URL_PATH);if(!is_string($path))return;
     $destination=hsh_consolidation_destination($path);
-    if(!$destination){$p=get_post(get_queried_object_id());$merged=hsh_consolidations();if($p&&isset($merged[$p->post_name]))$destination=home_url('/'.hsh_consolidation_plan()['target'].'/').'#'.$merged[$p->post_name];}
+    if(!$destination){$p=get_post(get_queried_object_id());$merged=hsh_consolidation_records();if($p&&isset($merged[$p->post_name]))$destination=home_url('/'.$merged[$p->post_name]['target'].'/').'#'.$merged[$p->post_name]['anchor'];}
     if($destination){wp_safe_redirect($destination,301,'Hirogaru editorial consolidation');exit;}
 },0);
 function hsh_consolidation_links($html){

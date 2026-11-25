@@ -13,7 +13,7 @@ check(strpos(hsh_brushup_comparison('whisky'),'ぶどうパン')!==false,'whisky
 check(substr_count(hsh_brushup_photo_stories(),'<article>')===3,'photo stories use existing supplied photographs');
 check(strpos(hsh_brushup_first_steps(),'初めての方へ')!==false,'homepage introduction uses public starter routes');
 check(substr_count(hsh_brushup_empty_search(),'<a href=')===3,'empty search provides real article recommendations');
-check(strpos(hsh_brushup_related('mognyan-cat-food-guide'),'カナガン')!==false,'food article gets contextual related food article');
+check(strpos(hsh_brushup_related('mognyan-cat-food-guide'),'page_id='.(get_page_by_path('canagan-chicken-salmon')->ID))!==false,'food article gets contextual related food article');
 check(hsh_search_alias('アーボラリス')===hsh_search_alias('アルボラリス')&&hsh_search_alias('ウィスキー')==='ウイスキー','search variants converge');
 check(hsh_engagement_allowed('mognyan-cat-food-guide')&&!hsh_engagement_allowed('cat-carrier-checklist')&&!hsh_engagement_allowed('evil'),'click endpoint accepts only published owned affiliate posts');
 $_SERVER['HTTP_ORIGIN']='https://foreign.test';$r=hsh_engagement_receive(new Request(array('slug'=>'mognyan-cat-food-guide')));check(is_wp_error($r),'foreign-origin click event rejected');

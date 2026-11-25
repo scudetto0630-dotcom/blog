@@ -12,7 +12,7 @@ function hsh_affiliate_articles() {
     return $items;
 }
 function hsh_release_items(){return array_merge(hsh_expanded_articles(),hsh_affiliate_articles());}
-function hsh_catalog(){$merged=function_exists('hsh_consolidations')?hsh_consolidations():array();return array_values(array_filter(array_merge(hsh_article_map(),hsh_release_items()),function($a)use($merged){return !isset($merged[$a['slug']]);}));}
+function hsh_catalog(){$merged=function_exists('hsh_consolidations')?hsh_consolidations():array();return array_values(array_filter(array_merge(hsh_article_map(),hsh_release_items()),function($a)use($merged){return !isset($merged[$a['slug']])&&!(function_exists('hsh_retired_articles')&&isset(hsh_retired_articles()[$a['slug']]));}));}
 function hsh_catalog_topic($slug){if(!is_string($slug))return '';foreach(hsh_catalog() as $a)if($a['slug']===$slug&&isset(hsh_topics()[$a['topic']]))return $a['topic'];return '';}
 function hsh_owned_blog_post($post){
     return $post&&$post->post_type==='post'&&(get_post_meta($post->ID,'_hsh_starter_owned',true)===$post->post_name||get_post_meta($post->ID,'_hsh_bundle_owned',true)===$post->post_name);

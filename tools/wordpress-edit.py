@@ -14,7 +14,7 @@ class NoRedirect(urllib.request.HTTPRedirectHandler):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('operation', choices=['engagement-status', 'status', 'home', 'page', 'starter-posts', 'starter-status', 'starter-review', 'starter-refresh', 'managed-article', 'starter-image', 'plugin-update', 'site-audit', 'site-verification', 'introduction-review', 'introduction-refresh', 'cat-guide-reports', 'cat-guide-report-delete', 'cat-guide-maintenance', 'cat-guide-maintenance-run', 'public-page-review', 'public-page-release', 'content-release', 'content-consolidation', 'content-status', 'restore-probe', 'blog-health', 'blog-health-run', 'planner-status', 'planner-save', 'reader-status', 'search-report', 'reader-checkpoint'])
+    parser.add_argument('operation', choices=['engagement-status', 'status', 'home', 'page', 'starter-posts', 'starter-status', 'starter-review', 'starter-refresh', 'managed-article', 'starter-image', 'plugin-update', 'site-audit', 'site-verification', 'introduction-review', 'introduction-refresh', 'cat-guide-reports', 'cat-guide-report-delete', 'cat-guide-maintenance', 'cat-guide-maintenance-run', 'public-page-review', 'public-page-release', 'content-release', 'content-consolidation', 'content-retirement', 'content-status', 'restore-probe', 'blog-health', 'blog-health-run', 'planner-status', 'planner-save', 'reader-status', 'search-report', 'reader-checkpoint'])
     parser.add_argument('--payload', help='JSON file required for home/page writes')
     parser.add_argument('--query-route', action='store_true', help='Use WordPress rest_route query syntax')
     args = parser.parse_args()

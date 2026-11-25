@@ -59,8 +59,8 @@ add_filter('the_content',function($content){
     if(!in_the_loop()||!is_main_query())return $content;$p=get_post();if(!$p||$p->post_status!=='publish')return $content;
     if(hsh_owned_blog_post($p)&&hsh_brushup_type($p->post_name)==='product'){
         $slug=$p->post_name;$label='公式サイトで詳細・購入条件を見る';foreach(hsh_affiliate_articles() as $a)if($a['slug']===$slug){$label=($a['product_label']??preg_split('/[｜。]/u',preg_replace('/^【ご紹介】/u','',$a['title']))[0]).'の公式案内を見る';break;}
-        $content=preg_replace_callback('~(<aside class="hsh-affiliate-cta"[^>]*>.*?<a\b[^>]*>)(.*?)(</a>)~s',function($m)use($slug,$label){return (!empty((hsh_studio_catalog($slug)??array())['self_contained'])?'':hsh_brushup_shopping($slug)).$m[1].esc_html($label).$m[3];},$content,1);
-        $content.=($slug==='canagan-chicken-salmon'?hsh_brushup_comparison('cats'):'').hsh_brushup_related($slug);
+        $content=preg_replace_callback('~(<aside class="hsh-affiliate-cta"[^>]*>.*?<a\b[^>]*>)(.*?)(</a>)~s',function($m)use($slug,$label){return (!empty((hsh_studio_catalog($slug)??array())['self_contained'])?'':hsh_brushup_shopping($slug)).$m[1].(!empty((hsh_studio_catalog($slug)??array())['consolidated_affiliate_ids'])?$m[2]:esc_html($label)).$m[3];},$content,1);
+        $content.=($slug==='canagan-chicken-salmon'&&empty((hsh_studio_catalog($slug)??array())['self_contained'])?hsh_brushup_comparison('cats'):'').hsh_brushup_related($slug);
     }
     if($p->post_name==='hsh-hakushu-visit'&&get_post_meta($p->ID,'_hsh_bridge_owned',true)==='1')$content='<nav class="hsh-visit-summary" aria-label="見学の思い出"><h2>25年の夏、初めての蒸溜所見学</h2><p>白州の看板、館内に並ぶボトル、そして飲み比べ。初めての見学で撮った写真を順に振り返ります。飲み比べも楽しかった。</p><ol><li>白州の入口へ</li><li>館内のウイスキー展示を見る</li><li>グラスと一緒に、楽しかった飲み比べを振り返る</li></ol></nav>'.$content;
     return $content;

@@ -95,7 +95,7 @@ add_action('wp_footer', function() {
     if (!hsh_reader_scope()) return;
     $p = hsh_reader_managed() ? get_post(get_queried_object_id()) : null;
     $data = array('articles'=>hsh_reader_catalog(), 'current'=>$p?$p->post_name:null, 'savedUrl'=>home_url('/hsh-reading-list/'));
-    $data['mergedArticles']=function_exists('hsh_consolidations')?array_fill_keys(array_keys(hsh_consolidations()),hsh_consolidation_plan()['target']):array();
+    $data['mergedArticles']=function_exists('hsh_consolidation_targets')?hsh_consolidation_targets():array();
     echo '<script id="hsh-reader-data" type="application/json">'.wp_json_encode($data, JSON_HEX_TAG|JSON_HEX_AMP|JSON_HEX_APOS|JSON_HEX_QUOT).'</script>';
 }, 19);
 add_filter('the_content', function($content) {

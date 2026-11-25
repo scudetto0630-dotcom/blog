@@ -11,5 +11,18 @@
     "withpety-nekoaigan": "supplement-nekoaigan",
     "withpety-nekojinkatsu": "supplement-nekojinkatsu",
     "withpety-nekosanpo": "supplement-nekosanpo"
-  }
+  },
+  "groups": [
+    {
+      "target": "canagan-chicken-salmon",
+      "marker": "cat-food-comparison-20261125",
+      "sources": {
+        "canagan-dental-cat-food": "food-canagan-dental",
+        "mcadams-cat-chicken-turkey": "food-mcadams",
+        "essential-jaguar-cat-food": "food-jaguar",
+        "mognyan-cat-food-guide": "food-mognyan",
+        "acana-orijen-cat-food-guide": "food-acana-orijen"
+      }
+    }
+  ]
 }

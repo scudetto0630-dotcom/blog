@@ -93,7 +93,10 @@ def fetch(path):
 def audit():
     catalog = json.loads((ROOT / 'hirogaru-home/article-map.json').read_text()) + json.loads((ROOT / 'hirogaru-home/expanded-articles.json').read_text()) + json.loads((ROOT / 'hirogaru-home/affiliate-articles.json').read_text())
     plan = json.loads((ROOT / 'hirogaru-home/article-consolidations.json').read_text())
-    catalog = [a for a in catalog if a['slug'] not in plan['sources']]
+    plans = [plan] + plan.get('groups', [])
+    merged = {slug: (group['target'], anchor) for group in plans for slug, anchor in group['sources'].items()}
+    retired = json.loads((ROOT / 'hirogaru-home/article-retirements.json').read_text())
+    catalog = [a for a in catalog if a['slug'] not in merged and a['slug'] not in retired]
     paths = ['/' + r['slug'] + '/' for r in catalog]
     paths += ['/', '/category/cats/', '/category/whisky/', '/category/it-freelance/', '/hsh-about/',  '/hsh-gallery/', '/hsh-whisky-notes/', '/hsh-updates/', '/hsh-hakushu-visit/', '/hsh-reading-list/', '/ひろがる趣味暮らしについて/', '/お問い合わせ/', '/プライバシーポリシー/']
     problems, pages, rows = [], {}, []
@@ -134,6 +137,8 @@ def audit():
         for href in p.links:
             u = urlsplit(urljoin(BASE + source, href))
             target = unquote(u.path)
+            if u.netloc == urlsplit(BASE).netloc and target.strip('/') in retired:
+                problems.append({'path': source, 'problem': 'link to withdrawn article', 'href': href})
             if u.netloc != urlsplit(BASE).netloc or target not in pages:
                 continue
             if target != source:
@@ -147,8 +152,8 @@ def audit():
     class NoRedirect(HTTPRedirectHandler):
         def redirect_request(self, *args): return None
     redirects = []
-    for slug, anchor in plan['sources'].items():
-        expected = BASE + '/' + plan['target'] + '/#' + anchor
+    for slug, (target_slug, anchor) in merged.items():
+        expected = BASE + '/' + target_slug + '/#' + anchor
         status, location = None, None
         try:
             with build_opener(NoRedirect()).open(BASE + '/' + slug + '/', timeout=40) as r:
@@ -156,9 +161,19 @@ def audit():
         except HTTPError as e:
             status, location = e.code, e.headers.get('Location')
         redirects.append({'path': '/' + slug + '/', 'status': status, 'location': location})
-        if status != 301 or location != expected or anchor not in pages['/' + plan['target'] + '/'].ids:
+        if status != 301 or location != expected or anchor not in pages['/' + target_slug + '/'].ids:
             problems.append({'path': '/' + slug + '/', 'problem': 'consolidation redirect or target section mismatch'})
-    return {'scope': 'own public pages, local JSON-LD field checks; not Google Rich Results or Search Console index validation', 'pages': rows, 'redirects': redirects, 'internal_links_checked': checked, 'orphaned': orphaned, 'problems': problems}
+    withdrawals = []
+    for slug in retired:
+        try:
+            with urlopen(BASE + '/' + slug + '/', timeout=40) as r:
+                status, raw = r.status, r.read().decode('utf-8')
+        except HTTPError as e:
+            status, raw = e.code, e.read().decode('utf-8')
+        withdrawals.append({'path': '/' + slug + '/', 'status': status})
+        if status != 410 or 'noindex,follow' not in raw or '公開を終了しました' not in raw:
+            problems.append({'path': '/' + slug + '/', 'problem': 'withdrawal status or message mismatch'})
+    return {'withdrawals': withdrawals, 'scope': 'own public pages, local JSON-LD field checks; not Google Rich Results or Search Console index validation', 'pages': rows, 'redirects': redirects, 'internal_links_checked': checked, 'orphaned': orphaned, 'problems': problems}
 
 
 if __name__ == '__main__':
