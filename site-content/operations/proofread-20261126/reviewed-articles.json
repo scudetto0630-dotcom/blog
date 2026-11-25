@@ -6,297 +6,334 @@
       "slug": "cat-carrier-checklist",
       "reviewed": true,
       "changed": true,
-      "corrections": 3,
       "title_changed": false,
-      "source": "starter"
+      "source": "starter",
+      "changed_blocks": 3,
+      "excerpt_changed": false
     },
     {
       "slug": "highball-measure-and-adjust",
       "reviewed": true,
       "changed": true,
-      "corrections": 3,
       "title_changed": false,
-      "source": "starter"
+      "source": "starter",
+      "changed_blocks": 3,
+      "excerpt_changed": false
     },
     {
       "slug": "csv-import-seven-checks",
       "reviewed": true,
       "changed": true,
-      "corrections": 4,
       "title_changed": false,
-      "source": "starter"
+      "source": "starter",
+      "changed_blocks": 4,
+      "excerpt_changed": false
     },
     {
       "slug": "before-welcoming-cat",
       "reviewed": true,
       "changed": true,
-      "corrections": 2,
       "title_changed": false,
-      "source": "expanded"
+      "source": "expanded",
+      "changed_blocks": 2,
+      "excerpt_changed": false
     },
     {
       "slug": "manmos-cat-life",
       "reviewed": true,
       "changed": true,
-      "corrections": 2,
       "title_changed": false,
-      "source": "expanded"
+      "source": "expanded",
+      "changed_blocks": 2,
+      "excerpt_changed": false
     },
     {
       "slug": "cat-teaser-small-parts",
       "reviewed": true,
       "changed": true,
-      "corrections": 2,
       "title_changed": false,
-      "source": "expanded"
+      "source": "expanded",
+      "changed_blocks": 2,
+      "excerpt_changed": false
     },
     {
       "slug": "cat-vet-routine",
       "reviewed": true,
       "changed": true,
-      "corrections": 2,
       "title_changed": false,
-      "source": "expanded"
+      "source": "expanded",
+      "changed_blocks": 2,
+      "excerpt_changed": false
     },
     {
       "slug": "glenlivet-12-first-bottles",
       "reviewed": true,
       "changed": true,
-      "corrections": 2,
       "title_changed": false,
-      "source": "expanded"
+      "source": "expanded",
+      "changed_blocks": 2,
+      "excerpt_changed": false
     },
     {
       "slug": "single-malt-label-guide",
       "reviewed": true,
       "changed": true,
-      "corrections": 2,
       "title_changed": false,
-      "source": "expanded"
+      "source": "expanded",
+      "changed_blocks": 2,
+      "excerpt_changed": false
     },
     {
       "slug": "sherry-cask-notes",
       "reviewed": true,
       "changed": true,
-      "corrections": 2,
       "title_changed": false,
-      "source": "expanded"
+      "source": "expanded",
+      "changed_blocks": 2,
+      "excerpt_changed": false
     },
     {
       "slug": "it-data-work-flow",
       "reviewed": true,
       "changed": true,
-      "corrections": 3,
       "title_changed": false,
-      "source": "expanded"
+      "source": "expanded",
+      "changed_blocks": 3,
+      "excerpt_changed": true
     },
     {
       "slug": "starting-it-without-specialty",
       "reviewed": true,
       "changed": true,
-      "corrections": 3,
       "title_changed": false,
-      "source": "expanded"
+      "source": "expanded",
+      "changed_blocks": 3,
+      "excerpt_changed": true
     },
     {
       "slug": "ai-data-extraction-checks",
       "reviewed": true,
       "changed": true,
-      "corrections": 2,
       "title_changed": false,
-      "source": "expanded"
+      "source": "expanded",
+      "changed_blocks": 1,
+      "excerpt_changed": false
     },
     {
       "slug": "glen-grant-arboralis-review",
       "reviewed": true,
       "changed": true,
-      "corrections": 2,
       "title_changed": false,
-      "source": "expanded"
+      "source": "expanded",
+      "changed_blocks": 3,
+      "excerpt_changed": false
     },
     {
       "slug": "nikka-from-the-barrel-review",
       "reviewed": true,
       "changed": true,
-      "corrections": 2,
       "title_changed": false,
-      "source": "expanded"
+      "source": "expanded",
+      "changed_blocks": 1,
+      "excerpt_changed": false
     },
     {
       "slug": "jim-beam-first-impression",
       "reviewed": true,
       "changed": true,
-      "corrections": 2,
       "title_changed": false,
-      "source": "expanded"
+      "source": "expanded",
+      "changed_blocks": 2,
+      "excerpt_changed": false
     },
     {
       "slug": "kirin-riku-review",
       "reviewed": true,
       "changed": true,
-      "corrections": 2,
       "title_changed": false,
-      "source": "expanded"
+      "source": "expanded",
+      "changed_blocks": 2,
+      "excerpt_changed": false
     },
     {
       "slug": "busker-irish-whiskey-review",
       "reviewed": true,
       "changed": true,
-      "corrections": 1,
       "title_changed": false,
-      "source": "expanded"
+      "source": "expanded",
+      "changed_blocks": 1,
+      "excerpt_changed": false
     },
     {
       "slug": "employee-vs-self-employed",
       "reviewed": true,
       "changed": true,
-      "corrections": 3,
       "title_changed": false,
-      "source": "expanded"
+      "source": "expanded",
+      "changed_blocks": 3,
+      "excerpt_changed": true
     },
     {
       "slug": "freelance-and-sole-proprietor",
       "reviewed": true,
       "changed": true,
-      "corrections": 2,
       "title_changed": false,
-      "source": "expanded"
+      "source": "expanded",
+      "changed_blocks": 2,
+      "excerpt_changed": false
     },
     {
       "slug": "freelance-sales-and-take-home",
       "reviewed": true,
       "changed": true,
-      "corrections": 2,
       "title_changed": false,
-      "source": "expanded"
+      "source": "expanded",
+      "changed_blocks": 2,
+      "excerpt_changed": true
     },
     {
       "slug": "changing-job-or-working-style",
       "reviewed": true,
       "changed": true,
-      "corrections": 3,
       "title_changed": false,
-      "source": "expanded"
+      "source": "expanded",
+      "changed_blocks": 3,
+      "excerpt_changed": false
     },
     {
       "slug": "freelance-contract-before-start",
       "reviewed": true,
       "changed": true,
-      "corrections": 3,
       "title_changed": false,
-      "source": "expanded"
+      "source": "expanded",
+      "changed_blocks": 3,
+      "excerpt_changed": false
     },
     {
       "slug": "freelance-days-off",
       "reviewed": true,
       "changed": true,
-      "corrections": 3,
       "title_changed": true,
-      "source": "expanded"
+      "source": "expanded",
+      "changed_blocks": 3,
+      "excerpt_changed": false
     },
     {
       "slug": "freelance-health-insurance",
       "reviewed": true,
       "changed": true,
-      "corrections": 2,
       "title_changed": false,
-      "source": "expanded"
+      "source": "expanded",
+      "changed_blocks": 2,
+      "excerpt_changed": true
     },
     {
       "slug": "freelance-contract-renewal-end",
       "reviewed": true,
       "changed": true,
-      "corrections": 2,
       "title_changed": false,
-      "source": "expanded"
+      "source": "expanded",
+      "changed_blocks": 3,
+      "excerpt_changed": false
     },
     {
       "slug": "paws-green-deli-cat-food",
       "reviewed": true,
       "changed": true,
-      "corrections": 2,
       "title_changed": false,
-      "source": "affiliate"
+      "source": "affiliate",
+      "changed_blocks": 2,
+      "excerpt_changed": false
     },
     {
       "slug": "hario-cat-bowl-guide",
       "reviewed": true,
       "changed": true,
-      "corrections": 3,
       "title_changed": false,
-      "source": "affiliate"
+      "source": "affiliate",
+      "changed_blocks": 3,
+      "excerpt_changed": false
     },
     {
       "slug": "mirai-cat-food-types",
       "reviewed": true,
       "changed": true,
-      "corrections": 2,
       "title_changed": false,
-      "source": "affiliate"
+      "source": "affiliate",
+      "changed_blocks": 2,
+      "excerpt_changed": false
     },
     {
       "slug": "withpety-nekokenshin",
       "reviewed": true,
       "changed": true,
-      "corrections": 3,
       "title_changed": false,
-      "source": "affiliate"
+      "source": "affiliate",
+      "changed_blocks": 3,
+      "excerpt_changed": true
     },
     {
       "slug": "pontely-cat-dna-test",
       "reviewed": true,
       "changed": true,
-      "corrections": 2,
       "title_changed": false,
-      "source": "affiliate"
+      "source": "affiliate",
+      "changed_blocks": 3,
+      "excerpt_changed": false
     },
     {
       "slug": "onekosama-cat-tower",
       "reviewed": true,
       "changed": true,
-      "corrections": 2,
       "title_changed": false,
-      "source": "affiliate"
+      "source": "affiliate",
+      "changed_blocks": 2,
+      "excerpt_changed": true
     },
     {
       "slug": "catlog-cat-monitor",
       "reviewed": true,
       "changed": true,
-      "corrections": 2,
       "title_changed": false,
-      "source": "affiliate"
+      "source": "affiliate",
+      "changed_blocks": 2,
+      "excerpt_changed": true
     },
     {
       "slug": "pet-paradise-cat-toys",
       "reviewed": true,
       "changed": true,
-      "corrections": 2,
       "title_changed": false,
-      "source": "affiliate"
+      "source": "affiliate",
+      "changed_blocks": 2,
+      "excerpt_changed": false
     },
     {
       "slug": "canagan-chicken-salmon",
       "reviewed": true,
       "changed": true,
-      "corrections": 4,
       "title_changed": false,
-      "source": "affiliate"
+      "source": "affiliate",
+      "changed_blocks": 4,
+      "excerpt_changed": true
     },
     {
       "slug": "leo-luna-citta-bed",
       "reviewed": true,
       "changed": true,
-      "corrections": 2,
       "title_changed": false,
-      "source": "affiliate"
+      "source": "affiliate",
+      "changed_blocks": 2,
+      "excerpt_changed": true
     },
     {
       "slug": "aigan-dobutsu-course",
       "reviewed": true,
       "changed": true,
-      "corrections": 2,
       "title_changed": false,
-      "source": "affiliate"
+      "source": "affiliate",
+      "changed_blocks": 3,
+      "excerpt_changed": false
     },
     {
       "slug": "ひろがる趣味暮らしについて",
