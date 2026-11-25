@@ -29,7 +29,7 @@ function get_post_status($id){$p=get_post($id);return $p ? $p->post_status : fal
 function get_post_meta($id,$key,$single=false){global $metadata;return $metadata[$id][$key] ?? '';}
 function get_permalink($post){return 'https://example.test/?page_id='.(is_object($post)?$post->ID:$post);}
 function get_page_by_path($slug,...$args){global $records;foreach($records as $p){if(($p['post_name'] ?? '')===$slug)return (object)$p;}return null;}
-function wp_insert_post($post,$error=false){global $records,$metadata,$next_id;$id=$post['ID'] ?? $next_id++;$records[$id]=array_merge($records[$id] ?? array(),$post,array('ID'=>$id));foreach($post['meta_input'] ?? array() as $key=>$value){$metadata[$id][$key]=$value;}return $id;}
+function wp_insert_post($post,$error=false){global $records,$metadata,$next_id;$id=$post['ID'] ?? $next_id++;$records[$id]=array_merge(array('post_author'=>1,'post_excerpt'=>'','post_date'=>'2026-10-15 09:00:00','post_date_gmt'=>'2026-10-15 00:00:00'),$records[$id] ?? array(),$post,array('ID'=>$id));foreach($post['meta_input'] ?? array() as $key=>$value){$metadata[$id][$key]=$value;}return $id;}
 require dirname(__DIR__).'/hirogaru-home/editing-bridge.php';
 function check($condition,$name){global $tests;if(!$condition){throw new Exception('FAIL: '.$name);}echo 'PASS: '.$name."\n";$tests++;}
 $token=str_repeat('a',64);
@@ -53,7 +53,9 @@ check(hsh_edit_page(new Request(array('key'=>'any-page','title'=>'A','content'=>
 check(hsh_edit_page(new Request(array('key'=>array('about'),'title'=>'A','content'=>'B')))->code==='hsh_input','malformed page key rejected');
 $data=array('key'=>'about','title'=>'運営者情報','content'=>'本文');$result=hsh_edit_page(new Request($data));$id=$result->data['id'];
 check($result->data['status']==='draft','new page defaults to draft');
+$records[$id]['post_author']=7;$records[$id]['post_excerpt']='既存の抜粋';$page_slug=$records[$id]['post_name'];
 $result=hsh_edit_page(new Request(array_merge($data,array('status'=>'publish'))));
+check($records[$id]['post_author']===7&&$records[$id]['post_name']===$page_slug&&$records[$id]['post_excerpt']==='既存の抜粋','proofreading a bridge page preserves its author, slug and excerpt');
 check($result->data['id']===$id && count($records)===1,'retry updates same page without duplicates');
 check(count(hsh_edit_public_pages())===1,'owned published page appears in footer');
 $metadata[$id]['_hsh_bridge_owned']='';

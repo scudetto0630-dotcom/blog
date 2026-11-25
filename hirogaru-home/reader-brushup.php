@@ -39,10 +39,10 @@ function hsh_brushup_shopping($slug){
     return '<aside class="hsh-buying-note"><h2>選ぶときのポイント</h2><dl><dt>こんな方に</dt><dd>'.esc_html($fit).'</dd><dt>注文前に確認すること</dt><dd>'.esc_html($checks).'</dd><dt>支払い・手続きの条件</dt><dd>'.esc_html($condition).'</dd></dl></aside>';
 }
 function hsh_brushup_comparison($topic){
-    if($topic==='cats'){$rows=array(array('canagan-chicken-salmon','カナガン','チキンとサーモンを比較','主原料・栄養成分・給与量'),array('mcadams-cat-chicken-turkey','マックアダムズ','チキン＆ターキー、オーブンベイク製法','原材料・粒の特徴'),array('mognyan-cat-food-guide','モグニャン','白身魚を使ったフード','原材料・粒の大きさ・切り替え方'),array('essential-jaguar-cat-food','ジャガー','肉と魚を組み合わせたフード','原材料・カロリー・粒の特徴'));$title='猫用フード、どこを比べる？';$heads=array('商品','記事で紹介している特徴','比べたい項目');}
+    if($topic==='cats'){$rows=array(array('canagan-chicken-salmon','カナガン','チキンとサーモンを比較','主原料・栄養成分・給与量'),array('mcadams-cat-chicken-turkey','マックアダムズ','チキン＆ターキー、オーブンベイク製法','原材料・粒の特徴'),array('mognyan-cat-food-guide','モグニャン','白身魚を使ったフード','原材料・粒の大きさ・切り替え方'),array('essential-jaguar-cat-food','ジャガー','肉と魚を組み合わせたフード','原材料・カロリー・粒の特徴'));$title='ドライフードの比較記事から探す';$heads=array('商品','記事で紹介している特徴','比べたい項目');}
     elseif($topic==='whisky'){$rows=array(array('glenlivet-12-first-bottles','グレンリベット12年','花のような上品な香り','グラスのおまけがきっかけ'),array('glen-grant-arboralis-review','アルボラリス','甘くて飲みやすかった','YouTubeで見て気になった'),array('sherry-cask-notes','グレンファークラス12年','ぶどうパンに顔をうずめたような匂い','シェリーカスクが好き'));$title='飲んだときの印象を比べる';$heads=array('ウイスキー','自分が感じたこと','選んだきっかけ・好み');}
     else return '';
-    $out='<section class="hsh-comparison"><h2>'.esc_html($title).'</h2><p>'.($topic==='cats'?'今のフードと比べたい原材料や、粒の特徴をまとめています。':'それぞれのウイスキーで、自分が気に入った香りや飲みやすさをまとめました。').'</p><table class="hsh-stack-table"><thead><tr>';foreach($heads as $h)$out.='<th scope="col">'.esc_html($h).'</th>';$out.='</tr></thead><tbody>';
+    $out='<section class="hsh-comparison"><h2>'.esc_html($title).'</h2><p>'.($topic==='cats'?'8商品の比較記事から、気になる商品の説明へ進めます。':'それぞれのウイスキーで、自分が気に入った香りや飲みやすさをまとめました。').'</p><table class="hsh-stack-table"><thead><tr>';foreach($heads as $h)$out.='<th scope="col">'.esc_html($h).'</th>';$out.='</tr></thead><tbody>';
     foreach($rows as $r){$p=get_page_by_path($r[0],OBJECT,$r[0]==='hsh-whisky-notes'?'page':'post');if(!$p||$p->post_status!=='publish')continue;$out.='<tr>';for($i=1;$i<4;$i++)$out.='<td data-label="'.esc_attr($heads[$i-1]).'">'.($i===1?'<a href="'.esc_url(get_permalink($p)).'">'.esc_html($r[$i]).' →</a>':esc_html($r[$i])).'</td>';$out.='</tr>';}
     return $out.'</tbody></table></section>';
 }
@@ -67,7 +67,7 @@ add_filter('the_content',function($content){
 },27);
 add_action('wp_enqueue_scripts',function(){if(!hsh_reader_scope())return;wp_enqueue_style('hsh-brushup',plugin_dir_url(__FILE__).'assets/brushup.css',array('hsh-reader'),'1.38.2');wp_enqueue_script('hsh-brushup',plugin_dir_url(__FILE__).'assets/brushup.js',array('hsh-reader'),'1.38.2',true);},130);
 function hsh_brushup_photo_stories(){
-    $m=hsh_photo_manifest();$items=array(array('manmos-zip-pillow','枕の上でひと休み','まんもすは枕の上でのんびり。ふわふわの毛と、くつろいだ姿を写真に残しました。'),array('manmos-zip-scratcher','爪とぎの上が落ち着く場所','爪とぎの上もお気に入り。遊ぶためだけでなく、ひと休みする場所にもなっています。'),array('manmos-front','抱っこは苦手。でも甘えん坊','まんもすは抱っこがあまり好きではありません。甘えん坊でも、好きな距離感はまんもす次第。毎日のブラッシングをしながら、一緒に暮らしています。'));
+    $m=hsh_photo_manifest();$items=array(array('manmos-zip-pillow','枕の上でひと休み','まんもすは枕の上でのんびり。ふわふわの毛と、くつろいだ姿を写真に残しました。'),array('manmos-zip-scratcher','爪とぎの上が落ち着く場所','爪とぎの上もお気に入り。爪をとぐだけでなく、ひと休みする場所にもなっています。'),array('manmos-front','抱っこは苦手。でも甘えん坊','まんもすは抱っこがあまり好きではありません。甘えん坊でも、好きな触れ合い方はまんもす次第。毎日のブラッシングでも、嫌がる場所には気を付けています。'));
     $out='<section class="hsh-photo-stories"><h2>写真でつづる、まんもすの毎日</h2>';
     foreach($items as $r){$a=$m['assets'][$r[0]]??null;if(!$a)continue;$out.='<article><h3>'.esc_html($r[1]).'</h3><figure class="hsh-inline-photo">'.hsh_photo_image($a,false).hsh_photo_figcaption($a).'</figure><p>'.esc_html($r[2]).'</p><p><a href="'.esc_url(home_url('/manmos-cat-life/#'.array('manmos-zip-pillow'=>'manmos-first-days','manmos-zip-scratcher'=>'manmos-cat-life-detail-0','manmos-front'=>'manmos-cat-life-detail-5')[$r[0]])).'">'.esc_html(array('manmos-zip-pillow'=>'翌日には枕の上へ来た話','manmos-zip-scratcher'=>'お気に入りの居場所の話','manmos-front'=>'ブラッシングの話')[$r[0]]).'を読む →</a></p></article>';}
     return $out.'<p><a href="'.esc_url(home_url('/manmos-cat-life/')).'">まんもすとの暮らしを、もう少し詳しく →</a></p></section>';

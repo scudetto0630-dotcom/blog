@@ -9,7 +9,7 @@ $profiles=array();foreach(hsh_catalog() as $a){$d=hsh_whisky_profile($a['slug'])
     check(substr_count($html,'data-hsh-whisky-profile=')===1&&substr_count($html,'<svg ')===1&&substr_count($html,'<meter ')===6,'one readable six-axis profile '.$slug);
     check(hsh_whisky_enriched($html,$slug)===$html,'enrichment cannot duplicate '.$slug);
     foreach(array('id','src') as $attr){preg_match_all('~\b'.$attr.'="([^"]+)"~',$original,$before);preg_match_all('~\b'.$attr.'="([^"]+)"~',$html,$after);check(!array_diff($before[1],$after[1]),'original anchors and photos survive '.$slug.' '.$attr);}
-    check(strpos($html,'実測値や口コミの平均、筆者が採点した数値ではありません')!==false,'estimates do not pretend to be measured or owner-given scores '.$slug);
+    check(strpos($html,'実測値や口コミの平均、筆者本人による採点ではありません')!==false,'estimates do not pretend to be measured or owner-given scores '.$slug);
     $profiles[$slug]['preview']=$html;
 }
 foreach($profiles as $slug=>$d){check(strpos($d['preview'],'スパイシーさ')!==false&&strpos($d['preview'],'<dt>樽の香ばしさ</dt>')===false,'revised flavour axis '.$slug);check(strpos($d['preview'],'香味の方向を比べるための目安')===false,'removed unwanted caption '.$slug);}
