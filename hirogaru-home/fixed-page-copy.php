@@ -30,3 +30,31 @@ add_action('comment_form_after',function(){
     $level=array_pop($GLOBALS['hsh_comment_buffer_levels']);
     if(ob_get_level()===$level+1){ob_end_flush();}
 });
+
+/** Only the two existing public utility pages may receive packaged, fingerprinted copy. */
+function hsh_public_page_specs(){static $rows=null;if($rows===null)$rows=json_decode(file_get_contents(__DIR__.'/public-page-copy.json'),true);return $rows;}
+function hsh_public_page_post($key){
+    $spec=hsh_public_page_specs()[$key]??null;if(!$spec)return null;$p=get_post($spec['id']);$home=get_post((int)get_option('hsh_page_id'));
+    return $p&&$home&&$p->post_type==='page'&&$p->post_status==='publish'&&rawurldecode($p->post_name)===$spec['slug']&&(int)$p->post_author===(int)$home->post_author?$p:null;
+}
+function hsh_public_page_status(){
+    $rows=array();foreach(hsh_public_page_specs() as $key=>$spec){$p=hsh_public_page_post($key);$rows[$key]=$p?array('id'=>(int)$p->ID,'fingerprint'=>hsh_article_fingerprint($p),'content'=>$p->post_content,'title'=>$p->post_title,'published_at'=>$p->post_date,'published_at_gmt'=>$p->post_date_gmt):array('status'=>'conflict');}return hsh_edit_response(array('pages'=>$rows));
+}
+function hsh_public_page_release($request){
+    $d=$request->get_json_params();if(!is_array($d)||array_diff(array_keys($d),array('page','expected'))||!isset($d['page'],$d['expected'])||!is_string($d['page'])||!is_string($d['expected'])||!preg_match('/^[a-f0-9]{64}$/D',$d['expected']))return new WP_Error('hsh_input','ページと現在の指紋を指定してください。',array('status'=>400));
+    $spec=hsh_public_page_specs()[$d['page']]??null;if(!$spec)return new WP_Error('hsh_scope','指定の公開ページだけを更新できます。',array('status'=>403));
+    if(!add_option('hsh_public_page_lock',time(),'',false))return new WP_Error('hsh_busy','他のページを更新中です。',array('status'=>409));
+    try{
+        $p=hsh_public_page_post($d['page']);if(!$p||!hash_equals(hsh_article_fingerprint($p),$d['expected']))return new WP_Error('hsh_conflict','ページが変更されています。再確認してください。',array('status'=>409));
+        $content=$spec['content']??'';
+        if($d['page']==='contact'){
+            preg_match_all('~\[contact-form-7\b[^\]]+\]~',$p->post_content,$forms);
+            if(count($forms[0])!==1)return new WP_Error('hsh_form','現在のお問い合わせフォームを確認してください。',array('status'=>409));
+            $content=$spec['intro']."\n".$forms[0][0]."\n".$spec['after'];
+        }
+        $history=get_post_meta($p->ID,'_hsh_public_page_history',true);if(!is_array($history))$history=array();$history[]=array('at'=>time(),'fingerprint'=>$d['expected'],'title'=>$p->post_title,'content'=>$p->post_content,'excerpt'=>$p->post_excerpt,'published_at'=>$p->post_date,'published_at_gmt'=>$p->post_date_gmt);update_post_meta($p->ID,'_hsh_public_page_history',array_slice($history,-10));
+        $id=wp_update_post(wp_slash(array('ID'=>$p->ID,'post_content'=>wp_kses_post($content),'post_excerpt'=>sanitize_text_field($spec['excerpt']),'post_date'=>$p->post_date,'post_date_gmt'=>$p->post_date_gmt)),true);if(is_wp_error($id))return $id;
+        update_post_meta($p->ID,'the_page_meta_description',sanitize_text_field($spec['excerpt']));return hsh_edit_response(array('id'=>$id,'fingerprint'=>hsh_article_fingerprint(get_post($id))));
+    }finally{delete_option('hsh_public_page_lock');}
+}
+add_action('rest_api_init',function(){register_rest_route('hirogaru/v1','/public-page-review',array(array('methods'=>'GET','callback'=>'hsh_public_page_status','permission_callback'=>'hsh_edit_permission'),array('methods'=>'POST','callback'=>'hsh_public_page_release','permission_callback'=>'hsh_edit_permission')));});

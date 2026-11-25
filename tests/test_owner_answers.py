@@ -11,8 +11,8 @@ class OwnerAnswers(unittest.TestCase):
  def test_untried_bottle_outside_tasted_cards(self):
   php=(ROOT/'hirogaru-home/growth.php').read_text();tastes=php.split('function hsh_growth_tastes()')[1].split('function hsh_growth_whisky()')[0]
   self.assertNotIn('オーチャードハウス',tastes);self.assertIn('まだ買っていない',php)
- def test_generated_gift_set_does_not_replace_existing_images(self):
-  a=self.rows['glenlivet-12-first-bottles'];self.assertNotRegex(a['content'],r'AI生成|生成画像|生成イメージ');self.assertIn('hsh-product-illustration',a['content']);self.assertNotIn('ちゃんぽん',a['content'])
+ def test_unverified_gift_set_image_is_not_presented_as_purchase_evidence(self):
+  a=self.rows['glenlivet-12-first-bottles'];self.assertNotRegex(a['content'],r'AI生成|生成画像|生成イメージ');self.assertNotIn('glenlivet-gift-set-generated.webp',a['content']);self.assertEqual(json.loads((ROOT/'hirogaru-home/photo-assets.json').read_text())['inline']['glenlivet-12-first-bottles'],['detail-glen-aroma','detail-glen-glass']);self.assertNotIn('ちゃんぽん',a['content'])
  def test_personal_highball_amount_separate_from_examples(self):
   body=self.rows['highball-measure-and-adjust']['content'];self.assertIn('普段入れるウイスキーは30ml',body);self.assertIn('計算例',body)
  def test_public_alts_do_not_restore_generation_labels(self):

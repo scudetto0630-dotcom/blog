@@ -52,7 +52,7 @@ add_filter('the_content',function($c){
  $c=preg_replace('~<li[^>]*>(?:(?!</li>).)*extraction-(?:input|expected)\.csv(?:(?!</li>).)*</li>~s','',$c);
  // Keep the introduction continuous; the native table of contents remains available.
  $c.=hsh_studio_terms($a['topic'],$slug);
- if(hsh_brushup_type($slug)==='product'&&$slug!=='withpety-nekokenshin'){$c.=hsh_studio_product_notes($slug);if(strpos($slug,'withpety-')===0)$c.='<aside class="hsh-supplement-note"><h2>フード・サプリ・医薬品の違い</h2><p>サプリは、主食となるフードや治療に使う医薬品と役割が異なります。現在の薬や食事と一緒に獣医師へ伝え、病気の治療の代わりとして使わないでください。</p></aside>';}
+ if(hsh_brushup_type($slug)==='product'&&$slug!=='withpety-nekokenshin'&&empty($a['self_contained'])){$c.=hsh_studio_product_notes($slug);if(strpos($slug,'withpety-')===0)$c.='<aside class="hsh-supplement-note"><h2>フード・サプリ・医薬品の違い</h2><p>サプリは、主食となるフードや治療に使う医薬品と役割が異なります。現在の薬や食事と一緒に獣医師へ伝え、病気の治療の代わりとして使わないでください。</p></aside>';}
  if($slug==='cat-carrier-checklist'){$c.=hsh_studio_checklist('carrier-measure','キャリーの採寸メモ',array('猫が自然に立ち、向きを変え、伏せられる内寸か確認する','入口の幅・高さと、持ち手の位置を確認する','徒歩：持ち上げたときの安定と自分が運べる重さを確認する','車：車内で固定できるか、メーカーの案内を確認する','公共交通：利用する交通機関の寸法・重量・容器の規定を確認する'));}
  if(in_array($slug,array('hario-cat-bowl-guide','onekosama-cat-tower','catlog-cat-monitor'),true))$c.=hsh_studio_checklist('place-'.$slug,'設置前に測っておくこと',array('設置場所の幅・奥行き・高さを測る','猫が出入りする動線を確保する','扉・窓・家具との干渉を確認する','掃除や電源、固定方法をメーカーの説明で確認する'));
  if($slug==='cat-vet-routine')$c.=hsh_studio_checklist('vet-note','診察で伝えたいこと',array('気になる様子がいつから始まったか','食事・水・排泄の変化','現在のフード・薬・サプリの名前','撮影した写真や動画を見せられるようにする'));
@@ -78,7 +78,7 @@ function hsh_studio_series($slug){
  return '';
 }
 function hsh_studio_care(){return '<section class="hsh-care-notes"><h3>素材と部品ごとに、手入れの表示を確認</h3><dl><dt>陶器・ガラスの器</dt><dd>欠けやひびを点検し、使用できる洗剤・温度・食器洗浄機への対応は、その商品の説明に従います。</dd><dt>布・ニット・クッション</dt><dd>洗濯表示と取り外せる部品を確認します。水洗いできると決めつけず、指定の乾かし方まで確認します。</dd><dt>木・段ボール・支柱</dt><dd>濡らしてよい範囲や交換方法は素材・製品で異なります。固定部の緩みもメーカーの案内に沿って点検します。</dd><dt>電子機器</dt><dd>水洗いできる部分と電子部品を分けて確認し、電源・充電・清掃方法は取扱説明書に従います。</dd></dl></section>';}
-add_filter('the_content',function($c){if(!in_the_loop()||!is_main_query())return $c;$p=get_post();if(!$p||!hsh_owned_blog_post($p))return $c;$c=hsh_studio_dates($p).hsh_studio_series($p->post_name).$c;if(in_array($p->post_name,array('hario-cat-bowl-guide','onekosama-cat-tower','catlog-cat-monitor','m-and-cat-knit-bag'),true))$c.=hsh_studio_care();return $c;},30);
+add_filter('the_content',function($c){if(!in_the_loop()||!is_main_query())return $c;$p=get_post();if(!$p||!hsh_owned_blog_post($p))return $c;$c=hsh_studio_dates($p).hsh_studio_series($p->post_name).$c;if(in_array($p->post_name,array('hario-cat-bowl-guide','onekosama-cat-tower','catlog-cat-monitor','m-and-cat-knit-bag'),true)&&empty((hsh_studio_catalog($p->post_name)??array())['self_contained']))$c.=hsh_studio_care();return $c;},30);
 function hsh_studio_rendered($html){
  if(strpos($html,'hsh-reader-site')===false||strpos($html,'</head>')===false)return $html;
  $html=hsh_studio_current_source_links($html);
@@ -195,9 +195,9 @@ function hsh_whisky_enriched($content,$slug){
     $intro='<section class="hsh-whisky-overview" data-hsh-whisky-profile="'.esc_attr($slug).'"><p class="hsh-eyebrow">WHISKY PROFILE</p><h2 id="'.$slug.'-profile">'.esc_html($d['name']).'って、どんなウイスキー？</h2>'.hsh_whisky_paragraphs($d['intro']).'<dl class="hsh-whisky-specs">';
     foreach($d['fields'] as $label=>$value)$intro.='<div><dt>'.esc_html($label).'</dt><dd>'.esc_html($value).'</dd></div>';
     $intro.='</dl><h3>歴史と造りを少しだけ</h3>'.hsh_whisky_paragraphs($d['history']).'</section><h2 id="'.$slug.'-my-impression">実際に飲んだ感想</h2>';
-    $more='<section class="hsh-whisky-perspective"><h2 id="'.$slug.'-character">香りと味の特徴</h2><p>'.esc_html($d['notes']).'</p>'.hsh_whisky_radar($d,$slug).'<h2 id="'.$slug.'-price">今買うなら、いくらくらい？</h2><p>確認した通販の販売例です。商品代は税込、送料は別。品切れや取り寄せの場合もあるので、注文時の価格・在庫・送料は販売店のページで見てください。</p><div class="hsh-whisky-offers">';
-    foreach($d['prices'] as $price)$more.='<a href="'.esc_url($price['url']).'"><span>'.esc_html($price['shop']).'</span><strong>'.number_format((int)$price['amount']).'<small>円</small></strong><span>'.(int)$price['volume'].'ml・税込 <b aria-hidden="true">↗</b></span></a>';
-    $more.='</div><p>'.esc_html($d['price_note']).'</p><h2 id="'.$slug.'-verdict">選ぶなら、こんな人に</h2><p>'.esc_html($d['assessment']).'</p><p>'.esc_html($d['recommendation']).'</p><details class="hsh-whisky-sources"><summary>商品情報・価格の出典</summary><p>商品情報と掲載価格の確認日：<time datetime="'.esc_attr($d['checked']).'">'.esc_html($d['checked']).'</time>。価格は各店の掲載例で、市場全体の最安値ではありません。味の例えにはメーカーの説明と、自分の感想をそれぞれ記しています。</p><ul>';
+    $more='<section class="hsh-whisky-perspective"><h2 id="'.$slug.'-character">香りと味の特徴</h2><p>'.esc_html($d['notes']).'</p>'.hsh_whisky_radar($d,$slug).'<h2 id="'.$slug.'-price">通販では、いくらで売られている？</h2><p>確認した通販の販売例です。商品代は税込、送料は別。品切れや取り寄せの場合もあるので、注文時の価格・在庫・送料は販売店のページで見てください。</p><div class="hsh-whisky-offers">';
+    foreach($d['prices'] as $price)$more.='<a href="'.esc_url($price['url']).'"><span>'.esc_html($price['shop']).'</span><strong>'.number_format((int)$price['amount']).'<small>円</small></strong><span>'.(int)$price['volume'].'ml・税込 <b aria-hidden="true">↗</b></span><small>'.esc_html(str_replace('-','.', $price['checked']??$d['checked'])).'確認</small></a>';
+    $more.='</div><p>'.esc_html($d['price_note']).'</p><h2 id="'.$slug.'-verdict">選ぶなら、こんな人に</h2><p>'.esc_html($d['assessment']).'</p><p>'.esc_html($d['recommendation']).'</p><details class="hsh-whisky-sources"><summary>商品情報・価格の出典</summary><p>商品情報の確認日：<time datetime="'.esc_attr($d['checked']).'">'.esc_html($d['checked']).'</time>。価格の確認日は各販売例に記載しています。価格は各店の掲載例で、市場全体の最安値ではありません。味の例えにはメーカーの説明と、自分の感想をそれぞれ記しています。</p><ul>';
     foreach($d['sources'] as $source)$more.='<li><a href="'.esc_url($source[1]).'">'.esc_html($source[0]).'</a></li>';
     foreach($d['prices'] as $price)$more.='<li><a href="'.esc_url($price['url']).'">'.esc_html($price['shop']).'：'.(int)$price['volume'].'mlの掲載価格</a></li>';
     $more.='</ul></details></section>';

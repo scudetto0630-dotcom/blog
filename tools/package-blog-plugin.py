@@ -7,7 +7,7 @@ with zipfile.ZipFile(target) as z:names=z.namelist()
 # Retired, unreferenced generated category background; archived in repository history.
 retired={'hirogaru-home/assets/photos/detail-topic-whisky.webp','hirogaru-home/assets/photos/arboralis-generated.webp'}
 names=[n for n in names if n not in retired]
-for file in ['reader-quality.php','assets/quality.js','assets/quality.css','article-consolidation.php','article-consolidations.json']:
+for file in ['reader-quality.php','assets/quality.js','assets/quality.css','article-consolidation.php','article-consolidations.json','public-page-copy.json']:
  name='hirogaru-home/'+file
  if name not in names:names.append(name)
 # Include only image files referenced by the reviewed manifest.

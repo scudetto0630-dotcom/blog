@@ -3174,7 +3174,7 @@
       "height": 800,
       "kind": "generated",
       "subject": "whisky",
-      "alt": "通常版グレングラント アルボラリスのボトル",
+      "alt": "グレングラント アルボラリスのボトル",
       "caption": "AI生成イメージ。本人提示の商品参照画像を使用。",
       "sha256": "afb2d71e60f79181d0155619e9a5499cf45e889dc0937726f083d29342dcb2d6",
       "bytes": 63510,
@@ -3730,6 +3730,38 @@
           "bytes": 33884
         }
       ]
+    },
+    "official-hario-pts-nyt-side": {
+      "file": "official-hario-pts-nyt-side.webp",
+      "kind": "official",
+      "subject": "cat-care",
+      "rights": "advertiser",
+      "alt": "HARIO にゃんプレトール PTS-NYTを横から見た形",
+      "caption": "にゃんプレトール PTS-NYT。横から見た形。",
+      "width": 750,
+      "height": 750,
+      "bytes": 7246,
+      "sha256": "f2aee7c0a064fd5bd1fd8718569374322f1b68ffac84ffccdeed0e1cfb87cb5a",
+      "source_url": "https://shop.hariocorp.co.jp/cdn/shop/files/PTS-NYT-W_02.jpg?width=750",
+      "source_page": "https://shop.hariocorp.co.jp/products/pts-nyt",
+      "retrieved_at": "2026-11-25",
+      "source_sha256": "0b31850144cef80bf3b29f2ac41f11f5238e431ad416980daf08ddf3f1af5b38",
+      "variants": [
+        {
+          "file": "official-hario-pts-nyt-side-480.webp",
+          "width": 480,
+          "height": 480,
+          "bytes": 3754,
+          "sha256": "9597366a4c065720e8ef3087c8287b4e1ae72ce538cb547c3a7d477773b94329"
+        },
+        {
+          "file": "official-hario-pts-nyt-side-160.webp",
+          "width": 160,
+          "height": 160,
+          "bytes": 862,
+          "sha256": "0629591200c5723006ee5f227caf1575bb1ce990e9f4f7d2be130d10aadb8c69"
+        }
+      ]
     }
   },
   "articles": {
@@ -3944,7 +3976,7 @@
     ],
     "hario-cat-bowl-guide": [
       "official-a8-02-1",
-      "official-a8-02-2"
+      "official-hario-pts-nyt-side"
     ],
     "mirai-cat-food-types": [
       "official-a8-05-1",

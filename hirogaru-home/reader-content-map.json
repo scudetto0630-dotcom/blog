@@ -58,13 +58,15 @@
           "shop": "ビックカメラ.com",
           "amount": 4380,
           "url": "https://www.biccamera.com/bc/item/1668660/",
-          "volume": 700
+          "volume": 700,
+          "checked": "2026-11-13"
         },
         {
           "shop": "ヨドバシ.com",
           "amount": 5100,
           "url": "https://www.yodobashi.com/product/100000001004197771/",
-          "volume": 700
+          "volume": 700,
+          "checked": "2026-11-25"
         }
       ],
       "price_note": "掲載しているのは、グレンリベット12年の700ml瓶の価格。自分が買ったグラス付きのセットとは内容が違うので、価格だけでなく、付属品や送料も合わせて比べたい。",
@@ -97,7 +99,7 @@
         ]
       ],
       "checked": "2026-11-13",
-      "content_updated_at": "2026-11-13T08:04:21Z"
+      "content_updated_at": "2026-11-25T06:04:03+00:00"
     }
   },
   "single-malt-label-guide": {
@@ -132,20 +134,22 @@
           "shop": "ビックカメラ.com",
           "amount": 6880,
           "url": "https://www.biccamera.com/bc/item/1761157/",
-          "volume": 700
+          "volume": 700,
+          "checked": "2026-11-13"
         },
         {
           "shop": "輸入元の通販 Million Cellar",
           "amount": 9900,
           "url": "https://www.milliontd.com/c/range/9999/glc12",
-          "volume": 700
+          "volume": 700,
+          "checked": "2026-11-25"
         }
       ],
       "price_note": "ビックカメラの商品ページは入荷次第出荷の案内だったので、価格と一緒に納期も見ておきたい。初購入時の約6,500円は武川蒸留酒販売で買ったときの話。同じ700mlでも販売店で差があり、今買える価格はリンク先で見比べるのがよさそう。",
       "assessment": "自分には、香りを楽しむために何度も選びたくなる1本。少し刺激を感じることはあっても、まろやかな味と香りの満足感が大きい。気軽に買える値段とは思わないけど、うれしい日やつらい日、贅沢したい日に選ぶ理由がちゃんとある。",
       "recommendation": "レーズンやドライフルーツを思わせる香りが好きな人にすすめたい。ぶどうパンが好きな自分には、何度も買いたくなる1本だった。値段は高いと思うけど、香りをじっくり楽しみたいときに選んでいる。",
       "scores": [
-        2,
+        0,
         7,
         7,
         5,
@@ -153,7 +157,7 @@
         7
       ],
       "reasons": [
-        "ピート使用の断定はせず、本人の主な印象が煙ではなくぶどうパンであることから低めに推定。",
+        "輸入元がノンピートモルトの使用を説明しているため。焦がした樽を思わせる香りとは分けている。",
         "本文のぶどうパンのような香りと、シェリー樽の熟成による果実を思わせる風味から。",
         "本人のまろやかさと輸入元の豊かな味の紹介から推定。",
         "専門店HTFWが紹介する、甘いスパイスを感じさせる香味の表現から。",
@@ -176,10 +180,14 @@
         [
           "HTFW：12年の香味紹介",
           "https://www.htfw.com/glenfarclas-highland-single-malt-scotch-12-year-old-whisky"
+        ],
+        [
+          "輸入元Million Cellar：ノンピートモルト・直火蒸溜・熟成樽",
+          "https://www.milliontd.com/c/range/9999/glc12"
         ]
       ],
       "checked": "2026-11-13",
-      "content_updated_at": "2026-11-13T08:04:21Z"
+      "content_updated_at": "2026-11-25T06:04:03+00:00"
     }
   },
   "it-data-work-flow": {
@@ -276,7 +284,8 @@
           "shop": "ヨドバシ.com",
           "amount": 3030,
           "url": "https://www.yodobashi.com/product/100000001006651616/",
-          "volume": 700
+          "volume": 700,
+          "checked": "2026-11-25"
         }
       ],
       "price_note": "自分がオーケーで買ったときは2,200円。ここに並べた通販の掲載価格とは、買った時期も販売店も違う。700ml瓶の商品代に加えて、箱の有無や送料も合わせて比べたい。",
@@ -313,7 +322,7 @@
         ]
       ],
       "checked": "2026-11-13",
-      "content_updated_at": "2026-11-16T06:38:29Z"
+      "content_updated_at": "2026-11-25T06:04:03+00:00"
     }
   },
   "nikka-from-the-barrel-review": {
@@ -343,7 +352,8 @@
           "shop": "大和屋酒舗",
           "amount": 3520,
           "url": "https://www.yamatoya-e.com/SHOP/nikka5854.html",
-          "volume": 500
+          "volume": 500,
+          "checked": "2026-11-25"
         }
       ],
       "price_note": "品薄やプレミア価格で探しにくかった時期もあり、ウイスキー専門メディアDear WHISKYも販売価格の高騰を取り上げている。ただ、過去に高かったことと、今もその価格で買うしかないことは別。自分は3,900円で買えて、値段が戻ってきたようでうれしかった。上の販売例は500mlで、700ml瓶と比べるときは容量にも気を付けたい。",
@@ -392,7 +402,7 @@
         ]
       ],
       "checked": "2026-11-13",
-      "content_updated_at": "2026-11-13T08:04:21Z"
+      "content_updated_at": "2026-11-25T06:04:03+00:00"
     }
   },
   "jim-beam-first-impression": {
@@ -422,13 +432,15 @@
           "shop": "ビックカメラ.com",
           "amount": 1280,
           "url": "https://www.biccamera.com/bc/item/3461631/",
-          "volume": 700
+          "volume": 700,
+          "checked": "2026-11-13"
         },
         {
           "shop": "ヨドバシ.com",
           "amount": 1570,
           "url": "https://www.yodobashi.com/product/100000001004190008/",
-          "volume": 700
+          "volume": 700,
+          "checked": "2026-11-25"
         }
       ],
       "price_note": "白ラベルの700ml瓶の販売例。自分が買ったグラス付きセットとは別に、ボトルだけで買う場合の価格を掲載している。",
@@ -477,7 +489,7 @@
         ]
       ],
       "checked": "2026-11-13",
-      "content_updated_at": "2026-11-13T08:04:21Z"
+      "content_updated_at": "2026-11-25T06:04:03+00:00"
     }
   },
   "kirin-riku-review": {
@@ -506,13 +518,15 @@
           "shop": "フジマツ",
           "amount": 1587,
           "url": "https://fujimatsu-online.com/?pid=167913000",
-          "volume": 500
+          "volume": 500,
+          "checked": "2026-11-25"
         },
         {
           "shop": "ヨドバシ.com",
           "amount": 1720,
           "url": "https://www.yodobashi.com/product/100000001007034281/",
-          "volume": 500
+          "volume": 500,
+          "checked": "2026-11-25"
         }
       ],
       "price_note": "比べたのは500ml瓶。大容量のペットボトルとは中身の量が違うので、値段だけでは比べられない。アルコール度数は50%と高めなので、割って飲むときは少量から好みの濃さに調整したい。",
@@ -549,7 +563,7 @@
         ]
       ],
       "checked": "2026-11-13",
-      "content_updated_at": "2026-11-13T08:04:21Z"
+      "content_updated_at": "2026-11-25T06:04:03+00:00"
     }
   },
   "busker-irish-whiskey-review": {
@@ -579,13 +593,15 @@
           "shop": "ビックカメラ.com",
           "amount": 2298,
           "url": "https://www.biccamera.com/bc/item/9676769/",
-          "volume": 700
+          "volume": 700,
+          "checked": "2026-11-13"
         },
         {
           "shop": "ヨドバシ.com",
           "amount": 2420,
           "url": "https://www.yodobashi.com/product/100000001006632277/",
-          "volume": 700
+          "volume": 700,
+          "checked": "2026-11-25"
         }
       ],
       "price_note": "どちらも緑ラベルの700ml。青系のシングルモルトウイスキーや別タイプのバスカーとは、値段も中身も違う。検索すると並んで出てくるので、商品名まで見ると迷いにくい。",
@@ -622,7 +638,7 @@
         ]
       ],
       "checked": "2026-11-13",
-      "content_updated_at": "2026-11-16T06:38:29Z"
+      "content_updated_at": "2026-11-25T06:04:03+00:00"
     }
   },
   "employee-vs-self-employed": {

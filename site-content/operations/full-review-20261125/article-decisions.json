@@ -1,0 +1,445 @@
+{
+  "review_date": "2026-11-25",
+  "public_articles": 47,
+  "articles": [
+    {
+      "slug": "cat-carrier-checklist",
+      "title": "猫用リュックキャリーがへこんだ話｜10年以上前の頑丈な物を使い直した理由",
+      "question": "へこんだリュックから、なぜ昔の布製キャリーへ戻したのか",
+      "decision": "keep",
+      "reason": "具体的な問いと回答があり、固有の体験または手順・比較条件があるため維持。",
+      "source": "starter-articles.json",
+      "personal_experience": "only_owner_confirmed"
+    },
+    {
+      "slug": "highball-measure-and-adjust",
+      "title": "ハイボールが薄い？ ウイスキーを足す前に見てみよう",
+      "question": "薄いと感じるハイボールは、何を変えて比べればよいか",
+      "decision": "keep",
+      "reason": "具体的な問いと回答があり、固有の体験または手順・比較条件があるため維持。",
+      "source": "starter-articles.json",
+      "personal_experience": "only_owner_confirmed"
+    },
+    {
+      "slug": "csv-import-seven-checks",
+      "title": "CSVを取り込む前の7つの確認｜先頭の0・文字化け・空欄の扱い",
+      "question": "CSVの先頭ゼロ・文字化け・空欄を取り込み前にどう防ぐか",
+      "decision": "keep",
+      "reason": "具体的な問いと回答があり、固有の体験または手順・比較条件があるため維持。",
+      "source": "starter-articles.json",
+      "personal_experience": "only_owner_confirmed"
+    },
+    {
+      "slug": "before-welcoming-cat",
+      "title": "猫を迎える準備、まず何を買う？ 部屋の片付けも忘れずに",
+      "question": "猫を迎える前に、何を先に用意し、何は後で選べるか",
+      "decision": "keep",
+      "reason": "具体的な問いと回答があり、固有の体験または手順・比較条件があるため維持。",
+      "source": "expanded-articles.json",
+      "personal_experience": "only_owner_confirmed"
+    },
+    {
+      "slug": "manmos-cat-life",
+      "title": "保護猫まんもすとの出会い｜ひと目で「この子だ」と思って迎えた日",
+      "question": "まんもすを迎えて、距離感と普段の暮らしはどう変わったか",
+      "decision": "keep",
+      "reason": "具体的な問いと回答があり、固有の体験または手順・比較条件があるため維持。",
+      "source": "expanded-articles.json",
+      "personal_experience": "only_owner_confirmed"
+    },
+    {
+      "slug": "cat-teaser-small-parts",
+      "title": "100均のねこじゃらしを愛用してるけど、一つだけ注意点が！",
+      "question": "100均のねこじゃらしで実際に気になる小さな部品は何か",
+      "decision": "keep",
+      "reason": "具体的な問いと回答があり、固有の体験または手順・比較条件があるため維持。",
+      "source": "expanded-articles.json",
+      "personal_experience": "only_owner_confirmed"
+    },
+    {
+      "slug": "cat-vet-routine",
+      "title": "猫の通院前に何を用意する？ 持ち物とこれだけは伝えたいこと",
+      "question": "通院に何を持ち、家での変化をどう伝えるか",
+      "decision": "keep",
+      "reason": "具体的な問いと回答があり、固有の体験または手順・比較条件があるため維持。",
+      "source": "expanded-articles.json",
+      "personal_experience": "only_owner_confirmed"
+    },
+    {
+      "slug": "glenlivet-12-first-bottles",
+      "title": "グレンリベット12年の感想｜グラス付きで買った3本目がうまかった",
+      "question": "3本目のグレンリベットを、買ってから好きになった理由は何か",
+      "decision": "revise",
+      "reason": "本人の購入品の証拠と誤認される再現画像を削除。購入の経緯と感想は維持。 販売価格ごとの確認日を表示し、商品情報の確認日と分ける。",
+      "source": "expanded-articles.json",
+      "personal_experience": "only_owner_confirmed"
+    },
+    {
+      "slug": "single-malt-label-guide",
+      "title": "初めてのウイスキー、ラベルはどこ見る？",
+      "question": "初めてのボトルで商品名・分類・年数・度数・容量のどこを見るか",
+      "decision": "keep",
+      "reason": "具体的な問いと回答があり、固有の体験または手順・比較条件があるため維持。",
+      "source": "expanded-articles.json",
+      "personal_experience": "only_owner_confirmed"
+    },
+    {
+      "slug": "sherry-cask-notes",
+      "title": "グレンファークラス12年の感想｜ぶどうパン好きが何度も買う理由",
+      "question": "高く感じてもグレンファークラス12年を買い直す理由は何か",
+      "decision": "revise",
+      "reason": "具体的な問いと回答があり、固有の体験または手順・比較条件があるため維持。 販売価格ごとの確認日を表示し、商品情報の確認日と分ける。",
+      "source": "expanded-articles.json",
+      "personal_experience": "only_owner_confirmed"
+    },
+    {
+      "slug": "it-data-work-flow",
+      "title": "正社員が一番だと思っていた自分が、今は個人事業主を選んでいる",
+      "question": "正社員一択だった自分が、なぜ今は個人事業主を選んでいるか",
+      "decision": "keep",
+      "reason": "具体的な問いと回答があり、固有の体験または手順・比較条件があるため維持。",
+      "source": "expanded-articles.json",
+      "personal_experience": "only_owner_confirmed"
+    },
+    {
+      "slug": "starting-it-without-specialty",
+      "title": "ITの仕事探しで迷った約1年｜自分に合う仕事を見つけるまで",
+      "question": "やりたいITの仕事が分からない状態から、どう選ぶか",
+      "decision": "keep",
+      "reason": "具体的な問いと回答があり、固有の体験または手順・比較条件があるため維持。",
+      "source": "expanded-articles.json",
+      "personal_experience": "only_owner_confirmed"
+    },
+    {
+      "slug": "ai-data-extraction-checks",
+      "title": "AIにデータ抽出を頼んだら、できた表のどこを見る？",
+      "question": "AIの抽出結果で、抜けや条件違いをどう見つけるか",
+      "decision": "keep",
+      "reason": "具体的な問いと回答があり、固有の体験または手順・比較条件があるため維持。",
+      "source": "expanded-articles.json",
+      "personal_experience": "only_owner_confirmed"
+    },
+    {
+      "slug": "glen-grant-arboralis-review",
+      "title": "アルボラリスの感想｜甘くて飲みやすかった、慎重に選んだ5本目",
+      "question": "苦手だった4本目の次に、アルボラリスをどう選んだか",
+      "decision": "revise",
+      "reason": "具体的な問いと回答があり、固有の体験または手順・比較条件があるため維持。 販売価格ごとの確認日を表示し、商品情報の確認日と分ける。",
+      "source": "expanded-articles.json",
+      "personal_experience": "only_owner_confirmed"
+    },
+    {
+      "slug": "nikka-from-the-barrel-review",
+      "title": "フロム・ザ・バレルの感想｜力強くて甘い。こぼれるけど、このボトルが好き",
+      "question": "ストレートとハイボールで何がよく、短い首はどう困ったか",
+      "decision": "revise",
+      "reason": "具体的な問いと回答があり、固有の体験または手順・比較条件があるため維持。 販売価格ごとの確認日を表示し、商品情報の確認日と分ける。",
+      "source": "expanded-articles.json",
+      "personal_experience": "only_owner_confirmed"
+    },
+    {
+      "slug": "jim-beam-first-impression",
+      "title": "ジムビームの感想｜グラス付きにひかれたけど、自分には合わなかった",
+      "question": "グラス付きで選んだジムビームが、自分に合わなかったのはなぜか",
+      "decision": "revise",
+      "reason": "具体的な問いと回答があり、固有の体験または手順・比較条件があるため維持。 販売価格ごとの確認日を表示し、商品情報の確認日と分ける。",
+      "source": "expanded-articles.json",
+      "personal_experience": "only_owner_confirmed"
+    },
+    {
+      "slug": "kirin-riku-review",
+      "title": "キリンウイスキー 陸の感想｜初めての1本は、コーラでなんとか飲んでいた",
+      "question": "初めての陸をおいしく感じられなかった頃、どう飲んでいたか",
+      "decision": "revise",
+      "reason": "具体的な問いと回答があり、固有の体験または手順・比較条件があるため維持。 販売価格ごとの確認日を表示し、商品情報の確認日と分ける。",
+      "source": "expanded-articles.json",
+      "personal_experience": "only_owner_confirmed"
+    },
+    {
+      "slug": "busker-irish-whiskey-review",
+      "title": "バスカー アイリッシュウイスキーの感想｜2本目でおいしいと思えた",
+      "question": "2本目のバスカーで、ウイスキーへの印象はどう変わったか",
+      "decision": "revise",
+      "reason": "具体的な問いと回答があり、固有の体験または手順・比較条件があるため維持。 販売価格ごとの確認日を表示し、商品情報の確認日と分ける。",
+      "source": "expanded-articles.json",
+      "personal_experience": "only_owner_confirmed"
+    },
+    {
+      "slug": "employee-vs-self-employed",
+      "title": "正社員と個人事業主、何が違う？ お金・休み・働き方を比べる",
+      "question": "雇用と業務委託で、お金・休み・保険の何が違うか",
+      "decision": "keep",
+      "reason": "具体的な問いと回答があり、固有の体験または手順・比較条件があるため維持。",
+      "source": "expanded-articles.json",
+      "personal_experience": "only_owner_confirmed"
+    },
+    {
+      "slug": "freelance-and-sole-proprietor",
+      "title": "フリーランスと個人事業主は何が違う？ 派遣社員との違いも考える",
+      "question": "フリーランス・個人事業主・派遣社員という言葉は何が違うか",
+      "decision": "keep",
+      "reason": "具体的な問いと回答があり、固有の体験または手順・比較条件があるため維持。",
+      "source": "expanded-articles.json",
+      "personal_experience": "only_owner_confirmed"
+    },
+    {
+      "slug": "freelance-sales-and-take-home",
+      "title": "個人事業主の売上と手取り｜経費を引いたら、残りは全部使える？",
+      "question": "売上から経費を引いた残りを、全部生活費にしてよいか",
+      "decision": "keep",
+      "reason": "具体的な問いと回答があり、固有の体験または手順・比較条件があるため維持。",
+      "source": "expanded-articles.json",
+      "personal_experience": "only_owner_confirmed"
+    },
+    {
+      "slug": "changing-job-or-working-style",
+      "title": "転職する？ 独立する？ 今の働き方に迷ったとき、先に考えたいこと",
+      "question": "会社を変えたいのか、契約する働き方から変えたいのか",
+      "decision": "keep",
+      "reason": "具体的な問いと回答があり、固有の体験または手順・比較条件があるため維持。",
+      "source": "expanded-articles.json",
+      "personal_experience": "only_owner_confirmed"
+    },
+    {
+      "slug": "freelance-contract-before-start",
+      "title": "業務委託の契約、どこを見る？ 報酬・作業範囲・終わるときの条件",
+      "question": "業務委託を引き受ける前に、報酬・担当範囲・支払日をどう読むか",
+      "decision": "keep",
+      "reason": "具体的な問いと回答があり、固有の体験または手順・比較条件があるため維持。",
+      "source": "expanded-articles.json",
+      "personal_experience": "only_owner_confirmed"
+    },
+    {
+      "slug": "freelance-days-off",
+      "title": "個人事業主の休日はどう決まる？ 有給休暇との違いと休む前に見ること",
+      "question": "個人事業主が休むとき、報酬や連絡の条件をどう決めるか",
+      "decision": "keep",
+      "reason": "具体的な問いと回答があり、固有の体験または手順・比較条件があるため維持。",
+      "source": "expanded-articles.json",
+      "personal_experience": "only_owner_confirmed"
+    },
+    {
+      "slug": "freelance-health-insurance",
+      "title": "退職後の健康保険、どれを選ぶ？ 個人事業主になる前に比べたい3つの方法",
+      "question": "退職後の健康保険を、自分の金額と期限でどう比べるか",
+      "decision": "keep",
+      "reason": "具体的な問いと回答があり、固有の体験または手順・比較条件があるため維持。",
+      "source": "expanded-articles.json",
+      "personal_experience": "only_owner_confirmed"
+    },
+    {
+      "slug": "freelance-contract-renewal-end",
+      "title": "業務委託の契約が終わるとき｜更新の確認・引き継ぎ・最後の報酬",
+      "question": "更新・終了・引き継ぎと最後の入金を、どう分けて確かめるか",
+      "decision": "keep",
+      "reason": "具体的な問いと回答があり、固有の体験または手順・比較条件があるため維持。",
+      "source": "expanded-articles.json",
+      "personal_experience": "only_owner_confirmed"
+    },
+    {
+      "slug": "paws-green-deli-cat-food",
+      "title": "【ご紹介】パウズグリーンデリの猫用フード｜お試しセットの内容と選び方",
+      "question": "お試しのグルメデリは主食か、トッピングか",
+      "decision": "revise",
+      "reason": "本文にある説明を後段の定型FAQ・買い方の説明で繰り返さない。導入の重複も該当記事で整理。",
+      "source": "affiliate-articles.json",
+      "personal_experience": "do_not_imply_product_trial"
+    },
+    {
+      "slug": "hario-cat-bowl-guide",
+      "title": "【ご紹介】HARIO「にゃんプレトール」｜猫用食器のサイズとお手入れ",
+      "question": "にゃんプレトールの実寸と手入れが、今の器とどう違うか",
+      "decision": "revise",
+      "reason": "本文にある説明を後段の定型FAQ・買い方の説明で繰り返さない。導入の重複も該当記事で整理。 実寸、素材、重量の表示条件、取り扱いを追記。",
+      "source": "affiliate-articles.json",
+      "personal_experience": "do_not_imply_product_trial"
+    },
+    {
+      "slug": "mirai-cat-food-types",
+      "title": "【ご紹介】和漢みらいのキャットフード｜3タイプの違いと選ぶときの注意点",
+      "question": "特別療法食3タイプを、商品名だけで選んではいけないのはなぜか",
+      "decision": "revise",
+      "reason": "本文にある説明を後段の定型FAQ・買い方の説明で繰り返さない。導入の重複も該当記事で整理。",
+      "source": "affiliate-articles.json",
+      "personal_experience": "do_not_imply_product_trial"
+    },
+    {
+      "slug": "m-and-cat-knit-bag",
+      "title": "【ご紹介】M&Co.の猫モチーフ雑貨｜ニットバッグとチャーム",
+      "question": "ニットバッグとチャームを、持ち物の量と付け場所からどう選ぶか",
+      "decision": "revise",
+      "reason": "本文にある説明を後段の定型FAQ・買い方の説明で繰り返さない。導入の重複も該当記事で整理。",
+      "source": "affiliate-articles.json",
+      "personal_experience": "do_not_imply_product_trial"
+    },
+    {
+      "slug": "pet-sougi-110-cat-guide",
+      "title": "【ご紹介】ペット葬儀110番｜火葬プランと相談前に確認したいこと",
+      "question": "相談窓口・実際の事業者・返骨・追加料金をどう確かめるか",
+      "decision": "revise",
+      "reason": "本文にある説明を後段の定型FAQ・買い方の説明で繰り返さない。導入の重複も該当記事で整理。",
+      "source": "affiliate-articles.json",
+      "personal_experience": "do_not_imply_product_trial"
+    },
+    {
+      "slug": "digxipop-cat-figure",
+      "title": "【ご紹介】digxipopのペットフィギュア｜愛猫の写真で注文する流れ",
+      "question": "写真で注文するフィギュアで、プレビューと納期の何を見るか",
+      "decision": "revise",
+      "reason": "本文にある説明を後段の定型FAQ・買い方の説明で繰り返さない。導入の重複も該当記事で整理。",
+      "source": "affiliate-articles.json",
+      "personal_experience": "do_not_imply_product_trial"
+    },
+    {
+      "slug": "withpety-nekokenshin",
+      "title": "【ご紹介】猫用サプリ10商品の違い｜ウィズペティの成分・形状を比較",
+      "question": "似た名前のサプリ10商品で、配合・形状・注意点はどう違うか",
+      "decision": "keep",
+      "reason": "具体的な問いと回答があり、固有の体験または手順・比較条件があるため維持。",
+      "source": "affiliate-articles.json",
+      "personal_experience": "do_not_imply_product_trial"
+    },
+    {
+      "slug": "pontely-cat-dna-test",
+      "title": "【ご紹介】猫の遺伝子検査Pontely｜検査内容とプランの違い",
+      "question": "猫の遺伝子検査の対象項目と、結果で分かる範囲をどう読むか",
+      "decision": "revise",
+      "reason": "本文にある説明を後段の定型FAQ・買い方の説明で繰り返さない。導入の重複も該当記事で整理。",
+      "source": "affiliate-articles.json",
+      "personal_experience": "do_not_imply_product_trial"
+    },
+    {
+      "slug": "onekosama-cat-tower",
+      "title": "【ご紹介】おねこさまのキャットタワー｜置き場所と上り下りのしやすさで選ぶ",
+      "question": "高さだけでなく、猫の居場所と上り下りからどうタワーを選ぶか",
+      "decision": "revise",
+      "reason": "本文にある説明を後段の定型FAQ・買い方の説明で繰り返さない。導入の重複も該当記事で整理。",
+      "source": "affiliate-articles.json",
+      "personal_experience": "do_not_imply_product_trial"
+    },
+    {
+      "slug": "catlog-cat-monitor",
+      "title": "【ご紹介】CatlogとCatlog Board｜記録できることと機能の違い",
+      "question": "首輪型とBoardで分かること、設置条件、継続費用はどう違うか",
+      "decision": "revise",
+      "reason": "本文にある説明を後段の定型FAQ・買い方の説明で繰り返さない。導入の重複も該当記事で整理。 月払いと年払い、購入特典の継続条件を追記。",
+      "source": "affiliate-articles.json",
+      "personal_experience": "do_not_imply_product_trial"
+    },
+    {
+      "slug": "pet-paradise-cat-toys",
+      "title": "【ご紹介】ペットパラダイスの猫おもちゃ｜けりぐるみと猫じゃらし",
+      "question": "けりぐるみと猫じゃらしは、遊び方と片付け方がどう違うか",
+      "decision": "revise",
+      "reason": "本文にある説明を後段の定型FAQ・買い方の説明で繰り返さない。導入の重複も該当記事で整理。",
+      "source": "affiliate-articles.json",
+      "personal_experience": "do_not_imply_product_trial"
+    },
+    {
+      "slug": "canagan-dental-cat-food",
+      "title": "【ご紹介】カナガンデンタルの猫用フード｜原材料と与える前の注意点",
+      "question": "デンタル用の配合と、甲状腺等の使用条件をどう読むか",
+      "decision": "revise",
+      "reason": "本文にある説明を後段の定型FAQ・買い方の説明で繰り返さない。導入の重複も該当記事で整理。",
+      "source": "affiliate-articles.json",
+      "personal_experience": "do_not_imply_product_trial"
+    },
+    {
+      "slug": "canagan-chicken-salmon",
+      "title": "【ご紹介】カナガンの猫用フード｜チキンとサーモンの違い",
+      "question": "チキンとサーモンは、主原料・原産国・栄養成分がどう違うか",
+      "decision": "revise",
+      "reason": "本文にある説明を後段の定型FAQ・買い方の説明で繰り返さない。導入の重複も該当記事で整理。",
+      "source": "affiliate-articles.json",
+      "personal_experience": "do_not_imply_product_trial"
+    },
+    {
+      "slug": "mcadams-cat-chicken-turkey",
+      "title": "【ご紹介】マックアダムズの猫用フード｜原材料とオーブンベイク製法",
+      "question": "オーブンベイク製法に加え、原材料と粒をどう比べるか",
+      "decision": "revise",
+      "reason": "本文にある説明を後段の定型FAQ・買い方の説明で繰り返さない。導入の重複も該当記事で整理。",
+      "source": "affiliate-articles.json",
+      "personal_experience": "do_not_imply_product_trial"
+    },
+    {
+      "slug": "essential-jaguar-cat-food",
+      "title": "【ご紹介】ジャガーキャットフード｜原材料・カロリー・粒の特徴",
+      "question": "肉・魚を使った配合とカロリー、粒の特徴をどう選ぶか",
+      "decision": "revise",
+      "reason": "本文にある説明を後段の定型FAQ・買い方の説明で繰り返さない。導入の重複も該当記事で整理。",
+      "source": "affiliate-articles.json",
+      "personal_experience": "do_not_imply_product_trial"
+    },
+    {
+      "slug": "mognyan-cat-food-guide",
+      "title": "【ご紹介】モグニャンのキャットフード｜原材料・粒の大きさ・切り替え方",
+      "question": "白身魚を使うフードへ替えるとき、量と切り替え方をどう考えるか",
+      "decision": "revise",
+      "reason": "本文にある説明を後段の定型FAQ・買い方の説明で繰り返さない。導入の重複も該当記事で整理。",
+      "source": "affiliate-articles.json",
+      "personal_experience": "do_not_imply_product_trial"
+    },
+    {
+      "slug": "leo-luna-citta-bed",
+      "title": "【ご紹介】レオエルナの犬猫用ベッド｜シッタコレクションのサイズと洗い方",
+      "question": "外寸・内寸と、洗える部分を分けてどうベッドを選ぶか",
+      "decision": "revise",
+      "reason": "本文にある説明を後段の定型FAQ・買い方の説明で繰り返さない。導入の重複も該当記事で整理。",
+      "source": "affiliate-articles.json",
+      "personal_experience": "do_not_imply_product_trial"
+    },
+    {
+      "slug": "aigan-dobutsu-course",
+      "title": "【ご紹介】愛玩動物飼養管理士｜2級・1級の費用と学習の流れ",
+      "question": "資格取得までの総費用と、受講・受験の予定を組めるか",
+      "decision": "revise",
+      "reason": "本文にある説明を後段の定型FAQ・買い方の説明で繰り返さない。導入の重複も該当記事で整理。",
+      "source": "affiliate-articles.json",
+      "personal_experience": "do_not_imply_product_trial"
+    },
+    {
+      "slug": "acana-orijen-cat-food-guide",
+      "title": "【ご紹介】アカナとオリジンの猫用フード｜レシピと成分表示の見方",
+      "question": "具体的な2レシピの原材料・保証成分・カロリーはどう違うか",
+      "decision": "revise",
+      "reason": "本文にある説明を後段の定型FAQ・買い方の説明で繰り返さない。導入の重複も該当記事で整理。",
+      "source": "affiliate-articles.json",
+      "personal_experience": "do_not_imply_product_trial"
+    },
+    {
+      "slug": "linx-as-store",
+      "title": "【ご紹介】リンクサス酒販｜ウイスキーの状態と送料、返品条件をチェック",
+      "question": "同じウイスキーでも、ボトルの状態と送料をどうそろえて比べるか",
+      "decision": "revise",
+      "reason": "本文にある説明を後段の定型FAQ・買い方の説明で繰り返さない。導入の重複も該当記事で整理。",
+      "source": "affiliate-articles.json",
+      "personal_experience": "do_not_imply_product_trial"
+    },
+    {
+      "slug": "ひろがる趣味暮らしについて",
+      "title": "ひろがる趣味暮らしについて",
+      "question": "猫・ウイスキー・働き方について、誰が何を書いているブログか",
+      "decision": "keep",
+      "reason": "自己紹介として維持。仕事の詳細より、本人の体験と記事の入口を示す。",
+      "source": "existing_intro_post_8",
+      "personal_experience": "only_owner_confirmed"
+    }
+  ],
+  "retired_sources": {
+    "withpety-nekobihada": "supplement-nekobihada",
+    "withpety-nekoryoukan": "supplement-nekoryoukan",
+    "withpety-nekoissho": "supplement-nekoissho",
+    "withpety-nekokouken": "supplement-nekokouken",
+    "withpety-nekosoukai": "supplement-nekosoukai",
+    "withpety-nekoshuukan": "supplement-nekoshuukan",
+    "withpety-nekoaigan": "supplement-nekoaigan",
+    "withpety-nekojinkatsu": "supplement-nekojinkatsu",
+    "withpety-nekosanpo": "supplement-nekosanpo"
+  },
+  "limits": [
+    "keepはAdSense合格の判定ではない。",
+    "未回答の体験や現物写真は補作せず、本人回答を待つ。",
+    "全記事を同じ文字数へ増やす運用は行わない。"
+  ]
+}
