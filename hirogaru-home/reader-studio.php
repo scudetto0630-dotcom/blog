@@ -27,6 +27,14 @@ function hsh_studio_checklist($id,$title,$items){
  foreach($items as $i=>$item)$out.='<label><input type="checkbox" data-sheet-check="'.(int)$i.'"> '.esc_html($item).'</label>';
  return $out.'</fieldset><label>メモ<textarea data-sheet-note maxlength="2000" rows="3" placeholder="気付いたこと、次に確認したいこと"></textarea></label><p data-sheet-status role="status" aria-live="polite"></p><div class="hsh-sheet-actions"><button type="button" data-sheet-print>このシートを印刷</button><button type="button" data-sheet-reset>すべて解除</button></div></section>';
 }
+function hsh_studio_budget(){
+    $fields=array('sales'=>array('その月の売上（円）','例：400000',true),'cost'=>array('仕事の費用（円）','例：50000',true),'tax'=>array('税金・社会保険用に残す予算（円・未定なら空欄）','見積もった額。税額を自動計算する欄ではありません',false),'reserve'=>array('事業のために残す予算（円・未定なら空欄）','例：30000',false));
+    $out='<section class="hsh-budget" aria-label="生活に回す予算の計算"><div data-budget-app hidden><form data-budget-form autocomplete="off"><div class="hsh-budget-fields">';
+    foreach($fields as $key=>$field)$out.='<label for="hsh-budget-'.$key.'">'.esc_html($field[0]).'<input id="hsh-budget-'.$key.'" data-budget-field="'.$key.'" type="number" inputmode="numeric" min="0" max="999999999" step="1" placeholder="'.esc_attr($field[1]).'"'.($field[2]?' required':'').'></label>';
+    $out.='</div><button type="submit">予算を計算する</button><button type="reset">入力を消す</button></form><p data-budget-result role="status" aria-live="polite">売上と仕事の費用を入れると、費用を引いた額を計算できます。未定の予算は空欄のままにしてください。</p></div><p>この計算機は、入力した金額を送信・保存しません。予算の引き算で、納付税額や確定申告用の所得を求める計算ではありません。</p><noscript><p>計算欄を使うにはJavaScriptを有効にしてください。本文の式を使って電卓でも計算できます。</p></noscript></section>';
+    return $out;
+}
+
 function hsh_studio_highball(){return '<section class="hsh-highball-tool" id="hsh-highball-calculator"><h2>好みの割合で、分量を計算する</h2><p>ウイスキーの量と、ソーダを何倍入れるかを入力してください。3倍なら、ウイスキー30mlにソーダ90mlで1:3の割合です。氷は計算に含まれないため、グラスには氷を入れる余裕も必要です。</p><form data-highball><label>ウイスキーの量（ml）<input name="whisky" type="number" min="5" max="100" step="1" value="30" required></label><label>ソーダの量（ウイスキーの何倍か）<input name="ratio" type="number" min="1" max="10" step="0.5" value="3" required></label><label>グラス容量（ml・任意）<input name="glass" type="number" min="100" max="1000" step="1" placeholder="例：350"></label><button>分量を計算</button></form><p data-highball-result role="status" aria-live="polite">ウイスキー30ml＋ソーダ90ml＝飲み物120ml。氷を入れる余裕も必要です。</p></section>';}
 function hsh_studio_examples(){
  return '<section class="hsh-data-practice" id="hsh-extraction-example"><h2>架空の表で、データ抽出を試す</h2><p>ここからは、上のCSVとは別の4行で練習します。こちらも架空のデータで、顧客や勤務先の実データではありません。「区分が猫、金額が1,000円以上」を条件に抜き出します。</p><h3>処理前</h3><table><thead><tr><th>ID</th><th>区分</th><th>金額（円）</th></tr></thead><tbody><tr><td>0001</td><td>猫</td><td>1200</td></tr><tr><td>0002</td><td>ウイスキー</td><td>4000</td></tr><tr><td>0003</td><td>猫</td><td>800</td></tr><tr><td>0004</td><td>猫</td><td>1500</td></tr></tbody></table><h3>期待する結果</h3><p>ID「0001」「0004」の2件です。合計金額は2,700円。先頭の0を残し、元の表の順番を保ちます。</p><p>件数と合計が合っていても、別の行に入れ替わっている可能性はあります。IDと元の値も比べて、条件に合う2件を取り出せているか確かめましょう。</p><h3>依頼文の例</h3><pre data-copy-example>元データを残したまま、区分が「猫」、金額が1000円以上の行を抽出してください。IDは文字列として先頭の0を保持し、元の並び順を維持してください。抽出件数と金額の合計を示してください。</pre><pre data-copy-example>金額を数値として昇順に並べ替えてください。同額の場合は元の並び順を保ち、IDと金額の対応を変えないでください。</pre><pre data-copy-example>IDの重複を調べ、重複したIDと該当行を別表にまとめてください。元データからは削除しないでください。</pre><h3>Excel・スプレッドシート・CSVの違い</h3><dl><dt>Excel</dt><dd>表計算ソフトです。xlsx形式なら複数のシート、書式、数式などを保存できます。</dd><dt>スプレッドシート</dt><dd>ブラウザーで共同編集できる表計算サービスです。共有範囲と編集権限を確認して使います。</dd><dt>CSV</dt><dd>行と列の値を区切り文字で表すテキスト形式です。書式や複数シートの保存には向きません。取り込み時の文字コードやデータ型に注意が必要です。</dd></dl></section>';
@@ -51,6 +59,7 @@ add_filter('the_content',function($c){
  $c=preg_replace('~<p[^>]*>(?:(?!</p>).)*csv-practice\.csv(?:(?!</p>).)*</p>~s','',$c);
  $c=preg_replace('~<li[^>]*>(?:(?!</li>).)*extraction-(?:input|expected)\.csv(?:(?!</li>).)*</li>~s','',$c);
  // Keep the introduction continuous; the native table of contents remains available.
+ if($slug==='freelance-sales-and-take-home')$c=str_replace('<!--hsh-budget-calculator-->',hsh_studio_budget(),$c);
  $c.=hsh_studio_terms($a['topic'],$slug);
  if(hsh_brushup_type($slug)==='product'&&$slug!=='withpety-nekokenshin'&&empty($a['self_contained'])){$c.=hsh_studio_product_notes($slug);if(strpos($slug,'withpety-')===0)$c.='<aside class="hsh-supplement-note"><h2>フード・サプリ・医薬品の違い</h2><p>サプリは、主食となるフードや治療に使う医薬品と役割が異なります。現在の薬や食事と一緒に獣医師へ伝え、病気の治療の代わりとして使わないでください。</p></aside>';}
  if($slug==='cat-carrier-checklist'){$c.=hsh_studio_checklist('carrier-measure','キャリーの採寸メモ',array('猫が自然に立ち、向きを変え、伏せられる内寸か確認する','入口の幅・高さと、持ち手の位置を確認する','徒歩：持ち上げたときの安定と自分が運べる重さを確認する','車：車内で固定できるか、メーカーの案内を確認する','公共交通：利用する交通機関の寸法・重量・容器の規定を確認する'));}
@@ -64,7 +73,8 @@ add_filter('the_content',function($c){
  if($slug==='csv-import-seven-checks'){$example=hsh_studio_examples();if(preg_match('~<h3>Excel・スプレッドシート・CSVの違い</h3>(.*?)</section>~s',$example,$formats))$c.='<section class="hsh-data-practice"><h2>Excel・スプレッドシート・CSVの違い</h2>'.$formats[1].'</section>';}
  return $c.hsh_adsense_prepared_slot().hsh_studio_postscript($slug,$a['topic']);
 },29);
-add_action('wp_enqueue_scripts',function(){if(!hsh_reader_scope())return;wp_enqueue_style('hsh-studio',plugin_dir_url(__FILE__).'assets/studio.css',array('hsh-brushup'),'1.51.0');wp_enqueue_script('hsh-studio',plugin_dir_url(__FILE__).'assets/studio.js',array('hsh-brushup'),'1.42.0',true);},140);
+add_action('wp_enqueue_scripts',function(){if(!hsh_reader_scope())return;wp_enqueue_style('hsh-studio',plugin_dir_url(__FILE__).'assets/studio.css',array('hsh-brushup'),'1.55.0');wp_enqueue_script('hsh-studio',plugin_dir_url(__FILE__).'assets/studio.js',array('hsh-brushup'),'1.42.0',true);},140);
+add_action('wp_enqueue_scripts',function(){if(!is_singular('post'))return;$p=get_post();if($p&&hsh_owned_blog_post($p)&&$p->post_name==='freelance-sales-and-take-home')wp_enqueue_script('hsh-budget',plugin_dir_url(__FILE__).'assets/budget.js',array(),'1.55.0',true);},141);
 // The native WordPress relevance ordering already prioritizes matching titles.
 add_action('pre_get_posts',function($q){if(!is_admin()&&$q->is_main_query()&&$q->is_search())$q->set('orderby','relevance');},35);
 function hsh_studio_home_products(){

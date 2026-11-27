@@ -1,0 +1,235 @@
+{
+  "reviewed_on": "2026-11-27",
+  "scope": "38 public articles",
+  "revised_articles": 12,
+  "articles": [
+    {
+      "slug": "cat-carrier-checklist",
+      "question": "リュックがへこんだ状況と、使い直したキャリーで何が変わったか？",
+      "decision": "retain_existing_distinct_answer",
+      "basis": "current article and preceding 2026-11-26 full-copy review; no new search-demand claim"
+    },
+    {
+      "slug": "highball-measure-and-adjust",
+      "question": "味が薄いのか炭酸が弱いのか、次にどこを変えればよいか？",
+      "decision": "retain_existing_distinct_answer",
+      "basis": "current article and preceding 2026-11-26 full-copy review; no new search-demand claim"
+    },
+    {
+      "slug": "csv-import-seven-checks",
+      "question": "CSVの0・文字・空欄を変えず、取り込めたことをどう確かめるか？",
+      "decision": "retain_existing_distinct_answer",
+      "basis": "current article and preceding 2026-11-26 full-copy review; no new search-demand claim"
+    },
+    {
+      "slug": "before-welcoming-cat",
+      "question": "迎える前にそろえる物と、好みが分かってから選べる物は？",
+      "decision": "revised_with_concrete_answer",
+      "basis": "current article and preceding 2026-11-26 full-copy review; no new search-demand claim"
+    },
+    {
+      "slug": "manmos-cat-life",
+      "question": "まんもすはどんな猫で、迎えてからどう暮らしているか？",
+      "decision": "retain_existing_distinct_answer",
+      "basis": "current article and preceding 2026-11-26 full-copy review; no new search-demand claim"
+    },
+    {
+      "slug": "cat-teaser-small-parts",
+      "question": "100均の羽付き玩具の、どこが外れたり誤飲につながったりするか？",
+      "decision": "retain_existing_distinct_answer",
+      "basis": "current article and preceding 2026-11-26 full-copy review; no new search-demand claim"
+    },
+    {
+      "slug": "cat-vet-routine",
+      "question": "診察前に何を用意し、家での変化をどう伝えるか？",
+      "decision": "retain_existing_distinct_answer",
+      "basis": "current article and preceding 2026-11-26 full-copy review; no new search-demand claim"
+    },
+    {
+      "slug": "glenlivet-12-first-bottles",
+      "question": "3本目のグレンリベット12年で何を気に入り、今はどう飲むか？",
+      "decision": "retain_existing_distinct_answer",
+      "basis": "current article and preceding 2026-11-26 full-copy review; no new search-demand claim"
+    },
+    {
+      "slug": "single-malt-label-guide",
+      "question": "店頭や通販で、容量・年数・度数の違うボトルをどう見分けるか？",
+      "decision": "revised_with_concrete_answer",
+      "basis": "current article and preceding 2026-11-26 full-copy review; no new search-demand claim"
+    },
+    {
+      "slug": "sherry-cask-notes",
+      "question": "値段が高いと感じても、グレンファークラス12年を買い直す理由は？",
+      "decision": "retain_existing_distinct_answer",
+      "basis": "current article and preceding 2026-11-26 full-copy review; no new search-demand claim"
+    },
+    {
+      "slug": "it-data-work-flow",
+      "question": "正社員が一番だと思っていた人が、なぜ今は個人事業主を選ぶのか？",
+      "decision": "revised_with_concrete_answer",
+      "basis": "current article and preceding 2026-11-26 full-copy review; no new search-demand claim"
+    },
+    {
+      "slug": "starting-it-without-specialty",
+      "question": "ITの職種名が分からない段階で、仕事内容や働く条件をどう調べるか？",
+      "decision": "retain_existing_distinct_answer",
+      "basis": "current article and preceding 2026-11-26 full-copy review; no new search-demand claim"
+    },
+    {
+      "slug": "ai-data-extraction-checks",
+      "question": "AIの抽出結果で、件数が合っていても見逃す間違いをどう探すか？",
+      "decision": "retain_existing_distinct_answer",
+      "basis": "current article and preceding 2026-11-26 full-copy review; no new search-demand claim"
+    },
+    {
+      "slug": "glen-grant-arboralis-review",
+      "question": "4本目が苦手だった後、何を参考にアルボラリスを選び、どう感じたか？",
+      "decision": "retain_existing_distinct_answer",
+      "basis": "current article and preceding 2026-11-26 full-copy review; no new search-demand claim"
+    },
+    {
+      "slug": "nikka-from-the-barrel-review",
+      "question": "フロム・ザ・バレルをストレートとハイボールでどう感じたか？",
+      "decision": "retain_existing_distinct_answer",
+      "basis": "current article and preceding 2026-11-26 full-copy review; no new search-demand claim"
+    },
+    {
+      "slug": "jim-beam-first-impression",
+      "question": "グラス付きで選んだジムビームは、筆者にとって何が苦手だったか？",
+      "decision": "retain_existing_distinct_answer",
+      "basis": "current article and preceding 2026-11-26 full-copy review; no new search-demand claim"
+    },
+    {
+      "slug": "kirin-riku-review",
+      "question": "ウイスキーに慣れていない頃、最初の陸はどう感じたか？",
+      "decision": "retain_existing_distinct_answer",
+      "basis": "current article and preceding 2026-11-26 full-copy review; no new search-demand claim"
+    },
+    {
+      "slug": "busker-irish-whiskey-review",
+      "question": "2本目のバスカーで、飲みやすさや飲み方はどう変わったか？",
+      "decision": "retain_existing_distinct_answer",
+      "basis": "current article and preceding 2026-11-26 full-copy review; no new search-demand claim"
+    },
+    {
+      "slug": "employee-vs-self-employed",
+      "question": "正社員と個人事業主で、収入・休み・保険・自分の負担は何が違うか？",
+      "decision": "revised_with_concrete_answer",
+      "basis": "current article and preceding 2026-11-26 full-copy review; no new search-demand claim"
+    },
+    {
+      "slug": "freelance-and-sole-proprietor",
+      "question": "個人事業主・法人・フリーランス・派遣をどう区別するか？",
+      "decision": "revised_with_concrete_answer",
+      "basis": "current article and preceding 2026-11-26 full-copy review; no new search-demand claim"
+    },
+    {
+      "slug": "freelance-sales-and-take-home",
+      "question": "売上から、仕事の費用と残す予算を引いた後に何が分かるか？",
+      "decision": "revised_with_concrete_answer",
+      "basis": "current article and preceding 2026-11-26 full-copy review; no new search-demand claim"
+    },
+    {
+      "slug": "changing-job-or-working-style",
+      "question": "職場を変えたいのか働き方を変えたいのか、何を質問して比べるか？",
+      "decision": "retain_existing_distinct_answer",
+      "basis": "current article and preceding 2026-11-26 full-copy review; no new search-demand claim"
+    },
+    {
+      "slug": "freelance-contract-before-start",
+      "question": "契約で、何をどこまで行い、報酬と納期が何に対応するか？",
+      "decision": "revised_with_concrete_answer",
+      "basis": "current article and preceding 2026-11-26 full-copy review; no new search-demand claim"
+    },
+    {
+      "slug": "freelance-days-off",
+      "question": "実際にどう休んでいるか、契約ごとの報酬と連絡はどう比べるか？",
+      "decision": "revised_with_concrete_answer",
+      "basis": "current article and preceding 2026-11-26 full-copy review; no new search-demand claim"
+    },
+    {
+      "slug": "freelance-health-insurance",
+      "question": "退職後の加入先と保険料を、どこへ何を聞いて比べるか？",
+      "decision": "revised_with_concrete_answer",
+      "basis": "current article and preceding 2026-11-26 full-copy review; no new search-demand claim"
+    },
+    {
+      "slug": "freelance-contract-renewal-end",
+      "question": "更新と終了の前後で、作業・請求・入金をどう分けて確かめるか？",
+      "decision": "revised_with_concrete_answer",
+      "basis": "current article and preceding 2026-11-26 full-copy review; no new search-demand claim"
+    },
+    {
+      "slug": "paws-green-deli-cat-food",
+      "question": "主食とトッピングのどちらの商品か、お試しの内容と保存条件は？",
+      "decision": "retain_existing_distinct_answer",
+      "basis": "current article and preceding 2026-11-26 full-copy review; no new search-demand claim"
+    },
+    {
+      "slug": "hario-cat-bowl-guide",
+      "question": "にゃんプレトールの寸法・容量・手入れは、今の器とどう違うか？",
+      "decision": "retain_existing_distinct_answer",
+      "basis": "current article and preceding 2026-11-26 full-copy review; no new search-demand claim"
+    },
+    {
+      "slug": "mirai-cat-food-types",
+      "question": "3タイプが特別療法食であることを踏まえ、何を獣医師へ相談するか？",
+      "decision": "retain_existing_distinct_answer",
+      "basis": "current article and preceding 2026-11-26 full-copy review; no new search-demand claim"
+    },
+    {
+      "slug": "withpety-nekokenshin",
+      "question": "10商品の対象・成分・形状・一袋を使う日数はどう違うか？",
+      "decision": "retain_existing_distinct_answer",
+      "basis": "current article and preceding 2026-11-26 full-copy review; no new search-demand claim"
+    },
+    {
+      "slug": "pontely-cat-dna-test",
+      "question": "どの検査項目を選び、結果から何が分かり何は診断できないか？",
+      "decision": "retain_existing_distinct_answer",
+      "basis": "current article and preceding 2026-11-26 full-copy review; no new search-demand claim"
+    },
+    {
+      "slug": "onekosama-cat-tower",
+      "question": "置き場・上り下り・寝床の広さが、選ぶタワーに合うか？",
+      "decision": "retain_existing_distinct_answer",
+      "basis": "current article and preceding 2026-11-26 full-copy review; no new search-demand claim"
+    },
+    {
+      "slug": "catlog-cat-monitor",
+      "question": "記録したい内容と、猫・機器の数ごとの費用はどう違うか？",
+      "decision": "revised_with_concrete_answer",
+      "basis": "current article and preceding 2026-11-26 full-copy review; no new search-demand claim"
+    },
+    {
+      "slug": "pet-paradise-cat-toys",
+      "question": "抱えて蹴る玩具と動かして遊ぶ玩具を、どう選び片付けるか？",
+      "decision": "retain_existing_distinct_answer",
+      "basis": "current article and preceding 2026-11-26 full-copy review; no new search-demand claim"
+    },
+    {
+      "slug": "canagan-chicken-salmon",
+      "question": "8商品の原材料・成分・同じ量でのカロリーはどう違うか？",
+      "decision": "retain_existing_distinct_answer",
+      "basis": "current article and preceding 2026-11-26 full-copy review; no new search-demand claim"
+    },
+    {
+      "slug": "leo-luna-citta-bed",
+      "question": "寝られる広さ、置く場所、洗って干す条件は合うか？",
+      "decision": "retain_existing_distinct_answer",
+      "basis": "current article and preceding 2026-11-26 full-copy review; no new search-demand claim"
+    },
+    {
+      "slug": "aigan-dobutsu-course",
+      "question": "2級・1級を取得登録する費用と、学習・会場試験の条件は？",
+      "decision": "revised_with_concrete_answer",
+      "basis": "current article and preceding 2026-11-26 full-copy review; no new search-demand claim"
+    },
+    {
+      "slug": "ひろがる趣味暮らしについて",
+      "question": "このブログの誰が何を書き、どこから読めばよいか？",
+      "decision": "retain_existing_distinct_answer",
+      "basis": "introduction routes to existing topics"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+const assert=require('node:assert/strict');
+const {estimate}=require('../hirogaru-home/assets/budget.js');
+assert.deepEqual(estimate(400000,50000,60000,30000),{afterCosts:350000,complete:true,available:260000});
+assert.deepEqual(estimate(400000,50000,null,null),{afterCosts:350000,complete:false,available:null});
+assert.equal(estimate(400000,50000,0,null).available,null);
+assert.deepEqual(estimate(0,0,0,0),{afterCosts:0,complete:true,available:0});
+assert.equal(estimate(100000,150000,20000,10000).available,-80000);
+for(const values of [[null,0,0,0],[-1,0,0,0],[1.5,0,0,0],[Infinity,0,0,0],[1,NaN,0,0],[1,0,-1,0],[1,0,0,undefined],[1000000000,0,0,0],['400000',0,0,0]])assert.equal(estimate(...values),null);
+assert.equal(estimate(999999999,0,0,0).available,999999999);
+console.log('Budget arithmetic: 15 cases passed (unknown, zero, deficit, invalid and bounded input).');
